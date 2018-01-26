@@ -1,0 +1,1004 @@
+<!DOCTYPE html>
+
+
+
+
+<html class="theme-next muse" lang="zh-CN">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+  <meta name="google-site-verification" content="ByVfaP_E3b9ZYRUGhNAUFSQKL8mJQwUehpQwoxJ5n-c" />
+
+
+
+  <meta name="msvalidate.01" content="DB220684085BEDBD2E49E8E942534B1F" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=6.0.2" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon-next.png?v=6.0.2">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32-next.png?v=6.0.2">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16-next.png?v=6.0.2">
+
+
+  <link rel="mask-icon" href="/favicon/logo.svg?v=6.0.2" color="#222">
+
+
+
+
+
+
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Muse',
+    version: '6.0.2',
+    sidebar: {"position":"right","display":"hide","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: false,
+    fastclick: false,
+    lazyload: false,
+    tabs: true,
+    motion: {"enable":false,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    algolia: {
+      applicationID: 'XILKIWTAM9',
+      apiKey: '8c01137fe05d281ccd531a0ec622322a',
+      indexName: 'blog',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"搜索文章","hits_empty":"啊，找不到 ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+  
+
+
+
+
+  
+  <meta name="keywords" content="设计," />
+
+
+<meta name="description" content="其实，应用市场图相关文章之前就有写，一直没有整合。最近在进行新版本设计，在新版本设计中，分析的竞品与优秀应用的市场图多达40余款，从中发现问题并得到解决方案，一同记录下来，分享给大家。   文章开始我们来说说应用市场图的名称，它即被叫作市场图、应用市场图，也有被称为应用截图、上架图等。所以当大家听到这几个名词时，就可以知道说的是什么了。 一、平台规范 移动端应用市场无非就是安卓与iOS系统之间的">
+<meta name="keywords" content="设计">
+<meta property="og:type" content="article">
+<meta property="og:title" content="浅析APP设计：掌握市场截图设计原则">
+<meta property="og:url" content="https://blog.naaln.com/2017/08/capture-design-principles/index.html">
+<meta property="og:site_name" content="Why·Liam·Blog">
+<meta property="og:description" content="其实，应用市场图相关文章之前就有写，一直没有整合。最近在进行新版本设计，在新版本设计中，分析的竞品与优秀应用的市场图多达40余款，从中发现问题并得到解决方案，一同记录下来，分享给大家。   文章开始我们来说说应用市场图的名称，它即被叫作市场图、应用市场图，也有被称为应用截图、上架图等。所以当大家听到这几个名词时，就可以知道说的是什么了。 一、平台规范 移动端应用市场无非就是安卓与iOS系统之间的">
+<meta property="og:locale" content="zh-CN">
+<meta property="og:image" content="https://ws3.sinaimg.cn/large/006tKfTcgy1filzohl4e7j30m80da75r.jpg">
+<meta property="og:image" content="https://ws2.sinaimg.cn/large/006tKfTcgy1filzlp82taj30rs0gokj1.jpg">
+<meta property="og:image" content="https://ws4.sinaimg.cn/large/006tKfTcgy1filzlqc4j8j30rs0gonom.jpg">
+<meta property="og:image" content="https://ws4.sinaimg.cn/large/006tKfTcgy1filzlregt9j30v10d5tag.jpg">
+<meta property="og:image" content="https://ws2.sinaimg.cn/large/006tKfTcgy1filzlt58x2j30rs0f01kx.jpg">
+<meta property="og:image" content="https://ws3.sinaimg.cn/large/006tKfTcgy1filzltivo5j30v10d9wgr.jpg">
+<meta property="og:image" content="https://ws2.sinaimg.cn/large/006tKfTcgy1filzltzv5sj30uw0d7jv2.jpg">
+<meta property="og:image" content="https://ws4.sinaimg.cn/large/006tKfTcgy1filzluv5gdj30ur0d0adn.jpg">
+<meta property="og:image" content="https://ws3.sinaimg.cn/large/006tKfTcgy1filzlv7x5zj30un0d1q66.jpg">
+<meta property="og:image" content="https://ws1.sinaimg.cn/large/006tKfTcgy1filzlwdyfej30ux0dan0q.jpg">
+<meta property="og:image" content="https://ws3.sinaimg.cn/large/006tKfTcgy1filzlxih1jj30v30d2415.jpg">
+<meta property="og:image" content="https://ws3.sinaimg.cn/large/006tKfTcgy1filzly8qrvj30my0cz0w6.jpg">
+<meta property="og:image" content="https://ws3.sinaimg.cn/large/006tKfTcgy1filzlzeodmj30ku0qy0xa.jpg">
+<meta property="og:image" content="https://ws4.sinaimg.cn/large/006tKfTcgy1filzlzzry0j30ku0scdlb.jpg">
+<meta property="og:updated_time" content="2017-09-03T09:15:57.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="浅析APP设计：掌握市场截图设计原则">
+<meta name="twitter:description" content="其实，应用市场图相关文章之前就有写，一直没有整合。最近在进行新版本设计，在新版本设计中，分析的竞品与优秀应用的市场图多达40余款，从中发现问题并得到解决方案，一同记录下来，分享给大家。   文章开始我们来说说应用市场图的名称，它即被叫作市场图、应用市场图，也有被称为应用截图、上架图等。所以当大家听到这几个名词时，就可以知道说的是什么了。 一、平台规范 移动端应用市场无非就是安卓与iOS系统之间的">
+<meta name="twitter:image" content="https://ws3.sinaimg.cn/large/006tKfTcgy1filzohl4e7j30m80da75r.jpg">
+
+
+
+  <link rel="alternate" href="/atom.xml" title="Why·Liam·Blog" type="application/atom+xml" />
+
+
+
+
+  <link rel="canonical" href="https://blog.naaln.com/2017/08/capture-design-principles/"/>
+
+
+  <title>浅析APP设计：掌握市场截图设计原则 | Why·Liam·Blog</title>
+  
+
+
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-47966442-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-47966442-2');
+</script>
+
+
+
+
+
+
+  
+<script src="//msite.baidu.com/sdk/c.js?appid=1586840953097399"></script>
+<link rel="canonical" href="https://blog.naaln.com/2017/08/capture-design-principles/"/>
+<script type="application/ld+json">
+    {
+        "@context": "https://ziyuan.baidu.com/contexts/cambrian.jsonld",
+        "@id": "https://blog.naaln.com/2017/08/capture-design-principles/",
+        "appid": "1586840953097399",
+        "title": "浅析APP设计：掌握市场截图设计原则",
+        "images": [
+            ""
+            ],
+        "description": "",
+        "pubDate": "",
+        "upDate": "",
+        "lrDate": ""
+    }
+</script>
+
+  <noscript>
+  <style type="text/css">
+    .use-motion .motion-element,
+    .use-motion .brand,
+    .use-motion .menu-item,
+    .sidebar-inner,
+    .use-motion .post-block,
+    .use-motion .pagination,
+    .use-motion .comments,
+    .use-motion .post-header,
+    .use-motion .post-body,
+    .use-motion .collection-title { opacity: initial; }
+
+    .use-motion .logo,
+    .use-motion .site-title,
+    .use-motion .site-subtitle {
+      opacity: initial;
+      top: initial;
+    }
+
+    .use-motion {
+      .logo-line-before i { left: initial; }
+      .logo-line-after i { right: initial; }
+    }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-CN">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-right page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"> <div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Why·Liam·Blog</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <h1 class="site-subtitle" itemprop="description">人生若如初見</h1>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            <i class="menu-item-icon fa fa-fw fa-home"></i> <br />首页</a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />归档</a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-technology">
+          <a href="/categories/technology/" rel="section">
+            <i class="menu-item-icon fa fa-fw fa-code"></i> <br />技术</a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-jottings">
+          <a href="/categories/jottings/" rel="section">
+            <i class="menu-item-icon fa fa-fw fa-language"></i> <br />随笔</a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tour">
+          <a href="/categories/tour/" rel="section">
+            <i class="menu-item-icon fa fa-fw fa-globe"></i> <br />旅游</a>
+        </li>
+      
+
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br />搜索</a>
+        </li>
+      
+    </ul>
+  
+
+  
+    <div class="site-search">
+      
+  
+  <div class="algolia-popup popup search-popup">
+    <div class="algolia-search">
+      <div class="algolia-search-input-icon">
+        <i class="fa fa-search"></i>
+      </div>
+      <div class="algolia-search-input" id="algolia-search-input"></div>
+    </div>
+
+    <div class="algolia-results">
+      <div id="algolia-stats"></div>
+      <div id="algolia-hits"></div>
+      <div id="algolia-pagination" class="algolia-pagination"></div>
+    </div>
+
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+  </div>
+
+
+
+
+    </div>
+  
+</nav>
+
+
+  
+
+
+
+ </div>
+    </header>
+
+    
+
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://blog.naaln.com/2017/08/capture-design-principles/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="WHY·LIAM">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="//tva2.sinaimg.cn/crop.0.0.998.998.180/48910e01gw1ef5p6etuzdj20rs0rs771.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Why·Liam·Blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h2 class="post-title" itemprop="name headline">浅析APP设计：掌握市场截图设计原则</h2>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-08-16T19:55:50+08:00">2017-08-16</time>
+            
+
+            
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/jottings/" itemprop="url" rel="index"><span itemprop="name">随笔</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+              <span class="post-meta-divider">|</span>
+              <span class="post-meta-item-icon">
+                <i class="fa fa-comment-o"></i>
+              </span>
+              
+                <a href="/2017/08/capture-design-principles/#SOHUCS" itemprop="discussionUrl">
+                  <span id="changyan_count_unit" class="post-comments-count hc-comment-count" data-xid="2017/08/capture-design-principles/" itemprop="commentsCount"></span>
+                </a>
+              
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <blockquote>
+<p>其实，应用市场图相关文章之前就有写，一直没有整合。最近在进行新版本设计，在新版本设计中，分析的竞品与优秀应用的市场图多达40余款，从中发现问题并得到解决方案，一同记录下来，分享给大家。</p>
+</blockquote>
+<p><a href="https://ws3.sinaimg.cn/large/006tKfTcgy1filzohl4e7j30m80da75r.jpg" target="_blank" rel="noopener"><img src="https://ws3.sinaimg.cn/large/006tKfTcgy1filzohl4e7j30m80da75r.jpg" alt=""></a></p>
+<p>文章开始我们来说说应用市场图的名称，它即被叫作<strong>市场图</strong>、<strong>应用市场图</strong>，也有被称为<strong>应用截图</strong>、<strong>上架图</strong>等。所以当大家听到这几个名词时，就可以知道说的是什么了。</p>
+<h2 id="一、平台规范"><a href="#一、平台规范" class="headerlink" title="一、平台规范"></a><a href="#一、平台规范" title="一、平台规范"></a>一、平台规范</h2><blockquote>
+<p>移动端应用市场无非就是安卓与iOS系统之间的区分。iOS 中 APP STORE的应用规范比较一致，适配便捷，而安卓的应用市场就比较多。</p>
+<p>详情请看本人整理的最新应用市场设计平台规范</p>
+<p>＊需强调Google Play除了市场图之外，另外还有一张Banner图。*</p>
+</blockquote>
+<h2 id="二、设计原则"><a href="#二、设计原则" class="headerlink" title="二、设计原则"></a><a href="#二、设计原则" title="二、设计原则"></a>二、设计原则</h2><p>应用市场存在的目的，是<strong>方便与驱使用户下载应用的行为</strong>。那么市场图存在的意义，就是<strong>帮助用户更好地了解产品属性、产品定位</strong>和<strong>产品的功能</strong>。</p>
+<p>那么要设计出优秀的应用市场图，需要了解以下<strong>七大设计原则</strong>：</p>
+<h3 id="1、首屏原则"><a href="#1、首屏原则" class="headerlink" title="1、首屏原则"></a>1、首屏原则</h3><p>在选择应用时，进入应用市场映入眼帘的必定是<strong>首屏图片</strong>，在同行业竞品竞争激烈，同质化严重的现今，对于用户来说，怎么样在几百上千款应用中挑出喜欢的，必然是要有所不同甚至让人耳目一新。<strong>除了利用更加出彩的设计作为首屏，还可以使用宣传视频作为首屏</strong>。</p>
+<p><a href="https://ws2.sinaimg.cn/large/006tKfTcgy1filzlp82taj30rs0gokj1.jpg" target="_blank" rel="noopener"><img src="https://ws2.sinaimg.cn/large/006tKfTcgy1filzlp82taj30rs0gokj1.jpg" alt=""></a></p>
+<p>（以视频为首屏的百度、抖音）</p>
+<p><strong>作用：利用最短时间吸引用户关注。</strong></p>
+<h3 id="2、亮点原则（重点）"><a href="#2、亮点原则（重点）" class="headerlink" title="2、亮点原则（重点）"></a>2、亮点原则（重点）</h3><p>当用户选择进入应用的详情页时，必然是对应用产生了兴趣，这时候用户所关心的是能否获取想要的信息，亮点原则是突出产品亮点，<strong>“能用两个字说完的特性，就尽量不要写两句话”，用户的时间很宝贵，尊重用户时间的同时，也为产品自身创造了不错的自我介绍时间。</strong></p>
+<p><a href="https://ws4.sinaimg.cn/large/006tKfTcgy1filzlqc4j8j30rs0gonom.jpg" target="_blank" rel="noopener"><img src="https://ws4.sinaimg.cn/large/006tKfTcgy1filzlqc4j8j30rs0gonom.jpg" alt=""></a></p>
+<p><strong>作用：让用户捕捉重点，便于用户了解产品核心功能特性，收获有价值的信息。</strong></p>
+<h3 id="3、简洁原则"><a href="#3、简洁原则" class="headerlink" title="3、简洁原则"></a>3、简洁原则</h3><p>化繁为简是设计大势所趋，其重点是为了更加强调重点信息，<strong>摒弃冗杂的无价值信息，更加高效地引导用户完成浏览、下载等操作。</strong></p>
+<p>如App上架标题，迭代的更新说明等。</p>
+<p><a href="https://ws4.sinaimg.cn/large/006tKfTcgy1filzlregt9j30v10d5tag.jpg" target="_blank" rel="noopener"><img src="https://ws4.sinaimg.cn/large/006tKfTcgy1filzlregt9j30v10d5tag.jpg" alt=""></a></p>
+<p>（微信读书）</p>
+<p><strong>作用：增加内容信息的易读性与可读性，不易使用户视觉疲劳。</strong></p>
+<h3 id="4、对比原则"><a href="#4、对比原则" class="headerlink" title="4、对比原则"></a>4、对比原则</h3><p>对比是设计的基本原则之一，是区分类似与不同的基本方法。<strong>文字与截图的对比，背景与元素的对比</strong>，正如展示时是重界面展示，还是重文案说明的区分，推荐可以去看看<strong>格式塔心理美学</strong>设计。</p>
+<p><a href="https://ws2.sinaimg.cn/large/006tKfTcgy1filzlt58x2j30rs0f01kx.jpg" target="_blank" rel="noopener"><img src="https://ws2.sinaimg.cn/large/006tKfTcgy1filzlt58x2j30rs0f01kx.jpg" alt=""></a></p>
+<p>（Prisma：字与元素的对比）</p>
+<p><strong>作用：对比和等同是视觉展示的重要部分，是用户明确信息展示的重要方式。</strong></p>
+<h3 id="5、统一原则"><a href="#5、统一原则" class="headerlink" title="5、统一原则"></a>5、统一原则</h3><p>统一原则是UI设计中最常见，也是最基本的原则，这点不做详解，试想下大阅兵如果大家穿着五颜六色，步伐杂乱无章，那画面一定辣眼睛（题外话）。这里的统一原则包括<strong>风格统一、样式统一、字体统一等。</strong></p>
+<p><a href="https://ws3.sinaimg.cn/large/006tKfTcgy1filzltivo5j30v10d9wgr.jpg" target="_blank" rel="noopener"><img src="https://ws3.sinaimg.cn/large/006tKfTcgy1filzltivo5j30v10d9wgr.jpg" alt=""></a></p>
+<p>（得到）</p>
+<p><strong>作用：视觉上的统一，能增加易读性，不易增强阅读难度。</strong></p>
+<h3 id="6、配色原则"><a href="#6、配色原则" class="headerlink" title="6、配色原则"></a>6、配色原则</h3><p>色彩心理学对于人所产生的影响这里就不做详解，有兴趣的朋友可以自行翻译书籍，这里推荐《色彩心理学》《设计色彩》《FPA性格色彩》等书籍，相信能对大家色彩搭配有所帮助。</p>
+<p><a href="https://ws2.sinaimg.cn/large/006tKfTcgy1filzltzv5sj30uw0d7jv2.jpg" target="_blank" rel="noopener"><img src="https://ws2.sinaimg.cn/large/006tKfTcgy1filzltzv5sj30uw0d7jv2.jpg" alt=""></a></p>
+<p>（咕噜咕噜）</p>
+<p><strong>作用：通过色彩抓住用户心理活动，满足用户心理需求。</strong></p>
+<h3 id="7、元素原则"><a href="#7、元素原则" class="headerlink" title="7、元素原则"></a>7、元素原则</h3><p>擅长<strong>利用元素丰富画面</strong>的设计师必定是个好设计，或者是个老司机，元素对于界面的影响是如虎添翼，并不是说不添加元素就是差的设计，只是某些模块利用元素来进行用户<strong>视觉聚焦</strong>，能够达到不错的效果。</p>
+<p><a href="https://ws4.sinaimg.cn/large/006tKfTcgy1filzluv5gdj30ur0d0adn.jpg" target="_blank" rel="noopener"><img src="https://ws4.sinaimg.cn/large/006tKfTcgy1filzluv5gdj30ur0d0adn.jpg" alt=""></a></p>
+<p>（微博）</p>
+<p><strong>作用：元素能够丰富画面，让画面更加活泼。</strong></p>
+<h2 id="三、设计样式"><a href="#三、设计样式" class="headerlink" title="三、设计样式"></a><a href="#三、设计样式" title="三、设计样式"></a>三、设计样式</h2><p>这里只讲常见的6种样式，不予评价优劣。</p>
+<h3 id="1、原生界面"><a href="#1、原生界面" class="headerlink" title="1、原生界面"></a>1、原生界面</h3><p>——仅应用内截图界面</p>
+<p><a href="https://ws3.sinaimg.cn/large/006tKfTcgy1filzlv7x5zj30un0d1q66.jpg" target="_blank" rel="noopener"><img src="https://ws3.sinaimg.cn/large/006tKfTcgy1filzlv7x5zj30un0d1q66.jpg" alt=""></a></p>
+<p>（Dribbble）</p>
+<h3 id="2、截图-说明"><a href="#2、截图-说明" class="headerlink" title="2、截图+说明"></a>2、截图+说明</h3><p>——应用内截图配上相关的说明文案</p>
+<p><a href="https://ws1.sinaimg.cn/large/006tKfTcgy1filzlwdyfej30ux0dan0q.jpg" target="_blank" rel="noopener"><img src="https://ws1.sinaimg.cn/large/006tKfTcgy1filzlwdyfej30ux0dan0q.jpg" alt=""></a></p>
+<p>（美颜相机）</p>
+<h3 id="3、截图-手机框-说明（常用）"><a href="#3、截图-手机框-说明（常用）" class="headerlink" title="3、截图+手机框+说明（常用）"></a>3、截图+手机框+说明（常用）</h3><p>——戴上手机框，更贴近生活使用情景</p>
+<p><a href="https://ws3.sinaimg.cn/large/006tKfTcgy1filzlxih1jj30v30d2415.jpg" target="_blank" rel="noopener"><img src="https://ws3.sinaimg.cn/large/006tKfTcgy1filzlxih1jj30v30d2415.jpg" alt=""></a></p>
+<p>（QQ音乐）</p>
+<h3 id="4、截图-手机框-焦点-元素放大-说明（常用）"><a href="#4、截图-手机框-焦点-元素放大-说明（常用）" class="headerlink" title="4、截图+手机框+焦点/元素放大+说明（常用）"></a>4、截图+手机框+焦点/元素放大+说明（常用）</h3><p>——利用元素或者界面焦点来强调视觉主题中心</p>
+<p><a href="https://ws3.sinaimg.cn/large/006tKfTcgy1filzly8qrvj30my0cz0w6.jpg" target="_blank" rel="noopener"><img src="https://ws3.sinaimg.cn/large/006tKfTcgy1filzly8qrvj30my0cz0w6.jpg" alt=""></a></p>
+<p>（腾讯动漫）</p>
+<h3 id="5、跨屏界面"><a href="#5、跨屏界面" class="headerlink" title="5、跨屏界面"></a>5、跨屏界面</h3><p>——跨屏界面能够很好地吸引用户的关注，近几年比较火的设计，因为应用市场中一级导航展示的一般为前两个页面。</p>
+<p><a href="https://ws3.sinaimg.cn/large/006tKfTcgy1filzlzeodmj30ku0qy0xa.jpg" target="_blank" rel="noopener"><img src="https://ws3.sinaimg.cn/large/006tKfTcgy1filzlzeodmj30ku0qy0xa.jpg" alt=""></a></p>
+<p>（贴吧）</p>
+<h3 id="6、截图或元素的应用"><a href="#6、截图或元素的应用" class="headerlink" title="6、截图或元素的应用"></a>6、截图或元素的应用</h3><p>——直接采用功能性元素或者界面截图</p>
+<p><a href="https://ws4.sinaimg.cn/large/006tKfTcgy1filzlzzry0j30ku0scdlb.jpg" target="_blank" rel="noopener"><img src="https://ws4.sinaimg.cn/large/006tKfTcgy1filzlzzry0j30ku0scdlb.jpg" alt=""></a></p>
+<p>（bilibili）</p>
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a><a href="#总结" title="总结"></a>总结</h2><p>通过<strong>平台规范、设计原则与设计样式</strong>，能够更好地对应用市场图有更好的理解。在设计应用截图的时候，如果能先通过以上三点进行分析，那么相信你也能设计出不错的市场图，不过设计样式并不一定适用于所有应用，可酌情采纳。</p>
+<p>作者：JaylonG 一位对产品有着浓厚兴趣的UI/UX设计师。<div style="clear:both"></div><div class="cc"><p>The <a href="https://blog.naaln.com">Why·Liam·Blog</a> by <a href="https://www.naaln.com" target="_blank" rel="external">WhyLiam</a> is licensed under a <a href="http://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" rel="external">Creative Commons BY-NC-ND 4.0 International License</a>.</p><p>由<a href="https://www.naaln.com" target="_blank" rel="external">WhyLiam</a>创作并维护的<a href="https://blog.naaln.com">Why·Liam·Blog</a>采用创作共用<a href="http://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" rel="external">保留署名-非商业-禁止演绎4.0国际许可证</a>。</p><p>本文首发于<a href="https://blog.naaln.com">Why·Liam·Blog (https://blog.naaln.com)</a>，版权所有，侵权必究。</p><p>本文永久链接：<a href="https://blog.naaln.com/2017/08/capture-design-principles/">https://blog.naaln.com/2017/08/capture-design-principles/</a></p><p></p></div></p>
+
+      
+    </div>
+    
+    
+    
+
+    
+      <div>
+        <div id="wechat_subscriber" style="display: block; padding: 10px 0; margin: 20px auto; width: 100%; text-align: center">
+    <img id="wechat_subscriber_qcode" src="//ws1.sinaimg.cn/large/006tKfTcgy1fg8gpi7kaaj30by0by74i.jpg" alt="WHY·LIAM wechat" style="width: 200px; max-width: 100%;"/>
+    <div>记录生活，研究产品，分享设计，分析数据，讨论科技和商业，不定期扯淡。</div>
+</div>
+
+      </div>
+    
+
+    
+      <div>
+        <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+  <div>如果觉得我的文章对您有用，请随意打赏。您的支持将鼓励我继续创作！</div>
+  <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+    <span>打赏</span>
+  </button>
+  <div id="QR" style="display: none;">
+
+    
+      <div id="wechat" style="display: inline-block">
+        <img id="wechat_qr" src="//ws1.sinaimg.cn/mw690/006tNc79gy1fm7yqrau7mj30f00ezad5.jpg" alt="WHY·LIAM 微信支付"/>
+        <p>微信支付</p>
+      </div>
+    
+
+    
+      <div id="alipay" style="display: inline-block">
+        <img id="alipay_qr" src="//ww3.sinaimg.cn/mw690/48910e01gw1evkbfendrjj20ci0ci0uf.jpg" alt="WHY·LIAM 支付宝"/>
+        <p>支付宝</p>
+      </div>
+    
+
+    
+
+  </div>
+</div>
+
+      </div>
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/设计/" rel="tag"># 设计</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2017/08/what-augment-reality/" rel="next" title="畅想 AR 的应用场景">
+                <i class="fa fa-chevron-left"></i> 畅想 AR 的应用场景
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2017/08/alibaba-data-track-1/" rel="prev" title="阿里巴巴的日志采集分享（上）">
+                阿里巴巴的日志采集分享（上） <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+  
+    <div class="comments" id="comments">
+      <div id="SOHUCS"></div>
+    </div>
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+
+      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image"
+                src="//tva2.sinaimg.cn/crop.0.0.998.998.180/48910e01gw1ef5p6etuzdj20rs0rs771.jpg"
+                alt="WHY·LIAM" />
+            
+              <p class="site-author-name" itemprop="name">WHY·LIAM</p>
+              <p class="site-description motion-element" itemprop="description"></p>
+          </div>
+
+          
+            <nav class="site-state motion-element">
+              
+                <div class="site-state-item site-state-posts">
+                
+                  <a href="/archives/">
+                
+                    <span class="site-state-item-count">721</span>
+                    <span class="site-state-item-name">日志</span>
+                  </a>
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-categories">
+                  <a href="/categories/index.html">
+                    <span class="site-state-item-count">4</span>
+                    <span class="site-state-item-name">分类</span>
+                  </a>
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-tags">
+                  <a href="/tags/index.html">
+                    <span class="site-state-item-count">67</span>
+                    <span class="site-state-item-name">标签</span>
+                  </a>
+                </div>
+              
+            </nav>
+          
+
+          
+            <div class="feed-link motion-element">
+              <a href="/atom.xml" rel="alternate">
+                <i class="fa fa-rss"></i>
+                RSS
+              </a>
+            </div>
+          
+
+          
+            <div class="links-of-author motion-element">
+                
+                  <span class="links-of-author-item">
+                    <a href="https://github.com/liszd" target="_blank" title="GitHub" rel="external nofollow">
+                      
+                        <i class="fa fa-fw fa-github"></i>GitHub</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="http://weibo.com/whyliam" target="_blank" title="微博" rel="external nofollow">
+                      
+                        <i class="fa fa-fw fa-weibo"></i>微博</a>
+                  </span>
+                
+            </div>
+          
+
+          
+          
+            <div class="cc-license motion-element" itemprop="license">
+              <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/" class="cc-opacity" target="_blank" rel="external nofollow">
+                <img src="/images/cc-by-nc-nd.svg" alt="Creative Commons" />
+              </a>
+            </div>
+          
+
+          
+          
+            <div class="links-of-blogroll motion-element links-of-blogroll-block">
+              <div class="links-of-blogroll-title">
+                <i class="fa  fa-fw fa-link"></i>
+                Links
+              </div>
+              <ul class="links-of-blogroll-list">
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="http://www.naaln.com/" title="纳兰主页" target="_blank">纳兰主页</a>
+                  </li>
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="http://photo.naaln.com/" title="纳兰相册" target="_blank">纳兰相册</a>
+                  </li>
+                
+              </ul>
+            </div>
+          
+
+          
+            
+          
+          
+
+        </div>
+      </section>
+
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; 2003 &mdash; <span itemprop="copyrightYear">2018</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">WHY·LIAM</span>
+
+  
+
+  
+</div>
+
+
+  
+
+
+
+  <div class="powered-by">由 <a class="theme-link" target="_blank" rel="external nofollow" href="https://hexo.io">Hexo</a> 强力驱动</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" rel="external nofollow" href="https://github.com/theme-next/hexo-theme-next">NexT.Muse</a> v6.0.2</div>
+
+
+
+  <div class="footer-custom">Hosted by <a target="_blank" rel="external nofollow" href="https://pages.coding.me"><b>Coding Pages</b></a></div>
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=6.0.2"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=6.0.2"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=6.0.2"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=6.0.2"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=6.0.2"></script>
+
+
+
+  
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+  
+    <script type="text/javascript">
+    (function(){
+      var appid = 'cytklkKc0';
+      var conf = 'prod_b1dd516bbb7f3198591656f99d9ace80';
+      var width = window.innerWidth || document.documentElement.clientWidth;
+      if (width < 960) {
+      window.document.write('<script id="changyan_mobile_js" charset="utf-8" type="text/javascript" src="https://changyan.sohu.com/upload/mobile/wap-js/changyan_mobile.js?client_id=' + appid + '&conf=' + conf + '"><\/script>'); } else { var loadJs=function(d,a){var c=document.getElementsByTagName("head")[0]||document.head||document.documentElement;var b=document.createElement("script");b.setAttribute("type","text/javascript");b.setAttribute("charset","UTF-8");b.setAttribute("src",d);if(typeof a==="function"){if(window.attachEvent){b.onreadystatechange=function(){var e=b.readyState;if(e==="loaded"||e==="complete"){b.onreadystatechange=null;a()}}}else{b.onload=a}}c.appendChild(b)};loadJs("https://changyan.sohu.com/upload/changyan.js",function(){
+        window.changyan.api.config({appid:appid,conf:conf})});
+      }
+    })();
+    </script>
+    <script type="text/javascript" src="https://assets.changyan.sohu.com/upload/plugins/plugins.count.js"></script>
+  
+
+
+
+
+
+
+
+  
+
+
+
+
+  
+  
+  
+  <link rel="stylesheet" href="/lib/algolia-instant-search/instantsearch.min.css">
+
+  
+  
+  <script src="/lib/algolia-instant-search/instantsearch.min.js"></script>
+  
+
+  <script src="/js/src/algolia-search.js?v=6.0.2"></script>
+
+
+
+  
+
+  
+
+  
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';        
+    }
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>

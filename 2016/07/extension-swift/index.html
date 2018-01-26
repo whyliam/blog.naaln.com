@@ -1,0 +1,943 @@
+<!DOCTYPE html>
+
+
+
+
+<html class="theme-next muse" lang="zh-CN">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+  <meta name="google-site-verification" content="ByVfaP_E3b9ZYRUGhNAUFSQKL8mJQwUehpQwoxJ5n-c" />
+
+
+
+  <meta name="msvalidate.01" content="DB220684085BEDBD2E49E8E942534B1F" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=6.0.2" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon-next.png?v=6.0.2">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32-next.png?v=6.0.2">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16-next.png?v=6.0.2">
+
+
+  <link rel="mask-icon" href="/favicon/logo.svg?v=6.0.2" color="#222">
+
+
+
+
+
+
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Muse',
+    version: '6.0.2',
+    sidebar: {"position":"right","display":"hide","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: false,
+    fastclick: false,
+    lazyload: false,
+    tabs: true,
+    motion: {"enable":false,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    algolia: {
+      applicationID: 'XILKIWTAM9',
+      apiKey: '8c01137fe05d281ccd531a0ec622322a',
+      indexName: 'blog',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"搜索文章","hits_empty":"啊，找不到 ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+  
+
+
+
+
+  
+  <meta name="keywords" content="Why, Liam, 李承璋" />
+
+
+<meta name="description" content="13.times &amp;#123; puts &apos;hello world&apos; &amp;#125; 这是一条Ruby语句，它会打印“hello world”三次，意图清晰，语法简洁。 如果你是C或者Java等语言的使用者，而从未接触过Ruby，此时是不是有种打开了新世界的大门的感觉^_^。反正当初我刚接触Ruby那会儿时常会感叹，啊原来代码还可以这么写。。。Ruby的灵活与优雅当然远不仅于此，这里就不展开了。今天">
+<meta name="keywords" content="Why, Liam, 李承璋">
+<meta property="og:type" content="article">
+<meta property="og:title" content="理解Swift中Extension类型">
+<meta property="og:url" content="https://blog.naaln.com/2016/07/extension-swift/index.html">
+<meta property="og:site_name" content="Why·Liam·Blog">
+<meta property="og:description" content="13.times &amp;#123; puts &apos;hello world&apos; &amp;#125; 这是一条Ruby语句，它会打印“hello world”三次，意图清晰，语法简洁。 如果你是C或者Java等语言的使用者，而从未接触过Ruby，此时是不是有种打开了新世界的大门的感觉^_^。反正当初我刚接触Ruby那会儿时常会感叹，啊原来代码还可以这么写。。。Ruby的灵活与优雅当然远不仅于此，这里就不展开了。今天">
+<meta property="og:locale" content="zh-CN">
+<meta property="og:image" content="https://ww1.sinaimg.cn/large/006tNc79gy1fcbm9b3up6j30ku112whe.jpg">
+<meta property="og:updated_time" content="2017-09-03T09:15:57.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="理解Swift中Extension类型">
+<meta name="twitter:description" content="13.times &amp;#123; puts &apos;hello world&apos; &amp;#125; 这是一条Ruby语句，它会打印“hello world”三次，意图清晰，语法简洁。 如果你是C或者Java等语言的使用者，而从未接触过Ruby，此时是不是有种打开了新世界的大门的感觉^_^。反正当初我刚接触Ruby那会儿时常会感叹，啊原来代码还可以这么写。。。Ruby的灵活与优雅当然远不仅于此，这里就不展开了。今天">
+<meta name="twitter:image" content="https://ww1.sinaimg.cn/large/006tNc79gy1fcbm9b3up6j30ku112whe.jpg">
+
+
+
+  <link rel="alternate" href="/atom.xml" title="Why·Liam·Blog" type="application/atom+xml" />
+
+
+
+
+  <link rel="canonical" href="https://blog.naaln.com/2016/07/extension-swift/"/>
+
+
+  <title>理解Swift中Extension类型 | Why·Liam·Blog</title>
+  
+
+
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-47966442-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-47966442-2');
+</script>
+
+
+
+
+
+
+  
+<script src="//msite.baidu.com/sdk/c.js?appid=1586840953097399"></script>
+<link rel="canonical" href="https://blog.naaln.com/2016/07/extension-swift/"/>
+<script type="application/ld+json">
+    {
+        "@context": "https://ziyuan.baidu.com/contexts/cambrian.jsonld",
+        "@id": "https://blog.naaln.com/2016/07/extension-swift/",
+        "appid": "1586840953097399",
+        "title": "理解Swift中Extension类型",
+        "images": [
+            ""
+            ],
+        "description": "",
+        "pubDate": "",
+        "upDate": "",
+        "lrDate": ""
+    }
+</script>
+
+  <noscript>
+  <style type="text/css">
+    .use-motion .motion-element,
+    .use-motion .brand,
+    .use-motion .menu-item,
+    .sidebar-inner,
+    .use-motion .post-block,
+    .use-motion .pagination,
+    .use-motion .comments,
+    .use-motion .post-header,
+    .use-motion .post-body,
+    .use-motion .collection-title { opacity: initial; }
+
+    .use-motion .logo,
+    .use-motion .site-title,
+    .use-motion .site-subtitle {
+      opacity: initial;
+      top: initial;
+    }
+
+    .use-motion {
+      .logo-line-before i { left: initial; }
+      .logo-line-after i { right: initial; }
+    }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-CN">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-right page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"> <div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Why·Liam·Blog</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <h1 class="site-subtitle" itemprop="description">人生若如初見</h1>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            <i class="menu-item-icon fa fa-fw fa-home"></i> <br />首页</a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />归档</a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-technology">
+          <a href="/categories/technology/" rel="section">
+            <i class="menu-item-icon fa fa-fw fa-code"></i> <br />技术</a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-jottings">
+          <a href="/categories/jottings/" rel="section">
+            <i class="menu-item-icon fa fa-fw fa-language"></i> <br />随笔</a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tour">
+          <a href="/categories/tour/" rel="section">
+            <i class="menu-item-icon fa fa-fw fa-globe"></i> <br />旅游</a>
+        </li>
+      
+
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br />搜索</a>
+        </li>
+      
+    </ul>
+  
+
+  
+    <div class="site-search">
+      
+  
+  <div class="algolia-popup popup search-popup">
+    <div class="algolia-search">
+      <div class="algolia-search-input-icon">
+        <i class="fa fa-search"></i>
+      </div>
+      <div class="algolia-search-input" id="algolia-search-input"></div>
+    </div>
+
+    <div class="algolia-results">
+      <div id="algolia-stats"></div>
+      <div id="algolia-hits"></div>
+      <div id="algolia-pagination" class="algolia-pagination"></div>
+    </div>
+
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+  </div>
+
+
+
+
+    </div>
+  
+</nav>
+
+
+  
+
+
+
+ </div>
+    </header>
+
+    
+
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://blog.naaln.com/2016/07/extension-swift/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="WHY·LIAM">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="//tva2.sinaimg.cn/crop.0.0.998.998.180/48910e01gw1ef5p6etuzdj20rs0rs771.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Why·Liam·Blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h2 class="post-title" itemprop="name headline">理解Swift中Extension类型</h2>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2016-07-26T10:32:08+08:00">2016-07-26</time>
+            
+
+            
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/technology/" itemprop="url" rel="index"><span itemprop="name">技术</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+              <span class="post-meta-divider">|</span>
+              <span class="post-meta-item-icon">
+                <i class="fa fa-comment-o"></i>
+              </span>
+              
+                <a href="/2016/07/extension-swift/#SOHUCS" itemprop="discussionUrl">
+                  <span id="changyan_count_unit" class="post-comments-count hc-comment-count" data-xid="2016/07/extension-swift/" itemprop="commentsCount"></span>
+                </a>
+              
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">3</span><span class="selector-class">.times</span> &#123; puts <span class="string">'hello world'</span> &#125;</span><br></pre></td></tr></table></figure>
+<p>这是一条Ruby语句，它会打印<code>“hello world”</code>三次，意图清晰，语法简洁。</p>
+<p>如果你是C或者Java等语言的使用者，而从未接触过Ruby，此时是不是有种打开了新世界的大门的感觉^_^。反正当初我刚接触Ruby那会儿时常会感叹，啊原来代码还可以这么写。。。Ruby的灵活与优雅当然远不仅于此，这里就不展开了。今天的重点是，Swift也可以这么写。</p>
+<p>首先我们要明确，Ruby之所以可以这么写是因为它是一个纯面向对象的语言，在Ruby的世界中，一切皆对象，所有的事物都有一个共同的祖先——Object。3的类型是Fixnum,当然也是一个对象，所以它有自己的方法。times就是一个方法，可以看出应该是接收一个代码块（本例中为<code>{puts &#39;hello world&#39;}</code>），然后调用它self（本例中self即为3）次。</p>
+<p>而在Swift中，Int是一个struct(结构体)，并不是个class。但是Swift中的struct与别的语言中的struct不同的是，struct内部也可以定义方法。所以条件满足了，现在就差个times方法了。</p>
+<p>嗯，很遗憾Swift的Int并没有times方法。不过没关系，这个时候<code>extension</code>就派上用场了。没有我们就自己写一个嘛，私人化定制，满足一切突如其来的需求。先上代码好了：<br>定义：</p>
+<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">extension</span> <span class="title">Int</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">func</span> <span class="title">times</span><span class="params">(closure: <span class="params">()</span></span></span> -&gt; ()) &#123;</span><br><span class="line">       <span class="keyword">for</span> <span class="number">_</span> <span class="keyword">in</span> <span class="number">1</span>...<span class="keyword">self</span> &#123;</span><br><span class="line">            closure()</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>调用： <code>3.times { println(&quot;hello world&quot;) }</code></p>
+<p>是不是跟开头Ruby语句有异曲同工之妙？<code>extension</code>不仅可以扩展方法，还可以扩展计算属性。比如《The Swift Programming Language》中的一个例子：</p>
+<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">extension</span>​ ​<span class="title">Double</span>​ </span>&#123;</span><br><span class="line">​    ​<span class="keyword">var</span>​ ​km​: ​<span class="type">Double</span>​ &#123; ​<span class="keyword">return</span>​ ​<span class="keyword">self</span>​ * ​<span class="number">1_000.0</span>​ &#125;</span><br><span class="line">​    ​<span class="keyword">var</span>​ ​m​: ​<span class="type">Double</span>​ &#123; ​<span class="keyword">return</span>​ ​<span class="keyword">self</span>​ &#125;</span><br><span class="line">​    ​<span class="keyword">var</span>​ ​cm​: ​<span class="type">Double</span>​ &#123; ​<span class="keyword">return</span>​ ​<span class="keyword">self</span>​ / ​<span class="number">100.0</span>​ &#125;</span><br><span class="line">​    ​<span class="keyword">var</span>​ ​mm​: ​<span class="type">Double</span>​ &#123; ​<span class="keyword">return</span>​ ​<span class="keyword">self</span>​ / ​<span class="number">1_000.0</span>​ &#125;</span><br><span class="line">​    ​<span class="keyword">var</span>​ ​ft​: ​<span class="type">Double</span>​ &#123; ​<span class="keyword">return</span>​ ​<span class="keyword">self</span>​ / ​<span class="number">3.28084</span>​ &#125;</span><br><span class="line">​&#125;</span><br><span class="line">​<span class="keyword">let</span>​ ​oneInch​ = ​<span class="number">25.4</span>​.​mm</span><br><span class="line">​<span class="built_in">println</span>​(​<span class="string">"One inch is ​<span class="subst">\(​oneInch​)</span>​ meters"</span>​)</span><br><span class="line">​<span class="comment">// prints "One inch is 0.0254 meters"</span></span><br><span class="line">​<span class="keyword">let</span>​ ​threeFeet​ = ​<span class="number">3</span>​.​ft</span><br><span class="line">​<span class="built_in">println</span>​(​<span class="string">"Three feet is ​<span class="subst">\(​threeFeet​)</span>​ meters"</span>​)</span><br><span class="line">​<span class="comment">// prints "Three feet is 0.914399970739201 meters”</span></span><br></pre></td></tr></table></figure>
+<p><code>extension</code>在实际的开发中可以有很多应用，使用得当能显著提高代码的可读性，平常我们自己写的大多数辅助类其实都可以转化为<code>extension</code>。譬如我最近在自己的项目中给被点击的UIView（比如button）写了一个小动画，点击了之后组件会上浮一下，并且同时会有一下阴影效果。<br>定义：</p>
+<figure class="highlight objectivec"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">extension <span class="built_in">UIView</span> &#123;</span><br><span class="line">    func animateWhenClicked() &#123;</span><br><span class="line">        <span class="keyword">self</span>.backgroundColor = <span class="built_in">UIColor</span>(white: <span class="number">0.9</span>, alpha: <span class="number">0.5</span>)</span><br><span class="line">        <span class="keyword">self</span>.layer.transform = <span class="built_in">CATransform3DMakeScale</span>(<span class="number">1</span>, <span class="number">1</span>, <span class="number">0</span>)</span><br><span class="line">        <span class="built_in">UIView</span>.animateWithDuration(<span class="number">0.9</span>, animations: &#123;</span><br><span class="line">            <span class="keyword">self</span>.backgroundColor = <span class="built_in">UIColor</span>.whiteColor()</span><br><span class="line">            <span class="keyword">self</span>.layer.transform = <span class="built_in">CATransform3DMakeTranslation</span>(<span class="number">1</span>, <span class="number">1</span>, <span class="number">1</span>)</span><br><span class="line">        &#125;)</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>使用（仅点击动画部分代码）：</p>
+<figure class="highlight less"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">button</span><span class="selector-class">.addTarget</span>(viewCtrl, <span class="attribute">action</span>: <span class="string">"clicked:"</span>, <span class="attribute">forControlEvents</span>: .TouchUpInside)</span><br><span class="line"><span class="selector-tag">func</span> <span class="selector-tag">clicked</span>(<span class="attribute">sender</span>: UIButton) &#123;</span><br><span class="line">    <span class="selector-tag">sender</span><span class="selector-class">.superview</span>!<span class="selector-class">.animateWhenClicked</span>()</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p><img src="https://ww1.sinaimg.cn/large/006tNc79gy1fcbm9b3up6j30ku112whe.jpg" alt=""></p>
+<p>大概就是右上角的效果，呃，静态图看不出来，各位要是有兴趣可以拿我的扩展方法然后自己初始化个Button去跑跑看(直接<code>sender.animateWhenClicked()</code>就好，不用<code>superview)</code>。因为我在项目中的Button是一个自定义的贪婪Button，只要点击Button的父视图就会响应点击事件,所以是Button的superview调用了animateWhenClicked，这也是我把这个动画扩展到UIView而不是UIButton的原因。</p>
+<p>我个人很喜欢<code>extension</code>，平常也经常使用。<code>extension</code>也可用于后期项目维护，可以在不修改旧代码的前提下扩展旧代码的功能。而且对于<code>NSObject</code>的子类或者有dynamic标记的方法，利用扩展还可以在运行时对某些方法的实现进行替换，类似于OC的Swizzle，今天就不展开了，下次有空继续。</p>
+<p>文／Sheepy</p>
+<p>原文链接：<a href="http://www.jianshu.com/p/f41bf33fac0b" target="_blank" rel="noopener">http://www.jianshu.com/p/f41bf33fac0b</a><div style="clear:both"></div><div class="cc"><p>The <a href="https://blog.naaln.com">Why·Liam·Blog</a> by <a href="https://www.naaln.com" target="_blank" rel="external">WhyLiam</a> is licensed under a <a href="http://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" rel="external">Creative Commons BY-NC-ND 4.0 International License</a>.</p><p>由<a href="https://www.naaln.com" target="_blank" rel="external">WhyLiam</a>创作并维护的<a href="https://blog.naaln.com">Why·Liam·Blog</a>采用创作共用<a href="http://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" rel="external">保留署名-非商业-禁止演绎4.0国际许可证</a>。</p><p>本文首发于<a href="https://blog.naaln.com">Why·Liam·Blog (https://blog.naaln.com)</a>，版权所有，侵权必究。</p><p>本文永久链接：<a href="https://blog.naaln.com/2016/07/extension-swift/">https://blog.naaln.com/2016/07/extension-swift/</a></p><p></p></div></p>
+
+      
+    </div>
+    
+    
+    
+
+    
+      <div>
+        <div id="wechat_subscriber" style="display: block; padding: 10px 0; margin: 20px auto; width: 100%; text-align: center">
+    <img id="wechat_subscriber_qcode" src="//ws1.sinaimg.cn/large/006tKfTcgy1fg8gpi7kaaj30by0by74i.jpg" alt="WHY·LIAM wechat" style="width: 200px; max-width: 100%;"/>
+    <div>记录生活，研究产品，分享设计，分析数据，讨论科技和商业，不定期扯淡。</div>
+</div>
+
+      </div>
+    
+
+    
+      <div>
+        <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+  <div>如果觉得我的文章对您有用，请随意打赏。您的支持将鼓励我继续创作！</div>
+  <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+    <span>打赏</span>
+  </button>
+  <div id="QR" style="display: none;">
+
+    
+      <div id="wechat" style="display: inline-block">
+        <img id="wechat_qr" src="//ws1.sinaimg.cn/mw690/006tNc79gy1fm7yqrau7mj30f00ezad5.jpg" alt="WHY·LIAM 微信支付"/>
+        <p>微信支付</p>
+      </div>
+    
+
+    
+      <div id="alipay" style="display: inline-block">
+        <img id="alipay_qr" src="//ww3.sinaimg.cn/mw690/48910e01gw1evkbfendrjj20ci0ci0uf.jpg" alt="WHY·LIAM 支付宝"/>
+        <p>支付宝</p>
+      </div>
+    
+
+    
+
+  </div>
+</div>
+
+      </div>
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2016/07/optional-type-in-swift/" rel="next" title="理解Swift中Optional类型">
+                <i class="fa fa-chevron-left"></i> 理解Swift中Optional类型
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2016/07/tuple-struct-enum-swift/" rel="prev" title="Swift中元组,结构体,枚举之间的区别">
+                Swift中元组,结构体,枚举之间的区别 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+  
+    <div class="comments" id="comments">
+      <div id="SOHUCS"></div>
+    </div>
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+
+      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image"
+                src="//tva2.sinaimg.cn/crop.0.0.998.998.180/48910e01gw1ef5p6etuzdj20rs0rs771.jpg"
+                alt="WHY·LIAM" />
+            
+              <p class="site-author-name" itemprop="name">WHY·LIAM</p>
+              <p class="site-description motion-element" itemprop="description"></p>
+          </div>
+
+          
+            <nav class="site-state motion-element">
+              
+                <div class="site-state-item site-state-posts">
+                
+                  <a href="/archives/">
+                
+                    <span class="site-state-item-count">721</span>
+                    <span class="site-state-item-name">日志</span>
+                  </a>
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-categories">
+                  <a href="/categories/index.html">
+                    <span class="site-state-item-count">4</span>
+                    <span class="site-state-item-name">分类</span>
+                  </a>
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-tags">
+                  <a href="/tags/index.html">
+                    <span class="site-state-item-count">67</span>
+                    <span class="site-state-item-name">标签</span>
+                  </a>
+                </div>
+              
+            </nav>
+          
+
+          
+            <div class="feed-link motion-element">
+              <a href="/atom.xml" rel="alternate">
+                <i class="fa fa-rss"></i>
+                RSS
+              </a>
+            </div>
+          
+
+          
+            <div class="links-of-author motion-element">
+                
+                  <span class="links-of-author-item">
+                    <a href="https://github.com/liszd" target="_blank" title="GitHub" rel="external nofollow">
+                      
+                        <i class="fa fa-fw fa-github"></i>GitHub</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="http://weibo.com/whyliam" target="_blank" title="微博" rel="external nofollow">
+                      
+                        <i class="fa fa-fw fa-weibo"></i>微博</a>
+                  </span>
+                
+            </div>
+          
+
+          
+          
+            <div class="cc-license motion-element" itemprop="license">
+              <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/" class="cc-opacity" target="_blank" rel="external nofollow">
+                <img src="/images/cc-by-nc-nd.svg" alt="Creative Commons" />
+              </a>
+            </div>
+          
+
+          
+          
+            <div class="links-of-blogroll motion-element links-of-blogroll-block">
+              <div class="links-of-blogroll-title">
+                <i class="fa  fa-fw fa-link"></i>
+                Links
+              </div>
+              <ul class="links-of-blogroll-list">
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="http://www.naaln.com/" title="纳兰主页" target="_blank">纳兰主页</a>
+                  </li>
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="http://photo.naaln.com/" title="纳兰相册" target="_blank">纳兰相册</a>
+                  </li>
+                
+              </ul>
+            </div>
+          
+
+          
+            
+          
+          
+
+        </div>
+      </section>
+
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; 2003 &mdash; <span itemprop="copyrightYear">2018</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">WHY·LIAM</span>
+
+  
+
+  
+</div>
+
+
+  
+
+
+
+  <div class="powered-by">由 <a class="theme-link" target="_blank" rel="external nofollow" href="https://hexo.io">Hexo</a> 强力驱动</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" rel="external nofollow" href="https://github.com/theme-next/hexo-theme-next">NexT.Muse</a> v6.0.2</div>
+
+
+
+  <div class="footer-custom">Hosted by <a target="_blank" rel="external nofollow" href="https://pages.coding.me"><b>Coding Pages</b></a></div>
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=6.0.2"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=6.0.2"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=6.0.2"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=6.0.2"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=6.0.2"></script>
+
+
+
+  
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+  
+    <script type="text/javascript">
+    (function(){
+      var appid = 'cytklkKc0';
+      var conf = 'prod_b1dd516bbb7f3198591656f99d9ace80';
+      var width = window.innerWidth || document.documentElement.clientWidth;
+      if (width < 960) {
+      window.document.write('<script id="changyan_mobile_js" charset="utf-8" type="text/javascript" src="https://changyan.sohu.com/upload/mobile/wap-js/changyan_mobile.js?client_id=' + appid + '&conf=' + conf + '"><\/script>'); } else { var loadJs=function(d,a){var c=document.getElementsByTagName("head")[0]||document.head||document.documentElement;var b=document.createElement("script");b.setAttribute("type","text/javascript");b.setAttribute("charset","UTF-8");b.setAttribute("src",d);if(typeof a==="function"){if(window.attachEvent){b.onreadystatechange=function(){var e=b.readyState;if(e==="loaded"||e==="complete"){b.onreadystatechange=null;a()}}}else{b.onload=a}}c.appendChild(b)};loadJs("https://changyan.sohu.com/upload/changyan.js",function(){
+        window.changyan.api.config({appid:appid,conf:conf})});
+      }
+    })();
+    </script>
+    <script type="text/javascript" src="https://assets.changyan.sohu.com/upload/plugins/plugins.count.js"></script>
+  
+
+
+
+
+
+
+
+  
+
+
+
+
+  
+  
+  
+  <link rel="stylesheet" href="/lib/algolia-instant-search/instantsearch.min.css">
+
+  
+  
+  <script src="/lib/algolia-instant-search/instantsearch.min.js"></script>
+  
+
+  <script src="/js/src/algolia-search.js?v=6.0.2"></script>
+
+
+
+  
+
+  
+
+  
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';        
+    }
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>

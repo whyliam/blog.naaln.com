@@ -1,0 +1,1005 @@
+<!DOCTYPE html>
+
+
+
+
+<html class="theme-next muse" lang="zh-CN">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+  <meta name="google-site-verification" content="ByVfaP_E3b9ZYRUGhNAUFSQKL8mJQwUehpQwoxJ5n-c" />
+
+
+
+  <meta name="msvalidate.01" content="DB220684085BEDBD2E49E8E942534B1F" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=6.0.2" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon-next.png?v=6.0.2">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32-next.png?v=6.0.2">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16-next.png?v=6.0.2">
+
+
+  <link rel="mask-icon" href="/favicon/logo.svg?v=6.0.2" color="#222">
+
+
+
+
+
+
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Muse',
+    version: '6.0.2',
+    sidebar: {"position":"right","display":"hide","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: false,
+    fastclick: false,
+    lazyload: false,
+    tabs: true,
+    motion: {"enable":false,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    algolia: {
+      applicationID: 'XILKIWTAM9',
+      apiKey: '8c01137fe05d281ccd531a0ec622322a',
+      indexName: 'blog',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"搜索文章","hits_empty":"啊，找不到 ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+  
+
+
+
+
+  
+  <meta name="keywords" content="Why, Liam, 李承璋" />
+
+
+<meta name="description" content="腾讯善于做产品，世人皆知。但其实在腾讯内部，很少提“产品”和“功能”。 腾讯谈的是“服务”和“特性”。 腾讯内部永远不谈，我要做一个产品，它要包括哪些功能。 腾讯谈的是，我要提供一个服务，这个服务有哪些特性，它的整体服务流程是怎样的，它的整体服务成本是多少。 好吧，以一台ATM机为例。 第一个问题：ATM机提供什么服务？ATM机的核心服务：取现金。 第二个问题：一台ATM机的设计，有哪些特性？在">
+<meta name="keywords" content="Why, Liam, 李承璋">
+<meta property="og:type" content="article">
+<meta property="og:title" content="菜鸟产品经理还是有专业度的产品经理">
+<meta property="og:url" content="https://blog.naaln.com/2016/04/rookie-product-manager-is-a-professional-degree-of-product-manager/index.html">
+<meta property="og:site_name" content="Why·Liam·Blog">
+<meta property="og:description" content="腾讯善于做产品，世人皆知。但其实在腾讯内部，很少提“产品”和“功能”。 腾讯谈的是“服务”和“特性”。 腾讯内部永远不谈，我要做一个产品，它要包括哪些功能。 腾讯谈的是，我要提供一个服务，这个服务有哪些特性，它的整体服务流程是怎样的，它的整体服务成本是多少。 好吧，以一台ATM机为例。 第一个问题：ATM机提供什么服务？ATM机的核心服务：取现金。 第二个问题：一台ATM机的设计，有哪些特性？在">
+<meta property="og:locale" content="zh-CN">
+<meta property="og:image" content="http://mmbiz.qpic.cn/mmbiz/6RuXhviaqF5qUa54bm73iccGj36Cmy9R9dZyWhTYP9FHfrgUro3empuE67j9nBGaTyD6CnhuUBhFVIyB2NeIL1vw/0?tp=webp&wxfrom=5">
+<meta property="og:updated_time" content="2017-09-03T09:15:57.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="菜鸟产品经理还是有专业度的产品经理">
+<meta name="twitter:description" content="腾讯善于做产品，世人皆知。但其实在腾讯内部，很少提“产品”和“功能”。 腾讯谈的是“服务”和“特性”。 腾讯内部永远不谈，我要做一个产品，它要包括哪些功能。 腾讯谈的是，我要提供一个服务，这个服务有哪些特性，它的整体服务流程是怎样的，它的整体服务成本是多少。 好吧，以一台ATM机为例。 第一个问题：ATM机提供什么服务？ATM机的核心服务：取现金。 第二个问题：一台ATM机的设计，有哪些特性？在">
+<meta name="twitter:image" content="http://mmbiz.qpic.cn/mmbiz/6RuXhviaqF5qUa54bm73iccGj36Cmy9R9dZyWhTYP9FHfrgUro3empuE67j9nBGaTyD6CnhuUBhFVIyB2NeIL1vw/0?tp=webp&wxfrom=5">
+
+
+
+  <link rel="alternate" href="/atom.xml" title="Why·Liam·Blog" type="application/atom+xml" />
+
+
+
+
+  <link rel="canonical" href="https://blog.naaln.com/2016/04/rookie-product-manager-is-a-professional-degree-of-product-manager/"/>
+
+
+  <title>菜鸟产品经理还是有专业度的产品经理 | Why·Liam·Blog</title>
+  
+
+
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-47966442-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-47966442-2');
+</script>
+
+
+
+
+
+
+  
+<script src="//msite.baidu.com/sdk/c.js?appid=1586840953097399"></script>
+<link rel="canonical" href="https://blog.naaln.com/2016/04/rookie-product-manager-is-a-professional-degree-of-product-manager/"/>
+<script type="application/ld+json">
+    {
+        "@context": "https://ziyuan.baidu.com/contexts/cambrian.jsonld",
+        "@id": "https://blog.naaln.com/2016/04/rookie-product-manager-is-a-professional-degree-of-product-manager/",
+        "appid": "1586840953097399",
+        "title": "菜鸟产品经理还是有专业度的产品经理",
+        "images": [
+            ""
+            ],
+        "description": "",
+        "pubDate": "",
+        "upDate": "",
+        "lrDate": ""
+    }
+</script>
+
+  <noscript>
+  <style type="text/css">
+    .use-motion .motion-element,
+    .use-motion .brand,
+    .use-motion .menu-item,
+    .sidebar-inner,
+    .use-motion .post-block,
+    .use-motion .pagination,
+    .use-motion .comments,
+    .use-motion .post-header,
+    .use-motion .post-body,
+    .use-motion .collection-title { opacity: initial; }
+
+    .use-motion .logo,
+    .use-motion .site-title,
+    .use-motion .site-subtitle {
+      opacity: initial;
+      top: initial;
+    }
+
+    .use-motion {
+      .logo-line-before i { left: initial; }
+      .logo-line-after i { right: initial; }
+    }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-CN">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-right page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"> <div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Why·Liam·Blog</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <h1 class="site-subtitle" itemprop="description">人生若如初見</h1>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            <i class="menu-item-icon fa fa-fw fa-home"></i> <br />首页</a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />归档</a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-technology">
+          <a href="/categories/technology/" rel="section">
+            <i class="menu-item-icon fa fa-fw fa-code"></i> <br />技术</a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-jottings">
+          <a href="/categories/jottings/" rel="section">
+            <i class="menu-item-icon fa fa-fw fa-language"></i> <br />随笔</a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tour">
+          <a href="/categories/tour/" rel="section">
+            <i class="menu-item-icon fa fa-fw fa-globe"></i> <br />旅游</a>
+        </li>
+      
+
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br />搜索</a>
+        </li>
+      
+    </ul>
+  
+
+  
+    <div class="site-search">
+      
+  
+  <div class="algolia-popup popup search-popup">
+    <div class="algolia-search">
+      <div class="algolia-search-input-icon">
+        <i class="fa fa-search"></i>
+      </div>
+      <div class="algolia-search-input" id="algolia-search-input"></div>
+    </div>
+
+    <div class="algolia-results">
+      <div id="algolia-stats"></div>
+      <div id="algolia-hits"></div>
+      <div id="algolia-pagination" class="algolia-pagination"></div>
+    </div>
+
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+  </div>
+
+
+
+
+    </div>
+  
+</nav>
+
+
+  
+
+
+
+ </div>
+    </header>
+
+    
+
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://blog.naaln.com/2016/04/rookie-product-manager-is-a-professional-degree-of-product-manager/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="WHY·LIAM">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="//tva2.sinaimg.cn/crop.0.0.998.998.180/48910e01gw1ef5p6etuzdj20rs0rs771.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Why·Liam·Blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h2 class="post-title" itemprop="name headline">菜鸟产品经理还是有专业度的产品经理</h2>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2016-04-22T00:52:00+08:00">2016-04-22</time>
+            
+
+            
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/technology/" itemprop="url" rel="index"><span itemprop="name">技术</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+              <span class="post-meta-divider">|</span>
+              <span class="post-meta-item-icon">
+                <i class="fa fa-comment-o"></i>
+              </span>
+              
+                <a href="/2016/04/rookie-product-manager-is-a-professional-degree-of-product-manager/#SOHUCS" itemprop="discussionUrl">
+                  <span id="changyan_count_unit" class="post-comments-count hc-comment-count" data-xid="2016/04/rookie-product-manager-is-a-professional-degree-of-product-manager/" itemprop="commentsCount"></span>
+                </a>
+              
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p><img src="http://mmbiz.qpic.cn/mmbiz/6RuXhviaqF5qUa54bm73iccGj36Cmy9R9dZyWhTYP9FHfrgUro3empuE67j9nBGaTyD6CnhuUBhFVIyB2NeIL1vw/0?tp=webp&amp;wxfrom=5" alt="菜鸟产品经理还是有专业度的产品经理"></p>
+<p>腾讯善于做产品，世人皆知。但其实在腾讯内部，很少提“产品”和“功能”。</p>
+<p>腾讯谈的是“服务”和“特性”。</p>
+<p>腾讯内部永远不谈，我要做一个产品，它要包括哪些功能。</p>
+<p>腾讯谈的是，我要提供一个服务，这个服务有哪些特性，它的整体服务流程是怎样的，它的整体服务成本是多少。</p>
+<p>好吧，以一台ATM机为例。</p>
+<h3 id="第一个问题：ATM机提供什么服务？"><a href="#第一个问题：ATM机提供什么服务？" class="headerlink" title="第一个问题：ATM机提供什么服务？"></a>第一个问题：ATM机提供什么服务？</h3><p>ATM机的核心服务：取现金。</p>
+<h3 id="第二个问题：一台ATM机的设计，有哪些特性？"><a href="#第二个问题：一台ATM机的设计，有哪些特性？" class="headerlink" title="第二个问题：一台ATM机的设计，有哪些特性？"></a>第二个问题：一台ATM机的设计，有哪些特性？</h3><p>在这个问题上，大面积的菜鸟产品经理，顿时显出原形。</p>
+<p>菜鸟产品经理会用一副深刻观察与思考之后的专业态度来回答：ATM机的前端界面，是公司形象，还是操作提醒；从第一次操作，到拿到钞票，需要几步达成；提醒放在哪个环节出现，声音提醒还是字幕提醒；先取卡，还是先取钞……</p>
+<p>这些特性，叫显性特性。</p>
+<p>ATM机，还有关键特性。是隐形特性。</p>
+<p>比如，一台ATM机里要放20万现金。也就是说，如果一个银行提供100台ATM机，那么他要把2000万现金放在外面。所以，看似ATM机分流了银行的营业压力，提升了品牌曝光，同时也分流了公司的核心资源。</p>
+<p>因此，如何统计数据同步数据，支持决策，让ATM机发挥战略价值，同时不让资金过多闲置，是一台ATM机设计的隐形特性。也是核心服务。</p>
+<h3 id="第三个问题：一台ATM机，服务的全流程是什么？"><a href="#第三个问题：一台ATM机，服务的全流程是什么？" class="headerlink" title="第三个问题：一台ATM机，服务的全流程是什么？"></a>第三个问题：一台ATM机，服务的全流程是什么？</h3><p>作为一个用户体会到的一台ATM机的服务是，查卡，输密码，输金额，取钞，打印凭条，退卡。如果有问题，拨打服务热线。</p>
+<p>作为一个ATM机的服务提供者，为了让用户持续稳定的获得上述简单的服务，日常操作性的服务流程包括：</p>
+<ul>
+<li><p>现金管理：保证ATM机里随时有钱。包括了数据、现金出库、运送等复杂流程。</p>
+</li>
+<li><p>硬件管理：电源工作正常，打印机工作正常，打印机的纸、油墨耗材正常…</p>
+</li>
+<li><p>客服管理：遇到客户问题或者投诉的处理全流程。</p>
+</li>
+</ul>
+<p>这时，回到更重要的问题：战略问题。</p>
+<p><strong>银行为什么要提供ATM机的服务？</strong></p>
+<p>第一是为了分流营业网点的取现压力。第二是更多的品牌曝光机会。</p>
+<p>因此，每一台ATM机，对银行这个服务提供者来说，必须具备战略价值。</p>
+<p>这就是数据统计的运营意义，不单纯是让管理运营的人知道，某台机器没钱了，再不补现金进去，客户要投诉了。还要按照数据了解，这个服务点的设置，是否有足够的客流，是否达到战略要求。该增加服务，还是裁撤这个网点。</p>
+<p>因此，我们觉得象空气一样简单流畅的ATM机，正常运转的背后，有7个以上岗位，在保证它的持续稳定服务。</p>
+<p>如果以每次取款2元收入计，一台ATM机的总体成本回收期大约是10年。</p>
+<p>所以，以下特征的菜鸟，就别认为自己可以创业，然后陷入无限妄境了，让信任你的人，跟随你的人受苦了。</p>
+<p>过分强调显性特性的，菜鸟之中的最初级。过去，我最怕的就是听谁说，我们要改版了，新版哪天……显性特性很重要，但是显性特性救不了你。把核心资源与时间，放在一次次优化显性特性上，基本上是互联网初级从业者的狂热症。</p>
+<p>不能由衷有兴趣有热情地研究用户的，是没机会长大的菜鸟。</p>
+<p>我觉得腾讯内部以“服务”来定位自己做的每件事，真的高明！</p>
+<p>产品经理，往往觉得自己是乔布斯传人，大神的子孙。会以自己为中心，以自己的认知和感受来设计一个产品该是什么样子。</p>
+<p>而腾讯，只谈服务。</p>
+<p>服务是以服务对象的需求和满意度为中心，定义所做的一切。</p>
+<p>放下自己，研究服务对象。</p>
+<p>马化腾说产品经理每个月必须做10个用户调查,关注100个用户博客,收集反馈1000个用户体验。</p>
+<p>这是蹲马步一样的，腾讯产品经理基本功。日复一日，三年有功夫长在身上。</p>
+<p>马化腾说，产品经理不能为了自尊心而战。</p>
+<p>和产品菜鸟聊，他们会说“我认为”“我觉得”，用一个华丽的知识体系支撑他们日复一日闭门造车。</p>
+<p>而腾讯系的所有产品经理的描述，基本全部是“用户的使用视角是这样的”“用户的使用场景是这样的”“这个时候，用户的痛点是”。</p>
+<p>对整体服务流程没概念的，还是窝里的小菜鸟。</p>
+<p>菜鸟级的产品经理，往往认为自己做一个东东，丢到互联网上，奇迹就会发生。所以，他对一个产品的终极设想，是版本开发完毕后上线的一瞬间。就如同天真的小白少女，对爱情的终极设想就是穿上婚纱走向王子。</p>
+<p>而经过腾讯的系统训练的产品经理，非常清楚，第一个版本丢到互联网上，只是未来无尽服务，无尽优化的一个开始。</p>
+<p>接着无止尽的：</p>
+<ul>
+<li><p>数据反馈，优化特性，优化服务；</p>
+</li>
+<li><p>数据反馈，优化特性，优化服务；</p>
+</li>
+<li><p>数据反馈，优化特性，优化服务；</p>
+</li>
+<li><p>……</p>
+</li>
+<li><p>优过所有的对手。</p>
+</li>
+<li><p>打死所有的对手。</p>
+</li>
+</ul>
+<p>所以，创业者要自问再自问。</p>
+<ul>
+<li><p>我提供的到底是什么服务？这个服务是强需求，还是弱需求？</p>
+</li>
+<li><p>我有能力控制完整的服务流程，并保证输出品质吗？</p>
+</li>
+<li><p>我拥有提供这个服务的核心能力，并不断提升核心能力吗？</p>
+</li>
+</ul>
+<p>完整的服务流程清晰后，才能知道，这个团队的核心能力是完备的，还是有缺失？还是有重要缺失？</p>
+<p>一堆创业者的核心能力，就是把网站搭起来为止。</p>
+<p>ATM机提供服务的核心能力是钱。持续有现钞，才能维持基本面。</p>
+<p>而那些只是搭个网站界面的创业团队，是就做了个ATM机的空壳子，就认为自己提供ATM机服务了。</p>
+<p>如何持续稳定地，不断优化地，符合用户预期地，让用户从这里获得他要的服务？他说这是第二步。</p>
+<p>他说，我先融资，拿到钱，再考虑后面的问题。</p>
+<p>面对这样天真的创业者，我默默想：</p>
+<p>您这是过着二次童年，憧憬一个童话。</p>
+<p>可是，这里是互联网的成熟时代，是成熟的猎人的厮杀。</p>
+<hr>
+<p>转载：<a href="http://mp.weixin.qq.com/s?__biz=MjM5MjA4MjU4MQ==&amp;mid=201017426&amp;idx=1&amp;sn=f34e020e5438c3618e1956cbbf2f100f&amp;scene=0#rd" target="_blank" rel="noopener">菜鸟产品经理还是有专业度的产品经理</a></p>
+<div style="clear:both"></div><div class="cc"><p>The <a href="https://blog.naaln.com">Why·Liam·Blog</a> by <a href="https://www.naaln.com" target="_blank" rel="external">WhyLiam</a> is licensed under a <a href="http://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" rel="external">Creative Commons BY-NC-ND 4.0 International License</a>.</p><p>由<a href="https://www.naaln.com" target="_blank" rel="external">WhyLiam</a>创作并维护的<a href="https://blog.naaln.com">Why·Liam·Blog</a>采用创作共用<a href="http://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" rel="external">保留署名-非商业-禁止演绎4.0国际许可证</a>。</p><p>本文首发于<a href="https://blog.naaln.com">Why·Liam·Blog (https://blog.naaln.com)</a>，版权所有，侵权必究。</p><p>本文永久链接：<a href="https://blog.naaln.com/2016/04/rookie-product-manager-is-a-professional-degree-of-product-manager/">https://blog.naaln.com/2016/04/rookie-product-manager-is-a-professional-degree-of-product-manager/</a></p><p></p></div>
+      
+    </div>
+    
+    
+    
+
+    
+      <div>
+        <div id="wechat_subscriber" style="display: block; padding: 10px 0; margin: 20px auto; width: 100%; text-align: center">
+    <img id="wechat_subscriber_qcode" src="//ws1.sinaimg.cn/large/006tKfTcgy1fg8gpi7kaaj30by0by74i.jpg" alt="WHY·LIAM wechat" style="width: 200px; max-width: 100%;"/>
+    <div>记录生活，研究产品，分享设计，分析数据，讨论科技和商业，不定期扯淡。</div>
+</div>
+
+      </div>
+    
+
+    
+      <div>
+        <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+  <div>如果觉得我的文章对您有用，请随意打赏。您的支持将鼓励我继续创作！</div>
+  <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+    <span>打赏</span>
+  </button>
+  <div id="QR" style="display: none;">
+
+    
+      <div id="wechat" style="display: inline-block">
+        <img id="wechat_qr" src="//ws1.sinaimg.cn/mw690/006tNc79gy1fm7yqrau7mj30f00ezad5.jpg" alt="WHY·LIAM 微信支付"/>
+        <p>微信支付</p>
+      </div>
+    
+
+    
+      <div id="alipay" style="display: inline-block">
+        <img id="alipay_qr" src="//ww3.sinaimg.cn/mw690/48910e01gw1evkbfendrjj20ci0ci0uf.jpg" alt="WHY·LIAM 支付宝"/>
+        <p>支付宝</p>
+      </div>
+    
+
+    
+
+  </div>
+</div>
+
+      </div>
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2016/04/the-memory-of-the-order-of-the-phoenix/" rel="next" title="凤凰社的记忆">
+                <i class="fa fa-chevron-left"></i> 凤凰社的记忆
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2016/04/miscellaneous/" rel="prev" title="杂想">
+                杂想 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+  
+    <div class="comments" id="comments">
+      <div id="SOHUCS"></div>
+    </div>
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+
+      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image"
+                src="//tva2.sinaimg.cn/crop.0.0.998.998.180/48910e01gw1ef5p6etuzdj20rs0rs771.jpg"
+                alt="WHY·LIAM" />
+            
+              <p class="site-author-name" itemprop="name">WHY·LIAM</p>
+              <p class="site-description motion-element" itemprop="description"></p>
+          </div>
+
+          
+            <nav class="site-state motion-element">
+              
+                <div class="site-state-item site-state-posts">
+                
+                  <a href="/archives/">
+                
+                    <span class="site-state-item-count">721</span>
+                    <span class="site-state-item-name">日志</span>
+                  </a>
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-categories">
+                  <a href="/categories/index.html">
+                    <span class="site-state-item-count">4</span>
+                    <span class="site-state-item-name">分类</span>
+                  </a>
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-tags">
+                  <a href="/tags/index.html">
+                    <span class="site-state-item-count">67</span>
+                    <span class="site-state-item-name">标签</span>
+                  </a>
+                </div>
+              
+            </nav>
+          
+
+          
+            <div class="feed-link motion-element">
+              <a href="/atom.xml" rel="alternate">
+                <i class="fa fa-rss"></i>
+                RSS
+              </a>
+            </div>
+          
+
+          
+            <div class="links-of-author motion-element">
+                
+                  <span class="links-of-author-item">
+                    <a href="https://github.com/liszd" target="_blank" title="GitHub" rel="external nofollow">
+                      
+                        <i class="fa fa-fw fa-github"></i>GitHub</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="http://weibo.com/whyliam" target="_blank" title="微博" rel="external nofollow">
+                      
+                        <i class="fa fa-fw fa-weibo"></i>微博</a>
+                  </span>
+                
+            </div>
+          
+
+          
+          
+            <div class="cc-license motion-element" itemprop="license">
+              <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/" class="cc-opacity" target="_blank" rel="external nofollow">
+                <img src="/images/cc-by-nc-nd.svg" alt="Creative Commons" />
+              </a>
+            </div>
+          
+
+          
+          
+            <div class="links-of-blogroll motion-element links-of-blogroll-block">
+              <div class="links-of-blogroll-title">
+                <i class="fa  fa-fw fa-link"></i>
+                Links
+              </div>
+              <ul class="links-of-blogroll-list">
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="http://www.naaln.com/" title="纳兰主页" target="_blank">纳兰主页</a>
+                  </li>
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="http://photo.naaln.com/" title="纳兰相册" target="_blank">纳兰相册</a>
+                  </li>
+                
+              </ul>
+            </div>
+          
+
+          
+            
+          
+          
+
+        </div>
+      </section>
+
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; 2003 &mdash; <span itemprop="copyrightYear">2018</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">WHY·LIAM</span>
+
+  
+
+  
+</div>
+
+
+  
+
+
+
+  <div class="powered-by">由 <a class="theme-link" target="_blank" rel="external nofollow" href="https://hexo.io">Hexo</a> 强力驱动</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" rel="external nofollow" href="https://github.com/theme-next/hexo-theme-next">NexT.Muse</a> v6.0.2</div>
+
+
+
+  <div class="footer-custom">Hosted by <a target="_blank" rel="external nofollow" href="https://pages.coding.me"><b>Coding Pages</b></a></div>
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=6.0.2"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=6.0.2"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=6.0.2"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=6.0.2"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=6.0.2"></script>
+
+
+
+  
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+  
+    <script type="text/javascript">
+    (function(){
+      var appid = 'cytklkKc0';
+      var conf = 'prod_b1dd516bbb7f3198591656f99d9ace80';
+      var width = window.innerWidth || document.documentElement.clientWidth;
+      if (width < 960) {
+      window.document.write('<script id="changyan_mobile_js" charset="utf-8" type="text/javascript" src="https://changyan.sohu.com/upload/mobile/wap-js/changyan_mobile.js?client_id=' + appid + '&conf=' + conf + '"><\/script>'); } else { var loadJs=function(d,a){var c=document.getElementsByTagName("head")[0]||document.head||document.documentElement;var b=document.createElement("script");b.setAttribute("type","text/javascript");b.setAttribute("charset","UTF-8");b.setAttribute("src",d);if(typeof a==="function"){if(window.attachEvent){b.onreadystatechange=function(){var e=b.readyState;if(e==="loaded"||e==="complete"){b.onreadystatechange=null;a()}}}else{b.onload=a}}c.appendChild(b)};loadJs("https://changyan.sohu.com/upload/changyan.js",function(){
+        window.changyan.api.config({appid:appid,conf:conf})});
+      }
+    })();
+    </script>
+    <script type="text/javascript" src="https://assets.changyan.sohu.com/upload/plugins/plugins.count.js"></script>
+  
+
+
+
+
+
+
+
+  
+
+
+
+
+  
+  
+  
+  <link rel="stylesheet" href="/lib/algolia-instant-search/instantsearch.min.css">
+
+  
+  
+  <script src="/lib/algolia-instant-search/instantsearch.min.js"></script>
+  
+
+  <script src="/js/src/algolia-search.js?v=6.0.2"></script>
+
+
+
+  
+
+  
+
+  
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';        
+    }
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>

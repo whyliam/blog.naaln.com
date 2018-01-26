@@ -1,0 +1,954 @@
+<!DOCTYPE html>
+
+
+
+
+<html class="theme-next muse" lang="zh-CN">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+  <meta name="google-site-verification" content="ByVfaP_E3b9ZYRUGhNAUFSQKL8mJQwUehpQwoxJ5n-c" />
+
+
+
+  <meta name="msvalidate.01" content="DB220684085BEDBD2E49E8E942534B1F" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=6.0.2" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon-next.png?v=6.0.2">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32-next.png?v=6.0.2">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16-next.png?v=6.0.2">
+
+
+  <link rel="mask-icon" href="/favicon/logo.svg?v=6.0.2" color="#222">
+
+
+
+
+
+
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Muse',
+    version: '6.0.2',
+    sidebar: {"position":"right","display":"hide","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: false,
+    fastclick: false,
+    lazyload: false,
+    tabs: true,
+    motion: {"enable":false,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    algolia: {
+      applicationID: 'XILKIWTAM9',
+      apiKey: '8c01137fe05d281ccd531a0ec622322a',
+      indexName: 'blog',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"搜索文章","hits_empty":"啊，找不到 ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+  
+
+
+
+
+  
+  <meta name="keywords" content="fedora," />
+
+
+<meta name="description" content="1. 安装fedora19后的初始化配置1.1. 防火墙如果你的电脑处于局域网内，那么防火墙是不需要的的，停止它！12sudo systemctl stop firewalld.servicesudo systemctl disable firewalld.service 1.1. SELinux停止 SELinux，如果你不需要它。1234567891011sudo vi /etc/syscon">
+<meta name="keywords" content="fedora">
+<meta property="og:type" content="article">
+<meta property="og:title" content="安装 Fedora 19 GNOME 后需做的事">
+<meta property="og:url" content="https://blog.naaln.com/2013/08/do-you-want-after-you-install-fedora-19-gnome-thing/index.html">
+<meta property="og:site_name" content="Why·Liam·Blog">
+<meta property="og:description" content="1. 安装fedora19后的初始化配置1.1. 防火墙如果你的电脑处于局域网内，那么防火墙是不需要的的，停止它！12sudo systemctl stop firewalld.servicesudo systemctl disable firewalld.service 1.1. SELinux停止 SELinux，如果你不需要它。1234567891011sudo vi /etc/syscon">
+<meta property="og:locale" content="zh-CN">
+<meta property="og:updated_time" content="2017-09-03T09:15:57.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="安装 Fedora 19 GNOME 后需做的事">
+<meta name="twitter:description" content="1. 安装fedora19后的初始化配置1.1. 防火墙如果你的电脑处于局域网内，那么防火墙是不需要的的，停止它！12sudo systemctl stop firewalld.servicesudo systemctl disable firewalld.service 1.1. SELinux停止 SELinux，如果你不需要它。1234567891011sudo vi /etc/syscon">
+
+
+
+  <link rel="alternate" href="/atom.xml" title="Why·Liam·Blog" type="application/atom+xml" />
+
+
+
+
+  <link rel="canonical" href="https://blog.naaln.com/2013/08/do-you-want-after-you-install-fedora-19-gnome-thing/"/>
+
+
+  <title>安装 Fedora 19 GNOME 后需做的事 | Why·Liam·Blog</title>
+  
+
+
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-47966442-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-47966442-2');
+</script>
+
+
+
+
+
+
+  
+<script src="//msite.baidu.com/sdk/c.js?appid=1586840953097399"></script>
+<link rel="canonical" href="https://blog.naaln.com/2013/08/do-you-want-after-you-install-fedora-19-gnome-thing/"/>
+<script type="application/ld+json">
+    {
+        "@context": "https://ziyuan.baidu.com/contexts/cambrian.jsonld",
+        "@id": "https://blog.naaln.com/2013/08/do-you-want-after-you-install-fedora-19-gnome-thing/",
+        "appid": "1586840953097399",
+        "title": "安装 Fedora 19 GNOME 后需做的事",
+        "images": [
+            ""
+            ],
+        "description": "",
+        "pubDate": "",
+        "upDate": "",
+        "lrDate": ""
+    }
+</script>
+
+  <noscript>
+  <style type="text/css">
+    .use-motion .motion-element,
+    .use-motion .brand,
+    .use-motion .menu-item,
+    .sidebar-inner,
+    .use-motion .post-block,
+    .use-motion .pagination,
+    .use-motion .comments,
+    .use-motion .post-header,
+    .use-motion .post-body,
+    .use-motion .collection-title { opacity: initial; }
+
+    .use-motion .logo,
+    .use-motion .site-title,
+    .use-motion .site-subtitle {
+      opacity: initial;
+      top: initial;
+    }
+
+    .use-motion {
+      .logo-line-before i { left: initial; }
+      .logo-line-after i { right: initial; }
+    }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-CN">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-right page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"> <div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Why·Liam·Blog</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <h1 class="site-subtitle" itemprop="description">人生若如初見</h1>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            <i class="menu-item-icon fa fa-fw fa-home"></i> <br />首页</a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />归档</a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-technology">
+          <a href="/categories/technology/" rel="section">
+            <i class="menu-item-icon fa fa-fw fa-code"></i> <br />技术</a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-jottings">
+          <a href="/categories/jottings/" rel="section">
+            <i class="menu-item-icon fa fa-fw fa-language"></i> <br />随笔</a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tour">
+          <a href="/categories/tour/" rel="section">
+            <i class="menu-item-icon fa fa-fw fa-globe"></i> <br />旅游</a>
+        </li>
+      
+
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br />搜索</a>
+        </li>
+      
+    </ul>
+  
+
+  
+    <div class="site-search">
+      
+  
+  <div class="algolia-popup popup search-popup">
+    <div class="algolia-search">
+      <div class="algolia-search-input-icon">
+        <i class="fa fa-search"></i>
+      </div>
+      <div class="algolia-search-input" id="algolia-search-input"></div>
+    </div>
+
+    <div class="algolia-results">
+      <div id="algolia-stats"></div>
+      <div id="algolia-hits"></div>
+      <div id="algolia-pagination" class="algolia-pagination"></div>
+    </div>
+
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+  </div>
+
+
+
+
+    </div>
+  
+</nav>
+
+
+  
+
+
+
+ </div>
+    </header>
+
+    
+
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://blog.naaln.com/2013/08/do-you-want-after-you-install-fedora-19-gnome-thing/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="WHY·LIAM">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="//tva2.sinaimg.cn/crop.0.0.998.998.180/48910e01gw1ef5p6etuzdj20rs0rs771.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Why·Liam·Blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h2 class="post-title" itemprop="name headline">安装 Fedora 19 GNOME 后需做的事</h2>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2013-08-13T08:48:00+08:00">2013-08-13</time>
+            
+
+            
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/technology/" itemprop="url" rel="index"><span itemprop="name">技术</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+              <span class="post-meta-divider">|</span>
+              <span class="post-meta-item-icon">
+                <i class="fa fa-comment-o"></i>
+              </span>
+              
+                <a href="/2013/08/do-you-want-after-you-install-fedora-19-gnome-thing/#SOHUCS" itemprop="discussionUrl">
+                  <span id="changyan_count_unit" class="post-comments-count hc-comment-count" data-xid="2013/08/do-you-want-after-you-install-fedora-19-gnome-thing/" itemprop="commentsCount"></span>
+                </a>
+              
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h2 id="1-安装fedora19后的初始化配置"><a href="#1-安装fedora19后的初始化配置" class="headerlink" title="1. 安装fedora19后的初始化配置"></a>1. 安装fedora19后的初始化配置</h2><h3 id="1-1-防火墙"><a href="#1-1-防火墙" class="headerlink" title="1.1. 防火墙"></a>1.1. 防火墙</h3><p>如果你的电脑处于局域网内，那么防火墙是不需要的的，停止它！<br><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">sudo</span> <span class="selector-tag">systemctl</span> <span class="selector-tag">stop</span> <span class="selector-tag">firewalld</span><span class="selector-class">.service</span></span><br><span class="line"><span class="selector-tag">sudo</span> <span class="selector-tag">systemctl</span> <span class="selector-tag">disable</span> <span class="selector-tag">firewalld</span><span class="selector-class">.service</span></span><br></pre></td></tr></table></figure></p>
+<h3 id="1-1-SELinux"><a href="#1-1-SELinux" class="headerlink" title="1.1. SELinux"></a>1.1. SELinux</h3><p>停止 SELinux，如果你不需要它。<br><figure class="highlight routeros"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">sudo vi /etc/sysconfig/selinux</span><br><span class="line"><span class="comment"># This file controls the state of SELinux on the system.</span></span><br><span class="line"><span class="comment"># SELINUX= can take one of these three values:</span></span><br><span class="line">enforcing - SELinux security<span class="built_in"> policy </span>is enforced.</span><br><span class="line">permissive - SELinux prints warnings instead of enforcing.</span><br><span class="line">disabled - SELinux is fully disabled.</span><br><span class="line">SELINUX= disabled # change</span><br><span class="line"><span class="comment"># SELINUXTYPE= type of policy in use. Possible values are:</span></span><br><span class="line">targeted - Only targeted<span class="built_in"> network </span>daemons are protected.</span><br><span class="line">strict - Full SELinux protection.</span><br><span class="line"><span class="attribute">SELINUXTYPE</span>=targeted</span><br></pre></td></tr></table></figure></p>
+<h2 id="2-安装rpmfusion源"><a href="#2-安装rpmfusion源" class="headerlink" title="2. 安装rpmfusion源"></a>2. 安装rpmfusion源</h2><h3 id="2-1-它有非常多的免费和非免费的软件，音视频解码器。"><a href="#2-1-它有非常多的免费和非免费的软件，音视频解码器。" class="headerlink" title="2.1. 它有非常多的免费和非免费的软件，音视频解码器。"></a>2.1. 它有非常多的免费和非免费的软件，音视频解码器。</h3><figure class="highlight crystal"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">Fedora <span class="number">14</span>的源： </span><br><span class="line">sudo yum localinstall --nogpgcheck <span class="symbol">http:</span>/<span class="regexp">/download1.rpmfusion.org/free</span><span class="regexp">/fedora/rpmfusion</span>-free-release-<span class="number">14</span>.noarch.rpm  </span><br><span class="line"><span class="symbol">http:</span>/<span class="regexp">/download1.rpmfusion.org/nonfree</span><span class="regexp">/fedora/rpmfusion</span>-nonfree-release-<span class="number">14</span>.noarch.rpm </span><br><span class="line">Fedora <span class="number">15</span>的源： </span><br><span class="line">sudo yum localinstall --nogpgcheck <span class="symbol">http:</span>/<span class="regexp">/download1.rpmfusion.org/free</span><span class="regexp">/fedora/rpmfusion</span>-free-release-<span class="number">15</span>.noarch.rpm  </span><br><span class="line"><span class="symbol">http:</span>/<span class="regexp">/download1.rpmfusion.org/nonfree</span><span class="regexp">/fedora/rpmfusion</span>-nonfree-release-<span class="number">15</span>.noarch.rpm </span><br><span class="line">Fedora <span class="number">16</span>的源： </span><br><span class="line">sudo yum localinstall --nogpgcheck <span class="symbol">http:</span>/<span class="regexp">/download1.rpmfusion.org/free</span><span class="regexp">/fedora/rpmfusion</span>-free-release-<span class="number">16</span>.noarch.rpm  </span><br><span class="line"><span class="symbol">http:</span>/<span class="regexp">/download1.rpmfusion.org/nonfree</span><span class="regexp">/fedora/rpmfusion</span>-nonfree-release-<span class="number">16</span>.noarch.rpm </span><br><span class="line">Fedora <span class="number">17</span>的源： </span><br><span class="line">sudo yum localinstall --nogpgcheck <span class="symbol">http:</span>/<span class="regexp">/download1.rpmfusion.org/free</span><span class="regexp">/fedora/rpmfusion</span>-free-release-<span class="number">17</span>.noarch.rpm  </span><br><span class="line"><span class="symbol">http:</span>/<span class="regexp">/download1.rpmfusion.org/nonfree</span><span class="regexp">/fedora/rpmfusion</span>-nonfree-release-<span class="number">17</span>.noarch.rpm </span><br><span class="line">Fedora <span class="number">18</span>的源： </span><br><span class="line">sudo yum localinstall --nogpgcheck <span class="symbol">http:</span>/<span class="regexp">/download1.rpmfusion.org/free</span><span class="regexp">/fedora/rpmfusion</span>-free-release-<span class="number">18</span>.noarch.rpm  </span><br><span class="line"><span class="symbol">http:</span>/<span class="regexp">/download1.rpmfusion.org/nonfree</span><span class="regexp">/fedora/rpmfusion</span>-nonfree-release-<span class="number">18</span>.noarch.rpm   </span><br><span class="line">Fedora <span class="number">19</span>的源： </span><br><span class="line">sudo yum localinstall --nogpgcheck <span class="symbol">http:</span>/<span class="regexp">/download1.rpmfusion.org/free</span><span class="regexp">/fedora/rpmfusion</span>-free-release-<span class="number">19</span>.noarch.rpm  </span><br><span class="line"><span class="symbol">http:</span>/<span class="regexp">/download1.rpmfusion.org/nonfree</span><span class="regexp">/fedora/rpmfusion</span>-nonfree-release-<span class="number">19</span>.noarch.rpm   </span><br><span class="line">yum -y install yum-fastestmirror yum update</span><br></pre></td></tr></table></figure>
+<h2 id="3-安装一下有用的一些软件包"><a href="#3-安装一下有用的一些软件包" class="headerlink" title="3. 安装一下有用的一些软件包"></a>3. 安装一下有用的一些软件包</h2><h3 id="3-1-安32位装库文件"><a href="#3-1-安32位装库文件" class="headerlink" title="3.1. 安32位装库文件"></a>3.1. 安32位装库文件</h3><figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">sudo yum install glibc.i686</span><br><span class="line">sudo yum install libstdc++<span class="selector-class">.so</span>.<span class="number">6</span></span><br><span class="line">sudo yum -y install --skip-broken glibc<span class="selector-class">.i686</span> arts<span class="selector-class">.i686</span> audiofile<span class="selector-class">.i686</span> bzip2-libs<span class="selector-class">.i686</span> cairo<span class="selector-class">.i686</span> </span><br><span class="line">cyrus-sasl-lib<span class="selector-class">.i686</span> dbus-libs<span class="selector-class">.i686</span> directfb<span class="selector-class">.i686</span> esound-libs<span class="selector-class">.i686</span> fltk<span class="selector-class">.i686</span> </span><br><span class="line">freeglut<span class="selector-class">.i686</span> gtk2<span class="selector-class">.i686</span> hal-libs<span class="selector-class">.i686</span> imlib<span class="selector-class">.i686</span> lcms-libs<span class="selector-class">.i686</span> </span><br><span class="line">lesstif<span class="selector-class">.i686</span> libacl<span class="selector-class">.i686</span> libao<span class="selector-class">.i686</span> libattr<span class="selector-class">.i686</span> libcap<span class="selector-class">.i686</span> libdrm.i686</span><br><span class="line">libexif<span class="selector-class">.i686</span> libgnomecanvas<span class="selector-class">.i686</span> libICE<span class="selector-class">.i686</span> libieee1284<span class="selector-class">.i686</span> libsigc++<span class="number">20</span><span class="selector-class">.i686</span> libSM.i686</span><br><span class="line">libtool-ltdl<span class="selector-class">.i686</span> libusb<span class="selector-class">.i686</span> libwmf<span class="selector-class">.i686</span> </span><br><span class="line">libwmf-lite<span class="selector-class">.i686</span> libX11<span class="selector-class">.i686</span> libXau<span class="selector-class">.i686</span> libXaw<span class="selector-class">.i686</span> libXcomposite.i686</span><br><span class="line">libXdamage<span class="selector-class">.i686</span> libXdmcp<span class="selector-class">.i686</span> libXext<span class="selector-class">.i686</span> libXfixes<span class="selector-class">.i686</span> libxkbfile<span class="selector-class">.i686</span> libxml2<span class="selector-class">.i686</span> </span><br><span class="line">libXmu<span class="selector-class">.i686</span> libXp<span class="selector-class">.i686</span> libXpm<span class="selector-class">.i686</span> libXScrnSaver<span class="selector-class">.i686</span> libxslt<span class="selector-class">.i686</span> libXt<span class="selector-class">.i686</span> libXtst.i686</span><br><span class="line">libXv<span class="selector-class">.i686</span> libXxf86vm<span class="selector-class">.i686</span> lzo<span class="selector-class">.i686</span> mesa-libGL<span class="selector-class">.i686</span> mesa-libGLU<span class="selector-class">.i686</span> nas-libs<span class="selector-class">.i686</span> </span><br><span class="line">nss_ldap<span class="selector-class">.i686</span> cdk<span class="selector-class">.i686</span> openldap<span class="selector-class">.i686</span> pam<span class="selector-class">.i686</span> popt<span class="selector-class">.i686</span> pulseaudio-libs<span class="selector-class">.i686</span> </span><br><span class="line">sane-backends-libs-gphoto2<span class="selector-class">.i686</span> sane-backends-libs<span class="selector-class">.i686</span> SDL<span class="selector-class">.i686</span> </span><br><span class="line">svgalib<span class="selector-class">.i686</span> unixODBC<span class="selector-class">.i686</span> zlib<span class="selector-class">.i686</span> compat-expat1<span class="selector-class">.i686</span> compat-libstdc++-<span class="number">33</span>.i686</span><br><span class="line">openal-soft<span class="selector-class">.i686</span> alsa-oss-libs<span class="selector-class">.i686</span> redhat-lsb<span class="selector-class">.i686</span> alsa-plugins-pulseaudio.i686</span><br><span class="line">alsa-plugins-oss<span class="selector-class">.i686</span> alsa-lib<span class="selector-class">.i686</span> nspluginwrapper<span class="selector-class">.i686</span> libXv<span class="selector-class">.i686</span> libXScrnSaver<span class="selector-class">.i686</span> qt.i686</span><br><span class="line">qt-x11<span class="selector-class">.i686</span> pulseaudio-libs<span class="selector-class">.i686</span> pulseaudio-libs-glib2<span class="selector-class">.i686</span> alsa-plugins-pulseaudio.i686</span><br></pre></td></tr></table></figure>
+<h3 id="3-2-wps"><a href="#3-2-wps" class="headerlink" title="3.2. wps"></a>3.2. wps</h3><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">[<span class="string">http://linux.wps.cn/</span>](<span class="link">http://linux.wps.cn/</span>) </span><br><span class="line">Debian（Ubuntu、Mint、LinuxDeepin等）用户请下载： 文件名： symbol-fonts<span class="emphasis">_1.2_</span>all.deb </span><br><span class="line">box网盘下载链接： [<span class="string">https://app.box.com/s/zs0h71e1curhgb9xqi5t</span>](<span class="link">https://app.box.com/s/zs0h71e1curhgb9xqi5t</span>) </span><br><span class="line">金山快盘下载链接： [<span class="string">http://www.kuaipan.cn/file/id_19418406138675464.htm</span>](<span class="link">http://www.kuaipan.cn/file/id_19418406138675464.htm</span>) </span><br><span class="line">百度网盘下载链接： [<span class="string">http://pan.baidu.com/share/link?shareid=3369982571&amp;uk=505215462</span>](<span class="link">http://pan.baidu.com/share/link?shareid=3369982571&amp;uk=505215462</span>) </span><br><span class="line">文件大小： 241 KB (247,628 字节) </span><br><span class="line">md5码： 1ce31b586bff22ecf6a5941c0d7cb7a1 </span><br><span class="line">sha1码： e9b7d2f79d0aa971a9c4ae55ead41647ae14adcf </span><br><span class="line">Red Hat（Cent OS、Fedora、Red Flag等）用户请下载： 文件名： symbol-fonts-1.2-1.noarch.rpm </span><br><span class="line">box网盘下载链接： [<span class="string">https://app.box.com/s/wmsdpn8x9qpcbcnekke1</span>](<span class="link">https://app.box.com/s/wmsdpn8x9qpcbcnekke1</span>) </span><br><span class="line">金山快盘下载链接： [<span class="string">http://www.kuaipan.cn/file/id_19418406138675465.htm</span>](<span class="link">http://www.kuaipan.cn/file/id_19418406138675465.htm</span>) </span><br><span class="line">百度网盘下载链接： [<span class="string">http://pan.baidu.com/share/link?shareid=3371036765&amp;uk=505215462</span>](<span class="link">http://pan.baidu.com/share/link?shareid=3371036765&amp;uk=505215462</span>) </span><br><span class="line">文件大小： 246 KB (252,171 字节) </span><br><span class="line">md5码： 4a7649c69e15983a6e69c31f38f64c62 </span><br><span class="line">sha1码： 9d00e765169bba5f1351cf7f21a15ae3e26dcb08</span><br></pre></td></tr></table></figure>
+<p>Windows 和 MS Office 的全部字体的安装包下载：<br><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">Debian（Ubuntu、Mint、LinuxDeepin等）用户请下载： 文件名： winfonts<span class="emphasis">_1.3_</span>all.deb </span><br><span class="line">百度网盘下载链接： [<span class="string">http://pan.baidu.com/share/link?shareid=1223565760&amp;uk=505215462</span>](<span class="link">http://pan.baidu.com/share/link?shareid=1223565760&amp;uk=505215462</span>) </span><br><span class="line">金山快盘下载链接： [<span class="string">http://www.kuaipan.cn/file/id_19418406138675470.htm</span>](<span class="link">http://www.kuaipan.cn/file/id_19418406138675470.htm</span>) </span><br><span class="line">文件大小： 372 MB (391,042,046 字节) </span><br><span class="line">md5码： a5bce445ab363f739affdcd5c894177f </span><br><span class="line">sha1码： 669830eeba0491b7aa8709cd36b27066360561c8 </span><br><span class="line">Red Hat（Cent OS、Fedora、Red Flag等）用户请下载： 文件名： winfonts-1.3-1.noarch.rpm </span><br><span class="line">百度网盘下载链接： [<span class="string">http://pan.baidu.com/share/link?shareid=2980366977&amp;uk=505215462</span>](<span class="link">http://pan.baidu.com/share/link?shareid=2980366977&amp;uk=505215462</span>) </span><br><span class="line">金山快盘下载链接： [<span class="string">http://www.kuaipan.cn/file/id_19418406138675469.htm</span>](<span class="link">http://www.kuaipan.cn/file/id_19418406138675469.htm</span>) </span><br><span class="line">文件大小： 373 MB (391,277,972 字节) </span><br><span class="line">md5码： 7e3b14d247115002da1bb2d4b110c28a </span><br><span class="line">sha1码： 2bf3369a89583837710d380f4dbd5bb89d730e01</span><br></pre></td></tr></table></figure></p>
+<h3 id="3-3-安装tweak"><a href="#3-3-安装tweak" class="headerlink" title="3.3. 安装tweak"></a>3.3. 安装tweak</h3><figure class="highlight cmake"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">yum <span class="keyword">install</span> gnome-tweak-tool</span><br></pre></td></tr></table></figure>
+<h3 id="3-4-安装sublime"><a href="#3-4-安装sublime" class="headerlink" title="3.4. 安装sublime"></a>3.4. 安装sublime</h3><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[<span class="string">https://gist.github.com/liszd/6220684</span>](<span class="link">https://gist.github.com/liszd/6220684</span>)</span><br></pre></td></tr></table></figure>
+<h3 id="3-5-安装-fcitx-输入法"><a href="#3-5-安装-fcitx-输入法" class="headerlink" title="3.5. 安装 fcitx 输入法"></a>3.5. 安装 fcitx 输入法</h3><figure class="highlight gams"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo yum install fcitx fcitx-<span class="keyword">table</span>-chinese</span><br></pre></td></tr></table></figure>
+<p>配置以允许使用 iBus 之外的输入法：<br><figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">gsettings set org<span class="selector-class">.gnome</span><span class="selector-class">.settings-daemon</span><span class="selector-class">.plugins</span><span class="selector-class">.keyboard</span> active false</span><br></pre></td></tr></table></figure></p>
+<p>在终端使用<br><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> yum-chooser</span></span><br></pre></td></tr></table></figure></p>
+<p>或者利用输入法配置工具选择 fcitx（安装输入法选择：<br><figure class="highlight cmake"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo yum <span class="keyword">install</span> im-chooser）</span><br></pre></td></tr></table></figure></p>
+<p>在输入法配置工具中注销或者利用终端注销<br><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> gnome-session-quit</span></span><br></pre></td></tr></table></figure></p>
+<p>重新登入，即可用 Ctrl+Space 切换 </p>
+<h3 id="3-6-Logout"><a href="#3-6-Logout" class="headerlink" title="3.6. Logout"></a>3.6. Logout</h3><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ gsettings <span class="keyword">set</span> org.gnome.shell <span class="keyword">always</span>-<span class="keyword">show</span>-<span class="keyword">log</span>-<span class="keyword">out</span> <span class="literal">true</span></span><br></pre></td></tr></table></figure>
+<p>然后Alt+F2输入r打回车，就能在你的用户名下面的菜单里看到Log Out菜单了。 </p>
+<h3 id="3-7-启用第三方软件库"><a href="#3-7-启用第三方软件库" class="headerlink" title="3.7. 启用第三方软件库"></a>3.7. 启用第三方软件库</h3><p><a href="https://extensions.gnome.org/" target="_blank" rel="noopener">https://extensions.gnome.org/</a>,你懂的 </p>
+<p><a href="http://www.linuxbsdos.com/2013/07/07/4-third-party-repositories-to-enable-on-fedora-19/" target="_blank" rel="noopener">http://www.linuxbsdos.com/2013/07/07/4-third-party-repositories-to-enable-on-fedora-19/</a></p>
+<h3 id="3-8-安装一下有用的一些软件包"><a href="#3-8-安装一下有用的一些软件包" class="headerlink" title="3.8. 安装一下有用的一些软件包"></a>3.8. 安装一下有用的一些软件包</h3><p>from: <a href="http://blog.csdn.net/sabalol/article/details/8512462" target="_blank" rel="noopener">http://blog.csdn.net/sabalol/article/details/8512462</a> 有些包比较大，你也可以不安装， 比如 texlive。 自己选择吧。<br><figure class="highlight dts"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo<span class="variable">&amp;nbsp</span>;yum<span class="variable">&amp;nbsp</span>;-y<span class="variable">&amp;nbsp</span>;install<span class="variable">&amp;nbsp</span>;yum-fastestmirror<span class="variable">&amp;nbsp</span>;unrar<span class="variable">&amp;nbsp</span>;thunderbird<span class="variable">&amp;nbsp</span>;emacs<span class="variable">&amp;nbsp</span>;ibus-table<span class="variable">&amp;nbsp</span>;redhat-lsb<span class="variable">&amp;nbsp</span>;gstreamer-plugins-bad<span class="variable">&amp;nbsp</span>;gstreamer-plugins-ugly<span class="variable">&amp;nbsp</span>;<span class="variable">&amp;nbsp</span>;gstreamer-ffmpeg<span class="variable">&amp;nbsp</span>;compat-libstdc++<span class="number">-33</span><span class="variable">&amp;nbsp</span>;NetworkManager-devel<span class="variable">&amp;nbsp</span>;python-gevent<span class="variable">&amp;nbsp</span>;tracker-ui-tools<span class="variable">&amp;nbsp</span>;qemu<span class="variable">&amp;nbsp</span>;libpciaccess-devel<span class="variable">&amp;nbsp</span>;xorg-x11-util-macros<span class="variable">&amp;nbsp</span>;llvm-devel<span class="variable">&amp;nbsp</span>;mtdev*<span class="variable">&amp;nbsp</span>;mutt<span class="variable">&amp;nbsp</span>;msmtp<span class="variable">&amp;nbsp</span>;tftp<span class="variable">&amp;nbsp</span>;tftp-server<span class="variable">&amp;nbsp</span>;policycoreutils-gui<span class="variable">&amp;nbsp</span>;mtd-utils<span class="variable">&amp;nbsp</span>;mtd-utils-ubi<span class="variable">&amp;nbsp</span>;vim<span class="variable">&amp;nbsp</span>;ibus-pinyin<span class="variable">&amp;nbsp</span>;gnome-tweak-tool<span class="variable">&amp;nbsp</span>;ckermit<span class="variable">&amp;nbsp</span>;stardict<span class="variable">&amp;nbsp</span>;stardict-dic-zh_CN<span class="variable">&amp;nbsp</span>;stardict-dic-en<span class="variable">&amp;nbsp</span>;texlive<span class="variable">&amp;nbsp</span>;ibus-table-chinese-wubi-haifeng<span class="variable">&amp;nbsp</span>;gnash<span class="variable">&amp;nbsp</span>;smplayer<span class="variable">&amp;nbsp</span>;vlc<span class="variable">&amp;nbsp</span>;samba<span class="variable">&amp;nbsp</span>;pidgin<span class="variable">&amp;nbsp</span>;pidgin-sipe<span class="variable">&amp;nbsp</span>;meld<span class="variable">&amp;nbsp</span>;expect<span class="variable">&amp;nbsp</span>;glibc-static<span class="variable">&amp;nbsp</span>;ncurses-static<span class="variable">&amp;nbsp</span>;genromfs<span class="variable">&amp;nbsp</span>;cmake<span class="variable">&amp;nbsp</span>;ccache<span class="variable">&amp;nbsp</span>;p7zip;gummi</span><br></pre></td></tr></table></figure></p>
+<h3 id="3-9-升级一下系统："><a href="#3-9-升级一下系统：" class="headerlink" title="3.9. 升级一下系统："></a>3.9. 升级一下系统：</h3><figure class="highlight ebnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">sudo yum -y update</span></span><br></pre></td></tr></table></figure>
+<h3 id="3-10-安装chrome"><a href="#3-10-安装chrome" class="headerlink" title="3.10. 安装chrome"></a>3.10. 安装chrome</h3><figure class="highlight cmake"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">yum <span class="keyword">install</span> google-chrome-stable</span><br></pre></td></tr></table></figure>
+<h3 id="3-11-安装-flash-plugin"><a href="#3-11-安装-flash-plugin" class="headerlink" title="3.11. 安装 flash plugin"></a>3.11. 安装 flash plugin</h3><p>32 位系统：<br><figure class="highlight llvm"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">wget http://linuxdownload.adobe.com/adobe-<span class="keyword">release</span>/adobe-<span class="keyword">release</span>-<span class="keyword">i386</span><span class="number">-1.0</span><span class="number">-1</span>.noarch.rpm </span><br><span class="line">sudo rpm -ivh adobe-<span class="keyword">release</span>-<span class="keyword">i386</span><span class="number">-1.0</span><span class="number">-1</span>.noarch.rpm</span><br></pre></td></tr></table></figure></p>
+<p>64位系统：<br><figure class="highlight llvm"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">wget http://linuxdownload.adobe.com/adobe-<span class="keyword">release</span>/adobe-<span class="keyword">release</span>-<span class="keyword">x</span><span class="number">86</span>_<span class="number">64</span><span class="number">-1.0</span><span class="number">-1</span>.noarch.rpm </span><br><span class="line">sudo rpm -ivh adobe-<span class="keyword">release</span>-<span class="keyword">x</span><span class="number">86</span>_<span class="number">64</span><span class="number">-1.0</span><span class="number">-1</span>.noarch.rpm </span><br><span class="line">sudo yum -y install flash-plugin</span><br></pre></td></tr></table></figure></p>
+<h3 id="3-12-安装音视频解压器："><a href="#3-12-安装音视频解压器：" class="headerlink" title="3.12. 安装音视频解压器："></a>3.12. 安装音视频解压器：</h3><figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">wget http:<span class="comment">//mplayerhq.hu/MPlayer/releases/codecs/all-20110131.tar.bz2 </span></span><br><span class="line">tar jxf all-<span class="number">20110131</span><span class="selector-class">.tar</span><span class="selector-class">.bz</span></span><br></pre></td></tr></table></figure>
+<p>   32 位系统：<br><figure class="highlight crystal"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo mkdir -p /usr/<span class="class"><span class="keyword">lib</span>/<span class="title">codecs</span> <span class="title">sudo</span> <span class="title">cp</span> <span class="title">all</span>-20110131/* /<span class="title">usr</span>/<span class="title">lib</span>/<span class="title">codecs</span></span></span><br></pre></td></tr></table></figure></p>
+<p>   64位系统：<br><figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo mkdir -p <span class="regexp">/usr/</span>lib64<span class="regexp">/codecs sudo cp all-20110131/</span>* <span class="regexp">/usr/</span>lib64<span class="regexp">/codecs</span></span><br></pre></td></tr></table></figure><div style="clear:both"></div><div class="cc"><p>The <a href="https://blog.naaln.com">Why·Liam·Blog</a> by <a href="https://www.naaln.com" target="_blank" rel="external">WhyLiam</a> is licensed under a <a href="http://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" rel="external">Creative Commons BY-NC-ND 4.0 International License</a>.</p><p>由<a href="https://www.naaln.com" target="_blank" rel="external">WhyLiam</a>创作并维护的<a href="https://blog.naaln.com">Why·Liam·Blog</a>采用创作共用<a href="http://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" rel="external">保留署名-非商业-禁止演绎4.0国际许可证</a>。</p><p>本文首发于<a href="https://blog.naaln.com">Why·Liam·Blog (https://blog.naaln.com)</a>，版权所有，侵权必究。</p><p>本文永久链接：<a href="https://blog.naaln.com/2013/08/do-you-want-after-you-install-fedora-19-gnome-thing/">https://blog.naaln.com/2013/08/do-you-want-after-you-install-fedora-19-gnome-thing/</a></p><p></p></div></p>
+
+      
+    </div>
+    
+    
+    
+
+    
+      <div>
+        <div id="wechat_subscriber" style="display: block; padding: 10px 0; margin: 20px auto; width: 100%; text-align: center">
+    <img id="wechat_subscriber_qcode" src="//ws1.sinaimg.cn/large/006tKfTcgy1fg8gpi7kaaj30by0by74i.jpg" alt="WHY·LIAM wechat" style="width: 200px; max-width: 100%;"/>
+    <div>记录生活，研究产品，分享设计，分析数据，讨论科技和商业，不定期扯淡。</div>
+</div>
+
+      </div>
+    
+
+    
+      <div>
+        <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+  <div>如果觉得我的文章对您有用，请随意打赏。您的支持将鼓励我继续创作！</div>
+  <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+    <span>打赏</span>
+  </button>
+  <div id="QR" style="display: none;">
+
+    
+      <div id="wechat" style="display: inline-block">
+        <img id="wechat_qr" src="//ws1.sinaimg.cn/mw690/006tNc79gy1fm7yqrau7mj30f00ezad5.jpg" alt="WHY·LIAM 微信支付"/>
+        <p>微信支付</p>
+      </div>
+    
+
+    
+      <div id="alipay" style="display: inline-block">
+        <img id="alipay_qr" src="//ww3.sinaimg.cn/mw690/48910e01gw1evkbfendrjj20ci0ci0uf.jpg" alt="WHY·LIAM 支付宝"/>
+        <p>支付宝</p>
+      </div>
+    
+
+    
+
+  </div>
+</div>
+
+      </div>
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/fedora/" rel="tag"># fedora</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2013/08/detailed-fedora-18-usb-stick-installation-tips/" rel="next" title="详解Fedora 18 U盘安装技巧">
+                <i class="fa fa-chevron-left"></i> 详解Fedora 18 U盘安装技巧
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2013/08/music-algorithm-for-fingerprint-framework/" rel="prev" title="音乐指纹 - 算法的框架">
+                音乐指纹 - 算法的框架 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+  
+    <div class="comments" id="comments">
+      <div id="SOHUCS"></div>
+    </div>
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+
+      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image"
+                src="//tva2.sinaimg.cn/crop.0.0.998.998.180/48910e01gw1ef5p6etuzdj20rs0rs771.jpg"
+                alt="WHY·LIAM" />
+            
+              <p class="site-author-name" itemprop="name">WHY·LIAM</p>
+              <p class="site-description motion-element" itemprop="description"></p>
+          </div>
+
+          
+            <nav class="site-state motion-element">
+              
+                <div class="site-state-item site-state-posts">
+                
+                  <a href="/archives/">
+                
+                    <span class="site-state-item-count">721</span>
+                    <span class="site-state-item-name">日志</span>
+                  </a>
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-categories">
+                  <a href="/categories/index.html">
+                    <span class="site-state-item-count">4</span>
+                    <span class="site-state-item-name">分类</span>
+                  </a>
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-tags">
+                  <a href="/tags/index.html">
+                    <span class="site-state-item-count">67</span>
+                    <span class="site-state-item-name">标签</span>
+                  </a>
+                </div>
+              
+            </nav>
+          
+
+          
+            <div class="feed-link motion-element">
+              <a href="/atom.xml" rel="alternate">
+                <i class="fa fa-rss"></i>
+                RSS
+              </a>
+            </div>
+          
+
+          
+            <div class="links-of-author motion-element">
+                
+                  <span class="links-of-author-item">
+                    <a href="https://github.com/liszd" target="_blank" title="GitHub" rel="external nofollow">
+                      
+                        <i class="fa fa-fw fa-github"></i>GitHub</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="http://weibo.com/whyliam" target="_blank" title="微博" rel="external nofollow">
+                      
+                        <i class="fa fa-fw fa-weibo"></i>微博</a>
+                  </span>
+                
+            </div>
+          
+
+          
+          
+            <div class="cc-license motion-element" itemprop="license">
+              <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/" class="cc-opacity" target="_blank" rel="external nofollow">
+                <img src="/images/cc-by-nc-nd.svg" alt="Creative Commons" />
+              </a>
+            </div>
+          
+
+          
+          
+            <div class="links-of-blogroll motion-element links-of-blogroll-block">
+              <div class="links-of-blogroll-title">
+                <i class="fa  fa-fw fa-link"></i>
+                Links
+              </div>
+              <ul class="links-of-blogroll-list">
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="http://www.naaln.com/" title="纳兰主页" target="_blank">纳兰主页</a>
+                  </li>
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="http://photo.naaln.com/" title="纳兰相册" target="_blank">纳兰相册</a>
+                  </li>
+                
+              </ul>
+            </div>
+          
+
+          
+            
+          
+          
+
+        </div>
+      </section>
+
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; 2003 &mdash; <span itemprop="copyrightYear">2018</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">WHY·LIAM</span>
+
+  
+
+  
+</div>
+
+
+  
+
+
+
+  <div class="powered-by">由 <a class="theme-link" target="_blank" rel="external nofollow" href="https://hexo.io">Hexo</a> 强力驱动</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" rel="external nofollow" href="https://github.com/theme-next/hexo-theme-next">NexT.Muse</a> v6.0.2</div>
+
+
+
+  <div class="footer-custom">Hosted by <a target="_blank" rel="external nofollow" href="https://pages.coding.me"><b>Coding Pages</b></a></div>
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=6.0.2"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=6.0.2"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=6.0.2"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=6.0.2"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=6.0.2"></script>
+
+
+
+  
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+  
+    <script type="text/javascript">
+    (function(){
+      var appid = 'cytklkKc0';
+      var conf = 'prod_b1dd516bbb7f3198591656f99d9ace80';
+      var width = window.innerWidth || document.documentElement.clientWidth;
+      if (width < 960) {
+      window.document.write('<script id="changyan_mobile_js" charset="utf-8" type="text/javascript" src="https://changyan.sohu.com/upload/mobile/wap-js/changyan_mobile.js?client_id=' + appid + '&conf=' + conf + '"><\/script>'); } else { var loadJs=function(d,a){var c=document.getElementsByTagName("head")[0]||document.head||document.documentElement;var b=document.createElement("script");b.setAttribute("type","text/javascript");b.setAttribute("charset","UTF-8");b.setAttribute("src",d);if(typeof a==="function"){if(window.attachEvent){b.onreadystatechange=function(){var e=b.readyState;if(e==="loaded"||e==="complete"){b.onreadystatechange=null;a()}}}else{b.onload=a}}c.appendChild(b)};loadJs("https://changyan.sohu.com/upload/changyan.js",function(){
+        window.changyan.api.config({appid:appid,conf:conf})});
+      }
+    })();
+    </script>
+    <script type="text/javascript" src="https://assets.changyan.sohu.com/upload/plugins/plugins.count.js"></script>
+  
+
+
+
+
+
+
+
+  
+
+
+
+
+  
+  
+  
+  <link rel="stylesheet" href="/lib/algolia-instant-search/instantsearch.min.css">
+
+  
+  
+  <script src="/lib/algolia-instant-search/instantsearch.min.js"></script>
+  
+
+  <script src="/js/src/algolia-search.js?v=6.0.2"></script>
+
+
+
+  
+
+  
+
+  
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';        
+    }
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>

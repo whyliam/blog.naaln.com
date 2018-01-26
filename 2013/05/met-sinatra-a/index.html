@@ -1,0 +1,1027 @@
+<!DOCTYPE html>
+
+
+
+
+<html class="theme-next muse" lang="zh-CN">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+  <meta name="google-site-verification" content="ByVfaP_E3b9ZYRUGhNAUFSQKL8mJQwUehpQwoxJ5n-c" />
+
+
+
+  <meta name="msvalidate.01" content="DB220684085BEDBD2E49E8E942534B1F" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=6.0.2" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon-next.png?v=6.0.2">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32-next.png?v=6.0.2">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16-next.png?v=6.0.2">
+
+
+  <link rel="mask-icon" href="/favicon/logo.svg?v=6.0.2" color="#222">
+
+
+
+
+
+
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Muse',
+    version: '6.0.2',
+    sidebar: {"position":"right","display":"hide","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: false,
+    fastclick: false,
+    lazyload: false,
+    tabs: true,
+    motion: {"enable":false,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    algolia: {
+      applicationID: 'XILKIWTAM9',
+      apiKey: '8c01137fe05d281ccd531a0ec622322a',
+      indexName: 'blog',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"搜索文章","hits_empty":"啊，找不到 ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+  
+
+
+
+
+  
+  <meta name="keywords" content="sinatra," />
+
+
+<meta name="description" content="Sinatra 是一个基于 Ruby 语言，以最小精力为代价快速创建 web 应用为目的的 DSL。如果您对日渐庞大的 Rails，感到厌倦，不如通过本教程来学习一下轻盈的 Sinatra。本系列教程有四个部分，它将带着你一步一步用 Sinatra 和 DataMap 创建一个功能齐备的线上代办事项的应用，我们称它为“Just Do It”。希望读者能通过本文了解到利用 Sinatra 创建应用是">
+<meta name="keywords" content="sinatra">
+<meta property="og:type" content="article">
+<meta property="og:title" content="初识 Sinatra (一)">
+<meta property="og:url" content="https://blog.naaln.com/2013/05/met-sinatra-a/index.html">
+<meta property="og:site_name" content="Why·Liam·Blog">
+<meta property="og:description" content="Sinatra 是一个基于 Ruby 语言，以最小精力为代价快速创建 web 应用为目的的 DSL。如果您对日渐庞大的 Rails，感到厌倦，不如通过本教程来学习一下轻盈的 Sinatra。本系列教程有四个部分，它将带着你一步一步用 Sinatra 和 DataMap 创建一个功能齐备的线上代办事项的应用，我们称它为“Just Do It”。希望读者能通过本文了解到利用 Sinatra 创建应用是">
+<meta property="og:locale" content="zh-CN">
+<meta property="og:image" content="https://ww2.sinaimg.cn/large/006tNc79gw1f5129xaev4j304m0423yh">
+<meta property="og:image" content="https://ww3.sinaimg.cn/large/006tNc79gw1f512a3subsj304u03ugll">
+<meta property="og:updated_time" content="2017-09-03T09:15:57.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="初识 Sinatra (一)">
+<meta name="twitter:description" content="Sinatra 是一个基于 Ruby 语言，以最小精力为代价快速创建 web 应用为目的的 DSL。如果您对日渐庞大的 Rails，感到厌倦，不如通过本教程来学习一下轻盈的 Sinatra。本系列教程有四个部分，它将带着你一步一步用 Sinatra 和 DataMap 创建一个功能齐备的线上代办事项的应用，我们称它为“Just Do It”。希望读者能通过本文了解到利用 Sinatra 创建应用是">
+<meta name="twitter:image" content="https://ww2.sinaimg.cn/large/006tNc79gw1f5129xaev4j304m0423yh">
+
+
+
+  <link rel="alternate" href="/atom.xml" title="Why·Liam·Blog" type="application/atom+xml" />
+
+
+
+
+  <link rel="canonical" href="https://blog.naaln.com/2013/05/met-sinatra-a/"/>
+
+
+  <title>初识 Sinatra (一) | Why·Liam·Blog</title>
+  
+
+
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-47966442-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-47966442-2');
+</script>
+
+
+
+
+
+
+  
+<script src="//msite.baidu.com/sdk/c.js?appid=1586840953097399"></script>
+<link rel="canonical" href="https://blog.naaln.com/2013/05/met-sinatra-a/"/>
+<script type="application/ld+json">
+    {
+        "@context": "https://ziyuan.baidu.com/contexts/cambrian.jsonld",
+        "@id": "https://blog.naaln.com/2013/05/met-sinatra-a/",
+        "appid": "1586840953097399",
+        "title": "初识 Sinatra (一)",
+        "images": [
+            ""
+            ],
+        "description": "",
+        "pubDate": "",
+        "upDate": "",
+        "lrDate": ""
+    }
+</script>
+
+  <noscript>
+  <style type="text/css">
+    .use-motion .motion-element,
+    .use-motion .brand,
+    .use-motion .menu-item,
+    .sidebar-inner,
+    .use-motion .post-block,
+    .use-motion .pagination,
+    .use-motion .comments,
+    .use-motion .post-header,
+    .use-motion .post-body,
+    .use-motion .collection-title { opacity: initial; }
+
+    .use-motion .logo,
+    .use-motion .site-title,
+    .use-motion .site-subtitle {
+      opacity: initial;
+      top: initial;
+    }
+
+    .use-motion {
+      .logo-line-before i { left: initial; }
+      .logo-line-after i { right: initial; }
+    }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-CN">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-right page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"> <div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Why·Liam·Blog</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <h1 class="site-subtitle" itemprop="description">人生若如初見</h1>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            <i class="menu-item-icon fa fa-fw fa-home"></i> <br />首页</a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />归档</a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-technology">
+          <a href="/categories/technology/" rel="section">
+            <i class="menu-item-icon fa fa-fw fa-code"></i> <br />技术</a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-jottings">
+          <a href="/categories/jottings/" rel="section">
+            <i class="menu-item-icon fa fa-fw fa-language"></i> <br />随笔</a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tour">
+          <a href="/categories/tour/" rel="section">
+            <i class="menu-item-icon fa fa-fw fa-globe"></i> <br />旅游</a>
+        </li>
+      
+
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br />搜索</a>
+        </li>
+      
+    </ul>
+  
+
+  
+    <div class="site-search">
+      
+  
+  <div class="algolia-popup popup search-popup">
+    <div class="algolia-search">
+      <div class="algolia-search-input-icon">
+        <i class="fa fa-search"></i>
+      </div>
+      <div class="algolia-search-input" id="algolia-search-input"></div>
+    </div>
+
+    <div class="algolia-results">
+      <div id="algolia-stats"></div>
+      <div id="algolia-hits"></div>
+      <div id="algolia-pagination" class="algolia-pagination"></div>
+    </div>
+
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+  </div>
+
+
+
+
+    </div>
+  
+</nav>
+
+
+  
+
+
+
+ </div>
+    </header>
+
+    
+
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://blog.naaln.com/2013/05/met-sinatra-a/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="WHY·LIAM">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="//tva2.sinaimg.cn/crop.0.0.998.998.180/48910e01gw1ef5p6etuzdj20rs0rs771.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Why·Liam·Blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h2 class="post-title" itemprop="name headline">初识 Sinatra (一)</h2>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2013-05-25T23:00:00+08:00">2013-05-25</time>
+            
+
+            
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/technology/" itemprop="url" rel="index"><span itemprop="name">技术</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+              <span class="post-meta-divider">|</span>
+              <span class="post-meta-item-icon">
+                <i class="fa fa-comment-o"></i>
+              </span>
+              
+                <a href="/2013/05/met-sinatra-a/#SOHUCS" itemprop="discussionUrl">
+                  <span id="changyan_count_unit" class="post-comments-count hc-comment-count" data-xid="2013/05/met-sinatra-a/" itemprop="commentsCount"></span>
+                </a>
+              
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p>Sinatra 是一个基于 Ruby 语言，以最小精力为代价快速创建 web 应用为目的的 DSL。如果您对日渐庞大的 Rails，感到厌倦，不如通过本教程来学习一下轻盈的 Sinatra。本系列教程有四个部分，它将带着你一步一步用 Sinatra 和 DataMap 创建一个功能齐备的线上代办事项的应用，我们称它为“Just Do It”。希望读者能通过本文了解到利用 Sinatra 创建应用是多么的简单而快速。 首先我们先进行开发 Sinatra 应用的准备工作。 </p>
+<p><strong>安装 Sinatra</strong> </p>
+<p>要让 Sinatra 能工作，你首先必须安装 Ruby。这里我建议您使用 RVM 来安装。（ 你可以参考 Glenn Goodrich 的教程）。一旦你安装好了 Ruby 和 Rubygems，你就可以安装 Sinatra 了。用 Rubygems 来安装 Sinatra 不过是小菜一碟，你只需要打开命令行并输入： </p>
+<p>   gem install sinatra</p>
+<p>如此简单，你就可以做好一切准备工作了。 </p>
+<p><strong>最简单的应用</strong> </p>
+<p>现在你可以使用你喜欢的任一款文本编辑器，创建一个新的文本文件，名字是“main.rb“，然后输入下面这几行：</p>
+<p>   require ‘sinatra’</p>
+<p>   get ‘/’ do</p>
+<p>   “Just Do It”</p>
+<p>   end</p>
+<p>注意：如果你的 Ruby 版本低于 1.9，需在代码第一行添加：<code>require ‘rubygems’</code>。 这就是一个最简单的 Sinatra 应用：在文件的头部，我们请求了 Sinatra的Gem包。从第2行开始，是一个 action 。在 Sinatra 中，这称为 handler（处理器），因为它负责处理路由（routes） 和 动作 （actions）。第2行最开始的部分 (get) 表明我们将使用哪一种 HTTP method ，在例子中，我们用的是 HTTP GET，因为我们在试图“获得”某个页面。接下来的部分是有关路由的字符描述，即“/” ，这是本应用的根URL。代码块(code block)表明当用户访问这个URL时会发生什么。在这个简单的例子中，只是返回了一行文字“Just Do It”, 这行文字最终会在浏览器渲染成页面。通常来说，handler 代码块的最后一行总是会在浏览器里渲染点什么。 我们需要启动 Sinatra 服务器来看看这个例子是不是工作的。打开命令行，在 main.rb 所在的路径里执行： </p>
+<p>   ruby main.rb</p>
+<p>几秒钟之后，你就会看到这样的信息： </p>
+<p>   == Sinatra/1.2.6 has taken the stage on 4567 for development with backup from WEBrick</p>
+<p>这时服务器已经启动。在浏览器中输入 <a href="http://localhost:4567，页面就会显示一行" target="_blank" rel="noopener">http://localhost:4567，页面就会显示一行</a> “Just Do It”。至此，我们已经创建了第一个 Sinatra 应用。很简单吧？ </p>
+<p><strong>内嵌模板</strong> </p>
+<p>我们的 Just Do It 应用除了显示一行字符外做不了什么事。接下来我们会进一步扩展这个应用，这里我们先创建一些模板文件，它们包含 HTML 和用 Ruby 生成的动态内容。Slim 是一个神奇的模板引擎，因此这部分工作变得很简单。在继续下面的内容之前，我们首先安装 Slim 的gem包。</p>
+<p>   gem install slim</p>
+<p>现在将main.rb的内容修改成以下内容： </p>
+<p>   require ‘sinatra’</p>
+<p>   require ‘slim’</p>
+<p>   get ‘/’ do</p>
+<p>   slim :index</p>
+<p>   end</p>
+<p>   <strong>END</strong></p>
+<p>   @@layout</p>
+<p>   doctype html</p>
+<p>   html</p>
+<p>   head</p>
+<p>   meta charset=”utf-8”</p>
+<p>   title Just Do It</p>
+<p>   link rel=”stylesheet” media=”screen, projection” href=”/styles.css”</p>
+<p>   /[if lt IE 9]</p>
+<p>   script src=”<a href="http://html5shiv.googlecode.com/svn/trunk/html5.js" target="_blank" rel="noopener">http://html5shiv.googlecode.com/svn/trunk/html5.js</a>“</p>
+<p>   body</p>
+<p>   h1 Just Do It</p>
+<p>   == yield</p>
+<p>   @@index</p>
+<p>   h2 My Tasks</p>
+<p>   ul.tasks</p>
+<p>   li Get Milk</p>
+<p>首先，代码开始部分我们添加了对 Slim gem包的请求，然后我们对 handler 做了些修改,现在代码块的最后一行返回的是名为 “index” 的视图，它由 slim 产生。 “ @@index ” 之后的代码就是该视图。这就是 Sinatra 内嵌模板。</p>
+<p>我个人认为 Sinatra 一个杀手级的特性就是它允许你把所有的代码存在一个文件里，这意味着将所有的部分快速组织在一起。内嵌模板 (Inline template)位于 “ __END__ ” 声明之后，每个模板以“ @@ ”开头。 </p>
+<p>在代码中，我们还可以看到一个名为“‘@@layout”的模板。这个模板会随着每个视图被渲染，它提供了一个基本的 HTML5 骨架。布局模板的关键在最后一行 “==yield”。 yield 语句会对 handler 所请求的视图模板的内容进行渲染，在例子中，就是 “index”。 </p>
+<p>这儿所有的视图用的是 Slim 的最简化语句，这让编写 HTML 变得愉快多了，不过当心，Slim 是对空格敏感的。嵌套的HTML元素应该2个空格的样式缩进，Slim 对该一致性要求非常严格。如果你不喜欢Slim，这儿也有一大堆其他模板语言可供选择，包括 ERB ,Haml和 Markaby。 现在可以重启服务器，并重新加载<a href="http://localhost:4567的页面来看看效果了。" target="_blank" rel="noopener">http://localhost:4567的页面来看看效果了。</a></p>
+<p>记住，每次修改代码之后，你都必须重启服务器。（如果重启让你觉得很厌烦，你可以试一下 Shotgun，用gem install shotgun来安装）。 </p>
+<p><strong>外部视图</strong> </p>
+<p>现在你对 Sinatra 是如何使用 handler来渲染视图有所了解了。接下来我们看看如果不采用内嵌视图，该如何在文件夹中组织模板。 在开始之前，我们需要删除内嵌模板：打开 main.rb，然后删除 __END__ 定义及其后的所有模板。 在你保存 main.rb 文件的同一目录中，创建2个文件夹，一个名为“public”，另一个名为“views”。public文件夹用于保存公用的界面元素，比如图片和样式表。views文件夹则用于保存我们的所有 Slim 模板。上面例子中的模板现在会被保存到不同的文件中。首先将下面的代码保存在views文件夹中，名为 layout.slim。 </p>
+<p>   doctype html</p>
+<p>   html</p>
+<p>   head</p>
+<p>   meta charset=”utf-8”</p>
+<p>   title Just Do It</p>
+<p>   link rel=”stylesheet” media=”screen, projection” href=”/styles.css”</p>
+<p>   /[if lt IE 9]</p>
+<p>   script src=”<a href="http://html5shiv.googlecode.com/svn/trunk/html5.js" target="_blank" rel="noopener">http://html5shiv.googlecode.com/svn/trunk/html5.js</a>“</p>
+<p>   body</p>
+<p>   h1 Just Do It</p>
+<p>   == yield</p>
+<p>   同样保存index.slim。</p>
+<p>   h2 My Tasks</p>
+<p>   ul.tasks</p>
+<p>   li Get Milk</p>
+<p>现在最好重启服务器，然后看看我们的视图是不是还能正确被渲染。 </p>
+<p><strong>动态内容</strong> </p>
+<p>下面我们进一步来看看 Sinatra的一些特性。让我们创建一个新的handler用来接收一些动态的输入（main.rb)：</p>
+<p>   get ‘/:task’ do</p>
+<p>   @task = params[:task]</p>
+<p>   slim :task</p>
+<p>   end</p>
+<p>你也许会注意到route项中包含了字符串“:task”，这是个命名参数，用引导的冒号加以识别。命名参数从 URL 中获得值，可利用“params”哈希表进行存取。在代码块的第一行，有一个名为‘@task’ 实例变量，它的值与“params[:task]”相等，内容就是写在 URL 斜杠后的一些东西。实例变量相当有用，因为它们可以在视图中被引用。 新的路由中指定了一个“task”视图，我们需要先创建它，将之以“task.slim”文件名保存到views文件夹中,内容如下： </p>
+<p>   h2 My Tasks</p>
+<p>   = @task</p>
+<p>这里用了“=”号来运算 Ruby 变量。Slim 会输出等号之后的 Ruby 运算结果。在例子中，则是 @task 实例变量的值，它与URL相匹配。重启服务器，然后在浏览器里查看 ‘<a href="http://localhost:4567/get-milk’，结果如图：" target="_blank" rel="noopener">http://localhost:4567/get-milk’，结果如图：</a></p>
+<p><img src="https://ww2.sinaimg.cn/large/006tNc79gw1f5129xaev4j304m0423yh" alt="请输入图片描述"></p>
+<p>图1-1 Simple task route 现在看起来不错，不过还有改进的空间，我们在 hanlder 里加了点新的代码美化一下页面： </p>
+<p>   get ‘/:task’ do</p>
+<p>   @task = params[:task].split(‘-’).join(‘ ‘).capitalize</p>
+<p>   slim :task</p>
+<p>   end</p>
+<p>现在当你浏览 “<a href="http://localhost:4567/get-milk”，画面看起来是这样的：" target="_blank" rel="noopener">http://localhost:4567/get-milk”，画面看起来是这样的：</a> </p>
+<p><img src="https://ww3.sinaimg.cn/large/006tNc79gw1f512a3subsj304u03ugll" alt="请输入图片描述"></p>
+<p>图1-2 更漂亮的task页面 </p>
+<p><strong>表单</strong> </p>
+<p>在结束这部分教程之前，我们来看一下如何通过表单来提交任务。打开 index.slim 文件，将其内容替换成：</p>
+<p>   form action=”/“ method=”POST”</p>
+<p>   input type=”text” name=”task”</p>
+<p>   input.button type=”submit” value=”New Task”</p>
+<p>我们还需要一个 handler来处理提交上来的表单。如果你看了上面的代码，“action” 属性说明表单本身会被提交到URL ‘/’，而 “method” 属性该表单会使用POST方法。这直接引出 Sinatra 的第二个杀手级特性：如何在 handler 中指定请求方法。把下面的代码添加到 main.rb 中： </p>
+<p>   post ‘/’ do</p>
+<p>   @task =  params[:task]</p>
+<p>   slim :task</p>
+<p>   end</p>
+<p>这段代码和我们之前用到的列出任务的 handler 非常相像，不同是现在我们通过表单的输入来获得任务。这个新的 handler 定义为POST路由，这意味这它只能响应HTTP POST请求。因此，我们可以为同一个路由“/” 定义两个 handler，并根据不同的请求类型赋予不同的代码段。 </p>
+<p>表单被提交的时候，它会将 params[:task] 的值设置为我们在页面输入的东西。用相同的办法，可以通过引用 params 哈希表存取任意值。 你可以试着在<a href="http://localhost:4567/创建一些新的任务，不过现在我们还不能创建任务清单，也没有办法删除修改它们。我们需要某种方式来保存这些任务，这些内容我们会在本教程的第二章中详述。" target="_blank" rel="noopener">http://localhost:4567/创建一些新的任务，不过现在我们还不能创建任务清单，也没有办法删除修改它们。我们需要某种方式来保存这些任务，这些内容我们会在本教程的第二章中详述。</a> 本章例子：Sinatra 例子-1 (22) 参考： <a href="http://rubysource.com/just-do-it-learn-sinatra-i/" target="_blank" rel="noopener">http://rubysource.com/just-do-it-learn-sinatra-i/</a></p>
+<div style="clear:both"></div><div class="cc"><p>The <a href="https://blog.naaln.com">Why·Liam·Blog</a> by <a href="https://www.naaln.com" target="_blank" rel="external">WhyLiam</a> is licensed under a <a href="http://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" rel="external">Creative Commons BY-NC-ND 4.0 International License</a>.</p><p>由<a href="https://www.naaln.com" target="_blank" rel="external">WhyLiam</a>创作并维护的<a href="https://blog.naaln.com">Why·Liam·Blog</a>采用创作共用<a href="http://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" rel="external">保留署名-非商业-禁止演绎4.0国际许可证</a>。</p><p>本文首发于<a href="https://blog.naaln.com">Why·Liam·Blog (https://blog.naaln.com)</a>，版权所有，侵权必究。</p><p>本文永久链接：<a href="https://blog.naaln.com/2013/05/met-sinatra-a/">https://blog.naaln.com/2013/05/met-sinatra-a/</a></p><p></p></div>
+      
+    </div>
+    
+    
+    
+
+    
+      <div>
+        <div id="wechat_subscriber" style="display: block; padding: 10px 0; margin: 20px auto; width: 100%; text-align: center">
+    <img id="wechat_subscriber_qcode" src="//ws1.sinaimg.cn/large/006tKfTcgy1fg8gpi7kaaj30by0by74i.jpg" alt="WHY·LIAM wechat" style="width: 200px; max-width: 100%;"/>
+    <div>记录生活，研究产品，分享设计，分析数据，讨论科技和商业，不定期扯淡。</div>
+</div>
+
+      </div>
+    
+
+    
+      <div>
+        <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+  <div>如果觉得我的文章对您有用，请随意打赏。您的支持将鼓励我继续创作！</div>
+  <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+    <span>打赏</span>
+  </button>
+  <div id="QR" style="display: none;">
+
+    
+      <div id="wechat" style="display: inline-block">
+        <img id="wechat_qr" src="//ws1.sinaimg.cn/mw690/006tNc79gy1fm7yqrau7mj30f00ezad5.jpg" alt="WHY·LIAM 微信支付"/>
+        <p>微信支付</p>
+      </div>
+    
+
+    
+      <div id="alipay" style="display: inline-block">
+        <img id="alipay_qr" src="//ww3.sinaimg.cn/mw690/48910e01gw1evkbfendrjj20ci0ci0uf.jpg" alt="WHY·LIAM 支付宝"/>
+        <p>支付宝</p>
+      </div>
+    
+
+    
+
+  </div>
+</div>
+
+      </div>
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/sinatra/" rel="tag"># sinatra</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2013/05/france-shang-mulan-lyons-third-university-to-exchange-views-and-experiences/" rel="next" title="法国尚慕兰里昂第三大学交换心得 &Lt;转&gt;">
+                <i class="fa fa-chevron-left"></i> 法国尚慕兰里昂第三大学交换心得 &Lt;转&gt;
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2013/05/you-work-for-tomato-law/" rel="prev" title="你适合番茄工作法吗？">
+                你适合番茄工作法吗？ <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+  
+    <div class="comments" id="comments">
+      <div id="SOHUCS"></div>
+    </div>
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+
+      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image"
+                src="//tva2.sinaimg.cn/crop.0.0.998.998.180/48910e01gw1ef5p6etuzdj20rs0rs771.jpg"
+                alt="WHY·LIAM" />
+            
+              <p class="site-author-name" itemprop="name">WHY·LIAM</p>
+              <p class="site-description motion-element" itemprop="description"></p>
+          </div>
+
+          
+            <nav class="site-state motion-element">
+              
+                <div class="site-state-item site-state-posts">
+                
+                  <a href="/archives/">
+                
+                    <span class="site-state-item-count">721</span>
+                    <span class="site-state-item-name">日志</span>
+                  </a>
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-categories">
+                  <a href="/categories/index.html">
+                    <span class="site-state-item-count">4</span>
+                    <span class="site-state-item-name">分类</span>
+                  </a>
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-tags">
+                  <a href="/tags/index.html">
+                    <span class="site-state-item-count">67</span>
+                    <span class="site-state-item-name">标签</span>
+                  </a>
+                </div>
+              
+            </nav>
+          
+
+          
+            <div class="feed-link motion-element">
+              <a href="/atom.xml" rel="alternate">
+                <i class="fa fa-rss"></i>
+                RSS
+              </a>
+            </div>
+          
+
+          
+            <div class="links-of-author motion-element">
+                
+                  <span class="links-of-author-item">
+                    <a href="https://github.com/liszd" target="_blank" title="GitHub" rel="external nofollow">
+                      
+                        <i class="fa fa-fw fa-github"></i>GitHub</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="http://weibo.com/whyliam" target="_blank" title="微博" rel="external nofollow">
+                      
+                        <i class="fa fa-fw fa-weibo"></i>微博</a>
+                  </span>
+                
+            </div>
+          
+
+          
+          
+            <div class="cc-license motion-element" itemprop="license">
+              <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/" class="cc-opacity" target="_blank" rel="external nofollow">
+                <img src="/images/cc-by-nc-nd.svg" alt="Creative Commons" />
+              </a>
+            </div>
+          
+
+          
+          
+            <div class="links-of-blogroll motion-element links-of-blogroll-block">
+              <div class="links-of-blogroll-title">
+                <i class="fa  fa-fw fa-link"></i>
+                Links
+              </div>
+              <ul class="links-of-blogroll-list">
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="http://www.naaln.com/" title="纳兰主页" target="_blank">纳兰主页</a>
+                  </li>
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="http://photo.naaln.com/" title="纳兰相册" target="_blank">纳兰相册</a>
+                  </li>
+                
+              </ul>
+            </div>
+          
+
+          
+            
+          
+          
+
+        </div>
+      </section>
+
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; 2003 &mdash; <span itemprop="copyrightYear">2018</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">WHY·LIAM</span>
+
+  
+
+  
+</div>
+
+
+  
+
+
+
+  <div class="powered-by">由 <a class="theme-link" target="_blank" rel="external nofollow" href="https://hexo.io">Hexo</a> 强力驱动</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" rel="external nofollow" href="https://github.com/theme-next/hexo-theme-next">NexT.Muse</a> v6.0.2</div>
+
+
+
+  <div class="footer-custom">Hosted by <a target="_blank" rel="external nofollow" href="https://pages.coding.me"><b>Coding Pages</b></a></div>
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=6.0.2"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=6.0.2"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=6.0.2"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=6.0.2"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=6.0.2"></script>
+
+
+
+  
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+  
+    <script type="text/javascript">
+    (function(){
+      var appid = 'cytklkKc0';
+      var conf = 'prod_b1dd516bbb7f3198591656f99d9ace80';
+      var width = window.innerWidth || document.documentElement.clientWidth;
+      if (width < 960) {
+      window.document.write('<script id="changyan_mobile_js" charset="utf-8" type="text/javascript" src="https://changyan.sohu.com/upload/mobile/wap-js/changyan_mobile.js?client_id=' + appid + '&conf=' + conf + '"><\/script>'); } else { var loadJs=function(d,a){var c=document.getElementsByTagName("head")[0]||document.head||document.documentElement;var b=document.createElement("script");b.setAttribute("type","text/javascript");b.setAttribute("charset","UTF-8");b.setAttribute("src",d);if(typeof a==="function"){if(window.attachEvent){b.onreadystatechange=function(){var e=b.readyState;if(e==="loaded"||e==="complete"){b.onreadystatechange=null;a()}}}else{b.onload=a}}c.appendChild(b)};loadJs("https://changyan.sohu.com/upload/changyan.js",function(){
+        window.changyan.api.config({appid:appid,conf:conf})});
+      }
+    })();
+    </script>
+    <script type="text/javascript" src="https://assets.changyan.sohu.com/upload/plugins/plugins.count.js"></script>
+  
+
+
+
+
+
+
+
+  
+
+
+
+
+  
+  
+  
+  <link rel="stylesheet" href="/lib/algolia-instant-search/instantsearch.min.css">
+
+  
+  
+  <script src="/lib/algolia-instant-search/instantsearch.min.js"></script>
+  
+
+  <script src="/js/src/algolia-search.js?v=6.0.2"></script>
+
+
+
+  
+
+  
+
+  
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';        
+    }
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>

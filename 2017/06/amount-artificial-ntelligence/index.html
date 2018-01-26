@@ -1,0 +1,983 @@
+<!DOCTYPE html>
+
+
+
+
+<html class="theme-next muse" lang="zh-CN">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+  <meta name="google-site-verification" content="ByVfaP_E3b9ZYRUGhNAUFSQKL8mJQwUehpQwoxJ5n-c" />
+
+
+
+  <meta name="msvalidate.01" content="DB220684085BEDBD2E49E8E942534B1F" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=6.0.2" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon-next.png?v=6.0.2">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32-next.png?v=6.0.2">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16-next.png?v=6.0.2">
+
+
+  <link rel="mask-icon" href="/favicon/logo.svg?v=6.0.2" color="#222">
+
+
+
+
+
+
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Muse',
+    version: '6.0.2',
+    sidebar: {"position":"right","display":"hide","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: false,
+    fastclick: false,
+    lazyload: false,
+    tabs: true,
+    motion: {"enable":false,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    algolia: {
+      applicationID: 'XILKIWTAM9',
+      apiKey: '8c01137fe05d281ccd531a0ec622322a',
+      indexName: 'blog',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"搜索文章","hits_empty":"啊，找不到 ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+  
+
+
+
+
+  
+  <meta name="keywords" content="人工智能," />
+
+
+<meta name="description" content="技术不应该给用户带来使用难度，而是提高效率，并恰到好处地提供帮助。 这是我在使用 Google 智能音箱 Google Home 之后的总结。 智能、AI，是今年创投圈的关键词。如果你在京东、淘宝上搜索各种家电，多多少少这些产品都会说自己是「智能」的，到底什么是智能？把安卓系统塞到硬件里，这个硬件是不是就是智能了？我认为不是。在我的字典里，「智能设备」指的是当我说 1 ，它知道我接下来要说 2 ，">
+<meta name="keywords" content="人工智能">
+<meta property="og:type" content="article">
+<meta property="og:title" content="恰到好处的人工智能">
+<meta property="og:url" content="https://blog.naaln.com/2017/06/amount-artificial-ntelligence/index.html">
+<meta property="og:site_name" content="Why·Liam·Blog">
+<meta property="og:description" content="技术不应该给用户带来使用难度，而是提高效率，并恰到好处地提供帮助。 这是我在使用 Google 智能音箱 Google Home 之后的总结。 智能、AI，是今年创投圈的关键词。如果你在京东、淘宝上搜索各种家电，多多少少这些产品都会说自己是「智能」的，到底什么是智能？把安卓系统塞到硬件里，这个硬件是不是就是智能了？我认为不是。在我的字典里，「智能设备」指的是当我说 1 ，它知道我接下来要说 2 ，">
+<meta property="og:locale" content="zh-CN">
+<meta property="og:image" content="https://ws4.sinaimg.cn/large/006tNbRwgy1fgd2eo6s9tj30hs0nigm9.jpg">
+<meta property="og:image" content="https://ws2.sinaimg.cn/large/006tNbRwgy1fgd2eoxiryj30hs09y74u.jpg">
+<meta property="og:image" content="https://ws1.sinaimg.cn/large/006tNbRwgy1fgd2epagi5j30hs0dyt9h.jpg">
+<meta property="og:image" content="https://ws3.sinaimg.cn/large/006tNbRwgy1fgd2epuhlkj30hs0eajsf.jpg">
+<meta property="og:updated_time" content="2017-09-03T09:15:57.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="恰到好处的人工智能">
+<meta name="twitter:description" content="技术不应该给用户带来使用难度，而是提高效率，并恰到好处地提供帮助。 这是我在使用 Google 智能音箱 Google Home 之后的总结。 智能、AI，是今年创投圈的关键词。如果你在京东、淘宝上搜索各种家电，多多少少这些产品都会说自己是「智能」的，到底什么是智能？把安卓系统塞到硬件里，这个硬件是不是就是智能了？我认为不是。在我的字典里，「智能设备」指的是当我说 1 ，它知道我接下来要说 2 ，">
+<meta name="twitter:image" content="https://ws4.sinaimg.cn/large/006tNbRwgy1fgd2eo6s9tj30hs0nigm9.jpg">
+
+
+
+  <link rel="alternate" href="/atom.xml" title="Why·Liam·Blog" type="application/atom+xml" />
+
+
+
+
+  <link rel="canonical" href="https://blog.naaln.com/2017/06/amount-artificial-ntelligence/"/>
+
+
+  <title>恰到好处的人工智能 | Why·Liam·Blog</title>
+  
+
+
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-47966442-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-47966442-2');
+</script>
+
+
+
+
+
+
+  
+<script src="//msite.baidu.com/sdk/c.js?appid=1586840953097399"></script>
+<link rel="canonical" href="https://blog.naaln.com/2017/06/amount-artificial-ntelligence/"/>
+<script type="application/ld+json">
+    {
+        "@context": "https://ziyuan.baidu.com/contexts/cambrian.jsonld",
+        "@id": "https://blog.naaln.com/2017/06/amount-artificial-ntelligence/",
+        "appid": "1586840953097399",
+        "title": "恰到好处的人工智能",
+        "images": [
+            ""
+            ],
+        "description": "",
+        "pubDate": "",
+        "upDate": "",
+        "lrDate": ""
+    }
+</script>
+
+  <noscript>
+  <style type="text/css">
+    .use-motion .motion-element,
+    .use-motion .brand,
+    .use-motion .menu-item,
+    .sidebar-inner,
+    .use-motion .post-block,
+    .use-motion .pagination,
+    .use-motion .comments,
+    .use-motion .post-header,
+    .use-motion .post-body,
+    .use-motion .collection-title { opacity: initial; }
+
+    .use-motion .logo,
+    .use-motion .site-title,
+    .use-motion .site-subtitle {
+      opacity: initial;
+      top: initial;
+    }
+
+    .use-motion {
+      .logo-line-before i { left: initial; }
+      .logo-line-after i { right: initial; }
+    }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-CN">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-right page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"> <div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Why·Liam·Blog</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <h1 class="site-subtitle" itemprop="description">人生若如初見</h1>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            <i class="menu-item-icon fa fa-fw fa-home"></i> <br />首页</a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />归档</a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-technology">
+          <a href="/categories/technology/" rel="section">
+            <i class="menu-item-icon fa fa-fw fa-code"></i> <br />技术</a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-jottings">
+          <a href="/categories/jottings/" rel="section">
+            <i class="menu-item-icon fa fa-fw fa-language"></i> <br />随笔</a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tour">
+          <a href="/categories/tour/" rel="section">
+            <i class="menu-item-icon fa fa-fw fa-globe"></i> <br />旅游</a>
+        </li>
+      
+
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br />搜索</a>
+        </li>
+      
+    </ul>
+  
+
+  
+    <div class="site-search">
+      
+  
+  <div class="algolia-popup popup search-popup">
+    <div class="algolia-search">
+      <div class="algolia-search-input-icon">
+        <i class="fa fa-search"></i>
+      </div>
+      <div class="algolia-search-input" id="algolia-search-input"></div>
+    </div>
+
+    <div class="algolia-results">
+      <div id="algolia-stats"></div>
+      <div id="algolia-hits"></div>
+      <div id="algolia-pagination" class="algolia-pagination"></div>
+    </div>
+
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+  </div>
+
+
+
+
+    </div>
+  
+</nav>
+
+
+  
+
+
+
+ </div>
+    </header>
+
+    
+
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://blog.naaln.com/2017/06/amount-artificial-ntelligence/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="WHY·LIAM">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="//tva2.sinaimg.cn/crop.0.0.998.998.180/48910e01gw1ef5p6etuzdj20rs0rs771.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Why·Liam·Blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h2 class="post-title" itemprop="name headline">恰到好处的人工智能</h2>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-06-07T23:16:00+08:00">2017-06-07</time>
+            
+
+            
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/technology/" itemprop="url" rel="index"><span itemprop="name">技术</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+              <span class="post-meta-divider">|</span>
+              <span class="post-meta-item-icon">
+                <i class="fa fa-comment-o"></i>
+              </span>
+              
+                <a href="/2017/06/amount-artificial-ntelligence/#SOHUCS" itemprop="discussionUrl">
+                  <span id="changyan_count_unit" class="post-comments-count hc-comment-count" data-xid="2017/06/amount-artificial-ntelligence/" itemprop="commentsCount"></span>
+                </a>
+              
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p>技术不应该给用户带来使用难度，而是提高效率，并恰到好处地提供帮助。</p>
+<p>这是我在使用 Google 智能音箱 Google Home 之后的总结。</p>
+<p>智能、AI，是今年创投圈的关键词。如果你在京东、淘宝上搜索各种家电，多多少少这些产品都会说自己是「智能」的，到底什么是智能？把安卓系统塞到硬件里，这个硬件是不是就是智能了？我认为不是。在我的字典里，「智能设备」指的是当我说 1 ，它知道我接下来要说 2 ，当我还没说 3 ，它就能说出 4 的产品；同时，它知道我在 A 场景里说 1，需要的是 3 ，而在 B 场景里，我需要的是 2。</p>
+<p><img src="https://ws4.sinaimg.cn/large/006tNbRwgy1fgd2eo6s9tj30hs0nigm9.jpg" alt=""></p>
+<p>按照这个定义，很多在宣传上带有「智能」二字的产品根本<strong>不能称为智能，而是能而不智</strong>。</p>
+<h2 id="1-为了智能而智能"><a href="#1-为了智能而智能" class="headerlink" title="1. 为了智能而智能"></a>1. 为了智能而智能</h2><p>记得 2013 年，当我还在极客公园的时候，我们认为汽车车载系统会是下一个智能设备的战场，于是我们找了一些汽车厂商，合作做车载系统的评测。</p>
+<p>我们拿到的第一辆车是当时号称拥有国内最先进的「智能」车载系统的某品牌汽车，系统基于 Android 1.x ，实际上，当时 Android 已经推出到 4.x 。打开系统后，我看到了 UC 浏览器、新浪微博等常用的 app，点开 UC 浏览器，艰难地在电阻屏上输入了网址，然后开始评测这个所谓的「智能」车载系统。</p>
+<p>我经常拿这个例子作为反例跟朋友分享什么是<strong>场景化的需求</strong>。在开车的时候，你需要用车载系统浏览网页么？你没有这功夫。停车的时候呢？手机上的浏览器会给你更好的体验。那么，车载系统里的浏览器有什么存在的价值？</p>
+<p><strong>没有</strong>。</p>
+<p>新浪微博有存在的价值么？我认为也没有。开车时，我们可能需要瞄一眼导航、需要瞄一眼手机蹦出的紧急通知（比如来电、微信的点对点消息），但更多的注意力显然是在方向盘上，大多数人不可能这个时候还有心思去关心明星们的八卦。如果关心，停下来用手机慢慢刷微博是更好的选择。</p>
+<p><strong>所谓场景化的需求，是在特定场景下提供刚好满足用户需求的功能，而不是给用户大而全和提高用户操作门槛降低效率的选择</strong>。2013 年我们评测的这个车载系统，显然是个经典的反例。</p>
+<p>另一个我也经常举的反例是微信公众号操作空调。有不少厂商，在空调上安装了 WiFi 芯片，通过繁复的配置后，用户可以在他们的公众号里开关空调、调整温度。不妨想一下，一般的家庭，空调遥控器都是摆在触手可及的地方，拿起遥控器 —&gt; 按下开关所花费的时间，肯定要比你在微信对话列表里搜索这个厂家的公众号 —&gt; 找到功能项 —&gt; 按下开关所花费的时间要少很多。这样的「智能」首先一点都不智能，其次，整个操作变得繁琐、效率低下。</p>
+<p>然而，很多厂商依然把「我们能用微信控制」「我们能用 app 控制」作为卖点去宣传，其实这是为了智能而智能，为了连接微信而连接，为了做 app 而做 app。你会发现，很多厂商的 app 更新频度极低，如果用户真的如他们想象的那么频繁去使用 app 控制空调，相信他们会很乐意经常更新 app。</p>
+<p>很多人购买这些所谓的「智能」电器后，头几次使用可能很兴奋，用手机折腾一番，但热度一过，肯定还是用回传统的遥控器。</p>
+<p><strong>方便，是比「伪智能」跟优的选择</strong>。</p>
+<p>而且，如果按照我对智能的定义，我说 1 时它知道 2，我感觉热时空调就自动打开，遥控器从实体塑料变成微信公众号，本质上也是说 1 做 1，说 2 做 2，智能在哪里？</p>
+<h2 id="2-场景化的智能"><a href="#2-场景化的智能" class="headerlink" title="2. 场景化的智能"></a>2. 场景化的智能</h2><p>智能不是一个新词，只不过，今年刚好撞到了投资的风口。当然，这得益于科技的进步，我们有了更快的机器和更容易让机器自我学习的神经网络。</p>
+<p>场景化的智能，就是在我需要什么的时候，<strong>恰到好处</strong>地提供什么。</p>
+<p>很多精英分子对今日头条嗤之以鼻，实际上，它是一个粘度极高的 app，我看到很多人每天在今日头条上花费超过 1 小时的时间，原因是他们总是能在今日头条看到他们感兴趣的新闻，于是不能自拔一直看下去。我母亲就是其中一个典型用户。</p>
+<p>另一个精英分子嗤之以鼻的产品，快手，也是如此。用户每天在快手的停留时间超过 50 分钟，原因和今日头条类似。</p>
+<p>这两家公司的创始人都是技术出身，公司的技术人员数量也非常之多，他们通过算法，为用户推荐适合当前场景阅读的内容。虽然，有些内容我看着也很不舒服。</p>
+<p>另一个例子是 Google 搜索，比如当我在 Google 搜索《神奇女侠》的时候，Google 不仅给出了传统的搜索结果，还提供了最近的电影放映时间，因为它猜我有可能想去看这部电影：</p>
+<p><img src="https://ws2.sinaimg.cn/large/006tNbRwgy1fgd2eoxiryj30hs09y74u.jpg" alt=""></p>
+<p>它还在侧栏展示了电影的演员，当我点开主角 Gal Gadot 的搜索页面时，Google 展示了以前也扮演过神奇女侠的演员，因为它认为我可能对这些女演员有兴趣：</p>
+<p><img src="https://ws1.sinaimg.cn/large/006tNbRwgy1fgd2epagi5j30hs0dyt9h.jpg" alt=""></p>
+<p>这些，都是场景化的智能，当我阅读一条狗血新闻时，头条给我推荐一条更狗血的，当我搜索一个关键词时，Google 认为我可能对相关的其它信息感兴趣。Google 不会突然在 Gmail 里冒出神奇女侠的搜索结果，因为我正在处理工作，显然没有心思关心电影什么时候上映。</p>
+<h2 id="3-解放双手的场景化智能"><a href="#3-解放双手的场景化智能" class="headerlink" title="3. 解放双手的场景化智能"></a>3. 解放双手的场景化智能</h2><p>Google Home 是我最近用的场景化做得最好的智能设备之一，我几乎每天都使用。</p>
+<p>我一直认为，用语音问 Siri 天气是一件很傻的事，因为当我们拿着 iPhone，显然下拉一下看天气比用 Siri 更快，另一方面，如果我们在公众场合，大声跟 Siri 说话，似乎……是一件很傻的事。</p>
+<p>但在家里就不一样，在家里，我大声说话不会影响其他人，也不会感到害羞；另一方面，在家里的时候，我双手一般在电脑键盘上，用语音问天气显然要比我把双手从键盘移开来得更方便。</p>
+<p>另一个我使用得最多的功能是设定倒计时，工作时累了我喜欢在椅子上小睡一会，以前我会打开手机设置闹钟，现在，我只需要闭上眼睛，跟 Google Home 说，设定一个 10 分钟的闹钟，它就会在 10 分钟后叫醒我。</p>
+<p>这些都是小功能，但它们体现出一种场景化的设计。就像前面举的车载系统的例子，开车时我们真的需要浏览器么？不需要。Google Home 需要有很多功能么？不需要，它只需要让用户在家里「<strong>解放双手</strong>」。</p>
+<p>这就是我在文章第一段说的，「技术不应该给用户带来使用难度，而是提高效率，并恰到好处地提供帮助」。</p>
+<p><strong>恰到好处，比大而全，比为了显示智能而智能，其实更考验产品的技术能力</strong>。</p>
+<p>一方面，在开发产品时，需要完全了解用户的场景，知道应该在什么地方为用户提供帮助；另一方面，技术的积累是能提供「恰到好处」的必要条件。</p>
+<p>Google Home 是我唯一用过觉得「不傻」的语音助理，首先是因为它的功能足够场景化，其次，它对语音交互过程中的上下文理解得非常透彻。比如，我问它「川普是哪年出生的」，接下来再问，「他女儿有多高」，它都能对答如流。</p>
+<h2 id="4-「智能」是不是只是硬件产品的恰到好处？"><a href="#4-「智能」是不是只是硬件产品的恰到好处？" class="headerlink" title="4. 「智能」是不是只是硬件产品的恰到好处？"></a>4. 「智能」是不是只是硬件产品的恰到好处？</h2><p>前一段时间和一位朋友聊天，他说他不看好智能音箱，他认为，所有的智能家居，除非 AI 的成熟程度已经达到了《钢铁侠》中的级别，否则，智能可能只是它的宣传亮点，而不是产品的核心卖点。</p>
+<p>他的话是有道理的，举个例子，在我使用 Google Home 的总时间里，听音乐占了最长的使用时段，虽然我会随口问一下天气，问一下简单的问题，但听歌、听播客甚至即将支持的打电话功能，主要使用的是它的音箱，而不是「智能」。</p>
+<p>如果「听」是主要场景，那么，智能音箱的核心竞争力是否应该是音质，而不是智能？这时，智能是否只是一种恰到好处的附加价值？</p>
+<p>Google 和苹果分别给出了不一样的答案。</p>
+<p>苹果在今年的 WWDC 把智能音箱 HomePod 作为最后一个产品压轴介绍，和外界的猜测一样，在 Amazon 和 Google 分别推出智能音箱后，苹果紧随推出。</p>
+<p>苹果和 Google 音箱的侧重点显然不一样，从官网的介绍页面也能看出。Google Home 的介绍页面前几页，都是介绍它的功能以及有多么「智能」，而苹果则是花大量的章节介绍音质和外观。这体现了两家公司对智能音箱的定位不同和技术积累区别。</p>
+<p><img src="https://ws3.sinaimg.cn/large/006tNbRwgy1fgd2epuhlkj30hs0eajsf.jpg" alt=""></p>
+<p>Google 从搜索起家，很早就开始部署 AI ，如果你有使用 Google Assistant app，你会发现它的聪明程度超过 Siri 几百条街。如果你有使用 Google 相册，你会发现，Google 对照片的识别能力比 iCloud 强太多，Google 能把我过去 10 多年的照片里我识别出来，并识别为唯一一个人，但 iCloud 却识别成好几个人。</p>
+<p>所以，Google 自然要炫耀它家的技术能力，自然要告诉全世界，论 AI，还是 Google 强。但对于一个音箱来说，AI 是重要的功能么？如果我们不把它定义为音箱呢？</p>
+<p>Google 把 Google Home 定义为家庭助理，听音乐是它的附加属性，而苹果，则是在做一个高品质的音箱，AI，只是这个音箱的附加功能。就像 Apple Watch，苹果花在设计上的宣传显然比花在智能上的宣传要多。</p>
+<p>国内的厂商也有不同的看法，有些厂商在设计上花了很大的功夫，认为智能音箱首先是一个装饰品，然后才是语音助理，而有一些，则和 Google 一样，强调技术实力。</p>
+<p>这两条路线哪个才是更好的？我不知道。如果从市场规模来看，可能苹果的路线更正确，但如果从投资未来的角度，Google 可能在做更正确的事。当然，也可能都对，也许未来会走向融合，比如，当你追求音箱的重低音时，你发现 Bose 推出了一款内置了 Google Assistant 能力的音箱，这不是更好的选择么？</p>
+<p>回到国内的产品，对于强调技术的产品，我很喜欢，但也略微担心。即使没有墙，Google Home 在中国依然会是一款小众产品，相比起智能助理，人们对音箱的需求显然更大。如果一个产品过度强调技术，而忽略「生活方式」，那么互联网的主要消费人群 — 女性，是否会买单？我没有答案，我唯一有答案的是，如果一个产品首先面向的是崇拜技术的极客人群，它会得到很好的传播，但在后期，它必须是一款平民级的「生活产品」，否则，市场太小。那么，这个时候，智能和硬件之间，谁才是真的「恰到好处」？</p>
+<p>不管怎样，我们可以预见未来会出现很多细分场景的 AI 助理，做菜的、陪伴的、导游的……想想都会觉得，科技真美好，而这些的实现，离不开技术的积累。</p>
+<p>祝福那些有深厚技术积累的公司。<div style="clear:both"></div><div class="cc"><p>The <a href="https://blog.naaln.com">Why·Liam·Blog</a> by <a href="https://www.naaln.com" target="_blank" rel="external">WhyLiam</a> is licensed under a <a href="http://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" rel="external">Creative Commons BY-NC-ND 4.0 International License</a>.</p><p>由<a href="https://www.naaln.com" target="_blank" rel="external">WhyLiam</a>创作并维护的<a href="https://blog.naaln.com">Why·Liam·Blog</a>采用创作共用<a href="http://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" rel="external">保留署名-非商业-禁止演绎4.0国际许可证</a>。</p><p>本文首发于<a href="https://blog.naaln.com">Why·Liam·Blog (https://blog.naaln.com)</a>，版权所有，侵权必究。</p><p>本文永久链接：<a href="https://blog.naaln.com/2017/06/amount-artificial-ntelligence/">https://blog.naaln.com/2017/06/amount-artificial-ntelligence/</a></p><p></p></div></p>
+
+      
+    </div>
+    
+    
+    
+
+    
+      <div>
+        <div id="wechat_subscriber" style="display: block; padding: 10px 0; margin: 20px auto; width: 100%; text-align: center">
+    <img id="wechat_subscriber_qcode" src="//ws1.sinaimg.cn/large/006tKfTcgy1fg8gpi7kaaj30by0by74i.jpg" alt="WHY·LIAM wechat" style="width: 200px; max-width: 100%;"/>
+    <div>记录生活，研究产品，分享设计，分析数据，讨论科技和商业，不定期扯淡。</div>
+</div>
+
+      </div>
+    
+
+    
+      <div>
+        <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+  <div>如果觉得我的文章对您有用，请随意打赏。您的支持将鼓励我继续创作！</div>
+  <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+    <span>打赏</span>
+  </button>
+  <div id="QR" style="display: none;">
+
+    
+      <div id="wechat" style="display: inline-block">
+        <img id="wechat_qr" src="//ws1.sinaimg.cn/mw690/006tNc79gy1fm7yqrau7mj30f00ezad5.jpg" alt="WHY·LIAM 微信支付"/>
+        <p>微信支付</p>
+      </div>
+    
+
+    
+      <div id="alipay" style="display: inline-block">
+        <img id="alipay_qr" src="//ww3.sinaimg.cn/mw690/48910e01gw1evkbfendrjj20ci0ci0uf.jpg" alt="WHY·LIAM 支付宝"/>
+        <p>支付宝</p>
+      </div>
+    
+
+    
+
+  </div>
+</div>
+
+      </div>
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/人工智能/" rel="tag"># 人工智能</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2017/06/welcome-app-store/" rel="next" title="欢迎来到全新的 App Store！">
+                <i class="fa fa-chevron-left"></i> 欢迎来到全新的 App Store！
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2017/06/eight-ways-heat-maps/" rel="prev" title="8种热图用法揭示用户的网站浏览行为">
+                8种热图用法揭示用户的网站浏览行为 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+  
+    <div class="comments" id="comments">
+      <div id="SOHUCS"></div>
+    </div>
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+
+      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image"
+                src="//tva2.sinaimg.cn/crop.0.0.998.998.180/48910e01gw1ef5p6etuzdj20rs0rs771.jpg"
+                alt="WHY·LIAM" />
+            
+              <p class="site-author-name" itemprop="name">WHY·LIAM</p>
+              <p class="site-description motion-element" itemprop="description"></p>
+          </div>
+
+          
+            <nav class="site-state motion-element">
+              
+                <div class="site-state-item site-state-posts">
+                
+                  <a href="/archives/">
+                
+                    <span class="site-state-item-count">721</span>
+                    <span class="site-state-item-name">日志</span>
+                  </a>
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-categories">
+                  <a href="/categories/index.html">
+                    <span class="site-state-item-count">4</span>
+                    <span class="site-state-item-name">分类</span>
+                  </a>
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-tags">
+                  <a href="/tags/index.html">
+                    <span class="site-state-item-count">67</span>
+                    <span class="site-state-item-name">标签</span>
+                  </a>
+                </div>
+              
+            </nav>
+          
+
+          
+            <div class="feed-link motion-element">
+              <a href="/atom.xml" rel="alternate">
+                <i class="fa fa-rss"></i>
+                RSS
+              </a>
+            </div>
+          
+
+          
+            <div class="links-of-author motion-element">
+                
+                  <span class="links-of-author-item">
+                    <a href="https://github.com/liszd" target="_blank" title="GitHub" rel="external nofollow">
+                      
+                        <i class="fa fa-fw fa-github"></i>GitHub</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="http://weibo.com/whyliam" target="_blank" title="微博" rel="external nofollow">
+                      
+                        <i class="fa fa-fw fa-weibo"></i>微博</a>
+                  </span>
+                
+            </div>
+          
+
+          
+          
+            <div class="cc-license motion-element" itemprop="license">
+              <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/" class="cc-opacity" target="_blank" rel="external nofollow">
+                <img src="/images/cc-by-nc-nd.svg" alt="Creative Commons" />
+              </a>
+            </div>
+          
+
+          
+          
+            <div class="links-of-blogroll motion-element links-of-blogroll-block">
+              <div class="links-of-blogroll-title">
+                <i class="fa  fa-fw fa-link"></i>
+                Links
+              </div>
+              <ul class="links-of-blogroll-list">
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="http://www.naaln.com/" title="纳兰主页" target="_blank">纳兰主页</a>
+                  </li>
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="http://photo.naaln.com/" title="纳兰相册" target="_blank">纳兰相册</a>
+                  </li>
+                
+              </ul>
+            </div>
+          
+
+          
+            
+          
+          
+
+        </div>
+      </section>
+
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; 2003 &mdash; <span itemprop="copyrightYear">2018</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">WHY·LIAM</span>
+
+  
+
+  
+</div>
+
+
+  
+
+
+
+  <div class="powered-by">由 <a class="theme-link" target="_blank" rel="external nofollow" href="https://hexo.io">Hexo</a> 强力驱动</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" rel="external nofollow" href="https://github.com/theme-next/hexo-theme-next">NexT.Muse</a> v6.0.2</div>
+
+
+
+  <div class="footer-custom">Hosted by <a target="_blank" rel="external nofollow" href="https://pages.coding.me"><b>Coding Pages</b></a></div>
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=6.0.2"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=6.0.2"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=6.0.2"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=6.0.2"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=6.0.2"></script>
+
+
+
+  
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+  
+    <script type="text/javascript">
+    (function(){
+      var appid = 'cytklkKc0';
+      var conf = 'prod_b1dd516bbb7f3198591656f99d9ace80';
+      var width = window.innerWidth || document.documentElement.clientWidth;
+      if (width < 960) {
+      window.document.write('<script id="changyan_mobile_js" charset="utf-8" type="text/javascript" src="https://changyan.sohu.com/upload/mobile/wap-js/changyan_mobile.js?client_id=' + appid + '&conf=' + conf + '"><\/script>'); } else { var loadJs=function(d,a){var c=document.getElementsByTagName("head")[0]||document.head||document.documentElement;var b=document.createElement("script");b.setAttribute("type","text/javascript");b.setAttribute("charset","UTF-8");b.setAttribute("src",d);if(typeof a==="function"){if(window.attachEvent){b.onreadystatechange=function(){var e=b.readyState;if(e==="loaded"||e==="complete"){b.onreadystatechange=null;a()}}}else{b.onload=a}}c.appendChild(b)};loadJs("https://changyan.sohu.com/upload/changyan.js",function(){
+        window.changyan.api.config({appid:appid,conf:conf})});
+      }
+    })();
+    </script>
+    <script type="text/javascript" src="https://assets.changyan.sohu.com/upload/plugins/plugins.count.js"></script>
+  
+
+
+
+
+
+
+
+  
+
+
+
+
+  
+  
+  
+  <link rel="stylesheet" href="/lib/algolia-instant-search/instantsearch.min.css">
+
+  
+  
+  <script src="/lib/algolia-instant-search/instantsearch.min.js"></script>
+  
+
+  <script src="/js/src/algolia-search.js?v=6.0.2"></script>
+
+
+
+  
+
+  
+
+  
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';        
+    }
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>

@@ -1,0 +1,950 @@
+<!DOCTYPE html>
+
+
+
+
+<html class="theme-next muse" lang="zh-CN">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+  <meta name="google-site-verification" content="ByVfaP_E3b9ZYRUGhNAUFSQKL8mJQwUehpQwoxJ5n-c" />
+
+
+
+  <meta name="msvalidate.01" content="DB220684085BEDBD2E49E8E942534B1F" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=6.0.2" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon-next.png?v=6.0.2">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32-next.png?v=6.0.2">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16-next.png?v=6.0.2">
+
+
+  <link rel="mask-icon" href="/favicon/logo.svg?v=6.0.2" color="#222">
+
+
+
+
+
+
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Muse',
+    version: '6.0.2',
+    sidebar: {"position":"right","display":"hide","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: false,
+    fastclick: false,
+    lazyload: false,
+    tabs: true,
+    motion: {"enable":false,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    algolia: {
+      applicationID: 'XILKIWTAM9',
+      apiKey: '8c01137fe05d281ccd531a0ec622322a',
+      indexName: 'blog',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"搜索文章","hits_empty":"啊，找不到 ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+  
+
+
+
+
+  
+  <meta name="keywords" content="Why, Liam, 李承璋" />
+
+
+<meta name="description" content="「一辆车子多少钱？一个房子多少钱？」 这问题在工程师或设计师的眼里就如「一辆车子多少钱？一个房子多少钱？」,这个问题实在空泛到一个让人无法言语的境界，这也是我最常被问到的问题「做一个网站多少钱？」。说真的我大概能了解提问人的想法，或许只要说出个大概就是他们要的答案，例如说个多少X千和多少X万之间，或许我的职业病，我实在没有办法容忍这种不明确的答案。 为何我回答不了这个问题的原因大概是，最起码，给我">
+<meta name="keywords" content="Why, Liam, 李承璋">
+<meta property="og:type" content="article">
+<meta property="og:title" content="做一个网站多少钱？">
+<meta property="og:url" content="https://blog.naaln.com/2014/10/how-much-is-a-website/index.html">
+<meta property="og:site_name" content="Why·Liam·Blog">
+<meta property="og:description" content="「一辆车子多少钱？一个房子多少钱？」 这问题在工程师或设计师的眼里就如「一辆车子多少钱？一个房子多少钱？」,这个问题实在空泛到一个让人无法言语的境界，这也是我最常被问到的问题「做一个网站多少钱？」。说真的我大概能了解提问人的想法，或许只要说出个大概就是他们要的答案，例如说个多少X千和多少X万之间，或许我的职业病，我实在没有办法容忍这种不明确的答案。 为何我回答不了这个问题的原因大概是，最起码，给我">
+<meta property="og:locale" content="zh-CN">
+<meta property="og:image" content="http://mmbiz.qpic.cn/mmbiz/NVvB3l3e9aFjfF19XbYpABn9VEjk8xZ4gIYna2e7oVctmYwicPsIcB95MCkib86IlkKviax3JSXdyYzsXHWQibMNrw/0">
+<meta property="og:updated_time" content="2017-09-03T09:15:57.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="做一个网站多少钱？">
+<meta name="twitter:description" content="「一辆车子多少钱？一个房子多少钱？」 这问题在工程师或设计师的眼里就如「一辆车子多少钱？一个房子多少钱？」,这个问题实在空泛到一个让人无法言语的境界，这也是我最常被问到的问题「做一个网站多少钱？」。说真的我大概能了解提问人的想法，或许只要说出个大概就是他们要的答案，例如说个多少X千和多少X万之间，或许我的职业病，我实在没有办法容忍这种不明确的答案。 为何我回答不了这个问题的原因大概是，最起码，给我">
+<meta name="twitter:image" content="http://mmbiz.qpic.cn/mmbiz/NVvB3l3e9aFjfF19XbYpABn9VEjk8xZ4gIYna2e7oVctmYwicPsIcB95MCkib86IlkKviax3JSXdyYzsXHWQibMNrw/0">
+
+
+
+  <link rel="alternate" href="/atom.xml" title="Why·Liam·Blog" type="application/atom+xml" />
+
+
+
+
+  <link rel="canonical" href="https://blog.naaln.com/2014/10/how-much-is-a-website/"/>
+
+
+  <title>做一个网站多少钱？ | Why·Liam·Blog</title>
+  
+
+
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-47966442-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-47966442-2');
+</script>
+
+
+
+
+
+
+  
+<script src="//msite.baidu.com/sdk/c.js?appid=1586840953097399"></script>
+<link rel="canonical" href="https://blog.naaln.com/2014/10/how-much-is-a-website/"/>
+<script type="application/ld+json">
+    {
+        "@context": "https://ziyuan.baidu.com/contexts/cambrian.jsonld",
+        "@id": "https://blog.naaln.com/2014/10/how-much-is-a-website/",
+        "appid": "1586840953097399",
+        "title": "做一个网站多少钱？",
+        "images": [
+            ""
+            ],
+        "description": "",
+        "pubDate": "",
+        "upDate": "",
+        "lrDate": ""
+    }
+</script>
+
+  <noscript>
+  <style type="text/css">
+    .use-motion .motion-element,
+    .use-motion .brand,
+    .use-motion .menu-item,
+    .sidebar-inner,
+    .use-motion .post-block,
+    .use-motion .pagination,
+    .use-motion .comments,
+    .use-motion .post-header,
+    .use-motion .post-body,
+    .use-motion .collection-title { opacity: initial; }
+
+    .use-motion .logo,
+    .use-motion .site-title,
+    .use-motion .site-subtitle {
+      opacity: initial;
+      top: initial;
+    }
+
+    .use-motion {
+      .logo-line-before i { left: initial; }
+      .logo-line-after i { right: initial; }
+    }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-CN">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-right page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"> <div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Why·Liam·Blog</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <h1 class="site-subtitle" itemprop="description">人生若如初見</h1>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            <i class="menu-item-icon fa fa-fw fa-home"></i> <br />首页</a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />归档</a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-technology">
+          <a href="/categories/technology/" rel="section">
+            <i class="menu-item-icon fa fa-fw fa-code"></i> <br />技术</a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-jottings">
+          <a href="/categories/jottings/" rel="section">
+            <i class="menu-item-icon fa fa-fw fa-language"></i> <br />随笔</a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tour">
+          <a href="/categories/tour/" rel="section">
+            <i class="menu-item-icon fa fa-fw fa-globe"></i> <br />旅游</a>
+        </li>
+      
+
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br />搜索</a>
+        </li>
+      
+    </ul>
+  
+
+  
+    <div class="site-search">
+      
+  
+  <div class="algolia-popup popup search-popup">
+    <div class="algolia-search">
+      <div class="algolia-search-input-icon">
+        <i class="fa fa-search"></i>
+      </div>
+      <div class="algolia-search-input" id="algolia-search-input"></div>
+    </div>
+
+    <div class="algolia-results">
+      <div id="algolia-stats"></div>
+      <div id="algolia-hits"></div>
+      <div id="algolia-pagination" class="algolia-pagination"></div>
+    </div>
+
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+  </div>
+
+
+
+
+    </div>
+  
+</nav>
+
+
+  
+
+
+
+ </div>
+    </header>
+
+    
+
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://blog.naaln.com/2014/10/how-much-is-a-website/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="WHY·LIAM">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="//tva2.sinaimg.cn/crop.0.0.998.998.180/48910e01gw1ef5p6etuzdj20rs0rs771.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Why·Liam·Blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h2 class="post-title" itemprop="name headline">做一个网站多少钱？</h2>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2014-10-20T10:14:00+08:00">2014-10-20</time>
+            
+
+            
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/technology/" itemprop="url" rel="index"><span itemprop="name">技术</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+              <span class="post-meta-divider">|</span>
+              <span class="post-meta-item-icon">
+                <i class="fa fa-comment-o"></i>
+              </span>
+              
+                <a href="/2014/10/how-much-is-a-website/#SOHUCS" itemprop="discussionUrl">
+                  <span id="changyan_count_unit" class="post-comments-count hc-comment-count" data-xid="2014/10/how-much-is-a-website/" itemprop="commentsCount"></span>
+                </a>
+              
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p><strong>「一辆车子多少钱？一个房子多少钱？」</strong></p>
+<p>这问题在工程师或设计师的眼里就如「一辆车子多少钱？一个房子多少钱？」,这个问题实在空泛到一个让人无法言语的境界，这也是我最常被问到的问题「做一个网站多少钱？」。说真的我大概能了解提问人的想法，或许只要说出个大概就是他们要的答案，例如说个多少X千和多少X万之间，或许我的职业病，我实在没有办法容忍这种不明确的答案。</p>
+<p>为何我回答不了这个问题的原因大概是，最起码，给我一个参考的范例嘛，例如你问「这一台这样的车子，二手的，T牌2005年产，你估多少？」虽然提供的资讯不是很多但是起码还是可以计算的。就是大概会落在某个价格区间上，而影响最后价格的大概就是细节！没错，就是细节，或许大家对于网站的理解不是很深所以没有办法提供什么明确的资讯，所以一般我都会把这类问题归类为「随便问问」，所以我都会「随便答答」。</p>
+<p><strong>「嗯～大概是XX万」</strong></p>
+<p>其实真正的数字是多少我已经不在乎了，我只是想随便打发他一下，毕竟对于一点概念都没有日后也不知道怎么沟通，我仿佛变成一个商业大师而脑袋就出现一道光，隐隐约约有那么一句话「有案子来很好，但是拒绝一些案子会让妳日子过得更好！」</p>
+<p><strong>「我只想要一个简单的网站」</strong></p>
+<p>马上就来了第二句我平生最害怕的一句话，这句话就如我老师说暑假要到学校上课，周末要继续加班一样，简简单单的一句话就吓的我手足无措，什么叫做上课！什么叫做加班！！还有，什么叫做「简单」。</p>
+<p>不到半秒钟的时间，发问者马上说，就简单的一个首页，然后可以看到我们的资料，可以浏览我们的产品，不需要购物车（用手语和脸部表情来强调，仿佛以为没有这个项目就会一切变得简单），然后手机和平板看得到。好吧，这算是有提供一些资讯了，但是这说不上简单，或许比较恰当的话，可以用「一般」。</p>
+<p><strong>如果你不是工程师，不要说简单</strong></p>
+<p>乍听之下，这也没有那里比较简单啊？算了，我想大概有参考的网站，当然这时候就会看到一些千奇百怪，这样说好像不恰当，应该是千变万化的网站范例出来，然后每个举例他们喜欢的「部分」，例如你喜欢「 F牌的车头」还有「蓝牌的车身」，不过里面的座位部分我们喜欢有「T牌的感觉」，这很简单，就是这样而已。</p>
+<p>医生说我心脏不太好不可以一天受太多刺激。我想大概每个工程师或设计师听到「这很简单」这四个字的时候，恨不得就马上起立，把电脑交给对方让对方马上示范一次，如何简单！若无法完成的话，我想这把怒火应该会燃烧个三天三夜，不过好歹我是个专业的（演员），马上露出12分的微笑和假装情不自禁的拍手说「这想法真不错～」我自己小时候也梦想自己会飞，那多好（喂～），有时候我们听客户的想法就如听小孩子的梦想一般，你不能说不可能，就目前为止，比较不可能。最起码，你给的预算不可能，甚至时间上也不可能。</p>
+<p>虽然他的建议我们还是要听，所以我们大概就能画出一个「F蓝T」的车子（网站）出来，集各家之所长的网站。别以为这样就会结束，制造过程中，客户会马上变成设计总监和设计大师甚至兼职网路行销专家，会要你马上修改一些很「简单」的东西，例如左边的logo换去右边的logo，把「马上购买」放大到一个极度浮夸的程度，又或者把某网站的功能拿过来，即便用在客户的网站上很怪也无所谓，因为本来就有「F蓝T」了，多加一个也没差。</p>
+<p>但是也有极端的例子，他真的要很简单的网站，简单的程度就是他根本不在乎设计是怎样，他们只想要秀出产品和联络方法，这种那么极端的事情我还真的遇到不少，当然我也不知道为何会这样，反正他们就是只愿意花个数百几千，而且对他们来说已经算是很「阔气」了，当然我并没有什么褒贬义，每个生意人对于每个成本的拿捏自有一套准则那是很合理的事，所以回归到我们的主题，做一个网站多少钱？把它换一个角度问就是为何我要花这个钱做这个网站？</p>
+<p><strong>网站并没有带来直接的效益？为何要花钱？</strong></p>
+<p>这显然是一个很大的课题，但是狭义来说，就如一家店的装潢，百万装潢，和几张IKEX家居构建而成的，都可以营业，客人都可以坐下用餐，没有问题。差别就是在你对你品牌的专业度和用心上，客人买的很多时候也是差异化。当你去google 「Why your business needs a website」出来几十亿则结果所以可以慢慢去理解看看大家怎么说。</p>
+<p>一个网站并没有带来效益？这不是一个是非题，就如一个实体店面，也未必会有任何效益，假设他没有间接或直接的商业活动，网站本身就如一个实体店面，想要直接获益就必须要经营，甚至就如一个广告，如旗舰店的概念，24小时都灯光通明的，老远的地方都看到一个水果挂在远方的玻璃建筑物上，网站也是一样，至2014年3月为止资策会的资料显示台湾平均每四个人就有三个会上网。而他们都上网做些什么？</p>
+<p><img src="http://mmbiz.qpic.cn/mmbiz/NVvB3l3e9aFjfF19XbYpABn9VEjk8xZ4gIYna2e7oVctmYwicPsIcB95MCkib86IlkKviax3JSXdyYzsXHWQibMNrw/0" alt=""></p>
+<p>这些就是潜在客户群，而一个专业，实用、好用的网站就是一个24小时的行销工具，那么你觉得你应该花多少钱时间和预算在这个地方，那就视每个公司的营运决策而定。值不值得花这个钱，我也没有办法说得准，毕竟你来我餐厅吃饭，我是在没有办法告诉你那一道菜不好吃，我只能和你说每道菜的特色，让妳来选，因为从我的角度，我当然希望你们全部都点（认真一点写！不要开欢笑）</p>
+<p><strong>那你可以做什么？</strong></p>
+<p>假设以后你想要请人制造网站，或许可以想像自己的需求是什么？</p>
+<p>一，这网站的功能（目的）是什么？</p>
+<p>二，你的预算是多少？</p>
+<p>三，你有喜欢的设计吗？举例一个就好。</p>
+<p>四，你需要更新资料的后台吗？你之后会不会增加功能？</p>
+<p>先想一下你目前为何要做这个网站，然后想一下可以花多少钱在这个地方，找一个你大概喜欢网站的样子，想一下之后网站做好后的事。大概就四步很简单！</p>
+<p>到了第二步，如果预算真的没有很多，我倒是很建议大家去开一个免费blog，或者FB来个粉丝专页，等之后真的觉得很需要一个官网再来弄也不迟。所以别老是问「做一个网站多少钱？」，好希望有一天客户和我说「我准备好XX来做这个网站了」，直接进入主题，那么岂不是很好沟通吗</p>
+<div style="clear:both"></div><div class="cc"><p>The <a href="https://blog.naaln.com">Why·Liam·Blog</a> by <a href="https://www.naaln.com" target="_blank" rel="external">WhyLiam</a> is licensed under a <a href="http://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" rel="external">Creative Commons BY-NC-ND 4.0 International License</a>.</p><p>由<a href="https://www.naaln.com" target="_blank" rel="external">WhyLiam</a>创作并维护的<a href="https://blog.naaln.com">Why·Liam·Blog</a>采用创作共用<a href="http://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" rel="external">保留署名-非商业-禁止演绎4.0国际许可证</a>。</p><p>本文首发于<a href="https://blog.naaln.com">Why·Liam·Blog (https://blog.naaln.com)</a>，版权所有，侵权必究。</p><p>本文永久链接：<a href="https://blog.naaln.com/2014/10/how-much-is-a-website/">https://blog.naaln.com/2014/10/how-much-is-a-website/</a></p><p></p></div>
+      
+    </div>
+    
+    
+    
+
+    
+      <div>
+        <div id="wechat_subscriber" style="display: block; padding: 10px 0; margin: 20px auto; width: 100%; text-align: center">
+    <img id="wechat_subscriber_qcode" src="//ws1.sinaimg.cn/large/006tKfTcgy1fg8gpi7kaaj30by0by74i.jpg" alt="WHY·LIAM wechat" style="width: 200px; max-width: 100%;"/>
+    <div>记录生活，研究产品，分享设计，分析数据，讨论科技和商业，不定期扯淡。</div>
+</div>
+
+      </div>
+    
+
+    
+      <div>
+        <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+  <div>如果觉得我的文章对您有用，请随意打赏。您的支持将鼓励我继续创作！</div>
+  <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+    <span>打赏</span>
+  </button>
+  <div id="QR" style="display: none;">
+
+    
+      <div id="wechat" style="display: inline-block">
+        <img id="wechat_qr" src="//ws1.sinaimg.cn/mw690/006tNc79gy1fm7yqrau7mj30f00ezad5.jpg" alt="WHY·LIAM 微信支付"/>
+        <p>微信支付</p>
+      </div>
+    
+
+    
+      <div id="alipay" style="display: inline-block">
+        <img id="alipay_qr" src="//ww3.sinaimg.cn/mw690/48910e01gw1evkbfendrjj20ci0ci0uf.jpg" alt="WHY·LIAM 支付宝"/>
+        <p>支付宝</p>
+      </div>
+    
+
+    
+
+  </div>
+</div>
+
+      </div>
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2014/10/whether-you-are-traveling-in-order-to-avoid-self/" rel="next" title="你是否在为了逃避自我而旅行">
+                <i class="fa fa-chevron-left"></i> 你是否在为了逃避自我而旅行
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2014/11/why-use-sass/" rel="prev" title="为什么要使用Sass">
+                为什么要使用Sass <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+  
+    <div class="comments" id="comments">
+      <div id="SOHUCS"></div>
+    </div>
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+
+      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image"
+                src="//tva2.sinaimg.cn/crop.0.0.998.998.180/48910e01gw1ef5p6etuzdj20rs0rs771.jpg"
+                alt="WHY·LIAM" />
+            
+              <p class="site-author-name" itemprop="name">WHY·LIAM</p>
+              <p class="site-description motion-element" itemprop="description"></p>
+          </div>
+
+          
+            <nav class="site-state motion-element">
+              
+                <div class="site-state-item site-state-posts">
+                
+                  <a href="/archives/">
+                
+                    <span class="site-state-item-count">721</span>
+                    <span class="site-state-item-name">日志</span>
+                  </a>
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-categories">
+                  <a href="/categories/index.html">
+                    <span class="site-state-item-count">4</span>
+                    <span class="site-state-item-name">分类</span>
+                  </a>
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-tags">
+                  <a href="/tags/index.html">
+                    <span class="site-state-item-count">67</span>
+                    <span class="site-state-item-name">标签</span>
+                  </a>
+                </div>
+              
+            </nav>
+          
+
+          
+            <div class="feed-link motion-element">
+              <a href="/atom.xml" rel="alternate">
+                <i class="fa fa-rss"></i>
+                RSS
+              </a>
+            </div>
+          
+
+          
+            <div class="links-of-author motion-element">
+                
+                  <span class="links-of-author-item">
+                    <a href="https://github.com/liszd" target="_blank" title="GitHub" rel="external nofollow">
+                      
+                        <i class="fa fa-fw fa-github"></i>GitHub</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="http://weibo.com/whyliam" target="_blank" title="微博" rel="external nofollow">
+                      
+                        <i class="fa fa-fw fa-weibo"></i>微博</a>
+                  </span>
+                
+            </div>
+          
+
+          
+          
+            <div class="cc-license motion-element" itemprop="license">
+              <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/" class="cc-opacity" target="_blank" rel="external nofollow">
+                <img src="/images/cc-by-nc-nd.svg" alt="Creative Commons" />
+              </a>
+            </div>
+          
+
+          
+          
+            <div class="links-of-blogroll motion-element links-of-blogroll-block">
+              <div class="links-of-blogroll-title">
+                <i class="fa  fa-fw fa-link"></i>
+                Links
+              </div>
+              <ul class="links-of-blogroll-list">
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="http://www.naaln.com/" title="纳兰主页" target="_blank">纳兰主页</a>
+                  </li>
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="http://photo.naaln.com/" title="纳兰相册" target="_blank">纳兰相册</a>
+                  </li>
+                
+              </ul>
+            </div>
+          
+
+          
+            
+          
+          
+
+        </div>
+      </section>
+
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; 2003 &mdash; <span itemprop="copyrightYear">2018</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">WHY·LIAM</span>
+
+  
+
+  
+</div>
+
+
+  
+
+
+
+  <div class="powered-by">由 <a class="theme-link" target="_blank" rel="external nofollow" href="https://hexo.io">Hexo</a> 强力驱动</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" rel="external nofollow" href="https://github.com/theme-next/hexo-theme-next">NexT.Muse</a> v6.0.2</div>
+
+
+
+  <div class="footer-custom">Hosted by <a target="_blank" rel="external nofollow" href="https://pages.coding.me"><b>Coding Pages</b></a></div>
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=6.0.2"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=6.0.2"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=6.0.2"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=6.0.2"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=6.0.2"></script>
+
+
+
+  
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+  
+    <script type="text/javascript">
+    (function(){
+      var appid = 'cytklkKc0';
+      var conf = 'prod_b1dd516bbb7f3198591656f99d9ace80';
+      var width = window.innerWidth || document.documentElement.clientWidth;
+      if (width < 960) {
+      window.document.write('<script id="changyan_mobile_js" charset="utf-8" type="text/javascript" src="https://changyan.sohu.com/upload/mobile/wap-js/changyan_mobile.js?client_id=' + appid + '&conf=' + conf + '"><\/script>'); } else { var loadJs=function(d,a){var c=document.getElementsByTagName("head")[0]||document.head||document.documentElement;var b=document.createElement("script");b.setAttribute("type","text/javascript");b.setAttribute("charset","UTF-8");b.setAttribute("src",d);if(typeof a==="function"){if(window.attachEvent){b.onreadystatechange=function(){var e=b.readyState;if(e==="loaded"||e==="complete"){b.onreadystatechange=null;a()}}}else{b.onload=a}}c.appendChild(b)};loadJs("https://changyan.sohu.com/upload/changyan.js",function(){
+        window.changyan.api.config({appid:appid,conf:conf})});
+      }
+    })();
+    </script>
+    <script type="text/javascript" src="https://assets.changyan.sohu.com/upload/plugins/plugins.count.js"></script>
+  
+
+
+
+
+
+
+
+  
+
+
+
+
+  
+  
+  
+  <link rel="stylesheet" href="/lib/algolia-instant-search/instantsearch.min.css">
+
+  
+  
+  <script src="/lib/algolia-instant-search/instantsearch.min.js"></script>
+  
+
+  <script src="/js/src/algolia-search.js?v=6.0.2"></script>
+
+
+
+  
+
+  
+
+  
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';        
+    }
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>

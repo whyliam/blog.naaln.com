@@ -1,0 +1,963 @@
+<!DOCTYPE html>
+
+
+
+
+<html class="theme-next muse" lang="zh-CN">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+  <meta name="google-site-verification" content="ByVfaP_E3b9ZYRUGhNAUFSQKL8mJQwUehpQwoxJ5n-c" />
+
+
+
+  <meta name="msvalidate.01" content="DB220684085BEDBD2E49E8E942534B1F" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=6.0.2" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon-next.png?v=6.0.2">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32-next.png?v=6.0.2">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16-next.png?v=6.0.2">
+
+
+  <link rel="mask-icon" href="/favicon/logo.svg?v=6.0.2" color="#222">
+
+
+
+
+
+
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Muse',
+    version: '6.0.2',
+    sidebar: {"position":"right","display":"hide","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: false,
+    fastclick: false,
+    lazyload: false,
+    tabs: true,
+    motion: {"enable":false,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    algolia: {
+      applicationID: 'XILKIWTAM9',
+      apiKey: '8c01137fe05d281ccd531a0ec622322a',
+      indexName: 'blog',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"搜索文章","hits_empty":"啊，找不到 ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+  
+
+
+
+
+  
+  <meta name="keywords" content="hadoop," />
+
+
+<meta name="description" content="“你在大数据和Hadoop方面有多少经验呢”，他们问我。我告诉他们，我一直在使用Hadoop，但是很少处理几TB以上的数据。我基本上只是一个大数据新手——知道概念，写过代码，但是没有大规模经验。 他们又问我，“你能使用Hadoop做简单的group by(分组)和sum(统计)吗？”我说当然可以，但是我我需要看具体的文件格式。 他们给我一个U盘，里面存储600MB数据（所有的数据，而不是样本数据）">
+<meta name="keywords" content="hadoop">
+<meta property="og:type" content="article">
+<meta property="og:title" content="不要使用Hadoop，当你数据不够大的时候">
+<meta property="og:url" content="https://blog.naaln.com/2015/04/do-not-use-hadoop-when-your-data-is-not-enough/index.html">
+<meta property="og:site_name" content="Why·Liam·Blog">
+<meta property="og:description" content="“你在大数据和Hadoop方面有多少经验呢”，他们问我。我告诉他们，我一直在使用Hadoop，但是很少处理几TB以上的数据。我基本上只是一个大数据新手——知道概念，写过代码，但是没有大规模经验。 他们又问我，“你能使用Hadoop做简单的group by(分组)和sum(统计)吗？”我说当然可以，但是我我需要看具体的文件格式。 他们给我一个U盘，里面存储600MB数据（所有的数据，而不是样本数据）">
+<meta property="og:locale" content="zh-CN">
+<meta property="og:updated_time" content="2017-09-03T09:15:57.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="不要使用Hadoop，当你数据不够大的时候">
+<meta name="twitter:description" content="“你在大数据和Hadoop方面有多少经验呢”，他们问我。我告诉他们，我一直在使用Hadoop，但是很少处理几TB以上的数据。我基本上只是一个大数据新手——知道概念，写过代码，但是没有大规模经验。 他们又问我，“你能使用Hadoop做简单的group by(分组)和sum(统计)吗？”我说当然可以，但是我我需要看具体的文件格式。 他们给我一个U盘，里面存储600MB数据（所有的数据，而不是样本数据）">
+
+
+
+  <link rel="alternate" href="/atom.xml" title="Why·Liam·Blog" type="application/atom+xml" />
+
+
+
+
+  <link rel="canonical" href="https://blog.naaln.com/2015/04/do-not-use-hadoop-when-your-data-is-not-enough/"/>
+
+
+  <title>不要使用Hadoop，当你数据不够大的时候 | Why·Liam·Blog</title>
+  
+
+
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-47966442-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-47966442-2');
+</script>
+
+
+
+
+
+
+  
+<script src="//msite.baidu.com/sdk/c.js?appid=1586840953097399"></script>
+<link rel="canonical" href="https://blog.naaln.com/2015/04/do-not-use-hadoop-when-your-data-is-not-enough/"/>
+<script type="application/ld+json">
+    {
+        "@context": "https://ziyuan.baidu.com/contexts/cambrian.jsonld",
+        "@id": "https://blog.naaln.com/2015/04/do-not-use-hadoop-when-your-data-is-not-enough/",
+        "appid": "1586840953097399",
+        "title": "不要使用Hadoop，当你数据不够大的时候",
+        "images": [
+            ""
+            ],
+        "description": "",
+        "pubDate": "",
+        "upDate": "",
+        "lrDate": ""
+    }
+</script>
+
+  <noscript>
+  <style type="text/css">
+    .use-motion .motion-element,
+    .use-motion .brand,
+    .use-motion .menu-item,
+    .sidebar-inner,
+    .use-motion .post-block,
+    .use-motion .pagination,
+    .use-motion .comments,
+    .use-motion .post-header,
+    .use-motion .post-body,
+    .use-motion .collection-title { opacity: initial; }
+
+    .use-motion .logo,
+    .use-motion .site-title,
+    .use-motion .site-subtitle {
+      opacity: initial;
+      top: initial;
+    }
+
+    .use-motion {
+      .logo-line-before i { left: initial; }
+      .logo-line-after i { right: initial; }
+    }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-CN">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-right page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"> <div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Why·Liam·Blog</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <h1 class="site-subtitle" itemprop="description">人生若如初見</h1>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            <i class="menu-item-icon fa fa-fw fa-home"></i> <br />首页</a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />归档</a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-technology">
+          <a href="/categories/technology/" rel="section">
+            <i class="menu-item-icon fa fa-fw fa-code"></i> <br />技术</a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-jottings">
+          <a href="/categories/jottings/" rel="section">
+            <i class="menu-item-icon fa fa-fw fa-language"></i> <br />随笔</a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tour">
+          <a href="/categories/tour/" rel="section">
+            <i class="menu-item-icon fa fa-fw fa-globe"></i> <br />旅游</a>
+        </li>
+      
+
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br />搜索</a>
+        </li>
+      
+    </ul>
+  
+
+  
+    <div class="site-search">
+      
+  
+  <div class="algolia-popup popup search-popup">
+    <div class="algolia-search">
+      <div class="algolia-search-input-icon">
+        <i class="fa fa-search"></i>
+      </div>
+      <div class="algolia-search-input" id="algolia-search-input"></div>
+    </div>
+
+    <div class="algolia-results">
+      <div id="algolia-stats"></div>
+      <div id="algolia-hits"></div>
+      <div id="algolia-pagination" class="algolia-pagination"></div>
+    </div>
+
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+  </div>
+
+
+
+
+    </div>
+  
+</nav>
+
+
+  
+
+
+
+ </div>
+    </header>
+
+    
+
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://blog.naaln.com/2015/04/do-not-use-hadoop-when-your-data-is-not-enough/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="WHY·LIAM">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="//tva2.sinaimg.cn/crop.0.0.998.998.180/48910e01gw1ef5p6etuzdj20rs0rs771.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Why·Liam·Blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h2 class="post-title" itemprop="name headline">不要使用Hadoop，当你数据不够大的时候</h2>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2015-04-10T10:12:00+08:00">2015-04-10</time>
+            
+
+            
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/technology/" itemprop="url" rel="index"><span itemprop="name">技术</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+              <span class="post-meta-divider">|</span>
+              <span class="post-meta-item-icon">
+                <i class="fa fa-comment-o"></i>
+              </span>
+              
+                <a href="/2015/04/do-not-use-hadoop-when-your-data-is-not-enough/#SOHUCS" itemprop="discussionUrl">
+                  <span id="changyan_count_unit" class="post-comments-count hc-comment-count" data-xid="2015/04/do-not-use-hadoop-when-your-data-is-not-enough/" itemprop="commentsCount"></span>
+                </a>
+              
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p>“你在大数据和Hadoop方面有多少经验呢”，他们问我。我告诉他们，我一直在使用Hadoop，但是很少处理几TB以上的数据。我基本上只是一个大数据新手——知道概念，写过代码，但是没有大规模经验。</p>
+<p>他们又问我，“你能使用Hadoop做简单的group by(分组)和sum(统计)吗？”我说当然可以，但是我我需要看具体的文件格式。</p>
+<p>他们给我一个U盘，里面存储600MB数据（所有的数据，而不是样本数据）。不知道为什么，当我我使用<code>pandas.read_csv</code>（Pandas是一种Python数据分析库）解决方案，而不是Hadoop完成了这个任务后，他们显得很不满意。</p>
+<p>Hadoop实际上是有很多局限性的。Hadoop可以运行一个通用的计算，下面我用伪码进行说明：</p>
+<p>Scala风格的伪码：</p>
+<pre><code>collection.flatMap( (k,v) =&gt; F(k,v) ).groupBy( _._1 ).map( _.reduce( (k,v) =&gt; G(k,v) ) )
+</code></pre><p>使用SQL风格的伪码表示：</p>
+<pre><code>SELECT G(...) FROM table GROUP BY F(...)
+</code></pre><p>或者想我多年解释一样：</p>
+<p>Hadoop is limiting. Hadoop allows you to run one general computation, which I’ll illustrate in pseudocode:</p>
+<p>Scala-ish pseudocode:</p>
+<p>或者想我多年<a href="https://www.chrisstucchio.com/blog/2011/mapreduce_explained.html" target="_blank" rel="noopener">解释</a>一样：</p>
+<blockquote>
+<p>Goal：统计计算图书馆书籍的数量</p>
+<p>Map：你统计奇数书架上书的数量，我统计偶数书架上书的数量。（做统计的人越多，统计出结果越快，就是机器越多，效率越高）</p>
+<p>Reduce：把我们每个人单独统计的结果数据加在一起。</p>
+</blockquote>
+<p>所以我们<em>唯一</em>需要接触的只有 <code>F(k,v)</code> and <code>G(k,v)</code>，除非要在中间步骤中做性能优化（通常十分的无聊），其他一切都是固定的。</p>
+<p>在Hadoop里，它迫使你所有计算都必须按照一个map、一个group by、一个aggregate或者这种计算序列来写。这和穿上紧身衣一样，多憋得慌啊。许多计算用其他模型其实更适合。穿上紧身衣（使用hadoop）的唯一原因就是，可以扩展到极大的数据集。可大多数情况，你的数据集很可能根本远远够不上那个数量级。</p>
+<p>可是呢，因为<code>Hadoop</code>和<code>大数据</code>是热词，世界有一半的人都想穿上紧身衣，即使他们实际不需要Hadoop。</p>
+<h2 id="我有几百兆的数据，Excel可能没法加载它"><a href="#我有几百兆的数据，Excel可能没法加载它" class="headerlink" title="我有几百兆的数据，Excel可能没法加载它"></a>我有几百兆的数据，Excel可能没法加载它</h2><p>对于Excel来说的“很大的数据”并非大数据，其实还有其它极好的工具可以使用——我喜欢的是基于<a href="http://www.numpy.org/" target="_blank" rel="noopener">Numpy</a>库之上<a href="http://pandas.pydata.org/" target="_blank" rel="noopener">Pandas</a>。它可以将几百MB数据以高效的向量化格式加载到内存，在我购买已3年的笔记本上，一眨眼的功夫，Numpy就能完成1亿次浮点计算。Matlab和R也是极好的工具。</p>
+<p>因此，对于几百兆的数据量，典型的做法是写一个简单的Python脚本逐行读取，处理，然后写到了一个文件就行了。</p>
+<h3 id="可我的数据是10GB呢？"><a href="#可我的数据是10GB呢？" class="headerlink" title="可我的数据是10GB呢？"></a>可我的数据是10GB呢？</h3><p>我买了台新笔记本，它有<a href="http://www.amazon.com/gp/product/B0076W9Q5A/ref=as_li_ss_tl?ie=UTF8&amp;camp=1789&amp;creative=390957&amp;creativeASIN=B0076W9Q5A&amp;linkCode=as2&amp;tag=christuc-20" target="_blank" rel="noopener">16GB的内存</a>（花$141.98）和256GB的SSD(额外200美元)。如果在Pandas里加载一个10GB的csv文件，实际在内存里并没有那么大（内存不是占有10G）——可以将 “17284932583” 这样的数值串存为4位或者8位整数，“284572452.2435723”存为8位双精度。</p>
+<p>最坏的情况下你还可以不同时将所有数据都一次加载到内存里。</p>
+<h3 id="可我的数据是100GB、500GB或1TB呢"><a href="#可我的数据是100GB、500GB或1TB呢" class="headerlink" title="可我的数据是100GB、500GB或1TB呢!"></a>可我的数据是100GB、500GB或1TB呢!</h3><p>一个<a href="http://www.amazon.com/gp/product/B005T3GRN2/ref=as_li_ss_tl?ie=UTF8&amp;camp=1789&amp;creative=390957&amp;creativeASIN=B005T3GRN2&amp;linkCode=as2&amp;tag=christuc-20" target="_blank" rel="noopener">2T的硬盘</a>才94.99美元，<a href="http://www.amazon.com/gp/product/B005T3GRN2/ref=as_li_ss_tl?ie=UTF8&amp;camp=1789&amp;creative=390957&amp;creativeASIN=B005T3GRN2&amp;linkCode=as2&amp;tag=christuc-20" target="_blank" rel="noopener">4T</a>是169.99。买一块，加到桌面PC或者服务器上，然后装上<a href="http://www.postgresql.org/" target="_blank" rel="noopener">Postgres</a> 来解决它.</p>
+<h2 id="Hadoop-lt-lt-SQL或Python脚本"><a href="#Hadoop-lt-lt-SQL或Python脚本" class="headerlink" title="Hadoop &lt;&lt; SQL或Python脚本"></a>Hadoop &lt;&lt; SQL或Python脚本</h2><p>在计算的表达能力来说，Hadoop比SQL差。Hadoop里能写的计算，在SQL或者简单的Python脚本都可以更轻松地写出来。</p>
+<p>SQL是一个直观的查询语言，适合做业务分析，业务分析师和程序员都很常用。SQL查询非常简单，而且还非常快——只有数据库使用了正确的索引，要花几秒钟的sql查询都不太常见。</p>
+<p>Hadoop没有索引的概念，Hadoop只有全表扫描，而且Hadoop抽象层次太多了——我之前的项目尽在应付Java内存错误 <a href="/blog/2013/gc_overhead_limit.html">java memory errors</a>、内存碎片和集群竞用了，而这些时间远多于实际的数据分析工作。</p>
+<p>如果你的数据并不是像SQL表那样的结构化数据（比如纯文本、JSON对象、二进制对象），通常是直接写一个小的Python脚本或者Ruby脚本逐行处理更直接。保存到多个文件，然后逐个处理即可，SQL不适用的情况下，从编程来说Hadoop也没那么糟糕，但相比Python脚本仍然没有什么优势。</p>
+<p>除了难以编程，Hadoop还一般总是比其他技术方案要慢。只要索引用得好，SQL查询非常快。比如要计算join，PostgreSQL只需查看索引（如果有），然后查询所需的每个键。而Hadoop呢，必须做全表扫描，然后重排整个表。排序通过多台机器之间分片可以加速，但也带来了跨多机数据流处理的开销。如果要处理二进制文件，Hadoop必须反复访问namenode。而简单的Python脚本只要反复访问文件系统即可。</p>
+<h2 id="我的数据超过了5TB"><a href="#我的数据超过了5TB" class="headerlink" title="我的数据超过了5TB!"></a>我的数据超过了5TB!</h2><p>你的命可真苦——只能苦逼地折腾Hadoop了，没有太多其他选择（可能还能用许多硬盘容量的高富帅机器来扛），而且其他选择往往贵得要命（脑海中浮现出IOE等等字样……）。</p>
+<p>用Hadoop唯一的好处是扩展。如果你的数据是一个数TB的单表，那么全表扫描是Hadoop的强项。此外的话（如果你没有这样大数据量的表），请关爱生命，尽量远离Hadoop。它带来的烦恼根本不值，用传统方法既省时又省力。</p>
+<h2 id="P-S-Sales-Pitch"><a href="#P-S-Sales-Pitch" class="headerlink" title="P.S. Sales Pitch"></a>P.S. Sales Pitch</h2><p>我建立一个<a href="http://www.bayesianwitch.com/" target="_blank" rel="noopener">startup</a>旨在提供数据分析和实时的建议和优化针对出版商和电子商务网站。去看看吧</p>
+<h2 id="P-P-S-Hadoop是一个极好的工具"><a href="#P-P-S-Hadoop是一个极好的工具" class="headerlink" title="P.P.S. Hadoop是一个极好的工具"></a>P.P.S. Hadoop是一个极好的工具</h2><p>我并不讨厌Hadoop，当我用其它工具不能很好处理数据时我会选择Hadoop。另外，我推荐使用<a href="https://github.com/twitter/scalding" target="_blank" rel="noopener">Scalding</a>，不要使用Hive或Pig。Scalding支持使用Scala语言来编写Hadoop任务链，隐藏了其下的MapReduce。Hadoop是一个很好的工具，应该针对特定的例子使用它。唯一一点值得我仔细考虑的是运如何行<strong>Hadoop</strong>在<strong>云</strong>上，以处理500MB的<strong>大数据</strong>，当企业具有一定<strong>规模</strong>的时候。</p>
+<p><em>文章翻译自 <a href="http://habrahabr.ru/post/194434/" target="_blank" rel="noopener">Russian</a>.</em></p>
+<div style="clear:both"></div><div class="cc"><p>The <a href="https://blog.naaln.com">Why·Liam·Blog</a> by <a href="https://www.naaln.com" target="_blank" rel="external">WhyLiam</a> is licensed under a <a href="http://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" rel="external">Creative Commons BY-NC-ND 4.0 International License</a>.</p><p>由<a href="https://www.naaln.com" target="_blank" rel="external">WhyLiam</a>创作并维护的<a href="https://blog.naaln.com">Why·Liam·Blog</a>采用创作共用<a href="http://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" rel="external">保留署名-非商业-禁止演绎4.0国际许可证</a>。</p><p>本文首发于<a href="https://blog.naaln.com">Why·Liam·Blog (https://blog.naaln.com)</a>，版权所有，侵权必究。</p><p>本文永久链接：<a href="https://blog.naaln.com/2015/04/do-not-use-hadoop-when-your-data-is-not-enough/">https://blog.naaln.com/2015/04/do-not-use-hadoop-when-your-data-is-not-enough/</a></p><p></p></div>
+      
+    </div>
+    
+    
+    
+
+    
+      <div>
+        <div id="wechat_subscriber" style="display: block; padding: 10px 0; margin: 20px auto; width: 100%; text-align: center">
+    <img id="wechat_subscriber_qcode" src="//ws1.sinaimg.cn/large/006tKfTcgy1fg8gpi7kaaj30by0by74i.jpg" alt="WHY·LIAM wechat" style="width: 200px; max-width: 100%;"/>
+    <div>记录生活，研究产品，分享设计，分析数据，讨论科技和商业，不定期扯淡。</div>
+</div>
+
+      </div>
+    
+
+    
+      <div>
+        <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+  <div>如果觉得我的文章对您有用，请随意打赏。您的支持将鼓励我继续创作！</div>
+  <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+    <span>打赏</span>
+  </button>
+  <div id="QR" style="display: none;">
+
+    
+      <div id="wechat" style="display: inline-block">
+        <img id="wechat_qr" src="//ws1.sinaimg.cn/mw690/006tNc79gy1fm7yqrau7mj30f00ezad5.jpg" alt="WHY·LIAM 微信支付"/>
+        <p>微信支付</p>
+      </div>
+    
+
+    
+      <div id="alipay" style="display: inline-block">
+        <img id="alipay_qr" src="//ww3.sinaimg.cn/mw690/48910e01gw1evkbfendrjj20ci0ci0uf.jpg" alt="WHY·LIAM 支付宝"/>
+        <p>支付宝</p>
+      </div>
+    
+
+    
+
+  </div>
+</div>
+
+      </div>
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/hadoop/" rel="tag"># hadoop</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2015/04/inquiry-learning/" rel="next" title="提问的学问">
+                <i class="fa fa-chevron-left"></i> 提问的学问
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2015/04/micro-message-android-ui-with-ios-forever/" rel="prev" title="Android 微信的 UI 永远和 iOS 一样">
+                Android 微信的 UI 永远和 iOS 一样 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+  
+    <div class="comments" id="comments">
+      <div id="SOHUCS"></div>
+    </div>
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+
+      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image"
+                src="//tva2.sinaimg.cn/crop.0.0.998.998.180/48910e01gw1ef5p6etuzdj20rs0rs771.jpg"
+                alt="WHY·LIAM" />
+            
+              <p class="site-author-name" itemprop="name">WHY·LIAM</p>
+              <p class="site-description motion-element" itemprop="description"></p>
+          </div>
+
+          
+            <nav class="site-state motion-element">
+              
+                <div class="site-state-item site-state-posts">
+                
+                  <a href="/archives/">
+                
+                    <span class="site-state-item-count">721</span>
+                    <span class="site-state-item-name">日志</span>
+                  </a>
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-categories">
+                  <a href="/categories/index.html">
+                    <span class="site-state-item-count">4</span>
+                    <span class="site-state-item-name">分类</span>
+                  </a>
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-tags">
+                  <a href="/tags/index.html">
+                    <span class="site-state-item-count">67</span>
+                    <span class="site-state-item-name">标签</span>
+                  </a>
+                </div>
+              
+            </nav>
+          
+
+          
+            <div class="feed-link motion-element">
+              <a href="/atom.xml" rel="alternate">
+                <i class="fa fa-rss"></i>
+                RSS
+              </a>
+            </div>
+          
+
+          
+            <div class="links-of-author motion-element">
+                
+                  <span class="links-of-author-item">
+                    <a href="https://github.com/liszd" target="_blank" title="GitHub" rel="external nofollow">
+                      
+                        <i class="fa fa-fw fa-github"></i>GitHub</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="http://weibo.com/whyliam" target="_blank" title="微博" rel="external nofollow">
+                      
+                        <i class="fa fa-fw fa-weibo"></i>微博</a>
+                  </span>
+                
+            </div>
+          
+
+          
+          
+            <div class="cc-license motion-element" itemprop="license">
+              <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/" class="cc-opacity" target="_blank" rel="external nofollow">
+                <img src="/images/cc-by-nc-nd.svg" alt="Creative Commons" />
+              </a>
+            </div>
+          
+
+          
+          
+            <div class="links-of-blogroll motion-element links-of-blogroll-block">
+              <div class="links-of-blogroll-title">
+                <i class="fa  fa-fw fa-link"></i>
+                Links
+              </div>
+              <ul class="links-of-blogroll-list">
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="http://www.naaln.com/" title="纳兰主页" target="_blank">纳兰主页</a>
+                  </li>
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="http://photo.naaln.com/" title="纳兰相册" target="_blank">纳兰相册</a>
+                  </li>
+                
+              </ul>
+            </div>
+          
+
+          
+            
+          
+          
+
+        </div>
+      </section>
+
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; 2003 &mdash; <span itemprop="copyrightYear">2018</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">WHY·LIAM</span>
+
+  
+
+  
+</div>
+
+
+  
+
+
+
+  <div class="powered-by">由 <a class="theme-link" target="_blank" rel="external nofollow" href="https://hexo.io">Hexo</a> 强力驱动</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" rel="external nofollow" href="https://github.com/theme-next/hexo-theme-next">NexT.Muse</a> v6.0.2</div>
+
+
+
+  <div class="footer-custom">Hosted by <a target="_blank" rel="external nofollow" href="https://pages.coding.me"><b>Coding Pages</b></a></div>
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=6.0.2"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=6.0.2"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=6.0.2"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=6.0.2"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=6.0.2"></script>
+
+
+
+  
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+  
+    <script type="text/javascript">
+    (function(){
+      var appid = 'cytklkKc0';
+      var conf = 'prod_b1dd516bbb7f3198591656f99d9ace80';
+      var width = window.innerWidth || document.documentElement.clientWidth;
+      if (width < 960) {
+      window.document.write('<script id="changyan_mobile_js" charset="utf-8" type="text/javascript" src="https://changyan.sohu.com/upload/mobile/wap-js/changyan_mobile.js?client_id=' + appid + '&conf=' + conf + '"><\/script>'); } else { var loadJs=function(d,a){var c=document.getElementsByTagName("head")[0]||document.head||document.documentElement;var b=document.createElement("script");b.setAttribute("type","text/javascript");b.setAttribute("charset","UTF-8");b.setAttribute("src",d);if(typeof a==="function"){if(window.attachEvent){b.onreadystatechange=function(){var e=b.readyState;if(e==="loaded"||e==="complete"){b.onreadystatechange=null;a()}}}else{b.onload=a}}c.appendChild(b)};loadJs("https://changyan.sohu.com/upload/changyan.js",function(){
+        window.changyan.api.config({appid:appid,conf:conf})});
+      }
+    })();
+    </script>
+    <script type="text/javascript" src="https://assets.changyan.sohu.com/upload/plugins/plugins.count.js"></script>
+  
+
+
+
+
+
+
+
+  
+
+
+
+
+  
+  
+  
+  <link rel="stylesheet" href="/lib/algolia-instant-search/instantsearch.min.css">
+
+  
+  
+  <script src="/lib/algolia-instant-search/instantsearch.min.js"></script>
+  
+
+  <script src="/js/src/algolia-search.js?v=6.0.2"></script>
+
+
+
+  
+
+  
+
+  
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';        
+    }
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>

@@ -1,0 +1,995 @@
+<!DOCTYPE html>
+
+
+
+
+<html class="theme-next muse" lang="zh-CN">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+  <meta name="google-site-verification" content="ByVfaP_E3b9ZYRUGhNAUFSQKL8mJQwUehpQwoxJ5n-c" />
+
+
+
+  <meta name="msvalidate.01" content="DB220684085BEDBD2E49E8E942534B1F" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=6.0.2" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon-next.png?v=6.0.2">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32-next.png?v=6.0.2">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16-next.png?v=6.0.2">
+
+
+  <link rel="mask-icon" href="/favicon/logo.svg?v=6.0.2" color="#222">
+
+
+
+
+
+
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Muse',
+    version: '6.0.2',
+    sidebar: {"position":"right","display":"hide","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: false,
+    fastclick: false,
+    lazyload: false,
+    tabs: true,
+    motion: {"enable":false,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    algolia: {
+      applicationID: 'XILKIWTAM9',
+      apiKey: '8c01137fe05d281ccd531a0ec622322a',
+      indexName: 'blog',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"搜索文章","hits_empty":"啊，找不到 ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+  
+
+
+
+
+  
+  <meta name="keywords" content="设计,思维," />
+
+
+<meta name="description" content="人的考虑进程，是一个美妙的进程，思想在脑际里流窜，横行无忌又重复羁绊，终究扭成一团麻。所以常常会有人诉苦，脑袋里很乱，想不出条理。这是由于，大多数人的考虑进程都是杂乱无序的，没有逻辑的，终究也没法构成有用的沉积，更无法找到明晰的定论。那么这篇文章要叙述的，即是怎样把思想进行可视化的规整，终究系统化的沉积下来，找到其间有价值的方向。本来这种可视化的规矩，不止能够用工作中，用在日子中也相同。 大多">
+<meta name="keywords" content="设计,思维">
+<meta property="og:type" content="article">
+<meta property="og:title" content="设计师的思维整理术：四个思维可视化模型">
+<meta property="og:url" content="https://blog.naaln.com/2016/04/designers-thinking-finishing-four-visualization-model-of-thinking/index.html">
+<meta property="og:site_name" content="Why·Liam·Blog">
+<meta property="og:description" content="人的考虑进程，是一个美妙的进程，思想在脑际里流窜，横行无忌又重复羁绊，终究扭成一团麻。所以常常会有人诉苦，脑袋里很乱，想不出条理。这是由于，大多数人的考虑进程都是杂乱无序的，没有逻辑的，终究也没法构成有用的沉积，更无法找到明晰的定论。那么这篇文章要叙述的，即是怎样把思想进行可视化的规整，终究系统化的沉积下来，找到其间有价值的方向。本来这种可视化的规矩，不止能够用工作中，用在日子中也相同。 大多">
+<meta property="og:locale" content="zh-CN">
+<meta property="og:image" content="https://ww3.sinaimg.cn/large/006y8mN6gw1fahq7jrus6j30j103wwfp.jpg">
+<meta property="og:image" content="http://www.pmtoo.com/templets/default/skin/images/grey.gif">
+<meta property="og:image" content="https://ww4.sinaimg.cn/large/006tNc79gw1fahq7lmo7zj30h109wgn0.jpg">
+<meta property="og:image" content="https://ww4.sinaimg.cn/large/006tNc79gw1fahq7os6aej30d708oq3t.jpg">
+<meta property="og:image" content="https://ww4.sinaimg.cn/large/006tNc79gw1fahq7sk1abj309108z0ta.jpg">
+<meta property="og:image" content="https://ww2.sinaimg.cn/large/006y8lVagw1fahq7tsfh3j30b708p74r.jpg">
+<meta property="og:image" content="https://ww4.sinaimg.cn/large/006y8lVagw1fahq7vw6zbj30b708p74r.jpg">
+<meta property="og:image" content="https://ww1.sinaimg.cn/large/65e4f1e6gw1fahq7wme7aj208a05hjrj.jpg">
+<meta property="og:image" content="http://www.pmtoo.com/templets/default/skin/images/grey.gif">
+<meta property="og:image" content="http://www.pmtoo.com/templets/default/skin/images/grey.gif">
+<meta property="og:image" content="http://www.pmtoo.com/templets/default/skin/images/grey.gif">
+<meta property="og:image" content="http://www.pmtoo.com/templets/default/skin/images/grey.gif">
+<meta property="og:updated_time" content="2017-09-03T09:15:57.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="设计师的思维整理术：四个思维可视化模型">
+<meta name="twitter:description" content="人的考虑进程，是一个美妙的进程，思想在脑际里流窜，横行无忌又重复羁绊，终究扭成一团麻。所以常常会有人诉苦，脑袋里很乱，想不出条理。这是由于，大多数人的考虑进程都是杂乱无序的，没有逻辑的，终究也没法构成有用的沉积，更无法找到明晰的定论。那么这篇文章要叙述的，即是怎样把思想进行可视化的规整，终究系统化的沉积下来，找到其间有价值的方向。本来这种可视化的规矩，不止能够用工作中，用在日子中也相同。 大多">
+<meta name="twitter:image" content="https://ww3.sinaimg.cn/large/006y8mN6gw1fahq7jrus6j30j103wwfp.jpg">
+
+
+
+  <link rel="alternate" href="/atom.xml" title="Why·Liam·Blog" type="application/atom+xml" />
+
+
+
+
+  <link rel="canonical" href="https://blog.naaln.com/2016/04/designers-thinking-finishing-four-visualization-model-of-thinking/"/>
+
+
+  <title>设计师的思维整理术：四个思维可视化模型 | Why·Liam·Blog</title>
+  
+
+
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-47966442-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-47966442-2');
+</script>
+
+
+
+
+
+
+  
+<script src="//msite.baidu.com/sdk/c.js?appid=1586840953097399"></script>
+<link rel="canonical" href="https://blog.naaln.com/2016/04/designers-thinking-finishing-four-visualization-model-of-thinking/"/>
+<script type="application/ld+json">
+    {
+        "@context": "https://ziyuan.baidu.com/contexts/cambrian.jsonld",
+        "@id": "https://blog.naaln.com/2016/04/designers-thinking-finishing-four-visualization-model-of-thinking/",
+        "appid": "1586840953097399",
+        "title": "设计师的思维整理术：四个思维可视化模型",
+        "images": [
+            ""
+            ],
+        "description": "",
+        "pubDate": "",
+        "upDate": "",
+        "lrDate": ""
+    }
+</script>
+
+  <noscript>
+  <style type="text/css">
+    .use-motion .motion-element,
+    .use-motion .brand,
+    .use-motion .menu-item,
+    .sidebar-inner,
+    .use-motion .post-block,
+    .use-motion .pagination,
+    .use-motion .comments,
+    .use-motion .post-header,
+    .use-motion .post-body,
+    .use-motion .collection-title { opacity: initial; }
+
+    .use-motion .logo,
+    .use-motion .site-title,
+    .use-motion .site-subtitle {
+      opacity: initial;
+      top: initial;
+    }
+
+    .use-motion {
+      .logo-line-before i { left: initial; }
+      .logo-line-after i { right: initial; }
+    }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-CN">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-right page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"> <div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Why·Liam·Blog</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <h1 class="site-subtitle" itemprop="description">人生若如初見</h1>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            <i class="menu-item-icon fa fa-fw fa-home"></i> <br />首页</a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />归档</a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-technology">
+          <a href="/categories/technology/" rel="section">
+            <i class="menu-item-icon fa fa-fw fa-code"></i> <br />技术</a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-jottings">
+          <a href="/categories/jottings/" rel="section">
+            <i class="menu-item-icon fa fa-fw fa-language"></i> <br />随笔</a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tour">
+          <a href="/categories/tour/" rel="section">
+            <i class="menu-item-icon fa fa-fw fa-globe"></i> <br />旅游</a>
+        </li>
+      
+
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br />搜索</a>
+        </li>
+      
+    </ul>
+  
+
+  
+    <div class="site-search">
+      
+  
+  <div class="algolia-popup popup search-popup">
+    <div class="algolia-search">
+      <div class="algolia-search-input-icon">
+        <i class="fa fa-search"></i>
+      </div>
+      <div class="algolia-search-input" id="algolia-search-input"></div>
+    </div>
+
+    <div class="algolia-results">
+      <div id="algolia-stats"></div>
+      <div id="algolia-hits"></div>
+      <div id="algolia-pagination" class="algolia-pagination"></div>
+    </div>
+
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+  </div>
+
+
+
+
+    </div>
+  
+</nav>
+
+
+  
+
+
+
+ </div>
+    </header>
+
+    
+
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://blog.naaln.com/2016/04/designers-thinking-finishing-four-visualization-model-of-thinking/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="WHY·LIAM">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="//tva2.sinaimg.cn/crop.0.0.998.998.180/48910e01gw1ef5p6etuzdj20rs0rs771.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Why·Liam·Blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h2 class="post-title" itemprop="name headline">设计师的思维整理术：四个思维可视化模型</h2>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2016-04-06T10:48:00+08:00">2016-04-06</time>
+            
+
+            
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/jottings/" itemprop="url" rel="index"><span itemprop="name">随笔</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+              <span class="post-meta-divider">|</span>
+              <span class="post-meta-item-icon">
+                <i class="fa fa-comment-o"></i>
+              </span>
+              
+                <a href="/2016/04/designers-thinking-finishing-four-visualization-model-of-thinking/#SOHUCS" itemprop="discussionUrl">
+                  <span id="changyan_count_unit" class="post-comments-count hc-comment-count" data-xid="2016/04/designers-thinking-finishing-four-visualization-model-of-thinking/" itemprop="commentsCount"></span>
+                </a>
+              
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p><img src="https://ww3.sinaimg.cn/large/006y8mN6gw1fahq7jrus6j30j103wwfp.jpg" alt="规划师的思想收拾术：四个思想可视化模型"></p>
+<p>人的考虑进程，是一个美妙的进程，思想在脑际里流窜，横行无忌又重复羁绊，终究扭成一团麻。所以常常会有人诉苦，脑袋里很乱，想不出条理。这是由于，大多数人的考虑进程都是杂乱无序的，没有逻辑的，终究也没法构成有用的沉积，更无法找到明晰的定论。那么这篇文章要叙述的，即是怎样把思想进行可视化的规整，终究系统化的沉积下来，找到其间有价值的方向。本来这种可视化的规矩，不止能够用工作中，用在日子中也相同。</p>
+<p>大多数人脑力最活泼的时分，通常是睡觉前、蹲厕所时，这时分你的脑袋里就像纪录片相同闪回各种日子片段，也会自我讨论许多人生疑问，可是当别人问你，方才你都想了些啥?你会发现你俄然脑袋一片空白，我方才在想啥?如同想了许多，却又都不记得了。除非在这漫无目的的脑力激荡中，你发作了让自个服气的idea，不然你很难记住自个都想了啥，所以大多数人这种碎片化的时刻，都是毫无价值的浪费了。</p>
+<p>逻辑好的人，通常长于归纳总结，把杂乱包裹起来，把收拾后的闪光点暴露出来，就像集线器，把各种头绪都收纳到盒子里，把主要的插头暴露出来。</p>
+<p>领导说话，都喜爱讲3点。这并不是信手拈来那么简略，这需求提早做好充沛的预备。许多说3点的人，都是提早考虑过的，有备而来的。当然也不扫除有些人天赋秉异，能够在极点的时刻内，迅速的考虑并总结，提练出有价值的3点来。这是很难的工作，我也很少这么做，可是为了体现我自个很有逻辑，有时分我会这么说，这件工作，能够总结成如下几点，第一点，第二点，第三点……能说几点说几点，可是随时能够见好就收。</p>
+<p>我这里有一个面试的时分，我会问的对比有代表性的逻辑疑问，请说出你的三个长处，每个长处说三个比方，每个比方不超越一句话。这请求应聘者在极短的时刻内总结并提炼，是十分检测逻辑的。</p>
+<p><img src="http://www.pmtoo.com/templets/default/skin/images/grey.gif" alt="规划师的思想收拾术：四个思想可视化模型"></p>
+<p>规划中的思想可视化，是从无序到有序的考虑进程。不是一切的人都是天然生成就有极好的逻辑的，可是好在，逻辑是能够训练的，只需你懂的把自个的思想进行可视化的展现、剖析和收拾。</p>
+<p><img src="https://ww4.sinaimg.cn/large/006tNc79gw1fahq7lmo7zj30h109wgn0.jpg" alt="规划师的思想收拾术：四个思想可视化模型"></p>
+<p>漫思想模型是大多数人大多数时刻的思想模型，从一个主意漫入进来，思绪进过各种游弋，然后再松懈的发散，假如有幸从基地找到一些价值点，那也只能说是走运。不过像脑筋风暴(Branstorming)这种依靠脑力激荡的考虑办法，却是也适用于这种漫思想模型，由于脑筋风暴确实是需求从无限也许性中去寻找方向。所以这种思想模型也不是一无可取，仅仅适用的场景不一样，也不需求可视化出来。</p>
+<p><img src="https://ww4.sinaimg.cn/large/006tNc79gw1fahq7os6aej30d708oq3t.jpg" alt="规划师的思想收拾术：四个思想可视化模型"></p>
+<p>聚思想模型是少量长于逻辑剖析的人的思想模型，他们长于先自我发散，再挑选也许，然后聚组成靠谱方向，再详细细化。思想是一个漏斗，终究沉积下来的主意，是经层层挑选的。而能操控自个从发散中提炼的人，是长于操控思想的人，这种人完全能够不依靠思想可视化，就想明白许多工作。</p>
+<p>可是事实是大多数是无法做到发散后合理提炼和归纳的，所以这种情况下，仍是依靠于办法来进行思想可视化，可视化以后，就便利归纳、收拾、提炼、细化了。</p>
+<p>下面是思想可视化的4类模型——1.放射状规整(思想导图、鱼骨图) 2.层次化规矩(架构图、安排构造图) 3.线性化规整(途径图、时刻线) 4.矩阵式规矩(SWOT剖析、商业模式画布)</p>
+<p><strong>1. 放射状规整</strong></p>
+<p>让思想从一个点动身，构成放射状的发散。这种规矩办法，主要是用来收拾多种也许性，便于发散思想，并能够对每种也许性进行深化挖掘。</p>
+<p><img src="https://ww4.sinaimg.cn/large/006tNc79gw1fahq7sk1abj309108z0ta.jpg" alt="规划师的思想收拾术：四个思想可视化模型"></p>
+<p>思想导图(MindMap)是一种将放射性考虑详细化的办法，是最简略又最有用的思想收拾办法，也是国际范围内应用最广的思想东西。咱们知道放射性考虑是人类大脑的天然考虑办法，每一种进入大脑的资料，不论是感觉、回忆或是主意——包括文字、数字、符码、香气、食物、线条、色彩、意象、节奏、音符等，都能够变成一个考虑基地，并由此基地向外发散出不计其数的关节点，每一个关节点代表与基地主题的一个连接，而每一个连接又能够变成另一个基地主题，再向外发散出不计其数的关节点，出现出放射性立体构造。</p>
+<p><img src="https://ww2.sinaimg.cn/large/006y8lVagw1fahq7tsfh3j30b708p74r.jpg" alt="规划师的思想收拾术：四个思想可视化模型"></p>
+<p>鱼骨图(Cause and Effect Diagrams)，又叫因果图，是一种发现疑问“根本因素”的剖析办法。是由日本办理大师石川馨先生所创造出来的，故又叫石川图。其特点是简捷有用，深化直观。它看上去有些象鱼骨，疑问或缺点(即结果)标在”鱼头”外。在鱼骨上长出鱼刺，上面按出现时机多寡列出发作出产疑问的也许因素，有助于阐明各个因素之间怎样相互影响。</p>
+<p><strong>2. 层次化规整</strong></p>
+<p>层次化规矩，是用来挖掘构造联系，并层层深化审视事物的情况。</p>
+<p><img src="https://ww4.sinaimg.cn/large/006y8lVagw1fahq7vw6zbj30b708p74r.jpg" alt="规划师的思想收拾术：四个思想可视化模型"></p>
+<p>架构图(Org Charts)是一个思想可视化东西，它经过树状图的办法对一个事物的构造进行逐层分化，通常是从父级向子集深挖。尽管拓扑的办法与思想导图相似，可是架构图不是为了发散思想而存在的，而是为了讨论安排构造联系而存在的，所以层级的主要性不容小视，通常都是自上而下去谨慎的拓扑，不做无价值的拓宽。</p>
+<p><img src="https://ww1.sinaimg.cn/large/65e4f1e6gw1fahq7wme7aj208a05hjrj.jpg" alt="规划师的思想收拾术：四个思想可视化模型"></p>
+<p>这种层次构造图是用来展现明晰的分组信息，表达明晰的安排构造联系的。</p>
+<p><strong>3.线性化规整</strong></p>
+<p>线性化的规矩办法，通常都有一条明晰的主线，这条主线能够串起整个考虑进程。比方是时刻为轴，比方设定好起点和结尾后基地所能发作的一切的工作，比方环绕某个用户方针而发作的使命流等。</p>
+<p><img src="http://www.pmtoo.com/templets/default/skin/images/grey.gif" alt="规划师的思想收拾术：四个思想可视化模型"></p>
+<p>途径图(Roadmap)是一种使命走查办法，设定好用户方针，起点和结尾，排查基地会发声的一切的工作，为每个主要的要害结点进行规划。这种思想可视化办法通常用在方针导向的工作中，断定达到方针的多种也许途径，并挑选其间最短途径。</p>
+<p><img src="http://www.pmtoo.com/templets/default/skin/images/grey.gif" alt="规划师的思想收拾术：四个思想可视化模型"></p>
+<p>时刻线(Timelines)是用来描绘在一个时刻段里边，发作的一切里程碑性质的工作的，也能够用来基于时刻线拟定项目方案。曩昔放在时刻线横轴左边，将来放在时刻线右边，一切基于时刻结点发声的工作和方案发作的工作要进行特别标示。这种办法很用来做里程碑图或许项目方案。</p>
+<p><strong>4. 矩阵式规整</strong></p>
+<p>另外一种构造化的考虑办法即是矩阵式规矩，先想明白需求考虑的工作的几大纬度，然后把纬度沉积成矩阵，再往矩阵里去弥补详细内容，这种办法很使用用来做突显内容的讨论。</p>
+<p><img src="http://www.pmtoo.com/templets/default/skin/images/grey.gif" alt="规划师的思想收拾术：四个思想可视化模型"></p>
+<p>SWOT剖析是一种常用的战略剖析东西，SWOT剖析代表剖析公司优势(strength)、下风(weakness)、时机(opportunity)和要挟(threats)。因此，SWOT剖析实际上是将对公司内外部条件各方面内容进行归纳和归纳，进而剖析安排的优下风、面对的时机和要挟的一种办法。 能够经过剖析协助公司把资本和举动Focus在自个的强项和有最多时机的当地。</p>
+<p><img src="http://www.pmtoo.com/templets/default/skin/images/grey.gif" alt="规划师的思想收拾术：四个思想可视化模型"></p>
+<p>商业模式画布包括9个构成模块，主要伙伴、要害业务、中心资本、价值建议、客户联系、渠道通路、客户细分、本钱构成、收入来历。依照这9模块来考虑内容，就能够很便利的绘制出你的项目的商业模式，协助投资人了解你的项目全景。商业模式方案书也合适用在自个身上，仅仅9各构成模块做了一些调整而已，我也在baiduMUX内部带领小伙伴们一同做个自个商业模式的设定，协助小伙伴们找到自个的优势和下风，学习型项目和主导型项目。</p>
+<p>终究想说，第一流的思想办法是，一切的发散、总结、沉积都在脑际内部构成，可是大多数都达不到这种牛逼的程度，所以咱们不得不使用可视化的办法，训练自个的思想办法。另外即便你考虑办法很牛，假如你不能可视化的给别人出现出来，也很难确保普通人能极好的了解你。所以不管是思想牛人仍是思想普通人，都需求知道怎样把自个的思想可视化出来。</p>
+<p>再总结一下思想可视化的4类模型——</p>
+<ol>
+<li><p>放射状规整(思想导图、鱼骨图) </p>
+</li>
+<li><p>层次化规矩(架构图、安排构造图) </p>
+</li>
+<li><p>线性化规整(途径图、时刻线) </p>
+</li>
+<li><p>矩阵式规矩(SWOT剖析、商业模式画布)。</p>
+</li>
+</ol>
+<p>本来模型还有千千万，详细情况详细采用不一样模型，或许创造创造新的思想模型，全赖领悟了。</p>
+<p><a href="http://www.pmtoo.com/news/2014/0718/6235.html" target="_blank" rel="noopener">原文连接</a></p>
+<div style="clear:both"></div><div class="cc"><p>The <a href="https://blog.naaln.com">Why·Liam·Blog</a> by <a href="https://www.naaln.com" target="_blank" rel="external">WhyLiam</a> is licensed under a <a href="http://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" rel="external">Creative Commons BY-NC-ND 4.0 International License</a>.</p><p>由<a href="https://www.naaln.com" target="_blank" rel="external">WhyLiam</a>创作并维护的<a href="https://blog.naaln.com">Why·Liam·Blog</a>采用创作共用<a href="http://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" rel="external">保留署名-非商业-禁止演绎4.0国际许可证</a>。</p><p>本文首发于<a href="https://blog.naaln.com">Why·Liam·Blog (https://blog.naaln.com)</a>，版权所有，侵权必究。</p><p>本文永久链接：<a href="https://blog.naaln.com/2016/04/designers-thinking-finishing-four-visualization-model-of-thinking/">https://blog.naaln.com/2016/04/designers-thinking-finishing-four-visualization-model-of-thinking/</a></p><p></p></div>
+      
+    </div>
+    
+    
+    
+
+    
+      <div>
+        <div id="wechat_subscriber" style="display: block; padding: 10px 0; margin: 20px auto; width: 100%; text-align: center">
+    <img id="wechat_subscriber_qcode" src="//ws1.sinaimg.cn/large/006tKfTcgy1fg8gpi7kaaj30by0by74i.jpg" alt="WHY·LIAM wechat" style="width: 200px; max-width: 100%;"/>
+    <div>记录生活，研究产品，分享设计，分析数据，讨论科技和商业，不定期扯淡。</div>
+</div>
+
+      </div>
+    
+
+    
+      <div>
+        <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+  <div>如果觉得我的文章对您有用，请随意打赏。您的支持将鼓励我继续创作！</div>
+  <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+    <span>打赏</span>
+  </button>
+  <div id="QR" style="display: none;">
+
+    
+      <div id="wechat" style="display: inline-block">
+        <img id="wechat_qr" src="//ws1.sinaimg.cn/mw690/006tNc79gy1fm7yqrau7mj30f00ezad5.jpg" alt="WHY·LIAM 微信支付"/>
+        <p>微信支付</p>
+      </div>
+    
+
+    
+      <div id="alipay" style="display: inline-block">
+        <img id="alipay_qr" src="//ww3.sinaimg.cn/mw690/48910e01gw1evkbfendrjj20ci0ci0uf.jpg" alt="WHY·LIAM 支付宝"/>
+        <p>支付宝</p>
+      </div>
+    
+
+    
+
+  </div>
+</div>
+
+      </div>
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/设计/" rel="tag"># 设计</a>
+          
+            <a href="/tags/思维/" rel="tag"># 思维</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2016/04/do-the-product/" rel="next" title="做产品的态度">
+                <i class="fa fa-chevron-left"></i> 做产品的态度
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2016/04/the-memory-of-the-order-of-the-phoenix/" rel="prev" title="凤凰社的记忆">
+                凤凰社的记忆 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+  
+    <div class="comments" id="comments">
+      <div id="SOHUCS"></div>
+    </div>
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+
+      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image"
+                src="//tva2.sinaimg.cn/crop.0.0.998.998.180/48910e01gw1ef5p6etuzdj20rs0rs771.jpg"
+                alt="WHY·LIAM" />
+            
+              <p class="site-author-name" itemprop="name">WHY·LIAM</p>
+              <p class="site-description motion-element" itemprop="description"></p>
+          </div>
+
+          
+            <nav class="site-state motion-element">
+              
+                <div class="site-state-item site-state-posts">
+                
+                  <a href="/archives/">
+                
+                    <span class="site-state-item-count">721</span>
+                    <span class="site-state-item-name">日志</span>
+                  </a>
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-categories">
+                  <a href="/categories/index.html">
+                    <span class="site-state-item-count">4</span>
+                    <span class="site-state-item-name">分类</span>
+                  </a>
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-tags">
+                  <a href="/tags/index.html">
+                    <span class="site-state-item-count">67</span>
+                    <span class="site-state-item-name">标签</span>
+                  </a>
+                </div>
+              
+            </nav>
+          
+
+          
+            <div class="feed-link motion-element">
+              <a href="/atom.xml" rel="alternate">
+                <i class="fa fa-rss"></i>
+                RSS
+              </a>
+            </div>
+          
+
+          
+            <div class="links-of-author motion-element">
+                
+                  <span class="links-of-author-item">
+                    <a href="https://github.com/liszd" target="_blank" title="GitHub" rel="external nofollow">
+                      
+                        <i class="fa fa-fw fa-github"></i>GitHub</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="http://weibo.com/whyliam" target="_blank" title="微博" rel="external nofollow">
+                      
+                        <i class="fa fa-fw fa-weibo"></i>微博</a>
+                  </span>
+                
+            </div>
+          
+
+          
+          
+            <div class="cc-license motion-element" itemprop="license">
+              <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/" class="cc-opacity" target="_blank" rel="external nofollow">
+                <img src="/images/cc-by-nc-nd.svg" alt="Creative Commons" />
+              </a>
+            </div>
+          
+
+          
+          
+            <div class="links-of-blogroll motion-element links-of-blogroll-block">
+              <div class="links-of-blogroll-title">
+                <i class="fa  fa-fw fa-link"></i>
+                Links
+              </div>
+              <ul class="links-of-blogroll-list">
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="http://www.naaln.com/" title="纳兰主页" target="_blank">纳兰主页</a>
+                  </li>
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="http://photo.naaln.com/" title="纳兰相册" target="_blank">纳兰相册</a>
+                  </li>
+                
+              </ul>
+            </div>
+          
+
+          
+            
+          
+          
+
+        </div>
+      </section>
+
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; 2003 &mdash; <span itemprop="copyrightYear">2018</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">WHY·LIAM</span>
+
+  
+
+  
+</div>
+
+
+  
+
+
+
+  <div class="powered-by">由 <a class="theme-link" target="_blank" rel="external nofollow" href="https://hexo.io">Hexo</a> 强力驱动</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" rel="external nofollow" href="https://github.com/theme-next/hexo-theme-next">NexT.Muse</a> v6.0.2</div>
+
+
+
+  <div class="footer-custom">Hosted by <a target="_blank" rel="external nofollow" href="https://pages.coding.me"><b>Coding Pages</b></a></div>
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=6.0.2"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=6.0.2"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=6.0.2"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=6.0.2"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=6.0.2"></script>
+
+
+
+  
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+  
+    <script type="text/javascript">
+    (function(){
+      var appid = 'cytklkKc0';
+      var conf = 'prod_b1dd516bbb7f3198591656f99d9ace80';
+      var width = window.innerWidth || document.documentElement.clientWidth;
+      if (width < 960) {
+      window.document.write('<script id="changyan_mobile_js" charset="utf-8" type="text/javascript" src="https://changyan.sohu.com/upload/mobile/wap-js/changyan_mobile.js?client_id=' + appid + '&conf=' + conf + '"><\/script>'); } else { var loadJs=function(d,a){var c=document.getElementsByTagName("head")[0]||document.head||document.documentElement;var b=document.createElement("script");b.setAttribute("type","text/javascript");b.setAttribute("charset","UTF-8");b.setAttribute("src",d);if(typeof a==="function"){if(window.attachEvent){b.onreadystatechange=function(){var e=b.readyState;if(e==="loaded"||e==="complete"){b.onreadystatechange=null;a()}}}else{b.onload=a}}c.appendChild(b)};loadJs("https://changyan.sohu.com/upload/changyan.js",function(){
+        window.changyan.api.config({appid:appid,conf:conf})});
+      }
+    })();
+    </script>
+    <script type="text/javascript" src="https://assets.changyan.sohu.com/upload/plugins/plugins.count.js"></script>
+  
+
+
+
+
+
+
+
+  
+
+
+
+
+  
+  
+  
+  <link rel="stylesheet" href="/lib/algolia-instant-search/instantsearch.min.css">
+
+  
+  
+  <script src="/lib/algolia-instant-search/instantsearch.min.js"></script>
+  
+
+  <script src="/js/src/algolia-search.js?v=6.0.2"></script>
+
+
+
+  
+
+  
+
+  
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';        
+    }
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>

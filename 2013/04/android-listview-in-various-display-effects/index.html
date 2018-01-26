@@ -1,0 +1,968 @@
+<!DOCTYPE html>
+
+
+
+
+<html class="theme-next muse" lang="zh-CN">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+  <meta name="google-site-verification" content="ByVfaP_E3b9ZYRUGhNAUFSQKL8mJQwUehpQwoxJ5n-c" />
+
+
+
+  <meta name="msvalidate.01" content="DB220684085BEDBD2E49E8E942534B1F" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=6.0.2" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon-next.png?v=6.0.2">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32-next.png?v=6.0.2">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16-next.png?v=6.0.2">
+
+
+  <link rel="mask-icon" href="/favicon/logo.svg?v=6.0.2" color="#222">
+
+
+
+
+
+
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Muse',
+    version: '6.0.2',
+    sidebar: {"position":"right","display":"hide","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: false,
+    fastclick: false,
+    lazyload: false,
+    tabs: true,
+    motion: {"enable":false,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    algolia: {
+      applicationID: 'XILKIWTAM9',
+      apiKey: '8c01137fe05d281ccd531a0ec622322a',
+      indexName: 'blog',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"搜索文章","hits_empty":"啊，找不到 ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+  
+
+
+
+
+  
+  <meta name="keywords" content="android," />
+
+
+<meta name="description" content="在android应用开发中，ListView是使用频率非常高的一个组件，基本上稍微复杂点的布局都会用到它，利用它可以让你的界面美观，有层次。 ListView可以用来作为数据显示的容器，也可以作为界面的布局。学习ListView需要关注的内容大概有三点：显示、数据适配器以及各种事件的监听器。内容有点多，这里先只讲如何让ListView达到你想要的显示效果。   一、普通的ListView   普通">
+<meta name="keywords" content="android">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Android中ListView的各种显示效果">
+<meta property="og:url" content="https://blog.naaln.com/2013/04/android-listview-in-various-display-effects/index.html">
+<meta property="og:site_name" content="Why·Liam·Blog">
+<meta property="og:description" content="在android应用开发中，ListView是使用频率非常高的一个组件，基本上稍微复杂点的布局都会用到它，利用它可以让你的界面美观，有层次。 ListView可以用来作为数据显示的容器，也可以作为界面的布局。学习ListView需要关注的内容大概有三点：显示、数据适配器以及各种事件的监听器。内容有点多，这里先只讲如何让ListView达到你想要的显示效果。   一、普通的ListView   普通">
+<meta property="og:locale" content="zh-CN">
+<meta property="og:image" content="http://images.cnblogs.com/cnblogs_com/chenguanwei/201112/201112091641306927.png">
+<meta property="og:image" content="http://images.cnblogs.com/cnblogs_com/chenguanwei/201112/201112091641314518.png">
+<meta property="og:image" content="http://images.cnblogs.com/cnblogs_com/chenguanwei/201112/201112091641364523.png">
+<meta property="og:updated_time" content="2017-09-03T09:15:57.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Android中ListView的各种显示效果">
+<meta name="twitter:description" content="在android应用开发中，ListView是使用频率非常高的一个组件，基本上稍微复杂点的布局都会用到它，利用它可以让你的界面美观，有层次。 ListView可以用来作为数据显示的容器，也可以作为界面的布局。学习ListView需要关注的内容大概有三点：显示、数据适配器以及各种事件的监听器。内容有点多，这里先只讲如何让ListView达到你想要的显示效果。   一、普通的ListView   普通">
+<meta name="twitter:image" content="http://images.cnblogs.com/cnblogs_com/chenguanwei/201112/201112091641306927.png">
+
+
+
+  <link rel="alternate" href="/atom.xml" title="Why·Liam·Blog" type="application/atom+xml" />
+
+
+
+
+  <link rel="canonical" href="https://blog.naaln.com/2013/04/android-listview-in-various-display-effects/"/>
+
+
+  <title>Android中ListView的各种显示效果 | Why·Liam·Blog</title>
+  
+
+
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-47966442-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-47966442-2');
+</script>
+
+
+
+
+
+
+  
+<script src="//msite.baidu.com/sdk/c.js?appid=1586840953097399"></script>
+<link rel="canonical" href="https://blog.naaln.com/2013/04/android-listview-in-various-display-effects/"/>
+<script type="application/ld+json">
+    {
+        "@context": "https://ziyuan.baidu.com/contexts/cambrian.jsonld",
+        "@id": "https://blog.naaln.com/2013/04/android-listview-in-various-display-effects/",
+        "appid": "1586840953097399",
+        "title": "Android中ListView的各种显示效果",
+        "images": [
+            ""
+            ],
+        "description": "",
+        "pubDate": "",
+        "upDate": "",
+        "lrDate": ""
+    }
+</script>
+
+  <noscript>
+  <style type="text/css">
+    .use-motion .motion-element,
+    .use-motion .brand,
+    .use-motion .menu-item,
+    .sidebar-inner,
+    .use-motion .post-block,
+    .use-motion .pagination,
+    .use-motion .comments,
+    .use-motion .post-header,
+    .use-motion .post-body,
+    .use-motion .collection-title { opacity: initial; }
+
+    .use-motion .logo,
+    .use-motion .site-title,
+    .use-motion .site-subtitle {
+      opacity: initial;
+      top: initial;
+    }
+
+    .use-motion {
+      .logo-line-before i { left: initial; }
+      .logo-line-after i { right: initial; }
+    }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-CN">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-right page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"> <div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Why·Liam·Blog</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <h1 class="site-subtitle" itemprop="description">人生若如初見</h1>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            <i class="menu-item-icon fa fa-fw fa-home"></i> <br />首页</a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />归档</a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-technology">
+          <a href="/categories/technology/" rel="section">
+            <i class="menu-item-icon fa fa-fw fa-code"></i> <br />技术</a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-jottings">
+          <a href="/categories/jottings/" rel="section">
+            <i class="menu-item-icon fa fa-fw fa-language"></i> <br />随笔</a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tour">
+          <a href="/categories/tour/" rel="section">
+            <i class="menu-item-icon fa fa-fw fa-globe"></i> <br />旅游</a>
+        </li>
+      
+
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br />搜索</a>
+        </li>
+      
+    </ul>
+  
+
+  
+    <div class="site-search">
+      
+  
+  <div class="algolia-popup popup search-popup">
+    <div class="algolia-search">
+      <div class="algolia-search-input-icon">
+        <i class="fa fa-search"></i>
+      </div>
+      <div class="algolia-search-input" id="algolia-search-input"></div>
+    </div>
+
+    <div class="algolia-results">
+      <div id="algolia-stats"></div>
+      <div id="algolia-hits"></div>
+      <div id="algolia-pagination" class="algolia-pagination"></div>
+    </div>
+
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+  </div>
+
+
+
+
+    </div>
+  
+</nav>
+
+
+  
+
+
+
+ </div>
+    </header>
+
+    
+
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://blog.naaln.com/2013/04/android-listview-in-various-display-effects/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="WHY·LIAM">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="//tva2.sinaimg.cn/crop.0.0.998.998.180/48910e01gw1ef5p6etuzdj20rs0rs771.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Why·Liam·Blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h2 class="post-title" itemprop="name headline">Android中ListView的各种显示效果</h2>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2013-04-09T07:57:00+08:00">2013-04-09</time>
+            
+
+            
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/technology/" itemprop="url" rel="index"><span itemprop="name">技术</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+              <span class="post-meta-divider">|</span>
+              <span class="post-meta-item-icon">
+                <i class="fa fa-comment-o"></i>
+              </span>
+              
+                <a href="/2013/04/android-listview-in-various-display-effects/#SOHUCS" itemprop="discussionUrl">
+                  <span id="changyan_count_unit" class="post-comments-count hc-comment-count" data-xid="2013/04/android-listview-in-various-display-effects/" itemprop="commentsCount"></span>
+                </a>
+              
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p>在android应用开发中，ListView是使用频率非常高的一个组件，基本上稍微复杂点的布局都会用到它，利用它可以让你的界面美观，有层次<br>。</p>
+<p>ListView可以用来作为数据显示的容器，也可以作为界面的布局。学习ListView需要关注的内容大概有三点：显示、数据适配器以及各种<br>事件的监听器。内容有点多，这里先只讲如何让ListView达到你想要的显示效果。 </p>
+<p><strong> 一、普通的ListView </strong> </p>
+<p>普通的ListView是指每一个item只显示一条文本数据，程序运行效果图如下：</p>
+<p><img src="http://images.cnblogs.com/cnblogs_com/chenguanwei/201112/201112091641306927.png" alt="请输入图片描述"></p>
+<p>代码：<br><figure class="highlight processing"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">protected</span> <span class="keyword">void</span> onCreate(Bundle savedInstanceState) &#123;</span><br><span class="line">   <span class="comment">// TODO Auto-generated method stub</span></span><br><span class="line">   <span class="keyword">super</span>.onCreate(savedInstanceState);</span><br><span class="line">   setContentView(R.layout.layout_listview_simple);</span><br><span class="line">   </span><br><span class="line">   <span class="comment">//取得ListView实例</span></span><br><span class="line">   ListView lvwSimple = (ListView)findViewById(R.id.lvw_simple);</span><br><span class="line">   <span class="comment">//要在ListView中显示的数据集合</span></span><br><span class="line">   <span class="keyword">String</span> items[] = <span class="keyword">new</span> <span class="keyword">String</span>[] &#123;<span class="string">"item1"</span>, <span class="string">"item2"</span>, <span class="string">"item3"</span>, <span class="string">"item4"</span>, <span class="string">"item5"</span>&#125;;</span><br><span class="line">   <span class="comment">//new一个ArrayAdapter，android.R.layout.simple_list_item_1为ListView显示的布局文件</span></span><br><span class="line">   ArrayAdapter&lt;<span class="keyword">String</span>&gt; adapter = <span class="keyword">new</span> ArrayAdapter&lt;<span class="keyword">String</span>&gt;(<span class="keyword">this</span>, android.R.layout.simple_list_item_1, items);</span><br><span class="line">   <span class="comment">//位ListView设置Adapter</span></span><br><span class="line">   lvwSimple.setAdapter(adapter);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p><strong> 二、自定义ListView </strong> </p>
+<p>上面的那种方法只能显示简单的文字信息，显然在很多场合下都不够用，比如你想要在一个item中显示图片，显示多行文字，这就需要你自定义ListView的布局了。 效果图如下： </p>
+<p><img src="http://images.cnblogs.com/cnblogs_com/chenguanwei/201112/201112091641314518.png" alt="请输入图片描述"></p>
+<p>步骤： </p>
+<p>1、分析你想要实现的布局效果，自定义布局文件lvw_custom.xml，该布局文件针对的是ListView的item，而不是整个ListView： </p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br></pre></td><td class="code"><pre><span class="line"><span class="php"><span class="meta">&lt;?</span>xml version=<span class="string">"1.0"</span> encoding=<span class="string">"utf-8"</span><span class="meta">?&gt;</span></span></span><br><span class="line"><span class="comment">&lt;!-- 自定义布局文件 --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">LinearLayout</span></span></span><br><span class="line"><span class="tag">    <span class="attr">xmlns:android</span>=<span class="string">"http://schemas.android.com/apk/res/android"</span></span></span><br><span class="line"><span class="tag">    <span class="attr">android:orientation</span>=<span class="string">"horizontal"</span></span></span><br><span class="line"><span class="tag">    <span class="attr">android:layout_width</span>=<span class="string">"fill_parent"</span></span></span><br><span class="line"><span class="tag">    <span class="attr">android:layout_height</span>=<span class="string">"fill_parent"</span></span></span><br><span class="line"><span class="tag">    &gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">ImageView</span></span></span><br><span class="line"><span class="tag">          <span class="attr">android:id</span>=<span class="string">"@+id/lvw_custom_img"</span></span></span><br><span class="line"><span class="tag">          <span class="attr">android:layout_width</span>=<span class="string">"wrap_content"</span></span></span><br><span class="line"><span class="tag">          <span class="attr">android:layout_height</span>=<span class="string">"wrap_content"</span></span></span><br><span class="line"><span class="tag">          <span class="attr">android:layout_gravity</span>=<span class="string">"center_vertical"</span></span></span><br><span class="line"><span class="tag">          <span class="attr">android:layout_margin</span>=<span class="string">"5dip"</span>    </span></span><br><span class="line"><span class="tag">          <span class="attr">android:background</span>=<span class="string">"@drawable/custom"</span>    </span></span><br><span class="line"><span class="tag">          /&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">LinearLayout</span></span></span><br><span class="line"><span class="tag">        <span class="attr">xmlns:android</span>=<span class="string">"http://schemas.android.com/apk/res/android"</span></span></span><br><span class="line"><span class="tag">        <span class="attr">android:orientation</span>=<span class="string">"vertical"</span></span></span><br><span class="line"><span class="tag">        <span class="attr">android:layout_width</span>=<span class="string">"fill_parent"</span></span></span><br><span class="line"><span class="tag">        <span class="attr">android:layout_height</span>=<span class="string">"wrap_content"</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">TextView</span> </span></span><br><span class="line"><span class="tag">            <span class="attr">android:id</span>=<span class="string">"@+id/lvw_custom_name"</span></span></span><br><span class="line"><span class="tag">            <span class="attr">android:layout_width</span>=<span class="string">"wrap_content"</span></span></span><br><span class="line"><span class="tag">            <span class="attr">android:layout_height</span>=<span class="string">"wrap_content"</span></span></span><br><span class="line"><span class="tag">            <span class="attr">android:layout_marginLeft</span>=<span class="string">"5dip"</span></span></span><br><span class="line"><span class="tag">            <span class="attr">android:layout_marginRight</span>=<span class="string">"5dip"</span></span></span><br><span class="line"><span class="tag">            <span class="attr">android:layout_marginTop</span>=<span class="string">"5dip"</span></span></span><br><span class="line"><span class="tag">            <span class="attr">android:textSize</span>=<span class="string">"25dip"</span></span></span><br><span class="line"><span class="tag">            <span class="attr">android:text</span>=<span class="string">"item名称"</span>/&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">TextView</span> </span></span><br><span class="line"><span class="tag">            <span class="attr">android:id</span>=<span class="string">"@+id/lvw_custom_description"</span></span></span><br><span class="line"><span class="tag">            <span class="attr">android:layout_width</span>=<span class="string">"wrap_content"</span></span></span><br><span class="line"><span class="tag">            <span class="attr">android:layout_height</span>=<span class="string">"wrap_content"</span></span></span><br><span class="line"><span class="tag">            <span class="attr">android:layout_margin</span>=<span class="string">"5dip"</span></span></span><br><span class="line"><span class="tag">            <span class="attr">android:textSize</span>=<span class="string">"10dip"</span></span></span><br><span class="line"><span class="tag">            <span class="attr">android:text</span>=<span class="string">"item描述..."</span>/&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">LinearLayout</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">LinearLayout</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p>2、取得用于ListView的数据集合，类型是ArrayList&lt;Map<string, object="">&gt;，每一个Map对应于ListView的一个item，多个map就构成了ListView的数据集合： </string,></p>
+<figure class="highlight processing"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * 取得用于ListView的数据</span></span><br><span class="line"><span class="comment"> * @return</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">private</span> ArrayList&lt;<span class="keyword">HashMap</span>&lt;<span class="keyword">String</span>, <span class="keyword">Object</span>&gt;&gt; getItems() &#123;</span><br><span class="line">    ArrayList&lt;<span class="keyword">HashMap</span>&lt;<span class="keyword">String</span>, <span class="keyword">Object</span>&gt;&gt; items = <span class="keyword">new</span> ArrayList&lt;<span class="keyword">HashMap</span>&lt;<span class="keyword">String</span>, <span class="keyword">Object</span>&gt;&gt;();</span><br><span class="line">    <span class="keyword">for</span>(<span class="built_in">int</span> i = <span class="number">0</span>; i &lt; <span class="number">5</span>; i++) &#123;</span><br><span class="line">        <span class="comment">//***********************************************</span></span><br><span class="line">        <span class="comment">//* 每一个map中的数据对应与ListView中的一个item *</span></span><br><span class="line">        <span class="comment">//* 在我自定义的布局文件中，一个item包括：      *</span></span><br><span class="line">        <span class="comment">//* 1、图片（lvw_custom_img）                   *</span></span><br><span class="line">        <span class="comment">//* 2、名称（lvw_custom_name）                  *</span></span><br><span class="line">        <span class="comment">//* 3、描述（lvw_custom_description）           *</span></span><br><span class="line">        <span class="comment">//* 所以map中也至少需要包括这三项数据           *</span></span><br><span class="line">        <span class="comment">//***********************************************</span></span><br><span class="line">        <span class="keyword">HashMap</span>&lt;<span class="keyword">String</span>, <span class="keyword">Object</span>&gt; <span class="built_in">map</span> = <span class="keyword">new</span> <span class="keyword">HashMap</span>&lt;<span class="keyword">String</span>, <span class="keyword">Object</span>&gt;();</span><br><span class="line">        <span class="comment">//图片，key值可以随便取，映射关系会在实例化Adapter时定义，但我喜欢将key与布局文件中定义的id取同样的值</span></span><br><span class="line">        <span class="comment">//value值为图片的资源id</span></span><br><span class="line">        <span class="built_in">map</span>.put(<span class="string">"lvw_custom_img"</span>, R.drawable.custom);</span><br><span class="line">        <span class="comment">//名称</span></span><br><span class="line">        <span class="built_in">map</span>.put(<span class="string">"lvw_custom_name"</span>, <span class="string">"item名称"</span>);</span><br><span class="line">        <span class="comment">//描述</span></span><br><span class="line">        <span class="built_in">map</span>.put(<span class="string">"lvw_custom_description"</span>, <span class="string">"item描述"</span>);</span><br><span class="line">        </span><br><span class="line">        items.<span class="built_in">add</span>(<span class="built_in">map</span>);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> items;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>3、为ListView设置SimpleAdapter： </p>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">//取得ListView实例</span><br><span class="line">ListView lvwCustom = (ListView)findViewById(R.id.lvw_custom);</span><br><span class="line">//要在ListView中显示的数据集合</span><br><span class="line">ArrayList<span class="xml"><span class="tag">&lt;<span class="name">HashMap</span>&lt;<span class="attr">String</span>, <span class="attr">Object</span>&gt;</span></span>&gt; items = getItems();</span><br><span class="line">//<span class="strong">*****</span><span class="strong">*****</span><span class="strong">*****</span><span class="strong">*****</span><span class="strong">*****</span><span class="strong">*****</span><span class="strong">*****</span><span class="strong">*****</span><span class="strong">*****</span><span class="strong">*****</span><span class="strong">*****</span><span class="strong">*****</span><span class="strong">*****</span><span class="strong">*****</span>**</span><br><span class="line">//<span class="bullet">* new一个SimpleAdapter                                                 *</span></span><br><span class="line">//<span class="bullet">* items为数据集合                                                      *</span></span><br><span class="line">//<span class="bullet">* R.layout.lvw_custom为自定义的ListView布局文件                        *</span></span><br><span class="line">//<span class="bullet">* 第四个参数为map中德key集合                                           *</span></span><br><span class="line">//<span class="bullet">* 第五个参数为自定义布局文件中空间的资源id集合，与第四个参数要一一对应 *</span></span><br><span class="line">//<span class="strong">*****</span><span class="strong">*****</span><span class="strong">*****</span><span class="strong">*****</span><span class="strong">*****</span><span class="strong">*****</span><span class="strong">*****</span><span class="strong">*****</span><span class="strong">*****</span><span class="strong">*****</span><span class="strong">*****</span><span class="strong">*****</span><span class="strong">*****</span><span class="strong">*****</span>**</span><br><span class="line">SimpleAdapter adapter = new SimpleAdapter(this, items, R.layout.lvw_custom, </span><br><span class="line"><span class="code">        new String[] &#123;"lvw_custom_img","lvw_custom_name","lvw_custom_description"&#125;, </span></span><br><span class="line"><span class="code">        new int[] &#123;R.id.lvw_custom_img, R.id.lvw_custom_name, R.id.lvw_custom_description&#125;);</span></span><br><span class="line">//位ListView设置Adapter</span><br><span class="line">lvwCustom.setAdapter(adapter);</span><br></pre></td></tr></table></figure>
+<p><strong>三、显示非资源id类型图片的ListView</strong> </p>
+<p>通过上面的例子可以看到Map中图片项的value是资源id，这是针对项目中已存在的图片文件，为什么要用资源id而不是其他（比如Bitmap类型）呢，这是因为adapter的bindView()方法是负责解析图片并将其显示到ImageView中，但它只针对资源id类型做了判断。然而有一种情况，比如你的图片是从网络读取的Bitmap类型，你就需要对代码进行改写了。分析SimpleAdapter的源码，发现getView()方法是负责够造界面布局的的，而getView又是调用bindView来往控件里填充值的，所以我这里对bindView()方法进行改写。</p>
+<p>新建一个类CustomImageAdapter，代码完全copy自SimpleAdapter，找到bindView方法，对其进行改写：</p>
+<figure class="highlight processing"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">private</span> <span class="keyword">void</span> bindView(<span class="built_in">int</span> position, View view) &#123;</span><br><span class="line">   <span class="keyword">final</span> Map dataSet = mData.<span class="built_in">get</span>(position);</span><br><span class="line">   <span class="keyword">if</span> (dataSet == <span class="keyword">null</span>) &#123;</span><br><span class="line">       <span class="keyword">return</span>;</span><br><span class="line">   &#125;</span><br><span class="line">   <span class="keyword">final</span> ViewBinder binder = mViewBinder;</span><br><span class="line">   <span class="keyword">final</span> View[] holder = mHolders.<span class="built_in">get</span>(view);</span><br><span class="line">   <span class="keyword">final</span> <span class="keyword">String</span>[] from = mFrom;</span><br><span class="line">   <span class="keyword">final</span> <span class="built_in">int</span>[] to = mTo;</span><br><span class="line">   <span class="keyword">final</span> <span class="built_in">int</span> count = to.length;</span><br><span class="line">   <span class="keyword">for</span> (<span class="built_in">int</span> i = <span class="number">0</span>; i &lt; count; i++) &#123;</span><br><span class="line">       <span class="keyword">final</span> View v = holder[i];</span><br><span class="line">       <span class="keyword">if</span> (v != <span class="keyword">null</span>) &#123;</span><br><span class="line">           <span class="keyword">final</span> <span class="keyword">Object</span> data = dataSet.<span class="built_in">get</span>(from[i]);</span><br><span class="line">           <span class="keyword">String</span> <span class="built_in">text</span> = data == <span class="keyword">null</span> ? <span class="string">""</span> : data.toString();</span><br><span class="line">           <span class="keyword">if</span> (<span class="built_in">text</span> == <span class="keyword">null</span>) &#123;</span><br><span class="line">               <span class="built_in">text</span> = <span class="string">""</span>;</span><br><span class="line">           &#125;</span><br><span class="line">           <span class="built_in">boolean</span> bound = <span class="keyword">false</span>;</span><br><span class="line">           <span class="keyword">if</span> (binder != <span class="keyword">null</span>) &#123;</span><br><span class="line">               bound = binder.setViewValue(v, data, <span class="built_in">text</span>);</span><br><span class="line">           &#125;</span><br><span class="line">           <span class="keyword">if</span> (!bound) &#123;</span><br><span class="line">               <span class="keyword">if</span> (v <span class="keyword">instanceof</span> Checkable) &#123;</span><br><span class="line">                   <span class="keyword">if</span> (data <span class="keyword">instanceof</span> Boolean) &#123;</span><br><span class="line">                       ((Checkable) v).setChecked((Boolean) data);</span><br><span class="line">                   &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">                       <span class="keyword">throw</span> <span class="keyword">new</span> IllegalStateException(v.getClass().getName() +</span><br><span class="line">                               <span class="string">" should be bound to a Boolean, not a "</span> + data.getClass());</span><br><span class="line">                   &#125;</span><br><span class="line">               &#125; <span class="keyword">else</span> <span class="keyword">if</span> (v <span class="keyword">instanceof</span> TextView) &#123;</span><br><span class="line">                   <span class="comment">// Note: keep the instanceof TextView check at the bottom of these</span></span><br><span class="line">                   <span class="comment">// ifs since a lot of views are TextViews (e.g. CheckBoxes).</span></span><br><span class="line">                   setViewText((TextView) v, <span class="built_in">text</span>);</span><br><span class="line">               &#125; <span class="keyword">else</span> <span class="keyword">if</span> (v <span class="keyword">instanceof</span> ImageView) &#123;</span><br><span class="line">                   <span class="keyword">if</span> (data <span class="keyword">instanceof</span> Integer) &#123;</span><br><span class="line">                       setViewImage((ImageView) v, (Integer) data);                            </span><br><span class="line">                   &#125; </span><br><span class="line">                   <span class="comment">//这里增加对Bitmap类型的判断</span></span><br><span class="line">                       <span class="keyword">else</span> <span class="keyword">if</span>(data <span class="keyword">instanceof</span> Bitmap) &#123;</span><br><span class="line">                       ((ImageView)v).setImageBitmap((Bitmap)data);</span><br><span class="line">                   &#125;</span><br><span class="line">                   <span class="keyword">else</span> &#123;</span><br><span class="line">                       setViewImage((ImageView) v, <span class="built_in">text</span>);</span><br><span class="line">                   &#125;</span><br><span class="line">               &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">                   <span class="keyword">throw</span> <span class="keyword">new</span> IllegalStateException(v.getClass().getName() + <span class="string">" is not a "</span> +</span><br><span class="line">                           <span class="string">" view that can be bounds by this SimpleAdapter"</span>);</span><br><span class="line">               &#125;</span><br><span class="line">           &#125;</span><br><span class="line">       &#125;</span><br><span class="line">   &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>然后像自定义ListView的步骤一样使用就行了，只是把SimpleAdapter替换为CustomImageAdapter，Map中图片项的value变为Bitmap类型了。</p>
+<p><strong>四、Item使用不同布局的ListView</strong> </p>
+<p>通过前面的例子可以看到，ListView的所有item使用的都是相同的布局，如果想使用不同的布局呢？ 这个例子是我从以前做的音乐播放器代码里找的，效果图: </p>
+<p><img src="http://images.cnblogs.com/cnblogs_com/chenguanwei/201112/201112091641364523.png" alt="请输入图片描述"></p>
+<p>MP3的封面图片突然不显示了，不知道咋回事。 步骤： </p>
+<p>1、在Map中存放的键值对中多增加一项布局类型： </p>
+<figure class="highlight processing"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment">* 根据playlistId获得歌曲列表,用于ListView显示</span></span><br><span class="line"><span class="comment">* </span></span><br><span class="line"><span class="comment">* @param playlistId</span></span><br><span class="line"><span class="comment">*            0表示所有歌曲</span></span><br><span class="line"><span class="comment">* @return</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"><span class="keyword">private</span> List&lt;Map&lt;<span class="keyword">String</span>, <span class="keyword">Object</span>&gt;&gt; getSongList(<span class="built_in">int</span> playlistId) &#123;</span><br><span class="line">   </span><br><span class="line">   <span class="comment">// 取得符合条件的所有歌曲</span></span><br><span class="line">   List&lt;Song&gt; songs = getSongs(playlistId);</span><br><span class="line">   <span class="comment">// 构造SongList的数据</span></span><br><span class="line">   List&lt;Map&lt;<span class="keyword">String</span>, <span class="keyword">Object</span>&gt;&gt; list = <span class="keyword">new</span> ArrayList&lt;Map&lt;<span class="keyword">String</span>, <span class="keyword">Object</span>&gt;&gt;();</span><br><span class="line">   Map&lt;<span class="keyword">String</span>, <span class="keyword">Object</span>&gt; map1 = <span class="keyword">new</span> <span class="keyword">HashMap</span>&lt;<span class="keyword">String</span>, <span class="keyword">Object</span>&gt;();</span><br><span class="line">   <span class="comment">//这里的Type是用于在getView方法中判断并构造布局的</span></span><br><span class="line">   map1.put(<span class="string">"type"</span>, TYPE_BTN);</span><br><span class="line">   map1.put(<span class="string">"id"</span>, ID_RANDOM_PLAY);</span><br><span class="line">   map1.put(<span class="string">"mainlist_btn_name"</span>, <span class="string">"随机播放"</span>);</span><br><span class="line">   map1.put(<span class="string">"mainlist_btn_img"</span>, R.drawable.list_random_icon);</span><br><span class="line">   list.<span class="built_in">add</span>(map1);</span><br><span class="line">   <span class="keyword">if</span> (songs != <span class="keyword">null</span>) &#123;</span><br><span class="line">       <span class="built_in">int</span> <span class="built_in">size</span> = songs.<span class="built_in">size</span>();</span><br><span class="line">       <span class="keyword">for</span> (<span class="built_in">int</span> i = <span class="number">0</span>; i &lt; <span class="built_in">size</span>; i++) &#123;</span><br><span class="line">           Song song = songs.<span class="built_in">get</span>(i);</span><br><span class="line">           Map&lt;<span class="keyword">String</span>, <span class="keyword">Object</span>&gt; <span class="built_in">map</span> = <span class="keyword">new</span> <span class="keyword">HashMap</span>&lt;<span class="keyword">String</span>, <span class="keyword">Object</span>&gt;();</span><br><span class="line">           <span class="comment">//这里的Type是用于在getView方法中判断并构造布局的</span></span><br><span class="line">           <span class="built_in">map</span>.put(<span class="string">"type"</span>, TYPE_SONG_LIST);</span><br><span class="line">           <span class="built_in">map</span>.put(<span class="string">"id"</span>, song.getId());</span><br><span class="line">           Bitmap bm = MusicHelper.getArtwork(<span class="keyword">this</span>, song.getId(), song</span><br><span class="line">                   .getAlbumId(), <span class="keyword">true</span>);</span><br><span class="line">           <span class="built_in">map</span>.put(<span class="string">"songlist_cover_img"</span>, bm);</span><br><span class="line">           <span class="built_in">map</span>.put(<span class="string">"songlist_song_name"</span>, song.getTitle());</span><br><span class="line">           <span class="built_in">map</span>.put(<span class="string">"songlist_song_album"</span>, song.getAlbum());</span><br><span class="line">           <span class="built_in">map</span>.put(<span class="string">"songlist_song_artist"</span>, song.getArtist());</span><br><span class="line">           list.<span class="built_in">add</span>(<span class="built_in">map</span>);</span><br><span class="line">       &#125;</span><br><span class="line">   &#125;</span><br><span class="line">   <span class="keyword">return</span> list;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>2、为不同的item布局分别定义不同的布局文件。</p>
+<p>list_songs.xml:</p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br></pre></td><td class="code"><pre><span class="line"><span class="php"><span class="meta">&lt;?</span>xml version=<span class="string">"1.0"</span> encoding=<span class="string">"utf-8"</span><span class="meta">?&gt;</span></span></span><br><span class="line"><span class="tag">&lt;<span class="name">RelativeLayout</span></span></span><br><span class="line"><span class="tag">   <span class="attr">xmlns:android</span>=<span class="string">"http://schemas.android.com/apk/res/android"</span></span></span><br><span class="line"><span class="tag">   <span class="attr">android:layout_width</span>=<span class="string">"fill_parent"</span></span></span><br><span class="line"><span class="tag">   <span class="attr">android:layout_height</span>=<span class="string">"fill_parent"</span></span></span><br><span class="line"><span class="tag">   &gt;</span></span><br><span class="line">   <span class="tag">&lt;<span class="name">ImageView</span></span></span><br><span class="line"><span class="tag">         <span class="attr">android:id</span>=<span class="string">"@+id/songlist_cover_img"</span></span></span><br><span class="line"><span class="tag">         <span class="attr">android:layout_width</span>=<span class="string">"48dip"</span></span></span><br><span class="line"><span class="tag">         <span class="attr">android:layout_height</span>=<span class="string">"48dip"</span></span></span><br><span class="line"><span class="tag">         <span class="attr">android:layout_alignParentLeft</span>=<span class="string">"true"</span></span></span><br><span class="line"><span class="tag">         <span class="attr">android:layout_centerVertical</span>=<span class="string">"true"</span></span></span><br><span class="line"><span class="tag">         <span class="attr">android:layout_marginLeft</span>=<span class="string">"6dip"</span>        </span></span><br><span class="line"><span class="tag">         /&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">LinearLayout</span></span></span><br><span class="line"><span class="tag">        <span class="attr">android:orientation</span>=<span class="string">"vertical"</span></span></span><br><span class="line"><span class="tag">        <span class="attr">android:layout_width</span>=<span class="string">"fill_parent"</span></span></span><br><span class="line"><span class="tag">        <span class="attr">android:layout_height</span>=<span class="string">"wrap_content"</span></span></span><br><span class="line"><span class="tag">        <span class="attr">android:layout_toRightOf</span>=<span class="string">"@id/songlist_cover_img"</span></span></span><br><span class="line"><span class="tag">        <span class="attr">android:layout_alignParentRight</span>=<span class="string">"true"</span></span></span><br><span class="line"><span class="tag">        <span class="attr">android:layout_centerVertical</span>=<span class="string">"true"</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">TextView</span></span></span><br><span class="line"><span class="tag">            <span class="attr">android:id</span>=<span class="string">"@+id/songlist_song_name"</span></span></span><br><span class="line"><span class="tag">            <span class="attr">android:layout_width</span>=<span class="string">"wrap_content"</span></span></span><br><span class="line"><span class="tag">            <span class="attr">android:layout_height</span>=<span class="string">"wrap_content"</span></span></span><br><span class="line"><span class="tag">            <span class="attr">android:layout_marginTop</span>=<span class="string">"6dip"</span></span></span><br><span class="line"><span class="tag">            <span class="attr">android:layout_marginLeft</span>=<span class="string">"6dip"</span></span></span><br><span class="line"><span class="tag">            <span class="attr">android:layout_marginBottom</span>=<span class="string">"3dip"</span></span></span><br><span class="line"><span class="tag">            <span class="attr">android:textSize</span>=<span class="string">"24dip"</span></span></span><br><span class="line"><span class="tag">            <span class="attr">android:textColor</span>=<span class="string">"@drawable/black"</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">TextView</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">RelativeLayout</span></span></span><br><span class="line"><span class="tag">            <span class="attr">android:layout_width</span>=<span class="string">"fill_parent"</span></span></span><br><span class="line"><span class="tag">            <span class="attr">android:layout_height</span>=<span class="string">"wrap_content"</span></span></span><br><span class="line"><span class="tag">            <span class="attr">android:layout_marginBottom</span>=<span class="string">"6dip"</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">TextView</span></span></span><br><span class="line"><span class="tag">                <span class="attr">android:id</span>=<span class="string">"@+id/songlist_song_album"</span></span></span><br><span class="line"><span class="tag">                <span class="attr">android:layout_width</span>=<span class="string">"wrap_content"</span></span></span><br><span class="line"><span class="tag">                <span class="attr">android:layout_height</span>=<span class="string">"wrap_content"</span></span></span><br><span class="line"><span class="tag">                <span class="attr">android:layout_marginTop</span>=<span class="string">"3dip"</span></span></span><br><span class="line"><span class="tag">                <span class="attr">android:layout_marginLeft</span>=<span class="string">"6dip"</span></span></span><br><span class="line"><span class="tag">                <span class="attr">android:textSize</span>=<span class="string">"10dip"</span></span></span><br><span class="line"><span class="tag">                <span class="attr">android:textColor</span>=<span class="string">"@drawable/black"</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;/<span class="name">TextView</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">TextView</span></span></span><br><span class="line"><span class="tag">                <span class="attr">android:id</span>=<span class="string">"@+id/songlist_song_artist"</span></span></span><br><span class="line"><span class="tag">                <span class="attr">android:layout_width</span>=<span class="string">"wrap_content"</span></span></span><br><span class="line"><span class="tag">                <span class="attr">android:layout_height</span>=<span class="string">"wrap_content"</span></span></span><br><span class="line"><span class="tag">                <span class="attr">android:layout_marginTop</span>=<span class="string">"3dip"</span>        </span></span><br><span class="line"><span class="tag">                <span class="attr">android:layout_marginRight</span>=<span class="string">"6dip"</span></span></span><br><span class="line"><span class="tag">                <span class="attr">android:layout_alignParentRight</span>=<span class="string">"true"</span></span></span><br><span class="line"><span class="tag">                <span class="attr">android:textSize</span>=<span class="string">"10dip"</span></span></span><br><span class="line"><span class="tag">                <span class="attr">android:textColor</span>=<span class="string">"@drawable/black"</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;/<span class="name">TextView</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">RelativeLayout</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">LinearLayout</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">RelativeLayout</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p>list_main_btn.xml:</p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line"><span class="php"><span class="meta">&lt;?</span>xml version=<span class="string">"1.0"</span> encoding=<span class="string">"utf-8"</span><span class="meta">?&gt;</span></span></span><br><span class="line"><span class="tag">&lt;<span class="name">LinearLayout</span></span></span><br><span class="line"><span class="tag">   <span class="attr">xmlns:android</span>=<span class="string">"http://schemas.android.com/apk/res/android"</span></span></span><br><span class="line"><span class="tag">   <span class="attr">android:orientation</span>=<span class="string">"horizontal"</span></span></span><br><span class="line"><span class="tag">   <span class="attr">android:layout_width</span>=<span class="string">"fill_parent"</span></span></span><br><span class="line"><span class="tag">   <span class="attr">android:layout_height</span>=<span class="string">"fill_parent"</span></span></span><br><span class="line"><span class="tag">   &gt;</span></span><br><span class="line">   <span class="tag">&lt;<span class="name">TextView</span></span></span><br><span class="line"><span class="tag">            <span class="attr">android:id</span>=<span class="string">"@+id/mainlist_btn_name"</span></span></span><br><span class="line"><span class="tag">            <span class="attr">android:layout_width</span>=<span class="string">"wrap_content"</span></span></span><br><span class="line"><span class="tag">            <span class="attr">android:layout_height</span>=<span class="string">"wrap_content"</span></span></span><br><span class="line"><span class="tag">            <span class="attr">android:layout_marginLeft</span>=<span class="string">"6dip"</span></span></span><br><span class="line"><span class="tag">            <span class="attr">android:layout_marginTop</span>=<span class="string">"10dip"</span></span></span><br><span class="line"><span class="tag">            <span class="attr">android:layout_marginBottom</span>=<span class="string">"10dip"</span></span></span><br><span class="line"><span class="tag">           <span class="attr">android:layout_gravity</span>=<span class="string">"center_vertical"</span></span></span><br><span class="line"><span class="tag">            <span class="attr">android:textSize</span>=<span class="string">"28dip"</span></span></span><br><span class="line"><span class="tag">            <span class="attr">android:textColor</span>=<span class="string">"@drawable/black"</span>/&gt;</span></span><br><span class="line">   <span class="tag">&lt;<span class="name">ImageView</span></span></span><br><span class="line"><span class="tag">         <span class="attr">android:id</span>=<span class="string">"@+id/mainlist_btn_img"</span></span></span><br><span class="line"><span class="tag">         <span class="attr">android:layout_width</span>=<span class="string">"wrap_content"</span></span></span><br><span class="line"><span class="tag">         <span class="attr">android:layout_height</span>=<span class="string">"wrap_content"</span></span></span><br><span class="line"><span class="tag">         <span class="attr">android:layout_gravity</span>=<span class="string">"center_vertical"</span></span></span><br><span class="line"><span class="tag">         <span class="attr">android:layout_marginLeft</span>=<span class="string">"6dip"</span>        </span></span><br><span class="line"><span class="tag">         /&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">LinearLayout</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p>3、自定义Adapter类SongListAdapter，继承自BaseAdapter，重写getView方法，在该方法中使用LayoutInflator，根据map中定义的布局类型，构造对应的布局：</p>
+<figure class="highlight stata"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br></pre></td><td class="code"><pre><span class="line">@Override</span><br><span class="line">public <span class="keyword">View</span> getView(int position, <span class="keyword">View</span> convertView, ViewGroup parent) &#123;</span><br><span class="line">   LayoutInflater inflater = LayoutInflater.from(context);</span><br><span class="line">   <span class="comment">//产生一个View  </span></span><br><span class="line">   <span class="keyword">View</span> <span class="keyword">view</span> = null;  </span><br><span class="line">   <span class="comment">//根据type不同的数据类型构造不同的View，0代表歌曲，1代表按钮菜单</span></span><br><span class="line">   <span class="comment">//这个list是ListView的数据项集合，是通过构造方法传递进来的</span></span><br><span class="line">   int <span class="keyword">type</span> = (Integer)<span class="keyword">list</span>.<span class="built_in">get</span>(position).<span class="built_in">get</span>(<span class="string">"type"</span>);</span><br><span class="line">   <span class="keyword">if</span>(0 == <span class="keyword">type</span>) &#123;</span><br><span class="line">       <span class="keyword">view</span> = inflater.inflate(R.layout.list_songs, null);</span><br><span class="line">       <span class="comment">//获取songlist_cover_img</span></span><br><span class="line">       ImageView songlist_cover_img = (ImageView)<span class="keyword">view</span>.findViewById(R.id.songlist_cover_img);</span><br><span class="line">       songlist_cover_img.setImageBitmap((Bitmap)<span class="keyword">list</span>.<span class="built_in">get</span>(position).<span class="built_in">get</span>(<span class="string">"songlist_cover_img"</span>));</span><br><span class="line">       <span class="comment">//获取songlist_song_name</span></span><br><span class="line">       TextView songlist_song_name = (TextView)<span class="keyword">view</span>.findViewById(R.id.songlist_song_name);</span><br><span class="line">       String song_name = <span class="keyword">list</span>.<span class="built_in">get</span>(position).<span class="built_in">get</span>(<span class="string">"songlist_song_name"</span>).<span class="keyword">toString</span>();</span><br><span class="line">       songlist_song_name.setText(song_name);</span><br><span class="line">       <span class="comment">//获取songlist_song_album属性</span></span><br><span class="line">       TextView songlist_song_album = (TextView)<span class="keyword">view</span>.findViewById(R.id.songlist_song_album);</span><br><span class="line">       String song_album = <span class="keyword">list</span>.<span class="built_in">get</span>(position).<span class="built_in">get</span>(<span class="string">"songlist_song_album"</span>).<span class="keyword">toString</span>();</span><br><span class="line">       songlist_song_album.setText(song_album);</span><br><span class="line">       <span class="comment">//获取songlist_song_artist属性</span></span><br><span class="line">       TextView songlist_song_artist = (TextView)<span class="keyword">view</span>.findViewById(R.id.songlist_song_artist);</span><br><span class="line">       String song_artist = <span class="keyword">list</span>.<span class="built_in">get</span>(position).<span class="built_in">get</span>(<span class="string">"songlist_song_artist"</span>).<span class="keyword">toString</span>();</span><br><span class="line">       songlist_song_artist.setText(song_artist);</span><br><span class="line">   &#125; <span class="keyword">else</span> <span class="keyword">if</span>(1 == <span class="keyword">type</span>) &#123;</span><br><span class="line">       <span class="keyword">view</span> = inflater.inflate(R.layout.list_main_btn, null);</span><br><span class="line">       <span class="comment">//获取按钮菜单的mainlist_btn_name属性</span></span><br><span class="line">       TextView mainlist_btn_name = (TextView)<span class="keyword">view</span>.findViewById(R.id.mainlist_btn_name);</span><br><span class="line">       String btn_name = <span class="keyword">list</span>.<span class="built_in">get</span>(position).<span class="built_in">get</span>(<span class="string">"mainlist_btn_name"</span>).<span class="keyword">toString</span>();</span><br><span class="line">       mainlist_btn_name.setText(btn_name);</span><br><span class="line">       <span class="comment">//获取mainlist_btn_img</span></span><br><span class="line">       ImageView mainlist_btn_img = (ImageView)<span class="keyword">view</span>.findViewById(R.id.mainlist_btn_img);</span><br><span class="line">       int resId = (Integer)<span class="keyword">list</span>.<span class="built_in">get</span>(position).<span class="built_in">get</span>(<span class="string">"mainlist_btn_img"</span>);</span><br><span class="line">       mainlist_btn_img.setImageResource(resId);</span><br><span class="line">   &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">       </span><br><span class="line">   &#125;</span><br><span class="line">   </span><br><span class="line">   <span class="keyword">return</span> <span class="keyword">view</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>3、为ListView设置adapter： </p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">list</span> = getSongList(playlistId);</span><br><span class="line">SongListAdapter adapter = <span class="keyword">new</span> SongListAdapter(<span class="built_in">list</span>, <span class="keyword">this</span>);</span><br><span class="line">songList.setAdapter(adapter);</span><br></pre></td></tr></table></figure>
+<div style="clear:both"></div><div class="cc"><p>The <a href="https://blog.naaln.com">Why·Liam·Blog</a> by <a href="https://www.naaln.com" target="_blank" rel="external">WhyLiam</a> is licensed under a <a href="http://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" rel="external">Creative Commons BY-NC-ND 4.0 International License</a>.</p><p>由<a href="https://www.naaln.com" target="_blank" rel="external">WhyLiam</a>创作并维护的<a href="https://blog.naaln.com">Why·Liam·Blog</a>采用创作共用<a href="http://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" rel="external">保留署名-非商业-禁止演绎4.0国际许可证</a>。</p><p>本文首发于<a href="https://blog.naaln.com">Why·Liam·Blog (https://blog.naaln.com)</a>，版权所有，侵权必究。</p><p>本文永久链接：<a href="https://blog.naaln.com/2013/04/android-listview-in-various-display-effects/">https://blog.naaln.com/2013/04/android-listview-in-various-display-effects/</a></p><p></p></div>
+      
+    </div>
+    
+    
+    
+
+    
+      <div>
+        <div id="wechat_subscriber" style="display: block; padding: 10px 0; margin: 20px auto; width: 100%; text-align: center">
+    <img id="wechat_subscriber_qcode" src="//ws1.sinaimg.cn/large/006tKfTcgy1fg8gpi7kaaj30by0by74i.jpg" alt="WHY·LIAM wechat" style="width: 200px; max-width: 100%;"/>
+    <div>记录生活，研究产品，分享设计，分析数据，讨论科技和商业，不定期扯淡。</div>
+</div>
+
+      </div>
+    
+
+    
+      <div>
+        <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+  <div>如果觉得我的文章对您有用，请随意打赏。您的支持将鼓励我继续创作！</div>
+  <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+    <span>打赏</span>
+  </button>
+  <div id="QR" style="display: none;">
+
+    
+      <div id="wechat" style="display: inline-block">
+        <img id="wechat_qr" src="//ws1.sinaimg.cn/mw690/006tNc79gy1fm7yqrau7mj30f00ezad5.jpg" alt="WHY·LIAM 微信支付"/>
+        <p>微信支付</p>
+      </div>
+    
+
+    
+      <div id="alipay" style="display: inline-block">
+        <img id="alipay_qr" src="//ww3.sinaimg.cn/mw690/48910e01gw1evkbfendrjj20ci0ci0uf.jpg" alt="WHY·LIAM 支付宝"/>
+        <p>支付宝</p>
+      </div>
+    
+
+    
+
+  </div>
+</div>
+
+      </div>
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/android/" rel="tag"># android</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2013/04/friends-love-but-just-cant-keep-up-with/" rel="next" title="有种朋友，很喜欢，但就是不能追">
+                <i class="fa fa-chevron-left"></i> 有种朋友，很喜欢，但就是不能追
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2013/04/a-personal/" rel="prev" title="一个人">
+                一个人 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+  
+    <div class="comments" id="comments">
+      <div id="SOHUCS"></div>
+    </div>
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+
+      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image"
+                src="//tva2.sinaimg.cn/crop.0.0.998.998.180/48910e01gw1ef5p6etuzdj20rs0rs771.jpg"
+                alt="WHY·LIAM" />
+            
+              <p class="site-author-name" itemprop="name">WHY·LIAM</p>
+              <p class="site-description motion-element" itemprop="description"></p>
+          </div>
+
+          
+            <nav class="site-state motion-element">
+              
+                <div class="site-state-item site-state-posts">
+                
+                  <a href="/archives/">
+                
+                    <span class="site-state-item-count">721</span>
+                    <span class="site-state-item-name">日志</span>
+                  </a>
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-categories">
+                  <a href="/categories/index.html">
+                    <span class="site-state-item-count">4</span>
+                    <span class="site-state-item-name">分类</span>
+                  </a>
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-tags">
+                  <a href="/tags/index.html">
+                    <span class="site-state-item-count">67</span>
+                    <span class="site-state-item-name">标签</span>
+                  </a>
+                </div>
+              
+            </nav>
+          
+
+          
+            <div class="feed-link motion-element">
+              <a href="/atom.xml" rel="alternate">
+                <i class="fa fa-rss"></i>
+                RSS
+              </a>
+            </div>
+          
+
+          
+            <div class="links-of-author motion-element">
+                
+                  <span class="links-of-author-item">
+                    <a href="https://github.com/liszd" target="_blank" title="GitHub" rel="external nofollow">
+                      
+                        <i class="fa fa-fw fa-github"></i>GitHub</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="http://weibo.com/whyliam" target="_blank" title="微博" rel="external nofollow">
+                      
+                        <i class="fa fa-fw fa-weibo"></i>微博</a>
+                  </span>
+                
+            </div>
+          
+
+          
+          
+            <div class="cc-license motion-element" itemprop="license">
+              <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/" class="cc-opacity" target="_blank" rel="external nofollow">
+                <img src="/images/cc-by-nc-nd.svg" alt="Creative Commons" />
+              </a>
+            </div>
+          
+
+          
+          
+            <div class="links-of-blogroll motion-element links-of-blogroll-block">
+              <div class="links-of-blogroll-title">
+                <i class="fa  fa-fw fa-link"></i>
+                Links
+              </div>
+              <ul class="links-of-blogroll-list">
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="http://www.naaln.com/" title="纳兰主页" target="_blank">纳兰主页</a>
+                  </li>
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="http://photo.naaln.com/" title="纳兰相册" target="_blank">纳兰相册</a>
+                  </li>
+                
+              </ul>
+            </div>
+          
+
+          
+            
+          
+          
+
+        </div>
+      </section>
+
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; 2003 &mdash; <span itemprop="copyrightYear">2018</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">WHY·LIAM</span>
+
+  
+
+  
+</div>
+
+
+  
+
+
+
+  <div class="powered-by">由 <a class="theme-link" target="_blank" rel="external nofollow" href="https://hexo.io">Hexo</a> 强力驱动</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" rel="external nofollow" href="https://github.com/theme-next/hexo-theme-next">NexT.Muse</a> v6.0.2</div>
+
+
+
+  <div class="footer-custom">Hosted by <a target="_blank" rel="external nofollow" href="https://pages.coding.me"><b>Coding Pages</b></a></div>
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=6.0.2"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=6.0.2"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=6.0.2"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=6.0.2"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=6.0.2"></script>
+
+
+
+  
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+  
+    <script type="text/javascript">
+    (function(){
+      var appid = 'cytklkKc0';
+      var conf = 'prod_b1dd516bbb7f3198591656f99d9ace80';
+      var width = window.innerWidth || document.documentElement.clientWidth;
+      if (width < 960) {
+      window.document.write('<script id="changyan_mobile_js" charset="utf-8" type="text/javascript" src="https://changyan.sohu.com/upload/mobile/wap-js/changyan_mobile.js?client_id=' + appid + '&conf=' + conf + '"><\/script>'); } else { var loadJs=function(d,a){var c=document.getElementsByTagName("head")[0]||document.head||document.documentElement;var b=document.createElement("script");b.setAttribute("type","text/javascript");b.setAttribute("charset","UTF-8");b.setAttribute("src",d);if(typeof a==="function"){if(window.attachEvent){b.onreadystatechange=function(){var e=b.readyState;if(e==="loaded"||e==="complete"){b.onreadystatechange=null;a()}}}else{b.onload=a}}c.appendChild(b)};loadJs("https://changyan.sohu.com/upload/changyan.js",function(){
+        window.changyan.api.config({appid:appid,conf:conf})});
+      }
+    })();
+    </script>
+    <script type="text/javascript" src="https://assets.changyan.sohu.com/upload/plugins/plugins.count.js"></script>
+  
+
+
+
+
+
+
+
+  
+
+
+
+
+  
+  
+  
+  <link rel="stylesheet" href="/lib/algolia-instant-search/instantsearch.min.css">
+
+  
+  
+  <script src="/lib/algolia-instant-search/instantsearch.min.js"></script>
+  
+
+  <script src="/js/src/algolia-search.js?v=6.0.2"></script>
+
+
+
+  
+
+  
+
+  
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';        
+    }
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>

@@ -1,0 +1,968 @@
+<!DOCTYPE html>
+
+
+
+
+<html class="theme-next muse" lang="zh-CN">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+  <meta name="google-site-verification" content="ByVfaP_E3b9ZYRUGhNAUFSQKL8mJQwUehpQwoxJ5n-c" />
+
+
+
+  <meta name="msvalidate.01" content="DB220684085BEDBD2E49E8E942534B1F" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=6.0.2" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon-next.png?v=6.0.2">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32-next.png?v=6.0.2">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16-next.png?v=6.0.2">
+
+
+  <link rel="mask-icon" href="/favicon/logo.svg?v=6.0.2" color="#222">
+
+
+
+
+
+
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Muse',
+    version: '6.0.2',
+    sidebar: {"position":"right","display":"hide","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: false,
+    fastclick: false,
+    lazyload: false,
+    tabs: true,
+    motion: {"enable":false,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    algolia: {
+      applicationID: 'XILKIWTAM9',
+      apiKey: '8c01137fe05d281ccd531a0ec622322a',
+      indexName: 'blog',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"搜索文章","hits_empty":"啊，找不到 ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+  
+
+
+
+
+  
+  <meta name="keywords" content="python," />
+
+
+<meta name="description" content="By Sahand Saba 翻译 Liam  Introduction自从我开始学习python,我决定记录下一系列经常用的技巧。当我看到一些代码（例如，在 Overflow，或者一些开源的应用等等）我觉得很酷，我觉得我们应该不知道这一些用法。当我理解这些代码的时候，我会测试这些代码，然后加入这个列表中。下面发表的是一部分整理后的列表。假如你是一个很专业的Python工程师，即使你已经知道大部分">
+<meta name="keywords" content="python">
+<meta property="og:type" content="article">
+<meta property="og:title" content="30个关于Python的你有所不知语言特效和技巧">
+<meta property="og:url" content="https://blog.naaln.com/2014/03/30-python-language-features-tricks/index.html">
+<meta property="og:site_name" content="Why·Liam·Blog">
+<meta property="og:description" content="By Sahand Saba 翻译 Liam  Introduction自从我开始学习python,我决定记录下一系列经常用的技巧。当我看到一些代码（例如，在 Overflow，或者一些开源的应用等等）我觉得很酷，我觉得我们应该不知道这一些用法。当我理解这些代码的时候，我会测试这些代码，然后加入这个列表中。下面发表的是一部分整理后的列表。假如你是一个很专业的Python工程师，即使你已经知道大部分">
+<meta property="og:locale" content="zh-CN">
+<meta property="og:updated_time" content="2017-09-03T09:15:57.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="30个关于Python的你有所不知语言特效和技巧">
+<meta name="twitter:description" content="By Sahand Saba 翻译 Liam  Introduction自从我开始学习python,我决定记录下一系列经常用的技巧。当我看到一些代码（例如，在 Overflow，或者一些开源的应用等等）我觉得很酷，我觉得我们应该不知道这一些用法。当我理解这些代码的时候，我会测试这些代码，然后加入这个列表中。下面发表的是一部分整理后的列表。假如你是一个很专业的Python工程师，即使你已经知道大部分">
+
+
+
+  <link rel="alternate" href="/atom.xml" title="Why·Liam·Blog" type="application/atom+xml" />
+
+
+
+
+  <link rel="canonical" href="https://blog.naaln.com/2014/03/30-python-language-features-tricks/"/>
+
+
+  <title>30个关于Python的你有所不知语言特效和技巧 | Why·Liam·Blog</title>
+  
+
+
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-47966442-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-47966442-2');
+</script>
+
+
+
+
+
+
+  
+<script src="//msite.baidu.com/sdk/c.js?appid=1586840953097399"></script>
+<link rel="canonical" href="https://blog.naaln.com/2014/03/30-python-language-features-tricks/"/>
+<script type="application/ld+json">
+    {
+        "@context": "https://ziyuan.baidu.com/contexts/cambrian.jsonld",
+        "@id": "https://blog.naaln.com/2014/03/30-python-language-features-tricks/",
+        "appid": "1586840953097399",
+        "title": "30个关于Python的你有所不知语言特效和技巧",
+        "images": [
+            ""
+            ],
+        "description": "",
+        "pubDate": "",
+        "upDate": "",
+        "lrDate": ""
+    }
+</script>
+
+  <noscript>
+  <style type="text/css">
+    .use-motion .motion-element,
+    .use-motion .brand,
+    .use-motion .menu-item,
+    .sidebar-inner,
+    .use-motion .post-block,
+    .use-motion .pagination,
+    .use-motion .comments,
+    .use-motion .post-header,
+    .use-motion .post-body,
+    .use-motion .collection-title { opacity: initial; }
+
+    .use-motion .logo,
+    .use-motion .site-title,
+    .use-motion .site-subtitle {
+      opacity: initial;
+      top: initial;
+    }
+
+    .use-motion {
+      .logo-line-before i { left: initial; }
+      .logo-line-after i { right: initial; }
+    }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-CN">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-right page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"> <div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Why·Liam·Blog</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <h1 class="site-subtitle" itemprop="description">人生若如初見</h1>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            <i class="menu-item-icon fa fa-fw fa-home"></i> <br />首页</a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />归档</a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-technology">
+          <a href="/categories/technology/" rel="section">
+            <i class="menu-item-icon fa fa-fw fa-code"></i> <br />技术</a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-jottings">
+          <a href="/categories/jottings/" rel="section">
+            <i class="menu-item-icon fa fa-fw fa-language"></i> <br />随笔</a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tour">
+          <a href="/categories/tour/" rel="section">
+            <i class="menu-item-icon fa fa-fw fa-globe"></i> <br />旅游</a>
+        </li>
+      
+
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br />搜索</a>
+        </li>
+      
+    </ul>
+  
+
+  
+    <div class="site-search">
+      
+  
+  <div class="algolia-popup popup search-popup">
+    <div class="algolia-search">
+      <div class="algolia-search-input-icon">
+        <i class="fa fa-search"></i>
+      </div>
+      <div class="algolia-search-input" id="algolia-search-input"></div>
+    </div>
+
+    <div class="algolia-results">
+      <div id="algolia-stats"></div>
+      <div id="algolia-hits"></div>
+      <div id="algolia-pagination" class="algolia-pagination"></div>
+    </div>
+
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+  </div>
+
+
+
+
+    </div>
+  
+</nav>
+
+
+  
+
+
+
+ </div>
+    </header>
+
+    
+
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://blog.naaln.com/2014/03/30-python-language-features-tricks/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="WHY·LIAM">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="//tva2.sinaimg.cn/crop.0.0.998.998.180/48910e01gw1ef5p6etuzdj20rs0rs771.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Why·Liam·Blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h2 class="post-title" itemprop="name headline">30个关于Python的你有所不知语言特效和技巧</h2>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2014-03-20T23:30:00+08:00">2014-03-20</time>
+            
+
+            
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/technology/" itemprop="url" rel="index"><span itemprop="name">技术</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+              <span class="post-meta-divider">|</span>
+              <span class="post-meta-item-icon">
+                <i class="fa fa-comment-o"></i>
+              </span>
+              
+                <a href="/2014/03/30-python-language-features-tricks/#SOHUCS" itemprop="discussionUrl">
+                  <span id="changyan_count_unit" class="post-comments-count hc-comment-count" data-xid="2014/03/30-python-language-features-tricks/" itemprop="commentsCount"></span>
+                </a>
+              
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p>By Sahand Saba 翻译 Liam </p>
+<h2 id="Introduction"><a href="#Introduction" class="headerlink" title="Introduction"></a>Introduction</h2><p>自从我开始学习python,我决定记录下一系列经常用的技巧。当我看到一些代码（例如，在 <code>Overflow</code>，或者一些开源的应用等等）我觉得很酷，我觉得我们应该不知道这一些用法。当我理解这些代码的时候，我会测试这些代码，然后加入这个列表中。下面发表的是一部分整理后的列表。假如你是一个很专业的<code>Python</code>工程师，即使你已经知道大部分用法，你还是可以找到一些你不知道的。假如你是C, C++, Java工程师，并且最近想学Python，或者最近想拓展新的编程方式，那么你将会发现有一部分真的很有用，就想我一样。 每一个技巧和语言的特性都将会通过例子演示，而没有解释。同时，我将会尽量使例子简洁明了，可能有一些仍然讲的不清楚，因为专业水平不够。如果有一些例子看完之后还是不能明白的话，你可以利用例子的标题去<code>Google</code>找到更多有用的信息。 例子大致的按难度排序，一些比较简单和常见的功能和技巧会放在前面。 内容的目录我将会放在最后 </p>
+<h4 id="更新-March-14th-2014"><a href="#更新-March-14th-2014" class="headerlink" title="更新 - March 14th, 2014"></a>更新 - March 14th, 2014</h4><p>Roy Keyes 提了一个非常好的建议，把这个文章放在github上，让人们通过提PR方式来增加内容。这个仓库是<a href="https://github.com/sahands/python-by-exampl" target="_blank" rel="noopener">https://github.com/sahands/python-by-exampl</a>。欢迎大家 fork，提 pull requests。我会更新这篇文章的，当有仓库跟新的时候。 </p>
+<h4 id="更新-March-8th-2014"><a href="#更新-March-8th-2014" class="headerlink" title="更新 - March 8th, 2014"></a>更新 - March 8th, 2014</h4><p>这篇文章在 <a href="http://redd.it/1zv3q3" target="_blank" rel="noopener">Reddit</a>, <a href="https://news.ycombinator.com/item?id=7365410" target="_blank" rel="noopener">Hacker News</a> 有很多的讨论, 在那些评论中，很多读者提了很多建议和修改。我已经更新了我的列表，根据改进的建议，并且增加了一些新的条目。我现在确实有这样的一瞬间。”Cool! I didn’t know you could do that!” 另外，我不太清楚 <code>itertools.chain.from_iterable</code> 和 <code>dictionary comprehensions</code>. 同时，有一些十分有趣的讨论关于是否有一些技术导致难以调试代码的可能性 就我而言，下面的条目本质上是没有很难调试的。但是我可以断定，如果代码写的太长，将会增加调试的难度，以及更加难理解和维护。 根据你的判断，如果你的代码足够的简洁，那是有那好维护和阅读。 举例来说，我觉得列表推导式可以很好阅读，而且易于调试和维护。但是如果列表推导式在另一个列表推导式中来传递给映射，然后到<code>itertools.chain</code>？可能不是好主意！ </p>
+<h4 id="1-1-Unpacking"><a href="#1-1-Unpacking" class="headerlink" title="1.1 Unpacking"></a>1.1 Unpacking</h4><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span> a, b, c = <span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span></span><br><span class="line"></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span> a, b, c</span><br><span class="line">(<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>)</span><br><span class="line"></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span> a, b, c = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>]</span><br><span class="line"></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span> a, b, c</span><br><span class="line">(<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>)</span><br><span class="line"></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span> a, b, c = (<span class="number">2</span> * i + <span class="number">1</span> <span class="keyword">for</span> i <span class="keyword">in</span> range(<span class="number">3</span>))</span><br><span class="line"></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span> a, b, c</span><br><span class="line">(<span class="number">1</span>, <span class="number">3</span>, <span class="number">5</span>)</span><br><span class="line"></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span> a, (b, c), d = [<span class="number">1</span>, (<span class="number">2</span>, <span class="number">3</span>), <span class="number">4</span>]</span><br><span class="line"></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span> a</span><br><span class="line"><span class="number">1</span></span><br><span class="line"></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span> b</span><br><span class="line"><span class="number">2</span></span><br><span class="line"></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span> c</span><br><span class="line"><span class="number">3</span></span><br><span class="line"></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span> d</span><br><span class="line"><span class="number">4</span></span><br></pre></td></tr></table></figure>
+<h4 id="1-2-Unpacking-for-swapping-variables"><a href="#1-2-Unpacking-for-swapping-variables" class="headerlink" title="1.2 Unpacking for swapping variables"></a>1.2 Unpacking for swapping variables</h4><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span> a, b = <span class="number">1</span>, <span class="number">2</span></span><br><span class="line"></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span> a, b = b, a</span><br><span class="line"></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span> a, b</span><br><span class="line">(<span class="number">2</span>, <span class="number">1</span>)</span><br></pre></td></tr></table></figure>
+<h4 id="1-3-Extended-unpacking-Python-3-only"><a href="#1-3-Extended-unpacking-Python-3-only" class="headerlink" title="1.3 Extended unpacking (Python 3 only)"></a>1.3 Extended unpacking (Python 3 only)</h4><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span> a, *b, c = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>, <span class="number">5</span>]</span><br><span class="line"></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span> a</span><br><span class="line"><span class="number">1</span></span><br><span class="line"></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span> b</span><br><span class="line">[<span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>]</span><br><span class="line"></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span> c</span><br><span class="line"><span class="number">5</span></span><br></pre></td></tr></table></figure>
+<h4 id="1-4-Negative-indexing"><a href="#1-4-Negative-indexing" class="headerlink" title="1.4 Negative indexing"></a>1.4 Negative indexing</h4><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span> a = [<span class="number">0</span>, <span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>, <span class="number">5</span>, <span class="number">6</span>, <span class="number">7</span>, <span class="number">8</span>, <span class="number">9</span>, <span class="number">10</span>]</span><br><span class="line"></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span> a[<span class="number">-1</span>]</span><br><span class="line"><span class="number">10</span></span><br><span class="line"></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span> a[<span class="number">-3</span>]</span><br><span class="line"><span class="number">8</span></span><br></pre></td></tr></table></figure>
+<h4 id="1-5-List-slices-a-start-end"><a href="#1-5-List-slices-a-start-end" class="headerlink" title="1.5 List slices (a[start:end])"></a>1.5 List slices (a[start:end])</h4><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span> a = [<span class="number">0</span>, <span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>, <span class="number">5</span>, <span class="number">6</span>, <span class="number">7</span>, <span class="number">8</span>, <span class="number">9</span>, <span class="number">10</span>]</span><br><span class="line"></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span> a[<span class="number">2</span>:<span class="number">8</span>]</span><br><span class="line">[<span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>, <span class="number">5</span>, <span class="number">6</span>, <span class="number">7</span>]</span><br></pre></td></tr></table></figure>
+<h4 id="1-6-List-slices-with-negative-indexing"><a href="#1-6-List-slices-with-negative-indexing" class="headerlink" title="1.6 List slices with negative indexing"></a>1.6 List slices with negative indexing</h4><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span> a = [<span class="number">0</span>, <span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>, <span class="number">5</span>, <span class="number">6</span>, <span class="number">7</span>, <span class="number">8</span>, <span class="number">9</span>, <span class="number">10</span>]</span><br><span class="line"></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span> a[<span class="number">-4</span>:<span class="number">-2</span>]</span><br><span class="line">[<span class="number">7</span>, <span class="number">8</span>]</span><br></pre></td></tr></table></figure>
+<h4 id="1-7-List-slices-with-step-a-start-end-step"><a href="#1-7-List-slices-with-step-a-start-end-step" class="headerlink" title="1.7 List slices with step (a[start:end:step])"></a>1.7 List slices with step (a[start:end:step])</h4><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span> a = [<span class="number">0</span>, <span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>, <span class="number">5</span>, <span class="number">6</span>, <span class="number">7</span>, <span class="number">8</span>, <span class="number">9</span>, <span class="number">10</span>]</span><br><span class="line"></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span> a[::<span class="number">2</span>]</span><br><span class="line">[<span class="number">0</span>, <span class="number">2</span>, <span class="number">4</span>, <span class="number">6</span>, <span class="number">8</span>, <span class="number">10</span>]</span><br><span class="line"></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span> a[::<span class="number">3</span>]</span><br><span class="line">[<span class="number">0</span>, <span class="number">3</span>, <span class="number">6</span>, <span class="number">9</span>]</span><br><span class="line"></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span> a[<span class="number">2</span>:<span class="number">8</span>:<span class="number">2</span>]</span><br><span class="line">[<span class="number">2</span>, <span class="number">4</span>, <span class="number">6</span>]</span><br></pre></td></tr></table></figure>
+<h4 id="1-8-List-slices-with-negative-step"><a href="#1-8-List-slices-with-negative-step" class="headerlink" title="1.8 List slices with negative step"></a>1.8 List slices with negative step</h4><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span> a = [<span class="number">0</span>, <span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>, <span class="number">5</span>, <span class="number">6</span>, <span class="number">7</span>, <span class="number">8</span>, <span class="number">9</span>, <span class="number">10</span>]</span><br><span class="line"></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span> a[::<span class="number">-1</span>]</span><br><span class="line">[<span class="number">10</span>, <span class="number">9</span>, <span class="number">8</span>, <span class="number">7</span>, <span class="number">6</span>, <span class="number">5</span>, <span class="number">4</span>, <span class="number">3</span>, <span class="number">2</span>, <span class="number">1</span>, <span class="number">0</span>]</span><br><span class="line"></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span> a[::<span class="number">-2</span>]</span><br><span class="line">[<span class="number">10</span>, <span class="number">8</span>, <span class="number">6</span>, <span class="number">4</span>, <span class="number">2</span>, <span class="number">0</span>]</span><br></pre></td></tr></table></figure>
+<h4 id="1-9-List-slice-assignment"><a href="#1-9-List-slice-assignment" class="headerlink" title="1.9 List slice assignment"></a>1.9 List slice assignment</h4><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span> a = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>, <span class="number">5</span>]</span><br><span class="line"></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span> a[<span class="number">2</span>:<span class="number">3</span>] = [<span class="number">0</span>, <span class="number">0</span>]</span><br><span class="line"></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span> a</span><br><span class="line">[<span class="number">1</span>, <span class="number">2</span>, <span class="number">0</span>, <span class="number">0</span>, <span class="number">4</span>, <span class="number">5</span>]</span><br><span class="line"></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span> a[<span class="number">1</span>:<span class="number">1</span>] = [<span class="number">8</span>, <span class="number">9</span>]</span><br><span class="line"></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span> a</span><br><span class="line">[<span class="number">1</span>, <span class="number">8</span>, <span class="number">9</span>, <span class="number">2</span>, <span class="number">0</span>, <span class="number">0</span>, <span class="number">4</span>, <span class="number">5</span>]</span><br><span class="line"></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span> a[<span class="number">1</span>:<span class="number">-1</span>] = []</span><br><span class="line"></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span> a</span><br><span class="line">[<span class="number">1</span>, <span class="number">5</span>]</span><br></pre></td></tr></table></figure>
+<h4 id="1-10-Naming-slices-slice-start-end-step"><a href="#1-10-Naming-slices-slice-start-end-step" class="headerlink" title="1.10 Naming slices (slice(start, end, step))"></a>1.10 Naming slices (slice(start, end, step))</h4><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span> a = [<span class="number">0</span>, <span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>, <span class="number">5</span>]</span><br><span class="line"></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span> LASTTHREE = slice(<span class="number">-3</span>, <span class="keyword">None</span>)</span><br><span class="line"></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span> LASTTHREE</span><br><span class="line">slice(<span class="number">-3</span>, <span class="keyword">None</span>, <span class="keyword">None</span>)</span><br><span class="line"></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span> a[LASTTHREE]</span><br><span class="line">[<span class="number">3</span>, <span class="number">4</span>, <span class="number">5</span>]</span><br></pre></td></tr></table></figure>
+<h4 id="1-11-Zipping-and-unzipping-lists-and-iterables"><a href="#1-11-Zipping-and-unzipping-lists-and-iterables" class="headerlink" title="1.11 Zipping and unzipping lists and iterables"></a>1.11 Zipping and unzipping lists and iterables</h4><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span> a = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>]</span><br><span class="line"></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span> b = [<span class="string">'a'</span>, <span class="string">'b'</span>, <span class="string">'c'</span>]</span><br><span class="line"></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span> z = zip(a, b)</span><br><span class="line"></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span> z</span><br><span class="line">[(<span class="number">1</span>, <span class="string">'a'</span>), (<span class="number">2</span>, <span class="string">'b'</span>), (<span class="number">3</span>, <span class="string">'c'</span>)]</span><br><span class="line"></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span> zip(*z)</span><br><span class="line">[(<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>), (<span class="string">'a'</span>, <span class="string">'b'</span>, <span class="string">'c'</span>)]</span><br></pre></td></tr></table></figure>
+<h4 id="1-12-Grouping-adjacent-list-items-using-zip"><a href="#1-12-Grouping-adjacent-list-items-using-zip" class="headerlink" title="1.12 Grouping adjacent list items using zip"></a>1.12 Grouping adjacent list items using zip</h4><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span> a = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>, <span class="number">5</span>, <span class="number">6</span>]</span><br><span class="line"></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span> zip(*([iter(a)] * <span class="number">2</span>))</span><br><span class="line">[(<span class="number">1</span>, <span class="number">2</span>), (<span class="number">3</span>, <span class="number">4</span>), (<span class="number">5</span>, <span class="number">6</span>)]</span><br><span class="line"></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span> group_adjacent = <span class="keyword">lambda</span> a, k: zip(*([iter(a)] * k))</span><br><span class="line"></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span> group_adjacent(a, <span class="number">3</span>)</span><br><span class="line">[(<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>), (<span class="number">4</span>, <span class="number">5</span>, <span class="number">6</span>)]</span><br><span class="line"></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span> group_adjacent(a, <span class="number">2</span>)</span><br><span class="line">[(<span class="number">1</span>, <span class="number">2</span>), (<span class="number">3</span>, <span class="number">4</span>), (<span class="number">5</span>, <span class="number">6</span>)]</span><br><span class="line"></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span> group_adjacent(a, <span class="number">1</span>)</span><br><span class="line">[(<span class="number">1</span>,), (<span class="number">2</span>,), (<span class="number">3</span>,), (<span class="number">4</span>,), (<span class="number">5</span>,), (<span class="number">6</span>,)]</span><br><span class="line"></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span> zip(a[::<span class="number">2</span>], a[<span class="number">1</span>::<span class="number">2</span>])</span><br><span class="line">[(<span class="number">1</span>, <span class="number">2</span>), (<span class="number">3</span>, <span class="number">4</span>), (<span class="number">5</span>, <span class="number">6</span>)]</span><br><span class="line"></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span> zip(a[::<span class="number">3</span>], a[<span class="number">1</span>::<span class="number">3</span>], a[<span class="number">2</span>::<span class="number">3</span>])</span><br><span class="line">[(<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>), (<span class="number">4</span>, <span class="number">5</span>, <span class="number">6</span>)]</span><br><span class="line"></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span> group_adjacent = <span class="keyword">lambda</span> a, k: zip(*(a[i::k] <span class="keyword">for</span> i <span class="keyword">in</span> range(k)))</span><br><span class="line"></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span> group_adjacent(a, <span class="number">3</span>)</span><br><span class="line">[(<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>), (<span class="number">4</span>, <span class="number">5</span>, <span class="number">6</span>)]</span><br><span class="line"></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span> group_adjacent(a, <span class="number">2</span>)</span><br><span class="line">[(<span class="number">1</span>, <span class="number">2</span>), (<span class="number">3</span>, <span class="number">4</span>), (<span class="number">5</span>, <span class="number">6</span>)]</span><br><span class="line"></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span> group_adjacent(a, <span class="number">1</span>)</span><br><span class="line">[(<span class="number">1</span>,), (<span class="number">2</span>,), (<span class="number">3</span>,), (<span class="number">4</span>,), (<span class="number">5</span>,), (<span class="number">6</span>,)]</span><br></pre></td></tr></table></figure>
+<h4 id="1-13-Inverting-a-dictionary-using-zip"><a href="#1-13-Inverting-a-dictionary-using-zip" class="headerlink" title="1.13 Inverting a dictionary using zip"></a>1.13 Inverting a dictionary using zip</h4><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span> m = &#123;<span class="string">'a'</span>: <span class="number">1</span>, <span class="string">'b'</span>: <span class="number">2</span>, <span class="string">'c'</span>: <span class="number">3</span>, <span class="string">'d'</span>: <span class="number">4</span>&#125;</span><br><span class="line"></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span> m.items()</span><br><span class="line">[(<span class="string">'a'</span>, <span class="number">1</span>), (<span class="string">'c'</span>, <span class="number">3</span>), (<span class="string">'b'</span>, <span class="number">2</span>), (<span class="string">'d'</span>, <span class="number">4</span>)]</span><br><span class="line"></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span> zip(m.values(), m.keys())</span><br><span class="line">[(<span class="number">1</span>, <span class="string">'a'</span>), (<span class="number">3</span>, <span class="string">'c'</span>), (<span class="number">2</span>, <span class="string">'b'</span>), (<span class="number">4</span>, <span class="string">'d'</span>)]</span><br><span class="line"></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span> mi = dict(zip(m.values(), m.keys()))</span><br><span class="line"></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span> mi</span><br><span class="line">&#123;<span class="number">1</span>: <span class="string">'a'</span>, <span class="number">2</span>: <span class="string">'b'</span>, <span class="number">3</span>: <span class="string">'c'</span>, <span class="number">4</span>: <span class="string">'d'</span>&#125;</span><br></pre></td></tr></table></figure>
+<h4 id="1-14-Flattening-lists"><a href="#1-14-Flattening-lists" class="headerlink" title="1.14 Flattening lists:"></a>1.14 Flattening lists:</h4><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span> a = [[<span class="number">1</span>, <span class="number">2</span>], [<span class="number">3</span>, <span class="number">4</span>], [<span class="number">5</span>, <span class="number">6</span>]]</span><br><span class="line"></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span> list(itertools.chain.from_iterable(a))</span><br><span class="line">[<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>, <span class="number">5</span>, <span class="number">6</span>]</span><br><span class="line"></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span> sum(a, [])</span><br><span class="line">[<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>, <span class="number">5</span>, <span class="number">6</span>]</span><br><span class="line"></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span> [x <span class="keyword">for</span> l <span class="keyword">in</span> a <span class="keyword">for</span> x <span class="keyword">in</span> l]</span><br><span class="line">[<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>, <span class="number">5</span>, <span class="number">6</span>]</span><br><span class="line"></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span> a = [[[<span class="number">1</span>, <span class="number">2</span>], [<span class="number">3</span>, <span class="number">4</span>]], [[<span class="number">5</span>, <span class="number">6</span>], [<span class="number">7</span>, <span class="number">8</span>]]]</span><br><span class="line"></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span> [x <span class="keyword">for</span> l1 <span class="keyword">in</span> a <span class="keyword">for</span> l2 <span class="keyword">in</span> l1 <span class="keyword">for</span> x <span class="keyword">in</span> l2]</span><br><span class="line">[<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>, <span class="number">5</span>, <span class="number">6</span>, <span class="number">7</span>, <span class="number">8</span>]</span><br><span class="line"></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span> a = [<span class="number">1</span>, <span class="number">2</span>, [<span class="number">3</span>, <span class="number">4</span>], [[<span class="number">5</span>, <span class="number">6</span>], [<span class="number">7</span>, <span class="number">8</span>]]]</span><br><span class="line"></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span> flatten = <span class="keyword">lambda</span> x: [y <span class="keyword">for</span> l <span class="keyword">in</span> x <span class="keyword">for</span> y <span class="keyword">in</span> flatten(l)] <span class="keyword">if</span> type(x) <span class="keyword">is</span> list <span class="keyword">else</span> [x]</span><br><span class="line"></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span> flatten(a)</span><br><span class="line">[<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>, <span class="number">5</span>, <span class="number">6</span>, <span class="number">7</span>, <span class="number">8</span>]</span><br><span class="line">Note: according to Python<span class="string">'s documentation on sum, itertools.chain.from_iterable is the preferred method for this.</span></span><br></pre></td></tr></table></figure>
+<h4 id="1-15-Generator-expressions"><a href="#1-15-Generator-expressions" class="headerlink" title="1.15 Generator expressions"></a>1.15 Generator expressions</h4><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span> g = (x ** <span class="number">2</span> <span class="keyword">for</span> x <span class="keyword">in</span> xrange(<span class="number">10</span>))</span><br><span class="line"></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span> next(g)</span><br><span class="line"><span class="number">0</span></span><br><span class="line"></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span> next(g)</span><br><span class="line"><span class="number">1</span></span><br><span class="line"></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span> next(g)</span><br><span class="line"><span class="number">4</span></span><br><span class="line"></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span> next(g)</span><br><span class="line"><span class="number">9</span></span><br><span class="line"></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span> sum(x ** <span class="number">3</span> <span class="keyword">for</span> x <span class="keyword">in</span> xrange(<span class="number">10</span>))</span><br><span class="line"><span class="number">2025</span></span><br><span class="line"></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span> sum(x ** <span class="number">3</span> <span class="keyword">for</span> x <span class="keyword">in</span> xrange(<span class="number">10</span>) <span class="keyword">if</span> x % <span class="number">3</span> == <span class="number">1</span>)</span><br><span class="line"><span class="number">408</span></span><br></pre></td></tr></table></figure>
+<h4 id="1-16-Dictionary-comprehensions"><a href="#1-16-Dictionary-comprehensions" class="headerlink" title="1.16 Dictionary comprehensions"></a>1.16 Dictionary comprehensions</h4><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span> m = &#123;x: x ** <span class="number">2</span> <span class="keyword">for</span> x <span class="keyword">in</span> range(<span class="number">5</span>)&#125;</span><br><span class="line"></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span> m</span><br><span class="line">&#123;<span class="number">0</span>: <span class="number">0</span>, <span class="number">1</span>: <span class="number">1</span>, <span class="number">2</span>: <span class="number">4</span>, <span class="number">3</span>: <span class="number">9</span>, <span class="number">4</span>: <span class="number">16</span>&#125;</span><br><span class="line"></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span> m = &#123;x: <span class="string">'A'</span> + str(x) <span class="keyword">for</span> x <span class="keyword">in</span> range(<span class="number">10</span>)&#125;</span><br><span class="line"></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span> m</span><br><span class="line">&#123;<span class="number">0</span>: <span class="string">'A0'</span>, <span class="number">1</span>: <span class="string">'A1'</span>, <span class="number">2</span>: <span class="string">'A2'</span>, <span class="number">3</span>: <span class="string">'A3'</span>, <span class="number">4</span>: <span class="string">'A4'</span>, <span class="number">5</span>: <span class="string">'A5'</span>, <span class="number">6</span>: <span class="string">'A6'</span>, <span class="number">7</span>: <span class="string">'A7'</span>, <span class="number">8</span>: <span class="string">'A8'</span>, <span class="number">9</span>: <span class="string">'A9'</span>&#125;</span><br></pre></td></tr></table></figure>
+<h4 id="1-17-Inverting-a-dictionary-using-a-dictionary-comprehension"><a href="#1-17-Inverting-a-dictionary-using-a-dictionary-comprehension" class="headerlink" title="1.17 Inverting a dictionary using a dictionary comprehension"></a>1.17 Inverting a dictionary using a dictionary comprehension</h4><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span> m = &#123;<span class="string">'a'</span>: <span class="number">1</span>, <span class="string">'b'</span>: <span class="number">2</span>, <span class="string">'c'</span>: <span class="number">3</span>, <span class="string">'d'</span>: <span class="number">4</span>&#125;</span><br><span class="line"></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span> m</span><br><span class="line">&#123;<span class="string">'d'</span>: <span class="number">4</span>, <span class="string">'a'</span>: <span class="number">1</span>, <span class="string">'b'</span>: <span class="number">2</span>, <span class="string">'c'</span>: <span class="number">3</span>&#125;</span><br><span class="line"></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span> &#123;v: k <span class="keyword">for</span> k, v <span class="keyword">in</span> m.items()&#125;</span><br><span class="line">&#123;<span class="number">1</span>: <span class="string">'a'</span>, <span class="number">2</span>: <span class="string">'b'</span>, <span class="number">3</span>: <span class="string">'c'</span>, <span class="number">4</span>: <span class="string">'d'</span>&#125;</span><br></pre></td></tr></table></figure>
+<h4 id="1-18-Named-tuples-collections-namedtuple"><a href="#1-18-Named-tuples-collections-namedtuple" class="headerlink" title="1.18 Named tuples (collections.namedtuple)"></a>1.18 Named tuples (collections.namedtuple)</h4><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span> Point = collections.namedtuple(<span class="string">'Point'</span>, [<span class="string">'x'</span>, <span class="string">'y'</span>])</span><br><span class="line"></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span> p = Point(x=<span class="number">1.0</span>, y=<span class="number">2.0</span>)</span><br><span class="line"></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span> p</span><br><span class="line">Point(x=<span class="number">1.0</span>, y=<span class="number">2.0</span>)</span><br><span class="line"></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span> p.x</span><br></pre></td></tr></table></figure>
+<h4 id="1-0"><a href="#1-0" class="headerlink" title="1.0"></a>1.0</h4><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span> p.y</span><br><span class="line"><span class="number">2.0</span></span><br></pre></td></tr></table></figure>
+<h4 id="1-19-Inheriting-from-named-tuples"><a href="#1-19-Inheriting-from-named-tuples" class="headerlink" title="1.19 Inheriting from named tuples:"></a>1.19 Inheriting from named tuples:</h4><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span> <span class="class"><span class="keyword">class</span> <span class="title">Point</span><span class="params">(collections.namedtuple<span class="params">(<span class="string">'PointBase'</span>, [<span class="string">'x'</span>, <span class="string">'y'</span>])</span>)</span>:</span></span><br><span class="line"><span class="meta">... </span>    __slots__ = ()</span><br><span class="line"><span class="meta">... </span>    <span class="function"><span class="keyword">def</span> <span class="title">__add__</span><span class="params">(self, other)</span>:</span></span><br><span class="line"><span class="meta">... </span>            <span class="keyword">return</span> Point(x=self.x + other.x, y=self.y + other.y)</span><br><span class="line">...</span><br><span class="line"></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span> p = Point(x=<span class="number">1.0</span>, y=<span class="number">2.0</span>)</span><br><span class="line"></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span> q = Point(x=<span class="number">2.0</span>, y=<span class="number">3.0</span>)</span><br><span class="line"></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span> p + q</span><br><span class="line">Point(x=<span class="number">3.0</span>, y=<span class="number">5.0</span>)</span><br></pre></td></tr></table></figure>
+<h4 id="1-20-Sets-and-set-operations"><a href="#1-20-Sets-and-set-operations" class="headerlink" title="1.20 Sets and set operations"></a>1.20 Sets and set operations</h4><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span> A = &#123;<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">3</span>&#125;</span><br><span class="line"></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span> A</span><br><span class="line">set([<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>])</span><br><span class="line"></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span> B = &#123;<span class="number">3</span>, <span class="number">4</span>, <span class="number">5</span>, <span class="number">6</span>, <span class="number">7</span>&#125;</span><br><span class="line"></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span> B</span><br><span class="line">set([<span class="number">3</span>, <span class="number">4</span>, <span class="number">5</span>, <span class="number">6</span>, <span class="number">7</span>])</span><br><span class="line"></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span> A | B</span><br><span class="line">set([<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>, <span class="number">5</span>, <span class="number">6</span>, <span class="number">7</span>])</span><br><span class="line"></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span> A &amp; B</span><br><span class="line">set([<span class="number">3</span>])</span><br><span class="line"></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span> A - B</span><br><span class="line">set([<span class="number">1</span>, <span class="number">2</span>])</span><br><span class="line"></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span> B - A</span><br><span class="line">set([<span class="number">4</span>, <span class="number">5</span>, <span class="number">6</span>, <span class="number">7</span>])</span><br><span class="line"></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span> A ^ B</span><br><span class="line">set([<span class="number">1</span>, <span class="number">2</span>, <span class="number">4</span>, <span class="number">5</span>, <span class="number">6</span>, <span class="number">7</span>])</span><br><span class="line"></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span> (A ^ B) == ((A - B) | (B - A))</span><br><span class="line"><span class="keyword">True</span></span><br></pre></td></tr></table></figure>
+<h4 id="1-21-Multisets-and-multiset-operations-collections-Counter"><a href="#1-21-Multisets-and-multiset-operations-collections-Counter" class="headerlink" title="1.21 Multisets and multiset operations (collections.Counter)"></a>1.21 Multisets and multiset operations (collections.Counter)</h4><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span> A = collections.Counter([<span class="number">1</span>, <span class="number">2</span>, <span class="number">2</span>])</span><br><span class="line"></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span> B = collections.Counter([<span class="number">2</span>, <span class="number">2</span>, <span class="number">3</span>])</span><br><span class="line"></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span> A</span><br><span class="line">Counter(&#123;<span class="number">2</span>: <span class="number">2</span>, <span class="number">1</span>: <span class="number">1</span>&#125;)</span><br><span class="line"></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span> B</span><br><span class="line">Counter(&#123;<span class="number">2</span>: <span class="number">2</span>, <span class="number">3</span>: <span class="number">1</span>&#125;)</span><br><span class="line"></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span> A | B</span><br><span class="line">Counter(&#123;<span class="number">2</span>: <span class="number">2</span>, <span class="number">1</span>: <span class="number">1</span>, <span class="number">3</span>: <span class="number">1</span>&#125;)</span><br><span class="line"></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span> A &amp; B</span><br><span class="line">Counter(&#123;<span class="number">2</span>: <span class="number">2</span>&#125;)</span><br><span class="line"></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span> A + B</span><br><span class="line">Counter(&#123;<span class="number">2</span>: <span class="number">4</span>, <span class="number">1</span>: <span class="number">1</span>, <span class="number">3</span>: <span class="number">1</span>&#125;)</span><br><span class="line"></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span> A - B</span><br><span class="line">Counter(&#123;<span class="number">1</span>: <span class="number">1</span>&#125;)</span><br><span class="line"></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span> B - A</span><br><span class="line">Counter(&#123;<span class="number">3</span>: <span class="number">1</span>&#125;)</span><br></pre></td></tr></table></figure>
+<h4 id="1-22-Most-common-elements-in-an-iterable-collections-Counter"><a href="#1-22-Most-common-elements-in-an-iterable-collections-Counter" class="headerlink" title="1.22 Most common elements in an iterable (collections.Counter)"></a>1.22 Most common elements in an iterable (collections.Counter)</h4><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span> A = collections.Counter([<span class="number">1</span>, <span class="number">1</span>, <span class="number">2</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">3</span>, <span class="number">3</span>, <span class="number">3</span>, <span class="number">4</span>, <span class="number">5</span>, <span class="number">6</span>, <span class="number">7</span>])</span><br><span class="line"></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span> A</span><br><span class="line">Counter(&#123;<span class="number">3</span>: <span class="number">4</span>, <span class="number">1</span>: <span class="number">2</span>, <span class="number">2</span>: <span class="number">2</span>, <span class="number">4</span>: <span class="number">1</span>, <span class="number">5</span>: <span class="number">1</span>, <span class="number">6</span>: <span class="number">1</span>, <span class="number">7</span>: <span class="number">1</span>&#125;)</span><br><span class="line"></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span> A.most_common(<span class="number">1</span>)</span><br><span class="line">[(<span class="number">3</span>, <span class="number">4</span>)]</span><br><span class="line"></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span> A.most_common(<span class="number">3</span>)</span><br><span class="line">[(<span class="number">3</span>, <span class="number">4</span>), (<span class="number">1</span>, <span class="number">2</span>), (<span class="number">2</span>, <span class="number">2</span>)]</span><br></pre></td></tr></table></figure>
+<h4 id="1-23-Double-ended-queue-collections-deque"><a href="#1-23-Double-ended-queue-collections-deque" class="headerlink" title="1.23 Double-ended queue (collections.deque)"></a>1.23 Double-ended queue (collections.deque)</h4><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span> Q = collections.deque()</span><br><span class="line"></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span> Q.append(<span class="number">1</span>)</span><br><span class="line"></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span> Q.appendleft(<span class="number">2</span>)</span><br><span class="line"></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span> Q.extend([<span class="number">3</span>, <span class="number">4</span>])</span><br><span class="line"></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span> Q.extendleft([<span class="number">5</span>, <span class="number">6</span>])</span><br><span class="line"></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span> Q</span><br><span class="line">deque([<span class="number">6</span>, <span class="number">5</span>, <span class="number">2</span>, <span class="number">1</span>, <span class="number">3</span>, <span class="number">4</span>])</span><br><span class="line"></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span> Q.pop()</span><br><span class="line"><span class="number">4</span></span><br><span class="line"></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span> Q.popleft()</span><br><span class="line"><span class="number">6</span></span><br><span class="line"></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span> Q</span><br><span class="line">deque([<span class="number">5</span>, <span class="number">2</span>, <span class="number">1</span>, <span class="number">3</span>])</span><br><span class="line"></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span> Q.rotate(<span class="number">3</span>)</span><br><span class="line"></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span> Q</span><br><span class="line">deque([<span class="number">2</span>, <span class="number">1</span>, <span class="number">3</span>, <span class="number">5</span>])</span><br><span class="line"></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span> Q.rotate(<span class="number">-3</span>)</span><br><span class="line"></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span> Q</span><br><span class="line">deque([<span class="number">5</span>, <span class="number">2</span>, <span class="number">1</span>, <span class="number">3</span>])</span><br></pre></td></tr></table></figure>
+<h4 id="1-24-Double-ended-queue-with-maximum-length-collections-deque"><a href="#1-24-Double-ended-queue-with-maximum-length-collections-deque" class="headerlink" title="1.24 Double-ended queue with maximum length (collections.deque)"></a>1.24 Double-ended queue with maximum length (collections.deque)</h4><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span> last_three = collections.deque(maxlen=<span class="number">3</span>)</span><br><span class="line"></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span> <span class="keyword">for</span> i <span class="keyword">in</span> xrange(<span class="number">10</span>):</span><br><span class="line"><span class="meta">... </span>    last_three.append(i)</span><br><span class="line"><span class="meta">... </span>    <span class="keyword">print</span> <span class="string">', '</span>.join(str(x) <span class="keyword">for</span> x <span class="keyword">in</span> last_three)</span><br><span class="line">...</span><br><span class="line"><span class="number">0</span></span><br><span class="line"><span class="number">0</span>, <span class="number">1</span></span><br><span class="line"><span class="number">0</span>, <span class="number">1</span>, <span class="number">2</span></span><br><span class="line"><span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span></span><br><span class="line"><span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span></span><br><span class="line"><span class="number">3</span>, <span class="number">4</span>, <span class="number">5</span></span><br><span class="line"><span class="number">4</span>, <span class="number">5</span>, <span class="number">6</span></span><br><span class="line"><span class="number">5</span>, <span class="number">6</span>, <span class="number">7</span></span><br><span class="line"><span class="number">6</span>, <span class="number">7</span>, <span class="number">8</span></span><br><span class="line"><span class="number">7</span>, <span class="number">8</span>, <span class="number">9</span></span><br></pre></td></tr></table></figure>
+<h4 id="1-25-Ordered-dictionaries-collections-OrderedDict"><a href="#1-25-Ordered-dictionaries-collections-OrderedDict" class="headerlink" title="1.25 Ordered dictionaries (collections.OrderedDict)"></a>1.25 Ordered dictionaries (collections.OrderedDict)</h4><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span> m = dict((str(x), x) <span class="keyword">for</span> x <span class="keyword">in</span> range(<span class="number">10</span>))</span><br><span class="line"></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span> <span class="keyword">print</span> <span class="string">', '</span>.join(m.keys())</span><br><span class="line"><span class="number">1</span>, <span class="number">0</span>, <span class="number">3</span>, <span class="number">2</span>, <span class="number">5</span>, <span class="number">4</span>, <span class="number">7</span>, <span class="number">6</span>, <span class="number">9</span>, <span class="number">8</span></span><br><span class="line"></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span> m = collections.OrderedDict((str(x), x) <span class="keyword">for</span> x <span class="keyword">in</span> range(<span class="number">10</span>))</span><br><span class="line"></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span> <span class="keyword">print</span> <span class="string">', '</span>.join(m.keys())</span><br><span class="line"><span class="number">0</span>, <span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>, <span class="number">5</span>, <span class="number">6</span>, <span class="number">7</span>, <span class="number">8</span>, <span class="number">9</span></span><br><span class="line"></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span> m = collections.OrderedDict((str(x), x) <span class="keyword">for</span> x <span class="keyword">in</span> range(<span class="number">10</span>, <span class="number">0</span>, <span class="number">-1</span>))</span><br><span class="line"></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span> <span class="keyword">print</span> <span class="string">', '</span>.join(m.keys())</span><br><span class="line"><span class="number">10</span>, <span class="number">9</span>, <span class="number">8</span>, <span class="number">7</span>, <span class="number">6</span>, <span class="number">5</span>, <span class="number">4</span>, <span class="number">3</span>, <span class="number">2</span>, <span class="number">1</span></span><br></pre></td></tr></table></figure>
+<h4 id="1-26-Default-dictionaries-collections-defaultdict"><a href="#1-26-Default-dictionaries-collections-defaultdict" class="headerlink" title="1.26 Default dictionaries (collections.defaultdict)"></a>1.26 Default dictionaries (collections.defaultdict)</h4><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span> m = dict()</span><br><span class="line"></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span> m[<span class="string">'a'</span>]</span><br><span class="line">Traceback (most recent call last):</span><br><span class="line"> File <span class="string">"&lt;stdin&gt;"</span>, line <span class="number">1</span>, <span class="keyword">in</span> &lt;module&gt;</span><br><span class="line">KeyError: <span class="string">'a'</span></span><br><span class="line"></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span></span><br><span class="line"></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span> m = collections.defaultdict(int)</span><br><span class="line"></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span> m[<span class="string">'a'</span>]</span><br><span class="line"><span class="number">0</span></span><br><span class="line"></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span> m[<span class="string">'b'</span>]</span><br><span class="line"><span class="number">0</span></span><br><span class="line"></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span> m = collections.defaultdict(str)</span><br><span class="line"></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span> m[<span class="string">'a'</span>]</span><br><span class="line"><span class="string">''</span></span><br><span class="line"></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span> m[<span class="string">'b'</span>] += <span class="string">'a'</span></span><br><span class="line"></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span> m[<span class="string">'b'</span>]</span><br><span class="line"><span class="string">'a'</span></span><br><span class="line"></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span> m = collections.defaultdict(<span class="keyword">lambda</span>: <span class="string">'[default value]'</span>)</span><br><span class="line"></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span> m[<span class="string">'a'</span>]</span><br><span class="line"><span class="string">'[default value]'</span></span><br><span class="line"></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span> m[<span class="string">'b'</span>]</span><br><span class="line"><span class="string">'[default value]'</span></span><br></pre></td></tr></table></figure>
+<h4 id="1-27-Using-default-dictionaries-to-represent-simple-trees"><a href="#1-27-Using-default-dictionaries-to-represent-simple-trees" class="headerlink" title="1.27 Using default dictionaries to represent simple trees"></a>1.27 Using default dictionaries to represent simple trees</h4><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span> <span class="keyword">import</span> json</span><br><span class="line"></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span> tree = <span class="keyword">lambda</span>: collections.defaultdict(tree)</span><br><span class="line"></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span> root = tree()</span><br><span class="line"></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span> root[<span class="string">'menu'</span>][<span class="string">'id'</span>] = <span class="string">'file'</span></span><br><span class="line"></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span> root[<span class="string">'menu'</span>][<span class="string">'value'</span>] = <span class="string">'File'</span></span><br><span class="line"></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span> root[<span class="string">'menu'</span>][<span class="string">'menuitems'</span>][<span class="string">'new'</span>][<span class="string">'value'</span>] = <span class="string">'New'</span></span><br><span class="line"></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span> root[<span class="string">'menu'</span>][<span class="string">'menuitems'</span>][<span class="string">'new'</span>][<span class="string">'onclick'</span>] = <span class="string">'new();'</span></span><br><span class="line"></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span> root[<span class="string">'menu'</span>][<span class="string">'menuitems'</span>][<span class="string">'open'</span>][<span class="string">'value'</span>] = <span class="string">'Open'</span></span><br><span class="line"></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span> root[<span class="string">'menu'</span>][<span class="string">'menuitems'</span>][<span class="string">'open'</span>][<span class="string">'onclick'</span>] = <span class="string">'open();'</span></span><br><span class="line"></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span> root[<span class="string">'menu'</span>][<span class="string">'menuitems'</span>][<span class="string">'close'</span>][<span class="string">'value'</span>] = <span class="string">'Close'</span></span><br><span class="line"></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span> root[<span class="string">'menu'</span>][<span class="string">'menuitems'</span>][<span class="string">'close'</span>][<span class="string">'onclick'</span>] = <span class="string">'close();'</span></span><br><span class="line"></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span> <span class="keyword">print</span> json.dumps(root, sort_keys=<span class="keyword">True</span>, indent=<span class="number">4</span>, separators=(<span class="string">','</span>, <span class="string">': '</span>))</span><br><span class="line">&#123;</span><br><span class="line">   <span class="string">"menu"</span>: &#123;</span><br><span class="line">       <span class="string">"id"</span>: <span class="string">"file"</span>,</span><br><span class="line">       <span class="string">"menuitems"</span>: &#123;</span><br><span class="line">           <span class="string">"close"</span>: &#123;</span><br><span class="line">               <span class="string">"onclick"</span>: <span class="string">"close();"</span>,</span><br><span class="line">               <span class="string">"value"</span>: <span class="string">"Close"</span></span><br><span class="line">           &#125;,</span><br><span class="line">           <span class="string">"new"</span>: &#123;</span><br><span class="line">               <span class="string">"onclick"</span>: <span class="string">"new();"</span>,</span><br><span class="line">               <span class="string">"value"</span>: <span class="string">"New"</span></span><br><span class="line">           &#125;,</span><br><span class="line">           <span class="string">"open"</span>: &#123;</span><br><span class="line">               <span class="string">"onclick"</span>: <span class="string">"open();"</span>,</span><br><span class="line">               <span class="string">"value"</span>: <span class="string">"Open"</span></span><br><span class="line">           &#125;</span><br><span class="line">       &#125;,</span><br><span class="line">       <span class="string">"value"</span>: <span class="string">"File"</span></span><br><span class="line">   &#125;</span><br><span class="line">&#125;</span><br><span class="line">(See https://gist.github.com/hrldcpr/<span class="number">2012250</span> <span class="keyword">for</span> more on this.)</span><br></pre></td></tr></table></figure>
+<h4 id="1-28-Mapping-objects-to-unique-counting-numbers-collections-defaultdict"><a href="#1-28-Mapping-objects-to-unique-counting-numbers-collections-defaultdict" class="headerlink" title="1.28 Mapping objects to unique counting numbers (collections.defaultdict)"></a>1.28 Mapping objects to unique counting numbers (collections.defaultdict)</h4><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span> <span class="keyword">import</span> itertools, collections</span><br><span class="line"></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span> value_to_numeric_map = collections.defaultdict(itertools.count().next)</span><br><span class="line"></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span> value_to_numeric_map[<span class="string">'a'</span>]</span><br><span class="line"><span class="number">0</span></span><br><span class="line"></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span> value_to_numeric_map[<span class="string">'b'</span>]</span><br><span class="line"><span class="number">1</span></span><br><span class="line"></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span> value_to_numeric_map[<span class="string">'c'</span>]</span><br><span class="line"><span class="number">2</span></span><br><span class="line"></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span> value_to_numeric_map[<span class="string">'a'</span>]</span><br><span class="line"><span class="number">0</span></span><br><span class="line"></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span> value_to_numeric_map[<span class="string">'b'</span>]</span><br><span class="line"><span class="number">1</span></span><br></pre></td></tr></table></figure>
+<h4 id="1-29-Largest-and-smallest-elements-heapq-nlargest-and-heapq-nsmallest"><a href="#1-29-Largest-and-smallest-elements-heapq-nlargest-and-heapq-nsmallest" class="headerlink" title="1.29 Largest and smallest elements (heapq.nlargest and heapq.nsmallest)"></a>1.29 Largest and smallest elements (heapq.nlargest and heapq.nsmallest)</h4><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span> a = [random.randint(<span class="number">0</span>, <span class="number">100</span>) <span class="keyword">for</span> __ <span class="keyword">in</span> xrange(<span class="number">100</span>)]</span><br><span class="line"></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span> heapq.nsmallest(<span class="number">5</span>, a)</span><br><span class="line">[<span class="number">3</span>, <span class="number">3</span>, <span class="number">5</span>, <span class="number">6</span>, <span class="number">8</span>]</span><br><span class="line"></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span> heapq.nlargest(<span class="number">5</span>, a)</span><br><span class="line">[<span class="number">100</span>, <span class="number">100</span>, <span class="number">99</span>, <span class="number">98</span>, <span class="number">98</span>]</span><br></pre></td></tr></table></figure>
+<h4 id="1-30-Cartesian-products-itertools-product"><a href="#1-30-Cartesian-products-itertools-product" class="headerlink" title="1.30 Cartesian products (itertools.product)"></a>1.30 Cartesian products (itertools.product)</h4><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span> <span class="keyword">for</span> p <span class="keyword">in</span> itertools.product([<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>], [<span class="number">4</span>, <span class="number">5</span>]):</span><br><span class="line">(<span class="number">1</span>, <span class="number">4</span>)</span><br><span class="line">(<span class="number">1</span>, <span class="number">5</span>)</span><br><span class="line">(<span class="number">2</span>, <span class="number">4</span>)</span><br><span class="line">(<span class="number">2</span>, <span class="number">5</span>)</span><br><span class="line">(<span class="number">3</span>, <span class="number">4</span>)</span><br><span class="line">(<span class="number">3</span>, <span class="number">5</span>)</span><br><span class="line"></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span> <span class="keyword">for</span> p <span class="keyword">in</span> itertools.product([<span class="number">0</span>, <span class="number">1</span>], repeat=<span class="number">4</span>):</span><br><span class="line"><span class="meta">... </span>    <span class="keyword">print</span> <span class="string">''</span>.join(str(x) <span class="keyword">for</span> x <span class="keyword">in</span> p)</span><br><span class="line">...</span><br><span class="line"><span class="number">0000</span></span><br><span class="line"><span class="number">0001</span></span><br><span class="line"><span class="number">0010</span></span><br><span class="line"><span class="number">0011</span></span><br><span class="line"><span class="number">0100</span></span><br><span class="line"><span class="number">0101</span></span><br><span class="line"><span class="number">0110</span></span><br><span class="line"><span class="number">0111</span></span><br><span class="line"><span class="number">1000</span></span><br><span class="line"><span class="number">1001</span></span><br><span class="line"><span class="number">1010</span></span><br><span class="line"><span class="number">1011</span></span><br><span class="line"><span class="number">1100</span></span><br><span class="line"><span class="number">1101</span></span><br><span class="line"><span class="number">1110</span></span><br><span class="line"><span class="number">1111</span></span><br></pre></td></tr></table></figure>
+<h4 id="1-31-Combinations-and-combinations-with-replacement-itertools-combinations-and-itertools-combinations-with-replacement"><a href="#1-31-Combinations-and-combinations-with-replacement-itertools-combinations-and-itertools-combinations-with-replacement" class="headerlink" title="1.31 Combinations and combinations with replacement (itertools.combinations and itertools.combinations_with_replacement)"></a>1.31 Combinations and combinations with replacement (itertools.combinations and itertools.combinations_with_replacement)</h4><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span> <span class="keyword">for</span> c <span class="keyword">in</span> itertools.combinations([<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>, <span class="number">5</span>], <span class="number">3</span>):</span><br><span class="line"><span class="meta">... </span>    <span class="keyword">print</span> <span class="string">''</span>.join(str(x) <span class="keyword">for</span> x <span class="keyword">in</span> c)</span><br><span class="line">...</span><br><span class="line"><span class="number">123</span></span><br><span class="line"><span class="number">124</span></span><br><span class="line"><span class="number">125</span></span><br><span class="line"><span class="number">134</span></span><br><span class="line"><span class="number">135</span></span><br><span class="line"><span class="number">145</span></span><br><span class="line"><span class="number">234</span></span><br><span class="line"><span class="number">235</span></span><br><span class="line"><span class="number">245</span></span><br><span class="line"><span class="number">345</span></span><br><span class="line"></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span> <span class="keyword">for</span> c <span class="keyword">in</span> itertools.combinations_with_replacement([<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>], <span class="number">2</span>):</span><br><span class="line"><span class="meta">... </span>    <span class="keyword">print</span> <span class="string">''</span>.join(str(x) <span class="keyword">for</span> x <span class="keyword">in</span> c)</span><br><span class="line">...</span><br><span class="line"><span class="number">11</span></span><br><span class="line"><span class="number">12</span></span><br><span class="line"><span class="number">13</span></span><br><span class="line"><span class="number">22</span></span><br><span class="line"><span class="number">23</span></span><br><span class="line"><span class="number">33</span></span><br></pre></td></tr></table></figure>
+<h4 id="1-32-Permutations-itertools-permutations"><a href="#1-32-Permutations-itertools-permutations" class="headerlink" title="1.32 Permutations (itertools.permutations)"></a>1.32 Permutations (itertools.permutations)</h4><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span> <span class="keyword">for</span> p <span class="keyword">in</span> itertools.permutations([<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>]):</span><br><span class="line"><span class="meta">... </span>    <span class="keyword">print</span> <span class="string">''</span>.join(str(x) <span class="keyword">for</span> x <span class="keyword">in</span> p)</span><br><span class="line">...</span><br><span class="line"><span class="number">1234</span></span><br><span class="line"><span class="number">1243</span></span><br><span class="line"><span class="number">1324</span></span><br><span class="line"><span class="number">1342</span></span><br><span class="line"><span class="number">1423</span></span><br><span class="line"><span class="number">1432</span></span><br><span class="line"><span class="number">2134</span></span><br><span class="line"><span class="number">2143</span></span><br><span class="line"><span class="number">2314</span></span><br><span class="line"><span class="number">2341</span></span><br><span class="line"><span class="number">2413</span></span><br><span class="line"><span class="number">2431</span></span><br><span class="line"><span class="number">3124</span></span><br><span class="line"><span class="number">3142</span></span><br><span class="line"><span class="number">3214</span></span><br><span class="line"><span class="number">3241</span></span><br><span class="line"><span class="number">3412</span></span><br><span class="line"><span class="number">3421</span></span><br><span class="line"><span class="number">4123</span></span><br><span class="line"><span class="number">4132</span></span><br><span class="line"><span class="number">4213</span></span><br><span class="line"><span class="number">4231</span></span><br><span class="line"><span class="number">4312</span></span><br><span class="line"><span class="number">4321</span></span><br></pre></td></tr></table></figure>
+<h4 id="1-33-Chaining-iterables-itertools-chain"><a href="#1-33-Chaining-iterables-itertools-chain" class="headerlink" title="1.33 Chaining iterables (itertools.chain)"></a>1.33 Chaining iterables (itertools.chain)</h4><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span> a = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>]</span><br><span class="line"></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span> <span class="keyword">for</span> p <span class="keyword">in</span> itertools.chain(itertools.combinations(a, <span class="number">2</span>), itertools.combinations(a, <span class="number">3</span>)):</span><br><span class="line">… <span class="keyword">print</span> p</span><br><span class="line">…</span><br><span class="line">(<span class="number">1</span>, <span class="number">2</span>)</span><br><span class="line">(<span class="number">1</span>, <span class="number">3</span>)</span><br><span class="line">(<span class="number">1</span>, <span class="number">4</span>)</span><br><span class="line">(<span class="number">2</span>, <span class="number">3</span>)</span><br><span class="line">(<span class="number">2</span>, <span class="number">4</span>)</span><br><span class="line">(<span class="number">3</span>, <span class="number">4</span>)</span><br><span class="line">(<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>)</span><br><span class="line">(<span class="number">1</span>, <span class="number">2</span>, <span class="number">4</span>)</span><br><span class="line">(<span class="number">1</span>, <span class="number">3</span>, <span class="number">4</span>)</span><br><span class="line">(<span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>)</span><br><span class="line"></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span> <span class="keyword">for</span> subset <span class="keyword">in</span> itertools.chain.from_iterable(itertools.combinations(a, n) <span class="keyword">for</span> n <span class="keyword">in</span> range(len(a) + <span class="number">1</span>))</span><br><span class="line">… <span class="keyword">print</span> subset</span><br><span class="line">…</span><br><span class="line">()</span><br><span class="line">(<span class="number">1</span>,)</span><br><span class="line">(<span class="number">2</span>,)</span><br><span class="line">(<span class="number">3</span>,)</span><br><span class="line">(<span class="number">4</span>,)</span><br><span class="line">(<span class="number">1</span>, <span class="number">2</span>)</span><br><span class="line">(<span class="number">1</span>, <span class="number">3</span>)</span><br><span class="line">(<span class="number">1</span>, <span class="number">4</span>)</span><br><span class="line">(<span class="number">2</span>, <span class="number">3</span>)</span><br><span class="line">(<span class="number">2</span>, <span class="number">4</span>)</span><br><span class="line">(<span class="number">3</span>, <span class="number">4</span>)</span><br><span class="line">(<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>)</span><br><span class="line">(<span class="number">1</span>, <span class="number">2</span>, <span class="number">4</span>)</span><br><span class="line">(<span class="number">1</span>, <span class="number">3</span>, <span class="number">4</span>)</span><br><span class="line">(<span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>)</span><br><span class="line">(<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>)</span><br></pre></td></tr></table></figure>
+<h4 id="1-34-Grouping-rows-by-a-given-key-itertools-groupby"><a href="#1-34-Grouping-rows-by-a-given-key-itertools-groupby" class="headerlink" title="1.34 Grouping rows by a given key (itertools.groupby)"></a>1.34 Grouping rows by a given key (itertools.groupby)</h4><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span> <span class="keyword">import</span> itertools</span><br><span class="line"></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span> <span class="keyword">with</span> open(‘contactlenses.csv’, ‘r’) <span class="keyword">as</span> infile:</span><br><span class="line">… data = [line.strip().split(‘,’) <span class="keyword">for</span> line <span class="keyword">in</span> infile]</span><br><span class="line">…</span><br><span class="line"></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span> data = data[<span class="number">1</span>:]</span><br><span class="line"></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span> <span class="function"><span class="keyword">def</span> <span class="title">print_data</span><span class="params">(rows)</span>:</span></span><br><span class="line">… <span class="keyword">print</span> ‘\n’.join(‘\t’.join(‘&#123;: &lt;<span class="number">16</span>&#125;’.format(s) <span class="keyword">for</span> s <span class="keyword">in</span> row) <span class="keyword">for</span> row <span class="keyword">in</span> rows)</span><br><span class="line">…</span><br><span class="line"></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span> print_data(data)</span><br><span class="line">young myope no reduced none</span><br><span class="line">young myope no normal soft</span><br><span class="line">young myope yes reduced none</span><br><span class="line">young myope yes normal hard</span><br><span class="line">young hypermetrope no reduced none</span><br><span class="line">young hypermetrope no normal soft</span><br><span class="line">young hypermetrope yes reduced none</span><br><span class="line">young hypermetrope yes normal hard</span><br><span class="line">pre-presbyopic myope no reduced none</span><br><span class="line">pre-presbyopic myope no normal soft</span><br><span class="line">pre-presbyopic myope yes reduced none</span><br><span class="line">pre-presbyopic myope yes normal hard</span><br><span class="line">pre-presbyopic hypermetrope no reduced none</span><br><span class="line">pre-presbyopic hypermetrope no normal soft</span><br><span class="line">pre-presbyopic hypermetrope yes reduced none</span><br><span class="line">pre-presbyopic hypermetrope yes normal none</span><br><span class="line">presbyopic myope no reduced none</span><br><span class="line">presbyopic myope no normal none</span><br><span class="line">presbyopic myope yes reduced none</span><br><span class="line">presbyopic myope yes normal hard</span><br><span class="line">presbyopic hypermetrope no reduced none</span><br><span class="line">presbyopic hypermetrope no normal soft</span><br><span class="line">presbyopic hypermetrope yes reduced none</span><br><span class="line">presbyopic hypermetrope yes normal none</span><br><span class="line"></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span> data.sort(key=<span class="keyword">lambda</span> r: r[<span class="number">-1</span>])</span><br><span class="line"></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span> <span class="keyword">for</span> value, group <span class="keyword">in</span> itertools.groupby(data, <span class="keyword">lambda</span> r: r[<span class="number">-1</span>]):</span><br><span class="line">… <span class="keyword">print</span> ‘———–’</span><br><span class="line">… <span class="keyword">print</span> ‘Group: ‘ + value</span><br><span class="line">… print_data(group)</span><br><span class="line">…</span><br><span class="line">Group: hard</span><br><span class="line">young myope yes normal hard</span><br><span class="line">young hypermetrope yes normal hard</span><br><span class="line">pre-presbyopic myope yes normal hard</span><br><span class="line">presbyopic myope yes normal hard</span><br><span class="line">Group: none</span><br><span class="line">young myope no reduced none</span><br><span class="line">young myope yes reduced none</span><br><span class="line">young hypermetrope no reduced none</span><br><span class="line">young hypermetrope yes reduced none</span><br><span class="line">pre-presbyopic myope no reduced none</span><br><span class="line">pre-presbyopic myope yes reduced none</span><br><span class="line">pre-presbyopic hypermetrope no reduced none</span><br><span class="line">pre-presbyopic hypermetrope yes reduced none</span><br><span class="line">pre-presbyopic hypermetrope yes normal none</span><br><span class="line">presbyopic myope no reduced none</span><br><span class="line">presbyopic myope no normal none</span><br><span class="line">presbyopic myope yes reduced none</span><br><span class="line">presbyopic hypermetrope no reduced none</span><br><span class="line">presbyopic hypermetrope yes reduced none</span><br><span class="line">presbyopic hypermetrope yes normal none</span><br><span class="line">Group: soft</span><br><span class="line">young myope no normal soft</span><br><span class="line">young hypermetrope no normal soft</span><br><span class="line">pre-presbyopic myope no normal soft</span><br><span class="line">pre-presbyopic hypermetrope no normal soft</span><br><span class="line">presbyopic hypermetrope no normal soft</span><br></pre></td></tr></table></figure>
+<p>via: <a href="http://sahandsaba.com/thirty-python-language-features-and-tricks-you-may-not-know.html" target="_blank" rel="noopener">http://sahandsaba.com/thirty-python-language-features-and-tricks-you-may-not-know.html</a></p>
+<div style="clear:both"></div><div class="cc"><p>The <a href="https://blog.naaln.com">Why·Liam·Blog</a> by <a href="https://www.naaln.com" target="_blank" rel="external">WhyLiam</a> is licensed under a <a href="http://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" rel="external">Creative Commons BY-NC-ND 4.0 International License</a>.</p><p>由<a href="https://www.naaln.com" target="_blank" rel="external">WhyLiam</a>创作并维护的<a href="https://blog.naaln.com">Why·Liam·Blog</a>采用创作共用<a href="http://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" rel="external">保留署名-非商业-禁止演绎4.0国际许可证</a>。</p><p>本文首发于<a href="https://blog.naaln.com">Why·Liam·Blog (https://blog.naaln.com)</a>，版权所有，侵权必究。</p><p>本文永久链接：<a href="https://blog.naaln.com/2014/03/30-python-language-features-tricks/">https://blog.naaln.com/2014/03/30-python-language-features-tricks/</a></p><p></p></div>
+      
+    </div>
+    
+    
+    
+
+    
+      <div>
+        <div id="wechat_subscriber" style="display: block; padding: 10px 0; margin: 20px auto; width: 100%; text-align: center">
+    <img id="wechat_subscriber_qcode" src="//ws1.sinaimg.cn/large/006tKfTcgy1fg8gpi7kaaj30by0by74i.jpg" alt="WHY·LIAM wechat" style="width: 200px; max-width: 100%;"/>
+    <div>记录生活，研究产品，分享设计，分析数据，讨论科技和商业，不定期扯淡。</div>
+</div>
+
+      </div>
+    
+
+    
+      <div>
+        <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+  <div>如果觉得我的文章对您有用，请随意打赏。您的支持将鼓励我继续创作！</div>
+  <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+    <span>打赏</span>
+  </button>
+  <div id="QR" style="display: none;">
+
+    
+      <div id="wechat" style="display: inline-block">
+        <img id="wechat_qr" src="//ws1.sinaimg.cn/mw690/006tNc79gy1fm7yqrau7mj30f00ezad5.jpg" alt="WHY·LIAM 微信支付"/>
+        <p>微信支付</p>
+      </div>
+    
+
+    
+      <div id="alipay" style="display: inline-block">
+        <img id="alipay_qr" src="//ww3.sinaimg.cn/mw690/48910e01gw1evkbfendrjj20ci0ci0uf.jpg" alt="WHY·LIAM 支付宝"/>
+        <p>支付宝</p>
+      </div>
+    
+
+    
+
+  </div>
+</div>
+
+      </div>
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/python/" rel="tag"># python</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2014/03/review-of-watercress-code-two-years/" rel="next" title="豆瓣 CODE 两年历程回顾">
+                <i class="fa fa-chevron-left"></i> 豆瓣 CODE 两年历程回顾
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2014/04/upon-graduation-i-would-like-to-say-to-you/" rel="prev" title="毕业时，我想对你说">
+                毕业时，我想对你说 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+  
+    <div class="comments" id="comments">
+      <div id="SOHUCS"></div>
+    </div>
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+
+      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image"
+                src="//tva2.sinaimg.cn/crop.0.0.998.998.180/48910e01gw1ef5p6etuzdj20rs0rs771.jpg"
+                alt="WHY·LIAM" />
+            
+              <p class="site-author-name" itemprop="name">WHY·LIAM</p>
+              <p class="site-description motion-element" itemprop="description"></p>
+          </div>
+
+          
+            <nav class="site-state motion-element">
+              
+                <div class="site-state-item site-state-posts">
+                
+                  <a href="/archives/">
+                
+                    <span class="site-state-item-count">721</span>
+                    <span class="site-state-item-name">日志</span>
+                  </a>
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-categories">
+                  <a href="/categories/index.html">
+                    <span class="site-state-item-count">4</span>
+                    <span class="site-state-item-name">分类</span>
+                  </a>
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-tags">
+                  <a href="/tags/index.html">
+                    <span class="site-state-item-count">67</span>
+                    <span class="site-state-item-name">标签</span>
+                  </a>
+                </div>
+              
+            </nav>
+          
+
+          
+            <div class="feed-link motion-element">
+              <a href="/atom.xml" rel="alternate">
+                <i class="fa fa-rss"></i>
+                RSS
+              </a>
+            </div>
+          
+
+          
+            <div class="links-of-author motion-element">
+                
+                  <span class="links-of-author-item">
+                    <a href="https://github.com/liszd" target="_blank" title="GitHub" rel="external nofollow">
+                      
+                        <i class="fa fa-fw fa-github"></i>GitHub</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="http://weibo.com/whyliam" target="_blank" title="微博" rel="external nofollow">
+                      
+                        <i class="fa fa-fw fa-weibo"></i>微博</a>
+                  </span>
+                
+            </div>
+          
+
+          
+          
+            <div class="cc-license motion-element" itemprop="license">
+              <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/" class="cc-opacity" target="_blank" rel="external nofollow">
+                <img src="/images/cc-by-nc-nd.svg" alt="Creative Commons" />
+              </a>
+            </div>
+          
+
+          
+          
+            <div class="links-of-blogroll motion-element links-of-blogroll-block">
+              <div class="links-of-blogroll-title">
+                <i class="fa  fa-fw fa-link"></i>
+                Links
+              </div>
+              <ul class="links-of-blogroll-list">
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="http://www.naaln.com/" title="纳兰主页" target="_blank">纳兰主页</a>
+                  </li>
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="http://photo.naaln.com/" title="纳兰相册" target="_blank">纳兰相册</a>
+                  </li>
+                
+              </ul>
+            </div>
+          
+
+          
+            
+          
+          
+
+        </div>
+      </section>
+
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; 2003 &mdash; <span itemprop="copyrightYear">2018</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">WHY·LIAM</span>
+
+  
+
+  
+</div>
+
+
+  
+
+
+
+  <div class="powered-by">由 <a class="theme-link" target="_blank" rel="external nofollow" href="https://hexo.io">Hexo</a> 强力驱动</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" rel="external nofollow" href="https://github.com/theme-next/hexo-theme-next">NexT.Muse</a> v6.0.2</div>
+
+
+
+  <div class="footer-custom">Hosted by <a target="_blank" rel="external nofollow" href="https://pages.coding.me"><b>Coding Pages</b></a></div>
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=6.0.2"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=6.0.2"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=6.0.2"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=6.0.2"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=6.0.2"></script>
+
+
+
+  
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+  
+    <script type="text/javascript">
+    (function(){
+      var appid = 'cytklkKc0';
+      var conf = 'prod_b1dd516bbb7f3198591656f99d9ace80';
+      var width = window.innerWidth || document.documentElement.clientWidth;
+      if (width < 960) {
+      window.document.write('<script id="changyan_mobile_js" charset="utf-8" type="text/javascript" src="https://changyan.sohu.com/upload/mobile/wap-js/changyan_mobile.js?client_id=' + appid + '&conf=' + conf + '"><\/script>'); } else { var loadJs=function(d,a){var c=document.getElementsByTagName("head")[0]||document.head||document.documentElement;var b=document.createElement("script");b.setAttribute("type","text/javascript");b.setAttribute("charset","UTF-8");b.setAttribute("src",d);if(typeof a==="function"){if(window.attachEvent){b.onreadystatechange=function(){var e=b.readyState;if(e==="loaded"||e==="complete"){b.onreadystatechange=null;a()}}}else{b.onload=a}}c.appendChild(b)};loadJs("https://changyan.sohu.com/upload/changyan.js",function(){
+        window.changyan.api.config({appid:appid,conf:conf})});
+      }
+    })();
+    </script>
+    <script type="text/javascript" src="https://assets.changyan.sohu.com/upload/plugins/plugins.count.js"></script>
+  
+
+
+
+
+
+
+
+  
+
+
+
+
+  
+  
+  
+  <link rel="stylesheet" href="/lib/algolia-instant-search/instantsearch.min.css">
+
+  
+  
+  <script src="/lib/algolia-instant-search/instantsearch.min.js"></script>
+  
+
+  <script src="/js/src/algolia-search.js?v=6.0.2"></script>
+
+
+
+  
+
+  
+
+  
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';        
+    }
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>

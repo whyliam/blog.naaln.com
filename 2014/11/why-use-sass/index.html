@@ -1,0 +1,983 @@
+<!DOCTYPE html>
+
+
+
+
+<html class="theme-next muse" lang="zh-CN">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+  <meta name="google-site-verification" content="ByVfaP_E3b9ZYRUGhNAUFSQKL8mJQwUehpQwoxJ5n-c" />
+
+
+
+  <meta name="msvalidate.01" content="DB220684085BEDBD2E49E8E942534B1F" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=6.0.2" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon-next.png?v=6.0.2">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32-next.png?v=6.0.2">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16-next.png?v=6.0.2">
+
+
+  <link rel="mask-icon" href="/favicon/logo.svg?v=6.0.2" color="#222">
+
+
+
+
+
+
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Muse',
+    version: '6.0.2',
+    sidebar: {"position":"right","display":"hide","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: false,
+    fastclick: false,
+    lazyload: false,
+    tabs: true,
+    motion: {"enable":false,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    algolia: {
+      applicationID: 'XILKIWTAM9',
+      apiKey: '8c01137fe05d281ccd531a0ec622322a',
+      indexName: 'blog',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"搜索文章","hits_empty":"啊，找不到 ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+  
+
+
+
+
+  
+  <meta name="keywords" content="sass," />
+
+
+<meta name="description" content="本文由若强根据DAN CEDERHOLM的《Why Sass?》所译，整个译文带有我们自己的理解与思想，如果译得不好或不对之处还请同行朋友指点。如需转载此译文，需注明英文出处：http://alistapart.com/article/why-sass，以及作者相关信息 ——作者：DAN CEDERHOLM ——译者：若强  小提示：我们很高兴为你提供一个摘录，它是由Dan Cederholm">
+<meta name="keywords" content="sass">
+<meta property="og:type" content="article">
+<meta property="og:title" content="为什么要使用Sass">
+<meta property="og:url" content="https://blog.naaln.com/2014/11/why-use-sass/index.html">
+<meta property="og:site_name" content="Why·Liam·Blog">
+<meta property="og:description" content="本文由若强根据DAN CEDERHOLM的《Why Sass?》所译，整个译文带有我们自己的理解与思想，如果译得不好或不对之处还请同行朋友指点。如需转载此译文，需注明英文出处：http://alistapart.com/article/why-sass，以及作者相关信息 ——作者：DAN CEDERHOLM ——译者：若强  小提示：我们很高兴为你提供一个摘录，它是由Dan Cederholm">
+<meta property="og:locale" content="zh-CN">
+<meta property="og:updated_time" content="2017-09-03T09:15:57.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="为什么要使用Sass">
+<meta name="twitter:description" content="本文由若强根据DAN CEDERHOLM的《Why Sass?》所译，整个译文带有我们自己的理解与思想，如果译得不好或不对之处还请同行朋友指点。如需转载此译文，需注明英文出处：http://alistapart.com/article/why-sass，以及作者相关信息 ——作者：DAN CEDERHOLM ——译者：若强  小提示：我们很高兴为你提供一个摘录，它是由Dan Cederholm">
+
+
+
+  <link rel="alternate" href="/atom.xml" title="Why·Liam·Blog" type="application/atom+xml" />
+
+
+
+
+  <link rel="canonical" href="https://blog.naaln.com/2014/11/why-use-sass/"/>
+
+
+  <title>为什么要使用Sass | Why·Liam·Blog</title>
+  
+
+
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-47966442-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-47966442-2');
+</script>
+
+
+
+
+
+
+  
+<script src="//msite.baidu.com/sdk/c.js?appid=1586840953097399"></script>
+<link rel="canonical" href="https://blog.naaln.com/2014/11/why-use-sass/"/>
+<script type="application/ld+json">
+    {
+        "@context": "https://ziyuan.baidu.com/contexts/cambrian.jsonld",
+        "@id": "https://blog.naaln.com/2014/11/why-use-sass/",
+        "appid": "1586840953097399",
+        "title": "为什么要使用Sass",
+        "images": [
+            ""
+            ],
+        "description": "",
+        "pubDate": "",
+        "upDate": "",
+        "lrDate": ""
+    }
+</script>
+
+  <noscript>
+  <style type="text/css">
+    .use-motion .motion-element,
+    .use-motion .brand,
+    .use-motion .menu-item,
+    .sidebar-inner,
+    .use-motion .post-block,
+    .use-motion .pagination,
+    .use-motion .comments,
+    .use-motion .post-header,
+    .use-motion .post-body,
+    .use-motion .collection-title { opacity: initial; }
+
+    .use-motion .logo,
+    .use-motion .site-title,
+    .use-motion .site-subtitle {
+      opacity: initial;
+      top: initial;
+    }
+
+    .use-motion {
+      .logo-line-before i { left: initial; }
+      .logo-line-after i { right: initial; }
+    }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-CN">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-right page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"> <div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Why·Liam·Blog</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <h1 class="site-subtitle" itemprop="description">人生若如初見</h1>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            <i class="menu-item-icon fa fa-fw fa-home"></i> <br />首页</a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />归档</a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-technology">
+          <a href="/categories/technology/" rel="section">
+            <i class="menu-item-icon fa fa-fw fa-code"></i> <br />技术</a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-jottings">
+          <a href="/categories/jottings/" rel="section">
+            <i class="menu-item-icon fa fa-fw fa-language"></i> <br />随笔</a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tour">
+          <a href="/categories/tour/" rel="section">
+            <i class="menu-item-icon fa fa-fw fa-globe"></i> <br />旅游</a>
+        </li>
+      
+
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br />搜索</a>
+        </li>
+      
+    </ul>
+  
+
+  
+    <div class="site-search">
+      
+  
+  <div class="algolia-popup popup search-popup">
+    <div class="algolia-search">
+      <div class="algolia-search-input-icon">
+        <i class="fa fa-search"></i>
+      </div>
+      <div class="algolia-search-input" id="algolia-search-input"></div>
+    </div>
+
+    <div class="algolia-results">
+      <div id="algolia-stats"></div>
+      <div id="algolia-hits"></div>
+      <div id="algolia-pagination" class="algolia-pagination"></div>
+    </div>
+
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+  </div>
+
+
+
+
+    </div>
+  
+</nav>
+
+
+  
+
+
+
+ </div>
+    </header>
+
+    
+
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://blog.naaln.com/2014/11/why-use-sass/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="WHY·LIAM">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="//tva2.sinaimg.cn/crop.0.0.998.998.180/48910e01gw1ef5p6etuzdj20rs0rs771.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Why·Liam·Blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h2 class="post-title" itemprop="name headline">为什么要使用Sass</h2>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2014-11-02T01:58:00+08:00">2014-11-02</time>
+            
+
+            
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/technology/" itemprop="url" rel="index"><span itemprop="name">技术</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+              <span class="post-meta-divider">|</span>
+              <span class="post-meta-item-icon">
+                <i class="fa fa-comment-o"></i>
+              </span>
+              
+                <a href="/2014/11/why-use-sass/#SOHUCS" itemprop="discussionUrl">
+                  <span id="changyan_count_unit" class="post-comments-count hc-comment-count" data-xid="2014/11/why-use-sass/" itemprop="commentsCount"></span>
+                </a>
+              
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <blockquote>
+<p>本文由<a href="http://www.w3cplus.com" target="_blank" rel="noopener">若强</a>根据<a href="http://alistapart.com/author/dancederholm" title="Posts by DAN CEDERHOLM" target="_blank" rel="noopener">DAN CEDERHOLM</a>的《<a href="http://alistapart.com/article/why-sass" target="_blank" rel="noopener">Why Sass?</a>》所译，整个译文带有我们自己的理解与思想，如果译得不好或不对之处还请同行朋友指点。如需转载此译文，需注明英文出处：<a href="http://alistapart.com/article/why-sass" target="_blank" rel="noopener">http://alistapart.com/article/why-sass</a>，以及作者相关信息</p>
+<p>——作者：<a href="http://alistapart.com/author/dancederholm" title="Posts by DAN CEDERHOLM" target="_blank" rel="noopener">DAN CEDERHOLM</a> ——译者：<a href="http://www.w3cplus.com" target="_blank" rel="noopener">若强</a></p>
+</blockquote>
+<p>小提示：我们很高兴为你提供一个摘录，它是由Dan Cederholm 写的一本叫做<a href="http://www.abookapart.com/products/sass-for-web-designers" target="_blank" rel="noopener">Sass For Web Designers</a>的书。你可以快速在一个叫<a href="http://www.abookapart.com/" target="_blank" rel="noopener">A Book Apart</a>的书城找到它们。</p>
+<p>我Sass对略微有点抵触，我更喜欢直接写css样式！我不需要使用它！此外，我确实不想给我的工作流程中增加额外的复杂的部分，因此我选择远离它。</p>
+<hr>
+<p>这就我们的常规想法，但是Sass（以及其他css预处理程序）确实是一个强大的工具，它可以让任何形式的样式都能够方便的引入开发工作中去。虽然他会花费我一些时间去熟悉、适应，但是我依然很乐于这样做。</p>
+<p>这就是我打算写本小篇幅的书来介绍它的原因。为了分享一下，在过去的十年中，当我在维护的过程中我是多么愉快的编写css的，并且同时是怎样提高效率的。曾经我也困惑过：Sass会不会令我不敢去尝试怎么使用它。最初，我担心我得完全改变我编写和管理样式表的方式。CSS有时是脆弱的,这是可以理解的，原因是其编写者或多或少出于对它的保护导致的。Can I get an amen?</p>
+<p>现在，让我来向您展示如何让Sass不干扰你的工作流程,以及如何让您的工作更便利。下面，我将演示Sass的各个方面：怎样安装，怎样使用以及在项目中怎样提供给我们最大的帮助。但愿你将也会想我一样深深的爱上它的。</p>
+<h2 id="Sass逐步解说"><a href="#Sass逐步解说" class="headerlink" title="Sass逐步解说"></a>Sass逐步解说</h2><p>是否需要每一处都要改变，比方说，你的样式表里需要换一套颜色，你必须要找到好几处地方，并且替换好几次颜色属性值。那么你希望这样处理css吗？<br><figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$brand</span>-<span class="attribute">color</span>: <span class="number">#fc3</span>;</span><br><span class="line"><span class="selector-tag">a</span> &#123;</span><br><span class="line">    <span class="attribute">color</span>: <span class="variable">$brand</span>-color;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-tag">nav</span> &#123;</span><br><span class="line">    <span class="attribute">background-color</span>: <span class="variable">$brand</span>-color;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>如果你能够在只改变某一处的属性值，其他地方的属性也会随之相应改变？那么你可以使用sass！</p>
+<p>或者是在整个样式表里，重复的风格在不同地点使用呢?<br><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">p</span> &#123;</span><br><span class="line">    <span class="attribute">margin-bottom</span>: <span class="number">20px</span>; </span><br><span class="line">    <span class="attribute">font-size</span>: <span class="number">14px</span>; </span><br><span class="line">    <span class="attribute">line-height</span>: <span class="number">1.5</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-tag">footer</span> &#123;</span><br><span class="line">    <span class="attribute">margin-bottom</span>: <span class="number">20px</span>;</span><br><span class="line">    <span class="attribute">font-size</span>: <span class="number">14px</span>;</span><br><span class="line">    <span class="attribute">line-height</span>: <span class="number">1.5</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>岂不是很神奇?把那些共用的东西，规划成一个可重用块，只需要定义一次,然后引用到你需要的地方即可。<br><figure class="highlight scala"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@mixin</span> <span class="keyword">default</span>-<span class="class"><span class="keyword">type</span> </span>&#123;</span><br><span class="line">   margin-bottom: <span class="number">20</span>px;</span><br><span class="line">   font-size: <span class="number">14</span>px;</span><br><span class="line">   line-height: <span class="number">1.5</span>;</span><br><span class="line">&#125;</span><br><span class="line">p &#123;</span><br><span class="line">    <span class="meta">@include</span> <span class="keyword">default</span>-<span class="class"><span class="keyword">type</span></span>;</span><br><span class="line">&#125;</span><br><span class="line">footer &#123;</span><br><span class="line">    <span class="meta">@include</span> <span class="keyword">default</span>-<span class="class"><span class="keyword">type</span></span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>这也是Sass可以做到的，这两个非常简单的、几乎只是涉及点Sass皮毛的例子，向您展示了使用Sass编写的样式，是怎样把css样式写得如何更快,更容易,更灵活。这是在网页设计的世界里，一个非常受欢迎的助手。因为创建过一个网站的人都知道这样将会带来怎样的好处的…。</p>
+<h2 id="学习css的困难之处"><a href="#学习css的困难之处" class="headerlink" title="学习css的困难之处"></a>学习css的困难之处</h2><p>真的面对它时，你会发现学习css也不是一件很容易的事。你要了解每个属性的作用、当他们层叠在一起时又是怎么工作的、在不同浏览器下支持什么属性与标签以及会出现一些怎样的怪异现象等等。这确实是一件不容易的事啊！再加上对一些复杂模块的反复维护,我们有必要这样做吗?可是很奇怪的是,居然有人还会当做一种享受(脑袋被门挤了吧…).</p>
+<p>还有一个问题在于,CSS最初设计出来不是为了做我们今天做所做的这些事情的。由于浏览器的不断创新和CSS3的出现,极大的促进了css的发展的，并完全超出了其被设计出来的初衷（据说css被设计出来之初主要是用来布局的）。但是，现在我们依然需要依赖一些特殊技术来实现我们的目的，比如css hacks 就是其中的一种。再比如，我们想通过<code>float</code>属性来实现简单的图片与一段文本的对齐。就这种情况下，我们似乎更趋向于选择<code>float</code>属性来布局整个模块。</p>
+<p>我们的样式表也极大地重复。颜色、字体都经常分组属性等。典型的CSS文件是一个非常线性的东西,使得面向对象的程序员抓破他们的脑袋也很难适应。(我不是一个面向对象编程的程序员,但我脑袋也快被抓破了。正如你可能读到)。</p>
+<p>由于接口程序和web应用程序的更加健全化和更加复杂化,正如css正在做着最初被设计出来时从未想过做过的事情。这源于我们的想法总是这样的似乎可耻（css可不可以多做点别的呢?）. 幸运的是, 浏览器制造商采用新的CSS特性还是比较快速的,更高效更强大的属性和选择器,解决今天的网络带来的新的需求问题。比如CSS3的一些特性：、高级选择器、新的布局选项、border-radius, box-shadow、transitions, transforms, animation等属性。这是多么的让人感到兴奋啊。然而，还有许多属性没有完全的得到支持，如果将来这些属性都被支持了的话，相信写css时会变的轻松的多了。</p>
+<h2 id="不重复原则"><a href="#不重复原则" class="headerlink" title="不重复原则"></a>不重复原则</h2><p>如果我们比较一下同行软件工程们的世界（我们比他们悠闲与舒适的多了），我们可以很快的看到他们是如何组织变量、常量、模块,等等,。他们用他们固有的，以及他们感觉非常必要的模式去为人们构建一些复杂的系统。</p>
+<p>你也许听过不重复原则，它是由Andy Hunt 和 Dave Thomas在他们所著的一本叫《<a href="http://bkaprt.com/sass/1/" target="_blank" rel="noopener">程序员修炼之道</a>》的书里所定义出来的。据不重复原则的描述：</p>
+<blockquote>
+<p>在一个体系中 ，每条知识必须有一个明确的,典型的代表。</p>
+</blockquote>
+<p>不断地复制代码的方法可能会让开发者很困惑与感到失败（<a href="http://bkaprt.com/sass/2/" target="_blank" rel="noopener">http://bkaprt.com/sass/2/</a>）。因为常识是：我们只需写相同的代码段一次就够了，然后只需重用他们就行了。这才是比较有效、容易维护代码的方法。</p>
+<p>css不遵守不重复原则。有时候，它充满了重复的规则、申明、属性等。在我们整个样式文件中，我们总是在不断地写着相同片段的代码。通过查看一个正规的css文件，“不重复软件“开发者将会哭的。首先他们会困惑，然后就是沮丧。</p>
+<p>他们将会问：“你们是怎么维护其中的 !@#$ 的？“。</p>
+<p>他们将会不耐烦的会回应：“我不是已经告诉过你了吗，这是IE的bug”。</p>
+<h3 id="为什么CSS这么难以处理"><a href="#为什么CSS这么难以处理" class="headerlink" title="为什么CSS这么难以处理?"></a>为什么CSS这么难以处理?</h3><p>通过一篇CSS发明者们所写过的文章,我们可以略微了解到, 这些年来CSS的一些语法局限(请参看的Bert Bos 所写的一些<a href="http://bkaprt.com/sass/3/" target="_blank" rel="noopener">论述</a>)。</p>
+<blockquote>
+<p>文中大致是这样的说的：CSS突然停止,编程语言的程序员使用: 宏命令、变量、符号常量,条件变量表达式,等等更强大的功能。这是因为这些事情给开发人员带来了很多束缚.对缺乏经验的人来说，不经意的便会把自己弄晕，或者,更有可能的是,被吓坏了,以至于他们甚至不会碰CSS。这是一个平衡，CSS的平衡是不同于其他一些事情。</p>
+</blockquote>
+<p>css的最初的设计者考虑到了它的可扩展性，他们明智的选择了希望更多的人能够一起创造、推动互联网的发展。他们希望css能够足够强大，能够做到网站风格的表现与内容相分离，并且很容易理解与使用。这一点我是非常赞同他们的。与此同时，对于怎样维护，我们还有很多事要做。这些事是很复杂、有着很微妙差别、很具有挑战性的。</p>
+<p>幸运的是，有许多其他选择可以帮忙解决我们所遇到得为问题。其中sass就是一种。</p>
+<h2 id="什么是Sass"><a href="#什么是Sass" class="headerlink" title="什么是Sass"></a>什么是Sass</h2><p>Sass是一个你所写的CSS样式表和css文件浏览器之间的预处理。Sass（Syntactically Awesome Stylesheets的缩写）弥补了css语言的一点不足之处。它允许你写css代码不需要重复。这对于创造可维护的样式将是非常有效的。</p>
+<p>你可以在<a href="http://bkaprt.com/sass/4" target="_blank" rel="noopener">Sass网站</a>上看到sass怎样描述它自身的简洁性的。</p>
+<p>Sass是一种元语言的CSS，用它描述的文档具有干净风格和结构。与传统的css语法相比它能够做更多的事情。Sass都提供了一个更简单、更优雅的语法CSS，实现各种功能,是比较有用的管理css样式的一种新方式。</p>
+<p>常规的css是不能够适应变量、mixin还有其他的好东西的，sass与其相比，sass提供了一种语法能够把一些强大的函数功能加入到你的css中去。然后它能通过一个命令行程序或某种web架构插件将该语法编译为常规的CSS文件。</p>
+<p>更具体地说,Sass是CSS3的扩展,其SCSS(Sassy CSS)语法，稍微过一会，我们将讨论CSS3的超级集合。这意味着，任何有效的CSS3文件是有效SCSS文档。如果你有你一点点的css3的基础，对于Sass你可以很轻松的入门。你可以用他尝试着写一点东西试试看。这也意味着将一个现有样式表从CSS 变成SCSS可以分阶段完成,当你在学习和知道更多Sass的功能时。</p>
+<p>不久之后，你将能够很流畅的使用Sass（它不会花费你太多时间的），感觉起来它就是一种专门为了css而生的扩展，它似乎填补了css本身的一些不足之处。这就是为什么当我一开始使用Sass之后就没有那种不爽的感觉，就像写css一样的爽。我想一旦你尝试着使用了它，你肯定也会无法自拔的。</p>
+<p>而且，Sass还能够帮助我们的css代码写得更好。通过确认某些特性–目前不可能没有预处理程序的帮助下,给CSS书写者实际的实现和功能试验。如果它是合理的，某一Sass函数特性推动未来css的规范。</p>
+<h2 id="关于对Sass的误解与疑惑"><a href="#关于对Sass的误解与疑惑" class="headerlink" title="关于对Sass的误解与疑惑"></a>关于对Sass的误解与疑惑</h2><p>我早前提到过。开始时我是很不情愿尝试Sass的，这是使用之前对他的一些误解导致的。我必须要知道ruby与其高级命令行？</p>
+<p>我需要完全改变一下我以前写css的方式吗？Sass编译输出的css代码会臃肿吗？输出的代码可读性又是怎么样的呢？</p>
+<p>幸运的是：以上所有疑惑都是多虑的。</p>
+<p>当然了，我时常还是仍然能够在一些网络媒体渠道了解到一些人对他还是产生怀疑的。然我们来消除对它的一些误解吧。。。。</p>
+<h3 id="我害怕命令行怎么办！！！"><a href="#我害怕命令行怎么办！！！" class="headerlink" title="我害怕命令行怎么办！！！"></a>我害怕命令行怎么办！！！</h3><p>我绝不是一个命令行专家，但也不算是菜鸟了吧！我不害怕遍历文件系统或使用Git命令。我同情那些不愿使用命令行的设计师和前端开发人员，他们或许有一点命令行恐惧症吧。然而实际上，对于Sass来说少量的命令行还是存在的，一些比较基本的一些命令行你还是要掌握的。</p>
+<p>然而，有一些app应用与web框架可以避免命令行的使用（下一章我将向你们介绍）。所以呢，即使你不会使用命令行，也不要因它的存在而影响到你对Sass的学习。</p>
+<h3 id="我不想改变我写css的方式"><a href="#我不想改变我写css的方式" class="headerlink" title="我不想改变我写css的方式"></a>我不想改变我写css的方式</h3><p>这是由于对Sass的误会导致的。我特别在意样式表文件的设置与组织，引入了许多好东西在文档里面。但是请明确一下，SCSS语法是支持css3的，你不需要改变任何关于你写CSS的方式。注释、缩进等所有默认格式，可以保持不变在你的SCSS文档里。当我知道这样居然都可以时，我勒个去！那赶快学Sass吧！</p>
+<h2 id="我不想改变我设计的方式"><a href="#我不想改变我设计的方式" class="headerlink" title="我不想改变我设计的方式"></a>我不想改变我设计的方式</h2><p>另一方面，Sass不能解决你所有的问题或改掉你的一些不好的习惯。在css的工作过程中，如果没有好的规划与构思，即使你使用了Sass也一样会让你的代码感觉起来是那么的臃肿与低效。一个好的组织方式与构思方案，在Sass里面依然是很有用的。事实上,有时候,Sass可以把我们一些不好的方式极大的放大，可能也会让我们患上严重的错误。但是如果使用的恰当好处将会给我们的网站开发带来极大的便利。</p>
+<p>好吧，，，既然现在我们已经详细了解了Sass，就让我们开始了解一些有趣的事吧。我相信你一定会惊叹Sass所能做的事的。</p>
+<p>下一章节，我想为你们展示我们的工作流程，在流程中怎么让你快速适应他的，以及它怎样轻松的使用命令行与应用程序的。让我们开始使用sass吧。。。</p>
+<p><strong>译者手语：</strong>整个翻译依照原文线路进行，并在翻译过程略加了个人对技术的理解。如果翻译有不对之处，还烦请同行朋友指点。谢谢！</p>
+<p>英文原文：<a href="http://alistapart.com/article/why-sass" target="_blank" rel="noopener">http://alistapart.com/article/why-sass</a></p>
+<p>中文译文：<a href="http://www.w3cplus.com/preprocessor/why-sass.html" target="_blank" rel="noopener">http://www.w3cplus.com/preprocessor/why-sass.html</a></p>
+<p>via:<a href="http://www.w3cplus.com/preprocessor/why-sass.html" target="_blank" rel="noopener">http://www.w3cplus.com/preprocessor/why-sass.html</a></p>
+<div style="clear:both"></div><div class="cc"><p>The <a href="https://blog.naaln.com">Why·Liam·Blog</a> by <a href="https://www.naaln.com" target="_blank" rel="external">WhyLiam</a> is licensed under a <a href="http://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" rel="external">Creative Commons BY-NC-ND 4.0 International License</a>.</p><p>由<a href="https://www.naaln.com" target="_blank" rel="external">WhyLiam</a>创作并维护的<a href="https://blog.naaln.com">Why·Liam·Blog</a>采用创作共用<a href="http://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" rel="external">保留署名-非商业-禁止演绎4.0国际许可证</a>。</p><p>本文首发于<a href="https://blog.naaln.com">Why·Liam·Blog (https://blog.naaln.com)</a>，版权所有，侵权必究。</p><p>本文永久链接：<a href="https://blog.naaln.com/2014/11/why-use-sass/">https://blog.naaln.com/2014/11/why-use-sass/</a></p><p></p></div>
+      
+    </div>
+    
+    
+    
+
+    
+      <div>
+        <div id="wechat_subscriber" style="display: block; padding: 10px 0; margin: 20px auto; width: 100%; text-align: center">
+    <img id="wechat_subscriber_qcode" src="//ws1.sinaimg.cn/large/006tKfTcgy1fg8gpi7kaaj30by0by74i.jpg" alt="WHY·LIAM wechat" style="width: 200px; max-width: 100%;"/>
+    <div>记录生活，研究产品，分享设计，分析数据，讨论科技和商业，不定期扯淡。</div>
+</div>
+
+      </div>
+    
+
+    
+      <div>
+        <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+  <div>如果觉得我的文章对您有用，请随意打赏。您的支持将鼓励我继续创作！</div>
+  <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+    <span>打赏</span>
+  </button>
+  <div id="QR" style="display: none;">
+
+    
+      <div id="wechat" style="display: inline-block">
+        <img id="wechat_qr" src="//ws1.sinaimg.cn/mw690/006tNc79gy1fm7yqrau7mj30f00ezad5.jpg" alt="WHY·LIAM 微信支付"/>
+        <p>微信支付</p>
+      </div>
+    
+
+    
+      <div id="alipay" style="display: inline-block">
+        <img id="alipay_qr" src="//ww3.sinaimg.cn/mw690/48910e01gw1evkbfendrjj20ci0ci0uf.jpg" alt="WHY·LIAM 支付宝"/>
+        <p>支付宝</p>
+      </div>
+    
+
+    
+
+  </div>
+</div>
+
+      </div>
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/sass/" rel="tag"># sass</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2014/10/how-much-is-a-website/" rel="next" title="做一个网站多少钱？">
+                <i class="fa fa-chevron-left"></i> 做一个网站多少钱？
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2014/11/dnsmasq-build-custom-dns/" rel="prev" title="DNSMasq 建立自定义 DNS">
+                DNSMasq 建立自定义 DNS <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+  
+    <div class="comments" id="comments">
+      <div id="SOHUCS"></div>
+    </div>
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+
+      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image"
+                src="//tva2.sinaimg.cn/crop.0.0.998.998.180/48910e01gw1ef5p6etuzdj20rs0rs771.jpg"
+                alt="WHY·LIAM" />
+            
+              <p class="site-author-name" itemprop="name">WHY·LIAM</p>
+              <p class="site-description motion-element" itemprop="description"></p>
+          </div>
+
+          
+            <nav class="site-state motion-element">
+              
+                <div class="site-state-item site-state-posts">
+                
+                  <a href="/archives/">
+                
+                    <span class="site-state-item-count">721</span>
+                    <span class="site-state-item-name">日志</span>
+                  </a>
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-categories">
+                  <a href="/categories/index.html">
+                    <span class="site-state-item-count">4</span>
+                    <span class="site-state-item-name">分类</span>
+                  </a>
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-tags">
+                  <a href="/tags/index.html">
+                    <span class="site-state-item-count">67</span>
+                    <span class="site-state-item-name">标签</span>
+                  </a>
+                </div>
+              
+            </nav>
+          
+
+          
+            <div class="feed-link motion-element">
+              <a href="/atom.xml" rel="alternate">
+                <i class="fa fa-rss"></i>
+                RSS
+              </a>
+            </div>
+          
+
+          
+            <div class="links-of-author motion-element">
+                
+                  <span class="links-of-author-item">
+                    <a href="https://github.com/liszd" target="_blank" title="GitHub" rel="external nofollow">
+                      
+                        <i class="fa fa-fw fa-github"></i>GitHub</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="http://weibo.com/whyliam" target="_blank" title="微博" rel="external nofollow">
+                      
+                        <i class="fa fa-fw fa-weibo"></i>微博</a>
+                  </span>
+                
+            </div>
+          
+
+          
+          
+            <div class="cc-license motion-element" itemprop="license">
+              <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/" class="cc-opacity" target="_blank" rel="external nofollow">
+                <img src="/images/cc-by-nc-nd.svg" alt="Creative Commons" />
+              </a>
+            </div>
+          
+
+          
+          
+            <div class="links-of-blogroll motion-element links-of-blogroll-block">
+              <div class="links-of-blogroll-title">
+                <i class="fa  fa-fw fa-link"></i>
+                Links
+              </div>
+              <ul class="links-of-blogroll-list">
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="http://www.naaln.com/" title="纳兰主页" target="_blank">纳兰主页</a>
+                  </li>
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="http://photo.naaln.com/" title="纳兰相册" target="_blank">纳兰相册</a>
+                  </li>
+                
+              </ul>
+            </div>
+          
+
+          
+            
+          
+          
+
+        </div>
+      </section>
+
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; 2003 &mdash; <span itemprop="copyrightYear">2018</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">WHY·LIAM</span>
+
+  
+
+  
+</div>
+
+
+  
+
+
+
+  <div class="powered-by">由 <a class="theme-link" target="_blank" rel="external nofollow" href="https://hexo.io">Hexo</a> 强力驱动</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" rel="external nofollow" href="https://github.com/theme-next/hexo-theme-next">NexT.Muse</a> v6.0.2</div>
+
+
+
+  <div class="footer-custom">Hosted by <a target="_blank" rel="external nofollow" href="https://pages.coding.me"><b>Coding Pages</b></a></div>
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=6.0.2"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=6.0.2"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=6.0.2"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=6.0.2"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=6.0.2"></script>
+
+
+
+  
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+  
+    <script type="text/javascript">
+    (function(){
+      var appid = 'cytklkKc0';
+      var conf = 'prod_b1dd516bbb7f3198591656f99d9ace80';
+      var width = window.innerWidth || document.documentElement.clientWidth;
+      if (width < 960) {
+      window.document.write('<script id="changyan_mobile_js" charset="utf-8" type="text/javascript" src="https://changyan.sohu.com/upload/mobile/wap-js/changyan_mobile.js?client_id=' + appid + '&conf=' + conf + '"><\/script>'); } else { var loadJs=function(d,a){var c=document.getElementsByTagName("head")[0]||document.head||document.documentElement;var b=document.createElement("script");b.setAttribute("type","text/javascript");b.setAttribute("charset","UTF-8");b.setAttribute("src",d);if(typeof a==="function"){if(window.attachEvent){b.onreadystatechange=function(){var e=b.readyState;if(e==="loaded"||e==="complete"){b.onreadystatechange=null;a()}}}else{b.onload=a}}c.appendChild(b)};loadJs("https://changyan.sohu.com/upload/changyan.js",function(){
+        window.changyan.api.config({appid:appid,conf:conf})});
+      }
+    })();
+    </script>
+    <script type="text/javascript" src="https://assets.changyan.sohu.com/upload/plugins/plugins.count.js"></script>
+  
+
+
+
+
+
+
+
+  
+
+
+
+
+  
+  
+  
+  <link rel="stylesheet" href="/lib/algolia-instant-search/instantsearch.min.css">
+
+  
+  
+  <script src="/lib/algolia-instant-search/instantsearch.min.js"></script>
+  
+
+  <script src="/js/src/algolia-search.js?v=6.0.2"></script>
+
+
+
+  
+
+  
+
+  
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';        
+    }
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>

@@ -1,0 +1,988 @@
+<!DOCTYPE html>
+
+
+
+
+<html class="theme-next muse" lang="zh-CN">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+  <meta name="google-site-verification" content="ByVfaP_E3b9ZYRUGhNAUFSQKL8mJQwUehpQwoxJ5n-c" />
+
+
+
+  <meta name="msvalidate.01" content="DB220684085BEDBD2E49E8E942534B1F" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=6.0.2" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon-next.png?v=6.0.2">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32-next.png?v=6.0.2">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16-next.png?v=6.0.2">
+
+
+  <link rel="mask-icon" href="/favicon/logo.svg?v=6.0.2" color="#222">
+
+
+
+
+
+
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Muse',
+    version: '6.0.2',
+    sidebar: {"position":"right","display":"hide","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: false,
+    fastclick: false,
+    lazyload: false,
+    tabs: true,
+    motion: {"enable":false,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    algolia: {
+      applicationID: 'XILKIWTAM9',
+      apiKey: '8c01137fe05d281ccd531a0ec622322a',
+      indexName: 'blog',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"搜索文章","hits_empty":"啊，找不到 ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+  
+
+
+
+
+  
+  <meta name="keywords" content="octopress,github," />
+
+
+<meta name="description" content="最近有些同学让我分享我的博客主题，其实主题早已经放在GitHub上了。下面索性基于我Fork的Octopress，讲一下如何使用Octopress在GitHub上建博客。 先来看看我的版本和原始版本的主要不同之处： 2012-04-13: 允许单篇文章独立引用CSS和JS，具体文件内容变动见commit0aa27bb和 05fcdbf。  .rvmrc 改成使用我机子上装的Ruby版本（1.9.3">
+<meta name="keywords" content="octopress,github">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Blog = GitHub + Octopress">
+<meta property="og:url" content="https://blog.naaln.com/2013/10/blog-github-octopress/index.html">
+<meta property="og:site_name" content="Why·Liam·Blog">
+<meta property="og:description" content="最近有些同学让我分享我的博客主题，其实主题早已经放在GitHub上了。下面索性基于我Fork的Octopress，讲一下如何使用Octopress在GitHub上建博客。 先来看看我的版本和原始版本的主要不同之处： 2012-04-13: 允许单篇文章独立引用CSS和JS，具体文件内容变动见commit0aa27bb和 05fcdbf。  .rvmrc 改成使用我机子上装的Ruby版本（1.9.3">
+<meta property="og:locale" content="zh-CN">
+<meta property="og:updated_time" content="2017-09-03T09:15:57.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Blog = GitHub + Octopress">
+<meta name="twitter:description" content="最近有些同学让我分享我的博客主题，其实主题早已经放在GitHub上了。下面索性基于我Fork的Octopress，讲一下如何使用Octopress在GitHub上建博客。 先来看看我的版本和原始版本的主要不同之处： 2012-04-13: 允许单篇文章独立引用CSS和JS，具体文件内容变动见commit0aa27bb和 05fcdbf。  .rvmrc 改成使用我机子上装的Ruby版本（1.9.3">
+
+
+
+  <link rel="alternate" href="/atom.xml" title="Why·Liam·Blog" type="application/atom+xml" />
+
+
+
+
+  <link rel="canonical" href="https://blog.naaln.com/2013/10/blog-github-octopress/"/>
+
+
+  <title>Blog = GitHub + Octopress | Why·Liam·Blog</title>
+  
+
+
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-47966442-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-47966442-2');
+</script>
+
+
+
+
+
+
+  
+<script src="//msite.baidu.com/sdk/c.js?appid=1586840953097399"></script>
+<link rel="canonical" href="https://blog.naaln.com/2013/10/blog-github-octopress/"/>
+<script type="application/ld+json">
+    {
+        "@context": "https://ziyuan.baidu.com/contexts/cambrian.jsonld",
+        "@id": "https://blog.naaln.com/2013/10/blog-github-octopress/",
+        "appid": "1586840953097399",
+        "title": "Blog = GitHub + Octopress",
+        "images": [
+            ""
+            ],
+        "description": "",
+        "pubDate": "",
+        "upDate": "",
+        "lrDate": ""
+    }
+</script>
+
+  <noscript>
+  <style type="text/css">
+    .use-motion .motion-element,
+    .use-motion .brand,
+    .use-motion .menu-item,
+    .sidebar-inner,
+    .use-motion .post-block,
+    .use-motion .pagination,
+    .use-motion .comments,
+    .use-motion .post-header,
+    .use-motion .post-body,
+    .use-motion .collection-title { opacity: initial; }
+
+    .use-motion .logo,
+    .use-motion .site-title,
+    .use-motion .site-subtitle {
+      opacity: initial;
+      top: initial;
+    }
+
+    .use-motion {
+      .logo-line-before i { left: initial; }
+      .logo-line-after i { right: initial; }
+    }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-CN">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-right page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"> <div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Why·Liam·Blog</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <h1 class="site-subtitle" itemprop="description">人生若如初見</h1>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            <i class="menu-item-icon fa fa-fw fa-home"></i> <br />首页</a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />归档</a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-technology">
+          <a href="/categories/technology/" rel="section">
+            <i class="menu-item-icon fa fa-fw fa-code"></i> <br />技术</a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-jottings">
+          <a href="/categories/jottings/" rel="section">
+            <i class="menu-item-icon fa fa-fw fa-language"></i> <br />随笔</a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tour">
+          <a href="/categories/tour/" rel="section">
+            <i class="menu-item-icon fa fa-fw fa-globe"></i> <br />旅游</a>
+        </li>
+      
+
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br />搜索</a>
+        </li>
+      
+    </ul>
+  
+
+  
+    <div class="site-search">
+      
+  
+  <div class="algolia-popup popup search-popup">
+    <div class="algolia-search">
+      <div class="algolia-search-input-icon">
+        <i class="fa fa-search"></i>
+      </div>
+      <div class="algolia-search-input" id="algolia-search-input"></div>
+    </div>
+
+    <div class="algolia-results">
+      <div id="algolia-stats"></div>
+      <div id="algolia-hits"></div>
+      <div id="algolia-pagination" class="algolia-pagination"></div>
+    </div>
+
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+  </div>
+
+
+
+
+    </div>
+  
+</nav>
+
+
+  
+
+
+
+ </div>
+    </header>
+
+    
+
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://blog.naaln.com/2013/10/blog-github-octopress/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="WHY·LIAM">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="//tva2.sinaimg.cn/crop.0.0.998.998.180/48910e01gw1ef5p6etuzdj20rs0rs771.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Why·Liam·Blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h2 class="post-title" itemprop="name headline">Blog = GitHub + Octopress</h2>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2013-10-19T12:17:00+08:00">2013-10-19</time>
+            
+
+            
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/technology/" itemprop="url" rel="index"><span itemprop="name">技术</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+              <span class="post-meta-divider">|</span>
+              <span class="post-meta-item-icon">
+                <i class="fa fa-comment-o"></i>
+              </span>
+              
+                <a href="/2013/10/blog-github-octopress/#SOHUCS" itemprop="discussionUrl">
+                  <span id="changyan_count_unit" class="post-comments-count hc-comment-count" data-xid="2013/10/blog-github-octopress/" itemprop="commentsCount"></span>
+                </a>
+              
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p>最近有些同学让我分享我的博客主题，其实主题早已经放在GitHub上了。下面索性基于<a href="https://github.com/jsw0528/octopress/tree/mrzhang_me/" target="_blank" rel="noopener">我Fork的Octopress</a>，讲一下如何使用Octopress在GitHub上建博客。 先来看看我的版本和原始版本的主要不同之处：</p>
+<p><strong>2012-04-13:</strong> 允许单篇文章独立引用CSS和JS，具体文件内容变动见commit<a href="https://github.com/jsw0528/octopress/commit/0aa27bb1ab423dbebd89cf5ffe55f8a5c65d6244#diff-1" target="_blank" rel="noopener">0aa27bb</a>和 <a href="https://github.com/jsw0528/octopress/commit/05fcdbfced318fa9909011d9eb7a33dd0f8792d1#diff-0" target="_blank" rel="noopener">05fcdbf</a>。</p>
+<ol>
+<li><p><a href="https://github.com/jsw0528/octopress/blob/mrzhang_me/.rvmrc" target="_blank" rel="noopener">.rvmrc</a> 改成使用我机子上装的Ruby版本（1.9.3），Octopress最低要求是1.9.2。</p>
+</li>
+<li><p><a href="https://github.com/jsw0528/octopress/blob/mrzhang_me/Gemfile" target="_blank" rel="noopener">Gemfile</a> 把源改成ruby.taobao.org，去掉部分gem的版本号限制，咱都用最新的。</p>
+</li>
+<li><p><a href="https://github.com/jsw0528/octopress/blob/mrzhang_me/Rakefile" target="_blank" rel="noopener">Rakefile</a> 用haml替换markdown（这个根据自己喜好来，只要是被支持的），时间改成东八区的，降低主题对custom目录的依赖。</p>
+</li>
+<li><p><a href="https://github.com/jsw0528/octopress/blob/mrzhang_me/_config.yml" target="_blank" rel="noopener">_config.yml</a> 这里都是一些定制化的配置信息，比如日期格式、永久链接、新浪微博等。</p>
+</li>
+<li><p><a href="https://github.com/jsw0528/octopress/blob/mrzhang_me/plugins/sh_js.rb" target="_blank" rel="noopener">plugins/sh_js.rb</a> [新增] 代码高亮插件，具体介绍看：<a href="http://mrzhang.me/blog/using-shjs-for-jekyll.html" target="_blank" rel="noopener">Using SHJS for Jekyll</a></p>
+</li>
+<li><p><a href="https://github.com/jsw0528/octopress/blob/mrzhang_me/plugins/tag_generator.rb" target="_blank" rel="noopener">plugins/tag_generator.rb</a> [新增] 其实Jekyll是支持Tag的，只不过Octopress目前没有官方插件支持，所以我自己搞了个，支持中文。</p>
+</li>
+<li><p><a href="https://github.com/jsw0528/octopress/blob/mrzhang_me/.themes/blog/" target="_blank" rel="noopener">.themes/blog/</a> [新增] 这个就是我博客的主题了。</p>
+</li>
+</ol>
+<p><strong>OK，现在让我们正式开始。</strong> </p>
+<h2 id="Step1-在本机安装Octopress-首先，必须先在本机安装配置"><a href="#Step1-在本机安装Octopress-首先，必须先在本机安装配置" class="headerlink" title="Step1 - 在本机安装Octopress 首先，必须先在本机安装配置"></a>Step1 - 在本机安装Octopress 首先，必须先在本机安装配置</h2><p><a href="http://help.github.com/mac-set-up-git" target="_blank" rel="noopener">Git</a>和<a href="http://www.ruby-lang.org/" target="_blank" rel="noopener">Ruby</a>，然后就是把Octopress源码从GitHub上拉下来：<br><figure class="highlight crmsh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git <span class="keyword">clone</span> <span class="title">git</span>://github.com/jsw0528/octopress.git</span><br></pre></td></tr></table></figure></p>
+<p>运行上面的代码后，你会看到：<br><figure class="highlight groovy"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">Cloning into octopress...</span><br><span class="line"><span class="string">remote:</span> Counting <span class="string">objects:</span> <span class="number">4103</span>, done.</span><br><span class="line"><span class="string">remote:</span> Compressing <span class="string">objects:</span> <span class="number">100</span>% (<span class="number">1835</span>/<span class="number">1835</span>), done.</span><br><span class="line"><span class="string">remote:</span> Total <span class="number">4103</span> (delta <span class="number">2341</span>), reused <span class="number">3556</span> (delta <span class="number">1946</span>)</span><br><span class="line">Receiving <span class="string">objects:</span> <span class="number">100</span>% (<span class="number">4103</span><span class="regexp">/4103), 1.03 MiB | 316 KiB/</span>s, done.</span><br><span class="line">Resolving <span class="string">deltas:</span> <span class="number">100</span>% (<span class="number">2341</span>/<span class="number">2341</span>), done.</span><br></pre></td></tr></table></figure></p>
+<p>现在源码已经在你机子上了，继续：<br><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> <span class="built_in">cd</span> octopress</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> bundle install</span></span><br></pre></td></tr></table></figure></p>
+<p>至此，Octopress所需的环境已经搭建成功。 </p>
+<h2 id="Step2-安装主题-由于我博客的主题以"><a href="#Step2-安装主题-由于我博客的主题以" class="headerlink" title="Step2 - 安装主题 由于我博客的主题以"></a>Step2 - 安装主题 由于我博客的主题以</h2><p><code>submodule</code>的方式引入了我们前端团队的<a href="https://github.com/eDoctor/eDr_assets_Sass" target="_blank" rel="noopener">基础样式库</a>，所以需要进行下面两步，把样式库的文件全部拉下来：<br><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> git submodule init</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> git submodule update</span></span><br></pre></td></tr></table></figure></p>
+<p>现在可以安装主题了，</p>
+<p><code>blog</code>是主题名称。其实这步就是把<code>.themes/blog/</code>内的两个目录复制到项目根目录。<br><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> rake install[<span class="string">'blog'</span>]</span></span><br></pre></td></tr></table></figure></p>
+<h2 id="Step3-连接GitHub-Pages"><a href="#Step3-连接GitHub-Pages" class="headerlink" title="Step3 - 连接GitHub Pages"></a>Step3 - 连接GitHub Pages</h2><p>首先，你得有一个GitHub的帐号，并且已经创建了一个新的Repository。如果你准备用自己的域名的话，Repository的名称可以随便取，不过正常人在正常情况下，一般都是以域名取名的^_^。如果你没有自己的域名，GitHub是提供二级域名使用的，但是你得把Repository取名为</p>
+<p><code>你的帐号.github.com</code>，并且，部署的时候会占用你的<code>master</code>分支。 <strong>Tips：</strong> </p>
+<ol>
+<li>如果用自己的域名，记得把<code>source/CNAME</code>文件内的域名改成你的。还有把域名的A Record指向IP：<code>207.97.227.245</code>；</li>
+<li>如果用GitHub提供的二级域名，记得把<code>source/CNAME</code>删掉； 完成上述准备工作后，运行： <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> rake setup_github_pages</span></span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+<p>它会提示你输入有读写权限的Repository Url，这个在GitHub上可以找到。Url形如：<br><figure class="highlight autohotkey"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">`git@github.com:jsw0528/MrZhang.me.git`，其中，`jsw0528`是我的帐号，`MrZhang.me`是我的Repository的名称。</span><br></pre></td></tr></table></figure></p>
+<h2 id="Step4-配置你的博客-所有配置项都在"><a href="#Step4-配置你的博客-所有配置项都在" class="headerlink" title="Step4 - 配置你的博客 所有配置项都在"></a>Step4 - 配置你的博客 所有配置项都在</h2><p><code>_config.yml</code>文件内，用你喜欢的编辑器打开它，然后改成你的数据即可。 </p>
+<h2 id="Step5-为备份posts做准备"><a href="#Step5-为备份posts做准备" class="headerlink" title="Step5 - 为备份posts做准备"></a>Step5 - 为备份posts做准备</h2><p>数据备份很重要，我们可以把文章备份到另一个分支，比如</p>
+<p><code>store</code>。在安装完主题后，系统会自动创建一个空目录<code>source/_posts</code>，以后创建的文章都会保存在这个目录内。我们先定位到该目录，然后初始化git（建议新开一个终端窗口，省得不停地切换目录）：<br><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> <span class="built_in">cd</span> <span class="built_in">source</span>/_posts/</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> git init</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> touch README.md</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> git add *</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> git commit -m <span class="string">'first commit'</span></span></span><br><span class="line"><span class="meta">$</span><span class="bash"> git remote add origin git@github.com:[Username]/[Repository].git</span></span><br></pre></td></tr></table></figure></p>
+<p>commit即可，无需push，因为我们重点是要新建</p>
+<p><code>store</code>分支。接下来我们创建并切换到<code>store</code>：<br><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> git checkout -b store</span></span><br></pre></td></tr></table></figure></p>
+<p>回到刚才的窗口，继续下面的步骤。 git入门，推荐看下</p>
+<p><a href="http://rogerdudler.github.com/git-guide/index.zh.html" target="_blank" rel="noopener">这篇文章</a>，小清新风格。当然，你也可以使用<a href="http://mac.github.com/" target="_blank" rel="noopener">GitHub for Mac</a>，备份的准备步骤如下： </p>
+<ol>
+<li>把<code>source/_posts</code>目录拖到仓库列表界面的左下角，在弹出新建空仓库的确认框后点「Yes」；</li>
+<li>双击进入这个仓库，切换到「Settings」项，填入<code>git@github.com:[Username]/[Repository].git</code>后点「Update Remote」；</li>
+<li>回到仓库列表界面，点底部的刷新按钮，刷新成功后，列表上的<code>_posts</code>将换成你的仓库名；</li>
+<li>随便创建一个文件，比如上面的<code>touch README.md</code>；</li>
+<li>再次进入这个仓库，切换到「Changes」项，你会看到刚刚创建的文件了，点「Commit」按钮；</li>
+<li>这个时候可以新建<code>store</code>分支了，点软件左下角的分支图标，输入<code>store</code>，回车。</li>
+</ol>
+<h2 id="Step6-创建一篇文章-码字时，我们可以先在本地起一个服务，预览无误后再部署。新开一个终端窗口（保证定位到项目根目录），运行："><a href="#Step6-创建一篇文章-码字时，我们可以先在本地起一个服务，预览无误后再部署。新开一个终端窗口（保证定位到项目根目录），运行：" class="headerlink" title="Step6 - 创建一篇文章 码字时，我们可以先在本地起一个服务，预览无误后再部署。新开一个终端窗口（保证定位到项目根目录），运行："></a>Step6 - 创建一篇文章 码字时，我们可以先在本地起一个服务，预览无误后再部署。新开一个终端窗口（保证定位到项目根目录），运行：</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> rake preview</span></span><br></pre></td></tr></table></figure>
+<p>然后你就可以使用<br><code>http://localhost:4000</code>访问你的本地博客了。 创建文章：<br><figure class="highlight haxe"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ rake <span class="keyword">new</span><span class="type">_post</span>[<span class="string">'Hello World'</span>]</span><br></pre></td></tr></table></figure></p>
+<p>然后到</p>
+<p><code>source/_posts</code>目录内找文件名形如<code>YYYY-MM-DD-hello-world.haml</code>的文件。用你喜欢的编辑器打开它，码字。 如果你对<code>.themes/blog</code>内的主题文件做了改动，可以运行下面的命令更新：<br><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> rake update_source[<span class="string">'blog'</span>]</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> rake update_style[<span class="string">'blog'</span>]</span></span><br></pre></td></tr></table></figure></p>
+<h2 id="Step7-部署"><a href="#Step7-部署" class="headerlink" title="Step7 - 部署"></a>Step7 - 部署</h2><p>先把整个项目静态化，然后再部署到GitHub：<br><figure class="highlight verilog"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ rake <span class="keyword">generate</span></span><br><span class="line">$ rake deploy</span><br></pre></td></tr></table></figure></p>
+<p>当你看到「Github Pages deploy complete」后，就表示你大功已成。Enjoy! </p>
+<p><strong>Tips：</strong> Octopress提供的所有<code>rake</code>方法，可以运行<code>rake -T</code>查看。 </p>
+<h2 id="Step8-备份"><a href="#Step8-备份" class="headerlink" title="Step8 - 备份"></a>Step8 - 备份</h2><p>回到<code>source/_posts</code>目录内，运行下面的命令把文章备份到GitHub上：<br><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> git add *.haml</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> git commit -m <span class="string">'backup posts'</span></span></span><br><span class="line"><span class="meta">$</span><span class="bash"> git push origin store</span></span><br></pre></td></tr></table></figure></p>
+<p>到此结束，希望对你有帮助。 放弃臃肿的WP，投入Octopress的怀抱吧～ 像黑客一样写博客！</p>
+<div style="clear:both"></div><div class="cc"><p>The <a href="https://blog.naaln.com">Why·Liam·Blog</a> by <a href="https://www.naaln.com" target="_blank" rel="external">WhyLiam</a> is licensed under a <a href="http://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" rel="external">Creative Commons BY-NC-ND 4.0 International License</a>.</p><p>由<a href="https://www.naaln.com" target="_blank" rel="external">WhyLiam</a>创作并维护的<a href="https://blog.naaln.com">Why·Liam·Blog</a>采用创作共用<a href="http://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" rel="external">保留署名-非商业-禁止演绎4.0国际许可证</a>。</p><p>本文首发于<a href="https://blog.naaln.com">Why·Liam·Blog (https://blog.naaln.com)</a>，版权所有，侵权必究。</p><p>本文永久链接：<a href="https://blog.naaln.com/2013/10/blog-github-octopress/">https://blog.naaln.com/2013/10/blog-github-octopress/</a></p><p></p></div>
+      
+    </div>
+    
+    
+    
+
+    
+      <div>
+        <div id="wechat_subscriber" style="display: block; padding: 10px 0; margin: 20px auto; width: 100%; text-align: center">
+    <img id="wechat_subscriber_qcode" src="//ws1.sinaimg.cn/large/006tKfTcgy1fg8gpi7kaaj30by0by74i.jpg" alt="WHY·LIAM wechat" style="width: 200px; max-width: 100%;"/>
+    <div>记录生活，研究产品，分享设计，分析数据，讨论科技和商业，不定期扯淡。</div>
+</div>
+
+      </div>
+    
+
+    
+      <div>
+        <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+  <div>如果觉得我的文章对您有用，请随意打赏。您的支持将鼓励我继续创作！</div>
+  <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+    <span>打赏</span>
+  </button>
+  <div id="QR" style="display: none;">
+
+    
+      <div id="wechat" style="display: inline-block">
+        <img id="wechat_qr" src="//ws1.sinaimg.cn/mw690/006tNc79gy1fm7yqrau7mj30f00ezad5.jpg" alt="WHY·LIAM 微信支付"/>
+        <p>微信支付</p>
+      </div>
+    
+
+    
+      <div id="alipay" style="display: inline-block">
+        <img id="alipay_qr" src="//ww3.sinaimg.cn/mw690/48910e01gw1evkbfendrjj20ci0ci0uf.jpg" alt="WHY·LIAM 支付宝"/>
+        <p>支付宝</p>
+      </div>
+    
+
+    
+
+  </div>
+</div>
+
+      </div>
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/octopress/" rel="tag"># octopress</a>
+          
+            <a href="/tags/github/" rel="tag"># github</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2013/10/in-mac-os-x-is-set-up-on-your-own-octopress/" rel="next" title="在Mac OS X上架设属于你的Octopress">
+                <i class="fa fa-chevron-left"></i> 在Mac OS X上架设属于你的Octopress
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2013/10/octopress-blog-tips/" rel="prev" title="Octopress博客技巧">
+                Octopress博客技巧 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+  
+    <div class="comments" id="comments">
+      <div id="SOHUCS"></div>
+    </div>
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+
+      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image"
+                src="//tva2.sinaimg.cn/crop.0.0.998.998.180/48910e01gw1ef5p6etuzdj20rs0rs771.jpg"
+                alt="WHY·LIAM" />
+            
+              <p class="site-author-name" itemprop="name">WHY·LIAM</p>
+              <p class="site-description motion-element" itemprop="description"></p>
+          </div>
+
+          
+            <nav class="site-state motion-element">
+              
+                <div class="site-state-item site-state-posts">
+                
+                  <a href="/archives/">
+                
+                    <span class="site-state-item-count">721</span>
+                    <span class="site-state-item-name">日志</span>
+                  </a>
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-categories">
+                  <a href="/categories/index.html">
+                    <span class="site-state-item-count">4</span>
+                    <span class="site-state-item-name">分类</span>
+                  </a>
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-tags">
+                  <a href="/tags/index.html">
+                    <span class="site-state-item-count">67</span>
+                    <span class="site-state-item-name">标签</span>
+                  </a>
+                </div>
+              
+            </nav>
+          
+
+          
+            <div class="feed-link motion-element">
+              <a href="/atom.xml" rel="alternate">
+                <i class="fa fa-rss"></i>
+                RSS
+              </a>
+            </div>
+          
+
+          
+            <div class="links-of-author motion-element">
+                
+                  <span class="links-of-author-item">
+                    <a href="https://github.com/liszd" target="_blank" title="GitHub" rel="external nofollow">
+                      
+                        <i class="fa fa-fw fa-github"></i>GitHub</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="http://weibo.com/whyliam" target="_blank" title="微博" rel="external nofollow">
+                      
+                        <i class="fa fa-fw fa-weibo"></i>微博</a>
+                  </span>
+                
+            </div>
+          
+
+          
+          
+            <div class="cc-license motion-element" itemprop="license">
+              <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/" class="cc-opacity" target="_blank" rel="external nofollow">
+                <img src="/images/cc-by-nc-nd.svg" alt="Creative Commons" />
+              </a>
+            </div>
+          
+
+          
+          
+            <div class="links-of-blogroll motion-element links-of-blogroll-block">
+              <div class="links-of-blogroll-title">
+                <i class="fa  fa-fw fa-link"></i>
+                Links
+              </div>
+              <ul class="links-of-blogroll-list">
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="http://www.naaln.com/" title="纳兰主页" target="_blank">纳兰主页</a>
+                  </li>
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="http://photo.naaln.com/" title="纳兰相册" target="_blank">纳兰相册</a>
+                  </li>
+                
+              </ul>
+            </div>
+          
+
+          
+            
+          
+          
+
+        </div>
+      </section>
+
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; 2003 &mdash; <span itemprop="copyrightYear">2018</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">WHY·LIAM</span>
+
+  
+
+  
+</div>
+
+
+  
+
+
+
+  <div class="powered-by">由 <a class="theme-link" target="_blank" rel="external nofollow" href="https://hexo.io">Hexo</a> 强力驱动</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" rel="external nofollow" href="https://github.com/theme-next/hexo-theme-next">NexT.Muse</a> v6.0.2</div>
+
+
+
+  <div class="footer-custom">Hosted by <a target="_blank" rel="external nofollow" href="https://pages.coding.me"><b>Coding Pages</b></a></div>
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=6.0.2"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=6.0.2"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=6.0.2"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=6.0.2"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=6.0.2"></script>
+
+
+
+  
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+  
+    <script type="text/javascript">
+    (function(){
+      var appid = 'cytklkKc0';
+      var conf = 'prod_b1dd516bbb7f3198591656f99d9ace80';
+      var width = window.innerWidth || document.documentElement.clientWidth;
+      if (width < 960) {
+      window.document.write('<script id="changyan_mobile_js" charset="utf-8" type="text/javascript" src="https://changyan.sohu.com/upload/mobile/wap-js/changyan_mobile.js?client_id=' + appid + '&conf=' + conf + '"><\/script>'); } else { var loadJs=function(d,a){var c=document.getElementsByTagName("head")[0]||document.head||document.documentElement;var b=document.createElement("script");b.setAttribute("type","text/javascript");b.setAttribute("charset","UTF-8");b.setAttribute("src",d);if(typeof a==="function"){if(window.attachEvent){b.onreadystatechange=function(){var e=b.readyState;if(e==="loaded"||e==="complete"){b.onreadystatechange=null;a()}}}else{b.onload=a}}c.appendChild(b)};loadJs("https://changyan.sohu.com/upload/changyan.js",function(){
+        window.changyan.api.config({appid:appid,conf:conf})});
+      }
+    })();
+    </script>
+    <script type="text/javascript" src="https://assets.changyan.sohu.com/upload/plugins/plugins.count.js"></script>
+  
+
+
+
+
+
+
+
+  
+
+
+
+
+  
+  
+  
+  <link rel="stylesheet" href="/lib/algolia-instant-search/instantsearch.min.css">
+
+  
+  
+  <script src="/lib/algolia-instant-search/instantsearch.min.js"></script>
+  
+
+  <script src="/js/src/algolia-search.js?v=6.0.2"></script>
+
+
+
+  
+
+  
+
+  
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';        
+    }
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>

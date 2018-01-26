@@ -1,0 +1,989 @@
+<!DOCTYPE html>
+
+
+
+
+<html class="theme-next muse" lang="zh-CN">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+  <meta name="google-site-verification" content="ByVfaP_E3b9ZYRUGhNAUFSQKL8mJQwUehpQwoxJ5n-c" />
+
+
+
+  <meta name="msvalidate.01" content="DB220684085BEDBD2E49E8E942534B1F" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=6.0.2" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon-next.png?v=6.0.2">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32-next.png?v=6.0.2">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16-next.png?v=6.0.2">
+
+
+  <link rel="mask-icon" href="/favicon/logo.svg?v=6.0.2" color="#222">
+
+
+
+
+
+
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Muse',
+    version: '6.0.2',
+    sidebar: {"position":"right","display":"hide","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: false,
+    fastclick: false,
+    lazyload: false,
+    tabs: true,
+    motion: {"enable":false,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    algolia: {
+      applicationID: 'XILKIWTAM9',
+      apiKey: '8c01137fe05d281ccd531a0ec622322a',
+      indexName: 'blog',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"搜索文章","hits_empty":"啊，找不到 ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+  
+
+
+
+
+  
+  <meta name="keywords" content="opengl," />
+
+
+<meta name="description" content="在OpenGL中用参数方程绘制球体  效果图  程序的代码  123456789101112Sphere.h    #pragma once      // Windows Header Files   #include &amp;lt;windows.h&amp;gt;      // C RunTime Header Files   #include &amp;lt;stdlib.h&amp;gt;   #include &amp;">
+<meta name="keywords" content="opengl">
+<meta property="og:type" content="article">
+<meta property="og:title" content="OpenGL 参数方程绘制球">
+<meta property="og:url" content="https://blog.naaln.com/2013/04/opengl-parameters-equation-draw-ball/index.html">
+<meta property="og:site_name" content="Why·Liam·Blog">
+<meta property="og:description" content="在OpenGL中用参数方程绘制球体  效果图  程序的代码  123456789101112Sphere.h    #pragma once      // Windows Header Files   #include &amp;lt;windows.h&amp;gt;      // C RunTime Header Files   #include &amp;lt;stdlib.h&amp;gt;   #include &amp;">
+<meta property="og:locale" content="zh-CN">
+<meta property="og:image" content="http://img.blog.163.com/photo/a3Y5Xf--xlrA7krOsBGqOA==/298644950290647721.jpg">
+<meta property="og:updated_time" content="2017-09-03T09:15:57.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="OpenGL 参数方程绘制球">
+<meta name="twitter:description" content="在OpenGL中用参数方程绘制球体  效果图  程序的代码  123456789101112Sphere.h    #pragma once      // Windows Header Files   #include &amp;lt;windows.h&amp;gt;      // C RunTime Header Files   #include &amp;lt;stdlib.h&amp;gt;   #include &amp;">
+<meta name="twitter:image" content="http://img.blog.163.com/photo/a3Y5Xf--xlrA7krOsBGqOA==/298644950290647721.jpg">
+
+
+
+  <link rel="alternate" href="/atom.xml" title="Why·Liam·Blog" type="application/atom+xml" />
+
+
+
+
+  <link rel="canonical" href="https://blog.naaln.com/2013/04/opengl-parameters-equation-draw-ball/"/>
+
+
+  <title>OpenGL 参数方程绘制球 | Why·Liam·Blog</title>
+  
+
+
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-47966442-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-47966442-2');
+</script>
+
+
+
+
+
+
+  
+<script src="//msite.baidu.com/sdk/c.js?appid=1586840953097399"></script>
+<link rel="canonical" href="https://blog.naaln.com/2013/04/opengl-parameters-equation-draw-ball/"/>
+<script type="application/ld+json">
+    {
+        "@context": "https://ziyuan.baidu.com/contexts/cambrian.jsonld",
+        "@id": "https://blog.naaln.com/2013/04/opengl-parameters-equation-draw-ball/",
+        "appid": "1586840953097399",
+        "title": "OpenGL 参数方程绘制球",
+        "images": [
+            ""
+            ],
+        "description": "",
+        "pubDate": "",
+        "upDate": "",
+        "lrDate": ""
+    }
+</script>
+
+  <noscript>
+  <style type="text/css">
+    .use-motion .motion-element,
+    .use-motion .brand,
+    .use-motion .menu-item,
+    .sidebar-inner,
+    .use-motion .post-block,
+    .use-motion .pagination,
+    .use-motion .comments,
+    .use-motion .post-header,
+    .use-motion .post-body,
+    .use-motion .collection-title { opacity: initial; }
+
+    .use-motion .logo,
+    .use-motion .site-title,
+    .use-motion .site-subtitle {
+      opacity: initial;
+      top: initial;
+    }
+
+    .use-motion {
+      .logo-line-before i { left: initial; }
+      .logo-line-after i { right: initial; }
+    }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-CN">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-right page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"> <div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Why·Liam·Blog</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <h1 class="site-subtitle" itemprop="description">人生若如初見</h1>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            <i class="menu-item-icon fa fa-fw fa-home"></i> <br />首页</a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />归档</a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-technology">
+          <a href="/categories/technology/" rel="section">
+            <i class="menu-item-icon fa fa-fw fa-code"></i> <br />技术</a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-jottings">
+          <a href="/categories/jottings/" rel="section">
+            <i class="menu-item-icon fa fa-fw fa-language"></i> <br />随笔</a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tour">
+          <a href="/categories/tour/" rel="section">
+            <i class="menu-item-icon fa fa-fw fa-globe"></i> <br />旅游</a>
+        </li>
+      
+
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br />搜索</a>
+        </li>
+      
+    </ul>
+  
+
+  
+    <div class="site-search">
+      
+  
+  <div class="algolia-popup popup search-popup">
+    <div class="algolia-search">
+      <div class="algolia-search-input-icon">
+        <i class="fa fa-search"></i>
+      </div>
+      <div class="algolia-search-input" id="algolia-search-input"></div>
+    </div>
+
+    <div class="algolia-results">
+      <div id="algolia-stats"></div>
+      <div id="algolia-hits"></div>
+      <div id="algolia-pagination" class="algolia-pagination"></div>
+    </div>
+
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+  </div>
+
+
+
+
+    </div>
+  
+</nav>
+
+
+  
+
+
+
+ </div>
+    </header>
+
+    
+
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://blog.naaln.com/2013/04/opengl-parameters-equation-draw-ball/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="WHY·LIAM">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="//tva2.sinaimg.cn/crop.0.0.998.998.180/48910e01gw1ef5p6etuzdj20rs0rs771.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Why·Liam·Blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h2 class="post-title" itemprop="name headline">OpenGL 参数方程绘制球</h2>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2013-04-02T02:41:00+08:00">2013-04-02</time>
+            
+
+            
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/technology/" itemprop="url" rel="index"><span itemprop="name">技术</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+              <span class="post-meta-divider">|</span>
+              <span class="post-meta-item-icon">
+                <i class="fa fa-comment-o"></i>
+              </span>
+              
+                <a href="/2013/04/opengl-parameters-equation-draw-ball/#SOHUCS" itemprop="discussionUrl">
+                  <span id="changyan_count_unit" class="post-comments-count hc-comment-count" data-xid="2013/04/opengl-parameters-equation-draw-ball/" itemprop="commentsCount"></span>
+                </a>
+              
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p><strong>在OpenGL中用参数方程绘制球体</strong> </p>
+<p>效果图</p>
+<p><img src="http://img.blog.163.com/photo/a3Y5Xf--xlrA7krOsBGqOA==/298644950290647721.jpg" alt="请输入图片描述"></p>
+<p>程序的代码 </p>
+<figure class="highlight dts"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">Sphere.h </span><br><span class="line">   <span class="meta">#pragma once</span></span><br><span class="line">   </span><br><span class="line">   <span class="comment">// Windows Header Files</span></span><br><span class="line">   <span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;windows.h&gt;</span></span></span><br><span class="line">   </span><br><span class="line">   <span class="comment">// C RunTime Header Files</span></span><br><span class="line">   <span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;stdlib.h&gt;</span></span></span><br><span class="line">   <span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;malloc.h&gt;</span></span></span><br><span class="line">   <span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;memory.h&gt;</span></span></span><br><span class="line">   <span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;tchar.h&gt;</span></span></span><br><span class="line">   <span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;math.h&gt;</span></span></span><br></pre></td></tr></table></figure>
+<figure class="highlight arduino"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br><span class="line">132</span><br><span class="line">133</span><br></pre></td><td class="code"><pre><span class="line">Sphere.h </span><br><span class="line">   <span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">"Sphere.h"</span></span></span><br><span class="line">   <span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;glut.h&gt;</span></span></span><br><span class="line">   </span><br><span class="line">   <span class="meta">#<span class="meta-keyword">define</span> pi 3.1415926</span></span><br><span class="line">   <span class="meta">#<span class="meta-keyword">define</span> SOLID 3000</span></span><br><span class="line">   <span class="meta">#<span class="meta-keyword">define</span> WIRE  3001</span></span><br><span class="line">   </span><br><span class="line">   <span class="keyword">typedef</span> <span class="keyword">int</span> SPHERE_MODE;</span><br><span class="line">   </span><br><span class="line">   <span class="keyword">typedef</span> struct Point3f</span><br><span class="line">   &#123;</span><br><span class="line">    GLfloat x;</span><br><span class="line">    GLfloat y;</span><br><span class="line">    GLfloat z;</span><br><span class="line">   &#125;<span class="built_in">point</span>;</span><br><span class="line">   </span><br><span class="line">   <span class="keyword">void</span> init(<span class="keyword">void</span>);</span><br><span class="line">   <span class="keyword">void</span> reshape(<span class="keyword">int</span> w,<span class="keyword">int</span> h);</span><br><span class="line">   <span class="keyword">void</span> <span class="built_in">display</span>(<span class="keyword">void</span>);</span><br><span class="line">   <span class="keyword">int</span> getPoint(GLfloat radius,GLfloat a,GLfloat b,<span class="built_in">point</span> &amp;p);</span><br><span class="line">   <span class="keyword">void</span> drawSlice(<span class="built_in">point</span> &amp;p1,<span class="built_in">point</span> &amp;p2,<span class="built_in">point</span> &amp;p3,<span class="built_in">point</span> &amp;p4,SPHERE_MODE mode);</span><br><span class="line">   <span class="built_in">point</span>* getPointMatrix(GLfloat radius,GLint slices);</span><br><span class="line">   <span class="keyword">int</span> drawSphere(GLfloat radius,GLint slices,SPHERE_MODE mode);</span><br><span class="line">   </span><br><span class="line">   <span class="keyword">int</span> APIENTRY _tWinMain(HINSTANCE hInstance,HINSTANCE hPrevInstance,LPTSTR lpCmdLine,<span class="keyword">int</span> nCmdShow)</span><br><span class="line">   &#123;</span><br><span class="line">    glutInitDisplayMode (GLUT_SINGLE | GLUT_RGB | GLUT_DEPTH); </span><br><span class="line">    glutInitWindowSize (<span class="number">500</span>, <span class="number">500</span>);</span><br><span class="line">    glutInitWindowPosition (<span class="number">100</span>, <span class="number">100</span>);</span><br><span class="line">    glutCreateWindow(<span class="string">"Sphere"</span>);</span><br><span class="line">    init ();</span><br><span class="line">    glutReshapeFunc(reshape);</span><br><span class="line">    glutDisplayFunc(<span class="built_in">display</span>);</span><br><span class="line">    glutMainLoop();</span><br><span class="line">    <span class="built_in">return</span> <span class="number">0</span>;</span><br><span class="line">   &#125;</span><br><span class="line">   <span class="keyword">void</span> init (<span class="keyword">void</span>)</span><br><span class="line">   &#123; </span><br><span class="line">    glClearColor (<span class="number">0.0</span>, <span class="number">0.0</span>, <span class="number">0.0</span>, <span class="number">0.0</span>);</span><br><span class="line">    glClearDepth(<span class="number">1</span>);</span><br><span class="line">    glShadeModel(GL_SMOOTH);</span><br><span class="line">    GLfloat _ambient[]=&#123;<span class="number">1.0</span>,<span class="number">1.0</span>,<span class="number">1.0</span>,<span class="number">1.0</span>&#125;;</span><br><span class="line">    GLfloat _diffuse[]=&#123;<span class="number">1.0</span>,<span class="number">1.0</span>,<span class="number">1.0</span>,<span class="number">1.0</span>&#125;;</span><br><span class="line">    GLfloat _specular[]=&#123;<span class="number">1.0</span>,<span class="number">1.0</span>,<span class="number">1.0</span>,<span class="number">1.0</span>&#125;;</span><br><span class="line">    GLfloat _position[]=&#123;<span class="number">200</span>,<span class="number">200</span>,<span class="number">200</span>,<span class="number">0</span>&#125;;</span><br><span class="line">    glLightfv(GL_LIGHT0,GL_AMBIENT,_ambient);</span><br><span class="line">    glLightfv(GL_LIGHT0,GL_DIFFUSE,_diffuse);</span><br><span class="line">    glLightfv(GL_LIGHT0,GL_SPECULAR,_specular);</span><br><span class="line">    glLightfv(GL_LIGHT0,GL_POSITION,_position);</span><br><span class="line">    glEnable(GL_TEXTURE_2D);</span><br><span class="line">    glEnable(GL_LIGHTING);</span><br><span class="line">    glEnable(GL_LIGHT0);</span><br><span class="line">    glEnable(GL_DEPTH_TEST);</span><br><span class="line">    glHint(GL_PERSPECTIVE_CORRECTION_HINT, GL_NICEST);</span><br><span class="line">   &#125;</span><br><span class="line">   <span class="keyword">void</span> reshape(<span class="keyword">int</span> w, <span class="keyword">int</span> h)</span><br><span class="line">   &#123;</span><br><span class="line">    glViewport (<span class="number">0</span>, <span class="number">0</span>, (GLsizei) w, (GLsizei) h);</span><br><span class="line">    glMatrixMode(GL_PROJECTION);</span><br><span class="line">    glLoadIdentity();</span><br><span class="line">    glOrtho(<span class="number">0.0</span>, <span class="number">500</span>, <span class="number">0.0</span>, <span class="number">500</span>, <span class="number">-500</span>, <span class="number">500</span>);</span><br><span class="line">    glMatrixMode(GL_MODELVIEW);</span><br><span class="line">    glLoadIdentity();</span><br><span class="line">   &#125;</span><br><span class="line">   <span class="keyword">void</span> <span class="built_in">display</span>(<span class="keyword">void</span>)</span><br><span class="line">   &#123;</span><br><span class="line">    glMatrixMode(GL_MODELVIEW);</span><br><span class="line">    glLoadIdentity();</span><br><span class="line">    glClear (GL_COLOR_BUFFER_BIT|GL_DEPTH_BUFFER_BIT);</span><br><span class="line">    glTranslated(<span class="number">250</span>,<span class="number">250</span>,<span class="number">0</span>);</span><br><span class="line">    glRotated(<span class="number">30</span>,<span class="number">1</span>,<span class="number">0</span>,<span class="number">0</span>);</span><br><span class="line">    glRotated(<span class="number">60</span>,<span class="number">0</span>,<span class="number">1</span>,<span class="number">0</span>);</span><br><span class="line">    glRotated(<span class="number">90</span>,<span class="number">0</span>,<span class="number">0</span>,<span class="number">1</span>);</span><br><span class="line">    glColor3f(<span class="number">1.0</span>,<span class="number">1.0</span>,<span class="number">1.0</span>);</span><br><span class="line">    drawSphere(<span class="number">200</span>,<span class="number">20</span>,WIRE); </span><br><span class="line">    glFlush();</span><br><span class="line">   &#125;</span><br><span class="line">   <span class="keyword">int</span> getPoint(GLfloat radius,GLfloat a,GLfloat b,<span class="built_in">point</span> &amp;p)</span><br><span class="line">   &#123;</span><br><span class="line">    p.x=radius*<span class="built_in">sin</span>(a*pi/<span class="number">180.0</span>)*<span class="built_in">cos</span>(b*pi/<span class="number">180.0</span>);</span><br><span class="line">    p.y=radius*<span class="built_in">sin</span>(a*pi/<span class="number">180.0</span>)*<span class="built_in">sin</span>(b*pi/<span class="number">180.0</span>);</span><br><span class="line">    p.z=radius*<span class="built_in">cos</span>(a*pi/<span class="number">180.0</span>);</span><br><span class="line">    <span class="built_in">return</span> <span class="number">1</span>;</span><br><span class="line">   &#125;</span><br><span class="line">   <span class="keyword">void</span> drawSlice(<span class="built_in">point</span> &amp;p1,<span class="built_in">point</span> &amp;p2,<span class="built_in">point</span> &amp;p3,<span class="built_in">point</span> &amp;p4,SPHERE_MODE mode)</span><br><span class="line">   &#123;</span><br><span class="line">    <span class="built_in">switch</span>(mode)</span><br><span class="line">    &#123;</span><br><span class="line">    <span class="built_in">case</span> SOLID:</span><br><span class="line">     glBegin(GL_QUADS);</span><br><span class="line">     <span class="built_in">break</span>;</span><br><span class="line">    <span class="built_in">case</span> WIRE:</span><br><span class="line">     glBegin(GL_LINE_LOOP);</span><br><span class="line">     <span class="built_in">break</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    glColor3f(<span class="number">1</span>,<span class="number">0</span>,<span class="number">0</span>);</span><br><span class="line">    glVertex3f(p1.x,p1.y,p1.z);</span><br><span class="line">    glVertex3f(p2.x,p2.y,p2.z);</span><br><span class="line">    glVertex3f(p3.x,p3.y,p3.z);</span><br><span class="line">    glVertex3f(p4.x,p4.y,p4.z);</span><br><span class="line">    glEnd();</span><br><span class="line">   &#125;</span><br><span class="line">   <span class="built_in">point</span>* getPointMatrix(GLfloat radius,GLint slices)</span><br><span class="line">   &#123;</span><br><span class="line">    <span class="keyword">int</span> i,j,w=<span class="number">2</span>*slices,h=slices;</span><br><span class="line">    <span class="keyword">float</span> a=<span class="number">0.0</span>,b=<span class="number">0.0</span>;</span><br><span class="line">    <span class="keyword">float</span> hStep=<span class="number">180.0</span>/(h<span class="number">-1</span>);</span><br><span class="line">    <span class="keyword">float</span> wStep=<span class="number">360.0</span>/w;</span><br><span class="line">    <span class="keyword">int</span> length=w*h;</span><br><span class="line">    <span class="built_in">point</span> *matrix;</span><br><span class="line">    matrix=(<span class="built_in">point</span> *)malloc(length*<span class="keyword">sizeof</span>(<span class="built_in">point</span>));</span><br><span class="line">    <span class="built_in">if</span>(!matrix)<span class="built_in">return</span> NULL;</span><br><span class="line">    <span class="built_in">for</span>(a=<span class="number">0.0</span>,i=<span class="number">0</span>;i&lt;h;i++,a+=hStep)</span><br><span class="line">     <span class="built_in">for</span>(b=<span class="number">0.0</span>,j=<span class="number">0</span>;j&lt;w;j++,b+=wStep)  </span><br><span class="line">      getPoint(radius,a,b,matrix[i*w+j]); </span><br><span class="line">    <span class="built_in">return</span> matrix;</span><br><span class="line">   &#125;</span><br><span class="line">   <span class="keyword">int</span> drawSphere(GLfloat radius,GLint slices,SPHERE_MODE mode)</span><br><span class="line">   &#123;</span><br><span class="line">    <span class="keyword">int</span> i=<span class="number">0</span>,j=<span class="number">0</span>,w=<span class="number">2</span>*slices,h=slices;</span><br><span class="line">    <span class="built_in">point</span> *mx;</span><br><span class="line">    mx=getPointMatrix(radius,slices);</span><br><span class="line">    <span class="built_in">if</span>(!mx)<span class="built_in">return</span> <span class="number">0</span>;</span><br><span class="line">    <span class="built_in">for</span>(;i&lt;h<span class="number">-1</span>;i++)</span><br><span class="line">    &#123;</span><br><span class="line">     <span class="built_in">for</span>(j=<span class="number">0</span>;j&lt;w<span class="number">-1</span>;j++)</span><br><span class="line">      drawSlice(mx[i*w+j],mx[i*w+j+<span class="number">1</span>],mx[(i+<span class="number">1</span>)*w+j+<span class="number">1</span>],mx[(i+<span class="number">1</span>)*w+j],mode);</span><br><span class="line">     drawSlice(mx[i*w+j],mx[i*w],mx[(i+<span class="number">1</span>)*w],mx[(i+<span class="number">1</span>)*w+j],mode);</span><br><span class="line">    &#125;</span><br><span class="line">    free(mx);</span><br><span class="line">    <span class="built_in">return</span> <span class="number">1</span>;</span><br><span class="line">   &#125;</span><br></pre></td></tr></table></figure>
+<p>首先要声明的是如果想运行上面的程序，在你的计算机上必须装有GLUT开发工具，并要将GLUT的头文件和库文件添加到你开发环境的头文件和库文件的目录中，并且让编译器能找到GLUT的动态连接库，即GLUT32.DLL。具体请参见GLUT的安装方法……</p>
+<p>进入正题：</p>
+<p><strong>1 头文件</strong></p>
+<p>先是Sphere.h，包含了windows.h头文件和一些其他可能用到的标准C头文件，可以直接写到Sphere.cpp里面。接下来在Sphere.cpp里面包含Sphere.h和GLUT的头文件glut.h</p>
+<p><strong>2 自定义宏、类型和结构体</strong></p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">define</span> pi 3.1415926</span></span><br></pre></td></tr></table></figure>
+<p>定义圆周率pi，后面计算坐标时要用到</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">define</span> SOLID 3000</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> WIRE  3001</span></span><br></pre></td></tr></table></figure>
+<p>定义画球的模式，SOLID表示画实面球，WIRE表示画网格球</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">typedef</span> <span class="keyword">int</span> SPHERE_MODE;</span><br></pre></td></tr></table></figure>
+<p>定义画球模式的类型，其实是个int整形</p>
+<figure class="highlight abnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">typedef struct Point3f</span><br><span class="line">   &#123;</span><br><span class="line">    GLfloat x<span class="comment">;</span></span><br><span class="line">    GLfloat y<span class="comment">;</span></span><br><span class="line">    GLfloat z<span class="comment">;</span></span><br><span class="line">   &#125;point<span class="comment">;</span></span><br></pre></td></tr></table></figure>
+<p>定义记录空间点坐标的结构体point，GLfloat类型其实就是GLUT里面定义的float类型</p>
+<p><strong>3 函数声明和实现</strong></p>
+<figure class="highlight lisp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">void init(<span class="name">void</span>)<span class="comment">;</span></span><br><span class="line">void reshape(<span class="name">int</span> w,int h)<span class="comment">;</span></span><br><span class="line">void display(<span class="name">void</span>)<span class="comment">;</span></span><br><span class="line">int getPoint(<span class="name">GLfloat</span> radius,GLfloat a,GLfloat b,point <span class="symbol">&amp;p</span>)<span class="comment">;</span></span><br><span class="line">void drawSlice(<span class="name">point</span> <span class="symbol">&amp;p1</span>,point <span class="symbol">&amp;p2</span>,point <span class="symbol">&amp;p3</span>,point <span class="symbol">&amp;p4</span>,SPHERE_MODE mode)<span class="comment">;</span></span><br><span class="line">point* getPointMatrix(<span class="name">GLfloat</span> radius,GLint slices)<span class="comment">;</span></span><br><span class="line">int drawSphere(<span class="name">GLfloat</span> radius,GLint slices,SPHERE_MODE mode)<span class="comment">;</span></span><br></pre></td></tr></table></figure>
+<p><code>init()</code>、<code>reshape()</code>和<code>display()</code>这3个函数是OpenGL绘图的一般过程所用的函数，这3个函数的函数名可以不同，但形参部分的形参类型必须一样（注），且这3个函数在主函数中是依次调用的。</p>
+<p>（注： void reshape(int w,int h); 也可作 void resizeWindow(int width,int height)）</p>
+<p>在init()函数里，分别对屏幕背景颜色，投影模式，光照，光原位置等进行了设置，并启用纹理，灯光和深度测试；</p>
+<p>reshape()函数里面，对视口和投影矩阵进行设置；</p>
+<p>接下来是display()函数，先移动原点坐标到窗口中心位置，再对所要绘制的图形进行一定角度的旋转，设置绘图的颜色，然后调用drawSphere()绘制球体。</p>
+<p>关于init()，reshape()和display()这3个函数里面的具体过程，请参见OpenGL的相关教程。</p>
+<p>下面的几个函数是绘制球体所用的，这里先简略给出他们的作用，具体实现将在下一部分详细解析：</p>
+<p><code>int getPoint(GLfloat radius,GLfloat a,GLfloat b,point &amp;p)</code> 函数：</p>
+<p>根据半径radius，a角（半径与Z轴正向的夹角），b角（半径在xy平面的投影与x轴正向的夹角）算出球面上点的坐标并记录到point类型的参数p中。</p>
+<p><code>void drawSlice(point &amp;p1,point &amp;p2,point &amp;p3,point &amp;p4,SPHERE_MODE mode)</code> 函数：</p>
+<p>根据实际调用时提供的4个点的坐标在空间画四边形，并用mode参数确定所画四边形是空心还是实心的。</p>
+<p><code>point* getPointMatrix(GLfloat radius,GLint slices)</code> 函数：</p>
+<p>根据提供的半径radius和分块数slices计算出一系列球面上的点的坐标，储存在一个动态创建的矩阵中，并返回指向该矩阵的指针，要求的分块数越多，计算的点就越多，球面就越光滑，矩阵也就越大。</p>
+<p><code>int drawSphere(GLfloat radius,GLint slices,SPHERE_MODE mode)</code> 函数：</p>
+<p>绘球所调用的函数，根据提供的半径radius和分块数slices在窗体中绘制球体，分块数越大，球面越光滑，mode参数用于确定要绘制实面球还是网格球。</p>
+<p><strong>4 绘球部分</strong></p>
+<p>这里绘制的球，其实是个球面。把球面看成是由很多个小的四边形平面构成的，这样就可以通过绘制这些小的四边形平面来构成整个球面。而对于两极部分，需要用三角形将球面两端封起来，如果把这些三角型看作是有两个顶点重合的四边形，问题就得到进一步的简化。因此只需知道球面上一些列点的空间坐标，就可以利用这些点来绘制四边形从而得到整个球面。把整个球面展开，可见球面上这些点构成的是一个矩阵，而这个矩阵中纵横相邻的四个元素的坐标正好构成的就是球面上的一个小平面。</p>
+<p>如何获取球面上点的坐标？</p>
+<p>利用球的空间坐标参数方程</p>
+<figure class="highlight ini"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">x</span>=r·sin(α)·cos(β)</span><br><span class="line"><span class="attr">y</span>=r·sin(α)·sin(β)</span><br><span class="line"><span class="attr">z</span>=r·cos(α)</span><br></pre></td></tr></table></figure>
+<p>r是球的半径，α角是半径与Z轴正向的夹角，β角是半径在xy平面的投影与x轴正向的夹角，他们的取值范围是</p>
+<figure class="highlight lsl"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">0</span>≤r≤∞    <span class="number">0</span>≤α≤π    <span class="number">0</span>≤β≤<span class="number">2</span>π</span><br></pre></td></tr></table></figure>
+<p>因此函数 getPoint() 就是通过此参数方程来获得空间点的坐标；</p>
+<figure class="highlight excel"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">int</span> getPoint(GLfloat radius,GLfloat a,GLfloat b,point &amp;p)</span><br><span class="line">&#123;</span><br><span class="line"> p.x=radius*<span class="built_in">sin</span>(a*<span class="built_in">pi</span>/<span class="number">180.0</span>)*<span class="built_in">cos</span>(b*<span class="built_in">pi</span>/<span class="number">180.0</span>);</span><br><span class="line"> p.y=radius*<span class="built_in">sin</span>(a*<span class="built_in">pi</span>/<span class="number">180.0</span>)*<span class="built_in">sin</span>(b*<span class="built_in">pi</span>/<span class="number">180.0</span>);</span><br><span class="line"> p.z=radius*<span class="built_in">cos</span>(a*<span class="built_in">pi</span>/<span class="number">180.0</span>);</span><br><span class="line"> return <span class="number">1</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>值得注意的是 sin() 和 cos() 函数的参数是弧度角，而形参传入的是角度角，因此需要进行转换。</p>
+<p>获取球面坐标矩阵</p>
+<p>形参slices确定取点的间隔大小。</p>
+<p>α角的大小是0~180度，β角的大小是0~360度，因此我们在z轴方向，每隔180/(slice-1)取一横列的点作为α角，在垂直于z轴的平面上，每隔360/slice取一纵列的点作为β角。由于β角的范围是α角的两倍，所以矩阵横向取点的个数是纵向取点的两倍。接下来就是动态分配内存空间，然后通过循环为矩阵中的元素，即球面上的点的坐标赋值。这里调用 getPoint() 这个函数来计算空间点坐标。虽然分配出来的空间是线性的，但可以通过元素的下标计算确定该元素在线性空间的位置。</p>
+<figure class="highlight rsl"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">point</span>* getPointMatrix(GLfloat radius,GLint slices)</span><br><span class="line">&#123;</span><br><span class="line"> int i,j,w=<span class="number">2</span>*slices,h=slices;</span><br><span class="line"> <span class="keyword">float</span> a=<span class="number">0.0</span>,b=<span class="number">0.0</span>;</span><br><span class="line"> <span class="keyword">float</span> hStep=<span class="number">180.0</span>/(h<span class="number">-1</span>);</span><br><span class="line"> <span class="keyword">float</span> wStep=<span class="number">360.0</span>/w;</span><br><span class="line"> int <span class="built_in">length</span>=w*h;</span><br><span class="line"> <span class="keyword">point</span> *<span class="keyword">matrix</span>;</span><br><span class="line"> <span class="keyword">matrix</span>=(<span class="keyword">point</span> *)malloc(<span class="built_in">length</span>*sizeof(<span class="keyword">point</span>));</span><br><span class="line"> <span class="keyword">if</span>(!<span class="keyword">matrix</span>)<span class="keyword">return</span> NULL;</span><br><span class="line"> <span class="keyword">for</span>(a=<span class="number">0.0</span>,i=<span class="number">0</span>;i&lt;h;i++,a+=hStep)</span><br><span class="line">  <span class="keyword">for</span>(b=<span class="number">0.0</span>,j=<span class="number">0</span>;j&lt;w;j++,b+=wStep)  </span><br><span class="line">   getPoint(radius,a,b,<span class="keyword">matrix</span>[i*w+j]); </span><br><span class="line"> <span class="keyword">return</span> <span class="keyword">matrix</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>四点绘面</p>
+<figure class="highlight armasm"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="symbol">void</span> drawSlice(point &amp;<span class="built_in">p1</span>,point &amp;<span class="built_in">p2</span>,point &amp;<span class="built_in">p3</span>,point &amp;<span class="built_in">p4</span>,SPHERE_MODE mode)</span><br><span class="line">&#123;</span><br><span class="line"> <span class="keyword">switch(mode)</span></span><br><span class="line"><span class="keyword"> </span>&#123;</span><br><span class="line"> case SOLID:</span><br><span class="line">  glBegin(GL_QUADS)<span class="comment">;</span></span><br><span class="line">  <span class="keyword">break;</span></span><br><span class="line"><span class="keyword"> </span>case WIRE:</span><br><span class="line">  glBegin(GL_LINE_LOOP)<span class="comment">;</span></span><br><span class="line">  <span class="keyword">break;</span></span><br><span class="line"><span class="keyword"> </span>&#125;</span><br><span class="line"> glColor3f(<span class="number">1</span>,<span class="number">0</span>,<span class="number">0</span>)<span class="comment">;</span></span><br><span class="line"> glVertex3f(<span class="built_in">p1</span>.x,<span class="built_in">p1</span>.y,<span class="built_in">p1</span>.z)<span class="comment">;</span></span><br><span class="line"> glVertex3f(<span class="built_in">p2</span>.x,<span class="built_in">p2</span>.y,<span class="built_in">p2</span>.z)<span class="comment">;</span></span><br><span class="line"> glVertex3f(<span class="built_in">p3</span>.x,<span class="built_in">p3</span>.y,<span class="built_in">p3</span>.z)<span class="comment">;</span></span><br><span class="line"> glVertex3f(<span class="built_in">p4</span>.x,<span class="built_in">p4</span>.y,<span class="built_in">p4</span>.z)<span class="comment">;</span></span><br><span class="line"> glEnd()<span class="comment">;</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>形参mode确定了绘图的模式，当其为SOLID时，用GL_QUADS模式绘实平面，当为WIRE时，就用</p>
+<p>GL_LINE_LOOP绘制首尾相连的四条线。注意最后要用 glEnd() 结束对该平面的绘制，否则会得到“怪异”的结果。</p>
+<p>绘制球面</p>
+<figure class="highlight lsl"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">int drawSphere(GLfloat radius,GLint slices,SPHERE_MODE mode)</span><br><span class="line">&#123;</span><br><span class="line"> int i=<span class="number">0</span>,j=<span class="number">0</span>,w=<span class="number">2</span>*slices,h=slices;</span><br><span class="line"> point *mx;</span><br><span class="line"> mx=getPointMatrix(radius,slices);</span><br><span class="line"> if(!mx)return <span class="number">0</span>;</span><br><span class="line"> for(;i&lt;h<span class="number">-1</span>;i++)</span><br><span class="line"> &#123;</span><br><span class="line">  for(j=<span class="number">0</span>;j&lt;w<span class="number">-1</span>;j++)</span><br><span class="line">   drawSlice(mx[i*w+j],mx[i*w+j+<span class="number">1</span>],mx[(i+<span class="number">1</span>)*w+j+<span class="number">1</span>],mx[(i+<span class="number">1</span>)*w+j],mode);</span><br><span class="line">  drawSlice(mx[i*w+j],mx[i*w],mx[(i+<span class="number">1</span>)*w],mx[(i+<span class="number">1</span>)*w+j],mode);</span><br><span class="line"> &#125;</span><br><span class="line"> free(mx);</span><br><span class="line"> return <span class="number">1</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>这就是绘制球面的主框架函数了，先调用 getPointMatrix() 来产生球面点矩阵，并用局部变量mx记录该矩阵在内存中的位置。接下来就是把该矩阵上记录的点用 drawSlice() 函数绘成平面。例如mx[0,0]，mx[0,1]，mx[1,1]，mx[1,0]这四个元素中记录的就是沿逆时针方向构成球面上第一个平面的4个点了。要注意的是，在矩阵的横向上，最后一列点需要和第一列点连起来再绘制平面，这样产生的球面才是封闭的。在函数最后要把动态分配的内存空间释放掉，不然会造成内存泄露。如果绘制成功，函数返回1，否则返回0。</p>
+<p>有了上面几个函数就可以在直接调用 drawSphere() 函数来绘制不同大小，不同精度和不同模式的球了。</p>
+<p>via: <a href="http://blog.163.com/tianshi_17th/blog/static/48564189200832992845889/" target="_blank" rel="noopener">http://blog.163.com/tianshi_17th/blog/static/48564189200832992845889/</a></p>
+<div style="clear:both"></div><div class="cc"><p>The <a href="https://blog.naaln.com">Why·Liam·Blog</a> by <a href="https://www.naaln.com" target="_blank" rel="external">WhyLiam</a> is licensed under a <a href="http://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" rel="external">Creative Commons BY-NC-ND 4.0 International License</a>.</p><p>由<a href="https://www.naaln.com" target="_blank" rel="external">WhyLiam</a>创作并维护的<a href="https://blog.naaln.com">Why·Liam·Blog</a>采用创作共用<a href="http://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" rel="external">保留署名-非商业-禁止演绎4.0国际许可证</a>。</p><p>本文首发于<a href="https://blog.naaln.com">Why·Liam·Blog (https://blog.naaln.com)</a>，版权所有，侵权必究。</p><p>本文永久链接：<a href="https://blog.naaln.com/2013/04/opengl-parameters-equation-draw-ball/">https://blog.naaln.com/2013/04/opengl-parameters-equation-draw-ball/</a></p><p></p></div>
+      
+    </div>
+    
+    
+    
+
+    
+      <div>
+        <div id="wechat_subscriber" style="display: block; padding: 10px 0; margin: 20px auto; width: 100%; text-align: center">
+    <img id="wechat_subscriber_qcode" src="//ws1.sinaimg.cn/large/006tKfTcgy1fg8gpi7kaaj30by0by74i.jpg" alt="WHY·LIAM wechat" style="width: 200px; max-width: 100%;"/>
+    <div>记录生活，研究产品，分享设计，分析数据，讨论科技和商业，不定期扯淡。</div>
+</div>
+
+      </div>
+    
+
+    
+      <div>
+        <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+  <div>如果觉得我的文章对您有用，请随意打赏。您的支持将鼓励我继续创作！</div>
+  <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+    <span>打赏</span>
+  </button>
+  <div id="QR" style="display: none;">
+
+    
+      <div id="wechat" style="display: inline-block">
+        <img id="wechat_qr" src="//ws1.sinaimg.cn/mw690/006tNc79gy1fm7yqrau7mj30f00ezad5.jpg" alt="WHY·LIAM 微信支付"/>
+        <p>微信支付</p>
+      </div>
+    
+
+    
+      <div id="alipay" style="display: inline-block">
+        <img id="alipay_qr" src="//ww3.sinaimg.cn/mw690/48910e01gw1evkbfendrjj20ci0ci0uf.jpg" alt="WHY·LIAM 支付宝"/>
+        <p>支付宝</p>
+      </div>
+    
+
+    
+
+  </div>
+</div>
+
+      </div>
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/opengl/" rel="tag"># opengl</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2013/04/ten-steps-to-make-career-planning/" rel="next" title="十个步骤做好职业生涯规划">
+                <i class="fa fa-chevron-left"></i> 十个步骤做好职业生涯规划
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2013/04/youth-remains-goodbye-ideals/" rel="prev" title="青春依然，再见理想——献给学弟学妹">
+                青春依然，再见理想——献给学弟学妹 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+  
+    <div class="comments" id="comments">
+      <div id="SOHUCS"></div>
+    </div>
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+
+      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image"
+                src="//tva2.sinaimg.cn/crop.0.0.998.998.180/48910e01gw1ef5p6etuzdj20rs0rs771.jpg"
+                alt="WHY·LIAM" />
+            
+              <p class="site-author-name" itemprop="name">WHY·LIAM</p>
+              <p class="site-description motion-element" itemprop="description"></p>
+          </div>
+
+          
+            <nav class="site-state motion-element">
+              
+                <div class="site-state-item site-state-posts">
+                
+                  <a href="/archives/">
+                
+                    <span class="site-state-item-count">721</span>
+                    <span class="site-state-item-name">日志</span>
+                  </a>
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-categories">
+                  <a href="/categories/index.html">
+                    <span class="site-state-item-count">4</span>
+                    <span class="site-state-item-name">分类</span>
+                  </a>
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-tags">
+                  <a href="/tags/index.html">
+                    <span class="site-state-item-count">67</span>
+                    <span class="site-state-item-name">标签</span>
+                  </a>
+                </div>
+              
+            </nav>
+          
+
+          
+            <div class="feed-link motion-element">
+              <a href="/atom.xml" rel="alternate">
+                <i class="fa fa-rss"></i>
+                RSS
+              </a>
+            </div>
+          
+
+          
+            <div class="links-of-author motion-element">
+                
+                  <span class="links-of-author-item">
+                    <a href="https://github.com/liszd" target="_blank" title="GitHub" rel="external nofollow">
+                      
+                        <i class="fa fa-fw fa-github"></i>GitHub</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="http://weibo.com/whyliam" target="_blank" title="微博" rel="external nofollow">
+                      
+                        <i class="fa fa-fw fa-weibo"></i>微博</a>
+                  </span>
+                
+            </div>
+          
+
+          
+          
+            <div class="cc-license motion-element" itemprop="license">
+              <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/" class="cc-opacity" target="_blank" rel="external nofollow">
+                <img src="/images/cc-by-nc-nd.svg" alt="Creative Commons" />
+              </a>
+            </div>
+          
+
+          
+          
+            <div class="links-of-blogroll motion-element links-of-blogroll-block">
+              <div class="links-of-blogroll-title">
+                <i class="fa  fa-fw fa-link"></i>
+                Links
+              </div>
+              <ul class="links-of-blogroll-list">
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="http://www.naaln.com/" title="纳兰主页" target="_blank">纳兰主页</a>
+                  </li>
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="http://photo.naaln.com/" title="纳兰相册" target="_blank">纳兰相册</a>
+                  </li>
+                
+              </ul>
+            </div>
+          
+
+          
+            
+          
+          
+
+        </div>
+      </section>
+
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; 2003 &mdash; <span itemprop="copyrightYear">2018</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">WHY·LIAM</span>
+
+  
+
+  
+</div>
+
+
+  
+
+
+
+  <div class="powered-by">由 <a class="theme-link" target="_blank" rel="external nofollow" href="https://hexo.io">Hexo</a> 强力驱动</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" rel="external nofollow" href="https://github.com/theme-next/hexo-theme-next">NexT.Muse</a> v6.0.2</div>
+
+
+
+  <div class="footer-custom">Hosted by <a target="_blank" rel="external nofollow" href="https://pages.coding.me"><b>Coding Pages</b></a></div>
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=6.0.2"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=6.0.2"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=6.0.2"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=6.0.2"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=6.0.2"></script>
+
+
+
+  
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+  
+    <script type="text/javascript">
+    (function(){
+      var appid = 'cytklkKc0';
+      var conf = 'prod_b1dd516bbb7f3198591656f99d9ace80';
+      var width = window.innerWidth || document.documentElement.clientWidth;
+      if (width < 960) {
+      window.document.write('<script id="changyan_mobile_js" charset="utf-8" type="text/javascript" src="https://changyan.sohu.com/upload/mobile/wap-js/changyan_mobile.js?client_id=' + appid + '&conf=' + conf + '"><\/script>'); } else { var loadJs=function(d,a){var c=document.getElementsByTagName("head")[0]||document.head||document.documentElement;var b=document.createElement("script");b.setAttribute("type","text/javascript");b.setAttribute("charset","UTF-8");b.setAttribute("src",d);if(typeof a==="function"){if(window.attachEvent){b.onreadystatechange=function(){var e=b.readyState;if(e==="loaded"||e==="complete"){b.onreadystatechange=null;a()}}}else{b.onload=a}}c.appendChild(b)};loadJs("https://changyan.sohu.com/upload/changyan.js",function(){
+        window.changyan.api.config({appid:appid,conf:conf})});
+      }
+    })();
+    </script>
+    <script type="text/javascript" src="https://assets.changyan.sohu.com/upload/plugins/plugins.count.js"></script>
+  
+
+
+
+
+
+
+
+  
+
+
+
+
+  
+  
+  
+  <link rel="stylesheet" href="/lib/algolia-instant-search/instantsearch.min.css">
+
+  
+  
+  <script src="/lib/algolia-instant-search/instantsearch.min.js"></script>
+  
+
+  <script src="/js/src/algolia-search.js?v=6.0.2"></script>
+
+
+
+  
+
+  
+
+  
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';        
+    }
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>

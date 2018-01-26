@@ -1,0 +1,962 @@
+<!DOCTYPE html>
+
+
+
+
+<html class="theme-next muse" lang="zh-CN">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+  <meta name="google-site-verification" content="ByVfaP_E3b9ZYRUGhNAUFSQKL8mJQwUehpQwoxJ5n-c" />
+
+
+
+  <meta name="msvalidate.01" content="DB220684085BEDBD2E49E8E942534B1F" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=6.0.2" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon-next.png?v=6.0.2">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32-next.png?v=6.0.2">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16-next.png?v=6.0.2">
+
+
+  <link rel="mask-icon" href="/favicon/logo.svg?v=6.0.2" color="#222">
+
+
+
+
+
+
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Muse',
+    version: '6.0.2',
+    sidebar: {"position":"right","display":"hide","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: false,
+    fastclick: false,
+    lazyload: false,
+    tabs: true,
+    motion: {"enable":false,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    algolia: {
+      applicationID: 'XILKIWTAM9',
+      apiKey: '8c01137fe05d281ccd531a0ec622322a',
+      indexName: 'blog',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"搜索文章","hits_empty":"啊，找不到 ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+  
+
+
+
+
+  
+  <meta name="keywords" content="Why, Liam, 李承璋" />
+
+
+<meta name="description" content="虽说是每周一篇译文，不过这事儿确实不能算是非常容易。从阅读，到筛选，到试译，到最终确定本周的文章并完成译文，主要还是依靠每天抽些时间来做。还好，毕竟是自主行为，爱过，也仍在爱着，这就是UX从业者兼翻译票友的节操有木有。默，我们进入今次的正文。 我(英文原文作者)参与过很多产品的线框原型设计，包括我自己独立完成的，还有与其他设计师、产品经理甚至是业务分析人员一起合作的。这很棒，因为在这个过程中我见识">
+<meta name="keywords" content="Why, Liam, 李承璋">
+<meta property="og:type" content="article">
+<meta property="og:title" content="十个方法，让你的线框原型更具沟通能力">
+<meta property="og:url" content="https://blog.naaln.com/2015/01/ten-ways-communication-skills-wireframe-prototype/index.html">
+<meta property="og:site_name" content="Why·Liam·Blog">
+<meta property="og:description" content="虽说是每周一篇译文，不过这事儿确实不能算是非常容易。从阅读，到筛选，到试译，到最终确定本周的文章并完成译文，主要还是依靠每天抽些时间来做。还好，毕竟是自主行为，爱过，也仍在爱着，这就是UX从业者兼翻译票友的节操有木有。默，我们进入今次的正文。 我(英文原文作者)参与过很多产品的线框原型设计，包括我自己独立完成的，还有与其他设计师、产品经理甚至是业务分析人员一起合作的。这很棒，因为在这个过程中我见识">
+<meta property="og:locale" content="zh-CN">
+<meta property="og:image" content="https://ww1.sinaimg.cn/large/006tNc79gw1f5108qxitej30qv0v0jvd">
+<meta property="og:image" content="https://ww2.sinaimg.cn/large/006tNc79gw1f51092y5fdj30qs0v0gpf">
+<meta property="og:image" content="https://ww4.sinaimg.cn/large/006tNc79gw1f5109d635qj30jn0dat9y">
+<meta property="og:image" content="https://ww3.sinaimg.cn/large/006tNc79gw1f5109q49scj30jq0dbjtd">
+<meta property="og:image" content="https://ww1.sinaimg.cn/large/006tNc79gw1f5109ztq92j308n05xgln">
+<meta property="og:image" content="https://ww4.sinaimg.cn/large/006tNc79gw1f510abig61j318g0uraeu">
+<meta property="og:image" content="https://ww3.sinaimg.cn/large/006tNc79gw1f510agdxrbj30fl082dgp">
+<meta property="og:updated_time" content="2017-09-03T09:15:57.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="十个方法，让你的线框原型更具沟通能力">
+<meta name="twitter:description" content="虽说是每周一篇译文，不过这事儿确实不能算是非常容易。从阅读，到筛选，到试译，到最终确定本周的文章并完成译文，主要还是依靠每天抽些时间来做。还好，毕竟是自主行为，爱过，也仍在爱着，这就是UX从业者兼翻译票友的节操有木有。默，我们进入今次的正文。 我(英文原文作者)参与过很多产品的线框原型设计，包括我自己独立完成的，还有与其他设计师、产品经理甚至是业务分析人员一起合作的。这很棒，因为在这个过程中我见识">
+<meta name="twitter:image" content="https://ww1.sinaimg.cn/large/006tNc79gw1f5108qxitej30qv0v0jvd">
+
+
+
+  <link rel="alternate" href="/atom.xml" title="Why·Liam·Blog" type="application/atom+xml" />
+
+
+
+
+  <link rel="canonical" href="https://blog.naaln.com/2015/01/ten-ways-communication-skills-wireframe-prototype/"/>
+
+
+  <title>十个方法，让你的线框原型更具沟通能力 | Why·Liam·Blog</title>
+  
+
+
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-47966442-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-47966442-2');
+</script>
+
+
+
+
+
+
+  
+<script src="//msite.baidu.com/sdk/c.js?appid=1586840953097399"></script>
+<link rel="canonical" href="https://blog.naaln.com/2015/01/ten-ways-communication-skills-wireframe-prototype/"/>
+<script type="application/ld+json">
+    {
+        "@context": "https://ziyuan.baidu.com/contexts/cambrian.jsonld",
+        "@id": "https://blog.naaln.com/2015/01/ten-ways-communication-skills-wireframe-prototype/",
+        "appid": "1586840953097399",
+        "title": "十个方法，让你的线框原型更具沟通能力",
+        "images": [
+            ""
+            ],
+        "description": "",
+        "pubDate": "",
+        "upDate": "",
+        "lrDate": ""
+    }
+</script>
+
+  <noscript>
+  <style type="text/css">
+    .use-motion .motion-element,
+    .use-motion .brand,
+    .use-motion .menu-item,
+    .sidebar-inner,
+    .use-motion .post-block,
+    .use-motion .pagination,
+    .use-motion .comments,
+    .use-motion .post-header,
+    .use-motion .post-body,
+    .use-motion .collection-title { opacity: initial; }
+
+    .use-motion .logo,
+    .use-motion .site-title,
+    .use-motion .site-subtitle {
+      opacity: initial;
+      top: initial;
+    }
+
+    .use-motion {
+      .logo-line-before i { left: initial; }
+      .logo-line-after i { right: initial; }
+    }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-CN">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-right page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"> <div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Why·Liam·Blog</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <h1 class="site-subtitle" itemprop="description">人生若如初見</h1>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            <i class="menu-item-icon fa fa-fw fa-home"></i> <br />首页</a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />归档</a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-technology">
+          <a href="/categories/technology/" rel="section">
+            <i class="menu-item-icon fa fa-fw fa-code"></i> <br />技术</a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-jottings">
+          <a href="/categories/jottings/" rel="section">
+            <i class="menu-item-icon fa fa-fw fa-language"></i> <br />随笔</a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tour">
+          <a href="/categories/tour/" rel="section">
+            <i class="menu-item-icon fa fa-fw fa-globe"></i> <br />旅游</a>
+        </li>
+      
+
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br />搜索</a>
+        </li>
+      
+    </ul>
+  
+
+  
+    <div class="site-search">
+      
+  
+  <div class="algolia-popup popup search-popup">
+    <div class="algolia-search">
+      <div class="algolia-search-input-icon">
+        <i class="fa fa-search"></i>
+      </div>
+      <div class="algolia-search-input" id="algolia-search-input"></div>
+    </div>
+
+    <div class="algolia-results">
+      <div id="algolia-stats"></div>
+      <div id="algolia-hits"></div>
+      <div id="algolia-pagination" class="algolia-pagination"></div>
+    </div>
+
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+  </div>
+
+
+
+
+    </div>
+  
+</nav>
+
+
+  
+
+
+
+ </div>
+    </header>
+
+    
+
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://blog.naaln.com/2015/01/ten-ways-communication-skills-wireframe-prototype/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="WHY·LIAM">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="//tva2.sinaimg.cn/crop.0.0.998.998.180/48910e01gw1ef5p6etuzdj20rs0rs771.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Why·Liam·Blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h2 class="post-title" itemprop="name headline">十个方法，让你的线框原型更具沟通能力</h2>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2015-01-10T09:19:00+08:00">2015-01-10</time>
+            
+
+            
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/technology/" itemprop="url" rel="index"><span itemprop="name">技术</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+              <span class="post-meta-divider">|</span>
+              <span class="post-meta-item-icon">
+                <i class="fa fa-comment-o"></i>
+              </span>
+              
+                <a href="/2015/01/ten-ways-communication-skills-wireframe-prototype/#SOHUCS" itemprop="discussionUrl">
+                  <span id="changyan_count_unit" class="post-comments-count hc-comment-count" data-xid="2015/01/ten-ways-communication-skills-wireframe-prototype/" itemprop="commentsCount"></span>
+                </a>
+              
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p>虽说是每周一篇译文，不过这事儿确实不能算是非常容易。从阅读，到筛选，到试译，到最终确定本周的文章并完成译文，主要还是依靠每天抽些时间来做。还好，毕竟是自主行为，爱过，也仍在爱着，这就是UX从业者兼翻译票友的节操有木有。默，我们进入今次的正文。</p>
+<p>我(英文原文作者)参与过很多产品的线框原型设计，包括我自己独立完成的，还有与其他设计师、产品经理甚至是业务分析人员一起合作的。这很棒，因为在这个过程中我见识到了很多优秀的项目。不过慢慢的我也发现了一些问题，一些大家时常会在原型制作过程当中忽略掉的要素；如果能注意并解决掉这些问题，我们的交互设计产出物就可以发挥更大的实战价值。</p>
+<p>下图所展示的是一个很典型的例子，我们通常会将这种风格的线框稿交付给相关同事来跟进视觉设计或原型测试的工作。</p>
+<p><img src="https://ww1.sinaimg.cn/large/006tNc79gw1f5108qxitej30qv0v0jvd" alt=""></p>
+<p>这种线框稿确实能比较清晰的描述出页面元素的布局方式，但也仅此而已。它所缺少的是与其他设计师、开发人员以及被测用户之间的沟通能力。接下来，我们将一起看一看有哪些方法可以帮助我们提升线框原型在这方面的表现。</p>
+<h2 id="1-通过明暗对比来描述模块之间的视觉优先级"><a href="#1-通过明暗对比来描述模块之间的视觉优先级" class="headerlink" title="1. 通过明暗对比来描述模块之间的视觉优先级"></a>1. 通过明暗对比来描述模块之间的视觉优先级</h2><p>哪些内容是需要用户在页面上最先注意到的？他们的视线应该聚焦到什么位置？我们希望用户执行什么操作？这些问题不能简单的丢给视觉设计师来考虑，而上图所示的线框原型显然无法帮助交互设计师传达这方面的信息。</p>
+<p>首先，根据产品需求及用研方面的实际情况，作为产品人员或交互设计师，我们自身应该对以上这些方面的信息了如指掌；在此基础上，为最原始的线框稿添加视觉优先级。具体实施起来其实很简单，将所有的深色“线框”移除掉，使用不同明度的灰色作为背景色来界定页面和模块的边缘，并籍此表达不同元素之间的视觉优先级。相比于之前纯粹线框风格的设计稿，我们可以在下图中明显的感受到元素与模块之间的优先级关系，例如酒店信息推荐及右侧预定表单当中的操作按钮都可以在很短的时间内抓住我们的目光。</p>
+<p><img src="https://ww2.sinaimg.cn/large/006tNc79gw1f51092y5fdj30qs0v0gpf" alt=""></p>
+<p>这种方式并不意味着交互设计师正在扮演着视觉设计师的角色，我们并不是在表达“这个元素的背景色要比另外一个元素的更深一些”，这些明暗关系所要体现的只是哪些元素需要突出，哪些元素要相对弱化；而最终的视觉表现形式仍然应该由视觉设计师来掌控。</p>
+<h2 id="2-使用真实的数据内容"><a href="#2-使用真实的数据内容" class="headerlink" title="2. 使用真实的数据内容"></a>2. 使用真实的数据内容</h2><p>对于线框原型当中的范例内容，包括导航元素的标题、表单标签、介绍文案、图标等等，我们都应该尽量使用最贴近生产环境的真实数据。这种方式可以更有效的帮助我们规划界面元素的布局，并针对实际环境中有可能产生的极端数据情况制定预防性的方案，确保页面结构的坚固性。</p>
+<p>更重要的是，使用真实数据作为范例内容的线框原型可以在接下来的可用性测试当中更具表现力和说服力，被测用户不需要依靠主持人的描述或自己的猜测就可以在原型当中获取到比较准确的信息。另外，真实数据也可以创造出一种更贴近实际产品的使用氛围，这可以使被测用户更加投入。对于测试人员来说(主持人、观察员)，我们可以设计出更具有针对性的任务或问题，可以在测试过程中对被测用户进行更加深入的观察；相应的，最终收集到的反馈信息也会更加真实有效。</p>
+<p>仍以酒店的范例原型为例，诸如“你能找到这个酒店的特色服务信息吗？”这样的问题是欠妥的，因为这就相当于告诉被测用户，在页面当中的某个地方存在着这样的信息，他们接下来就只会根据这条线索去寻找。多数情况下必然能够找到，但这样的反馈对于我们是没有意义的。</p>
+<p>如果在测试当中使用由真实数据构建起来的原型，那么情况就会好很多，我们可以问被测用户“你对这家酒店的感觉如何？”，这会使我们获取有效反馈的机会大大的增加。用户会根据这样的问题进行更加自主的信息浏览行为，他们有可能会回答“这个酒店看上去不错，不过他们提供家庭泳池，我真的不大喜欢小孩在酒店当中跑来跑去。”</p>
+<p><img src="https://ww4.sinaimg.cn/large/006tNc79gw1f5109d635qj30jn0dat9y" alt=""> </p>
+<p>通过这类反馈，我们可以了解到用户不仅注意到了页面当中的重要元素，而且他们对其中的具体内容也做出了真实的思考。可以说，通过一套无真实数据内容的线框原型，我们能够测试产品的可用性，而使用了真实数据作为范例内容线框原型则可以更加全面的帮助我们测验产品的用户体验。要了解更多原型测试方面的实战方法，可以参考我们之前的文章“<a href="http://beforweb.com/node/24" target="_blank" rel="noopener">产品早期的原型设计与用户测试</a>”。</p>
+<h2 id="3-确保细节的准确无误"><a href="#3-确保细节的准确无误" class="headerlink" title="3. 确保细节的准确无误"></a>3. 确保细节的准确无误</h2><p>将真实数据作为范例内容填充到原型当中后，我们要确保交互流程所涉及的信息的准确性。举个简单的例子，如果购物车的页面原型当中展示了两个单价为50元的商品，那么在结算环节中，总价应该是100元，而不是随便其他什么数字。错误的信息会阻碍沟通的有效进行，开发人员有可能在这里产生质疑，被测用户也会感到莫名其妙。</p>
+<p>作为设计人员，长时间的将注意力放在原型的制作上面，很容易忽视掉这类问题的存在。如果有条件的话，可以在适当的时候请其他人来帮忙检查一下你的原型当中是否存在这类细节当中的错误。</p>
+<h2 id="4-增加范例图片的自我描述能力"><a href="#4-增加范例图片的自我描述能力" class="headerlink" title="4. 增加范例图片的自我描述能力"></a>4. 增加范例图片的自我描述能力</h2><p>图片对于用户体验的提升起着重要的作用，当人们在网站中寻找商品或服务时，图片是引导他们制定决策的关键要素(<a href="http://beforweb.com/node/40" target="_blank" rel="noopener">怎样通过设计帮助用户制定决策</a>)。另外，图片也能帮助用户对网站自身的形象和定位产生认知。不过在线框原型中，我们通常只会使用一些灰色的容器和线条来表现图片。</p>
+<p>当然，我并不是要建议在线框原型中使用真正的图片或照片；我们需要做的是让代表图片的线框元素能够体现出在实际页面当中，这个位置应该放置怎样类型的图片。在制作线框原型之前，最好与相关的产品或业务人员就这方面的问题进行沟通，根据产品自身的特质及最终面向的用户群体，来判断图片一类的视觉元素应该具有怎样的整体风格。</p>
+<p>举个例子，我曾经帮一家衬衣零售商做网站改版。在着手设计工作之前，我们首先使用旧版网站进行了一次用户测试，结果发现商品详情页当中的演示照片总会使用户产生迷惑。为了使衬衣更好看，他们在拍照的时候刻意搭配上了领带与袖扣，这使得用户认为每件衬衫都是包含领带与袖扣的套装。所以当我进行线框原型设计的时候，特意在商品照片的位置画了一张不包含领带与袖扣的衬衣草图，以确保视觉设计师及后续环节的人员能够理解，并避免在新版网站中重复错误。</p>
+<p>我们不必通过非常精细的绘画来为线框原型中的图片元素增加描述性，通过简单的草图来陈述出用户希望在这里看到的图片类型即可。例如，在提供酒店预定服务的网站中，用户通常希望在详情页里看到怎样的图片？房间？卫生间？景观？这些问题都是值得花时间了解清楚并在线框原型中加以体现的。</p>
+<p><img src="https://ww3.sinaimg.cn/large/006tNc79gw1f5109q49scj30jq0dbjtd" alt=""> </p>
+<h2 id="5-使用色彩时保持谨慎"><a href="#5-使用色彩时保持谨慎" class="headerlink" title="5. 使用色彩时保持谨慎"></a>5. 使用色彩时保持谨慎</h2><p>在线框原型中，彩色通常被用于注释。在必要的时候，我们也可以用特殊的颜色对那些特别需要用户注意的界面元素进行标注，或是用来表达出错信息一类的状态类内容。不过要记得，在进行原型测试的时候不要使用带有色彩注释的版本，原因是显而易见的，我们不希望被测用户被这些“突出”的元素引导或干扰。</p>
+<h2 id="6-确保交互元素明确易懂"><a href="#6-确保交互元素明确易懂" class="headerlink" title="6. 确保交互元素明确易懂"></a>6. 确保交互元素明确易懂</h2><p>交互元素的呈现方式应该符合它的用途，例如按钮看上去应该可以被点击。这些细节当中的视觉表现形式的正确与否，会直接影响视觉设计师及开发人员对原型的理解；不具备自解释性的交互元素所带来的潜在体验问题也会暴露在可用性测试当中。</p>
+<p><img src="https://ww1.sinaimg.cn/large/006tNc79gw1f5109ztq92j308n05xgln" alt=""> </p>
+<h2 id="7-以实际像素为单位"><a href="#7-以实际像素为单位" class="headerlink" title="7. 以实际像素为单位"></a>7. 以实际像素为单位</h2><p>如果你使用HTML配合样式代码来制作原型(<a href="http://beforweb.com/node/23" target="_blank" rel="noopener">使用前端开发框架快速创建页面原型</a>)，那么这个问题基本不存在，因为你通常需要以像素为单位为容器设置宽度或高度属性。不过在多数时候，我们创建的是纯粹的线框图。以实际像素为单位对页面布局及元素尺寸进行一定程度的规划和说明，这将帮助我们自己以及视觉设计师在接下来的工作当中省掉很多“猜测”与“估算”的过程。我曾经习惯于使用Powerpoint来制作线框原型，这种方式只能展示元素之间大致的尺寸和位置关系；当项目进入视觉设计流程，它无法有效的帮助我与设计师进行沟通，造成了不少的麻烦。</p>
+<h2 id="8-创建变更日志"><a href="#8-创建变更日志" class="headerlink" title="8. 创建变更日志"></a>8. 创建变更日志</h2><p>随着迭代的不断进行，每一版线框原型当中的变更通常会越来越细化，从页面结构到模块、控件，这会使跟进后续工作的设计师或开发人员越来越难以发现所有的变化。作为交互设计师，我们有责任创建一份变更日志，并随着项目的发展对其进行持续的更新。日志中的每一条记录都要包含日期、版本号、执行者以及变更说明。这种信息交流的方式不需要花费太多的时间，但结果却是事半功倍的，无论产品人员还是设计师、开发者，大家都可以籍此来一目了然的跟踪原型的版本变化。</p>
+<p><img src="https://ww4.sinaimg.cn/large/006tNc79gw1f510abig61j318g0uraeu" alt=""> </p>
+<h2 id="9-避免深色线框"><a href="#9-避免深色线框" class="headerlink" title="9. 避免深色线框"></a>9. 避免深色线框</h2><p>满页面的深色线框会使你的原型看上去缺乏层次、粗糙凌乱。正像我们在第一点当中所说的，试着使用不同明度的灰色作为背景色来界定页面和模块的边缘。这样不仅能表现出界面元素的视觉优先级，而且可以使整个原型看上去更加整洁。如果必须在某些地方使用线条，那么尽量使用纤细的灰色实线或点状线。我们固然不需要让线框原型看上去像视觉稿一样完美，但对这些细节的把握确实可以让它更加简洁精美；在实际工作中，这往往可以提升原型被接纳的程度。</p>
+<p><img src="https://ww3.sinaimg.cn/large/006tNc79gw1f510agdxrbj30fl082dgp" alt=""> </p>
+<h2 id="10-保持跟进"><a href="#10-保持跟进" class="headerlink" title="10. 保持跟进"></a>10. 保持跟进</h2><p>这一点更加偏向于交付流程，而非设计技巧。完成线框原型后，我们不能只是简单的把它扔给跟进后续工作的同事。花些时间去支援视觉设计师或开发人员的工作，只有他们才能将你的设计概念最终落实到实际当中。通常，交互原型当中所包含的想法、操作逻辑等方面的信息难以即全面又准确的被大家理解，而且其中隐含的问题有可能在后续阶段才能体现出来。我们有必要在交付原型之后保持跟进，与大家协同作战。</p>
+<p>以上就是关于提升线框原型沟通能力的十点建议。可以参考我们之前的文章“<a href="http://beforweb.com/node/20" target="_blank" rel="noopener">线框原型的本质及实践应用概述</a>”，了解更多关于线框原型的基本理念及运用方法。</p>
+<div style="clear:both"></div><div class="cc"><p>The <a href="https://blog.naaln.com">Why·Liam·Blog</a> by <a href="https://www.naaln.com" target="_blank" rel="external">WhyLiam</a> is licensed under a <a href="http://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" rel="external">Creative Commons BY-NC-ND 4.0 International License</a>.</p><p>由<a href="https://www.naaln.com" target="_blank" rel="external">WhyLiam</a>创作并维护的<a href="https://blog.naaln.com">Why·Liam·Blog</a>采用创作共用<a href="http://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" rel="external">保留署名-非商业-禁止演绎4.0国际许可证</a>。</p><p>本文首发于<a href="https://blog.naaln.com">Why·Liam·Blog (https://blog.naaln.com)</a>，版权所有，侵权必究。</p><p>本文永久链接：<a href="https://blog.naaln.com/2015/01/ten-ways-communication-skills-wireframe-prototype/">https://blog.naaln.com/2015/01/ten-ways-communication-skills-wireframe-prototype/</a></p><p></p></div>
+      
+    </div>
+    
+    
+    
+
+    
+      <div>
+        <div id="wechat_subscriber" style="display: block; padding: 10px 0; margin: 20px auto; width: 100%; text-align: center">
+    <img id="wechat_subscriber_qcode" src="//ws1.sinaimg.cn/large/006tKfTcgy1fg8gpi7kaaj30by0by74i.jpg" alt="WHY·LIAM wechat" style="width: 200px; max-width: 100%;"/>
+    <div>记录生活，研究产品，分享设计，分析数据，讨论科技和商业，不定期扯淡。</div>
+</div>
+
+      </div>
+    
+
+    
+      <div>
+        <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+  <div>如果觉得我的文章对您有用，请随意打赏。您的支持将鼓励我继续创作！</div>
+  <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+    <span>打赏</span>
+  </button>
+  <div id="QR" style="display: none;">
+
+    
+      <div id="wechat" style="display: inline-block">
+        <img id="wechat_qr" src="//ws1.sinaimg.cn/mw690/006tNc79gy1fm7yqrau7mj30f00ezad5.jpg" alt="WHY·LIAM 微信支付"/>
+        <p>微信支付</p>
+      </div>
+    
+
+    
+      <div id="alipay" style="display: inline-block">
+        <img id="alipay_qr" src="//ww3.sinaimg.cn/mw690/48910e01gw1evkbfendrjj20ci0ci0uf.jpg" alt="WHY·LIAM 支付宝"/>
+        <p>支付宝</p>
+      </div>
+    
+
+    
+
+  </div>
+</div>
+
+      </div>
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2014/12/visual-priority/" rel="next" title="视觉优先">
+                <i class="fa fa-chevron-left"></i> 视觉优先
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2015/01/wu-bo-van-there-is-no-415-principle-your-team-must-start-falling-apart/" rel="prev" title="吴伯凡：没有“415”原则，你的创业团队必定分崩离析">
+                吴伯凡：没有“415”原则，你的创业团队必定分崩离析 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+  
+    <div class="comments" id="comments">
+      <div id="SOHUCS"></div>
+    </div>
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+
+      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image"
+                src="//tva2.sinaimg.cn/crop.0.0.998.998.180/48910e01gw1ef5p6etuzdj20rs0rs771.jpg"
+                alt="WHY·LIAM" />
+            
+              <p class="site-author-name" itemprop="name">WHY·LIAM</p>
+              <p class="site-description motion-element" itemprop="description"></p>
+          </div>
+
+          
+            <nav class="site-state motion-element">
+              
+                <div class="site-state-item site-state-posts">
+                
+                  <a href="/archives/">
+                
+                    <span class="site-state-item-count">721</span>
+                    <span class="site-state-item-name">日志</span>
+                  </a>
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-categories">
+                  <a href="/categories/index.html">
+                    <span class="site-state-item-count">4</span>
+                    <span class="site-state-item-name">分类</span>
+                  </a>
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-tags">
+                  <a href="/tags/index.html">
+                    <span class="site-state-item-count">67</span>
+                    <span class="site-state-item-name">标签</span>
+                  </a>
+                </div>
+              
+            </nav>
+          
+
+          
+            <div class="feed-link motion-element">
+              <a href="/atom.xml" rel="alternate">
+                <i class="fa fa-rss"></i>
+                RSS
+              </a>
+            </div>
+          
+
+          
+            <div class="links-of-author motion-element">
+                
+                  <span class="links-of-author-item">
+                    <a href="https://github.com/liszd" target="_blank" title="GitHub" rel="external nofollow">
+                      
+                        <i class="fa fa-fw fa-github"></i>GitHub</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="http://weibo.com/whyliam" target="_blank" title="微博" rel="external nofollow">
+                      
+                        <i class="fa fa-fw fa-weibo"></i>微博</a>
+                  </span>
+                
+            </div>
+          
+
+          
+          
+            <div class="cc-license motion-element" itemprop="license">
+              <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/" class="cc-opacity" target="_blank" rel="external nofollow">
+                <img src="/images/cc-by-nc-nd.svg" alt="Creative Commons" />
+              </a>
+            </div>
+          
+
+          
+          
+            <div class="links-of-blogroll motion-element links-of-blogroll-block">
+              <div class="links-of-blogroll-title">
+                <i class="fa  fa-fw fa-link"></i>
+                Links
+              </div>
+              <ul class="links-of-blogroll-list">
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="http://www.naaln.com/" title="纳兰主页" target="_blank">纳兰主页</a>
+                  </li>
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="http://photo.naaln.com/" title="纳兰相册" target="_blank">纳兰相册</a>
+                  </li>
+                
+              </ul>
+            </div>
+          
+
+          
+            
+          
+          
+
+        </div>
+      </section>
+
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; 2003 &mdash; <span itemprop="copyrightYear">2018</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">WHY·LIAM</span>
+
+  
+
+  
+</div>
+
+
+  
+
+
+
+  <div class="powered-by">由 <a class="theme-link" target="_blank" rel="external nofollow" href="https://hexo.io">Hexo</a> 强力驱动</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" rel="external nofollow" href="https://github.com/theme-next/hexo-theme-next">NexT.Muse</a> v6.0.2</div>
+
+
+
+  <div class="footer-custom">Hosted by <a target="_blank" rel="external nofollow" href="https://pages.coding.me"><b>Coding Pages</b></a></div>
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=6.0.2"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=6.0.2"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=6.0.2"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=6.0.2"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=6.0.2"></script>
+
+
+
+  
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+  
+    <script type="text/javascript">
+    (function(){
+      var appid = 'cytklkKc0';
+      var conf = 'prod_b1dd516bbb7f3198591656f99d9ace80';
+      var width = window.innerWidth || document.documentElement.clientWidth;
+      if (width < 960) {
+      window.document.write('<script id="changyan_mobile_js" charset="utf-8" type="text/javascript" src="https://changyan.sohu.com/upload/mobile/wap-js/changyan_mobile.js?client_id=' + appid + '&conf=' + conf + '"><\/script>'); } else { var loadJs=function(d,a){var c=document.getElementsByTagName("head")[0]||document.head||document.documentElement;var b=document.createElement("script");b.setAttribute("type","text/javascript");b.setAttribute("charset","UTF-8");b.setAttribute("src",d);if(typeof a==="function"){if(window.attachEvent){b.onreadystatechange=function(){var e=b.readyState;if(e==="loaded"||e==="complete"){b.onreadystatechange=null;a()}}}else{b.onload=a}}c.appendChild(b)};loadJs("https://changyan.sohu.com/upload/changyan.js",function(){
+        window.changyan.api.config({appid:appid,conf:conf})});
+      }
+    })();
+    </script>
+    <script type="text/javascript" src="https://assets.changyan.sohu.com/upload/plugins/plugins.count.js"></script>
+  
+
+
+
+
+
+
+
+  
+
+
+
+
+  
+  
+  
+  <link rel="stylesheet" href="/lib/algolia-instant-search/instantsearch.min.css">
+
+  
+  
+  <script src="/lib/algolia-instant-search/instantsearch.min.js"></script>
+  
+
+  <script src="/js/src/algolia-search.js?v=6.0.2"></script>
+
+
+
+  
+
+  
+
+  
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';        
+    }
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>

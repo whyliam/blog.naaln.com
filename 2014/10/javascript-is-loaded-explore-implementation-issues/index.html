@@ -1,0 +1,929 @@
+<!DOCTYPE html>
+
+
+
+
+<html class="theme-next muse" lang="zh-CN">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+  <meta name="google-site-verification" content="ByVfaP_E3b9ZYRUGhNAUFSQKL8mJQwUehpQwoxJ5n-c" />
+
+
+
+  <meta name="msvalidate.01" content="DB220684085BEDBD2E49E8E942534B1F" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=6.0.2" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon-next.png?v=6.0.2">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32-next.png?v=6.0.2">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16-next.png?v=6.0.2">
+
+
+  <link rel="mask-icon" href="/favicon/logo.svg?v=6.0.2" color="#222">
+
+
+
+
+
+
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Muse',
+    version: '6.0.2',
+    sidebar: {"position":"right","display":"hide","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: false,
+    fastclick: false,
+    lazyload: false,
+    tabs: true,
+    motion: {"enable":false,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    algolia: {
+      applicationID: 'XILKIWTAM9',
+      apiKey: '8c01137fe05d281ccd531a0ec622322a',
+      indexName: 'blog',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"搜索文章","hits_empty":"啊，找不到 ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+  
+
+
+
+
+  
+  <meta name="keywords" content="Why, Liam, 李承璋" />
+
+
+<meta name="description" content="楼主做前端开发一年多了，对前端的见解还是多多少少有一点的，今天特拿出来跟大家分享分享。\n\n做前端开发少不了各种利器。比如我习惯用的还是Google浏览器和重型武器Fiddller。\n\n一： 原始情况\n\n首先大家看看如下的代码：\n\n    &amp;lt;%@ Page Language=”C#” AutoEventWireup=”true” CodeBehind=”Default.aspx">
+<meta name="keywords" content="Why, Liam, 李承璋">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Javascript加载执行问题探索">
+<meta property="og:url" content="https://blog.naaln.com/2014/10/javascript-is-loaded-explore-implementation-issues/index.html">
+<meta property="og:site_name" content="Why·Liam·Blog">
+<meta property="og:description" content="楼主做前端开发一年多了，对前端的见解还是多多少少有一点的，今天特拿出来跟大家分享分享。\n\n做前端开发少不了各种利器。比如我习惯用的还是Google浏览器和重型武器Fiddller。\n\n一： 原始情况\n\n首先大家看看如下的代码：\n\n    &amp;lt;%@ Page Language=”C#” AutoEventWireup=”true” CodeBehind=”Default.aspx">
+<meta property="og:locale" content="zh-CN">
+<meta property="og:image" content="https://blog.naaln.com/2014/10/javascript-is-loaded-explore-implementation-issues/1.jpg">
+<meta property="og:image" content="https://blog.naaln.com/2014/10/javascript-is-loaded-explore-implementation-issues/1.jpg">
+<meta property="og:image" content="https://blog.naaln.com/2014/10/javascript-is-loaded-explore-implementation-issues/1.jpg">
+<meta property="og:image" content="https://blog.naaln.com/2014/10/javascript-is-loaded-explore-implementation-issues/1.jpg">
+<meta property="og:updated_time" content="2017-09-03T09:15:57.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Javascript加载执行问题探索">
+<meta name="twitter:description" content="楼主做前端开发一年多了，对前端的见解还是多多少少有一点的，今天特拿出来跟大家分享分享。\n\n做前端开发少不了各种利器。比如我习惯用的还是Google浏览器和重型武器Fiddller。\n\n一： 原始情况\n\n首先大家看看如下的代码：\n\n    &amp;lt;%@ Page Language=”C#” AutoEventWireup=”true” CodeBehind=”Default.aspx">
+<meta name="twitter:image" content="https://blog.naaln.com/2014/10/javascript-is-loaded-explore-implementation-issues/1.jpg">
+
+
+
+  <link rel="alternate" href="/atom.xml" title="Why·Liam·Blog" type="application/atom+xml" />
+
+
+
+
+  <link rel="canonical" href="https://blog.naaln.com/2014/10/javascript-is-loaded-explore-implementation-issues/"/>
+
+
+  <title>Javascript加载执行问题探索 | Why·Liam·Blog</title>
+  
+
+
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-47966442-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-47966442-2');
+</script>
+
+
+
+
+
+
+  
+<script src="//msite.baidu.com/sdk/c.js?appid=1586840953097399"></script>
+<link rel="canonical" href="https://blog.naaln.com/2014/10/javascript-is-loaded-explore-implementation-issues/"/>
+<script type="application/ld+json">
+    {
+        "@context": "https://ziyuan.baidu.com/contexts/cambrian.jsonld",
+        "@id": "https://blog.naaln.com/2014/10/javascript-is-loaded-explore-implementation-issues/",
+        "appid": "1586840953097399",
+        "title": "Javascript加载执行问题探索",
+        "images": [
+            ""
+            ],
+        "description": "",
+        "pubDate": "",
+        "upDate": "",
+        "lrDate": ""
+    }
+</script>
+
+  <noscript>
+  <style type="text/css">
+    .use-motion .motion-element,
+    .use-motion .brand,
+    .use-motion .menu-item,
+    .sidebar-inner,
+    .use-motion .post-block,
+    .use-motion .pagination,
+    .use-motion .comments,
+    .use-motion .post-header,
+    .use-motion .post-body,
+    .use-motion .collection-title { opacity: initial; }
+
+    .use-motion .logo,
+    .use-motion .site-title,
+    .use-motion .site-subtitle {
+      opacity: initial;
+      top: initial;
+    }
+
+    .use-motion {
+      .logo-line-before i { left: initial; }
+      .logo-line-after i { right: initial; }
+    }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-CN">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-right page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"> <div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Why·Liam·Blog</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <h1 class="site-subtitle" itemprop="description">人生若如初見</h1>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            <i class="menu-item-icon fa fa-fw fa-home"></i> <br />首页</a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />归档</a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-technology">
+          <a href="/categories/technology/" rel="section">
+            <i class="menu-item-icon fa fa-fw fa-code"></i> <br />技术</a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-jottings">
+          <a href="/categories/jottings/" rel="section">
+            <i class="menu-item-icon fa fa-fw fa-language"></i> <br />随笔</a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tour">
+          <a href="/categories/tour/" rel="section">
+            <i class="menu-item-icon fa fa-fw fa-globe"></i> <br />旅游</a>
+        </li>
+      
+
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br />搜索</a>
+        </li>
+      
+    </ul>
+  
+
+  
+    <div class="site-search">
+      
+  
+  <div class="algolia-popup popup search-popup">
+    <div class="algolia-search">
+      <div class="algolia-search-input-icon">
+        <i class="fa fa-search"></i>
+      </div>
+      <div class="algolia-search-input" id="algolia-search-input"></div>
+    </div>
+
+    <div class="algolia-results">
+      <div id="algolia-stats"></div>
+      <div id="algolia-hits"></div>
+      <div id="algolia-pagination" class="algolia-pagination"></div>
+    </div>
+
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+  </div>
+
+
+
+
+    </div>
+  
+</nav>
+
+
+  
+
+
+
+ </div>
+    </header>
+
+    
+
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://blog.naaln.com/2014/10/javascript-is-loaded-explore-implementation-issues/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="WHY·LIAM">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="//tva2.sinaimg.cn/crop.0.0.998.998.180/48910e01gw1ef5p6etuzdj20rs0rs771.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Why·Liam·Blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h2 class="post-title" itemprop="name headline">Javascript加载执行问题探索</h2>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2014-10-20T05:44:07+08:00">2014-10-20</time>
+            
+
+            
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/technology/" itemprop="url" rel="index"><span itemprop="name">技术</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+              <span class="post-meta-divider">|</span>
+              <span class="post-meta-item-icon">
+                <i class="fa fa-comment-o"></i>
+              </span>
+              
+                <a href="/2014/10/javascript-is-loaded-explore-implementation-issues/#SOHUCS" itemprop="discussionUrl">
+                  <span id="changyan_count_unit" class="post-comments-count hc-comment-count" data-xid="2014/10/javascript-is-loaded-explore-implementation-issues/" itemprop="commentsCount"></span>
+                </a>
+              
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p>楼主做前端开发一年多了，对前端的见解还是多多少少有一点的，今天特拿出来跟大家分享分享。\n\n做前端开发少不了各种利器。比如我习惯用的还是Google浏览器和重型武器Fiddller。\n\n<strong>一： 原始情况</strong>\n\n首先大家看看如下的代码：\n\n    &lt;%@ Page Language=”C#” AutoEventWireup=”true” CodeBehind=”Default.aspx.cs” Inherits=”JsLoad.Default” %&gt;\n    \n    &lt;!DOCTYPE html PUBLIC “-//W3C//DTD XHTML 1.0 Transitional//EN” “<a href="http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd&quot;&gt;\n" target="_blank" rel="noopener">http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd&quot;&gt;\n</a>    <html xmlns="http://www.w3.org/1999/xhtml">\n    <head id="head">\n        <title></title>\n        <link href="Styles/Site.css" rel="stylesheet" type="text/css">\n        <script src="jquery/jquery-1.4.1.js" type="text/javascript"></script>\n        <script src="js/hello.js" type="text/javascript"></script>\n        <script src="js/world.js" type="text/javascript"></script>\n    </head>\n    <body>\n        <img src="1.jpg" width="200" height="300">\n    </body>\n    </html>\n    \n\n估计90%的程序员都会把js文件放在head中，但是大家有没有深究过呢？很多浏览器都会使用单一的线程来做“界面UI的更新”和“JS脚本的处理“，\n\n也就是当执行引擎遇到”\n\n此时用户很可能就会给你关掉。\n\n![enter image description here][1]\n\n从上面的瀑布图中我们可以看出二点：\n\n<strong>第一：</strong> 三个js文件并行下载，但是按我上面的理论中js应该是一个接一个的执行。然而在IE8，Firefox3.5和Chrome2都实现了js的并行下载，这是相当不错的，但是他还是会阻碍一些其他资源的下载，比如说图片。\n\n<strong>第二：</strong>图片1.jpg的下载是在js执行完成后触发的，这也验证了上面所说的情况，阻止了image的加载。\n\n<strong>二：第一步优化</strong> 既然js阻止了UI渲染，那么我们可以考虑将js放在<code>&lt;/body&gt;</code>前，这样就可以让<code>&lt;script&gt;</code>前的html完美的呈现，不会让用户看到页面空白等待而苦恼的情况，自然就提高了友好性。\n\n    &lt;%@ Page Language=”C#” AutoEventWireup=”true” CodeBehind=”Default.aspx.cs” Inherits=”JsLoad.Default” %&gt;\n    \n    &lt;!DOCTYPE html PUBLIC “-//W3C//DTD XHTML 1.0 Transitional//EN” “<a href="http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd&quot;&gt;\n" target="_blank" rel="noopener">http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd&quot;&gt;\n</a>    <html xmlns="http://www.w3.org/1999/xhtml">\n    <head id="head">\n        <title></title>\n        <link href="Styles/Site.css" rel="stylesheet" type="text/css">\n    </head>\n    <body>\n        <img src="1.jpg" width="200" height="300">\n        <script src="jquery/jquery-1.4.1.js" type="text/javascript"></script>\n        <script src="js/hello.js" type="text/javascript"></script>\n        <script src="js/world.js" type="text/javascript"></script>\n    </body>\n    </html>\n    \n\n下面的图也展示了1.jpg和三个js几乎并行下载和执行。时间由上面的“469ms+”缩小到“326ms”。\n\n![enter image description here][2]\n\n<strong>三：第二步优化</strong>\n\n看上面的“瀑布图”，估计大家也看出来了，三个js文件进行了三次“Get”请求，大家都知道Get请求是需要带http头的，所以说需要耗费时间，那么我们采取的方案自然就是减少Get请求。通常有两种方案。\n\n<strong>第一：</strong>合并js文件，比如将上面的“hello.js”和“world.js“合并掉。\n\n<strong>第二：</strong>利用第三方工具，比如php中的Minify。\n\n关于第二种做法，taobao用的还是比较多的，看一下其中的一个script，应用了三个js文件。由3个Get请求变为了1个。\n\n![enter image description here][3]\n\n四：第三步优化\n\n不管是把js文件放在脚尾，还是三个合并一个，其本质都是”阻塞模式“，就是说锁死浏览器，当web页面越来越复杂，js文件越来越多，还是让我们头疼的，此时我们就提倡一种“无阻塞模式“加载js脚本，也就是页面全部呈现完再追加js，也就对应着window.onload事件触发后，我们才追加js，这就是所谓的“无阻塞“，但是其中有一个非常要注意的地方就是我们对js的要求是否有严格的顺序。\n\n<strong>第一：</strong>无顺序要求，比如我对”hello.js“和”world.js”没有顺序要求，那么我们完全可以用jquery来动态追加实现。\n\n    &lt;%@ Page Language=”C#” AutoEventWireup=”true” CodeBehind=”Default.aspx.cs” Inherits=”JsLoad.Default” %&gt;\n    \n    &lt;!DOCTYPE html PUBLIC “-//W3C//DTD XHTML 1.0 Transitional//EN” “<a href="http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd&quot;&gt;\n" target="_blank" rel="noopener">http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd&quot;&gt;\n</a>    <html xmlns="http://www.w3.org/1999/xhtml">\n    <head id="head">\n        <title></title>\n        <link href="Styles/Site.css" rel="stylesheet" type="text/css">\n    </head>\n    <body>\n        <img src="1.jpg" width="200" height="300">\n        <script src="jquery/jquery-1.4.1.js" type="text/javascript"></script>\n        <script type="text/javascript">\n            window.onload = function () {\n                $(“#head”).append(“<script src=''js/hello.js'' type=''text/javascript''>&lt;\/script&gt;”)\n                $(“#head”).append(“<script src=''js/world.js'' type=''text/javascript''>&lt;\/script&gt;”);\n            }\n        </script>\n    </body>\n    </html>\n    \n\n![enter image description here][4]\n\n从图中可以看出，”hello.js”和“world.js”出现在蓝色线以后，也就说明这两个js是在DomContentLoad结束后再进行触发加载的，这样就不会造成页面的锁定等待。\n\n<strong>第二：有顺序要求</strong>为什么一定要有顺序要求这个概念呢？对于上面的那个动态追加的“两个js”文件，在IE系列中，你不能保证hello.js一定会在world.js前执行，他只会按照服务器端返回的顺序执行代码。\n\n&lt; %@ Page Language=”C#” AutoEventWireup=”true” CodeBehind=”Default.aspx.cs” Inherits=”JsLoad.Default” %&gt;\n\n    &lt;!DOCTYPE html PUBLIC “-//W3C//DTD XHTML 1.0 Transitional//EN” “<a href="http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd&quot;&gt;\n" target="_blank" rel="noopener">http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd&quot;&gt;\n</a>    <html xmlns="http://www.w3.org/1999/xhtml">\n    <head id="head">\n        <title></title>\n        <link href="Styles/Site.css" rel="stylesheet" type="text/css">\n    </head>\n    <body>\n        <img src="1.jpg" width="200" height="300">\n        <script type="text/javascript">\n            function loadScript(url, callback) {\n                var script = document.createElement(“script”);\n                script.type = “text/javascript”;\n    \n                //IE\n                if (script.readyState) {\n                    script.onreadystatechange = function () {\n                        if (script.readyState == “loaded” || script.readyState == “complete”) {\n                            script.onreadystatechange = null;\n                            callback();\n                        }\n                    }\n                } else {\n                    //非IE\n                    script.onload = function () {\n                        callback();\n                    }\n                }\n                script.src = url;\n                document.getElementById(“head”).appendChild(script);\n            }\n            //第一步加载jquery类库\n            loadScript(“jquery/jquery-1.4.1.js”, function () {\n                //第二步加载hello.js\n                loadScript(“js/hello.js”, function () {\n                    //第三步加载world.js\n                    loadScript(“js/world.js”, function () {\n    \n                    });\n                });\n            });\n        </script>\n    </body>\n    </html>\n    \n\n![enter image description here][5]\n\n大家也能看到，页面完全Load的时间其实也就310ms左右，大大提高了网页的下载呈现和友好型。\n\n同样也可以看看腾讯网，他也是这么干的。\n\n![enter image description here][6]\n\n [1]: <a href="http://pic002.cnblogs.com/images/2011/214741/2011120417280062.png\n" target="_blank" rel="noopener">http://pic002.cnblogs.com/images/2011/214741/2011120417280062.png\n</a> [2]: <a href="http://pic002.cnblogs.com/images/2011/214741/2011120417501610.png\n" target="_blank" rel="noopener">http://pic002.cnblogs.com/images/2011/214741/2011120417501610.png\n</a> [3]: <a href="http://pic002.cnblogs.com/images/2011/214741/2011120418055663.png\n" target="_blank" rel="noopener">http://pic002.cnblogs.com/images/2011/214741/2011120418055663.png\n</a> [4]: <a href="http://pic002.cnblogs.com/images/2011/214741/2011120418412664.png\n" target="_blank" rel="noopener">http://pic002.cnblogs.com/images/2011/214741/2011120418412664.png\n</a> [5]: <a href="http://pic002.cnblogs.com/images/2011/214741/2011120419094111.png\n" target="_blank" rel="noopener">http://pic002.cnblogs.com/images/2011/214741/2011120419094111.png\n</a> [6]: <a href="http://pic002.cnblogs.com/images/2011/214741/2011120419244427.png" target="_blank" rel="noopener">http://pic002.cnblogs.com/images/2011/214741/2011120419244427.png</a>‘, 0, 1, NULL, ‘post’, ‘publish’, NULL, 0, ‘1’, ‘1’, ‘1’, 0, 502),</p>
+<p>(4620, ‘2014互联网跨界趋势报告’, ‘2014-cross-borderinternet-trends’, 1413798943, 1423377762, ‘移动互联网是当前的时代趋势，已经势不可挡。物联网更是未来十年的趋势。我们身处在互联网时代的黎明时期，在此之前，世界是信息时代。工业革命、第四次科技革命带来的世界格局的变化正在发生剧烈的变化。这种变化身在人海之中的你也会感到强烈的不同。互联网对传统企业的改造可以用碰撞和融合来形容，跨界异业合作将是未来的大方向。\n\n在中国以BAT为首的巨头们已经开始一系列的并购，甚至是我们熟悉的文化产业。阿里巴巴以后会众筹电影？大家喜欢什么，就能演什么电影。这只是变化的冰山一角。如果你想了解更多来看看腾讯智酷重磅推出的这个调研报告吧——《2014互联网跨界趋势报告》。\n\n![][1]\n\n![][2]\n\n![][3]\n\n![][4]\n\n![][5]\n\n![][6]\n\n![][7]\n\n![][8]\n\n![][9]\n\n![][10]\n\n![][11]\n\n![][12]\n\n![][13]\n\n![][14]\n\n![][15]\n\n![][16]\n\n![][17]\n\n![][18]\n\n![][19]\n\n![][20]\n\n![][21]\n\n![][22]\n\n![][23]\n\n![][24]\n\n![][25]\n\n![][26]\n\n![][27]\n\n![][28]\n\n![][29]\n\n![][30]\n\n![][31]\n\n![][32]\n\n![][33]\n\n![][34]\n\n![][35]\n\n![][36]\n\n![][37]\n\n![][38]\n\n![][39]\n\n [1]: <a href="http://mmbiz.qpic.cn/mmbiz/7yeGepzIXiaCic60Gs5Cdv826yqesh3nHWiadnM8eXGoEibfRfn9VwdmDuGxjUc3YicqoLKe7RKnzKRocnLgTOez5Zw/0\n" target="_blank" rel="noopener">http://mmbiz.qpic.cn/mmbiz/7yeGepzIXiaCic60Gs5Cdv826yqesh3nHWiadnM8eXGoEibfRfn9VwdmDuGxjUc3YicqoLKe7RKnzKRocnLgTOez5Zw/0\n</a> [2]: <a href="http://mmbiz.qpic.cn/mmbiz/7yeGepzIXiaCic60Gs5Cdv826yqesh3nHWvqDqToVRjiaCCxgHXSYPpWSqMCVwxs2pyEAIQkqbd6za7U33SQTCHibw/0\n" target="_blank" rel="noopener">http://mmbiz.qpic.cn/mmbiz/7yeGepzIXiaCic60Gs5Cdv826yqesh3nHWvqDqToVRjiaCCxgHXSYPpWSqMCVwxs2pyEAIQkqbd6za7U33SQTCHibw/0\n</a> [3]: <a href="http://mmbiz.qpic.cn/mmbiz/7yeGepzIXiaCic60Gs5Cdv826yqesh3nHWvRUMJyzAF6LwdlD76O0GqBJF2kwtelUvJIoq9tncslS8EtvJrdXuicA/0\n" target="_blank" rel="noopener">http://mmbiz.qpic.cn/mmbiz/7yeGepzIXiaCic60Gs5Cdv826yqesh3nHWvRUMJyzAF6LwdlD76O0GqBJF2kwtelUvJIoq9tncslS8EtvJrdXuicA/0\n</a> [4]: <a href="http://mmbiz.qpic.cn/mmbiz/7yeGepzIXiaCic60Gs5Cdv826yqesh3nHWia9GtxU3l2prjgqrqfZXAHKh7nIP23QiciaDeU6Lp4NLCQPApyRrw8fWQ/0\n" target="_blank" rel="noopener">http://mmbiz.qpic.cn/mmbiz/7yeGepzIXiaCic60Gs5Cdv826yqesh3nHWia9GtxU3l2prjgqrqfZXAHKh7nIP23QiciaDeU6Lp4NLCQPApyRrw8fWQ/0\n</a> [5]: <a href="http://mmbiz.qpic.cn/mmbiz/7yeGepzIXiaCic60Gs5Cdv826yqesh3nHW7pu3dPQ3OWAa0xbY3g32WaNM9222ia67zlnO5vpfRuKmzefNwzpok4g/0\n" target="_blank" rel="noopener">http://mmbiz.qpic.cn/mmbiz/7yeGepzIXiaCic60Gs5Cdv826yqesh3nHW7pu3dPQ3OWAa0xbY3g32WaNM9222ia67zlnO5vpfRuKmzefNwzpok4g/0\n</a> [6]: <a href="http://mmbiz.qpic.cn/mmbiz/7yeGepzIXiaCic60Gs5Cdv826yqesh3nHWA8CfgrxAepeV6QsaHu8d0sKgsibzgxQxqcYFNQ7edXHG9C3xCUFNhDg/0\n" target="_blank" rel="noopener">http://mmbiz.qpic.cn/mmbiz/7yeGepzIXiaCic60Gs5Cdv826yqesh3nHWA8CfgrxAepeV6QsaHu8d0sKgsibzgxQxqcYFNQ7edXHG9C3xCUFNhDg/0\n</a> [7]: <a href="http://mmbiz.qpic.cn/mmbiz/7yeGepzIXiaCic60Gs5Cdv826yqesh3nHWUNj2g0iarYicT35K8HxyYCm9TxljxjOjiaKGuZu4c4iaNmOt7CQPKSATGw/0\n" target="_blank" rel="noopener">http://mmbiz.qpic.cn/mmbiz/7yeGepzIXiaCic60Gs5Cdv826yqesh3nHWUNj2g0iarYicT35K8HxyYCm9TxljxjOjiaKGuZu4c4iaNmOt7CQPKSATGw/0\n</a> [8]: <a href="http://mmbiz.qpic.cn/mmbiz/7yeGepzIXiaCic60Gs5Cdv826yqesh3nHWpLx3Te8goWN5zDHtBibKw76XDcIYcZRpBia1bWzJq3omEWv1YYUveNhQ/0\n" target="_blank" rel="noopener">http://mmbiz.qpic.cn/mmbiz/7yeGepzIXiaCic60Gs5Cdv826yqesh3nHWpLx3Te8goWN5zDHtBibKw76XDcIYcZRpBia1bWzJq3omEWv1YYUveNhQ/0\n</a> [9]: <a href="http://mmbiz.qpic.cn/mmbiz/7yeGepzIXiaCic60Gs5Cdv826yqesh3nHW2Z5qjQRMWicbn0COzDqOcoibe5HxickI7DGzbKhrs0xYOEhq2lAX9Vc4g/0\n" target="_blank" rel="noopener">http://mmbiz.qpic.cn/mmbiz/7yeGepzIXiaCic60Gs5Cdv826yqesh3nHW2Z5qjQRMWicbn0COzDqOcoibe5HxickI7DGzbKhrs0xYOEhq2lAX9Vc4g/0\n</a> [10]: <a href="http://mmbiz.qpic.cn/mmbiz/7yeGepzIXiaCic60Gs5Cdv826yqesh3nHWMOiaYlq9YouV5ib1YrMB6Ba8FhmmS7zgZKiczLtAmRRQrjQcaDqPhNm6Q/0\n" target="_blank" rel="noopener">http://mmbiz.qpic.cn/mmbiz/7yeGepzIXiaCic60Gs5Cdv826yqesh3nHWMOiaYlq9YouV5ib1YrMB6Ba8FhmmS7zgZKiczLtAmRRQrjQcaDqPhNm6Q/0\n</a> [11]: <a href="http://mmbiz.qpic.cn/mmbiz/7yeGepzIXiaCic60Gs5Cdv826yqesh3nHWJGzlm22pVibn4ctPrOjqf0SwN56nnxj3GZ6Iy59J3xSdFP5Ghhg2hxQ/0\n" target="_blank" rel="noopener">http://mmbiz.qpic.cn/mmbiz/7yeGepzIXiaCic60Gs5Cdv826yqesh3nHWJGzlm22pVibn4ctPrOjqf0SwN56nnxj3GZ6Iy59J3xSdFP5Ghhg2hxQ/0\n</a> [12]: <a href="http://mmbiz.qpic.cn/mmbiz/7yeGepzIXiaCic60Gs5Cdv826yqesh3nHW4VydI8v1GUQ9WEWf5CoMDRlIfXDW8qVibxxwJpXd1ibQkT7x9UgtWIsw/0\n" target="_blank" rel="noopener">http://mmbiz.qpic.cn/mmbiz/7yeGepzIXiaCic60Gs5Cdv826yqesh3nHW4VydI8v1GUQ9WEWf5CoMDRlIfXDW8qVibxxwJpXd1ibQkT7x9UgtWIsw/0\n</a> [13]: <a href="http://mmbiz.qpic.cn/mmbiz/7yeGepzIXiaCic60Gs5Cdv826yqesh3nHWYRbyYctDdG2Sn2ibkjeUptQv9YfJ174mzyEJnGqKrv1YC3TQ2BS1btg/0\n" target="_blank" rel="noopener">http://mmbiz.qpic.cn/mmbiz/7yeGepzIXiaCic60Gs5Cdv826yqesh3nHWYRbyYctDdG2Sn2ibkjeUptQv9YfJ174mzyEJnGqKrv1YC3TQ2BS1btg/0\n</a> [14]: <a href="http://mmbiz.qpic.cn/mmbiz/7yeGepzIXiaCic60Gs5Cdv826yqesh3nHWZfXqgGnCYvhk36SXl3ic0VlZUS5KFvr4RO33viazIvMqFzL36zicWfsXA/0\n" target="_blank" rel="noopener">http://mmbiz.qpic.cn/mmbiz/7yeGepzIXiaCic60Gs5Cdv826yqesh3nHWZfXqgGnCYvhk36SXl3ic0VlZUS5KFvr4RO33viazIvMqFzL36zicWfsXA/0\n</a> [15]: <a href="http://mmbiz.qpic.cn/mmbiz/7yeGepzIXiaCic60Gs5Cdv826yqesh3nHW1HYVGmibe685zqeJZJHZtZjzZyIywprWpfM2oGFibgAhbxiaS7b7nogfA/0\n" target="_blank" rel="noopener">http://mmbiz.qpic.cn/mmbiz/7yeGepzIXiaCic60Gs5Cdv826yqesh3nHW1HYVGmibe685zqeJZJHZtZjzZyIywprWpfM2oGFibgAhbxiaS7b7nogfA/0\n</a> [16]: <a href="http://mmbiz.qpic.cn/mmbiz/7yeGepzIXiaCic60Gs5Cdv826yqesh3nHWLTVNsibK9YLmYYcAvU8t9SKTDvhnbkplibYDVpaw6FdmTNGlUkOfEFZQ/0\n" target="_blank" rel="noopener">http://mmbiz.qpic.cn/mmbiz/7yeGepzIXiaCic60Gs5Cdv826yqesh3nHWLTVNsibK9YLmYYcAvU8t9SKTDvhnbkplibYDVpaw6FdmTNGlUkOfEFZQ/0\n</a> [17]: <a href="http://mmbiz.qpic.cn/mmbiz/7yeGepzIXiaCic60Gs5Cdv826yqesh3nHWoibQHlcNtLeZnk2HIQFb5R9vgDHQ34CRqyczpb3RCuPS8FThURooicicA/0\n" target="_blank" rel="noopener">http://mmbiz.qpic.cn/mmbiz/7yeGepzIXiaCic60Gs5Cdv826yqesh3nHWoibQHlcNtLeZnk2HIQFb5R9vgDHQ34CRqyczpb3RCuPS8FThURooicicA/0\n</a> [18]: <a href="http://mmbiz.qpic.cn/mmbiz/7yeGepzIXiaCic60Gs5Cdv826yqesh3nHW5ic4icBO3YmmfXia1XjMuDfBicx0YoJTxX8zkXB2r1rLicAvXOER28xprHw/0\n" target="_blank" rel="noopener">http://mmbiz.qpic.cn/mmbiz/7yeGepzIXiaCic60Gs5Cdv826yqesh3nHW5ic4icBO3YmmfXia1XjMuDfBicx0YoJTxX8zkXB2r1rLicAvXOER28xprHw/0\n</a> [19]: <a href="http://mmbiz.qpic.cn/mmbiz/7yeGepzIXiaCic60Gs5Cdv826yqesh3nHWcBDJRqvTeHicXvem5iab1Ugx3jK3Lz7jWZPRZkCDoFTlKHgNqlqCEUew/0\n" target="_blank" rel="noopener">http://mmbiz.qpic.cn/mmbiz/7yeGepzIXiaCic60Gs5Cdv826yqesh3nHWcBDJRqvTeHicXvem5iab1Ugx3jK3Lz7jWZPRZkCDoFTlKHgNqlqCEUew/0\n</a> [20]: <a href="http://mmbiz.qpic.cn/mmbiz/7yeGepzIXiaCic60Gs5Cdv826yqesh3nHW8RaYvnQtWUcR1k8LzNJNwNpPib9gRZucicgcPGhAl9GCW2YS8E9pnvDw/0\n" target="_blank" rel="noopener">http://mmbiz.qpic.cn/mmbiz/7yeGepzIXiaCic60Gs5Cdv826yqesh3nHW8RaYvnQtWUcR1k8LzNJNwNpPib9gRZucicgcPGhAl9GCW2YS8E9pnvDw/0\n</a> [21]: <a href="http://mmbiz.qpic.cn/mmbiz/7yeGepzIXiaCic60Gs5Cdv826yqesh3nHWkTvRibUibgAxz2jibJpmZx2ibIib3KcK1iaOK2iakxAXBRycnIibiaibd7TYCyFg/0\n" target="_blank" rel="noopener">http://mmbiz.qpic.cn/mmbiz/7yeGepzIXiaCic60Gs5Cdv826yqesh3nHWkTvRibUibgAxz2jibJpmZx2ibIib3KcK1iaOK2iakxAXBRycnIibiaibd7TYCyFg/0\n</a> [22]: <a href="http://mmbiz.qpic.cn/mmbiz/7yeGepzIXiaCic60Gs5Cdv826yqesh3nHWFpf1qAK7TEic8NOdyLx4PFIcNRmdib8VWeL2k7y1yic3o8gQ5ic2a4Uf6g/0\n" target="_blank" rel="noopener">http://mmbiz.qpic.cn/mmbiz/7yeGepzIXiaCic60Gs5Cdv826yqesh3nHWFpf1qAK7TEic8NOdyLx4PFIcNRmdib8VWeL2k7y1yic3o8gQ5ic2a4Uf6g/0\n</a> [23]: <a href="http://mmbiz.qpic.cn/mmbiz/7yeGepzIXiaCic60Gs5Cdv826yqesh3nHWgAX7AQQtJODO6ZL51MzQX4ymRgWPj7UacQLn2u9E4FfmMjaVpfAcvQ/0\n" target="_blank" rel="noopener">http://mmbiz.qpic.cn/mmbiz/7yeGepzIXiaCic60Gs5Cdv826yqesh3nHWgAX7AQQtJODO6ZL51MzQX4ymRgWPj7UacQLn2u9E4FfmMjaVpfAcvQ/0\n</a> [24]: <a href="http://mmbiz.qpic.cn/mmbiz/7yeGepzIXiaCic60Gs5Cdv826yqesh3nHWSBvRiaMSlRHnHtibPpOVo8pIsaR9L5GOsHicQro8tG0VFJy9lb4G0ZkGA/0\n" target="_blank" rel="noopener">http://mmbiz.qpic.cn/mmbiz/7yeGepzIXiaCic60Gs5Cdv826yqesh3nHWSBvRiaMSlRHnHtibPpOVo8pIsaR9L5GOsHicQro8tG0VFJy9lb4G0ZkGA/0\n</a> [25]: <a href="http://mmbiz.qpic.cn/mmbiz/7yeGepzIXiaCic60Gs5Cdv826yqesh3nHWIiatwSraiaOoZJIHLibiaLEXNTNNRuB6RozkbpUibyRJ6flUibK7gnQ2x8vg/0\n" target="_blank" rel="noopener">http://mmbiz.qpic.cn/mmbiz/7yeGepzIXiaCic60Gs5Cdv826yqesh3nHWIiatwSraiaOoZJIHLibiaLEXNTNNRuB6RozkbpUibyRJ6flUibK7gnQ2x8vg/0\n</a> [26]: <a href="http://mmbiz.qpic.cn/mmbiz/7yeGepzIXiaCic60Gs5Cdv826yqesh3nHWdic4OibCDlTOJibK2w1WicDOfwjA5nwdF4FBrAM7PMiaWrUKfCpgQNYD02w/0\n" target="_blank" rel="noopener">http://mmbiz.qpic.cn/mmbiz/7yeGepzIXiaCic60Gs5Cdv826yqesh3nHWdic4OibCDlTOJibK2w1WicDOfwjA5nwdF4FBrAM7PMiaWrUKfCpgQNYD02w/0\n</a> [27]: <a href="http://mmbiz.qpic.cn/mmbiz/7yeGepzIXiaCic60Gs5Cdv826yqesh3nHWXoibZICw7oeuryhaNGj2bkmWaIq1tgUWf9sZ0TZGNibFDbuwHNewGNTg/0\n" target="_blank" rel="noopener">http://mmbiz.qpic.cn/mmbiz/7yeGepzIXiaCic60Gs5Cdv826yqesh3nHWXoibZICw7oeuryhaNGj2bkmWaIq1tgUWf9sZ0TZGNibFDbuwHNewGNTg/0\n</a> [28]: <a href="http://mmbiz.qpic.cn/mmbiz/7yeGepzIXiaCic60Gs5Cdv826yqesh3nHWzMtbxibS6nbs0EKD3mkgic3a57X8hmG9suNebkaz4NIlXxddP5CaDgkg/0\n" target="_blank" rel="noopener">http://mmbiz.qpic.cn/mmbiz/7yeGepzIXiaCic60Gs5Cdv826yqesh3nHWzMtbxibS6nbs0EKD3mkgic3a57X8hmG9suNebkaz4NIlXxddP5CaDgkg/0\n</a> [29]: <a href="http://mmbiz.qpic.cn/mmbiz/7yeGepzIXiaCic60Gs5Cdv826yqesh3nHWyTqzZhYqK7YNCBqm0oph6kjtiazB7OZ80eZLkdMDiba3HleLCq7EJ2SQ/0\n" target="_blank" rel="noopener">http://mmbiz.qpic.cn/mmbiz/7yeGepzIXiaCic60Gs5Cdv826yqesh3nHWyTqzZhYqK7YNCBqm0oph6kjtiazB7OZ80eZLkdMDiba3HleLCq7EJ2SQ/0\n</a> [30]: <a href="http://mmbiz.qpic.cn/mmbiz/7yeGepzIXiaCic60Gs5Cdv826yqesh3nHWRW41am1Fx1ImtRgBQpIwHD5wIibpu9H72KYN7P7NWyXCczvmWlaTVAg/0\n" target="_blank" rel="noopener">http://mmbiz.qpic.cn/mmbiz/7yeGepzIXiaCic60Gs5Cdv826yqesh3nHWRW41am1Fx1ImtRgBQpIwHD5wIibpu9H72KYN7P7NWyXCczvmWlaTVAg/0\n</a> [31]: <a href="http://mmbiz.qpic.cn/mmbiz/7yeGepzIXiaCic60Gs5Cdv826yqesh3nHW7r8fjRic33nj2kv4wAjPMOJ1iajDgkXlicZkibobs0eBZCBHIahxG9RnuA/0\n" target="_blank" rel="noopener">http://mmbiz.qpic.cn/mmbiz/7yeGepzIXiaCic60Gs5Cdv826yqesh3nHW7r8fjRic33nj2kv4wAjPMOJ1iajDgkXlicZkibobs0eBZCBHIahxG9RnuA/0\n</a> [32]: <a href="http://mmbiz.qpic.cn/mmbiz/7yeGepzIXiaCic60Gs5Cdv826yqesh3nHWlu50HYMobMgkiaBC9xXCjsLdP8akEtxudia2v0cB2a8ur7thwtWdvQxg/0\n" target="_blank" rel="noopener">http://mmbiz.qpic.cn/mmbiz/7yeGepzIXiaCic60Gs5Cdv826yqesh3nHWlu50HYMobMgkiaBC9xXCjsLdP8akEtxudia2v0cB2a8ur7thwtWdvQxg/0\n</a> [33]: <a href="http://mmbiz.qpic.cn/mmbiz/7yeGepzIXiaCic60Gs5Cdv826yqesh3nHWyRGhkOnJtNiazI7TpQHpUNkoX1sN2j4HAySeyR58Kw8UYGiaklgCQa0Q/0\n" target="_blank" rel="noopener">http://mmbiz.qpic.cn/mmbiz/7yeGepzIXiaCic60Gs5Cdv826yqesh3nHWyRGhkOnJtNiazI7TpQHpUNkoX1sN2j4HAySeyR58Kw8UYGiaklgCQa0Q/0\n</a> [34]: <a href="http://mmbiz.qpic.cn/mmbiz/7yeGepzIXiaCic60Gs5Cdv826yqesh3nHW5NP7GAa4Dfx3ibDkPkHVW377tBqiavAOIOlVj9EWiabB8HMcia0lna7V0Q/0\n" target="_blank" rel="noopener">http://mmbiz.qpic.cn/mmbiz/7yeGepzIXiaCic60Gs5Cdv826yqesh3nHW5NP7GAa4Dfx3ibDkPkHVW377tBqiavAOIOlVj9EWiabB8HMcia0lna7V0Q/0\n</a> [35]: <a href="http://mmbiz.qpic.cn/mmbiz/7yeGepzIXiaCic60Gs5Cdv826yqesh3nHWI6hE3IvwlI5cd0LznibXskIA5b4OzWTVLLSeeozD4fEOQz00lic1sOAQ/0\n" target="_blank" rel="noopener">http://mmbiz.qpic.cn/mmbiz/7yeGepzIXiaCic60Gs5Cdv826yqesh3nHWI6hE3IvwlI5cd0LznibXskIA5b4OzWTVLLSeeozD4fEOQz00lic1sOAQ/0\n</a> [36]: <a href="http://mmbiz.qpic.cn/mmbiz/7yeGepzIXiaCic60Gs5Cdv826yqesh3nHWLefdicHA875gVStaNOQqOHtaLHlBEmf2tXCPrMDFvKhgg3GsImGpGvA/0\n" target="_blank" rel="noopener">http://mmbiz.qpic.cn/mmbiz/7yeGepzIXiaCic60Gs5Cdv826yqesh3nHWLefdicHA875gVStaNOQqOHtaLHlBEmf2tXCPrMDFvKhgg3GsImGpGvA/0\n</a> [37]: <a href="http://mmbiz.qpic.cn/mmbiz/7yeGepzIXiaCic60Gs5Cdv826yqesh3nHWRNdhK7pzZfrbibpEBEdvYCxicqtbUAJicH3GXfyk3oIuM9AeYn5Xfpf2w/0\n" target="_blank" rel="noopener">http://mmbiz.qpic.cn/mmbiz/7yeGepzIXiaCic60Gs5Cdv826yqesh3nHWRNdhK7pzZfrbibpEBEdvYCxicqtbUAJicH3GXfyk3oIuM9AeYn5Xfpf2w/0\n</a> [38]: <a href="http://mmbiz.qpic.cn/mmbiz/7yeGepzIXiaCic60Gs5Cdv826yqesh3nHWZq6XIQ2CEDInIcFJxkpesYZHwaQnNCszxEHajIycNLgg8bg3iaq64wg/0\n" target="_blank" rel="noopener">http://mmbiz.qpic.cn/mmbiz/7yeGepzIXiaCic60Gs5Cdv826yqesh3nHWZq6XIQ2CEDInIcFJxkpesYZHwaQnNCszxEHajIycNLgg8bg3iaq64wg/0\n</a> [39]: <a href="http://mmbiz.qpic.cn/mmbiz/7yeGepzIXiaCic60Gs5Cdv826yqesh3nHW2icS7eIPqZHPTbF7p3MvrsF6OVpfOsmbHvmrvpTG405qhKmE5jKEg7g/0" target="_blank" rel="noopener">http://mmbiz.qpic.cn/mmbiz/7yeGepzIXiaCic60Gs5Cdv826yqesh3nHW2icS7eIPqZHPTbF7p3MvrsF6OVpfOsmbHvmrvpTG405qhKmE5jKEg7g/0</a></p>
+<div style="clear:both"></div><div class="cc"><p>The <a href="https://blog.naaln.com">Why·Liam·Blog</a> by <a href="https://www.naaln.com" target="_blank" rel="external">WhyLiam</a> is licensed under a <a href="http://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" rel="external">Creative Commons BY-NC-ND 4.0 International License</a>.</p><p>由<a href="https://www.naaln.com" target="_blank" rel="external">WhyLiam</a>创作并维护的<a href="https://blog.naaln.com">Why·Liam·Blog</a>采用创作共用<a href="http://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" rel="external">保留署名-非商业-禁止演绎4.0国际许可证</a>。</p><p>本文首发于<a href="https://blog.naaln.com">Why·Liam·Blog (https://blog.naaln.com)</a>，版权所有，侵权必究。</p><p>本文永久链接：<a href="https://blog.naaln.com/2014/10/javascript-is-loaded-explore-implementation-issues/">https://blog.naaln.com/2014/10/javascript-is-loaded-explore-implementation-issues/</a></p><p></p></div>
+      
+    </div>
+    
+    
+    
+
+    
+      <div>
+        <div id="wechat_subscriber" style="display: block; padding: 10px 0; margin: 20px auto; width: 100%; text-align: center">
+    <img id="wechat_subscriber_qcode" src="//ws1.sinaimg.cn/large/006tKfTcgy1fg8gpi7kaaj30by0by74i.jpg" alt="WHY·LIAM wechat" style="width: 200px; max-width: 100%;"/>
+    <div>记录生活，研究产品，分享设计，分析数据，讨论科技和商业，不定期扯淡。</div>
+</div>
+
+      </div>
+    
+
+    
+      <div>
+        <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+  <div>如果觉得我的文章对您有用，请随意打赏。您的支持将鼓励我继续创作！</div>
+  <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+    <span>打赏</span>
+  </button>
+  <div id="QR" style="display: none;">
+
+    
+      <div id="wechat" style="display: inline-block">
+        <img id="wechat_qr" src="//ws1.sinaimg.cn/mw690/006tNc79gy1fm7yqrau7mj30f00ezad5.jpg" alt="WHY·LIAM 微信支付"/>
+        <p>微信支付</p>
+      </div>
+    
+
+    
+      <div id="alipay" style="display: inline-block">
+        <img id="alipay_qr" src="//ww3.sinaimg.cn/mw690/48910e01gw1evkbfendrjj20ci0ci0uf.jpg" alt="WHY·LIAM 支付宝"/>
+        <p>支付宝</p>
+      </div>
+    
+
+    
+
+  </div>
+</div>
+
+      </div>
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2014/10/four-strokes-make-your-website-rebirth-shines/" rel="next" title="四招让你的网站“重获新生眼前一亮”">
+                <i class="fa fa-chevron-left"></i> 四招让你的网站“重获新生眼前一亮”
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2014/10/stage-fright-until-now-there-is-no-more-enthusiasm-to-meet-new-people/" rel="prev" title="【怯场】时至如今越来越没有热情去认识新的人了……">
+                【怯场】时至如今越来越没有热情去认识新的人了…… <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+  
+    <div class="comments" id="comments">
+      <div id="SOHUCS"></div>
+    </div>
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+
+      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image"
+                src="//tva2.sinaimg.cn/crop.0.0.998.998.180/48910e01gw1ef5p6etuzdj20rs0rs771.jpg"
+                alt="WHY·LIAM" />
+            
+              <p class="site-author-name" itemprop="name">WHY·LIAM</p>
+              <p class="site-description motion-element" itemprop="description"></p>
+          </div>
+
+          
+            <nav class="site-state motion-element">
+              
+                <div class="site-state-item site-state-posts">
+                
+                  <a href="/archives/">
+                
+                    <span class="site-state-item-count">721</span>
+                    <span class="site-state-item-name">日志</span>
+                  </a>
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-categories">
+                  <a href="/categories/index.html">
+                    <span class="site-state-item-count">4</span>
+                    <span class="site-state-item-name">分类</span>
+                  </a>
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-tags">
+                  <a href="/tags/index.html">
+                    <span class="site-state-item-count">67</span>
+                    <span class="site-state-item-name">标签</span>
+                  </a>
+                </div>
+              
+            </nav>
+          
+
+          
+            <div class="feed-link motion-element">
+              <a href="/atom.xml" rel="alternate">
+                <i class="fa fa-rss"></i>
+                RSS
+              </a>
+            </div>
+          
+
+          
+            <div class="links-of-author motion-element">
+                
+                  <span class="links-of-author-item">
+                    <a href="https://github.com/liszd" target="_blank" title="GitHub" rel="external nofollow">
+                      
+                        <i class="fa fa-fw fa-github"></i>GitHub</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="http://weibo.com/whyliam" target="_blank" title="微博" rel="external nofollow">
+                      
+                        <i class="fa fa-fw fa-weibo"></i>微博</a>
+                  </span>
+                
+            </div>
+          
+
+          
+          
+            <div class="cc-license motion-element" itemprop="license">
+              <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/" class="cc-opacity" target="_blank" rel="external nofollow">
+                <img src="/images/cc-by-nc-nd.svg" alt="Creative Commons" />
+              </a>
+            </div>
+          
+
+          
+          
+            <div class="links-of-blogroll motion-element links-of-blogroll-block">
+              <div class="links-of-blogroll-title">
+                <i class="fa  fa-fw fa-link"></i>
+                Links
+              </div>
+              <ul class="links-of-blogroll-list">
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="http://www.naaln.com/" title="纳兰主页" target="_blank">纳兰主页</a>
+                  </li>
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="http://photo.naaln.com/" title="纳兰相册" target="_blank">纳兰相册</a>
+                  </li>
+                
+              </ul>
+            </div>
+          
+
+          
+            
+          
+          
+
+        </div>
+      </section>
+
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; 2003 &mdash; <span itemprop="copyrightYear">2018</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">WHY·LIAM</span>
+
+  
+
+  
+</div>
+
+
+  
+
+
+
+  <div class="powered-by">由 <a class="theme-link" target="_blank" rel="external nofollow" href="https://hexo.io">Hexo</a> 强力驱动</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" rel="external nofollow" href="https://github.com/theme-next/hexo-theme-next">NexT.Muse</a> v6.0.2</div>
+
+
+
+  <div class="footer-custom">Hosted by <a target="_blank" rel="external nofollow" href="https://pages.coding.me"><b>Coding Pages</b></a></div>
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=6.0.2"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=6.0.2"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=6.0.2"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=6.0.2"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=6.0.2"></script>
+
+
+
+  
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+  
+    <script type="text/javascript">
+    (function(){
+      var appid = 'cytklkKc0';
+      var conf = 'prod_b1dd516bbb7f3198591656f99d9ace80';
+      var width = window.innerWidth || document.documentElement.clientWidth;
+      if (width < 960) {
+      window.document.write('<script id="changyan_mobile_js" charset="utf-8" type="text/javascript" src="https://changyan.sohu.com/upload/mobile/wap-js/changyan_mobile.js?client_id=' + appid + '&conf=' + conf + '"><\/script>'); } else { var loadJs=function(d,a){var c=document.getElementsByTagName("head")[0]||document.head||document.documentElement;var b=document.createElement("script");b.setAttribute("type","text/javascript");b.setAttribute("charset","UTF-8");b.setAttribute("src",d);if(typeof a==="function"){if(window.attachEvent){b.onreadystatechange=function(){var e=b.readyState;if(e==="loaded"||e==="complete"){b.onreadystatechange=null;a()}}}else{b.onload=a}}c.appendChild(b)};loadJs("https://changyan.sohu.com/upload/changyan.js",function(){
+        window.changyan.api.config({appid:appid,conf:conf})});
+      }
+    })();
+    </script>
+    <script type="text/javascript" src="https://assets.changyan.sohu.com/upload/plugins/plugins.count.js"></script>
+  
+
+
+
+
+
+
+
+  
+
+
+
+
+  
+  
+  
+  <link rel="stylesheet" href="/lib/algolia-instant-search/instantsearch.min.css">
+
+  
+  
+  <script src="/lib/algolia-instant-search/instantsearch.min.js"></script>
+  
+
+  <script src="/js/src/algolia-search.js?v=6.0.2"></script>
+
+
+
+  
+
+  
+
+  
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';        
+    }
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>

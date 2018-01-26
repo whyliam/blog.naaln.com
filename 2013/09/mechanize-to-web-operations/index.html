@@ -1,0 +1,966 @@
+<!DOCTYPE html>
+
+
+
+
+<html class="theme-next muse" lang="zh-CN">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+  <meta name="google-site-verification" content="ByVfaP_E3b9ZYRUGhNAUFSQKL8mJQwUehpQwoxJ5n-c" />
+
+
+
+  <meta name="msvalidate.01" content="DB220684085BEDBD2E49E8E942534B1F" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=6.0.2" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon-next.png?v=6.0.2">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32-next.png?v=6.0.2">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16-next.png?v=6.0.2">
+
+
+  <link rel="mask-icon" href="/favicon/logo.svg?v=6.0.2" color="#222">
+
+
+
+
+
+
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Muse',
+    version: '6.0.2',
+    sidebar: {"position":"right","display":"hide","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: false,
+    fastclick: false,
+    lazyload: false,
+    tabs: true,
+    motion: {"enable":false,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    algolia: {
+      applicationID: 'XILKIWTAM9',
+      apiKey: '8c01137fe05d281ccd531a0ec622322a',
+      indexName: 'blog',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"搜索文章","hits_empty":"啊，找不到 ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+  
+
+
+
+
+  
+  <meta name="keywords" content="mechanize," />
+
+
+<meta name="description" content="与网页交互(Interacting With a Web Page) 通过Mechanize模拟自然的浏览器行为来完成与网页之间的交互. Mechanize的安装1Mechanize的安装请查看 -&amp;gt;  Ruby library的安装 使用Mechanize时,需要在脚本头部注明1require &apos;mechanize&apos; Mechanize object的设定1agent = WWW::Mec">
+<meta name="keywords" content="mechanize">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Mechanize对WEB的操作">
+<meta property="og:url" content="https://blog.naaln.com/2013/09/mechanize-to-web-operations/index.html">
+<meta property="og:site_name" content="Why·Liam·Blog">
+<meta property="og:description" content="与网页交互(Interacting With a Web Page) 通过Mechanize模拟自然的浏览器行为来完成与网页之间的交互. Mechanize的安装1Mechanize的安装请查看 -&amp;gt;  Ruby library的安装 使用Mechanize时,需要在脚本头部注明1require &apos;mechanize&apos; Mechanize object的设定1agent = WWW::Mec">
+<meta property="og:locale" content="zh-CN">
+<meta property="og:updated_time" content="2017-09-03T09:15:57.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Mechanize对WEB的操作">
+<meta name="twitter:description" content="与网页交互(Interacting With a Web Page) 通过Mechanize模拟自然的浏览器行为来完成与网页之间的交互. Mechanize的安装1Mechanize的安装请查看 -&amp;gt;  Ruby library的安装 使用Mechanize时,需要在脚本头部注明1require &apos;mechanize&apos; Mechanize object的设定1agent = WWW::Mec">
+
+
+
+  <link rel="alternate" href="/atom.xml" title="Why·Liam·Blog" type="application/atom+xml" />
+
+
+
+
+  <link rel="canonical" href="https://blog.naaln.com/2013/09/mechanize-to-web-operations/"/>
+
+
+  <title>Mechanize对WEB的操作 | Why·Liam·Blog</title>
+  
+
+
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-47966442-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-47966442-2');
+</script>
+
+
+
+
+
+
+  
+<script src="//msite.baidu.com/sdk/c.js?appid=1586840953097399"></script>
+<link rel="canonical" href="https://blog.naaln.com/2013/09/mechanize-to-web-operations/"/>
+<script type="application/ld+json">
+    {
+        "@context": "https://ziyuan.baidu.com/contexts/cambrian.jsonld",
+        "@id": "https://blog.naaln.com/2013/09/mechanize-to-web-operations/",
+        "appid": "1586840953097399",
+        "title": "Mechanize对WEB的操作",
+        "images": [
+            ""
+            ],
+        "description": "",
+        "pubDate": "",
+        "upDate": "",
+        "lrDate": ""
+    }
+</script>
+
+  <noscript>
+  <style type="text/css">
+    .use-motion .motion-element,
+    .use-motion .brand,
+    .use-motion .menu-item,
+    .sidebar-inner,
+    .use-motion .post-block,
+    .use-motion .pagination,
+    .use-motion .comments,
+    .use-motion .post-header,
+    .use-motion .post-body,
+    .use-motion .collection-title { opacity: initial; }
+
+    .use-motion .logo,
+    .use-motion .site-title,
+    .use-motion .site-subtitle {
+      opacity: initial;
+      top: initial;
+    }
+
+    .use-motion {
+      .logo-line-before i { left: initial; }
+      .logo-line-after i { right: initial; }
+    }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-CN">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-right page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"> <div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Why·Liam·Blog</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <h1 class="site-subtitle" itemprop="description">人生若如初見</h1>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            <i class="menu-item-icon fa fa-fw fa-home"></i> <br />首页</a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />归档</a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-technology">
+          <a href="/categories/technology/" rel="section">
+            <i class="menu-item-icon fa fa-fw fa-code"></i> <br />技术</a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-jottings">
+          <a href="/categories/jottings/" rel="section">
+            <i class="menu-item-icon fa fa-fw fa-language"></i> <br />随笔</a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tour">
+          <a href="/categories/tour/" rel="section">
+            <i class="menu-item-icon fa fa-fw fa-globe"></i> <br />旅游</a>
+        </li>
+      
+
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br />搜索</a>
+        </li>
+      
+    </ul>
+  
+
+  
+    <div class="site-search">
+      
+  
+  <div class="algolia-popup popup search-popup">
+    <div class="algolia-search">
+      <div class="algolia-search-input-icon">
+        <i class="fa fa-search"></i>
+      </div>
+      <div class="algolia-search-input" id="algolia-search-input"></div>
+    </div>
+
+    <div class="algolia-results">
+      <div id="algolia-stats"></div>
+      <div id="algolia-hits"></div>
+      <div id="algolia-pagination" class="algolia-pagination"></div>
+    </div>
+
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+  </div>
+
+
+
+
+    </div>
+  
+</nav>
+
+
+  
+
+
+
+ </div>
+    </header>
+
+    
+
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://blog.naaln.com/2013/09/mechanize-to-web-operations/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="WHY·LIAM">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="//tva2.sinaimg.cn/crop.0.0.998.998.180/48910e01gw1ef5p6etuzdj20rs0rs771.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Why·Liam·Blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h2 class="post-title" itemprop="name headline">Mechanize对WEB的操作</h2>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2013-09-10T20:14:00+08:00">2013-09-10</time>
+            
+
+            
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/technology/" itemprop="url" rel="index"><span itemprop="name">技术</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+              <span class="post-meta-divider">|</span>
+              <span class="post-meta-item-icon">
+                <i class="fa fa-comment-o"></i>
+              </span>
+              
+                <a href="/2013/09/mechanize-to-web-operations/#SOHUCS" itemprop="discussionUrl">
+                  <span id="changyan_count_unit" class="post-comments-count hc-comment-count" data-xid="2013/09/mechanize-to-web-operations/" itemprop="commentsCount"></span>
+                </a>
+              
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p>与网页交互(Interacting With a Web Page)</p>
+<p>通过Mechanize模拟自然的浏览器行为来完成与网页之间的交互.</p>
+<h4 id="Mechanize的安装"><a href="#Mechanize的安装" class="headerlink" title="Mechanize的安装"></a>Mechanize的安装</h4><figure class="highlight xl"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">M<span class="function"><span class="title">echanize</span>的安装请查看 -&gt;</span>  Ruby library的安装</span><br></pre></td></tr></table></figure>
+<h4 id="使用Mechanize时-需要在脚本头部注明"><a href="#使用Mechanize时-需要在脚本头部注明" class="headerlink" title="使用Mechanize时,需要在脚本头部注明"></a>使用Mechanize时,需要在脚本头部注明</h4><figure class="highlight coffeescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">require</span> <span class="string">'mechanize'</span></span><br></pre></td></tr></table></figure>
+<h4 id="Mechanize-object的设定"><a href="#Mechanize-object的设定" class="headerlink" title="Mechanize object的设定"></a>Mechanize object的设定</h4><figure class="highlight autohotkey"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="symbol">agent = WWW::</span>Mechanize.<span class="keyword">new</span></span><br></pre></td></tr></table></figure>
+<h4 id="对虚拟的user-agent的设定"><a href="#对虚拟的user-agent的设定" class="headerlink" title="对虚拟的user_agent的设定"></a>对虚拟的user_agent的设定</h4><figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">agent<span class="selector-class">.user_agent_alias</span> = <span class="string">'Windows IE 7'</span></span><br></pre></td></tr></table></figure>
+<h4 id="历史纪录的大小设"><a href="#历史纪录的大小设" class="headerlink" title="历史纪录的大小设"></a>历史纪录的大小设</h4><figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">agent<span class="selector-class">.max_history</span> = <span class="number">1</span></span><br></pre></td></tr></table></figure>
+<h4 id="激活网址"><a href="#激活网址" class="headerlink" title="激活网址"></a>激活网址</h4><figure class="highlight arduino"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">agent.<span class="built_in">get</span>(<span class="string">'http://www.test.com'</span>)</span><br></pre></td></tr></table></figure>
+<h4 id="网页连接超时设定"><a href="#网页连接超时设定" class="headerlink" title="网页连接超时设定"></a>网页连接超时设定</h4><figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">agent<span class="selector-class">.open_timeout</span> = <span class="number">10</span></span><br></pre></td></tr></table></figure>
+<h4 id="设定连接网页时的认证-要在激活网页前使用"><a href="#设定连接网页时的认证-要在激活网页前使用" class="headerlink" title="设定连接网页时的认证(要在激活网页前使用)"></a>设定连接网页时的认证(要在激活网页前使用)</h4><figure class="highlight less"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">agent</span><span class="selector-class">.auth</span>(<span class="string">'username'</span>, <span class="string">'password'</span>)</span><br></pre></td></tr></table></figure>
+<h4 id="读取网页的title标签"><a href="#读取网页的title标签" class="headerlink" title="读取网页的title标签"></a>读取网页的title标签</h4><figure class="highlight xl"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">page</span> = agent.get(<span class="string">'http://www.test.com'</span>) </span><br><span class="line"><span class="built_in">page</span>.<span class="built_in">title</span></span><br></pre></td></tr></table></figure>
+<h4 id="取得当前网页的网址"><a href="#取得当前网页的网址" class="headerlink" title="取得当前网页的网址"></a>取得当前网页的网址</h4><figure class="highlight xl"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">page</span> = agent.get(<span class="string">'http://www.test.com'</span>) </span><br><span class="line"><span class="built_in">page</span>.uri</span><br></pre></td></tr></table></figure>
+<h4 id="读取网页的form标签"><a href="#读取网页的form标签" class="headerlink" title="读取网页的form标签"></a>读取网页的form标签</h4><figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">page<span class="selector-class">.forms</span><span class="selector-class">.name</span>(<span class="string">'Name'</span>)</span><br></pre></td></tr></table></figure>
+<h4 id="使用form的action"><a href="#使用form的action" class="headerlink" title="使用form的action"></a>使用form的action</h4><figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">page<span class="selector-class">.forms</span><span class="selector-class">.action</span>(<span class="string">'test.php'</span>)</span><br></pre></td></tr></table></figure>
+<h4 id="如果网页中有多个form时"><a href="#如果网页中有多个form时" class="headerlink" title="如果网页中有多个form时"></a>如果网页中有多个form时</h4><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">page</span><span class="selector-class">.forms</span><span class="selector-attr">[0]</span></span><br></pre></td></tr></table></figure>
+<h4 id="如果网页中有多个同名称或相同action的form时"><a href="#如果网页中有多个同名称或相同action的form时" class="headerlink" title="如果网页中有多个同名称或相同action的form时"></a>如果网页中有多个同名称或相同action的form时</h4><figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">page<span class="selector-class">.forms</span><span class="selector-class">.name</span>(<span class="string">'Name'</span>).first</span><br></pre></td></tr></table></figure>
+<h4 id="使用传递方法进行判断"><a href="#使用传递方法进行判断" class="headerlink" title="使用传递方法进行判断"></a>使用传递方法进行判断</h4><figure class="highlight sqf"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">page.forms.<span class="built_in">action</span>(<span class="string">'./test.php'</span>).<span class="built_in">find</span>&#123;|f| f.method == <span class="string">'POST'</span>&#125;</span><br></pre></td></tr></table></figure>
+<h4 id="文本框-密码框-文本域的填写"><a href="#文本框-密码框-文本域的填写" class="headerlink" title="文本框,密码框,文本域的填写"></a>文本框,密码框,文本域的填写</h4><figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">form</span> = page<span class="selector-class">.forms</span><span class="selector-class">.name</span>(<span class="string">'Name'</span>)<span class="selector-class">.first</span> </span><br><span class="line"><span class="selector-tag">form</span>[<span class="string">'文本框或文本域name'</span>] = <span class="string">'填写内容'</span> </span><br><span class="line"><span class="selector-tag">form</span><span class="selector-class">.fields</span><span class="selector-class">.name</span>(<span class="string">'文本框或文本域name'</span>)<span class="selector-class">.value</span> = <span class="string">'填写内容'</span></span><br></pre></td></tr></table></figure>
+<h4 id="submit标签"><a href="#submit标签" class="headerlink" title="submit标签"></a>submit标签</h4><figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">form</span> = page<span class="selector-class">.form</span>[<span class="number">0</span>] </span><br><span class="line"><span class="selector-tag">form</span><span class="selector-class">.submit</span> </span><br><span class="line"><span class="selector-tag">form</span>.submit(<span class="selector-tag">form</span><span class="selector-class">.buttons</span><span class="selector-class">.name</span>(<span class="string">'Name'</span>))</span><br></pre></td></tr></table></figure>
+<h4 id="CheckBox标签"><a href="#CheckBox标签" class="headerlink" title="CheckBox标签"></a>CheckBox标签</h4><figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">form</span> = page<span class="selector-class">.forms</span><span class="selector-class">.name</span>(<span class="string">'chkbox'</span>) </span><br><span class="line">返回的值为 c1 = <span class="selector-tag">form</span><span class="selector-class">.checkboxes</span>[<span class="number">0</span>]<span class="selector-class">.name</span> </span><br><span class="line">返回的值为 val2 = <span class="selector-tag">form</span><span class="selector-class">.checkboxes</span>[<span class="number">1</span>]<span class="selector-class">.value</span> </span><br><span class="line">返回的值为 false = <span class="selector-tag">form</span><span class="selector-class">.checkboxes</span><span class="selector-class">.name</span>(<span class="string">"c1″).checked</span></span><br></pre></td></tr></table></figure>
+<h4 id="复选框的选择"><a href="#复选框的选择" class="headerlink" title="复选框的选择"></a>复选框的选择</h4><figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">form</span><span class="selector-class">.checkboxes</span><span class="selector-class">.name</span>(<span class="string">'c1'</span>).check</span><br></pre></td></tr></table></figure>
+<h4 id="对应的HTML代码为："><a href="#对应的HTML代码为：" class="headerlink" title="对应的HTML代码为："></a>对应的HTML代码为：</h4><figure class="highlight stata"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&lt;<span class="keyword">form</span> name=<span class="string">"chkbox"</span>&gt; </span><br><span class="line">  &lt;<span class="keyword">input</span> <span class="keyword">type</span>=<span class="string">"checkbox"</span> name=<span class="string">"c1″ value="</span>val1″&gt;复选框1 </span><br><span class="line">  &lt;<span class="keyword">br</span>&gt; </span><br><span class="line">  &lt;<span class="keyword">input</span> <span class="keyword">type</span>=<span class="string">"checkbox"</span> name=<span class="string">"c2″ value="</span>val2″ checked&gt;复选框2 </span><br><span class="line">&lt;/<span class="keyword">form</span>&gt;</span><br></pre></td></tr></table></figure>
+<h4 id="单选框的选择"><a href="#单选框的选择" class="headerlink" title="单选框的选择"></a>单选框的选择</h4><figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">form</span><span class="selector-class">.radiobuttons</span><span class="selector-class">.name</span>(<span class="string">'box'</span>)[<span class="number">1</span>].check</span><br></pre></td></tr></table></figure>
+<h4 id="获得当前SelectList选择的选项及SelectList的设定"><a href="#获得当前SelectList选择的选项及SelectList的设定" class="headerlink" title="获得当前SelectList选择的选项及SelectList的设定"></a>获得当前SelectList选择的选项及SelectList的设定</h4><figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">form</span> = page<span class="selector-class">.forms</span><span class="selector-class">.name</span>(form1)<span class="selector-class">.first</span> </span><br><span class="line">返回的值为  xk3 = <span class="selector-tag">form</span><span class="selector-class">.fields</span><span class="selector-class">.name</span>(<span class="string">'select1'</span>)<span class="selector-class">.value</span> </span><br><span class="line">返回的值为 xk3 = <span class="selector-tag">form</span><span class="selector-class">.fields</span><span class="selector-class">.name</span>(<span class="string">'select1'</span>)<span class="selector-class">.options</span>[<span class="number">2</span>].select</span><br></pre></td></tr></table></figure>
+<h4 id="选项的选择"><a href="#选项的选择" class="headerlink" title="选项的选择"></a>选项的选择</h4><p>   form.name(‘select1’).value = “1″<br>   对应的HTML代码为：<br><figure class="highlight routeros"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">&lt;form <span class="attribute">name</span>=<span class="string">'form1'</span> <span class="attribute">action</span>=<span class="string">""</span> <span class="attribute">method</span>=<span class="string">"post"</span>&gt; </span><br><span class="line">   &lt;select <span class="attribute">name</span>=<span class="string">'select1'</span>&gt; </span><br><span class="line">    &lt;option <span class="attribute">value</span>=<span class="string">"1″&gt;xk1&lt;/option&gt; </span></span><br><span class="line"><span class="string">    &lt;option value="</span>2″&gt;xk2&lt;/option&gt; </span><br><span class="line">    &lt;option <span class="attribute">value</span>=<span class="string">"3″ selected&gt;xk3&lt;/option&gt; </span></span><br><span class="line"><span class="string">  &lt;/select&gt; </span></span><br><span class="line"><span class="string">&lt;/form&gt;</span></span><br></pre></td></tr></table></figure></p>
+<h4 id="SelectList多选择时为"><a href="#SelectList多选择时为" class="headerlink" title="SelectList多选择时为"></a>SelectList多选择时为</h4><figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">form</span><span class="selector-class">.fields</span><span class="selector-class">.name</span>(<span class="string">'select1'</span>) = [<span class="string">'one'</span>, <span class="string">'three'</span>]</span><br></pre></td></tr></table></figure>
+<h4 id="对应的HTML代码为：-1"><a href="#对应的HTML代码为：-1" class="headerlink" title="对应的HTML代码为："></a>对应的HTML代码为：</h4><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">form</span>&gt;</span> </span><br><span class="line">   <span class="tag">&lt;<span class="name">select</span> <span class="attr">name</span>=<span class="string">"select1″ size="</span><span class="attr">3</span>″ <span class="attr">multiple</span>&gt;</span> </span><br><span class="line">      <span class="tag">&lt;<span class="name">option</span> <span class="attr">value</span>=<span class="string">"one"</span> <span class="attr">selected</span>&gt;</span>xk1<span class="tag">&lt;/<span class="name">option</span>&gt;</span> </span><br><span class="line">      <span class="tag">&lt;<span class="name">option</span> <span class="attr">value</span>=<span class="string">"two"</span>&gt;</span>xk2<span class="tag">&lt;/<span class="name">option</span>&gt;</span> </span><br><span class="line">      <span class="tag">&lt;<span class="name">option</span> <span class="attr">value</span>=<span class="string">"three"</span> <span class="attr">selected</span>&gt;</span>xk3<span class="tag">&lt;/<span class="name">option</span>&gt;</span> </span><br><span class="line">   <span class="tag">&lt;/<span class="name">select</span>&gt;</span> </span><br><span class="line"><span class="tag">&lt;/<span class="name">form</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<h3 id="文件的上传"><a href="#文件的上传" class="headerlink" title="文件的上传"></a>文件的上传</h3><h4 id="方法一"><a href="#方法一" class="headerlink" title="方法一"></a>方法一</h4><figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">page<span class="selector-class">.forms</span>[<span class="number">0</span>]<span class="selector-class">.file_uploads</span><span class="selector-class">.name</span>(<span class="string">'upfile'</span>)<span class="selector-class">.file_name</span> = <span class="string">'./hoge.jpg'</span></span><br></pre></td></tr></table></figure>
+<h4 id="方法二"><a href="#方法二" class="headerlink" title="方法二"></a>方法二</h4><figure class="highlight arduino"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">page.forms[<span class="number">0</span>].file_uploads.name(<span class="string">'upfile'</span>).file_data = <span class="built_in">File</span>.<span class="built_in">open</span>(<span class="string">'./hoge.jpg'</span>,<span class="string">'rb'</span>)&#123;|f| f.<span class="built_in">read</span>&#125;</span><br></pre></td></tr></table></figure>
+<h4 id="对应的HTML代码为：-2"><a href="#对应的HTML代码为：-2" class="headerlink" title="对应的HTML代码为："></a>对应的HTML代码为：</h4><figure class="highlight stata"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;<span class="keyword">form</span>&gt; </span><br><span class="line">   &lt;<span class="keyword">input</span> <span class="keyword">type</span>=<span class="string">"file"</span> name=<span class="string">"upfile"</span> enctype=<span class="string">"multipart/form-data"</span>&gt; </span><br><span class="line">&lt;/<span class="keyword">form</span>&gt;</span><br></pre></td></tr></table></figure>
+<h3 id="网页中的超链接"><a href="#网页中的超链接" class="headerlink" title="网页中的超链接"></a>网页中的超链接</h3><h4 id="网页中的全部超链接的输出"><a href="#网页中的全部超链接的输出" class="headerlink" title="网页中的全部超链接的输出"></a>网页中的全部超链接的输出</h4><figure class="highlight lasso"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">page = agent.get(<span class="string">'http://www.test.com'</span>) </span><br><span class="line">page.links.each&#123;|<span class="keyword">link</span>| puts <span class="keyword">link</span>.href&#125;</span><br></pre></td></tr></table></figure>
+<h4 id="网页中超链接的击活-可使用正则表达式"><a href="#网页中超链接的击活-可使用正则表达式" class="headerlink" title="网页中超链接的击活(可使用正则表达式)"></a>网页中超链接的击活(可使用正则表达式)</h4><figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">page<span class="selector-class">.links</span><span class="selector-class">.href</span>(<span class="string">'http://www.test.com'</span>)[<span class="number">2</span>]<span class="selector-class">.click</span> </span><br><span class="line">page<span class="selector-class">.links</span><span class="selector-class">.text</span>(<span class="string">'文本'</span>)[<span class="number">0</span>].click</span><br></pre></td></tr></table></figure>
+<h3 id="frame网页的查看"><a href="#frame网页的查看" class="headerlink" title="frame网页的查看"></a>frame网页的查看</h3><h4 id="方法一-使用name查看"><a href="#方法一-使用name查看" class="headerlink" title="方法一:使用name查看"></a>方法一:使用name查看</h4><figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">page<span class="selector-class">.frames</span><span class="selector-class">.name</span>(<span class="string">'left'</span>).click</span><br></pre></td></tr></table></figure>
+<h4 id="方法二-使用链接查看"><a href="#方法二-使用链接查看" class="headerlink" title="方法二:使用链接查看"></a>方法二:使用链接查看</h4><figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">leftpage = page<span class="selector-class">.frames</span><span class="selector-class">.src</span>(<span class="string">'frame_left.htm'</span>).click</span><br></pre></td></tr></table></figure>
+<h4 id="对应的HTML代码为：-3"><a href="#对应的HTML代码为：-3" class="headerlink" title="对应的HTML代码为："></a>对应的HTML代码为：</h4><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">frameset</span> <span class="attr">cols</span>=<span class="string">"150,*"</span>&gt;</span> </span><br><span class="line">  <span class="tag">&lt;<span class="name">frame</span> <span class="attr">src</span>=<span class="string">"frame_left.htm"</span> <span class="attr">name</span>=<span class="string">"left"</span>&gt;</span> </span><br><span class="line">  <span class="tag">&lt;<span class="name">frame</span> <span class="attr">src</span>=<span class="string">"frame_right.htm"</span> <span class="attr">name</span>=<span class="string">"right"</span>&gt;</span> </span><br><span class="line"><span class="tag">&lt;/<span class="name">frameset</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<h4 id="网页中的文件下载-正则表达式可用"><a href="#网页中的文件下载-正则表达式可用" class="headerlink" title="网页中的文件下载(正则表达式可用)"></a>网页中的文件下载(正则表达式可用)</h4><figure class="highlight arduino"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">agent = WWW::Mechanize.<span class="keyword">new</span> </span><br><span class="line">data = agent.get_file(<span class="string">'http://www.test.com/top.gif'</span>) </span><br><span class="line"><span class="built_in">open</span>(<span class="string">'top.gif'</span>, <span class="string">'wb'</span>)&#123;|f| f.<span class="built_in">write</span>(data)&#125;</span><br></pre></td></tr></table></figure>
+<h4 id="对应的HTML代码为：-4"><a href="#对应的HTML代码为：-4" class="headerlink" title="对应的HTML代码为："></a>对应的HTML代码为：</h4><figure class="highlight routeros"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;img <span class="attribute">src</span>=<span class="string">"http://www.test.com/top.gif"</span>&gt;</span><br></pre></td></tr></table></figure>
+<h4 id="table部分的的文字"><a href="#table部分的的文字" class="headerlink" title="table部分的的文字"></a>table部分的的文字</h4><figure class="highlight clean"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line">   page.root.search(<span class="string">'table/tr/td'</span>)&#123;|e| puts e&#125;</span><br><span class="line"></span><br><span class="line">---</span><br><span class="line">   require <span class="string">'rubygems'</span></span><br><span class="line">   require <span class="string">'mechanize'</span></span><br><span class="line">    </span><br><span class="line">   agent = WWW::Mechanize.new</span><br><span class="line">   agent.max_history = <span class="number">1</span></span><br><span class="line">   agent.user_agent_alias = <span class="string">'Windows IE 7'</span></span><br><span class="line">    </span><br><span class="line">   page = agent.get(<span class="string">"http://www.iteye.com/login"</span>)</span><br><span class="line">   form = page.forms[<span class="number">0</span>]</span><br><span class="line">   form.fields[<span class="number">0</span>].value = <span class="string">"javaeye帐号"</span></span><br><span class="line">   form.fields[<span class="number">1</span>].value = <span class="string">"javaeye密码"</span></span><br><span class="line">        </span><br><span class="line">   agent.submit form #登录JavaEye</span><br><span class="line">    </span><br><span class="line">   page = agent.get(<span class="string">"http://qichunren.iteye.com/admin/messages/new"</span>) #### 这里的域名改成你个人的</span><br><span class="line">   form =  page.forms[<span class="number">0</span>]</span><br><span class="line">   form.fields[<span class="number">0</span>].value = <span class="string">"qichunren"</span> #### 消息接收者</span><br><span class="line">   form.fields[<span class="number">1</span>].value = <span class="string">"测试消息"</span> #标题</span><br><span class="line">   form.fields[<span class="number">4</span>].value = %Q&#123;</span><br><span class="line">   我代表火星全人类欢迎你加入火星圈子!</span><br><span class="line">   地址是http:<span class="comment">//mars.group.iteye.com/ 点击申请加入.</span></span><br><span class="line">   火星口号：火星新闻,火星笑话,火星文, 只要你的想法够火星 地球很危险 JE很严肃 大家还是回火星去吧</span><br><span class="line">   &#125;</span><br><span class="line">    </span><br><span class="line">   <span class="number">5.</span>times&#123;agent.submit form&#125; #### 把这个数字写成 <span class="number">1000</span> 也是可以的,＊＿＊</span><br></pre></td></tr></table></figure>
+<div style="clear:both"></div><div class="cc"><p>The <a href="https://blog.naaln.com">Why·Liam·Blog</a> by <a href="https://www.naaln.com" target="_blank" rel="external">WhyLiam</a> is licensed under a <a href="http://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" rel="external">Creative Commons BY-NC-ND 4.0 International License</a>.</p><p>由<a href="https://www.naaln.com" target="_blank" rel="external">WhyLiam</a>创作并维护的<a href="https://blog.naaln.com">Why·Liam·Blog</a>采用创作共用<a href="http://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" rel="external">保留署名-非商业-禁止演绎4.0国际许可证</a>。</p><p>本文首发于<a href="https://blog.naaln.com">Why·Liam·Blog (https://blog.naaln.com)</a>，版权所有，侵权必究。</p><p>本文永久链接：<a href="https://blog.naaln.com/2013/09/mechanize-to-web-operations/">https://blog.naaln.com/2013/09/mechanize-to-web-operations/</a></p><p></p></div>
+      
+    </div>
+    
+    
+    
+
+    
+      <div>
+        <div id="wechat_subscriber" style="display: block; padding: 10px 0; margin: 20px auto; width: 100%; text-align: center">
+    <img id="wechat_subscriber_qcode" src="//ws1.sinaimg.cn/large/006tKfTcgy1fg8gpi7kaaj30by0by74i.jpg" alt="WHY·LIAM wechat" style="width: 200px; max-width: 100%;"/>
+    <div>记录生活，研究产品，分享设计，分析数据，讨论科技和商业，不定期扯淡。</div>
+</div>
+
+      </div>
+    
+
+    
+      <div>
+        <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+  <div>如果觉得我的文章对您有用，请随意打赏。您的支持将鼓励我继续创作！</div>
+  <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+    <span>打赏</span>
+  </button>
+  <div id="QR" style="display: none;">
+
+    
+      <div id="wechat" style="display: inline-block">
+        <img id="wechat_qr" src="//ws1.sinaimg.cn/mw690/006tNc79gy1fm7yqrau7mj30f00ezad5.jpg" alt="WHY·LIAM 微信支付"/>
+        <p>微信支付</p>
+      </div>
+    
+
+    
+      <div id="alipay" style="display: inline-block">
+        <img id="alipay_qr" src="//ww3.sinaimg.cn/mw690/48910e01gw1evkbfendrjj20ci0ci0uf.jpg" alt="WHY·LIAM 支付宝"/>
+        <p>支付宝</p>
+      </div>
+    
+
+    
+
+  </div>
+</div>
+
+      </div>
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/mechanize/" rel="tag"># mechanize</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2013/09/mechanize-manual/" rel="next" title="Mechanize使用手册">
+                <i class="fa fa-chevron-left"></i> Mechanize使用手册
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2013/09/google-browser-configuration/" rel="prev" title="谷歌浏览器配置">
+                谷歌浏览器配置 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+  
+    <div class="comments" id="comments">
+      <div id="SOHUCS"></div>
+    </div>
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+
+      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image"
+                src="//tva2.sinaimg.cn/crop.0.0.998.998.180/48910e01gw1ef5p6etuzdj20rs0rs771.jpg"
+                alt="WHY·LIAM" />
+            
+              <p class="site-author-name" itemprop="name">WHY·LIAM</p>
+              <p class="site-description motion-element" itemprop="description"></p>
+          </div>
+
+          
+            <nav class="site-state motion-element">
+              
+                <div class="site-state-item site-state-posts">
+                
+                  <a href="/archives/">
+                
+                    <span class="site-state-item-count">721</span>
+                    <span class="site-state-item-name">日志</span>
+                  </a>
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-categories">
+                  <a href="/categories/index.html">
+                    <span class="site-state-item-count">4</span>
+                    <span class="site-state-item-name">分类</span>
+                  </a>
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-tags">
+                  <a href="/tags/index.html">
+                    <span class="site-state-item-count">67</span>
+                    <span class="site-state-item-name">标签</span>
+                  </a>
+                </div>
+              
+            </nav>
+          
+
+          
+            <div class="feed-link motion-element">
+              <a href="/atom.xml" rel="alternate">
+                <i class="fa fa-rss"></i>
+                RSS
+              </a>
+            </div>
+          
+
+          
+            <div class="links-of-author motion-element">
+                
+                  <span class="links-of-author-item">
+                    <a href="https://github.com/liszd" target="_blank" title="GitHub" rel="external nofollow">
+                      
+                        <i class="fa fa-fw fa-github"></i>GitHub</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="http://weibo.com/whyliam" target="_blank" title="微博" rel="external nofollow">
+                      
+                        <i class="fa fa-fw fa-weibo"></i>微博</a>
+                  </span>
+                
+            </div>
+          
+
+          
+          
+            <div class="cc-license motion-element" itemprop="license">
+              <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/" class="cc-opacity" target="_blank" rel="external nofollow">
+                <img src="/images/cc-by-nc-nd.svg" alt="Creative Commons" />
+              </a>
+            </div>
+          
+
+          
+          
+            <div class="links-of-blogroll motion-element links-of-blogroll-block">
+              <div class="links-of-blogroll-title">
+                <i class="fa  fa-fw fa-link"></i>
+                Links
+              </div>
+              <ul class="links-of-blogroll-list">
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="http://www.naaln.com/" title="纳兰主页" target="_blank">纳兰主页</a>
+                  </li>
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="http://photo.naaln.com/" title="纳兰相册" target="_blank">纳兰相册</a>
+                  </li>
+                
+              </ul>
+            </div>
+          
+
+          
+            
+          
+          
+
+        </div>
+      </section>
+
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; 2003 &mdash; <span itemprop="copyrightYear">2018</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">WHY·LIAM</span>
+
+  
+
+  
+</div>
+
+
+  
+
+
+
+  <div class="powered-by">由 <a class="theme-link" target="_blank" rel="external nofollow" href="https://hexo.io">Hexo</a> 强力驱动</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" rel="external nofollow" href="https://github.com/theme-next/hexo-theme-next">NexT.Muse</a> v6.0.2</div>
+
+
+
+  <div class="footer-custom">Hosted by <a target="_blank" rel="external nofollow" href="https://pages.coding.me"><b>Coding Pages</b></a></div>
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=6.0.2"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=6.0.2"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=6.0.2"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=6.0.2"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=6.0.2"></script>
+
+
+
+  
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+  
+    <script type="text/javascript">
+    (function(){
+      var appid = 'cytklkKc0';
+      var conf = 'prod_b1dd516bbb7f3198591656f99d9ace80';
+      var width = window.innerWidth || document.documentElement.clientWidth;
+      if (width < 960) {
+      window.document.write('<script id="changyan_mobile_js" charset="utf-8" type="text/javascript" src="https://changyan.sohu.com/upload/mobile/wap-js/changyan_mobile.js?client_id=' + appid + '&conf=' + conf + '"><\/script>'); } else { var loadJs=function(d,a){var c=document.getElementsByTagName("head")[0]||document.head||document.documentElement;var b=document.createElement("script");b.setAttribute("type","text/javascript");b.setAttribute("charset","UTF-8");b.setAttribute("src",d);if(typeof a==="function"){if(window.attachEvent){b.onreadystatechange=function(){var e=b.readyState;if(e==="loaded"||e==="complete"){b.onreadystatechange=null;a()}}}else{b.onload=a}}c.appendChild(b)};loadJs("https://changyan.sohu.com/upload/changyan.js",function(){
+        window.changyan.api.config({appid:appid,conf:conf})});
+      }
+    })();
+    </script>
+    <script type="text/javascript" src="https://assets.changyan.sohu.com/upload/plugins/plugins.count.js"></script>
+  
+
+
+
+
+
+
+
+  
+
+
+
+
+  
+  
+  
+  <link rel="stylesheet" href="/lib/algolia-instant-search/instantsearch.min.css">
+
+  
+  
+  <script src="/lib/algolia-instant-search/instantsearch.min.js"></script>
+  
+
+  <script src="/js/src/algolia-search.js?v=6.0.2"></script>
+
+
+
+  
+
+  
+
+  
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';        
+    }
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>

@@ -1,0 +1,971 @@
+<!DOCTYPE html>
+
+
+
+
+<html class="theme-next muse" lang="zh-CN">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+  <meta name="google-site-verification" content="ByVfaP_E3b9ZYRUGhNAUFSQKL8mJQwUehpQwoxJ5n-c" />
+
+
+
+  <meta name="msvalidate.01" content="DB220684085BEDBD2E49E8E942534B1F" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=6.0.2" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon-next.png?v=6.0.2">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32-next.png?v=6.0.2">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16-next.png?v=6.0.2">
+
+
+  <link rel="mask-icon" href="/favicon/logo.svg?v=6.0.2" color="#222">
+
+
+
+
+
+
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Muse',
+    version: '6.0.2',
+    sidebar: {"position":"right","display":"hide","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: false,
+    fastclick: false,
+    lazyload: false,
+    tabs: true,
+    motion: {"enable":false,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    algolia: {
+      applicationID: 'XILKIWTAM9',
+      apiKey: '8c01137fe05d281ccd531a0ec622322a',
+      indexName: 'blog',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"搜索文章","hits_empty":"啊，找不到 ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+  
+
+
+
+
+  
+  <meta name="keywords" content="Why, Liam, 李承璋" />
+
+
+<meta name="description" content="3D Touch3D Touch提供了一种新的基于按压的交互方式。在支持的3D Touch的设备上，用户可以通过用力按压来获得新的功能。这时候，App会给出一个展现更多内容的菜单，或者播放一段动画。 桌面上的交互在桌面上，对着APP的图标重按时会出现一个操作列表，让用户可以快速进入APP中的常用功能或者浏览有用的信息。比如说，在日历图标上重按后，可以快捷地新建日程，也可以显示日程中的下一个事项。">
+<meta name="keywords" content="Why, Liam, 李承璋">
+<meta property="og:type" content="article">
+<meta property="og:title" content="iOS 10设计规范（二）：交互 Part 1">
+<meta property="og:url" content="https://blog.naaln.com/2016/07/ios-10-design-2/index.html">
+<meta property="og:site_name" content="Why·Liam·Blog">
+<meta property="og:description" content="3D Touch3D Touch提供了一种新的基于按压的交互方式。在支持的3D Touch的设备上，用户可以通过用力按压来获得新的功能。这时候，App会给出一个展现更多内容的菜单，或者播放一段动画。 桌面上的交互在桌面上，对着APP的图标重按时会出现一个操作列表，让用户可以快速进入APP中的常用功能或者浏览有用的信息。比如说，在日历图标上重按后，可以快捷地新建日程，也可以显示日程中的下一个事项。">
+<meta property="og:locale" content="zh-CN">
+<meta property="og:image" content="https://ww2.sinaimg.cn/large/65e4f1e6gw1fahqad4iiqj208o0ff0td.jpg">
+<meta property="og:image" content="https://ww2.sinaimg.cn/large/006y8mN6gw1fahqagxk6sj30hs0abdhw.jpg">
+<meta property="og:image" content="https://ww1.sinaimg.cn/large/006y8lVagw1fahqajfr52j30hs07iwfd.jpg">
+<meta property="og:updated_time" content="2017-09-03T09:15:57.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="iOS 10设计规范（二）：交互 Part 1">
+<meta name="twitter:description" content="3D Touch3D Touch提供了一种新的基于按压的交互方式。在支持的3D Touch的设备上，用户可以通过用力按压来获得新的功能。这时候，App会给出一个展现更多内容的菜单，或者播放一段动画。 桌面上的交互在桌面上，对着APP的图标重按时会出现一个操作列表，让用户可以快速进入APP中的常用功能或者浏览有用的信息。比如说，在日历图标上重按后，可以快捷地新建日程，也可以显示日程中的下一个事项。">
+<meta name="twitter:image" content="https://ww2.sinaimg.cn/large/65e4f1e6gw1fahqad4iiqj208o0ff0td.jpg">
+
+
+
+  <link rel="alternate" href="/atom.xml" title="Why·Liam·Blog" type="application/atom+xml" />
+
+
+
+
+  <link rel="canonical" href="https://blog.naaln.com/2016/07/ios-10-design-2/"/>
+
+
+  <title>iOS 10设计规范（二）：交互 Part 1 | Why·Liam·Blog</title>
+  
+
+
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-47966442-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-47966442-2');
+</script>
+
+
+
+
+
+
+  
+<script src="//msite.baidu.com/sdk/c.js?appid=1586840953097399"></script>
+<link rel="canonical" href="https://blog.naaln.com/2016/07/ios-10-design-2/"/>
+<script type="application/ld+json">
+    {
+        "@context": "https://ziyuan.baidu.com/contexts/cambrian.jsonld",
+        "@id": "https://blog.naaln.com/2016/07/ios-10-design-2/",
+        "appid": "1586840953097399",
+        "title": "iOS 10设计规范（二）：交互 Part 1",
+        "images": [
+            ""
+            ],
+        "description": "",
+        "pubDate": "",
+        "upDate": "",
+        "lrDate": ""
+    }
+</script>
+
+  <noscript>
+  <style type="text/css">
+    .use-motion .motion-element,
+    .use-motion .brand,
+    .use-motion .menu-item,
+    .sidebar-inner,
+    .use-motion .post-block,
+    .use-motion .pagination,
+    .use-motion .comments,
+    .use-motion .post-header,
+    .use-motion .post-body,
+    .use-motion .collection-title { opacity: initial; }
+
+    .use-motion .logo,
+    .use-motion .site-title,
+    .use-motion .site-subtitle {
+      opacity: initial;
+      top: initial;
+    }
+
+    .use-motion {
+      .logo-line-before i { left: initial; }
+      .logo-line-after i { right: initial; }
+    }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-CN">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-right page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"> <div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Why·Liam·Blog</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <h1 class="site-subtitle" itemprop="description">人生若如初見</h1>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            <i class="menu-item-icon fa fa-fw fa-home"></i> <br />首页</a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />归档</a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-technology">
+          <a href="/categories/technology/" rel="section">
+            <i class="menu-item-icon fa fa-fw fa-code"></i> <br />技术</a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-jottings">
+          <a href="/categories/jottings/" rel="section">
+            <i class="menu-item-icon fa fa-fw fa-language"></i> <br />随笔</a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tour">
+          <a href="/categories/tour/" rel="section">
+            <i class="menu-item-icon fa fa-fw fa-globe"></i> <br />旅游</a>
+        </li>
+      
+
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br />搜索</a>
+        </li>
+      
+    </ul>
+  
+
+  
+    <div class="site-search">
+      
+  
+  <div class="algolia-popup popup search-popup">
+    <div class="algolia-search">
+      <div class="algolia-search-input-icon">
+        <i class="fa fa-search"></i>
+      </div>
+      <div class="algolia-search-input" id="algolia-search-input"></div>
+    </div>
+
+    <div class="algolia-results">
+      <div id="algolia-stats"></div>
+      <div id="algolia-hits"></div>
+      <div id="algolia-pagination" class="algolia-pagination"></div>
+    </div>
+
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+  </div>
+
+
+
+
+    </div>
+  
+</nav>
+
+
+  
+
+
+
+ </div>
+    </header>
+
+    
+
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://blog.naaln.com/2016/07/ios-10-design-2/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="WHY·LIAM">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="//tva2.sinaimg.cn/crop.0.0.998.998.180/48910e01gw1ef5p6etuzdj20rs0rs771.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Why·Liam·Blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h2 class="post-title" itemprop="name headline">iOS 10设计规范（二）：交互 Part 1</h2>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2016-07-10T21:49:48+08:00">2016-07-10</time>
+            
+
+            
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/technology/" itemprop="url" rel="index"><span itemprop="name">技术</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+              <span class="post-meta-divider">|</span>
+              <span class="post-meta-item-icon">
+                <i class="fa fa-comment-o"></i>
+              </span>
+              
+                <a href="/2016/07/ios-10-design-2/#SOHUCS" itemprop="discussionUrl">
+                  <span id="changyan_count_unit" class="post-comments-count hc-comment-count" data-xid="2016/07/ios-10-design-2/" itemprop="commentsCount"></span>
+                </a>
+              
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h2 id="3D-Touch"><a href="#3D-Touch" class="headerlink" title="3D Touch"></a>3D Touch</h2><p>3D Touch提供了一种新的基于按压的交互方式。在支持的3D Touch的设备上，用户可以通过用力按压来获得新的功能。这时候，App会给出一个展现更多内容的菜单，或者播放一段动画。</p>
+<h3 id="桌面上的交互"><a href="#桌面上的交互" class="headerlink" title="桌面上的交互"></a>桌面上的交互</h3><p>在桌面上，对着APP的图标重按时会出现一个操作列表，让用户可以快速进入APP中的常用功能或者浏览有用的信息。比如说，在日历图标上重按后，可以快捷地新建日程，也可以显示日程中的下一个事项。</p>
+<h3 id="轻压和重压（Peek-and-Pop）"><a href="#轻压和重压（Peek-and-Pop）" class="headerlink" title="轻压和重压（Peek and Pop）"></a>轻压和重压（Peek and Pop）</h3><p>Peek（轻压）能让用户通过当前环境之上的临时窗口来预览一个对象，比如预览页面、链接、文件。用手指稍微重按某个对象，就可以实现Peek功能（在该对象支持Peek功能的前提下）。抬起手指，则退出Peek界面。</p>
+<p>如果想要打开这个对象浏览更多细节，稍微加重按压该对象的力度，就会弹出全屏窗口，这个动作称为Pop（重压）。</p>
+<p><img src="https://ww2.sinaimg.cn/large/65e4f1e6gw1fahqad4iiqj208o0ff0td.jpg" alt=""></p>
+<p>在某些Peek窗口中，用户上滑后可以看到更多的相关操作。比如，当用户在Peek某个Safari中的链接时做了上滑动作，则可以看到「在新标签页中打开」、「加入阅读列表」、「拷贝」三个选项。</p>
+<ul>
+<li>使用Peek功能提供实时、丰富的预览。理论上，Peek可以提供足够的信息辅助完成当前目标，或者帮助用户决定是否要完整地浏览这个对象。比如，在邮件中先预览某个链接，再决定是否要在浏览器中打开，或者要不要分享给朋友。Peek常被用于表格中，这可以提供一个行项的详细内容。</li>
+<li>预览窗口要设计得足够大。这样手指才不会挡住内容，且内容应当有丰富的细节，这样用户才能决定是不是要更用力按，打开全屏浏览（Pop）</li>
+<li>APP应该始终提供Peek和Pop功能。如果你在某些地方支持，某些地方不支持，用户可能认为你的APP或者他们的手机出了毛病。</li>
+<li>让每一个Peek操作后都可以Pop。虽然Peek可以提供用户需要的大部分信息，但一旦他们决定专注浏览这个对象时，你应该让用户执行Pop操作。Pop操作后打开的页面，应该要跟普通点击打开的页面一致。</li>
+<li>在Peek操作中，尽量避免使用类似按钮的的界面元素。如果用户抬起手指去点击这个像按钮的元素，Peek界面就会消失。</li>
+<li>不要为同一个对象同时提供「Peek」和「长按进入编辑状态」两个功能。因为这会让用户混乱，系统也很难判断用户的意图。</li>
+<li>在合适的时候，为Peek提供「上滑后展现更多操作项」功能。并非所有Peek都适用，但这是个缩短操作路径的好办法。如果你的APP已经有了长按某个对象后弹出操作项的功能，不妨试试在Peek的时候提供同样的操作项。</li>
+<li>不要在上滑后的操作项中提供「打开」功能。用户更用力按压就可以进入了，不需要多此一举。</li>
+<li>不要把Peek作为操作项的唯一触发方式。因为并非所有硬件都支持Peek and Pop，一些用户也可能关闭3D Touch功能，所以应该在长按后也提供相同的操作项。</li>
+</ul>
+<h2 id="辅助功能"><a href="#辅助功能" class="headerlink" title="辅助功能"></a>辅助功能</h2><p>iOS为视觉、听觉和其他方面的残障人士提供了大范围的无障碍辅助功能。大多数基于官方组件库的APP可以低成本实现辅助功能，让更多人在使用你APP时获得无差别的体验。</p>
+<p>为照片、图标和其他交互元素提供可替代的文本标签。这些替代标签在屏幕上是不可见的，但是他们可以通过VoiceOver（设置 - 通用 - 辅助功能）描述出屏幕上的内容，让视觉障碍人士使用。</p>
+<p>应该响应系统的辅助功能设置项。如果你APP界面是使用官方组件库制作的，文本和UI元素会自动响应系统设置（如加粗、大字号等）。APP还应该在特定的时候检查并响应系统设置，比如“减弱动态效果”。APP中的自定义字体也应该遵从辅助功能的设置项。</p>
+<p>测试时要试试辅助功能。除了文本和动效的变化，辅助功能还可以设置对比度、反转颜色、降低透明度等。尝试打开这些设置项看看你的APP用起来如何。</p>
+<p>视频中别忘了字幕和语音描述。字幕可以让失聪和听力障碍人士了解视频里的对话和其他音频信息。语音描述让视障人士也能了解关键的视频内容。</p>
+<h2 id="声音"><a href="#声音" class="headerlink" title="声音"></a>声音</h2><p>无论声音在你APP中是重要部分还是锦上添花的部分，你都需要知道用户对声音的预期是什么。</p>
+<p>用户常常通过音量按钮、静音开关、耳机控制器和屏幕上的音量滑块来控制声音。很多第三方配件也有了声音控制功能。声音会通过内置听筒、扬声器、耳机和AirPlay/蓝牙设备输出。</p>
+<ul>
+<li>静音状态。为了避免被铃声、新消息提示音等打扰，用户会把设备置为静音，被静音的也包括按键音、音效、游戏内声音等辅助音。当设备被置为静音的时候，只有几种明确要播放的场景可以发出声音，比如音视频播放器、闹钟、语音/视频消息。</li>
+<li>音量。无论用户是用设备上的物理按键还是屏幕上的滑块来调整音量，他们预期的是整个声音系统统一变化，包括音乐、APP内音效等。唯一例外的是铃声音量，它是单独调节的。</li>
+<li>耳机。使用耳机，用户可以比较隐私地听声音，也可以解放双手。当用户把耳机插好，就预期着声音自动地无缝切换到耳机中。当拔掉插头，用户预期音频和视频立即暂停。</li>
+</ul>
+<p>你的APP可以独立调整跟自己相关的音量，但最终的输出音量永远还是受系统控制。</p>
+<p>用户经常想使用不同的设备（比如客厅里的立体声设备、汽车音响，或者Apple TV）来输出声音。除非有特别原因，应该支持这种切换能力。</p>
+<p>最好使用系统提供的音量控制组件让用户调整音量，这个组件支持自定义，可使用音量控制滑块、声道选择等。</p>
+<p>短音和振动等功能，建议使用系统自带的声音服务。</p>
+<p>如果声音是APP中的必要元素，给声音分到某个特定类别中。不同种类的声音中：有的可以被静音键静音，有的可以跟其他声音混在一起，有的可以在后台继续播放。比如说，一般情况下不要让其他APP打断用户正在听的音乐。另外，除非APP要先录音、再回放，否则最好避免在APP运行中改变声音的类别。</p>
+<p><img src="https://ww2.sinaimg.cn/large/006y8mN6gw1fahqagxk6sj30hs0abdhw.jpg" alt=""></p>
+<p>恰当的情况下，当声音在播放中被打断后应自动恢复。有时候，正在播放的声音被其他APP打断了。一些临时的打断（比如来电），用户期望打断结束后会恢复到打断前的音频状态；一些永久的打断（比如siri开始播放音乐），用户就不期望要恢复。需要强调的是，只有在打断发生时，正在播放的音频才会被恢复。比如用户正在玩的游戏和正在听的音乐，在打断结束后应该恢复，而当时没有使用的APP不会变化。</p>
+<p>如果你的APP有可能临时打断其他APP，当打断结束后，要让其他APP知道，以便于恢复。</p>
+<p>只有在有意义的情况下响应声音控制命令。用户可以在你APP界面之外的地方对声音发起控制，比如用耳机、控制中心。无论你的APP是在前台还是后台，只要它正在播放声音（也包括用AirPlay连接其他设备在播放），都应该响应。此外，若用户操作其他APP播放声音，你的APP不能阻止。</p>
+<p>不用赋予声音控制功能新的用途。用户预期是通过声音控制模块在所有APP中控制声音。永远不要给用户的声音控制行为做出其他定义。如果你的APP不需要在声音层面响应用户的控制操作，那就不要响应。</p>
+<h2 id="账号验证"><a href="#账号验证" class="headerlink" title="账号验证"></a>账号验证</h2><p>只有在你能提供价值的情况下，才要求用户做账号验证操作，比如个性化体验、使用高级功能、购买内容、同步数据。如果你的APP需要用户验证账号，要保证登录过程简单快捷，这样才不会破坏用户体验。</p>
+<p>尽可能把登录模块置后。当用户还没开始做有用的事情前就被强迫要求登录，用户往往会放弃。先要给用户爱上你APP的机会，再让他对你付出承诺。在电商APP类中，让用户先浏览你的商品，只有在他们要支付的时候再要求登录。在信息消费类APP中，先让用户浏览内容，让他们知道登录后你能提供什么东西。</p>
+<p>解释清楚账号验证这步操作的好处，在也告诉用户怎么才能注册。如果你的APP需要做账号验证，在登录界面用一段简短而友好的内容告诉用户照做的好处。另外，要记住并不是每个用户一开始就有你的账号，要记得解释清楚怎么获取新账号，或者在APP内给一个简单的方法登录。</p>
+<p>要给出合适的键盘，降低输入成本。比如说，当你要求用户填写邮箱时，应该选择包含了快捷输入键的邮箱键盘。</p>
+<p>来源：</p>
+<p><img src="https://ww1.sinaimg.cn/large/006y8lVagw1fahqajfr52j30hs07iwfd.jpg" alt=""><div style="clear:both"></div><div class="cc"><p>The <a href="https://blog.naaln.com">Why·Liam·Blog</a> by <a href="https://www.naaln.com" target="_blank" rel="external">WhyLiam</a> is licensed under a <a href="http://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" rel="external">Creative Commons BY-NC-ND 4.0 International License</a>.</p><p>由<a href="https://www.naaln.com" target="_blank" rel="external">WhyLiam</a>创作并维护的<a href="https://blog.naaln.com">Why·Liam·Blog</a>采用创作共用<a href="http://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" rel="external">保留署名-非商业-禁止演绎4.0国际许可证</a>。</p><p>本文首发于<a href="https://blog.naaln.com">Why·Liam·Blog (https://blog.naaln.com)</a>，版权所有，侵权必究。</p><p>本文永久链接：<a href="https://blog.naaln.com/2016/07/ios-10-design-2/">https://blog.naaln.com/2016/07/ios-10-design-2/</a></p><p></p></div></p>
+
+      
+    </div>
+    
+    
+    
+
+    
+      <div>
+        <div id="wechat_subscriber" style="display: block; padding: 10px 0; margin: 20px auto; width: 100%; text-align: center">
+    <img id="wechat_subscriber_qcode" src="//ws1.sinaimg.cn/large/006tKfTcgy1fg8gpi7kaaj30by0by74i.jpg" alt="WHY·LIAM wechat" style="width: 200px; max-width: 100%;"/>
+    <div>记录生活，研究产品，分享设计，分析数据，讨论科技和商业，不定期扯淡。</div>
+</div>
+
+      </div>
+    
+
+    
+      <div>
+        <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+  <div>如果觉得我的文章对您有用，请随意打赏。您的支持将鼓励我继续创作！</div>
+  <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+    <span>打赏</span>
+  </button>
+  <div id="QR" style="display: none;">
+
+    
+      <div id="wechat" style="display: inline-block">
+        <img id="wechat_qr" src="//ws1.sinaimg.cn/mw690/006tNc79gy1fm7yqrau7mj30f00ezad5.jpg" alt="WHY·LIAM 微信支付"/>
+        <p>微信支付</p>
+      </div>
+    
+
+    
+      <div id="alipay" style="display: inline-block">
+        <img id="alipay_qr" src="//ww3.sinaimg.cn/mw690/48910e01gw1evkbfendrjj20ci0ci0uf.jpg" alt="WHY·LIAM 支付宝"/>
+        <p>支付宝</p>
+      </div>
+    
+
+    
+
+  </div>
+</div>
+
+      </div>
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2016/07/ios-10-design-1/" rel="next" title="iOS 10设计规范（一）：概述">
+                <i class="fa fa-chevron-left"></i> iOS 10设计规范（一）：概述
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2016/07/ios-10-design-3/" rel="prev" title="iOS 10设计规范（三）：交互 Part 2">
+                iOS 10设计规范（三）：交互 Part 2 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+  
+    <div class="comments" id="comments">
+      <div id="SOHUCS"></div>
+    </div>
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+
+      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image"
+                src="//tva2.sinaimg.cn/crop.0.0.998.998.180/48910e01gw1ef5p6etuzdj20rs0rs771.jpg"
+                alt="WHY·LIAM" />
+            
+              <p class="site-author-name" itemprop="name">WHY·LIAM</p>
+              <p class="site-description motion-element" itemprop="description"></p>
+          </div>
+
+          
+            <nav class="site-state motion-element">
+              
+                <div class="site-state-item site-state-posts">
+                
+                  <a href="/archives/">
+                
+                    <span class="site-state-item-count">721</span>
+                    <span class="site-state-item-name">日志</span>
+                  </a>
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-categories">
+                  <a href="/categories/index.html">
+                    <span class="site-state-item-count">4</span>
+                    <span class="site-state-item-name">分类</span>
+                  </a>
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-tags">
+                  <a href="/tags/index.html">
+                    <span class="site-state-item-count">67</span>
+                    <span class="site-state-item-name">标签</span>
+                  </a>
+                </div>
+              
+            </nav>
+          
+
+          
+            <div class="feed-link motion-element">
+              <a href="/atom.xml" rel="alternate">
+                <i class="fa fa-rss"></i>
+                RSS
+              </a>
+            </div>
+          
+
+          
+            <div class="links-of-author motion-element">
+                
+                  <span class="links-of-author-item">
+                    <a href="https://github.com/liszd" target="_blank" title="GitHub" rel="external nofollow">
+                      
+                        <i class="fa fa-fw fa-github"></i>GitHub</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="http://weibo.com/whyliam" target="_blank" title="微博" rel="external nofollow">
+                      
+                        <i class="fa fa-fw fa-weibo"></i>微博</a>
+                  </span>
+                
+            </div>
+          
+
+          
+          
+            <div class="cc-license motion-element" itemprop="license">
+              <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/" class="cc-opacity" target="_blank" rel="external nofollow">
+                <img src="/images/cc-by-nc-nd.svg" alt="Creative Commons" />
+              </a>
+            </div>
+          
+
+          
+          
+            <div class="links-of-blogroll motion-element links-of-blogroll-block">
+              <div class="links-of-blogroll-title">
+                <i class="fa  fa-fw fa-link"></i>
+                Links
+              </div>
+              <ul class="links-of-blogroll-list">
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="http://www.naaln.com/" title="纳兰主页" target="_blank">纳兰主页</a>
+                  </li>
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="http://photo.naaln.com/" title="纳兰相册" target="_blank">纳兰相册</a>
+                  </li>
+                
+              </ul>
+            </div>
+          
+
+          
+            
+          
+          
+
+        </div>
+      </section>
+
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; 2003 &mdash; <span itemprop="copyrightYear">2018</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">WHY·LIAM</span>
+
+  
+
+  
+</div>
+
+
+  
+
+
+
+  <div class="powered-by">由 <a class="theme-link" target="_blank" rel="external nofollow" href="https://hexo.io">Hexo</a> 强力驱动</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" rel="external nofollow" href="https://github.com/theme-next/hexo-theme-next">NexT.Muse</a> v6.0.2</div>
+
+
+
+  <div class="footer-custom">Hosted by <a target="_blank" rel="external nofollow" href="https://pages.coding.me"><b>Coding Pages</b></a></div>
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=6.0.2"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=6.0.2"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=6.0.2"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=6.0.2"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=6.0.2"></script>
+
+
+
+  
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+  
+    <script type="text/javascript">
+    (function(){
+      var appid = 'cytklkKc0';
+      var conf = 'prod_b1dd516bbb7f3198591656f99d9ace80';
+      var width = window.innerWidth || document.documentElement.clientWidth;
+      if (width < 960) {
+      window.document.write('<script id="changyan_mobile_js" charset="utf-8" type="text/javascript" src="https://changyan.sohu.com/upload/mobile/wap-js/changyan_mobile.js?client_id=' + appid + '&conf=' + conf + '"><\/script>'); } else { var loadJs=function(d,a){var c=document.getElementsByTagName("head")[0]||document.head||document.documentElement;var b=document.createElement("script");b.setAttribute("type","text/javascript");b.setAttribute("charset","UTF-8");b.setAttribute("src",d);if(typeof a==="function"){if(window.attachEvent){b.onreadystatechange=function(){var e=b.readyState;if(e==="loaded"||e==="complete"){b.onreadystatechange=null;a()}}}else{b.onload=a}}c.appendChild(b)};loadJs("https://changyan.sohu.com/upload/changyan.js",function(){
+        window.changyan.api.config({appid:appid,conf:conf})});
+      }
+    })();
+    </script>
+    <script type="text/javascript" src="https://assets.changyan.sohu.com/upload/plugins/plugins.count.js"></script>
+  
+
+
+
+
+
+
+
+  
+
+
+
+
+  
+  
+  
+  <link rel="stylesheet" href="/lib/algolia-instant-search/instantsearch.min.css">
+
+  
+  
+  <script src="/lib/algolia-instant-search/instantsearch.min.js"></script>
+  
+
+  <script src="/js/src/algolia-search.js?v=6.0.2"></script>
+
+
+
+  
+
+  
+
+  
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';        
+    }
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>

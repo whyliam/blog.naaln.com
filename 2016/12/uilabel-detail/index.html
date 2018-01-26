@@ -1,0 +1,982 @@
+<!DOCTYPE html>
+
+
+
+
+<html class="theme-next muse" lang="zh-CN">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+  <meta name="google-site-verification" content="ByVfaP_E3b9ZYRUGhNAUFSQKL8mJQwUehpQwoxJ5n-c" />
+
+
+
+  <meta name="msvalidate.01" content="DB220684085BEDBD2E49E8E942534B1F" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=6.0.2" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon-next.png?v=6.0.2">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32-next.png?v=6.0.2">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16-next.png?v=6.0.2">
+
+
+  <link rel="mask-icon" href="/favicon/logo.svg?v=6.0.2" color="#222">
+
+
+
+
+
+
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Muse',
+    version: '6.0.2',
+    sidebar: {"position":"right","display":"hide","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: false,
+    fastclick: false,
+    lazyload: false,
+    tabs: true,
+    motion: {"enable":false,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    algolia: {
+      applicationID: 'XILKIWTAM9',
+      apiKey: '8c01137fe05d281ccd531a0ec622322a',
+      indexName: 'blog',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"搜索文章","hits_empty":"啊，找不到 ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+  
+
+
+
+
+  
+  <meta name="keywords" content="Swift," />
+
+
+<meta name="description" content="常用属性和方法有：1. 创建 12CGRect rect = CGRectMake(100, 200, 50, 50);UILabel *label = [[UILabel alloc] initWithFrame:rect]; 2. text //设置和读取文本内容,默认为nil 12label.text = @”文本信息”; //设置内容NSLog(@”%@”, label.text); //">
+<meta name="keywords" content="Swift">
+<meta property="og:type" content="article">
+<meta property="og:title" content="UILable属性详解">
+<meta property="og:url" content="https://blog.naaln.com/2016/12/uilabel-detail/index.html">
+<meta property="og:site_name" content="Why·Liam·Blog">
+<meta property="og:description" content="常用属性和方法有：1. 创建 12CGRect rect = CGRectMake(100, 200, 50, 50);UILabel *label = [[UILabel alloc] initWithFrame:rect]; 2. text //设置和读取文本内容,默认为nil 12label.text = @”文本信息”; //设置内容NSLog(@”%@”, label.text); //">
+<meta property="og:locale" content="zh-CN">
+<meta property="og:updated_time" content="2017-09-03T09:15:57.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="UILable属性详解">
+<meta name="twitter:description" content="常用属性和方法有：1. 创建 12CGRect rect = CGRectMake(100, 200, 50, 50);UILabel *label = [[UILabel alloc] initWithFrame:rect]; 2. text //设置和读取文本内容,默认为nil 12label.text = @”文本信息”; //设置内容NSLog(@”%@”, label.text); //">
+
+
+
+  <link rel="alternate" href="/atom.xml" title="Why·Liam·Blog" type="application/atom+xml" />
+
+
+
+
+  <link rel="canonical" href="https://blog.naaln.com/2016/12/uilabel-detail/"/>
+
+
+  <title>UILable属性详解 | Why·Liam·Blog</title>
+  
+
+
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-47966442-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-47966442-2');
+</script>
+
+
+
+
+
+
+  
+<script src="//msite.baidu.com/sdk/c.js?appid=1586840953097399"></script>
+<link rel="canonical" href="https://blog.naaln.com/2016/12/uilabel-detail/"/>
+<script type="application/ld+json">
+    {
+        "@context": "https://ziyuan.baidu.com/contexts/cambrian.jsonld",
+        "@id": "https://blog.naaln.com/2016/12/uilabel-detail/",
+        "appid": "1586840953097399",
+        "title": "UILable属性详解",
+        "images": [
+            ""
+            ],
+        "description": "",
+        "pubDate": "",
+        "upDate": "",
+        "lrDate": ""
+    }
+</script>
+
+  <noscript>
+  <style type="text/css">
+    .use-motion .motion-element,
+    .use-motion .brand,
+    .use-motion .menu-item,
+    .sidebar-inner,
+    .use-motion .post-block,
+    .use-motion .pagination,
+    .use-motion .comments,
+    .use-motion .post-header,
+    .use-motion .post-body,
+    .use-motion .collection-title { opacity: initial; }
+
+    .use-motion .logo,
+    .use-motion .site-title,
+    .use-motion .site-subtitle {
+      opacity: initial;
+      top: initial;
+    }
+
+    .use-motion {
+      .logo-line-before i { left: initial; }
+      .logo-line-after i { right: initial; }
+    }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-CN">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-right page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"> <div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Why·Liam·Blog</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <h1 class="site-subtitle" itemprop="description">人生若如初見</h1>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            <i class="menu-item-icon fa fa-fw fa-home"></i> <br />首页</a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />归档</a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-technology">
+          <a href="/categories/technology/" rel="section">
+            <i class="menu-item-icon fa fa-fw fa-code"></i> <br />技术</a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-jottings">
+          <a href="/categories/jottings/" rel="section">
+            <i class="menu-item-icon fa fa-fw fa-language"></i> <br />随笔</a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tour">
+          <a href="/categories/tour/" rel="section">
+            <i class="menu-item-icon fa fa-fw fa-globe"></i> <br />旅游</a>
+        </li>
+      
+
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br />搜索</a>
+        </li>
+      
+    </ul>
+  
+
+  
+    <div class="site-search">
+      
+  
+  <div class="algolia-popup popup search-popup">
+    <div class="algolia-search">
+      <div class="algolia-search-input-icon">
+        <i class="fa fa-search"></i>
+      </div>
+      <div class="algolia-search-input" id="algolia-search-input"></div>
+    </div>
+
+    <div class="algolia-results">
+      <div id="algolia-stats"></div>
+      <div id="algolia-hits"></div>
+      <div id="algolia-pagination" class="algolia-pagination"></div>
+    </div>
+
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+  </div>
+
+
+
+
+    </div>
+  
+</nav>
+
+
+  
+
+
+
+ </div>
+    </header>
+
+    
+
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://blog.naaln.com/2016/12/uilabel-detail/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="WHY·LIAM">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="//tva2.sinaimg.cn/crop.0.0.998.998.180/48910e01gw1ef5p6etuzdj20rs0rs771.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Why·Liam·Blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h2 class="post-title" itemprop="name headline">UILable属性详解</h2>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2016-12-02T15:49:48+08:00">2016-12-02</time>
+            
+
+            
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/technology/" itemprop="url" rel="index"><span itemprop="name">技术</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+              <span class="post-meta-divider">|</span>
+              <span class="post-meta-item-icon">
+                <i class="fa fa-comment-o"></i>
+              </span>
+              
+                <a href="/2016/12/uilabel-detail/#SOHUCS" itemprop="discussionUrl">
+                  <span id="changyan_count_unit" class="post-comments-count hc-comment-count" data-xid="2016/12/uilabel-detail/" itemprop="commentsCount"></span>
+                </a>
+              
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h3 id="常用属性和方法有："><a href="#常用属性和方法有：" class="headerlink" title="常用属性和方法有："></a>常用属性和方法有：</h3><p>1. 创建</p>
+<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">CGRect</span> rect = <span class="type">CGRectMake</span>(<span class="number">100</span>, <span class="number">200</span>, <span class="number">50</span>, <span class="number">50</span>);</span><br><span class="line"><span class="type">UILabel</span> *label = [[<span class="type">UILabel</span> alloc] initWithFrame:rect];</span><br></pre></td></tr></table></figure>
+<p>2. text //设置和读取文本内容,默认为nil</p>
+<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">label.text = @”文本信息”; <span class="comment">//设置内容</span></span><br><span class="line"><span class="type">NSLog</span>(@”%@”, label.text); <span class="comment">//读取内容</span></span><br></pre></td></tr></table></figure>
+<p>3. textColor //设置文字颜色，默认为黑色</p>
+<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">lable.textColor = [<span class="type">UIColor</span> redColor];</span><br></pre></td></tr></table></figure>
+<p>4. font //设置字体大小，默认17</p>
+<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">label.font = [<span class="type">UIFont</span> systemFontOfSize:<span class="number">20</span>]; <span class="comment">//⼀一般方法</span></span><br><span class="line">label.font = [<span class="type">UIFont</span> boldSystemFontOfSize:<span class="number">20</span>]; <span class="comment">//加粗方法</span></span><br><span class="line">label.font = [<span class="type">UIFont</span> fontWithName:@<span class="string">"Arial"</span> size:<span class="number">16</span>]; <span class="comment">//指定</span></span><br><span class="line">字体的方法</span><br><span class="line"><span class="comment">//还有⼀一种从外部导入字体的方法。</span></span><br></pre></td></tr></table></figure>
+<p>5. textAlignment //设置标签文本对齐方式。</p>
+<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">label.textAlignment = <span class="type">NSTextAlignmentCenter</span>; <span class="comment">//还有</span></span><br><span class="line"><span class="type">NSTextAlignmentLeft</span>、 <span class="type">NSTextAlignmentRight</span>.</span><br></pre></td></tr></table></figure>
+<p>6. numberOfLines //标签最多显示行数,如果为0则表示多行。</p>
+<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">label.numberOfLines = <span class="number">2</span>;</span><br></pre></td></tr></table></figure>
+<p>7. enabled //只是决定了Label的绘制方式，将它设置</p>
+<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">为<span class="type">NO</span>将会使文本变暗，表示它没有激活，这时向它设置颜色值是无效的。</span><br><span class="line">label.enable = <span class="type">NO</span>;</span><br></pre></td></tr></table></figure>
+<p>8. highlighted //是否高亮显示</p>
+<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">label.highlighted = <span class="type">YES</span>;</span><br><span class="line">label.highlightedTextColor = [<span class="type">UIColor</span> orangeColor]; </span><br><span class="line"><span class="comment">//高亮 显示时的文本颜色</span></span><br></pre></td></tr></table></figure>
+<p>9. ShadowColor //设置阴影颜色 </p>
+<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[label setShadowColor:[<span class="type">UIColor</span> blackColor]];</span><br></pre></td></tr></table></figure>
+<p>10. ShadowOffset //设置阴影偏移量</p>
+<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[label setShadowOffset:<span class="type">CGSizeMake</span>(-<span class="number">1</span>, -<span class="number">1</span>)];</span><br></pre></td></tr></table></figure>
+<p>11. baselineAdjustment //如果adjustsFontSizeToFitWidth属性设</p>
+<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//置为YES，这个属性就来控制文本基线的行为。</span></span><br><span class="line">label.baselineAdjustment = <span class="type">UIBaselineAdjustmentNone</span>;</span><br><span class="line"><span class="type">UIBaselineAdjustmentAlignBaselines</span> = <span class="number">0</span>, <span class="comment">//默认，文本最上端与中线对齐。</span></span><br><span class="line"><span class="type">UIBaselineAdjustmentAlignCenters</span>,  <span class="comment">//文本中线与label中线对齐。</span></span><br><span class="line"><span class="type">UIBaselineAdjustmentNone</span>, <span class="comment">//文本最低端与label中线对齐。</span></span><br></pre></td></tr></table></figure>
+<p>12. Autoshrink //是否自动收缩</p>
+<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">Fixed</span> <span class="type">Font</span> <span class="type">Size</span> <span class="comment">//默认,如果Label宽度小于文字长度时时,文字大小不自动缩放</span></span><br><span class="line">minimumScaleFactor <span class="comment">//设置最小收缩比例，如果Label宽度小于文字长度时，文字进行收缩，收缩超过比例后，停止收缩。</span></span><br><span class="line">minimumFontSize <span class="comment">//设置最小收缩字号，如果Label宽度小于文字长度时，文字字号减小，低于设定字号后，不再减小。//6.0以后不再使用了。</span></span><br><span class="line">label.minimumScaleFactor = <span class="number">0.5</span>;</span><br></pre></td></tr></table></figure>
+<p>13. adjustsLetterSpacingToFitWidth //改变字母之间的间距来适应Label大小</p>
+<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">myLabel.adjustsLetterSpacingToFitWidth = <span class="type">NO</span>;</span><br></pre></td></tr></table></figure>
+<p>14.  lineBreakMode //设置文字过长时的显示格式             </p>
+<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">label.lineBreakMode = <span class="type">NSLineBreakByCharWrapping</span>; <span class="comment">//以字符为显示单位显示，后面部分省略不显示。</span></span><br><span class="line">label.lineBreakMode = <span class="type">NSLineBreakByClipping</span>; <span class="comment">//剪切与文本宽度相同的内容长度，后半部分被删除。</span></span><br><span class="line">label.lineBreakMode = <span class="type">NSLineBreakByTruncatingHead</span>; <span class="comment">//前面部分文字以……方式省略，显示尾部文字内容。</span></span><br><span class="line">label.lineBreakMode = <span class="type">NSLineBreakByTruncatingMiddle</span>; <span class="comment">//中间的内容以……方式省略，显示头尾的文字内容。</span></span><br><span class="line">label.lineBreakMode = <span class="type">NSLineBreakByTruncatingTail</span>; <span class="comment">//结尾部分的内容以……方式省略，显示头的文字内容。</span></span><br><span class="line">label.lineBreakMode = <span class="type">NSLineBreakByWordWrapping</span>; <span class="comment">//以单词为显示单位显示，后面部分省略不显示。</span></span><br></pre></td></tr></table></figure>
+<p>15.  adjustsFontSizeToFitWidth //设置字体大小适应label宽度  </p>
+<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">label.adjustsFontSizeToFitWidth = <span class="type">YES</span>;</span><br></pre></td></tr></table></figure>
+<p>16. attributedText：//设置标签属性文本。</p>
+<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">NSString</span> *text = @<span class="string">"first"</span>;</span><br><span class="line"><span class="type">NSMutableAttributedString</span> *textLabelStr =</span><br><span class="line">[[<span class="type">NSMutableAttributedString</span> alloc]</span><br><span class="line">initWithString:text];</span><br><span class="line">[textLabelStr</span><br><span class="line">setAttributes:@&#123;<span class="type">NSForegroundColorAttributeName</span> :</span><br><span class="line">[<span class="type">UIColor</span> lightGrayColor], <span class="type">NSFontAttributeName</span> :</span><br><span class="line">[<span class="type">UIFont</span> systemFontOfSize:<span class="number">17</span>]&#125; range:<span class="type">NSMakeRange</span>(<span class="number">11</span>,</span><br><span class="line"><span class="number">10</span>)];</span><br><span class="line">label.attributedText = textLabelStr;</span><br></pre></td></tr></table></figure>
+<p>17. 竖排文字显示每个文字加一个换行符，这是最方便和简单的实现方式。</p>
+<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">label.text = @<span class="string">"请\n竖\n直\n方\n向\n排\n列"</span>;</span><br><span class="line">label.numberOfLines = [label.text length];</span><br></pre></td></tr></table></figure>
+<p>18. 计算UIlabel 随字体多行后的高度</p>
+<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">CGRect</span> bounds = <span class="type">CGRectMake</span>(<span class="number">0</span>, <span class="number">0</span>, <span class="number">200</span>, <span class="number">300</span>);</span><br><span class="line">heightLabel = [myLabel textRectForBounds:bounds</span><br><span class="line">limitedToNumberOfLines:<span class="number">20</span>]; <span class="comment">//计算20行后的Label的Frame</span></span><br><span class="line"><span class="type">NSLog</span>(@<span class="string">"%f"</span>,heightLabel.size.height);</span><br></pre></td></tr></table></figure>
+<p>19. UILabel根据字数多少自动实现适应高度</p>
+<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">UILabel</span> *msgLabel = [[<span class="type">UILabel</span> alloc]</span><br><span class="line">initWithFrame:<span class="type">CGRectMake</span>(<span class="number">15</span>, <span class="number">45</span>, <span class="number">0</span>, <span class="number">0</span>)];</span><br><span class="line">msgLabel.backgroundColor = [<span class="type">UIColor</span> lightTextColor];</span><br><span class="line">[msgLabel setNumberOfLines:<span class="number">0</span>];</span><br><span class="line">msgLabel.lineBreakMode = <span class="type">UILineBreakModeWordWrap</span>;</span><br><span class="line">msgLabel.font = [<span class="type">UIFont</span> fontWithName:@<span class="string">"Arial"</span> size:<span class="number">12</span>];</span><br><span class="line"><span class="type">CGSize</span> size = <span class="type">CGSizeMake</span>(<span class="number">290</span>, <span class="number">1000</span>);</span><br><span class="line">msgLabel.text = @<span class="string">"获取到的deviceToken，我们可以通过webservice服务提交给.net应用程序，这里我简单处理，直接打印出来，拷贝到.net应用环境中使用。"</span>;</span><br><span class="line"><span class="type">CGSize</span> msgSie = [msgLabel.text sizeWithFont:fonts</span><br><span class="line">constrainedToSize:size];</span><br><span class="line">[msgLabel setFrame:<span class="type">CGRectMake</span>(<span class="number">15</span>, <span class="number">45</span>, <span class="number">290</span>, msgSie.height)];</span><br></pre></td></tr></table></figure>
+<p>20. 渐变字体Label</p>
+<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">UIColor</span> *titleColor = [<span class="type">UIColor</span> colorWithPatternImage:[<span class="type">UIImage</span></span><br><span class="line">imageNamed:@<span class="string">"btn.png"</span>]];</span><br><span class="line"><span class="type">NSString</span> *title = @<span class="string">"Setting"</span>;</span><br><span class="line"><span class="type">UILabel</span> *titleLabel = [[<span class="type">UILabel</span> alloc]</span><br><span class="line">initWithFrame:<span class="type">CGRectMake</span>(<span class="number">0</span>, <span class="number">0</span>, <span class="number">80</span>, <span class="number">44</span>)];</span><br><span class="line">titleLabel.textColor = titleColor;</span><br><span class="line">titleLabel.text = title;</span><br><span class="line">titleLabel.font = [<span class="type">UIFont</span> boldSystemFontOfSize:<span class="number">20</span>];</span><br><span class="line">titleLabel.backgroundColor = [<span class="type">UIColor</span> clearColor];</span><br><span class="line">[<span class="keyword">self</span>.view addSubview:titleLabel];</span><br><span class="line">[titleLabel release];</span><br></pre></td></tr></table></figure>
+<p>21. Label添加边框</p>
+<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">titleLabel.layer.borderColor = [[<span class="type">UIColor</span> grayColor] <span class="type">CGColor</span>];</span><br><span class="line"></span><br><span class="line">titleLabel.layer.borderWidth = <span class="number">2</span>;</span><br></pre></td></tr></table></figure>
+<h4 id="在iOS中默认的UILabel中的文字在竖直方向上只能居中对齐，博主参考国外网站，从UILabel继承了一个新类，实现了居上对齐，居中对齐，居下对齐。具体如下："><a href="#在iOS中默认的UILabel中的文字在竖直方向上只能居中对齐，博主参考国外网站，从UILabel继承了一个新类，实现了居上对齐，居中对齐，居下对齐。具体如下：" class="headerlink" title="在iOS中默认的UILabel中的文字在竖直方向上只能居中对齐，博主参考国外网站，从UILabel继承了一个新类，实现了居上对齐，居中对齐，居下对齐。具体如下："></a>在iOS中默认的UILabel中的文字在竖直方向上只能居中对齐，博主参考国外网站，从UILabel继承了一个新类，实现了居上对齐，居中对齐，居下对齐。具体如下：</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">#import &lt;UIKit/UIKit.h&gt;  </span><br><span class="line">typedef enum  </span><br><span class="line">&#123;  </span><br><span class="line">    VerticalAlignmentTop = 0, // default  </span><br><span class="line">    VerticalAlignmentMiddle,  </span><br><span class="line">    VerticalAlignmentBottom,  </span><br><span class="line">&#125; VerticalAlignment;  </span><br><span class="line">@interface myUILabel : UILabel  </span><br><span class="line">&#123;  </span><br><span class="line">@private  </span><br><span class="line">VerticalAlignment _verticalAlignment;  </span><br><span class="line">&#125;  </span><br><span class="line">  </span><br><span class="line">@property (nonatomic) VerticalAlignment verticalAlignment;  </span><br><span class="line">  </span><br><span class="line">@end</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br></pre></td><td class="code"><pre><span class="line">//  </span><br><span class="line">//  myUILabel.m  </span><br><span class="line">//    </span><br><span class="line">//  </span><br><span class="line">//  Created by yexiaozi_007 on 3/4/13.  </span><br><span class="line">//  Copyright (c) 2013 yexiaozi_007. All rights reserved.  </span><br><span class="line">//  </span><br><span class="line">  </span><br><span class="line">#import &quot;myUILabel.h&quot;  </span><br><span class="line">  </span><br><span class="line">@implementation myUILabel  </span><br><span class="line">@synthesize verticalAlignment = verticalAlignment_;  </span><br><span class="line">  </span><br><span class="line">-(id)initWithFrame:(CGRect)frame &#123;  </span><br><span class="line">    if (self = [super initWithFrame:frame]) &#123;  </span><br><span class="line">        self.verticalAlignment = VerticalAlignmentMiddle;  </span><br><span class="line">    &#125;  </span><br><span class="line">    return self;  </span><br><span class="line">&#125;  </span><br><span class="line">  </span><br><span class="line">-(void)setVerticalAlignment:(VerticalAlignment)verticalAlignment &#123;  </span><br><span class="line">    verticalAlignment_ = verticalAlignment;  </span><br><span class="line">    [self setNeedsDisplay];  </span><br><span class="line">&#125;  </span><br><span class="line">  </span><br><span class="line">-(CGRect)textRectForBounds:(CGRect)bounds limitedToNumberOfLines:(NSInteger)numberOfLines &#123;  </span><br><span class="line">    CGRect textRect = [super textRectForBounds:bounds limitedToNumberOfLines:numberOfLines];  </span><br><span class="line">    switch (self.verticalAlignment) &#123;  </span><br><span class="line">        case VerticalAlignmentTop:  </span><br><span class="line">            textRect.origin.y = bounds.origin.y;  </span><br><span class="line">            break;  </span><br><span class="line">        case VerticalAlignmentBottom:  </span><br><span class="line">            textRect.origin.y = bounds.origin.y + bounds.size.height - textRect.size.height;  </span><br><span class="line">            break;  </span><br><span class="line">        case VerticalAlignmentMiddle:  </span><br><span class="line">            // Fall through.  </span><br><span class="line">        default:  </span><br><span class="line">            textRect.origin.y = bounds.origin.y + (bounds.size.height - textRect.size.height) / 2.0;  </span><br><span class="line">    &#125;  </span><br><span class="line">    return textRect;  </span><br><span class="line">&#125;  </span><br><span class="line">  </span><br><span class="line">-(void)drawTextInRect:(CGRect)requestedRect &#123;  </span><br><span class="line">    CGRect actualRect = [self textRectForBounds:requestedRect limitedToNumberOfLines:self.numberOfLines];  </span><br><span class="line">    [super drawTextInRect:actualRect];  </span><br><span class="line">&#125;  </span><br><span class="line"> @end</span><br></pre></td></tr></table></figure>
+<p>在使用时：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">lbl_mylabel = [[myUILabel alloc] initWithFrame:CGRectMake(20, 50, 150, 600)];  </span><br><span class="line">UIColor *color = [UIColor colorWithPatternImage:[UIImage imageNamed:@&quot;halfTransparent.png&quot;]];//使用半透明图片作为label的背景色  </span><br><span class="line">lbl_mylabel.backgroundColor = color;  </span><br><span class="line">lbl_mylabel.textAlignment = UITextAlignmentLeft;  </span><br><span class="line">lbl_mylabel.textColor = UIColor.whiteColor;  </span><br><span class="line">lbl_mylabel.lineBreakMode = UILineBreakModeWordWrap;  </span><br><span class="line">lbl_mylabel.numberOfLines = 0;  </span><br><span class="line">[lbl_mylabel setVerticalAlignment:VerticalAlignmentTop];  </span><br><span class="line">[self addSubview:lbl_mylabel];</span><br></pre></td></tr></table></figure>
+<h3 id="学习内容"><a href="#学习内容" class="headerlink" title="学习内容"></a>学习内容</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">/* </span><br><span class="line"> 1.控件 UIView UILabel UITextField UITextView UIButton </span><br><span class="line"> 2.字体、大小、单位、颜色 </span><br><span class="line"> */  </span><br><span class="line">UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(10, 30, 300, 260)];  </span><br><span class="line">label.text = @&quot;Label Text Content, This is a text label things attribute&quot;;//默认为空  </span><br><span class="line">label.font = [UIFont systemFontOfSize:17];//默认使用系统的17  </span><br><span class="line">label.textColor = [UIColor orangeColor];//默认使用文本黑色  </span><br><span class="line">label.shadowColor = [UIColor lightGrayColor];//默认没有阴影  </span><br><span class="line">label.shadowOffset = CGSizeMake(1,0);//默认是一个向上的阴影(0,-1)  </span><br><span class="line">label.textAlignment = NSTextAlignmentCenter;//默认是左对齐  </span><br><span class="line">label.lineBreakMode = NSLineBreakByTruncatingTail;//段落样式，默认是最后截断尾巴，用...代替</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">//富文本的基本数据类型，属性字符串。以此为基础，如果这个设置了相应的属性，则会忽略上面设置的属性，默认为空  </span><br><span class="line">NSString *string = label.text;  </span><br><span class="line">const CGFloat fontSize = 16.0;  </span><br><span class="line">NSMutableAttributedString *attrString = [[NSMutableAttributedString alloc] initWithString:string];  </span><br><span class="line">NSUInteger length = [string length];</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">//设置字体  </span><br><span class="line">UIFont *baseFont = [UIFont systemFontOfSize:fontSize];  </span><br><span class="line">[attrString addAttribute:NSFontAttributeName value:baseFont range:NSMakeRange(0, length)];//设置所有的字体  </span><br><span class="line">UIFont *boldFont = [UIFont boldSystemFontOfSize:fontSize];  </span><br><span class="line">[attrString addAttribute:NSFontAttributeName value:boldFont range:[string rangeOfString:@&quot;Text&quot;]];//设置Text这四个字母的字体为粗体</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">//设置倾斜，需要导入coreText  </span><br><span class="line">UIFont *italicFont = GetVariationOfFontWithTrait(baseFont,  </span><br><span class="line">                                                 kCTFontTraitItalic);  </span><br><span class="line">[attrString addAttribute:NSFontAttributeName value:italicFont  </span><br><span class="line">                   range:[string rangeOfString:@&quot;Label&quot;]];</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">// 设置颜色  </span><br><span class="line">UIColor *color = [UIColor redColor];  </span><br><span class="line">[attrString addAttribute:NSForegroundColorAttributeName  </span><br><span class="line">                   value:color  </span><br><span class="line">                   range:[string rangeOfString:@&quot;Content&quot;]];  </span><br><span class="line">[attrString addAttribute:NSBackgroundColorAttributeName value:[UIColor blueColor] range:[string rangeOfString:@&quot;ent&quot;]];</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br></pre></td><td class="code"><pre><span class="line">    //可以对这些属性设置值  </span><br><span class="line">    //字体名称有以下：  </span><br><span class="line">//    label.font = [UIFont fontWithName:@&quot;Arial-BoldItalicMT&quot; size:24];  </span><br><span class="line">    [attrString addAttribute:NSFontAttributeName value:[UIFont fontWithName:@&quot;Verdana-BoldItalic&quot; size:18] range:[string rangeOfString:@&quot;Label&quot;]];  </span><br><span class="line">    label.numberOfLines = 2;  </span><br><span class="line">    NSMutableParagraphStyle *  </span><br><span class="line">    style = [[NSParagraphStyle defaultParagraphStyle] mutableCopy];  </span><br><span class="line">    style.lineSpacing = 10;//增加行高  </span><br><span class="line">    style.headIndent = 10;//头部缩进，相当于左padding  </span><br><span class="line">    style.tailIndent = -10;//相当于右padding  </span><br><span class="line">    style.lineHeightMultiple = 1.5;//行间距是多少倍  </span><br><span class="line">    style.alignment = NSTextAlignmentLeft;//对齐方式  </span><br><span class="line">    style.firstLineHeadIndent = 20;//首行头缩进  </span><br><span class="line">    style.paragraphSpacing = 10;//段落后面的间距  </span><br><span class="line">    style.paragraphSpacingBefore = 20;//段落之前的间距  </span><br><span class="line">    [attrString addAttribute:NSParagraphStyleAttributeName value:style range:NSMakeRange(0, length)];  </span><br><span class="line">      </span><br><span class="line">    [attrString addAttribute:NSKernAttributeName value:@2 range:NSMakeRange(0, length)];//字符间距 2pt  </span><br><span class="line">    [attrString addAttribute:NSStrokeColorAttributeName value:[UIColor blueColor] range:[string rangeOfString:@&quot;is&quot;]];//设置文字描边颜色，需要和NSStrokeWidthAttributeName设置描边宽度，这样就能使文字空心  </span><br><span class="line">    [attrString addAttribute:NSStrokeWidthAttributeName value:@2 range:[string rangeOfString:@&quot;is&quot;]];//空心字，文字边框描述  </span><br><span class="line">    [attrString addAttribute:NSUnderlineStyleAttributeName value:@(NSUnderlineStyleSingle) range:[string rangeOfString:@&quot;text&quot;]];//下划线  </span><br><span class="line">    [attrString addAttribute:NSUnderlineStyleAttributeName value:@(NSUnderlineStyleThick) range:[string rangeOfString:@&quot;label&quot;]];//厚的下划线  </span><br><span class="line">    [attrString addAttribute:NSStrikethroughStyleAttributeName value:@(NSUnderlinePatternSolid | NSUnderlineStyleSingle) range:[string rangeOfString:@&quot;things&quot;]];//删除线  </span><br><span class="line">    [attrString addAttribute:NSStrikethroughColorAttributeName value:[UIColor blueColor] range:[string rangeOfString:@&quot;things&quot;]];//删除线蓝色  </span><br><span class="line">   label.attributedText = attrString;  </span><br><span class="line">      </span><br><span class="line">    label.highlightedTextColor = [UIColor redColor];//设置文本高亮显示颜色，与highlighted一起使用。  </span><br><span class="line">    label.highlighted = NO; //高亮状态是否打开  </span><br><span class="line">    label.enabled = YES;//设置文字内容是否可变  </span><br><span class="line">    label.userInteractionEnabled = YES;//设置标签是否忽略或移除用户交互。默认为NO  </span><br><span class="line">    label.baselineAdjustment = UIBaselineAdjustmentNone;//如果adjustsFontSizeToFitWidth属性设置为YES，这个属性就来控制文本基线的行为。  </span><br><span class="line">//    UIBaselineAdjustmentAlignBaselines=0，默认，文本最上端与中线对齐。  </span><br><span class="line">//    UIBaselineAdjustmentAlignCenters,   文本中线与label中线对齐。  </span><br><span class="line">//    UIBaselineAdjustmentNone,  文本最低端与label中线对齐。;  </span><br><span class="line">    [self.view addSubview:label];</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">/* </span><br><span class="line">  lineSpacing;                         来增加行距 </span><br><span class="line">  paragraphSpacing; </span><br><span class="line">  alignment;                           对齐 </span><br><span class="line">  firstLineHeadIndent;                 段落开始的缩排像素 </span><br><span class="line">  headIndent;                          可调整全部文字的缩排距离，可当作左边 padding 使用 </span><br><span class="line">  tailIndent;                          可调整文字尾端的缩排距离。需要注意的是，这里指定的值可以当作文字显示的宽、而也可当作右边 padding 使用，依据输入的正负值而定： </span><br><span class="line">  lineBreakMode; </span><br><span class="line">  minimumLineHeight; </span><br><span class="line">  maximumLineHeight;        而针对不同的字型与字号，我们可以透过指定最大与最小行距（maximumLineHeight 与 minimumLineHeight）来避免过高或过窄的状况发生。 </span><br><span class="line">  baseWritingDirection; </span><br><span class="line">  lineHeightMultiple;                  想要调整行距，可以透过搭配使用 lineHeightMultiple 更改行距倍数 </span><br><span class="line">  paragraphSpacingBefore; 而若是文章内容有分段落的话，也可以透过指定段落结尾距离（paragraphSpacing）以及段落开头距离</span><br></pre></td></tr></table></figure>
+<p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line">//获取斜体  </span><br><span class="line">UIFont * GetVariationOfFontWithTrait(UIFont *baseFont,  </span><br><span class="line">                                     CTFontSymbolicTraits trait) &#123;  </span><br><span class="line">    CGFloat fontSize = [baseFont pointSize];  </span><br><span class="line">    CFStringRef  </span><br><span class="line">    baseFontName = (__bridge CFStringRef)[baseFont fontName];  </span><br><span class="line">    CTFontRef baseCTFont = CTFontCreateWithName(baseFontName,  </span><br><span class="line">                                                fontSize, NULL);  </span><br><span class="line">    CTFontRef ctFont =  </span><br><span class="line">    CTFontCreateCopyWithSymbolicTraits(baseCTFont, 0, NULL,  </span><br><span class="line">                                       trait, trait);  </span><br><span class="line">    NSString *variantFontName =  </span><br><span class="line">    CFBridgingRelease(CTFontCopyName(ctFont,  </span><br><span class="line">                                     kCTFontPostScriptNameKey));  </span><br><span class="line">  </span><br><span class="line">    UIFont *variantFont = [UIFont fontWithName:variantFontName  </span><br><span class="line">                                          size:fontSize];  </span><br><span class="line">    CFRelease(ctFont);  </span><br><span class="line">    CFRelease(baseCTFont);  </span><br><span class="line">    return variantFont;  </span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure><div style="clear:both"></div><div class="cc"><p>The <a href="https://blog.naaln.com">Why·Liam·Blog</a> by <a href="https://www.naaln.com" target="_blank" rel="external">WhyLiam</a> is licensed under a <a href="http://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" rel="external">Creative Commons BY-NC-ND 4.0 International License</a>.</p><p>由<a href="https://www.naaln.com" target="_blank" rel="external">WhyLiam</a>创作并维护的<a href="https://blog.naaln.com">Why·Liam·Blog</a>采用创作共用<a href="http://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" rel="external">保留署名-非商业-禁止演绎4.0国际许可证</a>。</p><p>本文首发于<a href="https://blog.naaln.com">Why·Liam·Blog (https://blog.naaln.com)</a>，版权所有，侵权必究。</p><p>本文永久链接：<a href="https://blog.naaln.com/2016/12/uilabel-detail/">https://blog.naaln.com/2016/12/uilabel-detail/</a></p><p></p></div></p>
+
+      
+    </div>
+    
+    
+    
+
+    
+      <div>
+        <div id="wechat_subscriber" style="display: block; padding: 10px 0; margin: 20px auto; width: 100%; text-align: center">
+    <img id="wechat_subscriber_qcode" src="//ws1.sinaimg.cn/large/006tKfTcgy1fg8gpi7kaaj30by0by74i.jpg" alt="WHY·LIAM wechat" style="width: 200px; max-width: 100%;"/>
+    <div>记录生活，研究产品，分享设计，分析数据，讨论科技和商业，不定期扯淡。</div>
+</div>
+
+      </div>
+    
+
+    
+      <div>
+        <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+  <div>如果觉得我的文章对您有用，请随意打赏。您的支持将鼓励我继续创作！</div>
+  <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+    <span>打赏</span>
+  </button>
+  <div id="QR" style="display: none;">
+
+    
+      <div id="wechat" style="display: inline-block">
+        <img id="wechat_qr" src="//ws1.sinaimg.cn/mw690/006tNc79gy1fm7yqrau7mj30f00ezad5.jpg" alt="WHY·LIAM 微信支付"/>
+        <p>微信支付</p>
+      </div>
+    
+
+    
+      <div id="alipay" style="display: inline-block">
+        <img id="alipay_qr" src="//ww3.sinaimg.cn/mw690/48910e01gw1evkbfendrjj20ci0ci0uf.jpg" alt="WHY·LIAM 支付宝"/>
+        <p>支付宝</p>
+      </div>
+    
+
+    
+
+  </div>
+</div>
+
+      </div>
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/Swift/" rel="tag"># Swift</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2016/11/backup-wechat-history/" rel="next" title="如何备份导出 IOS 微信聊天数据库">
+                <i class="fa fa-chevron-left"></i> 如何备份导出 IOS 微信聊天数据库
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2016/12/restful-web-server/" rel="prev" title="RESTful Web 服务：教程">
+                RESTful Web 服务：教程 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+  
+    <div class="comments" id="comments">
+      <div id="SOHUCS"></div>
+    </div>
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+
+      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image"
+                src="//tva2.sinaimg.cn/crop.0.0.998.998.180/48910e01gw1ef5p6etuzdj20rs0rs771.jpg"
+                alt="WHY·LIAM" />
+            
+              <p class="site-author-name" itemprop="name">WHY·LIAM</p>
+              <p class="site-description motion-element" itemprop="description"></p>
+          </div>
+
+          
+            <nav class="site-state motion-element">
+              
+                <div class="site-state-item site-state-posts">
+                
+                  <a href="/archives/">
+                
+                    <span class="site-state-item-count">721</span>
+                    <span class="site-state-item-name">日志</span>
+                  </a>
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-categories">
+                  <a href="/categories/index.html">
+                    <span class="site-state-item-count">4</span>
+                    <span class="site-state-item-name">分类</span>
+                  </a>
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-tags">
+                  <a href="/tags/index.html">
+                    <span class="site-state-item-count">67</span>
+                    <span class="site-state-item-name">标签</span>
+                  </a>
+                </div>
+              
+            </nav>
+          
+
+          
+            <div class="feed-link motion-element">
+              <a href="/atom.xml" rel="alternate">
+                <i class="fa fa-rss"></i>
+                RSS
+              </a>
+            </div>
+          
+
+          
+            <div class="links-of-author motion-element">
+                
+                  <span class="links-of-author-item">
+                    <a href="https://github.com/liszd" target="_blank" title="GitHub" rel="external nofollow">
+                      
+                        <i class="fa fa-fw fa-github"></i>GitHub</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="http://weibo.com/whyliam" target="_blank" title="微博" rel="external nofollow">
+                      
+                        <i class="fa fa-fw fa-weibo"></i>微博</a>
+                  </span>
+                
+            </div>
+          
+
+          
+          
+            <div class="cc-license motion-element" itemprop="license">
+              <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/" class="cc-opacity" target="_blank" rel="external nofollow">
+                <img src="/images/cc-by-nc-nd.svg" alt="Creative Commons" />
+              </a>
+            </div>
+          
+
+          
+          
+            <div class="links-of-blogroll motion-element links-of-blogroll-block">
+              <div class="links-of-blogroll-title">
+                <i class="fa  fa-fw fa-link"></i>
+                Links
+              </div>
+              <ul class="links-of-blogroll-list">
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="http://www.naaln.com/" title="纳兰主页" target="_blank">纳兰主页</a>
+                  </li>
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="http://photo.naaln.com/" title="纳兰相册" target="_blank">纳兰相册</a>
+                  </li>
+                
+              </ul>
+            </div>
+          
+
+          
+            
+          
+          
+
+        </div>
+      </section>
+
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; 2003 &mdash; <span itemprop="copyrightYear">2018</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">WHY·LIAM</span>
+
+  
+
+  
+</div>
+
+
+  
+
+
+
+  <div class="powered-by">由 <a class="theme-link" target="_blank" rel="external nofollow" href="https://hexo.io">Hexo</a> 强力驱动</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" rel="external nofollow" href="https://github.com/theme-next/hexo-theme-next">NexT.Muse</a> v6.0.2</div>
+
+
+
+  <div class="footer-custom">Hosted by <a target="_blank" rel="external nofollow" href="https://pages.coding.me"><b>Coding Pages</b></a></div>
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=6.0.2"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=6.0.2"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=6.0.2"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=6.0.2"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=6.0.2"></script>
+
+
+
+  
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+  
+    <script type="text/javascript">
+    (function(){
+      var appid = 'cytklkKc0';
+      var conf = 'prod_b1dd516bbb7f3198591656f99d9ace80';
+      var width = window.innerWidth || document.documentElement.clientWidth;
+      if (width < 960) {
+      window.document.write('<script id="changyan_mobile_js" charset="utf-8" type="text/javascript" src="https://changyan.sohu.com/upload/mobile/wap-js/changyan_mobile.js?client_id=' + appid + '&conf=' + conf + '"><\/script>'); } else { var loadJs=function(d,a){var c=document.getElementsByTagName("head")[0]||document.head||document.documentElement;var b=document.createElement("script");b.setAttribute("type","text/javascript");b.setAttribute("charset","UTF-8");b.setAttribute("src",d);if(typeof a==="function"){if(window.attachEvent){b.onreadystatechange=function(){var e=b.readyState;if(e==="loaded"||e==="complete"){b.onreadystatechange=null;a()}}}else{b.onload=a}}c.appendChild(b)};loadJs("https://changyan.sohu.com/upload/changyan.js",function(){
+        window.changyan.api.config({appid:appid,conf:conf})});
+      }
+    })();
+    </script>
+    <script type="text/javascript" src="https://assets.changyan.sohu.com/upload/plugins/plugins.count.js"></script>
+  
+
+
+
+
+
+
+
+  
+
+
+
+
+  
+  
+  
+  <link rel="stylesheet" href="/lib/algolia-instant-search/instantsearch.min.css">
+
+  
+  
+  <script src="/lib/algolia-instant-search/instantsearch.min.js"></script>
+  
+
+  <script src="/js/src/algolia-search.js?v=6.0.2"></script>
+
+
+
+  
+
+  
+
+  
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';        
+    }
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>

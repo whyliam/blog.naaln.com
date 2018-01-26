@@ -1,0 +1,981 @@
+<!DOCTYPE html>
+
+
+
+
+<html class="theme-next muse" lang="zh-CN">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+  <meta name="google-site-verification" content="ByVfaP_E3b9ZYRUGhNAUFSQKL8mJQwUehpQwoxJ5n-c" />
+
+
+
+  <meta name="msvalidate.01" content="DB220684085BEDBD2E49E8E942534B1F" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=6.0.2" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon-next.png?v=6.0.2">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32-next.png?v=6.0.2">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16-next.png?v=6.0.2">
+
+
+  <link rel="mask-icon" href="/favicon/logo.svg?v=6.0.2" color="#222">
+
+
+
+
+
+
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Muse',
+    version: '6.0.2',
+    sidebar: {"position":"right","display":"hide","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: false,
+    fastclick: false,
+    lazyload: false,
+    tabs: true,
+    motion: {"enable":false,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    algolia: {
+      applicationID: 'XILKIWTAM9',
+      apiKey: '8c01137fe05d281ccd531a0ec622322a',
+      indexName: 'blog',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"搜索文章","hits_empty":"啊，找不到 ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+  
+
+
+
+
+  
+  <meta name="keywords" content="Why, Liam, 李承璋" />
+
+
+<meta name="description" content="竞争还是垄断我们是不是总是隐隐约约觉得竞争总是好的而垄断总是不好的？而事实是否如此？首先，男神 Thiel 所说的垄断并不是由于政府权力所带来的垄断，而是当一个公司的产品足够好，好到其他公司无法提供替代品所带来的垄断。 男神在书里说了垄断大法好啊！垄断才能挣钱！垄断才能创新！每一个成功的企业都是垄断的！虽然经济学认为“完全竞争”是一个理想的状态，可是在“完全竞争”的状态下没有公司能够长期盈利。此时">
+<meta name="keywords" content="Why, Liam, 李承璋">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Zero to One 到底说了什么">
+<meta property="og:url" content="https://blog.naaln.com/2017/03/zero-to-one/index.html">
+<meta property="og:site_name" content="Why·Liam·Blog">
+<meta property="og:description" content="竞争还是垄断我们是不是总是隐隐约约觉得竞争总是好的而垄断总是不好的？而事实是否如此？首先，男神 Thiel 所说的垄断并不是由于政府权力所带来的垄断，而是当一个公司的产品足够好，好到其他公司无法提供替代品所带来的垄断。 男神在书里说了垄断大法好啊！垄断才能挣钱！垄断才能创新！每一个成功的企业都是垄断的！虽然经济学认为“完全竞争”是一个理想的状态，可是在“完全竞争”的状态下没有公司能够长期盈利。此时">
+<meta property="og:locale" content="zh-CN">
+<meta property="og:image" content="https://ww4.sinaimg.cn/large/006tNbRwly1fdc7h6mcyxj30go058dg6.jpg">
+<meta property="og:image" content="https://ww4.sinaimg.cn/large/006tNbRwly1fdc7k0unquj30go0au0t0.jpg">
+<meta property="og:image" content="https://ww2.sinaimg.cn/large/006tNbRwly1fdc7k97xuqj30go0awaa7.jpg">
+<meta property="og:image" content="https://ww1.sinaimg.cn/large/006tNbRwly1fdc7kgte0ij30go0amglt.jpg">
+<meta property="og:image" content="https://ww2.sinaimg.cn/large/006tNbRwly1fdc7km5y7nj30go0auwen.jpg">
+<meta property="og:updated_time" content="2017-09-03T09:15:57.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Zero to One 到底说了什么">
+<meta name="twitter:description" content="竞争还是垄断我们是不是总是隐隐约约觉得竞争总是好的而垄断总是不好的？而事实是否如此？首先，男神 Thiel 所说的垄断并不是由于政府权力所带来的垄断，而是当一个公司的产品足够好，好到其他公司无法提供替代品所带来的垄断。 男神在书里说了垄断大法好啊！垄断才能挣钱！垄断才能创新！每一个成功的企业都是垄断的！虽然经济学认为“完全竞争”是一个理想的状态，可是在“完全竞争”的状态下没有公司能够长期盈利。此时">
+<meta name="twitter:image" content="https://ww4.sinaimg.cn/large/006tNbRwly1fdc7h6mcyxj30go058dg6.jpg">
+
+
+
+  <link rel="alternate" href="/atom.xml" title="Why·Liam·Blog" type="application/atom+xml" />
+
+
+
+
+  <link rel="canonical" href="https://blog.naaln.com/2017/03/zero-to-one/"/>
+
+
+  <title>Zero to One 到底说了什么 | Why·Liam·Blog</title>
+  
+
+
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-47966442-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-47966442-2');
+</script>
+
+
+
+
+
+
+  
+<script src="//msite.baidu.com/sdk/c.js?appid=1586840953097399"></script>
+<link rel="canonical" href="https://blog.naaln.com/2017/03/zero-to-one/"/>
+<script type="application/ld+json">
+    {
+        "@context": "https://ziyuan.baidu.com/contexts/cambrian.jsonld",
+        "@id": "https://blog.naaln.com/2017/03/zero-to-one/",
+        "appid": "1586840953097399",
+        "title": "Zero to One 到底说了什么",
+        "images": [
+            ""
+            ],
+        "description": "",
+        "pubDate": "",
+        "upDate": "",
+        "lrDate": ""
+    }
+</script>
+
+  <noscript>
+  <style type="text/css">
+    .use-motion .motion-element,
+    .use-motion .brand,
+    .use-motion .menu-item,
+    .sidebar-inner,
+    .use-motion .post-block,
+    .use-motion .pagination,
+    .use-motion .comments,
+    .use-motion .post-header,
+    .use-motion .post-body,
+    .use-motion .collection-title { opacity: initial; }
+
+    .use-motion .logo,
+    .use-motion .site-title,
+    .use-motion .site-subtitle {
+      opacity: initial;
+      top: initial;
+    }
+
+    .use-motion {
+      .logo-line-before i { left: initial; }
+      .logo-line-after i { right: initial; }
+    }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-CN">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-right page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"> <div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Why·Liam·Blog</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <h1 class="site-subtitle" itemprop="description">人生若如初見</h1>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            <i class="menu-item-icon fa fa-fw fa-home"></i> <br />首页</a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />归档</a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-technology">
+          <a href="/categories/technology/" rel="section">
+            <i class="menu-item-icon fa fa-fw fa-code"></i> <br />技术</a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-jottings">
+          <a href="/categories/jottings/" rel="section">
+            <i class="menu-item-icon fa fa-fw fa-language"></i> <br />随笔</a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tour">
+          <a href="/categories/tour/" rel="section">
+            <i class="menu-item-icon fa fa-fw fa-globe"></i> <br />旅游</a>
+        </li>
+      
+
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br />搜索</a>
+        </li>
+      
+    </ul>
+  
+
+  
+    <div class="site-search">
+      
+  
+  <div class="algolia-popup popup search-popup">
+    <div class="algolia-search">
+      <div class="algolia-search-input-icon">
+        <i class="fa fa-search"></i>
+      </div>
+      <div class="algolia-search-input" id="algolia-search-input"></div>
+    </div>
+
+    <div class="algolia-results">
+      <div id="algolia-stats"></div>
+      <div id="algolia-hits"></div>
+      <div id="algolia-pagination" class="algolia-pagination"></div>
+    </div>
+
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+  </div>
+
+
+
+
+    </div>
+  
+</nav>
+
+
+  
+
+
+
+ </div>
+    </header>
+
+    
+
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://blog.naaln.com/2017/03/zero-to-one/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="WHY·LIAM">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="//tva2.sinaimg.cn/crop.0.0.998.998.180/48910e01gw1ef5p6etuzdj20rs0rs771.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Why·Liam·Blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h2 class="post-title" itemprop="name headline">Zero to One 到底说了什么</h2>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-03-05T19:49:18+08:00">2017-03-05</time>
+            
+
+            
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/jottings/" itemprop="url" rel="index"><span itemprop="name">随笔</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+              <span class="post-meta-divider">|</span>
+              <span class="post-meta-item-icon">
+                <i class="fa fa-comment-o"></i>
+              </span>
+              
+                <a href="/2017/03/zero-to-one/#SOHUCS" itemprop="discussionUrl">
+                  <span id="changyan_count_unit" class="post-comments-count hc-comment-count" data-xid="2017/03/zero-to-one/" itemprop="commentsCount"></span>
+                </a>
+              
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h3 id="竞争还是垄断"><a href="#竞争还是垄断" class="headerlink" title="竞争还是垄断"></a>竞争还是垄断</h3><p>我们是不是总是隐隐约约觉得竞争总是好的而垄断总是不好的？而事实是否如此？首先，男神 Thiel 所说的垄断并不是由于政府权力所带来的垄断，而是当一个公司的产品足够好，好到其他公司无法提供替代品所带来的垄断。</p>
+<p>男神在书里说了垄断大法好啊！垄断才能挣钱！垄断才能创新！每一个成功的企业都是垄断的！虽然经济学认为“完全竞争”是一个理想的状态，可是在“完全竞争”的状态下没有公司能够长期盈利。此时可能有人会说处于垄断地位的公司会逐渐丧失创新能力，可是 Thiel 认为企业为了能够保住垄断市场的地位会不断努力创新，并且因为垄断能够带来丰厚的利润，这也能支持公司投资更多的创新项目。这种对科研与创新的长期投资可是那些挣扎在竞争当中的公司想都不敢想的呢。</p>
+<p>不过在现实生活中垄断企业因为想避免对自己的审查总是想把自己伪装成竞争企业。以 Google 为例，到 2014 年的时候 Google 在搜索市场中的占有率是 68%，处于垄断地位。可是它会不断宣称自己是一家广告公司，而它在整个广告市场中的占有率只有 3.4%。另一方面，竞争企业会往往将自己的竞争市场描述为一个很小市场，仿佛自己是这个小市场中的垄断企业。将自己描述为垄断企业会显得自己很厉害，但是另一方面如果企业家误判市场也会让企业误判自己的竞争对象。比如说我在 Palo Alto 区开了唯一一家英式餐厅，若我把市场定义为英式餐厅，那么我自然就垄断了这个市场。可是在 Palo Alto 可能并不存在一群吃英式餐厅为主的消费者，所以我实际需要竞争的对象是整个 Palo Alto 区的所有餐厅才对啊。</p>
+<p>那么垄断企业长什么样？男神认为他们一般有以下一个或者多个特点：</p>
+<ol>
+<li>牛逼技术：要有比其他竞争者好 10 倍以上的技术。像 Google 的搜索算法就比它的竞争者好 10 倍以上，自然就垄断市场啦。男神还顺口说了一个小诀窍，要想有比别人好 10 倍的技术最简单的方法就是在一个没有人做的方向创新。</li>
+<li>网络效应：网络效应说的是有些产品用的人越多就越有用，比如 Facebook。但是建立一个有网络效应的产品要注意从一个小群体开始，再慢慢扩展到大群体。比如说 Facebook 最开始只是为 Mark Zuckberg 的同学设计，然后这个产品将用户群扩展到了全人类。</li>
+<li>扩张能力：一个好的 startup 应该有能迅速扩张的能力。技术公司就是一个很好的模式，因为很多技术产品做出来以后可以迅速扩展到很大的用户群中，而成本的增加并不会很多。</li>
+<li>品牌：建立一个用户超爱的品牌也是实现垄断的方式，不过品牌总是要基于一个优秀的产品之上。</li>
+</ol>
+<h3 id="你需要寻找一个秘密"><a href="#你需要寻找一个秘密" class="headerlink" title="你需要寻找一个秘密"></a>你需要寻找一个秘密</h3><p>好了好了，我已经迫不及待地要建个垄断创新企业了！我要怎么做？首先，一个适合初创企业的目标市场是一小撮比较集中的群体，并且几乎没有其他的企业能满足这个小群体的需求。然后，当企业成功垄断这个小市场以后就可以再扩张到更大的群体中，比如 Amazon 就是这样干的。Amazon 最初只做在线售书，然后慢慢才扩展到了 CD，软件，以及各类商品。需要注意的是，最好不要一开始就挑战大型的竞争者，不然一般都会早早被弄死的。</p>
+<p>还有，你需要寻找一个小秘密，一个只有极少人认同的关于世界的重要真相。</p>
+<p>这个世界有很多容易被发现的真相比如饿了要吃饭，还有很多几乎不可能了解的真相比如宇宙的起源。而在这两者之间有一些通过努力能够了解的问题。比如说 Airbnb 发现了隐藏在旅行者和房产拥有者之间的供求关系，从而成就了一家成功的企业。</p>
+<p>世界上有两种秘密：关于自然的和关于人的。我们可以通过学习和研究来寻找自然的秘密，我们可以通过寻找人们想要对别人隐藏的东西和挖掘未被发现的人性来寻找关于人的秘密。让我们相信世界上还有待发现的秘密，然后努力寻找吧。</p>
+<h3 id="销售才是王道"><a href="#销售才是王道" class="headerlink" title="销售才是王道"></a>销售才是王道</h3><p>建立一个公司最终还是要卖产品的嘛。造成公司失败的原因往往是销售上的失败而不一定是产品的失败哦。我们来看看男神的销售总结。</p>
+<p><img src="https://ww4.sinaimg.cn/large/006tNbRwly1fdc7h6mcyxj30go058dg6.jpg" alt=""></p>
+<p><strong>病毒销售</strong>：这类价格在一美金以下的产品鼓励用户去邀请更多用户加入，Facebook，Paypal 都是靠这种方式成长的。Paypal 最开始只有 24 名用户，而且他们都是 Paypal 的员工。Paypal 为了发展用户给每位新用户和邀请用户的人一定奖金，以这种方式达到了 7% 日增长率。</p>
+<p><strong>广告营销销售</strong>：说的是平均价格一到一百美金的低价产品，这种产品需要通过广告，打折等方式销售。</p>
+<p><strong>销售死区</strong>：说的是介于广告销售与个人销售之间平均价格一百到一万美金之间的产品。这类型的产品没有特别好的销售渠道。因为这类产品价格不够高，如果使用个人销售的方法一个个地去与潜在消费者建立关系会导致入不敷出，如果用广告的方法又太低效。所以销售成为了这类产品的隐形瓶颈。</p>
+<p><strong>个人销售</strong>：说的是平均价格在一万到十万美金之间的产品。这种产品需要寻找一个合适的销售流程使得一个中小规模的销售团队能把产品带给更多用户。Box 销售的就是这类产品。</p>
+<p><strong>复杂销售</strong>：说的是平均价格千万美金以上的产品。通常这种产品的每一个细节都需要与客户仔细推敲，需要长达数月的时间才建立销售关系，公司可能一两年才销售一件产品。销售这种产品的公司不需要销售团队，公司的 CEO 就是公司的销售人员。SpaceX 和 Palantir 销售的就是这种产品。</p>
+<h3 id="创业七问大杀器"><a href="#创业七问大杀器" class="headerlink" title="创业七问大杀器"></a>创业七问大杀器</h3><p>临近书的结尾，男神祭出了大杀器创业七问。想要创业的你心中可有答案？</p>
+<ul>
+<li>关于工程：你在技术上有一个跨越式的突破吗？</li>
+<li>关于时间：现在是合适的时机吗？</li>
+<li>关于垄断：你是从一个小市场开始做起吗？</li>
+<li>关于人：你有合适的团队吗？</li>
+<li>关于销售：你有合适的渠道销售你的产品吗？</li>
+<li>关于持久：你的产品能在未来 10 到 20 年保持领先吗？</li>
+<li>关于秘密：你找到别人没发现的秘密了吗？</li>
+<li><p>让我们看看 Tesla 是如何回答这七个问题的。</p>
+</li>
+<li><p>关于工程：Tesla 拥有非常先进的电池，供电，发动机等技术，而且它还将这些优秀技术一起集成到了汽车里。</p>
+</li>
+<li>关于时间：2009 年的时候政府持续大力支持清洁技术并且有了专项基金，Elon Musk 在 2010 年的时候把握机遇从美国能源部拿到 4.65 亿美金的的贷款。能拿到这么大资金的机遇及其难得，而 Tesla 抓住了时机。</li>
+<li>关于垄断：Tesla 是从一个很小的自己能垄断的市场——高端电动跑车开始做起。然后慢慢研究开发了没有那么昂贵的的车型 Model S，逐渐占有了豪华电动轿车的市场。</li>
+<li>关于人：Tesla 的 CEO 本身就是一个极佳的工程师和销售，他也建立了一个在工程和销售方面都极强的团队。</li>
+<li>关于销售：Tesla 是一个很重视销售的公司，很多其它汽车公司是通过经销商来卖产品，而 Tesla 是在自己的门店中销售汽车。虽然这种销售方式的初始投资较大但是它加强了特斯拉品牌，并且从长期来看节省销售开支。</li>
+<li>关于持久：Tesla 已经先声夺人并且发展迅速，这些优势已经足够让它领先竞争对手数年。而且与其他车企不同的是 Tesla 的创始人依然掌舵，它的竞争优势应该不会很快消失。</li>
+<li>关于秘密：清洁能源是一个时尚的话题，尤其富人们争相希望自己能带上绿色环保的标签。使用清洁能源不仅是为了环保，也是为了自己更酷，这是一个关于人的秘密哦。</li>
+</ul>
+<h3 id="这个世界会有怎样的未来"><a href="#这个世界会有怎样的未来" class="headerlink" title="这个世界会有怎样的未来"></a>这个世界会有怎样的未来</h3><p>即使是最有远见的人也无法预计二十到三十年后世界的样子，虽然说我们料想不到未来的细节，但是我们可以提出一个关于未来的模型。哲学家 Nick Bostrom 描述了四种可能的未来。</p>
+<p>可能性 1：周期性的繁荣和被摧毁</p>
+<p><img src="https://ww4.sinaimg.cn/large/006tNbRwly1fdc7k0unquj30go0au0t0.jpg" alt=""></p>
+<p>可能性 2：走向平台期</p>
+<p><img src="https://ww2.sinaimg.cn/large/006tNbRwly1fdc7k97xuqj30go0awaa7.jpg" alt=""></p>
+<p>可能性 3：走向毁灭</p>
+<p><img src="https://ww1.sinaimg.cn/large/006tNbRwly1fdc7kgte0ij30go0amglt.jpg" alt=""></p>
+<p>可能性 4：走向腾飞</p>
+<p><img src="https://ww2.sinaimg.cn/large/006tNbRwly1fdc7km5y7nj30go0auwen.jpg" alt=""></p>
+<p>各位看官，你觉得这个世界的未来会怎样呢？Peter Thiel 认为周期性的繁荣与黑暗不太可能。人类文明发展到现在的程度，我们已经拥有的极具破坏力的武器。我们一旦开始走向黑暗估计就没有恢复的可能，而如果人类走向灭绝的话我们也没有什么可需要考虑的未来了。Peter Thiel 认为走向平台期同样不太可能。平台期假设认为现在比较贫穷的国家会慢慢赶上富裕的国家然后全球一起走向一个经济的平台期。可是这种平台期的状态是不可持续的，世界的稀缺资源会面临激烈的竞争，最终产生极大的冲突而导致毁灭。这样的话我们需要准备好面对的就只有第四种情况了，那就是加速发展而腾飞的未来！</p>
+<p>小彩蛋：所以说初创公司 CEO 到底能挣多少钱</p>
+<p>Thiel 说根据他的观察，一般 CEO 拿钱越少的公司就会越成功。更具体点说的话，一个早期创业公司的 CEO 工资不应该超过 15 万美金。他还举例说明当年 BOX 的 CEO 在创业前几年的时候一直都只给自己开公司最低工资，而且他家里的家具就只有一张床垫……<div style="clear:both"></div><div class="cc"><p>The <a href="https://blog.naaln.com">Why·Liam·Blog</a> by <a href="https://www.naaln.com" target="_blank" rel="external">WhyLiam</a> is licensed under a <a href="http://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" rel="external">Creative Commons BY-NC-ND 4.0 International License</a>.</p><p>由<a href="https://www.naaln.com" target="_blank" rel="external">WhyLiam</a>创作并维护的<a href="https://blog.naaln.com">Why·Liam·Blog</a>采用创作共用<a href="http://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" rel="external">保留署名-非商业-禁止演绎4.0国际许可证</a>。</p><p>本文首发于<a href="https://blog.naaln.com">Why·Liam·Blog (https://blog.naaln.com)</a>，版权所有，侵权必究。</p><p>本文永久链接：<a href="https://blog.naaln.com/2017/03/zero-to-one/">https://blog.naaln.com/2017/03/zero-to-one/</a></p><p></p></div></p>
+
+      
+    </div>
+    
+    
+    
+
+    
+      <div>
+        <div id="wechat_subscriber" style="display: block; padding: 10px 0; margin: 20px auto; width: 100%; text-align: center">
+    <img id="wechat_subscriber_qcode" src="//ws1.sinaimg.cn/large/006tKfTcgy1fg8gpi7kaaj30by0by74i.jpg" alt="WHY·LIAM wechat" style="width: 200px; max-width: 100%;"/>
+    <div>记录生活，研究产品，分享设计，分析数据，讨论科技和商业，不定期扯淡。</div>
+</div>
+
+      </div>
+    
+
+    
+      <div>
+        <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+  <div>如果觉得我的文章对您有用，请随意打赏。您的支持将鼓励我继续创作！</div>
+  <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+    <span>打赏</span>
+  </button>
+  <div id="QR" style="display: none;">
+
+    
+      <div id="wechat" style="display: inline-block">
+        <img id="wechat_qr" src="//ws1.sinaimg.cn/mw690/006tNc79gy1fm7yqrau7mj30f00ezad5.jpg" alt="WHY·LIAM 微信支付"/>
+        <p>微信支付</p>
+      </div>
+    
+
+    
+      <div id="alipay" style="display: inline-block">
+        <img id="alipay_qr" src="//ww3.sinaimg.cn/mw690/48910e01gw1evkbfendrjj20ci0ci0uf.jpg" alt="WHY·LIAM 支付宝"/>
+        <p>支付宝</p>
+      </div>
+    
+
+    
+
+  </div>
+</div>
+
+      </div>
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2017/03/practic-for-data-analysis/" rel="next" title="入门篇图表练习">
+                <i class="fa fa-chevron-left"></i> 入门篇图表练习
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2017/03/code-refactoring/" rel="prev" title="代码重构">
+                代码重构 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+  
+    <div class="comments" id="comments">
+      <div id="SOHUCS"></div>
+    </div>
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+
+      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image"
+                src="//tva2.sinaimg.cn/crop.0.0.998.998.180/48910e01gw1ef5p6etuzdj20rs0rs771.jpg"
+                alt="WHY·LIAM" />
+            
+              <p class="site-author-name" itemprop="name">WHY·LIAM</p>
+              <p class="site-description motion-element" itemprop="description"></p>
+          </div>
+
+          
+            <nav class="site-state motion-element">
+              
+                <div class="site-state-item site-state-posts">
+                
+                  <a href="/archives/">
+                
+                    <span class="site-state-item-count">721</span>
+                    <span class="site-state-item-name">日志</span>
+                  </a>
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-categories">
+                  <a href="/categories/index.html">
+                    <span class="site-state-item-count">4</span>
+                    <span class="site-state-item-name">分类</span>
+                  </a>
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-tags">
+                  <a href="/tags/index.html">
+                    <span class="site-state-item-count">67</span>
+                    <span class="site-state-item-name">标签</span>
+                  </a>
+                </div>
+              
+            </nav>
+          
+
+          
+            <div class="feed-link motion-element">
+              <a href="/atom.xml" rel="alternate">
+                <i class="fa fa-rss"></i>
+                RSS
+              </a>
+            </div>
+          
+
+          
+            <div class="links-of-author motion-element">
+                
+                  <span class="links-of-author-item">
+                    <a href="https://github.com/liszd" target="_blank" title="GitHub" rel="external nofollow">
+                      
+                        <i class="fa fa-fw fa-github"></i>GitHub</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="http://weibo.com/whyliam" target="_blank" title="微博" rel="external nofollow">
+                      
+                        <i class="fa fa-fw fa-weibo"></i>微博</a>
+                  </span>
+                
+            </div>
+          
+
+          
+          
+            <div class="cc-license motion-element" itemprop="license">
+              <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/" class="cc-opacity" target="_blank" rel="external nofollow">
+                <img src="/images/cc-by-nc-nd.svg" alt="Creative Commons" />
+              </a>
+            </div>
+          
+
+          
+          
+            <div class="links-of-blogroll motion-element links-of-blogroll-block">
+              <div class="links-of-blogroll-title">
+                <i class="fa  fa-fw fa-link"></i>
+                Links
+              </div>
+              <ul class="links-of-blogroll-list">
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="http://www.naaln.com/" title="纳兰主页" target="_blank">纳兰主页</a>
+                  </li>
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="http://photo.naaln.com/" title="纳兰相册" target="_blank">纳兰相册</a>
+                  </li>
+                
+              </ul>
+            </div>
+          
+
+          
+            
+          
+          
+
+        </div>
+      </section>
+
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; 2003 &mdash; <span itemprop="copyrightYear">2018</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">WHY·LIAM</span>
+
+  
+
+  
+</div>
+
+
+  
+
+
+
+  <div class="powered-by">由 <a class="theme-link" target="_blank" rel="external nofollow" href="https://hexo.io">Hexo</a> 强力驱动</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" rel="external nofollow" href="https://github.com/theme-next/hexo-theme-next">NexT.Muse</a> v6.0.2</div>
+
+
+
+  <div class="footer-custom">Hosted by <a target="_blank" rel="external nofollow" href="https://pages.coding.me"><b>Coding Pages</b></a></div>
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=6.0.2"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=6.0.2"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=6.0.2"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=6.0.2"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=6.0.2"></script>
+
+
+
+  
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+  
+    <script type="text/javascript">
+    (function(){
+      var appid = 'cytklkKc0';
+      var conf = 'prod_b1dd516bbb7f3198591656f99d9ace80';
+      var width = window.innerWidth || document.documentElement.clientWidth;
+      if (width < 960) {
+      window.document.write('<script id="changyan_mobile_js" charset="utf-8" type="text/javascript" src="https://changyan.sohu.com/upload/mobile/wap-js/changyan_mobile.js?client_id=' + appid + '&conf=' + conf + '"><\/script>'); } else { var loadJs=function(d,a){var c=document.getElementsByTagName("head")[0]||document.head||document.documentElement;var b=document.createElement("script");b.setAttribute("type","text/javascript");b.setAttribute("charset","UTF-8");b.setAttribute("src",d);if(typeof a==="function"){if(window.attachEvent){b.onreadystatechange=function(){var e=b.readyState;if(e==="loaded"||e==="complete"){b.onreadystatechange=null;a()}}}else{b.onload=a}}c.appendChild(b)};loadJs("https://changyan.sohu.com/upload/changyan.js",function(){
+        window.changyan.api.config({appid:appid,conf:conf})});
+      }
+    })();
+    </script>
+    <script type="text/javascript" src="https://assets.changyan.sohu.com/upload/plugins/plugins.count.js"></script>
+  
+
+
+
+
+
+
+
+  
+
+
+
+
+  
+  
+  
+  <link rel="stylesheet" href="/lib/algolia-instant-search/instantsearch.min.css">
+
+  
+  
+  <script src="/lib/algolia-instant-search/instantsearch.min.js"></script>
+  
+
+  <script src="/js/src/algolia-search.js?v=6.0.2"></script>
+
+
+
+  
+
+  
+
+  
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';        
+    }
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>

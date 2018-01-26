@@ -1,0 +1,1054 @@
+<!DOCTYPE html>
+
+
+
+
+<html class="theme-next muse" lang="zh-CN">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+  <meta name="google-site-verification" content="ByVfaP_E3b9ZYRUGhNAUFSQKL8mJQwUehpQwoxJ5n-c" />
+
+
+
+  <meta name="msvalidate.01" content="DB220684085BEDBD2E49E8E942534B1F" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=6.0.2" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon-next.png?v=6.0.2">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32-next.png?v=6.0.2">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16-next.png?v=6.0.2">
+
+
+  <link rel="mask-icon" href="/favicon/logo.svg?v=6.0.2" color="#222">
+
+
+
+
+
+
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Muse',
+    version: '6.0.2',
+    sidebar: {"position":"right","display":"hide","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: false,
+    fastclick: false,
+    lazyload: false,
+    tabs: true,
+    motion: {"enable":false,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    algolia: {
+      applicationID: 'XILKIWTAM9',
+      apiKey: '8c01137fe05d281ccd531a0ec622322a',
+      indexName: 'blog',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"搜索文章","hits_empty":"啊，找不到 ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+  
+
+
+
+
+  
+  <meta name="keywords" content="echoprint," />
+
+
+<meta name="description" content="先配置一下ubuntu的环境以备后用，安装这些东西：  1234567&amp;gt; java&amp;gt; python 2.5 or higher&amp;gt; simplejson （if python &amp;lt; 2.6)&amp;gt; web.py 首先安装web.py在google搜索一下web.py，找到 http://webpy.org/ 看到可以直接使用命令安装，但是输入命令后发现easy_install">
+<meta name="keywords" content="echoprint">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Echoprint服务端ubuntu环境塔建">
+<meta property="og:url" content="https://blog.naaln.com/2013/09/echoprint-server-ubuntu-environment-built/index.html">
+<meta property="og:site_name" content="Why·Liam·Blog">
+<meta property="og:description" content="先配置一下ubuntu的环境以备后用，安装这些东西：  1234567&amp;gt; java&amp;gt; python 2.5 or higher&amp;gt; simplejson （if python &amp;lt; 2.6)&amp;gt; web.py 首先安装web.py在google搜索一下web.py，找到 http://webpy.org/ 看到可以直接使用命令安装，但是输入命令后发现easy_install">
+<meta property="og:locale" content="zh-CN">
+<meta property="og:image" content="https://ww2.sinaimg.cn/large/006tNc79gw1fahpzk5zkuj30ey0bawgn.jpg">
+<meta property="og:image" content="https://ww2.sinaimg.cn/large/006tNc79gw1fahpzlrc51j30d607udgu.jpg">
+<meta property="og:image" content="https://ww2.sinaimg.cn/large/006tNc79gw1fahpzn5mqoj30bx03nwep.jpg">
+<meta property="og:updated_time" content="2017-09-03T09:15:57.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Echoprint服务端ubuntu环境塔建">
+<meta name="twitter:description" content="先配置一下ubuntu的环境以备后用，安装这些东西：  1234567&amp;gt; java&amp;gt; python 2.5 or higher&amp;gt; simplejson （if python &amp;lt; 2.6)&amp;gt; web.py 首先安装web.py在google搜索一下web.py，找到 http://webpy.org/ 看到可以直接使用命令安装，但是输入命令后发现easy_install">
+<meta name="twitter:image" content="https://ww2.sinaimg.cn/large/006tNc79gw1fahpzk5zkuj30ey0bawgn.jpg">
+
+
+
+  <link rel="alternate" href="/atom.xml" title="Why·Liam·Blog" type="application/atom+xml" />
+
+
+
+
+  <link rel="canonical" href="https://blog.naaln.com/2013/09/echoprint-server-ubuntu-environment-built/"/>
+
+
+  <title>Echoprint服务端ubuntu环境塔建 | Why·Liam·Blog</title>
+  
+
+
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-47966442-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-47966442-2');
+</script>
+
+
+
+
+
+
+  
+<script src="//msite.baidu.com/sdk/c.js?appid=1586840953097399"></script>
+<link rel="canonical" href="https://blog.naaln.com/2013/09/echoprint-server-ubuntu-environment-built/"/>
+<script type="application/ld+json">
+    {
+        "@context": "https://ziyuan.baidu.com/contexts/cambrian.jsonld",
+        "@id": "https://blog.naaln.com/2013/09/echoprint-server-ubuntu-environment-built/",
+        "appid": "1586840953097399",
+        "title": "Echoprint服务端ubuntu环境塔建",
+        "images": [
+            ""
+            ],
+        "description": "",
+        "pubDate": "",
+        "upDate": "",
+        "lrDate": ""
+    }
+</script>
+
+  <noscript>
+  <style type="text/css">
+    .use-motion .motion-element,
+    .use-motion .brand,
+    .use-motion .menu-item,
+    .sidebar-inner,
+    .use-motion .post-block,
+    .use-motion .pagination,
+    .use-motion .comments,
+    .use-motion .post-header,
+    .use-motion .post-body,
+    .use-motion .collection-title { opacity: initial; }
+
+    .use-motion .logo,
+    .use-motion .site-title,
+    .use-motion .site-subtitle {
+      opacity: initial;
+      top: initial;
+    }
+
+    .use-motion {
+      .logo-line-before i { left: initial; }
+      .logo-line-after i { right: initial; }
+    }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-CN">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-right page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"> <div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Why·Liam·Blog</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <h1 class="site-subtitle" itemprop="description">人生若如初見</h1>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            <i class="menu-item-icon fa fa-fw fa-home"></i> <br />首页</a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />归档</a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-technology">
+          <a href="/categories/technology/" rel="section">
+            <i class="menu-item-icon fa fa-fw fa-code"></i> <br />技术</a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-jottings">
+          <a href="/categories/jottings/" rel="section">
+            <i class="menu-item-icon fa fa-fw fa-language"></i> <br />随笔</a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tour">
+          <a href="/categories/tour/" rel="section">
+            <i class="menu-item-icon fa fa-fw fa-globe"></i> <br />旅游</a>
+        </li>
+      
+
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br />搜索</a>
+        </li>
+      
+    </ul>
+  
+
+  
+    <div class="site-search">
+      
+  
+  <div class="algolia-popup popup search-popup">
+    <div class="algolia-search">
+      <div class="algolia-search-input-icon">
+        <i class="fa fa-search"></i>
+      </div>
+      <div class="algolia-search-input" id="algolia-search-input"></div>
+    </div>
+
+    <div class="algolia-results">
+      <div id="algolia-stats"></div>
+      <div id="algolia-hits"></div>
+      <div id="algolia-pagination" class="algolia-pagination"></div>
+    </div>
+
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+  </div>
+
+
+
+
+    </div>
+  
+</nav>
+
+
+  
+
+
+
+ </div>
+    </header>
+
+    
+
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://blog.naaln.com/2013/09/echoprint-server-ubuntu-environment-built/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="WHY·LIAM">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="//tva2.sinaimg.cn/crop.0.0.998.998.180/48910e01gw1ef5p6etuzdj20rs0rs771.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Why·Liam·Blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h2 class="post-title" itemprop="name headline">Echoprint服务端ubuntu环境塔建</h2>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2013-09-16T08:16:00+08:00">2013-09-16</time>
+            
+
+            
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/technology/" itemprop="url" rel="index"><span itemprop="name">技术</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+              <span class="post-meta-divider">|</span>
+              <span class="post-meta-item-icon">
+                <i class="fa fa-comment-o"></i>
+              </span>
+              
+                <a href="/2013/09/echoprint-server-ubuntu-environment-built/#SOHUCS" itemprop="discussionUrl">
+                  <span id="changyan_count_unit" class="post-comments-count hc-comment-count" data-xid="2013/09/echoprint-server-ubuntu-environment-built/" itemprop="commentsCount"></span>
+                </a>
+              
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p>先配置一下ubuntu的环境以备后用，安装这些东西： </p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;</span><span class="bash"> java</span></span><br><span class="line"></span><br><span class="line"><span class="meta">&gt;</span><span class="bash"> python 2.5 or higher</span></span><br><span class="line"></span><br><span class="line"><span class="meta">&gt;</span><span class="bash"> simplejson （<span class="keyword">if</span> python &lt; 2.6)</span></span><br><span class="line"></span><br><span class="line"><span class="meta">&gt;</span><span class="bash"> web.py</span></span><br></pre></td></tr></table></figure>
+<h2 id="首先安装web-py"><a href="#首先安装web-py" class="headerlink" title="首先安装web.py"></a>首先安装web.py</h2><p>在google搜索一下web.py，找到 <a href="http://webpy.org/" target="_blank" rel="noopener">http://webpy.org/</a></p>
+<p>看到可以直接使用命令安装，但是输入命令后发现easy_install没有，那么先安装easy_install：</p>
+<p>先到<a href="http://pypi.python.org/packages/source/s/setuptools/setuptools-0.6c11.tar.gz#md5=7df2a529a074f613b509fb44feefe74e" target="_blank" rel="noopener">http://pypi.python.org/packages/source/s/setuptools/setuptools-0.6c11.tar.gz#md5=7df2a529a074f613b509fb44feefe74e</a></p>
+<p>下载steuptools，解压并到该目录下安装，命令是<code>sudo python setup.py install</code></p>
+<p>安装之后就可以用了</p>
+<p>之后安装web.py，命令<code>sudo easy_install web.py</code></p>
+<p>直接使用了python命令，并没有安装python，因为ubuntu已经有的，simplejson不知道有没有，暂且不管，有问题了再解决。</p>
+<h2 id="下面是安装java，这个有点麻烦。"><a href="#下面是安装java，这个有点麻烦。" class="headerlink" title="下面是安装java，这个有点麻烦。"></a>下面是安装java，这个有点麻烦。</h2><p>首先到这里 <a href="http://www.oracle.com/technetwork/java/javasebusiness/downloads/java-archive-downloads-javase6-419409.html?origref=http://www.cnblogs.com/wangshuo/archive/2011/06/01/2065669.html" target="_blank" rel="noopener">http://www.oracle.com</a></p>
+<p>下载如图：</p>
+<p><img src="https://ww2.sinaimg.cn/large/006tNc79gw1fahpzk5zkuj30ey0bawgn.jpg" alt=""></p>
+<p>建立一个java目录，<code>sudo mkdir /usr/local/java</code></p>
+<p>把bin文件放进来,转到bin文件所在目录，执行命令 <code>sudo cp &lt;文件名&gt; /usr/local/java</code></p>
+<p>接着修改bin文件的权限 <code>sudo chmod 777 &lt;文件名&gt;</code></p>
+<p>之后运行bin文件 <code>sudo ./&lt;文件名&gt;</code></p>
+<p>如果遇到Failed to extract the files，则执行命令<code>sudo apt-get install g++-multilib</code></p>
+<p>之后再次运行bin文件，看到Done表示成功了。这个时候/usr/local/java下就多了一个jdk1.6.0_43文件夹。</p>
+<p>然后打开profile文件，<code>sudo gedit /etc/profile</code></p>
+<p>修改环境变量如下图：</p>
+<p><img src="https://ww2.sinaimg.cn/large/006tNc79gw1fahpzlrc51j30d607udgu.jpg" alt=""></p>
+<p>图上是jdk1.6.0_30，要改成jdk1.6.0_43。</p>
+<p>改了环境变量要重启，或者source一下，<code>sudo source /etc/profile</code></p>
+<p>我source了一下不行，还是要重启…</p>
+<p>重启后输入<code>java -version</code>，查看版本</p>
+<p>输入<code>javac -version</code>，查看版本信息：</p>
+<pre><code>javac 1.7.0_21
+</code></pre><p>这样就成功了，用vim写一个HelloWorld.java文件试一试：</p>
+<p><img src="https://ww2.sinaimg.cn/large/006tNc79gw1fahpzn5mqoj30bx03nwep.jpg" alt=""></p>
+<p>然后sudo javac HelloWorld.java</p>
+<p>文件夹下会生成一个HelloWorld.class文件，再输入命令 <code>sudo java HelloWorld</code>就可以看到结果了，至于javac</p>
+<p>和java命令暂时不明白其运行机制，貌似javac就是编译吧。</p>
+<p>接下来要让echoprint-server运行起来，按照下面的步骤：</p>
+<ol>
+<li>首先安装tokyocabinet，网站：<a href="http://fallabs.com/tokyocabinet/" target="_blank" rel="noopener">http://fallabs.com/tokyocabinet/</a></li>
+</ol>
+<p>下载到1.4.48版本</p>
+<p>我的ubuntu的用户名为yuren，将其解压到我的目录下，接着进入该目录</p>
+<pre><code>cd tokyocabinet-1.4.48
+
+sudo apt-get install zlib1g-dev（lib后是数字1，不是字母L）
+
+sudo apt-get install libbz2-dev
+
+sudo ./configure
+
+sudo make install
+</code></pre><ol>
+<li>然后安装tokyotyrant，网站：<a href="http://fallabs.com/tokyotyrant/" target="_blank" rel="noopener">http://fallabs.com/tokyotyrant/</a></li>
+</ol>
+<p>下载到1.4.41版本，解压到我的目录下，接着进入该目录</p>
+<pre><code>cd tokyotyrant-1.4.41
+
+sudo ./configure &lt;wbr&gt;&lt;/wbr&gt;
+
+make
+
+sudo make install
+</code></pre><p>之前是按下面的方法装的，发现不行，还是按上面的装，如果按上面还不行，就按下面的装下，总有一个能行。</p>
+<pre><code>cd tokyocabinet-1.4.32
+
+sudo apt-get install zlib1g-dev
+
+sudo apt-get install libbz2-dev
+
+sudo mkdir /usr/local/tokyocabinet-1.4.21/
+
+./configure --prefix=/usr/local/tokyocabinet-1.4.21/
+
+make
+
+sudo make install
+
+cd tokyotyrant-1.1.33
+
+sudo mkdir /usr/local/tokyotyrant-1.1.33
+
+./configure --prefix=/usr/local/tokyotyrant-1.1.33/ --with-tc=/usr/local/tokyocabinet-1.4.32/
+
+make
+
+sudo make install
+</code></pre><p>安装完之后运行<code>sudo ttservctl start</code>，然后查看路径/usr/ttserver/casket.tch，这时候就有这个文件了，然后重启一下。</p>
+<p>重启可以运行ttserver了，在路径/usr/local/下有个bin文件夹和sbin文件夹，bin文件夹下是ttserver命令，sbin文件夹下ttservctl命令，这两个命令都可以开启ttserver，但是是两种不同的模式。</p>
+<p>我按照echoprint-server的readme文件中的说法，用ttservctl start命令开启ttserver，这时候ttserver的写入数据库是写入到/var/ttserver/casket.tch中，开启后再命令行输入命令：</p>
+<pre><code>tcrmgr inform -port 1978 -st localhost
+</code></pre><p>可以看到type那一项是表示写入上述文件的，但是用这种方式开启ttserver在后面会出现错误，提示ttserver没有开启，因此必须用ttserver命令来开启服务器。而ttserver命令默认是写入内存中的，因此必须在命令中附加参数来开启，在终端输入命令：</p>
+<pre><code>sudo ttserver /var/ttserver/casket.tch
+</code></pre><p>这样开启的ttserver才使得后面不出错，再次输入查看命令可以看到这时候的type仍旧是指向casket.tch的，如果这里的type是void或者“*”，或者指向内存的话，后面大量的输入数据是会出错的。</p>
+<p>最终就是要保证用<code>sudo ttserver /var/ttserver/casket.tch</code>命令运行ttserver不出错就可以了，如果有问题就重新安装ttserver，多重启几次，总是可以运行起来的。</p>
+<p>如果启动ttserver碰到这样的出错信息:</p>
+<pre><code>error while loading shared libraries:libtokyocabinet.so.8: cannot open share object file:No such file or dirctory. &lt;wbr&gt;&lt;/wbr&gt;
+</code></pre><p>使用如下命令来修复错误：</p>
+<pre><code>cd /usr/local/tokyotyrant-1.4.41/
+
+ln -s /usr/local/tokyotyrant-1.4.41/lib/libtokyocabinet.so.8.lib/
+</code></pre><ol>
+<li><p>接下来安装echoprint server</p>
+</li>
+<li></li>
+</ol>
+<p>可以下载压缩包解压，网站：<a href="https://github.com/echonest" target="_blank" rel="noopener">https://github.com/echonest</a> 这里可以找到echoprint-server</p>
+<p>在这里是使用命令行下载的，如下：</p>
+<p>首先建立一个目录存放echoprint-server，我存放目录是/home/yuren/echoprint-server</p>
+<pre><code>cd /home/yuren/echoprint-server
+
+git init
+
+git pull git://github.com/echonest/echoprint-server.git
+
+cd echoprint-server/solr/solr
+
+java -Dsolr.solr.home=/home/yuren/echoprint-server/solr/solr/solr/ -    Djava.awt.headless=true -jar start.jar
+</code></pre><p>运行完开启了,注意将我的用户名换成你自己的，如果是从网站直接下载的服务端要把服务器的文件夹改成echoprint-server。</p>
+<p>在这里可以再安装几个东西，如果已经有了就不用了，不过装上也没啥不好，不想装也没事儿。</p>
+<pre><code>sudo apt-get install python-setuptools
+
+sudo easy_install web.py
+
+sudo easy_install pyechonest
+</code></pre><p>现在服务器就算是搭起来了，但是要获得在windows下的建库和查询，就要在ubuntu下编译codegen，并在ubuntu下进行指纹匹配的工作，这些在后面会继续介绍。</p>
+<p>ref: <a href="http://blog.sina.com.cn/s/blog_7985987f01019eik.html" target="_blank" rel="noopener">http://blog.sina.com.cn/s/blog_7985987f01019eik.html</a></p>
+<div style="clear:both"></div><div class="cc"><p>The <a href="https://blog.naaln.com">Why·Liam·Blog</a> by <a href="https://www.naaln.com" target="_blank" rel="external">WhyLiam</a> is licensed under a <a href="http://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" rel="external">Creative Commons BY-NC-ND 4.0 International License</a>.</p><p>由<a href="https://www.naaln.com" target="_blank" rel="external">WhyLiam</a>创作并维护的<a href="https://blog.naaln.com">Why·Liam·Blog</a>采用创作共用<a href="http://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" rel="external">保留署名-非商业-禁止演绎4.0国际许可证</a>。</p><p>本文首发于<a href="https://blog.naaln.com">Why·Liam·Blog (https://blog.naaln.com)</a>，版权所有，侵权必究。</p><p>本文永久链接：<a href="https://blog.naaln.com/2013/09/echoprint-server-ubuntu-environment-built/">https://blog.naaln.com/2013/09/echoprint-server-ubuntu-environment-built/</a></p><p></p></div>
+      
+    </div>
+    
+    
+    
+
+    
+      <div>
+        <div id="wechat_subscriber" style="display: block; padding: 10px 0; margin: 20px auto; width: 100%; text-align: center">
+    <img id="wechat_subscriber_qcode" src="//ws1.sinaimg.cn/large/006tKfTcgy1fg8gpi7kaaj30by0by74i.jpg" alt="WHY·LIAM wechat" style="width: 200px; max-width: 100%;"/>
+    <div>记录生活，研究产品，分享设计，分析数据，讨论科技和商业，不定期扯淡。</div>
+</div>
+
+      </div>
+    
+
+    
+      <div>
+        <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+  <div>如果觉得我的文章对您有用，请随意打赏。您的支持将鼓励我继续创作！</div>
+  <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+    <span>打赏</span>
+  </button>
+  <div id="QR" style="display: none;">
+
+    
+      <div id="wechat" style="display: inline-block">
+        <img id="wechat_qr" src="//ws1.sinaimg.cn/mw690/006tNc79gy1fm7yqrau7mj30f00ezad5.jpg" alt="WHY·LIAM 微信支付"/>
+        <p>微信支付</p>
+      </div>
+    
+
+    
+      <div id="alipay" style="display: inline-block">
+        <img id="alipay_qr" src="//ww3.sinaimg.cn/mw690/48910e01gw1evkbfendrjj20ci0ci0uf.jpg" alt="WHY·LIAM 支付宝"/>
+        <p>支付宝</p>
+      </div>
+    
+
+    
+
+  </div>
+</div>
+
+      </div>
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/echoprint/" rel="tag"># echoprint</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2013/09/you-heartless-to-live-in-this-cruel-world/" rel="next" title="你只有无情，才能活在这无情的世上">
+                <i class="fa fa-chevron-left"></i> 你只有无情，才能活在这无情的世上
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2013/09/in-the-united-states-you-need-to-know-about-studying-abroad-21-sites/" rel="prev" title="在美国留学的你不能不知道的21个网站">
+                在美国留学的你不能不知道的21个网站 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+  
+    <div class="comments" id="comments">
+      <div id="SOHUCS"></div>
+    </div>
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+
+      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image"
+                src="//tva2.sinaimg.cn/crop.0.0.998.998.180/48910e01gw1ef5p6etuzdj20rs0rs771.jpg"
+                alt="WHY·LIAM" />
+            
+              <p class="site-author-name" itemprop="name">WHY·LIAM</p>
+              <p class="site-description motion-element" itemprop="description"></p>
+          </div>
+
+          
+            <nav class="site-state motion-element">
+              
+                <div class="site-state-item site-state-posts">
+                
+                  <a href="/archives/">
+                
+                    <span class="site-state-item-count">721</span>
+                    <span class="site-state-item-name">日志</span>
+                  </a>
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-categories">
+                  <a href="/categories/index.html">
+                    <span class="site-state-item-count">4</span>
+                    <span class="site-state-item-name">分类</span>
+                  </a>
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-tags">
+                  <a href="/tags/index.html">
+                    <span class="site-state-item-count">67</span>
+                    <span class="site-state-item-name">标签</span>
+                  </a>
+                </div>
+              
+            </nav>
+          
+
+          
+            <div class="feed-link motion-element">
+              <a href="/atom.xml" rel="alternate">
+                <i class="fa fa-rss"></i>
+                RSS
+              </a>
+            </div>
+          
+
+          
+            <div class="links-of-author motion-element">
+                
+                  <span class="links-of-author-item">
+                    <a href="https://github.com/liszd" target="_blank" title="GitHub" rel="external nofollow">
+                      
+                        <i class="fa fa-fw fa-github"></i>GitHub</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="http://weibo.com/whyliam" target="_blank" title="微博" rel="external nofollow">
+                      
+                        <i class="fa fa-fw fa-weibo"></i>微博</a>
+                  </span>
+                
+            </div>
+          
+
+          
+          
+            <div class="cc-license motion-element" itemprop="license">
+              <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/" class="cc-opacity" target="_blank" rel="external nofollow">
+                <img src="/images/cc-by-nc-nd.svg" alt="Creative Commons" />
+              </a>
+            </div>
+          
+
+          
+          
+            <div class="links-of-blogroll motion-element links-of-blogroll-block">
+              <div class="links-of-blogroll-title">
+                <i class="fa  fa-fw fa-link"></i>
+                Links
+              </div>
+              <ul class="links-of-blogroll-list">
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="http://www.naaln.com/" title="纳兰主页" target="_blank">纳兰主页</a>
+                  </li>
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="http://photo.naaln.com/" title="纳兰相册" target="_blank">纳兰相册</a>
+                  </li>
+                
+              </ul>
+            </div>
+          
+
+          
+            
+          
+          
+
+        </div>
+      </section>
+
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; 2003 &mdash; <span itemprop="copyrightYear">2018</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">WHY·LIAM</span>
+
+  
+
+  
+</div>
+
+
+  
+
+
+
+  <div class="powered-by">由 <a class="theme-link" target="_blank" rel="external nofollow" href="https://hexo.io">Hexo</a> 强力驱动</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" rel="external nofollow" href="https://github.com/theme-next/hexo-theme-next">NexT.Muse</a> v6.0.2</div>
+
+
+
+  <div class="footer-custom">Hosted by <a target="_blank" rel="external nofollow" href="https://pages.coding.me"><b>Coding Pages</b></a></div>
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=6.0.2"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=6.0.2"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=6.0.2"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=6.0.2"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=6.0.2"></script>
+
+
+
+  
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+  
+    <script type="text/javascript">
+    (function(){
+      var appid = 'cytklkKc0';
+      var conf = 'prod_b1dd516bbb7f3198591656f99d9ace80';
+      var width = window.innerWidth || document.documentElement.clientWidth;
+      if (width < 960) {
+      window.document.write('<script id="changyan_mobile_js" charset="utf-8" type="text/javascript" src="https://changyan.sohu.com/upload/mobile/wap-js/changyan_mobile.js?client_id=' + appid + '&conf=' + conf + '"><\/script>'); } else { var loadJs=function(d,a){var c=document.getElementsByTagName("head")[0]||document.head||document.documentElement;var b=document.createElement("script");b.setAttribute("type","text/javascript");b.setAttribute("charset","UTF-8");b.setAttribute("src",d);if(typeof a==="function"){if(window.attachEvent){b.onreadystatechange=function(){var e=b.readyState;if(e==="loaded"||e==="complete"){b.onreadystatechange=null;a()}}}else{b.onload=a}}c.appendChild(b)};loadJs("https://changyan.sohu.com/upload/changyan.js",function(){
+        window.changyan.api.config({appid:appid,conf:conf})});
+      }
+    })();
+    </script>
+    <script type="text/javascript" src="https://assets.changyan.sohu.com/upload/plugins/plugins.count.js"></script>
+  
+
+
+
+
+
+
+
+  
+
+
+
+
+  
+  
+  
+  <link rel="stylesheet" href="/lib/algolia-instant-search/instantsearch.min.css">
+
+  
+  
+  <script src="/lib/algolia-instant-search/instantsearch.min.js"></script>
+  
+
+  <script src="/js/src/algolia-search.js?v=6.0.2"></script>
+
+
+
+  
+
+  
+
+  
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';        
+    }
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>

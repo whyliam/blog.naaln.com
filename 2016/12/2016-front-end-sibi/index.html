@@ -1,0 +1,1007 @@
+<!DOCTYPE html>
+
+
+
+
+<html class="theme-next muse" lang="zh-CN">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+  <meta name="google-site-verification" content="ByVfaP_E3b9ZYRUGhNAUFSQKL8mJQwUehpQwoxJ5n-c" />
+
+
+
+  <meta name="msvalidate.01" content="DB220684085BEDBD2E49E8E942534B1F" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=6.0.2" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon-next.png?v=6.0.2">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32-next.png?v=6.0.2">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16-next.png?v=6.0.2">
+
+
+  <link rel="mask-icon" href="/favicon/logo.svg?v=6.0.2" color="#222">
+
+
+
+
+
+
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Muse',
+    version: '6.0.2',
+    sidebar: {"position":"right","display":"hide","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: false,
+    fastclick: false,
+    lazyload: false,
+    tabs: true,
+    motion: {"enable":false,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    algolia: {
+      applicationID: 'XILKIWTAM9',
+      apiKey: '8c01137fe05d281ccd531a0ec622322a',
+      indexName: 'blog',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"搜索文章","hits_empty":"啊，找不到 ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+  
+
+
+
+
+  
+  <meta name="keywords" content="前端," />
+
+
+<meta name="description" content="知乎传送门： https://www.zhihu.com/question/53625252/answer/135820259 利益相关：不认识阿当……用过 Angular 1 、 React 、 Vue 、 SCSS 、 LESS 、 Grunt 、 Gulp 、 Webpack 等一系列有的没的。 前端三大爱好：  语法糖 字符串转换 用别人的框架  现在说 Angular 、 React 或">
+<meta name="keywords" content="前端">
+<meta property="og:type" content="article">
+<meta property="og:title" content="这会是 2016 年前端的年末撕逼吗？">
+<meta property="og:url" content="https://blog.naaln.com/2016/12/2016-front-end-sibi/index.html">
+<meta property="og:site_name" content="Why·Liam·Blog">
+<meta property="og:description" content="知乎传送门： https://www.zhihu.com/question/53625252/answer/135820259 利益相关：不认识阿当……用过 Angular 1 、 React 、 Vue 、 SCSS 、 LESS 、 Grunt 、 Gulp 、 Webpack 等一系列有的没的。 前端三大爱好：  语法糖 字符串转换 用别人的框架  现在说 Angular 、 React 或">
+<meta property="og:locale" content="zh-CN">
+<meta property="og:updated_time" content="2017-09-03T09:15:57.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="这会是 2016 年前端的年末撕逼吗？">
+<meta name="twitter:description" content="知乎传送门： https://www.zhihu.com/question/53625252/answer/135820259 利益相关：不认识阿当……用过 Angular 1 、 React 、 Vue 、 SCSS 、 LESS 、 Grunt 、 Gulp 、 Webpack 等一系列有的没的。 前端三大爱好：  语法糖 字符串转换 用别人的框架  现在说 Angular 、 React 或">
+
+
+
+  <link rel="alternate" href="/atom.xml" title="Why·Liam·Blog" type="application/atom+xml" />
+
+
+
+
+  <link rel="canonical" href="https://blog.naaln.com/2016/12/2016-front-end-sibi/"/>
+
+
+  <title>这会是 2016 年前端的年末撕逼吗？ | Why·Liam·Blog</title>
+  
+
+
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-47966442-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-47966442-2');
+</script>
+
+
+
+
+
+
+  
+<script src="//msite.baidu.com/sdk/c.js?appid=1586840953097399"></script>
+<link rel="canonical" href="https://blog.naaln.com/2016/12/2016-front-end-sibi/"/>
+<script type="application/ld+json">
+    {
+        "@context": "https://ziyuan.baidu.com/contexts/cambrian.jsonld",
+        "@id": "https://blog.naaln.com/2016/12/2016-front-end-sibi/",
+        "appid": "1586840953097399",
+        "title": "这会是 2016 年前端的年末撕逼吗？",
+        "images": [
+            ""
+            ],
+        "description": "",
+        "pubDate": "",
+        "upDate": "",
+        "lrDate": ""
+    }
+</script>
+
+  <noscript>
+  <style type="text/css">
+    .use-motion .motion-element,
+    .use-motion .brand,
+    .use-motion .menu-item,
+    .sidebar-inner,
+    .use-motion .post-block,
+    .use-motion .pagination,
+    .use-motion .comments,
+    .use-motion .post-header,
+    .use-motion .post-body,
+    .use-motion .collection-title { opacity: initial; }
+
+    .use-motion .logo,
+    .use-motion .site-title,
+    .use-motion .site-subtitle {
+      opacity: initial;
+      top: initial;
+    }
+
+    .use-motion {
+      .logo-line-before i { left: initial; }
+      .logo-line-after i { right: initial; }
+    }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-CN">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-right page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"> <div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Why·Liam·Blog</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <h1 class="site-subtitle" itemprop="description">人生若如初見</h1>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            <i class="menu-item-icon fa fa-fw fa-home"></i> <br />首页</a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />归档</a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-technology">
+          <a href="/categories/technology/" rel="section">
+            <i class="menu-item-icon fa fa-fw fa-code"></i> <br />技术</a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-jottings">
+          <a href="/categories/jottings/" rel="section">
+            <i class="menu-item-icon fa fa-fw fa-language"></i> <br />随笔</a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tour">
+          <a href="/categories/tour/" rel="section">
+            <i class="menu-item-icon fa fa-fw fa-globe"></i> <br />旅游</a>
+        </li>
+      
+
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br />搜索</a>
+        </li>
+      
+    </ul>
+  
+
+  
+    <div class="site-search">
+      
+  
+  <div class="algolia-popup popup search-popup">
+    <div class="algolia-search">
+      <div class="algolia-search-input-icon">
+        <i class="fa fa-search"></i>
+      </div>
+      <div class="algolia-search-input" id="algolia-search-input"></div>
+    </div>
+
+    <div class="algolia-results">
+      <div id="algolia-stats"></div>
+      <div id="algolia-hits"></div>
+      <div id="algolia-pagination" class="algolia-pagination"></div>
+    </div>
+
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+  </div>
+
+
+
+
+    </div>
+  
+</nav>
+
+
+  
+
+
+
+ </div>
+    </header>
+
+    
+
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://blog.naaln.com/2016/12/2016-front-end-sibi/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="WHY·LIAM">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="//tva2.sinaimg.cn/crop.0.0.998.998.180/48910e01gw1ef5p6etuzdj20rs0rs771.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Why·Liam·Blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h2 class="post-title" itemprop="name headline">这会是 2016 年前端的年末撕逼吗？</h2>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2016-12-14T10:26:10+08:00">2016-12-14</time>
+            
+
+            
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/technology/" itemprop="url" rel="index"><span itemprop="name">技术</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+              <span class="post-meta-divider">|</span>
+              <span class="post-meta-item-icon">
+                <i class="fa fa-comment-o"></i>
+              </span>
+              
+                <a href="/2016/12/2016-front-end-sibi/#SOHUCS" itemprop="discussionUrl">
+                  <span id="changyan_count_unit" class="post-comments-count hc-comment-count" data-xid="2016/12/2016-front-end-sibi/" itemprop="commentsCount"></span>
+                </a>
+              
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p>知乎传送门： <a href="https://www.zhihu.com/question/53625252/answer/135820259" target="_blank" rel="noopener">https://www.zhihu.com/question/53625252/answer/135820259</a></p>
+<p>利益相关：不认识阿当……用过 Angular 1 、 React 、 Vue 、 SCSS 、 LESS 、 Grunt 、 Gulp 、 Webpack 等一系列有的没的。</p>
+<p>前端三大爱好：</p>
+<ol>
+<li>语法糖</li>
+<li>字符串转换</li>
+<li>用别人的框架</li>
+</ol>
+<p>现在说 Angular 、 React 或者 Vue 的不好，都是政治不正确滴。</p>
+<p>声明，我没说我站在阿当这一边哈。我可是很怕得罪了整个前端界的呢 O(∩_∩)O ！。</p>
+<p>不过依照中国大部分前端的计算机基础知识素养，能跟阿当正面撕逼的也没多少个。</p>
+<p>其实我觉得吧，中国的前端就是认死理，非要给自己带一个「前端」的帽子，生怕别人不知道他只会 JS 。多看看不同意见，多看看别的语言，你会发现 JS 能做的，很少很少。</p>
+<p>以下是我自己理解的，以阿当的口吻说的，大家不要以为真的是阿当说的：</p>
+<p>2016 年我喷了 Sass 、 React 和 Angular ，被前端各种布道者鄙视，于是我们互相伤害起来。<br>但我研究的技术可比你们学得这点东西多多了。</p>
+<p>我以我的经验，认为这些才流行几年的玩意儿，是值得怀疑的。</p>
+<ol>
+<li>有些玩意是高手发明出来给高手用的，小公司的几个前端玩得转？</li>
+<li>你们这些布道者只说优点不说缺点是什么意思？安利你听说过没。</li>
+</ol>
+<p>所以前端新人们，你们要长点脑子，别听风就是雨。</p>
+<h3 id="关于-SCSS-和-LESS"><a href="#关于-SCSS-和-LESS" class="headerlink" title="关于 SCSS 和 LESS"></a>关于 SCSS 和 LESS</h3><p>优点你们都吹得那么好，我偏说缺点。</p>
+<p>直接能运行在浏览器里的 CSS 你不用，加一道字符串变化在中间挡着，一来增加上手门槛，要学新知识；二来新的语法增加新的复杂度；三来这玩意有传染性，我想用你的代码我就必须也用 SCSS/LESS 。</p>
+<p>而且，你 SCSS/LESS 依然没有解决你想要解决的问题呀！</p>
+<p>所以我认为弊大于利。</p>
+<h3 id="跨界、-CoffeeScript-、-TypeScript-和-ES6"><a href="#跨界、-CoffeeScript-、-TypeScript-和-ES6" class="headerlink" title="跨界、 CoffeeScript 、 TypeScript 和 ES6"></a>跨界、 CoffeeScript 、 TypeScript 和 ES6</h3><p>前端你为啥这么在意语法糖？你个前端不好好研究优雅的用户体验，去研究什么语法糖，你忙得过来吗？</p>
+<p>CoffeeScript 是 Ruby 社区搞出来的， TypeScript 是 C# 社区搞出来的，它们都是非前端社区的产物，迎合的也是非前端的工程师群体的编程习惯。适不适合前端，走着瞧。</p>
+<p>最终你们这些前端看上了 ES6 ，但是你们这些前端在语法还没成型的时候就用 Babel 来转译是不是有点太激进啊？</p>
+<p>学学 jQuery ，通过原生 JS 来加语法糖，稳定过渡。你们前端咋这么猴急呢？</p>
+<h3 id="关于-Node"><a href="#关于-Node" class="headerlink" title="关于 Node"></a>关于 Node</h3><p>Node.js 作者本人就把这玩意儿当个玩具，你们前端居然当个宝。</p>
+<p>前端没有拿着玩意写后台，而是那它做脚本。</p>
+<p>写写脚本就算了，前端居然还妄图一门语言统一前后端。然后整天布道什么「全栈」。</p>
+<p>可是孩子呀，你一个跟 DOM 打交道的人能理解后端那些概念吗？你们就知道个 JS ，连数据库也只喜欢长得像 JSON 的 MongoDB 。</p>
+<p>半吊子想当架构师。</p>
+<p>你们看看现在有几个公司用 Node 做服务器啊？服务器端 Node 完败。</p>
+<p>你们这些不会写 shell 的人就老老实实用 Node 写脚本吧。</p>
+<p>但是你们写脚本也要有个限度好不好？看看现在的前端工具流有多复杂了啊。而去年的工具今年你们就抛弃了。</p>
+<p>孩子气。</p>
+<h3 id="关于跨界、全栈、公司定岗"><a href="#关于跨界、全栈、公司定岗" class="headerlink" title="关于跨界、全栈、公司定岗"></a>关于跨界、全栈、公司定岗</h3><p>前端这么乱，不就是因为前端没主见吗，尽听别的圈子扯。</p>
+<p>CoffeeScript 是 Ruby 社区的； LESS 也是 Ruby 社区的； Node 的作者就是一个票友，平时根本不用 JS ； Angular 是 Google 的服务端团队搞的； React Native 是为了做原生 App ；全是跨界的！</p>
+<p>他们解决的是他们自己的问题，对你有没有用你不想想？</p>
+<p>你引入任何一个中间层都会有弊端，你不知道吗？</p>
+<p>你用技术要在在乎其缺点。</p>
+<h3 id="全栈。"><a href="#全栈。" class="headerlink" title="全栈。"></a>全栈。</h3><p>你想做全栈我不反对，但是你要看看公司给不给你机会呀。</p>
+<p>你以为你学了 Node 公司就愿意你去开发后台？你有这个能力吗？</p>
+<p>你以为你学了 React Native 公司就愿意让你开发 App ？你有这个能力吗？</p>
+<p>你真的比得过人家专职团队吗？</p>
+<p>全栈是顶级高手团队才有的， Google 、 Facebook 。在小公司还是安心做前端把。</p>
+<h3 id="关于前端的核心竞争力"><a href="#关于前端的核心竞争力" class="headerlink" title="关于前端的核心竞争力"></a>关于前端的核心竞争力</h3><p>前端你不要拿自己的弱项跟别人的强项比了，找死呀。</p>
+<p>你拿 Node.js 跟 Python 后台比得了？他们学起 Node.js 不甩你一条街啊？</p>
+<p>你拿 React Native 跟 iOS 开发比得了？他们学起 React Native 不甩你两条街啊？</p>
+<p>用 Java 写安卓应用的程序员什么时候找死跟 Java 后台程序员抢饭碗了？</p>
+<p>用 C++ 写桌面应用的程序员什么时候找死跟 C++ 服务器程序员抢饭碗了？</p>
+<p>就你能啊？</p>
+<p>你前端的核心竞争力应该是搞清楚浏览器上面的东西！</p>
+<p>HTML 标签、 CSS ， JavaScript ， Form2.0 、 Websocket 、离线缓存、 Webworker 、 Border-image 、 Canvas ……</p>
+<p>这些东西是有难度的。你让一个后端开发写个 CSS 垂直居中并说出优缺点你看他会不会。要想破头啊。这东西靠经验啊。</p>
+<p>你不好好看核心，去学一些乱七八糟的是什么意思？</p>
+<p>那么什么是核心呢？ HTML 、 CSS 和 JavaScript （我认为还有 HTTP ）</p>
+<p>现在的那些个前端布道师，不讲核心专讲新技术，又是几个意思？</p>
+<h3 id="关于-Angular-，后台，-SPA"><a href="#关于-Angular-，后台，-SPA" class="headerlink" title="关于 Angular ，后台， SPA"></a>关于 Angular ，后台， SPA</h3><p>这是给服务器同学用的，如果你的团队以服务器开发人员为主，你再用这个吧。</p>
+<p>你们这群没主见的前端，追捧这个干什么？根本就不是给你用的好吗？ Angular 2 一升级你是不是又傻眼了，怎么后端又改用 TypeScript 了？</p>
+<p>你去追前端基本功呀！</p>
+<p>另外 Angular 真的好吗？其实后端程序员可以自己找前端同学封装一些更轻量的框架。（你们前端不行？当我没说）</p>
+<h3 id="关于-React"><a href="#关于-React" class="headerlink" title="关于 React"></a>关于 React</h3><p>React 组件化的思路，我是认同的。 Flex 的组件化方案比 HTML 不知高到那里去了。 React 组件化 是对 HTML 很好的扩展。</p>
+<p>但是 React 太重了，条条框框太多了，把简单事情搞复杂了。</p>
+<p>我推崇「轻框架 + 组件化 + 面向对象」。你们不好好改进原来那一套运行得不错的方案，为什么非要去追新，而且还一年换一个星来追。</p>
+<p>如果 React 就火个几年，后面的前端新人不学 React ，你这个 React 项目谁来负责？你怎么跟公司交代？用新框架重写？！</p>
+<p>你作为个人学习去玩玩 React 我是鼓励的。</p>
+<p>关于抽象和面向对象，你真的掌握了吗？封装、继承、多态、设计模式、解耦、 API 设计这些真的都熟练了吗？我接触过的前端，绝大多数同学都毫无概念。来看看我的代码。</p>
+<h3 id="关于-SPA-和-Web-Site"><a href="#关于-SPA-和-Web-Site" class="headerlink" title="关于 SPA 和 Web Site"></a>关于 SPA 和 Web Site</h3><p>SPA 不是说你动态加载页面和数据就叫做 SPA 的。 SPA 强调的是功能。你要用新技术做出新的功能。现在中国有几个是真正意义上的 SPA 页面？网页游戏、在线 IDE 、网页版 PhotoShop 之类才是真正的 SPA 。</p>
+<p>所以别老是说什么你在做 SPA 。</p>
+<h3 id="React-Native-和-PhoneGap"><a href="#React-Native-和-PhoneGap" class="headerlink" title="React Native 和 PhoneGap"></a>React Native 和 PhoneGap</h3><p>不看好。除了开发成本低，没有任何优点。但是哪个公司是因为开发成本低成功的？</p>
+<h3 id="关于微信小程序"><a href="#关于微信小程序" class="headerlink" title="关于微信小程序"></a>关于微信小程序</h3><p>这玩意既不是 HTML 5 也不是 Native ，不看好。</p>
+<h3 id="关于前端的缺人和高薪水"><a href="#关于前端的缺人和高薪水" class="headerlink" title="关于前端的缺人和高薪水"></a>关于前端的缺人和高薪水</h3><p>现在前端多，只是因为前端太少，跟新技术没关系。</p>
+<p>同时 HTML 5 的应用场景变多了，所以需要更多前端了。</p>
+<p>等前端足够多了你再看看你的工资。</p>
+<p>最终工资高的，还是基础知识好的人。</p>
+<h3 id="写在最后"><a href="#写在最后" class="headerlink" title="写在最后"></a>写在最后</h3><p>虽然我写了这么多，但也有可能，全是错的。</p>
+<p>来源：<a href="https://www.v2ex.com/t/327650?p=1" target="_blank" rel="noopener">https://www.v2ex.com/t/327650</a><div style="clear:both"></div><div class="cc"><p>The <a href="https://blog.naaln.com">Why·Liam·Blog</a> by <a href="https://www.naaln.com" target="_blank" rel="external">WhyLiam</a> is licensed under a <a href="http://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" rel="external">Creative Commons BY-NC-ND 4.0 International License</a>.</p><p>由<a href="https://www.naaln.com" target="_blank" rel="external">WhyLiam</a>创作并维护的<a href="https://blog.naaln.com">Why·Liam·Blog</a>采用创作共用<a href="http://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" rel="external">保留署名-非商业-禁止演绎4.0国际许可证</a>。</p><p>本文首发于<a href="https://blog.naaln.com">Why·Liam·Blog (https://blog.naaln.com)</a>，版权所有，侵权必究。</p><p>本文永久链接：<a href="https://blog.naaln.com/2016/12/2016-front-end-sibi/">https://blog.naaln.com/2016/12/2016-front-end-sibi/</a></p><p></p></div></p>
+
+      
+    </div>
+    
+    
+    
+
+    
+      <div>
+        <div id="wechat_subscriber" style="display: block; padding: 10px 0; margin: 20px auto; width: 100%; text-align: center">
+    <img id="wechat_subscriber_qcode" src="//ws1.sinaimg.cn/large/006tKfTcgy1fg8gpi7kaaj30by0by74i.jpg" alt="WHY·LIAM wechat" style="width: 200px; max-width: 100%;"/>
+    <div>记录生活，研究产品，分享设计，分析数据，讨论科技和商业，不定期扯淡。</div>
+</div>
+
+      </div>
+    
+
+    
+      <div>
+        <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+  <div>如果觉得我的文章对您有用，请随意打赏。您的支持将鼓励我继续创作！</div>
+  <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+    <span>打赏</span>
+  </button>
+  <div id="QR" style="display: none;">
+
+    
+      <div id="wechat" style="display: inline-block">
+        <img id="wechat_qr" src="//ws1.sinaimg.cn/mw690/006tNc79gy1fm7yqrau7mj30f00ezad5.jpg" alt="WHY·LIAM 微信支付"/>
+        <p>微信支付</p>
+      </div>
+    
+
+    
+      <div id="alipay" style="display: inline-block">
+        <img id="alipay_qr" src="//ww3.sinaimg.cn/mw690/48910e01gw1evkbfendrjj20ci0ci0uf.jpg" alt="WHY·LIAM 支付宝"/>
+        <p>支付宝</p>
+      </div>
+    
+
+    
+
+  </div>
+</div>
+
+      </div>
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/前端/" rel="tag"># 前端</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2016/12/restful-web-server/" rel="next" title="RESTful Web 服务：教程">
+                <i class="fa fa-chevron-left"></i> RESTful Web 服务：教程
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2016/12/teacher-swift-ui-button/" rel="prev" title="Swift之贪婪的UIButton">
+                Swift之贪婪的UIButton <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+  
+    <div class="comments" id="comments">
+      <div id="SOHUCS"></div>
+    </div>
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+
+      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image"
+                src="//tva2.sinaimg.cn/crop.0.0.998.998.180/48910e01gw1ef5p6etuzdj20rs0rs771.jpg"
+                alt="WHY·LIAM" />
+            
+              <p class="site-author-name" itemprop="name">WHY·LIAM</p>
+              <p class="site-description motion-element" itemprop="description"></p>
+          </div>
+
+          
+            <nav class="site-state motion-element">
+              
+                <div class="site-state-item site-state-posts">
+                
+                  <a href="/archives/">
+                
+                    <span class="site-state-item-count">721</span>
+                    <span class="site-state-item-name">日志</span>
+                  </a>
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-categories">
+                  <a href="/categories/index.html">
+                    <span class="site-state-item-count">4</span>
+                    <span class="site-state-item-name">分类</span>
+                  </a>
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-tags">
+                  <a href="/tags/index.html">
+                    <span class="site-state-item-count">67</span>
+                    <span class="site-state-item-name">标签</span>
+                  </a>
+                </div>
+              
+            </nav>
+          
+
+          
+            <div class="feed-link motion-element">
+              <a href="/atom.xml" rel="alternate">
+                <i class="fa fa-rss"></i>
+                RSS
+              </a>
+            </div>
+          
+
+          
+            <div class="links-of-author motion-element">
+                
+                  <span class="links-of-author-item">
+                    <a href="https://github.com/liszd" target="_blank" title="GitHub" rel="external nofollow">
+                      
+                        <i class="fa fa-fw fa-github"></i>GitHub</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="http://weibo.com/whyliam" target="_blank" title="微博" rel="external nofollow">
+                      
+                        <i class="fa fa-fw fa-weibo"></i>微博</a>
+                  </span>
+                
+            </div>
+          
+
+          
+          
+            <div class="cc-license motion-element" itemprop="license">
+              <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/" class="cc-opacity" target="_blank" rel="external nofollow">
+                <img src="/images/cc-by-nc-nd.svg" alt="Creative Commons" />
+              </a>
+            </div>
+          
+
+          
+          
+            <div class="links-of-blogroll motion-element links-of-blogroll-block">
+              <div class="links-of-blogroll-title">
+                <i class="fa  fa-fw fa-link"></i>
+                Links
+              </div>
+              <ul class="links-of-blogroll-list">
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="http://www.naaln.com/" title="纳兰主页" target="_blank">纳兰主页</a>
+                  </li>
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="http://photo.naaln.com/" title="纳兰相册" target="_blank">纳兰相册</a>
+                  </li>
+                
+              </ul>
+            </div>
+          
+
+          
+            
+          
+          
+
+        </div>
+      </section>
+
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; 2003 &mdash; <span itemprop="copyrightYear">2018</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">WHY·LIAM</span>
+
+  
+
+  
+</div>
+
+
+  
+
+
+
+  <div class="powered-by">由 <a class="theme-link" target="_blank" rel="external nofollow" href="https://hexo.io">Hexo</a> 强力驱动</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" rel="external nofollow" href="https://github.com/theme-next/hexo-theme-next">NexT.Muse</a> v6.0.2</div>
+
+
+
+  <div class="footer-custom">Hosted by <a target="_blank" rel="external nofollow" href="https://pages.coding.me"><b>Coding Pages</b></a></div>
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=6.0.2"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=6.0.2"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=6.0.2"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=6.0.2"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=6.0.2"></script>
+
+
+
+  
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+  
+    <script type="text/javascript">
+    (function(){
+      var appid = 'cytklkKc0';
+      var conf = 'prod_b1dd516bbb7f3198591656f99d9ace80';
+      var width = window.innerWidth || document.documentElement.clientWidth;
+      if (width < 960) {
+      window.document.write('<script id="changyan_mobile_js" charset="utf-8" type="text/javascript" src="https://changyan.sohu.com/upload/mobile/wap-js/changyan_mobile.js?client_id=' + appid + '&conf=' + conf + '"><\/script>'); } else { var loadJs=function(d,a){var c=document.getElementsByTagName("head")[0]||document.head||document.documentElement;var b=document.createElement("script");b.setAttribute("type","text/javascript");b.setAttribute("charset","UTF-8");b.setAttribute("src",d);if(typeof a==="function"){if(window.attachEvent){b.onreadystatechange=function(){var e=b.readyState;if(e==="loaded"||e==="complete"){b.onreadystatechange=null;a()}}}else{b.onload=a}}c.appendChild(b)};loadJs("https://changyan.sohu.com/upload/changyan.js",function(){
+        window.changyan.api.config({appid:appid,conf:conf})});
+      }
+    })();
+    </script>
+    <script type="text/javascript" src="https://assets.changyan.sohu.com/upload/plugins/plugins.count.js"></script>
+  
+
+
+
+
+
+
+
+  
+
+
+
+
+  
+  
+  
+  <link rel="stylesheet" href="/lib/algolia-instant-search/instantsearch.min.css">
+
+  
+  
+  <script src="/lib/algolia-instant-search/instantsearch.min.js"></script>
+  
+
+  <script src="/js/src/algolia-search.js?v=6.0.2"></script>
+
+
+
+  
+
+  
+
+  
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';        
+    }
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
