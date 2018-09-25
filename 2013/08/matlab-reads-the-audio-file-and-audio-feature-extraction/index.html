@@ -3,11 +3,14 @@
 
 
 
+
+
+
 <html class="theme-next muse" lang="zh-CN">
 <head>
   <meta charset="UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2"/>
 <meta name="theme-color" content="#222">
 
 
@@ -51,19 +54,19 @@
 
 <link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
 
-<link href="/css/main.css?v=6.0.2" rel="stylesheet" type="text/css" />
+<link href="/css/main.css?v=6.2.0" rel="stylesheet" type="text/css" />
 
 
-  <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon-next.png?v=6.0.2">
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon-next.png?v=6.2.0">
 
 
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32-next.png?v=6.0.2">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32-next.png?v=6.2.0">
 
 
-  <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16-next.png?v=6.0.2">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16-next.png?v=6.2.0">
 
 
-  <link rel="mask-icon" href="/favicon/logo.svg?v=6.0.2" color="#222">
+  <link rel="mask-icon" href="/favicon/logo.svg?v=6.2.0" color="#222">
 
 
 
@@ -78,7 +81,7 @@
   var CONFIG = {
     root: '/',
     scheme: 'Muse',
-    version: '6.0.2',
+    version: '6.2.0',
     sidebar: {"position":"right","display":"hide","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
     fancybox: false,
     fastclick: false,
@@ -87,7 +90,7 @@
     motion: {"enable":false,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
     algolia: {
       applicationID: 'XILKIWTAM9',
-      apiKey: '8c01137fe05d281ccd531a0ec622322a',
+      apiKey: '7f52dfb146098112a1859b59b8e1003c',
       indexName: 'blog',
       hits: {"per_page":10},
       labels: {"input_placeholder":"搜索文章","hits_empty":"啊，找不到 ${query}","hits_stats":"${hits} results found in ${time} ms"}
@@ -101,11 +104,7 @@
 
 
 
-  
-  <meta name="keywords" content="matlab," />
-
-
-<meta name="description" content="1、用audioread(‘’);函数读取电脑中的音频文件，参数是音频文件的路径：1[sampledata,FS] = audioread(&apos;F:\1.mp3&apos;); sampledata保存音频信号数据，FS是音频采样率，MP3格式的采样率一般为44100； 2、判断音频数据是否是双声道，如果是双声道则保留一个声道的数据，用calsample.m文件的函数完成此功能，文件内容如下：12345678">
+  <meta name="description" content="1、用audioread(‘’);函数读取电脑中的音频文件，参数是音频文件的路径：1[sampledata,FS] = audioread(&apos;F:\1.mp3&apos;); sampledata保存音频信号数据，FS是音频采样率，MP3格式的采样率一般为44100； 2、判断音频数据是否是双声道，如果是双声道则保留一个声道的数据，用calsample.m文件的函数完成此功能，文件内容如下：12345678">
 <meta name="keywords" content="matlab">
 <meta property="og:type" content="article">
 <meta property="og:title" content="MATLAB读取音频文件并进行音频特征提取">
@@ -128,6 +127,13 @@
   <link rel="canonical" href="https://blog.naaln.com/2013/08/matlab-reads-the-audio-file-and-audio-feature-extraction/"/>
 
 
+
+<script type="text/javascript" id="page.configurations">
+  CONFIG.page = {
+    sidebar: "",
+  };
+</script>
+
   <title>MATLAB读取音频文件并进行音频特征提取 | Why·Liam·Blog</title>
   
 
@@ -145,27 +151,18 @@
 
 
 
+  <script type="text/javascript">
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?4144ef291e4808d1a8fdfc8a833143ca";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
 
 
 
-  
-<script src="//msite.baidu.com/sdk/c.js?appid=1586840953097399"></script>
-<link rel="canonical" href="https://blog.naaln.com/2013/08/matlab-reads-the-audio-file-and-audio-feature-extraction/"/>
-<script type="application/ld+json">
-    {
-        "@context": "https://ziyuan.baidu.com/contexts/cambrian.jsonld",
-        "@id": "https://blog.naaln.com/2013/08/matlab-reads-the-audio-file-and-audio-feature-extraction/",
-        "appid": "1586840953097399",
-        "title": "MATLAB读取音频文件并进行音频特征提取",
-        "images": [
-            ""
-            ],
-        "description": "",
-        "pubDate": "",
-        "upDate": "",
-        "lrDate": ""
-    }
-</script>
 
   <noscript>
   <style type="text/css">
@@ -194,6 +191,25 @@
   </style>
 </noscript>
 
+  
+<script src="//msite.baidu.com/sdk/c.js?appid=1586840953097399"></script>
+<link rel="canonical" href="https://blog.naaln.com/2013/08/matlab-reads-the-audio-file-and-audio-feature-extraction/"/>
+<script type="application/ld+json">
+    {
+        "@context": "https://ziyuan.baidu.com/contexts/cambrian.jsonld",
+        "@id": "https://blog.naaln.com/2013/08/matlab-reads-the-audio-file-and-audio-feature-extraction/",
+        "appid": "1586840953097399",
+        "title": "MATLAB读取音频文件并进行音频特征提取",
+        "images": [
+            ""
+            ],
+        "description": "",
+        "pubDate": "",
+        "upDate": "",
+        "lrDate": ""
+    }
+</script>
+
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-CN">
@@ -207,12 +223,12 @@
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
-      <div class="header-inner"> <div class="site-brand-wrapper">
+      <div class="header-inner"><div class="site-brand-wrapper">
   <div class="site-meta ">
     
 
     <div class="custom-logo-site-title">
-      <a href="/"  class="brand" rel="start">
+      <a href="/" class="brand" rel="start">
         <span class="logo-line-before"><i></i></span>
         <span class="site-title">Why·Liam·Blog</span>
         <span class="logo-line-after"><i></i></span>
@@ -224,7 +240,7 @@
   </div>
 
   <div class="site-nav-toggle">
-    <button>
+    <button aria-label="切换导航栏">
       <span class="btn-bar"></span>
       <span class="btn-bar"></span>
       <span class="btn-bar"></span>
@@ -232,43 +248,55 @@
   </div>
 </div>
 
-<nav class="site-nav">
-  
 
+
+
+<nav class="site-nav">
   
     <ul id="menu" class="menu">
       
         
-        <li class="menu-item menu-item-home">
-          <a href="/" rel="section">
-            <i class="menu-item-icon fa fa-fw fa-home"></i> <br />首页</a>
-        </li>
-      
         
-        <li class="menu-item menu-item-archives">
-          <a href="/archives/" rel="section">
-            <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />归档</a>
-        </li>
-      
         
-        <li class="menu-item menu-item-technology">
-          <a href="/categories/technology/" rel="section">
-            <i class="menu-item-icon fa fa-fw fa-code"></i> <br />技术</a>
-        </li>
-      
+          
+          <li class="menu-item menu-item-home">
+    <a href="/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-home"></i> <br />首页</a>
+  </li>
         
-        <li class="menu-item menu-item-jottings">
-          <a href="/categories/jottings/" rel="section">
-            <i class="menu-item-icon fa fa-fw fa-language"></i> <br />随笔</a>
-        </li>
-      
         
-        <li class="menu-item menu-item-tour">
-          <a href="/categories/tour/" rel="section">
-            <i class="menu-item-icon fa fa-fw fa-globe"></i> <br />旅游</a>
-        </li>
-      
+        
+          
+          <li class="menu-item menu-item-archives">
+    <a href="/archives/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />归档</a>
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-technology">
+    <a href="/categories/technology/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-code"></i> <br />技术</a>
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-jottings">
+    <a href="/categories/jottings/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-language"></i> <br />随笔</a>
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-tour">
+    <a href="/categories/tour/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-globe"></i> <br />旅游</a>
+  </li>
 
+      
       
         <li class="menu-item menu-item-search">
           
@@ -279,6 +307,11 @@
         </li>
       
     </ul>
+  
+
+  
+    
+
   
 
   
@@ -312,11 +345,12 @@
 </nav>
 
 
+
   
 
 
 
- </div>
+</div>
     </header>
 
     
@@ -325,6 +359,7 @@
     <main id="main" class="main">
       <div class="main-inner">
         <div class="content-wrap">
+          
           <div id="content" class="content">
             
 
@@ -361,11 +396,19 @@
 
         
         
-          <h2 class="post-title" itemprop="name headline">MATLAB读取音频文件并进行音频特征提取</h2>
+          <h2 class="post-title" itemprop="name headline">MATLAB读取音频文件并进行音频特征提取
+              
+            
+          </h2>
         
 
         <div class="post-meta">
           <span class="post-time">
+
+            
+            
+            
+
             
               <span class="post-meta-item-icon">
                 <i class="fa fa-calendar-o"></i>
@@ -373,10 +416,12 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2013-08-02T00:08:00+08:00">2013-08-02</time>
-            
 
-            
+              
+                
+              
+
+              <time title="创建时间：2013-08-02 00:08:00" itemprop="dateCreated datePublished" datetime="2013-08-02T00:08:00+08:00">2013-08-02</time>
             
 
             
@@ -411,7 +456,7 @@
               </span>
               
                 <a href="/2013/08/matlab-reads-the-audio-file-and-audio-feature-extraction/#SOHUCS" itemprop="discussionUrl">
-                  <span id="changyan_count_unit" class="post-comments-count hc-comment-count" data-xid="2013/08/matlab-reads-the-audio-file-and-audio-feature-extraction/" itemprop="commentsCount"></span>
+                  <span class="post-meta-item-text">评论数：</span> <span id="changyan_count_unit" class="post-comments-count hc-comment-count" data-xid="2013/08/matlab-reads-the-audio-file-and-audio-feature-extraction/" itemprop="commentsCount"></span>
                 </a>
               
             
@@ -445,9 +490,12 @@
 <p>3、对音频数据进行快速傅里叶变换得到频谱图，并选取scope区域内的能量最大并且能量增幅最大的点作为峰值点，进行特征提取，keypoint.m文件内容如下：<br><figure class="highlight matlab"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">point</span> = <span class="title">keypoint</span><span class="params">(sample,scope)</span></span></span><br><span class="line"><span class="comment">%对音频数据进行快速傅里叶变换，得到变换后的数据为b，频率为f，时间为t</span></span><br><span class="line">[b,f,t] = specgram(sample,<span class="number">1024</span>,<span class="number">11025</span>,hanning(<span class="number">1024</span>),<span class="number">256</span>);</span><br><span class="line">specgram(sample,<span class="number">1024</span>,<span class="number">11025</span>,hanning(<span class="number">1024</span>),<span class="number">256</span>);<span class="comment">%绘制频谱图</span></span><br><span class="line">hold on;</span><br><span class="line">energy = <span class="built_in">abs</span>(b);<span class="comment">%根据快速傅里叶变换后的数据进行能量计算</span></span><br><span class="line"><span class="comment">%energy = sample;</span></span><br><span class="line">diffenergy = caldiffenergy(energy);<span class="comment">%计算能量差分</span></span><br><span class="line">[m,n] = <span class="built_in">size</span>(energy);<span class="comment">%获取能量矩阵的大小</span></span><br><span class="line"><span class="comment">%f = (0:4);</span></span><br><span class="line"><span class="comment">%t = (0:4);</span></span><br><span class="line">f_unit = max(f)/(<span class="built_in">length</span>(f)<span class="number">-1</span>);<span class="comment">%根据频率点个数计算频率单位长度</span></span><br><span class="line">t_unit = max(t)/(<span class="built_in">length</span>(t)<span class="number">-1</span>);<span class="comment">%根据时间点个数计算时间单位长度</span></span><br><span class="line">k = <span class="number">1</span>;</span><br><span class="line">l = <span class="number">1</span>;</span><br><span class="line">p = <span class="number">1</span>;</span><br><span class="line">num = <span class="number">1</span>;</span><br><span class="line">point.t = <span class="number">0</span>;</span><br><span class="line">point.f = <span class="number">0</span>;<span class="comment">%point结构体数组用来保存峰值点</span></span><br><span class="line">temp.t = <span class="number">0</span>;</span><br><span class="line">temp.f = <span class="number">0</span>;<span class="comment">%temp结构体数组用来保存计算中的临时点</span></span><br><span class="line">count = <span class="number">0</span>;<span class="comment">%count为零表示在当前scope中未找到峰值点</span></span><br><span class="line">x_f=<span class="number">0</span>;</span><br><span class="line">y_t=<span class="number">0</span>;</span><br><span class="line">plot(x_f,y_t);</span><br><span class="line">hold on;</span><br><span class="line"><span class="keyword">for</span> <span class="built_in">i</span> = <span class="number">1</span>:m-scope+<span class="number">1</span></span><br><span class="line">    <span class="keyword">for</span> <span class="built_in">j</span> = <span class="number">1</span>:n-scope+<span class="number">1</span></span><br><span class="line">        <span class="comment">%找出大小为scope的子矩阵中的最大元素的位置并保存</span></span><br><span class="line">        [x_f,y_t] = <span class="built_in">find</span>(energy(<span class="built_in">i</span>:<span class="built_in">i</span>+scope<span class="number">-1</span>,<span class="built_in">j</span>:<span class="built_in">j</span>+scope<span class="number">-1</span>)==max(max(energy(<span class="built_in">i</span>:<span class="built_in">i</span>+scope<span class="number">-1</span>,<span class="built_in">j</span>:<span class="built_in">j</span>+scope<span class="number">-1</span>))));</span><br><span class="line">        x_f = x_f + <span class="built_in">i</span> - <span class="number">1</span>;</span><br><span class="line">        y_t = y_t + <span class="built_in">j</span> - <span class="number">1</span>;</span><br><span class="line">        <span class="comment">%找出大小为scope的子矩阵中的差分最大元素的位置并保存</span></span><br><span class="line">        [diffx,diffy] = <span class="built_in">find</span>(diffenergy(<span class="built_in">i</span>:<span class="built_in">i</span>+scope<span class="number">-1</span>,<span class="built_in">j</span>:<span class="built_in">j</span>+scope<span class="number">-1</span>)==max(max(diffenergy(<span class="built_in">i</span>:<span class="built_in">i</span>+scope<span class="number">-1</span>,<span class="built_in">j</span>:<span class="built_in">j</span>+scope<span class="number">-1</span>))));</span><br><span class="line">        diffx = diffx + <span class="built_in">i</span> - <span class="number">1</span>;</span><br><span class="line">        diffy = diffy + <span class="built_in">j</span> - <span class="number">1</span>;</span><br><span class="line">        count = <span class="number">0</span>;</span><br><span class="line">        <span class="comment">%如果最大元素和差分最大元素都为同一个位置则该点为峰值点，保存在temp中</span></span><br><span class="line">        <span class="keyword">for</span> k = <span class="number">1</span>:<span class="built_in">length</span>(x_f)</span><br><span class="line">            <span class="keyword">for</span> l = <span class="number">1</span>:<span class="built_in">length</span>(diffx)</span><br><span class="line">                <span class="keyword">if</span> (x_f(k) == diffx(l)) &amp;&amp; (y_t(k) == diffy(l))</span><br><span class="line">                    temp(num).f = x_f(k) * f_unit;</span><br><span class="line">                    temp(num).t = y_t(k) * t_unit;</span><br><span class="line">                    <span class="comment">%plot(temp(num).t,temp(num).f,'.');</span></span><br><span class="line">                    num = num + <span class="number">1</span>;</span><br><span class="line">                    count = <span class="number">1</span>;<span class="comment">%在scope中找到一个峰值点则不再记录其它相同的点</span></span><br><span class="line">                    <span class="keyword">break</span>;</span><br><span class="line">                <span class="keyword">end</span></span><br><span class="line">            <span class="keyword">end</span></span><br><span class="line">            <span class="keyword">if</span> count == <span class="number">1</span><span class="comment">%scope中多个峰值点只保留第一个</span></span><br><span class="line">                <span class="keyword">break</span>;</span><br><span class="line">            <span class="keyword">end</span></span><br><span class="line">        <span class="keyword">end</span></span><br><span class="line">    <span class="keyword">end</span></span><br><span class="line"><span class="keyword">end</span></span><br><span class="line"><span class="comment">%将temp中保存的峰值点画在图上，多个scope中找到的相同峰值点只画一次</span></span><br><span class="line">len = <span class="number">1</span>;</span><br><span class="line">point(<span class="number">1</span>).f = temp(<span class="number">1</span>).f;</span><br><span class="line">point(<span class="number">1</span>).t = temp(<span class="number">1</span>).t;</span><br><span class="line">plot(point(<span class="number">1</span>).t,point(<span class="number">1</span>).f,<span class="string">'.'</span>);</span><br><span class="line"><span class="keyword">for</span> <span class="built_in">i</span> = <span class="number">2</span>:num - <span class="number">1</span></span><br><span class="line">    <span class="keyword">for</span> <span class="built_in">j</span> = <span class="number">1</span>:len</span><br><span class="line">        <span class="keyword">if</span> (temp(<span class="built_in">i</span>).f == point(<span class="built_in">j</span>).f) &amp;&amp; (temp(<span class="built_in">i</span>).t == point(<span class="built_in">j</span>).t)</span><br><span class="line">            <span class="keyword">break</span>;</span><br><span class="line">        <span class="keyword">end</span></span><br><span class="line">    <span class="keyword">end</span></span><br><span class="line">    <span class="keyword">if</span> <span class="built_in">j</span> == len &amp;&amp; (temp(<span class="built_in">i</span>).f ~= point(<span class="built_in">j</span>).f) &amp;&amp; (temp(<span class="built_in">i</span>).t ~= point(<span class="built_in">j</span>).t)</span><br><span class="line">        len = len + <span class="number">1</span>;</span><br><span class="line">        point(len).f = temp(<span class="built_in">i</span>).f;</span><br><span class="line">        point(len).t = temp(<span class="built_in">i</span>).t;</span><br><span class="line">        plot(point(len).t,point(len).f,<span class="string">'.'</span>);</span><br><span class="line">    <span class="keyword">end</span></span><br><span class="line"><span class="keyword">end</span></span><br><span class="line">hold off</span><br><span class="line"><span class="keyword">end</span></span><br></pre></td></tr></table></figure></p>
 <p>4、keypoint(sample,scope);函数中用到的caldiffenergy(energy);函数内容在caldiffenergy.m文件中，内容如下：<br><figure class="highlight matlab"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">diffenergy</span> = <span class="title">caldiffenergy</span><span class="params">(energy)</span></span></span><br><span class="line">v = diff(energy');</span><br><span class="line">[x,y] = <span class="built_in">size</span>(v);</span><br><span class="line"><span class="keyword">for</span> <span class="built_in">i</span> = <span class="number">1</span>:y</span><br><span class="line">    zero(<span class="built_in">i</span>) = <span class="number">0</span>;</span><br><span class="line"><span class="keyword">end</span></span><br><span class="line">diffenergy = <span class="built_in">abs</span>(([zero;v])');</span><br><span class="line"><span class="keyword">end</span></span><br></pre></td></tr></table></figure></p>
 <p>via:<a href="http://blog.sina.com.cn/s/blog_7985987f01018pkb.html" target="_blank" rel="noopener">http://blog.sina.com.cn/s/blog_7985987f01018pkb.html</a></p>
-<div style="clear:both"></div><div class="cc"><p>The <a href="https://blog.naaln.com">Why·Liam·Blog</a> by <a href="https://www.naaln.com" target="_blank" rel="external">WhyLiam</a> is licensed under a <a href="http://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" rel="external">Creative Commons BY-NC-ND 4.0 International License</a>.</p><p>由<a href="https://www.naaln.com" target="_blank" rel="external">WhyLiam</a>创作并维护的<a href="https://blog.naaln.com">Why·Liam·Blog</a>采用创作共用<a href="http://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" rel="external">保留署名-非商业-禁止演绎4.0国际许可证</a>。</p><p>本文首发于<a href="https://blog.naaln.com">Why·Liam·Blog (https://blog.naaln.com)</a>，版权所有，侵权必究。</p><p>本文永久链接：<a href="https://blog.naaln.com/2013/08/matlab-reads-the-audio-file-and-audio-feature-extraction/">https://blog.naaln.com/2013/08/matlab-reads-the-audio-file-and-audio-feature-extraction/</a></p><p></p></div>
+<div style="clear:both"></div><div class="cc"><p>The <a href="https://blog.naaln.com">Why·Liam·Blog</a> by <a href="https://www.naaln.com" target="_blank" rel="external">WhyLiam</a> is licensed under a <a href="http://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" rel="external">Creative Commons BY-NC-ND 4.0 International License</a>.</p><p>由<a href="https://www.naaln.com" target="_blank" rel="external">WhyLiam</a>创作并维护的<a href="https://blog.naaln.com">Why·Liam·Blog</a>采用创作共用<a href="http://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" rel="external">保留署名-非商业-禁止演绎4.0国际许可证</a>。</p><p>本文首发于<a href="https://blog.naaln.com">Why·Liam·Blog (https://blog.naaln.com)</a>，版权所有，侵权必究。</p><p>本文永久链接：<a href="https://blog.naaln.com/2013/08/matlab-reads-the-audio-file-and-audio-feature-extraction/">https://blog.naaln.com/2013/08/matlab-reads-the-audio-file-and-audio-feature-extraction/</a></p><p></p></div><div><h1>推荐文章<span style="font-size:0.45em; color:gray">（由<a href="https://github.com/huiwang/hexo-recommended-posts">hexo文章推荐插件</a>驱动）</span></h1><ul><li><a href="https://blog.naaln.com/2013/09/matlab-displays-pictures-and-subplot-command/">Matlab 显示图片和SubPlot命令</a></li><li><a href="https://blog.naaln.com/2013/09/miss-dong-matlab-version/">董小姐，MATLAB版</a></li><li><a href="http://gubangzhong.cn/2017/07/17/Matlab常用函数及技巧/">Matlab常用函数及技巧</a></li></ul></div>
       
     </div>
+
+    
+
     
     
     
@@ -493,6 +541,20 @@
       </div>
     
 
+    
+      <div>
+        <ul class="post-copyright">
+  <li class="post-copyright-author">
+    <strong>本文作者： </strong>WHY·LIAM</li>
+  <li class="post-copyright-link">
+    <strong>本文链接：</strong>
+    <a href="https://blog.naaln.com/2013/08/matlab-reads-the-audio-file-and-audio-feature-extraction/" title="MATLAB读取音频文件并进行音频特征提取">https://blog.naaln.com/2013/08/matlab-reads-the-audio-file-and-audio-feature-extraction/</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-nd/3.0/" rel="external nofollow" target="_blank">CC by-nc-nd 3.0</a> 许可协议。转载请注明出处！</li>
+</ul>
+
+      </div>
     
 
     <footer class="post-footer">
@@ -588,7 +650,7 @@
                 alt="WHY·LIAM" />
             
               <p class="site-author-name" itemprop="name">WHY·LIAM</p>
-              <p class="site-description motion-element" itemprop="description"></p>
+              <p class="site-description motion-element" itemprop="description">人生若如初見</p>
           </div>
 
           
@@ -609,6 +671,16 @@
                 
                 <div class="site-state-item site-state-categories">
                   <a href="/categories/index.html">
+                    
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
                     <span class="site-state-item-count">4</span>
                     <span class="site-state-item-name">分类</span>
                   </a>
@@ -620,6 +692,142 @@
                 
                 <div class="site-state-item site-state-tags">
                   <a href="/tags/index.html">
+                    
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
                     <span class="site-state-item-count">67</span>
                     <span class="site-state-item-name">标签</span>
                   </a>
@@ -639,19 +847,17 @@
 
           
             <div class="links-of-author motion-element">
-                
-                  <span class="links-of-author-item">
-                    <a href="https://github.com/liszd" target="_blank" title="GitHub" rel="external nofollow">
-                      
-                        <i class="fa fa-fw fa-github"></i>GitHub</a>
-                  </span>
-                
-                  <span class="links-of-author-item">
-                    <a href="http://weibo.com/whyliam" target="_blank" title="微博" rel="external nofollow">
-                      
-                        <i class="fa fa-fw fa-weibo"></i>微博</a>
-                  </span>
-                
+              
+                <span class="links-of-author-item">
+                  <a href="https://github.com/liszd" target="_blank" title="GitHub" rel="external nofollow"><i class="fa fa-fw fa-github"></i>GitHub</a>
+                  
+                </span>
+              
+                <span class="links-of-author-item">
+                  <a href="http://weibo.com/whyliam" target="_blank" title="微博" rel="external nofollow"><i class="fa fa-fw fa-weibo"></i>微博</a>
+                  
+                </span>
+              
             </div>
           
 
@@ -708,7 +914,7 @@
     <footer id="footer" class="footer">
       <div class="footer-inner">
         <div class="copyright">&copy; 2003 &mdash; <span itemprop="copyrightYear">2018</span>
-  <span class="with-love">
+  <span class="with-love" id="animate">
     <i class="fa fa-user"></i>
   </span>
   <span class="author" itemprop="copyrightHolder">WHY·LIAM</span>
@@ -723,15 +929,9 @@
 
 
 
-  <div class="powered-by">由 <a class="theme-link" target="_blank" rel="external nofollow" href="https://hexo.io">Hexo</a> 强力驱动</div>
 
 
 
-  <span class="post-meta-divider">|</span>
-
-
-
-  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" rel="external nofollow" href="https://github.com/theme-next/hexo-theme-next">NexT.Muse</a> v6.0.2</div>
 
 
 
@@ -739,6 +939,25 @@
 
 
         
+<div class="busuanzi-count">
+  <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+  
+    <span class="site-uv" title="总访客量">
+      <i class="fa fa-user"></i>
+      <span class="busuanzi-value" id="busuanzi_value_site_uv"></span>
+    </span>
+  
+
+  
+    <span class="site-pv" title="总访问量">
+      <i class="fa fa-eye"></i>
+      <span class="busuanzi-value" id="busuanzi_value_site_pv"></span>
+    </span>
+  
+</div>
+
+
 
 
 
@@ -813,25 +1032,25 @@
   
 
 
-  <script type="text/javascript" src="/js/src/utils.js?v=6.0.2"></script>
+  <script type="text/javascript" src="/js/src/utils.js?v=6.2.0"></script>
 
-  <script type="text/javascript" src="/js/src/motion.js?v=6.0.2"></script>
-
-
-
-  
-  
-
-  
-  <script type="text/javascript" src="/js/src/scrollspy.js?v=6.0.2"></script>
-<script type="text/javascript" src="/js/src/post-details.js?v=6.0.2"></script>
+  <script type="text/javascript" src="/js/src/motion.js?v=6.2.0"></script>
 
 
 
   
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=6.2.0"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=6.2.0"></script>
 
 
-  <script type="text/javascript" src="/js/src/bootstrap.js?v=6.0.2"></script>
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=6.2.0"></script>
 
 
 
@@ -892,7 +1111,7 @@
   <script src="/lib/algolia-instant-search/instantsearch.min.js"></script>
   
 
-  <script src="/js/src/algolia-search.js?v=6.0.2"></script>
+  <script src="/js/src/algolia-search.js?v=6.2.0"></script>
 
 
 
@@ -920,6 +1139,8 @@
   
 
   
+  
+
   
 
   
