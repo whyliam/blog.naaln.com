@@ -1,13 +1,1 @@
-db.json
 .DS_Store
-
-.deploy_git/
-node_modules/
-public/
-_multiconfig.yml
-source/_data/recommended_posts.json
-source/_posts/media/
-source/_posts/.MWebMetaData/
-source/_posts/.Ulysses-favorites.plist
-source/_posts/.Ulysses-Group.plist
-yulib.resource/
