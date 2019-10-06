@@ -1,8 +1,8 @@
 [submodule "themes/next"]
-	path = themes/next
-	url = https://github.com/whyliam/hexo-theme-next.git
-	branch = blog
+    path = themes/next
+    url = https://github.com/whyliam/hexo-theme-next.git
+    branch = blog
 [submodule "source/_posts"]
-	path = source/_posts
-	url = https://github.com/whyliam/blog.naaln.com.git
-	branch = post
+    path = source/_posts
+    url = https://github.com/whyliam/blog.naaln.com.git
+    branch = post
