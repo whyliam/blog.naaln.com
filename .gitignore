@@ -1,1 +1,8 @@
 .DS_Store
+db.json
+package-lock.json
+
+node_modules
+public
+source
+themes
