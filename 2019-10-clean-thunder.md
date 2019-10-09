@@ -31,3 +31,41 @@ chmod a+x /Applications/Thunder.app/Contents/PlugIns/xlbrowser.xlplugin
 ```
 
 ![](http://pics.naaln.com/blog/2019-10-07-143241.jpg-basicBlog)
+
+---
+
+建议去除的插件包括：
+
+```
+advertising（广告）
+featuredpage（主页）
+feedback（反馈）
+iOSThunder（手机迅雷）
+myvip（会员中心）
+softmanager（软件管家）
+viprenew（会员开通）
+viptips（会员提示）
+xlbrowser（内置浏览器）
+xlplayer（迅雷影音）
+```
+
+针对不同的需求，可以酌情处理以下插件：
+
+```
+需要使用迅雷快鸟进行宽带提速的，请保留 bbassistant 插件，不需要的可以删除；
+需要使用迅雷离线空间的，请保留 lixianspace 插件，不需要的可以删除；
+需要使用会员权限的，请保留 viptask 插件，不需要的可以删除；
+需要登陆迅雷账户的，请保留 userlogin 插件，不需要的可以删除；
+需要使用内置的字幕下载功能的，请保留 subtitle 插件，不需要的可以删除；
+需要搭配浏览器使用的，请保留 browserhelper 插件，不需要的可以删除；
+下载宝（或玩客云）用户请保留 xiazaibao 插件，不需要的可以删除。
+```
+
+以下插件请勿随意删除，否则可能对 app 正常工作产生较大影响：
+```
+applications 插件：提供除了下载之外的所有迅雷功能的主入口；
+details 插件：提供任务详情页面；
+liveupdate 插件：提供在线更新服务（后文将会用到）；
+searchtask 插件：提供任务搜索功能；
+settings 插件：提供偏好设置面板。
+```
