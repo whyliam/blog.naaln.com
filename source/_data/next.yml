@@ -17,6 +17,9 @@ url: https://blog.naaln.com
 root: /
 permalink: :year/:month/:title/
 permalink_defaults:
+pretty_urls:
+  trailing_index: true # Set to false to remove trailing 'index.html' from permalinks
+  trailing_html: true # Set to false to remove trailing '.html' from permalinks
 
 # Directory
 source_dir: source
@@ -31,8 +34,11 @@ skip_render:
 # Writing
 new_post_name: :year-:month-:title.md # File name of new posts
 default_layout: post
-titlecase: true # Transform title into titlecase
-external_link: true # Open external links in new tab
+titlecase: false # Transform title into titlecase
+external_link:
+  enable: true # Open external links in new tab
+  field: site # Apply to the whole site
+  exclude: ''
 filename_case: 0
 render_drafts: false
 post_asset_folder: false
@@ -41,8 +47,10 @@ future: true
 highlight:
   enable: true
   line_number: true
-  auto_detect: true
-  tab_replace:
+  auto_detect: false
+  tab_replace: ''
+  wrap: true
+  hljs: false
 
 # Home page setting
 # path: Root path for your blogs index page. (default = '')
@@ -62,18 +70,30 @@ category_map:
   旅行: tour
 tag_map:
 
+# Metadata elements
+## https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meta
+meta_generator: true
+
 # Date / Time format
 ## Hexo uses Moment.js to parse and display date
 ## You can customize the date format as defined in
 ## http://momentjs.com/docs/#/displaying/format/
 date_format: YYYY-MM-DD
 time_format: HH:mm:ss
+## Use post's date for updated date unless set in front-matter
+use_date_for_updated: false
 
 # Pagination
 ## Set per_page to 0 to disable pagination
 per_page: 10
 pagination_dir: page
 
+# Include / Exclude file(s)
+## include:/exclude: options only apply to the 'source/' folder
+include:
+exclude:
+ignore:
+  
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
@@ -98,19 +118,28 @@ deploy:
     file: '.DS_Store$'
 
 feed:
-  type: atom
-  path: atom.xml
+  type:
+    - atom
+  path:
+    - atom.xml
   limit: 20
   hub:
+  content:
+  content_limit: 140
+  content_limit_delim: ' '
+  order_by: -date
+  icon: icon.png
+  autodiscovery: true
+  template:
 
 sitemap:
-  path: sitemap.xml
+  path: atom.xml
 
 search: true
 
 algolia:
-  applicationID: 'XILKIWTAM9'
-  apiKey: '7f52dfb146098112a1859b59b8e1003c'
+  applicationID: 'WVAWDPSYBR'
+  apiKey: '004cb5884c6903947d25c8cb8ba4ab3b'
   indexName: 'blog'
   chunkSize: 5000
 
@@ -121,6 +150,12 @@ recommended_posts:
   externalLinks: 1 #外部文章数量
   autoDisplay: true, #自动在文章底部显示推荐文章
   titleHtml: <h1>推荐文章</h1> #自定义标题
+
+excerpt:
+  depth: 4
+  excerpt_excludes: []
+  more_excludes: []
+  hideWholePostExcerpts: true
 
 # ---------------------------------------------------------------
 # Theme Core Configuration Settings
@@ -170,10 +205,6 @@ favicon:
   safari_pinned_tab: /images/favicon/logo.svg
   #android_manifest: /images/manifest.json
   #ms_browserconfig: /images/browserconfig.xml
-
-# hexo-generator-feed required for rss support. Leave rss as blank to use site's feed link.
-# Set rss to false to disable feed link. Set rss to specific value if you have burned your feed already.
-rss: /atom.xml
 
 footer:
   # Specify the date when the site was setup. If not defined, current year will be used.
@@ -244,9 +275,8 @@ scheme: Muse
 
 # Usage: `Key: /link/ || icon`
 # Key is the name of menu item. If the translation for this item is available, the translated text will be loaded, otherwise the Key name will be used. Key is case-senstive.
-# Value before `||` delimiter is the target link.
-# Value after `||` delimiter is the name of Font Awesome icon. If icon (with or without delimiter) is not specified, question icon will be loaded.
-# When running the site in a subdirectory (e.g. domain.tld/blog), remove the leading slash from link value (/archives -> archives).
+# Value before `||` delimiter is the target link, value after `||` delimiter is the name of Font Awesome icon.
+# When running the site in a subdirectory (e.g. yoursite.com/blog), remove the leading slash from link value (/archives -> archives).
 # External url should start with http:// or https://
 menu:
   home: / || home
@@ -290,6 +320,8 @@ sidebar:
   #  - remove  totally remove sidebar including sidebar toggle.
   display: hide
 
+  # Sidebar padding in pixels.
+  padding: 18
   # Sidebar offset from top menubar in pixels (only for Pisces | Gemini).
   offset: 12
   # Enable sidebar on narrow view (only for Muse | Mist).
@@ -297,13 +329,11 @@ sidebar:
 
 # Sidebar Avatar
 avatar:
-  # In theme directory (source/images): /images/avatar.gif
-  # In site directory (source/uploads): /uploads/avatar.gif
-  # You can also use other linking images.
+  # Replace the default image and set the url here.
   url: http://pics.naaln.com/48910e01gw1ef5p6etuzdj20rs0rs771.jpg
-  # If true, the avatar would be dispalyed in circle.
+  # If true, the avatar will be dispalyed in circle.
   rounded: true
-  # If true, the avatar would be rotated with the cursor.
+  # If true, the avatar will be rotated with the cursor.
   rotated: false
 
 # Posts / Categories / Tags in sidebar.
@@ -312,8 +342,7 @@ site_state: true
 # Social Links
 # Usage: `Key: permalink || icon`
 # Key is the link label showing to end users.
-# Value before `||` delimiter is the target permalink.
-# Value after `||` delimiter is the name of Font Awesome icon. If icon (with or without delimiter) is not specified, globe icon will be loaded.
+# Value before `||` delimiter is the target permalink, value after `||` delimiter is the name of Font Awesome icon.
 social:
   GitHub: https://github.com/whyliam || github
   #E-Mail: mailto:yourname@gmail.com || envelope
@@ -321,11 +350,11 @@ social:
   #Google: https://plus.google.com/yourname || google
   #Twitter: https://twitter.com/yourname || twitter
   #FB Page: https://www.facebook.com/yourname || facebook
-  #VK Group: https://vk.com/yourname || vk
   #StackOverflow: https://stackoverflow.com/yourname || stack-overflow
   #YouTube: https://youtube.com/yourname || youtube
   #Instagram: https://instagram.com/yourname || instagram
   #Skype: skype:yourname?call|chat || skype
+  #RSS: /atom.xml || rss
 
 social_icons:
   enable: true
@@ -352,7 +381,7 @@ toc:
   wrap: false
   # If true, all level of TOC in a post will be displayed, rather than the activated part of it.
   expand_all: false
-  # Maximum heading depth of generated toc. You can set it in one post through `toc_max_depth` in Front-matter.
+  # Maximum heading depth of generated toc.
   max_depth: 6
 
 # A button to open designated chat widget in sidebar.
@@ -370,21 +399,12 @@ chat:
 # See: https://theme-next.org/docs/theme-settings/posts
 # ---------------------------------------------------------------
 
-# Automatically scroll page to section which is under <!-- more --> mark.
-scroll_to_more: true
-
 # Automatically excerpt description in homepage as preamble text.
-excerpt_description: fa
-
-# Automatically excerpt (Not recommend).
-# Use <!-- more --> in the post to control excerpt accurately.
-auto_excerpt:
-  enable: true
-  length: 140
+excerpt_description: false
 
 # Read more button
-# If true, the read more button would be displayed in excerpt section.
-read_more_btn: false
+# If true, the read more button will be displayed in excerpt section.
+read_more_btn: true
 
 # Post meta display settings
 post_meta:
@@ -414,9 +434,9 @@ wechat_subscriber:
   description: 记录生活，研究产品，分享设计，分析数据，讨论科技和商业，不定期扯淡。
 
 # Reward (Donate)
+# Front-matter variable (unsupport animation).
 reward_settings:
-  # If true, reward would be displayed in every article by default.
-  # You can show or hide reward in a specific article throuth `reward: true | false` in Front-matter.
+  # If true, reward will be displayed in every article by default.
   enable: true
   animation: true
   comment: 如果觉得我的文章对您有用，请随意打赏。您的支持将鼓励我继续创作！
@@ -446,18 +466,19 @@ post_edit:
   url: https://github.com/user-name/repo-name/tree/branch-name/subdirectory-name # Link for view source
   #url: https://github.com/user-name/repo-name/edit/branch-name/subdirectory-name # Link for fork & edit
 
+# Show previous post and next post in post footer if exists
+# Available values: left | right | false
+post_navigation: left
+
 
 # ---------------------------------------------------------------
 # Custom Page Settings
 # See: https://theme-next.org/docs/theme-settings/custom-pages
 # ---------------------------------------------------------------
 
-# Enable "cheers" for archive page.
-cheers: true
-
 # TagCloud settings for tags page.
 tagcloud:
-  # All values below are same as default, change them by yourself
+  # All values below are same as default, change them by yourself.
   min: 12 # Minimun font size in px
   max: 30 # Maxium font size in px
   start: "#ccc" # Start color (hex, rgba, hsla or color keywords)
@@ -466,9 +487,6 @@ tagcloud:
 
 # Google Calendar
 # Share your recent schedule to others via calendar page.
-# API Documentation: https://developers.google.com/google-apps/calendar/v3/reference/events/list
-# To get api_key: https://console.developers.google.com
-# Create & manage a public Google calendar: https://support.google.com/calendar/answer/37083
 calendar:
   calendar_id: <required> # Your Google account E-Mail
   api_key: <required>
@@ -499,9 +517,6 @@ android_chrome_color: "#222"
 # Hide sticky headers and color the menu bar on Safari (iOS / macOS).
 safari_rainbow: false
 
-# Optimize the display of scrollbars on webkit based browsers.
-custom_scrollbar: false
-
 # Custom Logo (Do not support scheme Mist)
 custom_logo: #/uploads/custom-logo.jpg
 
@@ -531,7 +546,7 @@ reading_progress:
   # Available values: top | bottom
   position: top
   color: "#37c6c0"
-  height: 2px
+  height: 3px
 
 # Bookmark Support
 bookmark:
@@ -563,8 +578,6 @@ github_banner:
 # ---------------------------------------------------------------
 
 font:
-  # Use custom fonts families or not.
-  # Depended options: `external` and `family`.
   enable: false
 
   # Uri of fonts host, e.g. //fonts.googleapis.com (Default).
@@ -611,15 +624,15 @@ font:
 # Disable Baidu transformation on mobile devices.
 disable_baidu_transformation: false
 
-# Set a canonical link tag in your hexo, you could use it for your SEO of blog.
+# Set a canonical link tag for your Hexo site.
 # See: https://support.google.com/webmasters/answer/139066
-# Remember to set up your URL in Hexo `_config.yml` (e.g. url: http://yourdomain.com)
+# Remember to set up your URL in Hexo `_config.yml` (e.g. url: http://yoursite.com)
 canonical: true
 
 # Change headers hierarchy on site-subtitle (will be main site description) and on all post / page titles for better SEO-optimization.
 seo: true
 
-# If true, will add site-subtitle to index page.
+# If true, site-subtitle will be added to index page.
 # Remember to set up your site-subtitle in Hexo `_config.yml` (e.g. subtitle: Subtitle)
 index_with_subtitle: false
 
@@ -657,8 +670,6 @@ baidu_push: true
 
 # Math Formulas Render Support
 math:
-  enable: false
-
   # Default (true) will load mathjax / katex script on demand.
   # That is it only render those page which has `mathjax: true` in Front-matter.
   # If you set it to false, it will load mathjax / katex srcipt EVERY PAGE.
@@ -678,7 +689,6 @@ math:
 
 # Easily enable fast Ajax navigation on your website.
 # Dependencies: https://github.com/theme-next/theme-next-pjax
-# For moreinformation: https://github.com/MoOx/pjax
 pjax: false
 
 # FancyBox is a tool that offers a nice and elegant way to add zooming functionality for images.
@@ -700,14 +710,14 @@ pangu: false
 
 # Quicklink Support
 # For more information: https://github.com/GoogleChromeLabs/quicklink
+# Front-matter (unsupport home archive).
 quicklink:
   enable: true
 
-  # Quicklink (quicklink.umd.js script) is loaded on demand.
-  # Add `quicklink: true` in Front-matter of the page or post you need.
   # Home page and archive page can be controlled through home and archive options below.
-  home: true
-  archive: true
+  # This configuration item is independent of `enable`.
+  home: false
+  archive: false
 
   # Default (true) will initialize quicklink after the load event fires.
   delay: true
@@ -731,17 +741,17 @@ comments:
   # Available values: tabs | buttons
   style: tabs
   # Choose a comment system to be displayed by default.
-  # Available values: changyan | disqus | disqusjs | facebook_comments_plugin | gitalk | livere | valine | vkontakte
-  active:
+  # Available values: changyan | disqus | disqusjs | gitalk | livere | valine
+  active: valine
   # Setting `true` means remembering the comment system selected by the visitor.
   storage: true
+  # Lazyload all comment systems.
+  lazyload: false
   # Modify texts or order for any navs, here are some examples.
   nav:
     #disqus:
     #  text: Load Disqus
     #  order: -1
-    #facebook_comments_plugin:
-    #  text: <i class="fa fa-facebook-official" aria-hidden="true"></i> facebook
     #gitalk:
     #  order: -2
 
@@ -750,7 +760,6 @@ disqus:
   enable: false
   shortname:
   count: true
-  lazyload: false
   #post_meta_order: 0
 
 # DisqusJS
@@ -760,8 +769,7 @@ disqus:
 disqusjs:
   enable: false
   # API Endpoint of Disqus API (https://disqus.com/api/).
-  # Leave api empty if you are able to connect to Disqus API.
-  # Otherwise you need a reverse proxy for Disqus API.
+  # Leave api empty if you are able to connect to Disqus API. Otherwise you need a reverse proxy for it.
   # For example:
   # api: https://disqus.skk.moe/disqus/
   api:
@@ -776,7 +784,6 @@ changyan:
   #post_meta_order: 0
 
 # Valine
-# You can get your appid and appkey from https://leancloud.cn
 # For more information: https://valine.js.org, https://github.com/xCss/Valine
 valine:
   enable: true # When enable is set to be true, leancloud_visitors is recommended to be closed for the re-initialization problem within different leancloud adk version
@@ -791,6 +798,8 @@ valine:
   language: zh-cn # Language, available values: en, zh-cn
   visitor: false # leancloud-counter-security is not supported for now. When visitor is set to be true, appid and appkey are recommended to be the same as leancloud_visitors' for counter compatibility. Article reading statistic https://valine.js.org/visitor.html
   comment_count: true # If false, comment count will only be displayed in post page, not in home page
+  recordIP: false # Whether to record the commenter IP
+  serverURLs: # When the custom domain name is enabled, fill it in here (it will be detected automatically by default, no need to fill in)
   #post_meta_order: 0
 
 # LiveRe comments system
@@ -798,8 +807,7 @@ valine:
 livere_uid: # <your_uid>
 
 # Gitalk
-# Demo: https://gitalk.github.io
-# For more information: https://github.com/gitalk/gitalk
+# For more information: https://gitalk.github.io, https://github.com/gitalk/gitalk
 gitalk:
   enable: false
   github_id: # GitHub repo owner
@@ -819,33 +827,6 @@ gitalk:
 # See: https://theme-next.org/docs/third-party-services/post-widgets
 # ---------------------------------------------------------------
 
-# Facebook SDK Support
-facebook_sdk:
-  enable:       false
-  app_id:       # <app_id>
-  fb_admin:     # <user_id>
-  like_button:  # true
-  webmaster:    # true
-
-# Facebook comments plugin
-# This plugin depends on Facebook SDK.
-# If facebook_sdk.enable is false, Facebook comments plugin is unavailable.
-facebook_comments_plugin:
-  enable:       false
-  num_of_posts: 10    # Minimum posts num is 1
-  width:        100%  # Default width is 550px
-  scheme:       light # Default scheme is light (light or dark)
-  #post_meta_order: 0
-
-# VKontakte API Support
-# To get your AppID visit https://vk.com/editapp?act=create
-vkontakte_api:
-  enable:       false
-  app_id:       # <app_id>
-  like:         true
-  comments:     true
-  num_of_posts: 10
-
 # Star rating support to each article.
 # To get your ID visit https://widgetpack.com
 rating:
@@ -863,27 +844,26 @@ add_this_id:
 # See: https://theme-next.org/docs/third-party-services/statistics-and-analytics
 # ---------------------------------------------------------------
 
+# Google Analytics
+google_analytics:
+  tracking_id: UA-47966442-2
+  # By default, NexT will load an external gtag.js script on your site.
+  # If you only need the pageview feature, set the following option to true to get a better performance.
+  only_pageview: true
+
 # Baidu Analytics
 baidu_analytics: 4144ef291e4808d1a8fdfc8a833143ca
 
 # Growingio Analytics
-# Copyright 2015-2018 GrowingIO, Inc. More info available at https://www.growingio.com
 growingio_analytics: # <project_id>
-
-# Google Analytics
-google_analytics:
-  tracking_id: UA-47966442-2
-  localhost_ignored: true
 
 # CNZZ count
 cnzz_siteid:
 
-# Application Insights
-# See: https://azure.microsoft.com/en-us/services/application-insights
-application_insights:
-
-# Show number of visitors to each article.
+# Show number of visitors of each article.
 # You can visit https://leancloud.cn to get AppID and AppKey.
+# AppID and AppKey are recommended to be the same as valine's for counter compatibility.
+# Do not enable both `valine.visitor` and `leancloud_visitors`.
 leancloud_visitors:
   enable: false
   app_id: # <app_id>
@@ -914,12 +894,6 @@ busuanzi_count:
   post_views: false
   post_views_icon: eye
 
-# Tencent analytics
-tencent_analytics: # <app_id>
-
-# Tencent MTA
-tencent_mta: # <app_id>
-
 
 # ---------------------------------------------------------------
 # Search Services
@@ -938,7 +912,7 @@ algolia_search:
     hits_stats: '${hits} results found in ${time} ms'
 
 # Local Search
-# Dependencies: https://github.com/wzpan/hexo-generator-search
+# Dependencies: https://github.com/theme-next/hexo-generator-searchdb
 local_search:
   enable: false
   # If auto, trigger search by changing input.
@@ -991,7 +965,6 @@ note:
   #  - disabled  disable all CSS styles import of note tag.
   style: simple
   icons: false
-  border_radius: 3
   # Offset lighter of background in % for modern and flat styles (modern: -12 | 12; flat: -18 | 6).
   # Offset also applied to label tag variables. This option can work with disabled note tag.
   light_bg_offset: 0
@@ -1001,7 +974,6 @@ tabs:
   transition:
     tabs: false
     labels: true
-  border_radius: 0
 
 # PDF tag, requires two plugins: pdfObject and pdf.js
 # pdfObject will try to load pdf files natively, if failed, pdf.js will be used.
@@ -1031,12 +1003,12 @@ motion:
   async: false
   transition:
     # Transition variants:
-    # fadeIn | fadeOut | flipXIn | flipXOut | flipYIn | flipYOut | flipBounceXIn | flipBounceXOut | flipBounceYIn | flipBounceYOut
-    # swoopIn | swoopOut | whirlIn | whirlOut | shrinkIn | shrinkOut | expandIn | expandOut
-    # bounceIn | bounceOut | bounceUpIn | bounceUpOut | bounceDownIn | bounceDownOut | bounceLeftIn | bounceLeftOut | bounceRightIn | bounceRightOut
-    # slideUpIn | slideUpOut | slideDownIn | slideDownOut | slideLeftIn | slideLeftOut | slideRightIn | slideRightOut
-    # slideUpBigIn | slideUpBigOut | slideDownBigIn | slideDownBigOut | slideLeftBigIn | slideLeftBigOut | slideRightBigIn | slideRightBigOut
-    # perspectiveUpIn | perspectiveUpOut | perspectiveDownIn | perspectiveDownOut | perspectiveLeftIn | perspectiveLeftOut | perspectiveRightIn | perspectiveRightOut
+    # fadeIn | flipXIn | flipYIn | flipBounceXIn | flipBounceYIn
+    # swoopIn | whirlIn | shrinkIn | expandIn
+    # bounceIn | bounceUpIn | bounceDownIn | bounceLeftIn | bounceRightIn
+    # slideUpIn | slideDownIn | slideLeftIn | slideRightIn
+    # slideUpBigIn | slideDownBigIn | slideLeftBigIn | slideRightBigIn
+    # perspectiveUpIn | perspectiveDownIn | perspectiveLeftIn | perspectiveRightIn
     post_block: fadeIn
     post_header: slideDownIn
     post_body: slideDownIn
