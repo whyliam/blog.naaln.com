@@ -3,7 +3,7 @@ layout: post
 title: 垂直电商的消失
 date: 2019/10/09 20:00:00
 categories:
-- 技术
+- 产品
 tags:
 -
 ---
