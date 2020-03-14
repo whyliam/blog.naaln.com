@@ -111,7 +111,7 @@ UTDID 表示唯一用户，该id可以在不同的产品中通用。
 
 ## Next
 
-下期在[分享](https://blog.naaln.com/2017/09/alibaba-data-track-2)
+下期在[分享](https://blog.naaln.com/2017/09/alibaba-data-track-2/)
 
 * UserTrack 高级功能
   * 曝光日志预聚合
