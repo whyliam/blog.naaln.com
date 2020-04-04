@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 闲谈流量统计（II）—— 采集
+title: 闲谈流量统计（II）— 采集
 date: 2020/03/20 20:00:02
 categories:
 - 产品
@@ -94,4 +94,4 @@ APP 的数据传输就有了很多的能力。
 
 NEXT
 
-[闲谈流量统计（III）—— 采集| Why·Liam·Blog](https://blog.naaln.com/2020/03/data-analytic-3/)
+[闲谈流量统计（III）— 分析| Why·Liam·Blog](https://blog.naaln.com/2020/03/data-analytic-3/)
