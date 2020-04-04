@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 闲谈流量统计（I）—— 入门
+title: 闲谈流量统计（I）— 入门
 date: 2020/03/20 20:00:01
 categories:
 - 产品
@@ -96,4 +96,4 @@ Mixpanel 的名气在国内可能并不是特别大，如果不是做流量采�
 
 NEXT
 
-[闲谈流量统计（II）—— 采集| Why·Liam·Blog](https://blog.naaln.com/2020/03/data-analytic-2/)
+[闲谈流量统计（II）— 采集| Why·Liam·Blog](https://blog.naaln.com/2020/03/data-analytic-2/)
