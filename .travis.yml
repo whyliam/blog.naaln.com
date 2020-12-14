@@ -32,8 +32,8 @@ script:
 - git clone https://github.com/theme-next/theme-next-algolia-instant-search themes/next/source/lib/algolia-instant-search
 - git clone https://github.com/theme-next/theme-next-fancybox3 themes/next/source/lib/fancybox
 - hexo clean --config source/_data/next.yml
-- hexo generate --config source/_data/next.yml
 - hexo algolia --config source/_data/next.yml
 - hexo recommend --config source/_data/next.yml
+- hexo generate --config source/_data/next.yml
 after_success:
 - hexo deploy --config source/_data/next.yml
