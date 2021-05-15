@@ -1,12 +1,10 @@
-```yaml
+---
 layout: post
-title: 知识四个阶段：
+title: 知识四个阶段
 date: 2021/05/15 20:00:00
 categories:
 - 随笔tags:
-```
-
-
+---
 
 - 提高意识的质量，**找到最好的种子**：把每个信息点当做一颗种子，但注意区分他们的来源。寻找可信的信源而非在互联网上随意搜寻，比如和导师或者有经验的人谈话，而非不停地刷头条 —— 你应该拥有自己控制信息输入的权利，而非把它交给别人。
 
@@ -16,8 +14,4 @@ categories:
 
 - **生产和传播你自己的种子**，不断地重复你知道的东西。为了确保质量，我们应该和比较尊重的人讨论调查结果，获得反馈保证其完整性；并且通过教育的形式传播给他人。
 
-
-
-via: MoretoThan 《From Ignorance to Wisdom: A Framework for Knowledge[6]》 一文中他曾经提到，知识分为四个阶段：
-
-
+via: MoretoThan 《From Ignorance to Wisdom: A Framework for Knowledge[6]》 
