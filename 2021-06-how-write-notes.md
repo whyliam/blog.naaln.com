@@ -18,8 +18,6 @@ tags:
 
 ### 记笔记的标准化流程
 
-![](//pics.naaln.com/blog/2021-06-13-Screen%20Shot%202021-06-13%20at%2018.03.28.png-basicBlog)
-
 #### 1. 做短暂的笔记（Fleeting Notes）
 当出现一个新的想法时，简单地将你想表达的想法记录下来，并放到inbox（收集箱）里，稍后再处理他们。
 
