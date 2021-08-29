@@ -1,0 +1,50 @@
+# This workflow will do a clean install of node dependencies, cache/restore them, build the source code and run tests across different versions of node
+# For more information see: https://help.github.com/actions/language-and-framework-guides/using-nodejs-with-github-actions
+
+name: Update Blog
+
+on:
+  push:
+    branches: [ '*' ]
+  schedule:
+    - cron: '0 8 * * *'
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [14.x]
+        # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Use Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@v2
+      with:
+        node-version: ${{ matrix.node-version }}
+        cache: 'npm'
+    - uses: webfactory/ssh-agent@v0.5.3
+      with:
+        ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
+    
+    - run: npm install hexo-cli -g
+    - run: npm ci
+    - run: npm install hexo
+    
+    - run: git submodule update --init --recursive
+    - run: git submodule update --recursive --remote
+    - run: hexo clean --config source/_data/next.yml
+    - run: hexo algolia --config source/_data/next.yml
+      env:
+        HEXO_ALGOLIA_INDEXING_KEY: ${{ secrets.HEXO_ALGOLIA_INDEXING_KEY }}
+
+    - run: hexo recommend --config source/_data/next.yml
+    - run: hexo generate --config source/_data/next.yml
+
+    - run: hexo deploy --config source/_data/next.yml
+      env:
+        UPYUN_OPERATOR: ${{ secrets.UPYUN_OPERATOR }}
+        UPYUN_PASSWORD: ${{ secrets.UPYUN_PASSWORD }}

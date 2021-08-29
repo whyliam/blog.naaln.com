@@ -4,7 +4,6 @@ db.json
 .deploy_git/
 node_modules/
 public/
-package-lock.json
 source/_data/recommended_posts.json
 source/_posts/media/
 source/_posts/.MWebMetaData/

@@ -12,9 +12,8 @@ language: zh-CN
 timezone: Asia/Shanghai
 
 # URL
-## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
+## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
 url: https://blog.naaln.com
-root: /
 permalink: :year/:month/:title/
 permalink_defaults:
 pretty_urls:
@@ -51,6 +50,11 @@ highlight:
   tab_replace: ''
   wrap: true
   hljs: false
+prismjs:
+  enable: false
+  preprocess: true
+  line_number: true
+  tab_replace: ''
 
 # Home page setting
 # path: Root path for your blogs index page. (default = '')
@@ -80,8 +84,8 @@ meta_generator: true
 ## http://momentjs.com/docs/#/displaying/format/
 date_format: YYYY-MM-DD
 time_format: HH:mm:ss
-## Use post's date for updated date unless set in front-matter
-use_date_for_updated: false
+## updated_option supports 'mtime', 'date', 'empty'
+updated_option: 'mtime'
 
 # Pagination
 ## Set per_page to 0 to disable pagination
@@ -100,28 +104,22 @@ ignore:
 theme: next
 
 # Deployment
-## Docs: https://hexo.io/docs/deployment.html
-
-# deploy:
-# - type: git
-#   repo: git@git.coding.net:whyliam/blog.naaln.com.git
-#   branch: coding-pages
+## Docs: https://hexo.io/docs/one-command-deployment
 
 deploy:
   type: upyun
   bucket: naaln-blog
-  operator: 
-  password: 
+  operator:
+  password:
   try_times: 5
   ignore_path_re:
     dir: null
     file: '.DS_Store$'
 
 feed:
-  type:
-    - atom
-  path:
-    - atom.xml
+  enable: true
+  type: atom
+  path: atom.xml
   limit: 20
   hub:
   content:
@@ -415,11 +413,14 @@ post_meta:
 # Post wordcount display settings
 # Dependencies: https://github.com/theme-next/hexo-symbols-count-time
 symbols_count_time:
-  separated_meta: true
-  item_text_post: true
-  item_text_total: false
+  symbols: true
+  time: true
+  total_symbols: true
+  total_time: true
+  exclude_codeblock: false
   awl: 2
   wpm: 275
+  suffix: "mins."
 
 # Use icon instead of the symbol # to indicate the tag at the bottom of the post
 tag_icon: false
@@ -738,9 +739,9 @@ comments:
   style: tabs
   # Choose a comment system to be displayed by default.
   # Available values: changyan | disqus | disqusjs | gitalk | livere | valine
-  active: valine
+  active: changyan
   # Setting `true` means remembering the comment system selected by the visitor.
-  storage: true
+  storage: false
   # Lazyload all comment systems.
   lazyload: false
   # Modify texts or order for any navs, here are some examples.
@@ -774,15 +775,15 @@ disqusjs:
 
 # Changyan
 changyan:
-  enable: false
-  appid:
-  appkey:
+  enable: true
+  appid: cytklkKc0
+  appkey: d1a6d78736de330017499776521c058b
   #post_meta_order: 0
 
 # Valine
 # For more information: https://valine.js.org, https://github.com/xCss/Valine
 valine:
-  enable: true # When enable is set to be true, leancloud_visitors is recommended to be closed for the re-initialization problem within different leancloud adk version
+  enable: false # When enable is set to be true, leancloud_visitors is recommended to be closed for the re-initialization problem within different leancloud adk version
   appid: 5K8cYFA5q6OIHRrnmIE1llQl-gzGzoHsz
   appkey: ftQl8eaK2nOr2Bh8tnb1fPTU
   notify: false # Mail notifier. See: https://github.com/xCss/Valine/wiki
