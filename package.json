@@ -3,28 +3,29 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "build": "hexo generate --config source/_data/next.yml",
-    "clean": "hexo clean --config source/_data/next.yml",
-    "deploy": "hexo deploy --config source/_data/next.yml",
-    "server": "hexo server --config source/_data/next.yml"
+    "build": "hexo generate",
+    "clean": "hexo clean",
+    "deploy": "hexo deploy",
+    "server": "hexo server"
   },
   "hexo": {
     "version": "5.4.0"
   },
   "dependencies": {
-    "hexo": "^5.4.0",
+    "@waline/hexo-next": "^2.0.6",
+    "hexo": "^5.0.0",
     "hexo-algolia": "^1.3.2",
     "hexo-deployer-upyun": "https://github.com/whyliam/hexo-deployer-upyun.git",
+    "hexo-excerpt": "^1.2.1",
     "hexo-generator-archive": "^1.0.0",
     "hexo-generator-category": "^1.0.0",
-    "hexo-generator-feed": "^2.2.0",
+    "hexo-generator-feed": "^3.0.0",
     "hexo-generator-index": "^2.0.0",
     "hexo-generator-tag": "^1.0.0",
-    "hexo-recommended-posts": "^1.0.3",
     "hexo-renderer-ejs": "^1.0.0",
     "hexo-renderer-marked": "^4.0.0",
     "hexo-renderer-stylus": "^2.0.0",
     "hexo-server": "^2.0.0",
-    "hexo-symbols-count-time": "^0.7.1"
+    "hexo-theme-next": "^8.8.1"
   }
 }

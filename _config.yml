@@ -3,18 +3,18 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Hexo
-subtitle: ''
-description: ''
-keywords:
-author: John Doe
-language: en
-timezone: ''
+title: Why·Liam·Blog
+subtitle: 人生若如初見
+description: 人生若如初見
+keywords: 技术,技术,随笔,旅行
+author: WHY·LIAM
+language: zh-CN
+timezone: Asia/Shanghai
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
-url: http://example.com
-permalink: :year/:month/:day/:title/
+url: https://blog.naaln.com
+permalink: :year/:month/:title/
 permalink_defaults:
 pretty_urls:
   trailing_index: true # Set to false to remove trailing 'index.html' from permalinks
@@ -31,7 +31,7 @@ i18n_dir: :lang
 skip_render:
 
 # Writing
-new_post_name: :title.md # File name of new posts
+new_post_name: :year-:month-:title.md # File name of new posts
 default_layout: post
 titlecase: false # Transform title into titlecase
 external_link:
@@ -66,8 +66,12 @@ index_generator:
   order_by: -date
 
 # Category & Tag
-default_category: uncategorized
+default_category:  产品
 category_map:
+  产品: product
+  技术: technology
+  随笔: jottings
+  旅行: tour
 tag_map:
 
 # Metadata elements
@@ -93,13 +97,47 @@ pagination_dir: page
 include:
 exclude:
 ignore:
-
+  
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: landscape
+theme: next
 
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
+
 deploy:
-  type: ''
+  type: upyun
+  bucket: naaln-blog
+  operator: 
+  password: 
+  try_times: 5
+  ignore_path_re:
+    dir: null
+    file: '.DS_Store$'
+
+feed:
+  enable: true
+  type: atom
+  path: atom.xml
+  limit: 20
+  hub:
+  content:
+  content_limit: 140
+  content_limit_delim: ' '
+  order_by: -date
+  icon: icon.png
+  autodiscovery: true
+  template:
+
+algolia:
+  applicationID: 'WVAWDPSYBR'
+  apiKey: '004cb5884c6903947d25c8cb8ba4ab3b'
+  indexName: 'blog'
+  chunkSize: 5000
+
+excerpt:
+  depth: 4
+  excerpt_excludes: [h1,h2,h3,h4,h5,h6,img,table,ul,ol]
+  more_excludes: []
+  hideWholePostExcerpts: true
