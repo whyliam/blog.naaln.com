@@ -1,7 +1,6 @@
 # hexo robots.txt
 User-agent: *
 Allow: /
-Allow: /archives/
 
 Disallow: /vendors/
 Disallow: /js/
@@ -10,5 +9,4 @@ Disallow: /fonts/
 Disallow: /vendors/
 Disallow: /fancybox/
 
-Sitemap: http://blog.naaln.com/sitemap.xml
-Sitemap: http://blog.naaln.com/baidusitemap.xml
+Sitemap: https://blog.naaln.com/atom.xml

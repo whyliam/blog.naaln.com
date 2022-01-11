@@ -13,7 +13,7 @@
   },
   "dependencies": {
     "@waline/hexo-next": "^2.0.6",
-    "hexo": "^5.0.0",
+    "hexo": "^6.0.0",
     "hexo-algolia": "^1.3.2",
     "hexo-deployer-upyun": "https://github.com/whyliam/hexo-deployer-upyun.git",
     "hexo-excerpt": "^1.2.1",
@@ -26,6 +26,7 @@
     "hexo-renderer-marked": "^4.0.0",
     "hexo-renderer-stylus": "^2.0.0",
     "hexo-server": "^2.0.0",
+    "hexo-submit-urls-to-search-engine": "^2.1.0",
     "hexo-theme-next": "^8.8.1"
   }
 }
