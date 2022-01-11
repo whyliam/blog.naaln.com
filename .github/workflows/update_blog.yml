@@ -44,5 +44,7 @@ jobs:
     - run: hexo generate
     - run: hexo deploy
       env:
+        BAIDU_TOKEN: ${{ secrets.BAIDU_TOKEN }}
+        BING_TOKEN: ${{ secrets.BING_TOKEN }} 
         UPYUN_OPERATOR: ${{ secrets.UPYUN_OPERATOR }}
         UPYUN_PASSWORD: ${{ secrets.UPYUN_PASSWORD }}
