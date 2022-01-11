@@ -66,11 +66,12 @@ index_generator:
   order_by: -date
 
 # Category & Tag
-default_category:  产品
+default_category:  随笔
 category_map:
   产品: product
-  技术: technology
   随笔: jottings
+  经济: economic
+  技术: technology
   旅行: tour
 tag_map:
 
@@ -141,15 +142,27 @@ algolia:
 
 excerpt:
   depth: 4
-  excerpt_excludes: [h1,h2,h3,h4,h5,h6,img,table,ul,ol]
+  excerpt_excludes: [h1,h2,h3,h4,h5,h6,img,table,iframe]
   more_excludes: []
   hideWholePostExcerpts: true
+
+sitemap:
+  path: sitemap.xml
+  template:
+  rel: false
+  tags: true
+  categories: true
+
+baidusitemap:
+    url:    #[可选]自定义url，不指定则为站点url
+    path: baidusitemap.xml     # xml 访问路径
+    isAutoAdapt: true          # 是否生成自适配站点 xml（true 表示 PC+MOBILE），默认 false，表示仅 PC
 
 hexo_submit_urls_to_search_engine:
   submit_condition: count #链接被提交的条件，可选值：count | period 现仅支持count
   count: 10 # 提交最新的10个链接
   period: 900 # 提交修改时间在 900 秒内的链接
-  google: 1 # 是否向Google提交，可选值：1 | 0（0：否；1：是）
+  google: 0 # 是否向Google提交，可选值：1 | 0（0：否；1：是）
   bing: 1 # 是否向bing提交，可选值：1 | 0（0：否；1：是）
   baidu: 1 # 是否向baidu提交，可选值：1 | 0（0：否；1：是）
   txt_path: submit_urls.txt ## 文本文档名， 需要推送的链接会保存在此文本文档里

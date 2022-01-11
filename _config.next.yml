@@ -83,9 +83,10 @@ creative_commons:
 # External url should start with http:// or https://
 menu:
   home: / || fa fa-home
-  产品: /categories/product/ || fa fa-palette
-  技术: /categories/technology/ || fa fa-code
   随笔: /categories/jottings/ || fa fa-pencil-ruler
+  产品: /categories/product/ || fa fa-palette
+  经济: /categories/economic/ || fa fa-coins
+  技术: /categories/technology/ || fa fa-code
   旅游: /categories/tour/ || fa fa-globe
   #about: /about/ || fa fa-user
   #tags: /tags/ || fa fa-tags
