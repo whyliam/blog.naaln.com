@@ -2,7 +2,7 @@
 title: 欢迎来到全新的 App Store！
 categories:
   - 产品
-date: 2017-06-07 00:18:39
+date: 2017/06/07 00:18:39
 tags:
   - Apple
 ---

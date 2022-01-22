@@ -2,7 +2,7 @@
 title: Alfred 有道翻译简介
 categories:
   - 技术
-date: 2017-04-15 20:53:04
+date: 2017/04/15 20:53:04
 tags:
   - Alfred
 ---

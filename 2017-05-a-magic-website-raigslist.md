@@ -2,7 +2,7 @@
 title: 一个神奇的网站 - Craigslist
 categories:
   - 产品
-date: 2017-05-02 21:00:45
+date: 2017/05/02 21:00:45
 tags:
   - 产品
 ---

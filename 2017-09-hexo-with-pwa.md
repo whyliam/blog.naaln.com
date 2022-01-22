@@ -2,7 +2,7 @@
 title: 让PWA支持HEXO
 categories:
   - 技术
-date: 2017-09-11 20:34:56
+date: 2017/09/11 20:34:56
 tags:
   - hexo
 ---

@@ -30,7 +30,7 @@ tags:
    ---
    layout: post
    title: "Octopress博客技巧"
-   date: 2013-08-29 13:42
+   date: 2013/08/29 13:42
    comments: true
    categories: Octopress
    published: false

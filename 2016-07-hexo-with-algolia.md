@@ -1,6 +1,6 @@
 ---
 title: Hexo集成Algolia搜索插件
-date: 2016-07-04 13:25:43
+date: 2016/07/04 13:25:43
 tags:
 categories:
 - 技术

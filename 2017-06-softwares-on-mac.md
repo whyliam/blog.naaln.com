@@ -2,7 +2,7 @@
 title: 自己在用的mac软件及配置
 categories:
   - 技术
-date: 2017-06-28 19:50:47
+date: 2017/06/28 19:50:47
 tags:
   - mac
 ---
