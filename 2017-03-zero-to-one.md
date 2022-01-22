@@ -2,7 +2,7 @@
 title: Zero to One 到底说了什么
 categories:
   - 随笔
-date: 2017-03-05 19:49:18
+date: 2017/03/05 19:49:18
 tags:
 ---
 

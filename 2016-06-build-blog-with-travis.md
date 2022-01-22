@@ -1,6 +1,6 @@
 ---
 title: 使用 Travis CI 构建博客
-date: 2016-06-23 22:56:17
+date: 2016/06/23 22:56:17
 tags:
 categories:
 - 技术

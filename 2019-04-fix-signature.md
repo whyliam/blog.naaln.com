@@ -2,7 +2,7 @@
 title: 修复 signed with custom identity or adhoc
 categories:
   - 技术
-date: 2019-04-06 20:30:53
+date: 2019/04/06 20:30:53
 tags:
 ---
 

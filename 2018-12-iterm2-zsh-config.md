@@ -2,7 +2,7 @@
 title: 配置 iterm2
 categories:
   - 技术
-date: 2018-12-27 16:14:59
+date: 2018/12/27 16:14:59
 tags:
 ---
 

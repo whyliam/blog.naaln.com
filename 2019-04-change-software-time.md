@@ -2,7 +2,7 @@
 title: libfaketime 改变软件的运行时间
 categories:
   - 技术
-date: 2019-04-21 21:30:53
+date: 2019/04/21 21:30:53
 tags:
   - 破解
 ---

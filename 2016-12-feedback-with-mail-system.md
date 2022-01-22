@@ -1,6 +1,6 @@
 ---
 title: 用Swift写一个发送邮件的iOS用户反馈
-date: 2016-12-18 21:13:46
+date: 2016/12/18 21:13:46
 categories:
 - 技术
 tags:

@@ -2,7 +2,7 @@
 title: How To Be Successful | 如何成功
 categories:
   - 随笔
-date: 2019-02-11 10:01:53
+date: 2019/02/11 10:01:53
 tags:
 ---
 
