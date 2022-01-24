@@ -3,7 +3,7 @@ layout: post
 title: 数据产品经理的新思考
 date: 2020/03/13 20:00:00
 categories:
-- 随笔
+- 产品
 tags:
 - 
 ---

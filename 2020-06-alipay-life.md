@@ -3,7 +3,7 @@ layout: post
 title: 支付宝本地生活化的思考
 date: 2020/06/30 20:00:00
 categories:
-- 随笔
+- 产品
 tags:
 - 
 ---
