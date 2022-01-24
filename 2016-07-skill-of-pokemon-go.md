@@ -8,7 +8,7 @@ categories:
 
 消息来源主要是贴吧，Reddit，pokemon一个数据网站，以及我自己的一点经验。
 
-Reddit已经有人把游戏数据解包，解包结果：[https://gist.github.com/anonymous/077d6dea82d58b8febde54ae9729b1bf](https://gist.github.com/anonymous/077d6dea82d58b8febde54ae9729b1bf)
+Reddit 已经有人把游戏数据解包，解包结果：[https://gist.github.com/anonymous/077d6dea82d58b8febde54ae9729b1bf](https://gist.github.com/anonymous/077d6dea82d58b8febde54ae9729b1bf)
 
 贴吧翻译结果：[【重要消息】Reddit已经有人解包了游戏数据，一大波信息来袭_pokemongo吧](http://tieba.baidu.com/p/4674928820?see_lz=1)
 
@@ -54,9 +54,7 @@ Items {
 
 4.神兽的参数比非神兽多一个，之后可以确定目前来说，野外是抓不到神兽的了。
 
-```
 ![](http://pics.naaln.com/blog/2019-01-14-032440.jpg-basicBlog)
-```
 
 5.训练家最高等级LV.100
 
