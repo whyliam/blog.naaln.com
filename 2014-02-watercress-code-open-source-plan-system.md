@@ -30,7 +30,7 @@ CODE 的历史 CODE 的第一行代码开始于 2012 年 2 月 14 日，在豆�
 *   [linguist][3]
 *   [ellen][4]
 *   [gpack][5]
-*   [scanner][6] 今年 (2014) 2 月 14 日，CODE 也正式开源了。  
+*   [scanner][6] 今年 (2014) 2 月 14 日，CODE 也正式开源了。  
 
 **Staring 目前 CODE 仅开放了一个框架，支持：**
 
@@ -72,7 +72,7 @@ CODE 的历史 CODE 的第一行代码开始于 2012 年 2 月 14 日，在豆�
    touch {CODE_REPO}/code/local_config.py
 ```
 
-覆盖 `code/config.py` 默认设置
+覆盖 `code/config.py` 默认设置
 ```
    vim {CODE_REPO}/code/local_config.py
 ```
@@ -81,7 +81,7 @@ CODE 的历史 CODE 的第一行代码开始于 2012 年 2 月 14 日，在豆�
 
 ### FAQ
 
-1.  code.config.DOMAIN 是指的是程序运行的域名，包含IP地址和端口，例如: `http://127.0.0.1:8000/`
+1.  code.config.DOMAIN 是指的是程序运行的域名，包含IP地址和端口，例如: `http://127.0.0.1:8000/`
 
  [1]: http://douban-code.github.io/images/code-arch.svg
 

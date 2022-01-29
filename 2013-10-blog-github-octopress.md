@@ -11,7 +11,7 @@ tags:
 
 最近有些同学让我分享我的博客主题，其实主题早已经放在GitHub上了。下面索性基于[我Fork的Octopress][1]，讲一下如何使用Octopress在GitHub上建博客。 先来看看我的版本和原始版本的主要不同之处：
 
-**2012-04-13:** 允许单篇文章独立引用CSS和JS，具体文件内容变动见commit[0aa27bb][2]和 [05fcdbf][3]。
+**2012-04-13:** 允许单篇文章独立引用CSS和JS，具体文件内容变动见commit[0aa27bb][2]和 [05fcdbf][3]。
 
 1.  [.rvmrc][4] 改成使用我机子上装的Ruby版本（1.9.3），Octopress最低要求是1.9.2。
 
@@ -151,7 +151,7 @@ commit即可，无需push，因为我们重点是要新建
 
 当你看到「Github Pages deploy complete」后，就表示你大功已成。Enjoy!
 
-**Tips：** Octopress提供的所有`rake`方法，可以运行`rake -T`查看。
+**Tips：** Octopress提供的所有`rake`方法，可以运行`rake -T`查看。
 
 ## Step8 - 备份
 

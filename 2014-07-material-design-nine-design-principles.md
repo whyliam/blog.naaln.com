@@ -51,13 +51,13 @@ tags:
 
 ![](http://pics.naaln.com/blog/2019-05-14-123121.jpg-basicBlog)
 
-#### 7.   用户发起变化
+#### 7.   用户发起变化
 
 操作界面中的变化来自于用户行为。用户触摸操作产生的效果要反应和强化用户的作用。
 
 ![](http://pics.naaln.com/blog/2019-05-14-123122.jpg-basicBlog)
 
-#### 8.   动画效果要在统一的
+#### 8.   动画效果要在统一的
 
 所有动画效果都在统一的环境下显示。即使发生了变形或是重组，对对象的呈现也不能破坏用户体验的连续性。
 
@@ -67,4 +67,4 @@ tags:
 
 动作是有意义的，而且是恰当的，动作有助于集中注意力和保持连续性。反馈是非常微妙和清晰的，而转换不仅要有效率，也要保持一致性。
 
-VIA  [TNW](http://thenextweb.com/google/2014/06/26/google-explains-principles-material-design-language-android-chrome-web/)
+VIA  [TNW](http://thenextweb.com/google/2014/06/26/google-explains-principles-material-design-language-android-chrome-web/)

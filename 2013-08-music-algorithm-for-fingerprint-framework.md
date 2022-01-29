@@ -12,7 +12,7 @@ tags:
 
 ## Shazam
 
-[Shazam-android](https://play.google.com/store/apps/details?id=com.shazam.android&feature=search_result#?t=W251bGwsMSwxLDEsImNvbS5zaGF6YW0uYW5kcm9pZCJd) | [Shazam-iOS](https://itunes.apple.com/cn/app/shazam/id284993459?l=en&mt=8) Shazam这个服务虽然是闭源的，但是有[论文](http://111.13.109.34:82/1Q2W3E4R5T6Y7U8I9O0P1Z2X3C4V5B/www.ee.columbia.edu/~dpwe/papers/Wang03-shazam.pdf)
+[Shazam-android](https://play.google.com/store/apps/details?id=com.shazam.android&feature=search_result#?t=W251bGwsMSwxLDEsImNvbS5zaGF6YW0uYW5kcm9pZCJd) | [Shazam-iOS](https://itunes.apple.com/cn/app/shazam/id284993459?l=en&mt=8) Shazam这个服务虽然是闭源的，但是有[论文](http://111.13.109.34:82/1Q2W3E4R5T6Y7U8I9O0P1Z2X3C4V5B/www.ee.columbia.edu/~dpwe/papers/Wang03-shazam.pdf)
 
 ### 指纹生成:
 

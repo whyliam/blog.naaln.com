@@ -12,7 +12,7 @@ tags:
 
 说起Apache Lucene,可以说无人不知，无人不晓，但是说道Apache Solr,恐怕知道的不多。看看Apache Solr的说明：
 
-Solr是一个基于Lucene java库的`企业级搜索服务器`，包含XML/HTTP，JSON API, 高亮查询结果，faceted search(不知道该如何翻译，片段式搜索)，`缓存`，复制还有一个WEB管理界面。`Solr运行在Servlet容器中`。所以Solr和Lucene的本质区别有以下三点：搜索服务器，企业级和管理。Lucene本质上是搜索库，不是独立的应用程序，而Solr是。Lucene专注于搜索底层的建设，而Solr专注于企业应用。Lucene不负责支撑搜索服务所必须的管理，而Solr负责。所以说，一句话概括Solr: `Solr是Lucene面向企业搜索应用的扩展`。
+Solr是一个基于Lucene java库的`企业级搜索服务器`，包含XML/HTTP，JSON API, 高亮查询结果，faceted search(不知道该如何翻译，片段式搜索)，`缓存`，复制还有一个WEB管理界面。`Solr运行在Servlet容器中`。所以Solr和Lucene的本质区别有以下三点：搜索服务器，企业级和管理。Lucene本质上是搜索库，不是独立的应用程序，而Solr是。Lucene专注于搜索底层的建设，而Solr专注于企业应用。Lucene不负责支撑搜索服务所必须的管理，而Solr负责。所以说，一句话概括Solr: `Solr是Lucene面向企业搜索应用的扩展`。
 
 在本篇文章中，我们先看看Solr向我们承诺了什么，或者说Solr宣称的特性们。
 

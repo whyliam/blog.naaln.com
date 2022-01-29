@@ -99,7 +99,7 @@ Vimeo大概是美国除了Youtube外的第二大视频分享网站。
 
 公司地点：555 w 18th Street 
 
-招聘网址：<http://vimeo.com/jobs> From：[http://www.codetocareer.com/blog/544eaa97d764e537e7b8e6bd][2]  
+招聘网址：<http://vimeo.com/jobs> From：[http://www.codetocareer.com/blog/544eaa97d764e537e7b8e6bd][2]  
 
 from:[http://blog.codetocareer.com/nyc-it-company/][3]
 

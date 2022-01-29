@@ -3,7 +3,7 @@ layout: post
 title: 2021美股小结
 date: 2022/01/22 20:00:00
 categories:
-- 随笔
+- 经济
 tags:
 - 股票
 ---

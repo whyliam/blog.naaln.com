@@ -33,9 +33,9 @@ tags:
 
 ## 服务 Echoprint
 
-服务器可以通过Echoprint代码插入或者查询百万个音轨来匹配歌曲。它是基于[Apache Solr](http://lucene.apache.org/solr/)，并且也可以使用[Tokyo Tyrant](http://fallabs.com/tokyotyrant/)，一个快速的key-value存储模式。
+服务器可以通过Echoprint代码插入或者查询百万个音轨来匹配歌曲。它是基于[Apache Solr](http://lucene.apache.org/solr/)，并且也可以使用[Tokyo Tyrant](http://fallabs.com/tokyotyrant/)，一个快速的key-value存储模式。
 
-Echoprint的服务器代码（Python的粘合和匹配的代码以及Solr的扩展）是根据Apache2.0许可。Solr 和Tokyo Tyrant 是单独授权的 (分别为Apache 和 LGPL 。) 该服务器还包括bigeval，用于评估指纹识别的准确性。 需要注意的是在正常使用中，你不需要引导Echoprint服务器。只要你的Echoprint服务器已经启动，就可以使用[Echo Nest ](http://developer.echonest.com/docs/v4/song.html#identify)歌曲/识别。随着时间的推移，别人也将可以使用服务器的镜像Echoprint数据。
+Echoprint的服务器代码（Python的粘合和匹配的代码以及Solr的扩展）是根据Apache2.0许可。Solr 和Tokyo Tyrant 是单独授权的 (分别为Apache 和 LGPL 。) 该服务器还包括bigeval，用于评估指纹识别的准确性。 需要注意的是在正常使用中，你不需要引导Echoprint服务器。只要你的Echoprint服务器已经启动，就可以使用[Echo Nest ](http://developer.echonest.com/docs/v4/song.html#identify)歌曲/识别。随着时间的推移，别人也将可以使用服务器的镜像Echoprint数据。
 
 Visit the echoprint-server GitHub page for the source and installation instructions.
 
