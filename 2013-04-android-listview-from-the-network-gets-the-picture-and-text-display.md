@@ -436,7 +436,7 @@ public class Utils {
 }
 ```
 
-还可以像下面这样表达，方法是一样的，就是表达形式上不同：  
+还可以像下面这样表达，方法是一样的，就是表达形式上不同：  
 
 ```
 public static byte[] readStream(InputStream inStream) throws Exception{
@@ -528,7 +528,7 @@ public class CustomizedListView extends Activity {
 
 ![请输入图片描述][4]
 
-reference： [请输入链接描述][5]
+reference： [请输入链接描述][5]
 
  [1]: http://img.my.csdn.net/uploads/201211/27/1353984236_2983.png
 

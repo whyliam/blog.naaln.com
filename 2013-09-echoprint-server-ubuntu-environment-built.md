@@ -47,7 +47,7 @@ tags:
 
 建立一个java目录，`sudo mkdir /usr/local/java`
 
-把bin文件放进来，转到bin文件所在目录，执行命令 `sudo cp <文件名> /usr/local/java`
+把bin文件放进来，转到bin文件所在目录，执行命令 `sudo cp <文件名> /usr/local/java`
 
 接着修改bin文件的权限 `sudo chmod 777 <文件名>`
 
@@ -109,7 +109,7 @@ tags:
 
 	cd tokyotyrant-1.4.41
 
-	sudo ./configure <wbr></wbr>
+	sudo ./configure <wbr></wbr>
 
 	make
 
@@ -159,7 +159,7 @@ tags:
 
 如果启动ttserver碰到这样的出错信息:
 
-	error while loading shared libraries:libtokyocabinet.so.8: cannot open share object file:No such file or dirctory. <wbr></wbr>
+	error while loading shared libraries:libtokyocabinet.so.8: cannot open share object file:No such file or dirctory. <wbr></wbr>
 
 使用如下命令来修复错误：
 
@@ -199,5 +199,5 @@ tags:
 
 现在服务器就算是搭起来了，但是要获得在windows下的建库和查询，就要在ubuntu下编译codegen，并在ubuntu下进行指纹匹配的工作，这些在后面会继续介绍。
 
-ref: [http://blog.sina.com.cn/s/blog_7985987f01019eik.html](http://blog.sina.com.cn/s/blog_7985987f01019eik.html)
+ref: [http://blog.sina.com.cn/s/blog_7985987f01019eik.html](http://blog.sina.com.cn/s/blog_7985987f01019eik.html)
 

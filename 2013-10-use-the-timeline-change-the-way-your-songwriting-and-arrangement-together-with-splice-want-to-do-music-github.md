@@ -23,7 +23,7 @@ tags:
 
 Splice预计会以免费增值模式运营，会在高级功能上对用户进行收费。此外，Splice在商业模式上还打算帮助音乐人做音乐的分发，并通过分成的形式赚钱。
 
-到目前为止，这家创业公司已经筹到了275万美元的种子投资，融资方包括领投的Union<a href="http://news.zol.com.cn/tech/square/" data-rel="277">Square</a> Ventures，参与的True Ventures、Lerer Ventures、SV Angel、First Round Capital、Code Advisors, 以及有音乐背景的个人投资。Splice的初创团队包括了GroupMe的联合创始人Steve Martocci，曾在LivingSocial、Sony PlayStation工作，有音乐领域工作经验的Matt Aimonetti。
+到目前为止，这家创业公司已经筹到了275万美元的种子投资，融资方包括领投的Union<a href="http://news.zol.com.cn/tech/square/" data-rel="277">Square</a> Ventures，参与的True Ventures、Lerer Ventures、SV Angel、First Round Capital、Code Advisors, 以及有音乐背景的个人投资。Splice的初创团队包括了GroupMe的联合创始人Steve Martocci，曾在LivingSocial、Sony PlayStation工作，有音乐领域工作经验的Matt Aimonetti。
 
 在我看来，Splice给我的思路，包括Github的扩展性和善用时间轴。善用时间除了让每个版本都有迹可循，还可能带来另一个产业——历史版本与现有版本的比对所催生出的数据挖掘，或对时间轴各版本的综合数据挖掘，这在健康、测谎上已经有很多案例了。如果Splice能做到第一点，编曲教学就有可能做到。最近我报道的极智批改，就是利用了这两点，做到作文批改后有错误、亮点的数据统计，并能够在几次的作文批改后提供个性的「提分建议」，总结错误根源，并推送适合的题目。
 

@@ -102,7 +102,7 @@ Octopress的安装不同于WordPress，WordPress是安装到服务器上面的�
 
 更多的如何编辑文档，请参阅：[http://octopress.org/docs/][7]
 
-在Mac下，Markdown编辑器推荐一款国产的小软件：Mou [http://mouapp.com/][8]
+在Mac下，Markdown编辑器推荐一款国产的小软件：Mou [http://mouapp.com/][8]
 
 当你把Markdown文档编辑好以后再运行rake generate和rake deploy发布到GitHub上面
 

@@ -18,12 +18,12 @@ https://www.google.com/ncr
 
 > 虽然没有研究过，但是从目前的症状来看，GFW 在屏蔽关键字的时候使用了 DNS 挟持。 也就是说，只要手动修改 HOSTS 文件即可达到不被屏蔽的效果。
 
-更改hosts。推荐云hosts( [https://code.google.com/p/smarthosts](https://code.google.com/p/smarthosts)) 注意改好后刷新DNS缓存——运行：ipconfig /flushdns 偶的hosts自己ping的美国的ip，总感觉在北京的服务器也不踏实
+更改hosts。推荐云hosts( [https://code.google.com/p/smarthosts](https://code.google.com/p/smarthosts)) 注意改好后刷新DNS缓存——运行：ipconfig /flushdns 偶的hosts自己ping的美国的ip，总感觉在北京的服务器也不踏实
 
 记得当初寻找，记录，筛选这些ip费了一天的事
 
 ```
-dns 8.8.8.8 
+dns 8.8.8.8 
 8.8.4.4
 ```
 
@@ -34,9 +34,9 @@ dns 8.8.8.8 
 修改默认的搜索引擎，都是ssl的，登陆谷歌账户的话默认都是ssl
 
 ```
-台湾的     https://www.google.com.tw/search?hl=zh- CN&q=%s
-国产       https://www.google.com/search?hl=zh-CN&q=%s
-hk        https: //www.google.com.hk/search?hl=zh-CN&q=%s
+台湾的     https://www.google.com.tw/search?hl=zh- CN&q=%s
+国产       https://www.google.com/search?hl=zh-CN&q=%s
+hk        https: //www.google.com.hk/search?hl=zh-CN&q=%s
 ```
 
 [http://www.googlestable.com/](http://www.googlestable.com/) [https://encrypted.google.com/search?q=%s](https://encrypted.google.com/search?q=%25s) 这两个搜索串哪个好呢，太多了，对比不出来了 Quote:
@@ -45,11 +45,11 @@ hk        https: //www.google.com.hk/search?hl=zh-CN&q=%s
 
 奶奶的名字不错，谷歌病了，还谷歌sb呢 [https://www.google.com.sb/](https://www.google.com.sb/) Quote:
 
-> 谷歌加密搜索（Google SSL） [https://www.google.com](https://www.google.com) 即将切换到新的域名 https://encrypted.google.com/， 使用SSL搜索前还是老规矩，需要先打开 [http://www.google.com/ncr](http://www.google.com/ncr) 禁用本地跳转后再尝试访问。 这次更改SSL搜索域名主要原因是由于一些学校机构反应自身的过滤引擎不能过滤一些关键字，而作出的调整。话说回来，墙其实还是无处不在的。
+> 谷歌加密搜索（Google SSL） [https://www.google.com](https://www.google.com) 即将切换到新的域名 https://encrypted.google.com/， 使用SSL搜索前还是老规矩，需要先打开 [http://www.google.com/ncr](http://www.google.com/ncr) 禁用本地跳转后再尝试访问。 这次更改SSL搜索域名主要原因是由于一些学校机构反应自身的过滤引擎不能过滤一些关键字，而作出的调整。话说回来，墙其实还是无处不在的。
 
-这个搜索串貌似需要对应的hosts gfw又不敢封了 https://www.google.com/，这样还会连累不带ssl的谷歌的部分业务，天朝这么光明，不会这么干的…… Quote:
+这个搜索串貌似需要对应的hosts gfw又不敢封了 https://www.google.com/，这样还会连累不带ssl的谷歌的部分业务，天朝这么光明，不会这么干的…… Quote:
 
-> 昨天，伟大的GFW和谐掉了encrypted.google.com，于是乎，众多同学发现 https://www.google.com可以打开，但是搜索任何内容都挂掉。。。 encrypted.google.com被和谐并非偶然，party早就想办掉https的google了，它知道的太多了，但是一直没办法，因为和谐 https://www.google.com的话， http://www.google.com也会被和谐掉，因为它们的域名相同，只有协议不太一样，一向重视形象，一向表面很光辉伟大、内心阴冷狭隘的party自然不可能和谐 www.google.com 后来，过去了很长一段时间， https://www.google.com相安无事，google很傻很天真的以为会一直没事下去，于是把加密搜索转向了一个独立的子域名encrypted.google.com，但是在这个天真被狗欺的社会，它真的被狗欺了。。。于是乎就有了昨天下午能打开 https://www.google.com但是不能搜索的一幕。。。
+> 昨天，伟大的GFW和谐掉了encrypted.google.com，于是乎，众多同学发现 https://www.google.com可以打开，但是搜索任何内容都挂掉。。。 encrypted.google.com被和谐并非偶然，party早就想办掉https的google了，它知道的太多了，但是一直没办法，因为和谐 https://www.google.com的话， http://www.google.com也会被和谐掉，因为它们的域名相同，只有协议不太一样，一向重视形象，一向表面很光辉伟大、内心阴冷狭隘的party自然不可能和谐 www.google.com 后来，过去了很长一段时间， https://www.google.com相安无事，google很傻很天真的以为会一直没事下去，于是把加密搜索转向了一个独立的子域名encrypted.google.com，但是在这个天真被狗欺的社会，它真的被狗欺了。。。于是乎就有了昨天下午能打开 https://www.google.com但是不能搜索的一幕。。。
 
 到底选择啥搜索串呢
 

@@ -12,7 +12,7 @@ pcDuino是一种高性能，高性价比的迷你PC的平台，能够运行PC操
 
 ![](http://pics.naaln.com/blog/2019-05-14-123347.jpg-basicBlog)
 
-其实本人也不是很熟悉LINUX环境，不过对于嵌入式ARM上跑嵌入式系统很感兴趣，所以打算正好乘这个机会恶补一下，本来看中的是UK学生设计的那款树莓派，不过看到PcDuino更优异的性能还是毅然选择了它。 刚入手就遇到了问题，没有显示器，怎么操作PcDuino呢？ 卖家告诉我VNC，可是试了很多遍总是connection refused,断定VNC服务压根就没有启动。 于是在LINUX环境下ssh连接：  
+其实本人也不是很熟悉LINUX环境，不过对于嵌入式ARM上跑嵌入式系统很感兴趣，所以打算正好乘这个机会恶补一下，本来看中的是UK学生设计的那款树莓派，不过看到PcDuino更优异的性能还是毅然选择了它。 刚入手就遇到了问题，没有显示器，怎么操作PcDuino呢？ 卖家告诉我VNC，可是试了很多遍总是connection refused,断定VNC服务压根就没有启动。 于是在LINUX环境下ssh连接：  
 ```
    ssh -l ubuntu x.x.x.x
 ```

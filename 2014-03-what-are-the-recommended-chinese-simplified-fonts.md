@@ -24,7 +24,7 @@ tags:
 
 4. 方正苏新诗柳楷简体
 
-![](http://pics.naaln.com/blog/2019-01-14-061940.jpg-basicBlog)  
+![](http://pics.naaln.com/blog/2019-01-14-061940.jpg-basicBlog)  
 
 ## 柔美型：
 
@@ -68,7 +68,7 @@ tags:
 
 2. 方正兰亭刊宋
 
-![](http://pics.naaln.com/blog/2019-01-14-061951.jpg-basicBlog)  
+![](http://pics.naaln.com/blog/2019-01-14-061951.jpg-basicBlog)  
 
 via：[http://www.zhihu.com/question/20727176#answer-4194549][1]
 
