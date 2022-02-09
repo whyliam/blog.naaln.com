@@ -25,7 +25,7 @@ tags:
 
 *   后来你觉得B1和C2方案中都有可取的地方，把它们融合一下就可以输出终稿了，Git里当然也支持这种分支合并（Merged）。
 
-<img src="http://img.ui.cn/data/file/0/6/1/79160.png?imageView2/2/q/90" data-image-src="http://img.ui.cn/data/file/0/6/1/79160.png?imageView2/2/q/90" />
+<img src="https://pics.naaln.com/blog/2022-02-08-e8e731.png-basicBlog" data-image-src="http://img.ui.cn/data/file/0/6/1/79160.png?imageView2/2/q/90" />
 
 当你个人使用Git，涉及的基本概念就这么几条，是不非常简单呢。下面我们来看看多人协同，也就是Git真正厉害的地方，当然也不复杂。
 
@@ -35,7 +35,7 @@ tags:
 
 *   开源的项目是任何人都可见，你可以Fork一个项目，这相当于在你的账号下从原项目新建了一个分支，你可以在此基础上改动，如果有希望提交给原作者的成果，可以发合并申请到原库（Pull Request），原作者可以看到通知并决定是否合并。通过这种方式，大家就可以合力将某个开源项目变得更好。
 
-<img src="http://img.ui.cn/data/file/5/6/1/79165.png?imageView2/2/w/900/q/90" data-image-src="http://img.ui.cn/data/file/5/6/1/79165.png?imageView2/2/w/900/q/90" />
+<img src="https://pics.naaln.com/blog/2022-02-08-3f7c2c.png-basicBlog" data-image-src="http://img.ui.cn/data/file/5/6/1/79165.png?imageView2/2/w/900/q/90" />
 
 最后我们还得明确一下概念，Git和GitHub有什么区别，引用知乎上[Fluyy][1]的解释「git是一个版本控制工具，github是一个用git做版本控制的项目托管平台。」这有点类似于Wordpress和Wordpress.com的关系，前者是一个任何有都可以用的免费博客系统，后者是一个平台，在这个平台上你可以通过注册来直接使用Wordpress写博客。
 

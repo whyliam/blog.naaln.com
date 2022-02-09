@@ -68,7 +68,7 @@ tags:
 
 3、朋友圈更加脆弱，更加容易重塑圈子
 
-![](https://n.sinaimg.cn/spider20190505/384/w613h1371/20190505/p6fi-hwfpcxp1087398.png)
+![](https://pics.naaln.com/blog/2022-02-08-62e39b.png-basicBlog)
 
 在大部分用户出走到微信后，00 后成为了 QQ 的主要用户群。
 

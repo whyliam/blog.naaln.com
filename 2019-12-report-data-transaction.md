@@ -34,7 +34,7 @@ tags:
 
 贵阳大数据交易所数据显示，2015 年全球大数据产业规模达到了 1403 亿美元，预计到 2020 年，这一数据将达到 10270 亿美元。
 
-![](http://ww1.sinaimg.cn/large/006tNc79ly1g50qqwaovej30sz0l7b29.jpg)
+![](https://pics.naaln.com/blog/2022-02-08-9bc770.jpg-basicBlog)
 
 #### 2.1 数据源
 
@@ -56,7 +56,7 @@ tags:
 
 #### 2.5 中国数据细分市场占比
 
-![](http://ww4.sinaimg.cn/large/006tNc79ly1g4wtlq9wzlj30wk0im0zu.jpg)
+![](https://pics.naaln.com/blog/2022-02-08-04614e.jpg-basicBlog)
 
 数据交易市场市场的规模占到整个大数据产业4%的规模。
 
@@ -106,7 +106,7 @@ tags:
 
 数据交易平台是数据交易行为的重要载体，可以促进数据资源整合、规范交易行为、降低交易成本、增强数据流动性，成为当前各地促进数据要素流通的主要举措之一。
 
-![](http://ww1.sinaimg.cn/large/006tNc79ly1g4wte37s99j30ua0u0wtf.jpg)
+![](https://pics.naaln.com/blog/2022-02-08-cdfb69.jpg-basicBlog)
 
 Twitter 将自身数据授权给公司 Gnip、DataSift 和 NTT DATA 进行售卖；Acxiom 等公司通过各种手段收集、汇聚关于企业和个人的信息；Sermo.com 和 Inrix 等公司则通过网络和传感器直接从公众采集数据，获得了传统上单个企业难以采集的海量、实时数据。
 
@@ -149,7 +149,7 @@ Twitter 将自身数据授权给公司 Gnip、DataSift 和 NTT DATA 进行售卖
 
 ## 四、数据交易价值链
 
-![](http://ww4.sinaimg.cn/large/006tNc79ly1g4ww3u5b1nj30yp0u0dmt.jpg)
+![](https://pics.naaln.com/blog/2022-02-08-1fcaf3.jpg-basicBlog)
 
 用户个人会使用个人信息换取使用上的便利或者金钱、积分上的奖励。如主动或被动的使用地理问题、消费习惯等换取在淘宝的购买便利性。各大数据应用也希望获取用户信息，对用户进行精准营销，或丰富应用内容。
 
@@ -175,7 +175,7 @@ Twitter 将自身数据授权给公司 Gnip、DataSift 和 NTT DATA 进行售卖
 
 交易平台主要有三种交易模型，即政府主导的、企业以市场需求为导向建立的以及产业联盟性质的大数据交易平台，其中产业联盟性质的大数据交易平台(中关村大数据产业联盟、中国大数据产业联盟、上海大数据产业联盟)，侧重于数据的共享，而不是数据的交易。
 
-![](https://pic1.zhimg.com/80/v2-4404551914084106e6224be7a9034730_hd.jpg)
+![](https://pics.naaln.com/blog/2022-02-08-b5c3f0.jpg-basicBlog)
 
 国内互联网企业由于在拥有了海量的用户数据之后开始着手开展各类分析工作，用以支撑自身的电子商务、定向广告和影视娱乐等业务。同时，在互联网产业 O2O 的趋势下，互联网企业逐渐将业务延伸到金融、保险、旅游、健康、教育、交通服务等多个行业领域，极大丰富了数据来源，促进了分析技术的发展，扩展了大数据分析在诸多行业的应用。企业为主导的大数据交易平台多为企业独资或合资运营，以阿里云、京东万象、浪潮天元数据、数据堂为代表，约占82%；
 
@@ -187,7 +187,7 @@ Twitter 将自身数据授权给公司 Gnip、DataSift 和 NTT DATA 进行售卖
 
 ### 4. 国内数据交易平台内容分布
 
-![](https://pic1.zhimg.com/80/v2-e806fe292fd8ca41bca656f7c701aef0_hd.jpg)
+![](https://pics.naaln.com/blog/2022-02-08-0a9618.jpg-basicBlog)
 
 国内目前数据交易业务涉及的行业主要为金融征信、交通地理、移动通讯、企业管理及医疗数据等，这与国内大数据企业主要业务方向基本一致，其中金融征信及企业管理数据交易近两年增长迅速。随着人工智能人脸识别相关产业的迅猛发展，2017年下半年衍生出了大量的相关数据需求。随着数据交易市场的逐渐完善，中小创业者的涌入，生活服务及应用开发的数据需求增长也较为明显。
 
@@ -199,17 +199,17 @@ Twitter 将自身数据授权给公司 Gnip、DataSift 和 NTT DATA 进行售卖
 
 大数据交易最大的应用前景在传统产业。这不仅是由于几乎所有传统产业都在互联网化，更是因为传统产业仍然占据了国内生产总值的绝大部分份额。大数据交易会帮助这些传统产业更快地完成转型升级，进而通过大数据的融合的调度推动智慧城市的建设。
 
-![](http://www.199it.com/wp-content/uploads/2015/09/2252250225)
+![](https://pics.naaln.com/blog/2022-02-08-fc495d.jpeg-basicBlog)
 
 ### 5. 国内数据交易平台盈利模式
 
-![](https://pic3.zhimg.com/80/v2-6e7def15f6d6f1609ea4b48c3e5e84f2_hd.jpg)
+![](https://pics.naaln.com/blog/2022-02-08-304c67.jpg-basicBlog)
 
 由于数据权属的问题，政府数据是不能用来交易的。政府的数据是全体公民的贡献，因此政府无权将其出售，从而获取商业报酬。政府数据本身是免费的，数据公司跟地方政府合作，对政府提供的免费数据“原料”进行加工，以便更好地向需求方提供数据。而加工过程的成本，可能成为未来大数据交易的费用。
 
 大数据交易平台主要盈利模式为提供平台服务、撮合交易收取佣金、销售自有数据、提供增值服务等。目前，虽然大数据交易市场的规模逐渐增大，但大部分平台仍处于推广阶段，收取平台费用及交易佣金的平台相对较少，整体交易行业营收偏低。
 
-![](http://ww4.sinaimg.cn/large/006tNc79ly1g4x5mkszvrj30fm08mwew.jpg)
+![](https://pics.naaln.com/blog/2022-02-08-fe87a5.jpg-basicBlog)
 
 已京东为例大部分数据接口在 0.01 元以下，但是高附加价值的接口（如蜜罐数据）可以销售到 3 元，单接口的销售额可到 300 万元。粗略的计算一下，京东上线至今的销售额不到1500万。
 
@@ -217,9 +217,9 @@ Twitter 将自身数据授权给公司 Gnip、DataSift 和 NTT DATA 进行售卖
 
 ###  6. 数据交易平台比较
 
-![](http://ww3.sinaimg.cn/large/006tNc79ly1g4tla09j8mj31a30o1dto.jpg)
-![](http://ww4.sinaimg.cn/large/006tNc79ly1g4tlb4ywimj31a50kmn8t.jpg)
-![](http://ww4.sinaimg.cn/large/006tNc79ly1g4tlcii3ncj31a40ld7l5.jpg)
+![](https://pics.naaln.com/blog/2022-02-08-5ad299.jpg-basicBlog)
+![](https://pics.naaln.com/blog/2022-02-08-3be15d.jpg-basicBlog)
+![](https://pics.naaln.com/blog/2022-02-08-d95aa5.jpg-basicBlog)
 
 ---
 

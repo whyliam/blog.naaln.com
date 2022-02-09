@@ -4,7 +4,7 @@ categories:
   - 技术
 date: 2017/09/11 20:34:56
 tags:
-  - hexo
+  - Hexo
 ---
 
 先说一下说明是PWA，

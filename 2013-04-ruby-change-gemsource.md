@@ -5,7 +5,7 @@ date: 2013/04/03 20:00:00
 categories:
 - 技术
 tags:
-- ruby
+- Ruby
 ---
 
 **为什么有这个？**

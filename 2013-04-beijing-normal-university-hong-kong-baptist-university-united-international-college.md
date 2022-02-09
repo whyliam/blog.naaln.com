@@ -5,7 +5,7 @@ date: 2013/04/13 09:30:00
 categories:
 - 随笔
 tags:
-- uic
+- UIC
 ---
 
 UIC（United International College)是对我们学校的简称。

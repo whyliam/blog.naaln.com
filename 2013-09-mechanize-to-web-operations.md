@@ -5,7 +5,7 @@ date: 2013/09/10 20:14:00
 categories:
 - 技术
 tags:
-- mechanize
+- Mechanize
 ---
 
 与网页交互(Interacting With a Web Page)

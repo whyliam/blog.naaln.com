@@ -5,7 +5,7 @@ date: 2013/09/12 21:49:00
 categories:
 - 技术
 tags:
-- google
+- Google
 ---
 
 gae不用多说了，wall也行，反正全天开着

@@ -5,7 +5,7 @@ date: 2013/05/18 00:31:00
 categories:
 - 技术
 tags:
-- opengl
+- OpenGL
 ---
 
 GLUT工具箱提供几种图形3维图形的函数：

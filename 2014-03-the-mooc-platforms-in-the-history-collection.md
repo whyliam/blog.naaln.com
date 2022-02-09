@@ -5,7 +5,7 @@ date: 2014/03/05 06:12:00
 categories:
 - 技术
 tags:
-- mooc
+- MOOC
 ---
 
 ![][1]

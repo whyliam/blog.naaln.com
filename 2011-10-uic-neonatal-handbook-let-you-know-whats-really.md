@@ -5,7 +5,7 @@ date: 2011/10/30 20:00:00
 categories:
 - 随笔
 tags:
-- uic
+- UIC
 ---
 
 1.  什么是UIC？

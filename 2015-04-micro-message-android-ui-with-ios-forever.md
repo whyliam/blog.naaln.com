@@ -5,7 +5,7 @@ date: 2015/04/21 21:57:00
 categories:
 - 产品
 tags:
-- android
+- Android
 ---
 
 首先我们要承认微信安卓版并没有自己的一套UI。腾讯会优先在iOS上先做新功能，做的过程中会有很多的UI上的反复修改，很耗时。而android版本只需要移植，使得跟进速度非常快。
@@ -18,7 +18,7 @@ tags:
 
 我们来看一下Android版微信5.2。主界面去除了底部的Tab Bar，在顶部则使用了Action Bar，并用Tab Host来组织内部界面。用户通过手势滑动可以轻松来回切换「聊天」、「发现」、「通讯录」这几个高频功能界面。
 
-![请输入图片描述][1]
+![](https://pics.naaln.com/blog/2022-02-08-984c7d.png-basicBlog-basicBlog)
 
 但是在个引起了一大波用户的差评：
 
@@ -28,10 +28,7 @@ tags:
 
 不知道这是不是你心中的 `微信`
 
-![请输入图片描述][3]
+![](https://pics.naaln.com/blog/2022-02-08-5d5ac9.png-basicBlog)
 
- [1]: http://pic1.zhimg.com/fa7953309a81dd5bb07f51ca3feaf330_b.jpg
+[2]: http://www.phonekr.com/blame-yourselves-for-poor-ratings/
 
- [2]: http://www.phonekr.com/blame-yourselves-for-poor-ratings/
-
- [3]: http://pic3.zhimg.com/0172708847365fe32b3ca4adf5dde53a_b.jpg

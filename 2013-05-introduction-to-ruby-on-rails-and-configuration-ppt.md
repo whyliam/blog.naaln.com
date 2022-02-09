@@ -5,7 +5,7 @@ date: 2013/05/19 08:20:00
 categories:
 - 技术
 tags:
-- rails
+- Rails
 ---
 
 ##一、 Ruby on Rails介绍

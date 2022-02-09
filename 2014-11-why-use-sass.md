@@ -5,7 +5,7 @@ date: 2014/11/02 01:58:00
 categories:
 - 技术
 tags:
-- sass
+- SASS
 ---
 
 > 本文由[若强][1]根据[DAN CEDERHOLM][2]的《[Why Sass?][3]》所译，整个译文带有我们自己的理解与思想，如果译得不好或不对之处还请同行朋友指点。如需转载此译文，需注明英文出处：<http://alistapart.com/article/why-sass>，以及作者相关信息

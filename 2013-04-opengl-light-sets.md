@@ -5,7 +5,7 @@ date: 2013/04/03 01:57:00
 categories:
 - 技术
 tags:
-- opengl
+- OpenGL
 ---
 
 1.创建、定位和启用光源

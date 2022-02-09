@@ -5,7 +5,7 @@ date: 2013/04/02 02:41:00
 categories:
 - 技术
 tags:
-- opengl
+- OpenGL
 ---
 
 **在OpenGL中用参数方程绘制球体**

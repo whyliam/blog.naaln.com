@@ -5,7 +5,7 @@ date: 2013/05/30 20:16:00
 categories:
 - 技术
 tags:
-- opengl
+- OpenGL
 ---
 
 1\. 利用Glut库，编写一个OpenGL程序，实现以下功能：

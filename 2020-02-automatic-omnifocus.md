@@ -12,7 +12,7 @@ tags:
 
 > GTD（Getting Things Done / 尽管去做），是一种行为管理的方法。GTD的主要原则在于一个人需要通过记录的方式把头脑中的各种任务移出来。 通过这样的方式，头脑可以不用塞满各种需要完成的事情，而集中精力在正在完成的事情。
 
-![GTD的流程](https://tva1.sinaimg.cn/large/006tNbRwly1gbb41rl3bkj30u0148n6b.jpg)
+![GTD的流程](https://pics.naaln.com/blog/2022-02-08-46726f.jpg-basicBlog)
 *GTD 的核心流程*
 
 ---
@@ -38,7 +38,7 @@ tags:
 
 **标签：**
 
-![](http://pics.naaln.com/blog/2020-02-23-100402.png-basicBlog)
+![](https://pics.naaln.com/blog/2022-02-08-ac8bf0.png-basicBlog-basicBlog)
 
 目前的标签我做了几个分类：
 

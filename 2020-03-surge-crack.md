@@ -10,7 +10,7 @@ tags:
 
 用了这么久的 Surge 没有交钱，却一次一次的破解它真是不好意思。
 
-[Surge](https://nssurge.com/img/screenshot.png)
+![Surge](https://pics.naaln.com/blog/2022-02-08-d456c1.png-basicBlog)
 
 话说回来，如果买 5 个licenses，100 刀的价格其实也还是可以接受的，毕竟我这已经花了好几天时间，远远不止这个价格了。
 

@@ -5,7 +5,7 @@ date: 2019/10/08 20:00:00
 categories:
 - 技术
 tags:
--
+- Alfred
 ---
 
 Mac 升级 `Catalina` 后，Alfred 搜索出来的结果出现了两次，或者有的软件怎么也搜索不出来。

@@ -5,7 +5,7 @@ date: 2013/08/13 08:48:00
 categories:
 - 技术
 tags:
-- fedora
+- Fedora
 ---
 
 ## 1. 安装fedora19后的初始化配置

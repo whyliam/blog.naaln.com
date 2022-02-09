@@ -5,7 +5,7 @@ date: 2013/10/19 04:24:00
 categories:
 - 技术
 tags:
-- octopress
+- Octopress
 ---
 
 终于，耗时N天，把我的博客从WordPress转到了Octopress，并且很无耻的托管到GitHub上面，免费高速～ 这篇文章教大家简单的Octopress的安装与使用。 （如果你用的Windows，你可能会碰到一堆雷⋯⋯强烈推荐Linux或者Mac OS X）
