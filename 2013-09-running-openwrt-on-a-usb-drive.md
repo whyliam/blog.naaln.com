@@ -5,7 +5,7 @@ date: 2013/09/22 10:39:00
 categories:
 - 技术
 tags:
-- openwrt
+- OpenWrt
 ---
 
 1、 前提条件：

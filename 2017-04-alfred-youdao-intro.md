@@ -1,10 +1,10 @@
 ---
 title: Alfred 有道翻译简介
 categories:
-  - 技术
+- 技术
 date: 2017/04/15 20:53:04
 tags:
-  - Alfred
+- Alfred
 ---
 
 很久没有更新了，最近发布了新的版本2.0.0

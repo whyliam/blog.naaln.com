@@ -5,8 +5,8 @@ date: 2013/10/19 12:17:00
 categories:
 - 技术
 tags:
-- octopress
-- github
+- Octopress
+- Github
 ---
 
 最近有些同学让我分享我的博客主题，其实主题早已经放在GitHub上了。下面索性基于[我Fork的Octopress][1]，讲一下如何使用Octopress在GitHub上建博客。 先来看看我的版本和原始版本的主要不同之处：

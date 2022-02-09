@@ -5,7 +5,7 @@ date: 2013/04/10 09:04:00
 categories:
 - 技术
 tags:
-- android
+- Android
 ---
 
 如何从网络获取图片以及文本来显示。事实上，一般是先获取Josn或sml数据，然后解释显示。我们先从网上获取xml，然后对其进行解析，最后显示在ListView上。具体步骤：

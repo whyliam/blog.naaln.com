@@ -5,7 +5,7 @@ date: 2013/08/12 06:20:00
 categories:
 - 技术
 tags:
-- fedora
+- Fedora
 ---
 
 **导读**：

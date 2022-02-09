@@ -5,7 +5,7 @@ date: 2015/02/19 13:19:00
 categories:
 - 技术
 tags:
-- git
+- Git
 ---
 
 在使用Github的時候，常常使用`rebase`把多個commit合併成一個。但是最後兩個commit一直合併不了。

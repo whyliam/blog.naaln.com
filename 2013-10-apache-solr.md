@@ -5,7 +5,7 @@ date: 2013/10/08 06:18:00
 categories:
 - 技术
 tags:
-- solr
+- Solr
 ---
 
 #### 导言

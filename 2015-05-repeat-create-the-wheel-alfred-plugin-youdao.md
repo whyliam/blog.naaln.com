@@ -5,7 +5,7 @@ date: 2015/05/05 00:15:00
 categories:
 - 技术
 tags:
-- alfred
+- Alfred
 ---
 
 默认快捷键 "cd"，查看翻译结果。

@@ -5,7 +5,7 @@ date: 2013/09/10 20:09:00
 categories:
 - 技术
 tags:
-- mechanize
+- Mechanize
 ---
 
 开始使用 [WWW::Mechanize](http://mechanize.rubyforge.org/mechanize/classes/WWW/Mechanize.html)

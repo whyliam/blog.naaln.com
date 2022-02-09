@@ -5,7 +5,7 @@ date: 2015/09/24 13:21:00
 categories:
 - 技术
 tags:
-- html
+- HTML
 ---
 
 本文主要内容来自一丝的常用的 [HTML 头部标签](https://github.com/yisibl/blog/issues/1)和百度FEX的[HTML head 头标签](http://fex.baidu.com/blog/2014/10/html-head-tags/)。

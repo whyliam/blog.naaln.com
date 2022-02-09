@@ -4,7 +4,7 @@ categories:
   - 技术
 date: 2017/06/28 19:50:47
 tags:
-  - mac
+  - MAC
 ---
 
 ## 软件

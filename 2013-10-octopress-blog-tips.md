@@ -5,7 +5,7 @@ date: 2013/10/20 01:31:00
 categories:
 - 技术
 tags:
-- octopress
+- Octopress
 ---
 
 ## 0.首页仅显示部分
@@ -52,8 +52,8 @@ tags:
    categories: [octopress, github, algorithm]
    #方式二
    categories:
-   - octopress
-   - github
+   - Octopress
+   - Github
    - algorithm
 ```
 

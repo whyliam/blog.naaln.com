@@ -5,7 +5,7 @@ date: 2013/05/17 09:43:00
 categories:
 - 技术
 tags:
-- opengl
+- OpenGL
 ---
 
 今天忽然感悟到为什么在进行变换之前要用glPushMatrix();

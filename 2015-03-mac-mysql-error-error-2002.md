@@ -5,7 +5,7 @@ date: 2015/03/26 16:51:00
 categories:
 - 技术
 tags:
-- mysql
+- Mysql
 ---
 
 为什么在Mac上装一个MySQL这么的难？据说用HomeBrew容易装，可我发现还是要一堆配置，配置过后还是没成功。我尝试过两种安装方式：

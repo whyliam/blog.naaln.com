@@ -5,7 +5,7 @@ date: 2013/08/02 00:08:00
 categories:
 - 技术
 tags:
-- matlab
+- Matlab
 ---
 
 1、用audioread('');函数读取电脑中的音频文件，参数是音频文件的路径：

@@ -5,7 +5,7 @@ date: 2013/04/03 01:37:00
 categories:
 - 技术
 tags:
-- opengl
+- OpenGL
 ---
 
 **一、Bezier曲线**

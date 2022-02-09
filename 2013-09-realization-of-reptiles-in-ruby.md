@@ -5,7 +5,7 @@ date: 2013/09/10 20:02:00
 categories:
 - 技术
 tags:
-- ruby
+- Ruby
 ---
 
 Ruby中实现网页抓取，一般用的是mechanize，使用非常简单。 安装

@@ -5,7 +5,7 @@ date: 2015/05/06 00:20:00
 categories:
 - 技术
 tags:
-- alfred
+- Alfred
 ---
 
 首先感谢 [deanishe][1] 为Alfred Workflow添加了 Python 框架库支持，自定义 Workflow 仅需要通过 Python 完成输入和输出的转换，最后输出到 Alfred 即可。这大大方便了我这种不会`PHP`开发的程序员

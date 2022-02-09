@@ -5,7 +5,7 @@ date: 2016/02/28 15:01:00
 categories:
 - 技术
 tags:
-- html
+- HTML
 ---
 
 ## 啥是阅读器内核

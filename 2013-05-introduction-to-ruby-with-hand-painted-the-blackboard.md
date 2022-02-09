@@ -5,7 +5,7 @@ date: 2013/05/17 12:16:00
 categories:
 - 技术
 tags:
-- ruby
+- Ruby
 ---
 
 ![](http://pics.naaln.com/blog/2019-05-14-123335.jpg-basicBlog)

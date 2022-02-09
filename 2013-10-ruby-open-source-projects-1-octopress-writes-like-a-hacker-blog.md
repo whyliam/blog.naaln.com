@@ -5,8 +5,8 @@ date: 2013/10/19 04:20:00
 categories:
 - 技术
 tags:
-- ruby
-- octopress
+- Ruby
+- Octopress
 ---
 
 ### 今年一直推荐的一种写作方式。

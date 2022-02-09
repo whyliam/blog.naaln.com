@@ -5,7 +5,7 @@ date: 2015/03/04 14:31:00
 categories:
 - 技术
 tags:
-- android
+- Android
 ---
 
 最近在寫一個`微信`的插件，因爲我使用的是`android`的平台。所以我也嘗試著使用`android studio`，由於本人android學的不好，真的就只能用嘗試形容。

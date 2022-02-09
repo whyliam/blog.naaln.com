@@ -5,7 +5,7 @@ date: 2013/04/09 07:57:00
 categories:
 - 技术
 tags:
-- android
+- Android
 ---
 
 在android应用开发中，ListView是使用频率非常高的一个组件，基本上稍微复杂点的布局都会用到它，利用它可以让你的界面美观，有层次

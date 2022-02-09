@@ -6,7 +6,7 @@ categories:
 - 技术
 tags:
 - python
-- zen
+- ZEN
 ---
 
 一直都觉得`Python`是一个禅意很浓的语言，十分的有趣。

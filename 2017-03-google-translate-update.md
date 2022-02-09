@@ -4,7 +4,7 @@ categories:
   - 产品
 date: 2017/03/29 16:58:14
 tags:
-  - google
+  - Google
 ---
 
 由于一些不可告人的原因，我们知道 Google 的各项服务在国内都是半死不活的状态。

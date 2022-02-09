@@ -5,8 +5,8 @@ date: 2013/05/19 01:28:00
 categories:
 - 技术
 tags:
-- ruby
-- rails
+- Ruby
+- Rails
 ---
 
 # Ruby安装 在这里可以下载到适合您的最新的 Ruby 版本，当前稳定的版本是 2.0.0-p195 。下载前请先阅读

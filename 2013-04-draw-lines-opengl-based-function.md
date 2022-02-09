@@ -5,7 +5,7 @@ date: 2013/04/02 20:32:00
 categories:
 - 技术
 tags:
-- opengl
+- OpenGL
 ---
 
 刚刚开始学opengl，mark一下

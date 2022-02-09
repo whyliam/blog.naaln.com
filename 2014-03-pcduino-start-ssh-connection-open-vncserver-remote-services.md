@@ -5,7 +5,7 @@ date: 2014/03/07 06:58:00
 categories:
 - 技术
 tags:
-- pcduino
+- pcDuino
 ---
 
 pcDuino是一种高性能，高性价比的迷你PC的平台，能够运行PC操作系统，如Ubuntu和Android的ICS等。它可以通过内置HDMI接口输出视频到电视或显示器屏幕。 pcDuino专门针对开源社区快速增长的需求，即希望有一个平台可以运行完整的PC操作系统，容易使用的工具链和兼容流行的Arduino开放的生态系统，如Arduino shield和开源项目等。 就是如下这一只，板子其实很小，兼容Arduino接口：
