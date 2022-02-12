@@ -70,7 +70,7 @@ default_category:  随笔
 category_map:
   产品: product
   随笔: jottings
-  经济: coins
+  经济: economic
   技术: technology
   旅行: tour
 tag_map:
@@ -142,7 +142,7 @@ algolia:
 
 excerpt:
   depth: 4
-  excerpt_excludes: [h1,h2,h3,h4,h5,h6,img,table,ul,ol]
+  excerpt_excludes: [h1,h2,h3,h4,h5,h6,img,table,iframe]
   more_excludes: []
   hideWholePostExcerpts: true
 
