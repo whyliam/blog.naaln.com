@@ -8,9 +8,7 @@ tags:
 - 总结
 ---
 
-![img](https://pics.naaln.com/blog/2022-02-12-1ef93b.png-basicBlog)
-
-
+![black and white rectangular box on white textile](https://pics.naaln.com/blog/2022-02-15-f7038f.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80-basicBlog)
 
 Henrik Werdelin 认为「与其渴望在生活的某个特定领域做得好，还不如立志在我生活的所有领域做得尽可能好。**为了取得事业上的成功，人们应该做的不是牺牲其他活动的时间，而是把其他活动做的又快又好**」 。
 
@@ -51,10 +49,17 @@ HenrikWerdelin做的一件简单的事情就是每周五晚上和妻子去约会
 
 我为自己设计的 Box：
 
-- 工作
-- 投资
-- 学习 
-- 健康
-- 家庭
-- 分享
-- Ego
+1. 工作
+   今年的目标晋升 or 跳槽
+2. 投资
+   至少要回本
+3. 学习 
+   看书还是不可少的
+4. 健康
+   运动运动
+5. 家庭
+   拖家带口的，多有效陪伴
+6. 分享
+   输出影响力
+7. Ego
+   回归内在
