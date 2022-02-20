@@ -360,6 +360,6 @@ GL_LINE_LOOP绘制首尾相连的四条线。注意最后要用 glEnd() 结束�
 
 via: [http://blog.163.com/tianshi_17th/blog/static/48564189200832992845889/][2]
 
- [1]: http://img.blog.163.com/photo/a3Y5Xf--xlrA7krOsBGqOA==/298644950290647721.jpg
+[1]: https://pics.naaln.com/blog/2022-02-14-de42a7.png-basicBlog
 
- [2]: http://blog.163.com/tianshi_17th/blog/static/48564189200832992845889/
+[2]: http://blog.163.com/tianshi_17th/blog/static/48564189200832992845889/

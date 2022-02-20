@@ -530,12 +530,12 @@ public class CustomizedListView extends Activity {
 
 reference： [请输入链接描述][5]
 
- [1]: http://img.my.csdn.net/uploads/201211/27/1353984236_2983.png
+[1]: http://img.my.csdn.net/uploads/201211/27/1353984236_2983.png
 
- [2]: http://img.my.csdn.net/uploads/201211/25/1353853594_8800.png
+[2]: http://img.my.csdn.net/uploads/201211/25/1353853594_8800.png
 
- [3]: http://img.my.csdn.net/uploads/201211/26/1353905794_7381.png
+[3]: http://img.my.csdn.net/uploads/201211/26/1353905794_7381.png
 
- [4]: http://img.my.csdn.net/uploads/201211/27/1353985799_4142.png
+[4]: http://img.my.csdn.net/uploads/201211/27/1353985799_4142.png
 
- [5]: http://blog.csdn.net/wangjinyu501/article/details/8219317
+[5]: http://blog.csdn.net/wangjinyu501/article/details/8219317

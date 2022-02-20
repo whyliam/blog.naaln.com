@@ -63,6 +63,6 @@ Python函数参数对于可变对象，函数内对参数的改变会影响到�
 1. 可变对象，参数改变的是可变对象，其内容可以被修改。
 2. 不可变对象，改变的是函数内变量的指向对象。
 
- [1]: http://img.blog.csdn.net/20140902164438953
+[1]: https://pics.naaln.com/blog/2022-02-14-e24018.png-basicBlog
 
- [2]: http://img.blog.csdn.net/20140902165215796
+[2]: https://pics.naaln.com/blog/2022-02-14-1d50ec.png-basicBlog

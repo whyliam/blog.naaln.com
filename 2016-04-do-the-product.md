@@ -99,8 +99,8 @@ tags:
 
 [原文链接][3]
 
- [1]: http://www.uml.org.cn/DevProcess/images/201409251001.jpg
+[1]: http://www.uml.org.cn/DevProcess/images/201409251001.jpg
 
- [2]: http://cdn.cocimg.com/cms/uploads/allimg/140921/4196_140921121831_1.png
+[2]: https://pics.naaln.com/blog/2022-02-14-af4a67.png-basicBlog
 
- [3]: http://www.cocoachina.com/programmer/20140921/9702.html
+[3]: http://www.cocoachina.com/programmer/20140921/9702.html
