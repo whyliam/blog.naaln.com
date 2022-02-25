@@ -202,4 +202,4 @@ via: [如何编写个人任务声明（和28个使命陈述示例）](https://ww
 
 - [富兰克林·柯维使命宣言缔造者](https://msb.franklincovey.com/)可以帮助您创建以下类型-个人，家庭，团队，和价值观集中-与它的免费在线工具。
 
-- [lifecoachesoolbox.com.](https://www.lifecoachestoolbox.com/index.php/vision-mission-purpose-values-generator-tool)有一个特派团声明和电梯语音发生器，帮助您建立您的品牌标识并澄清您的目标。选择免费在线版本（带广告）或免费下载39美元。
+- [lifecoachesoolbox.com.](https://www.lifecoachestoolbox.com/index.php/vision-mission-purpose-values-generator-tool)有一个电子的使用生成器，帮助您建立您的品牌标识并澄清您的目标。选择免费在线版本（带广告）或免费下载39美元。
