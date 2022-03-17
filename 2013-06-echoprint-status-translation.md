@@ -11,21 +11,21 @@ tags:
 
 欢迎来到EchoprintEchoprint 是一个开源的音乐是识别系统，他允许任何人在他们自己的应用上构建音乐指纹识别系统。感谢[The Echo Nest](http://the.echonest.com/)的技术支持，以及[Musicbrainz](http://musicbrainz.org/)的合作。
 
-→ [Home / FAQ](http://blog.naaln.com/2013/06/echoprint-home-faq-translations)
+→ [Home / FAQ](https://blog.naaln.com/2013/06/echoprint-home-faq-translations)
 
 → [Download from GitHub](http://github.com/echonest/)
 
-→ [How it works](http://blog.naaln.com/2013/06/echoprint-how-it-works-translation)
+→ [How it works](https://blog.naaln.com/2013/06/echoprint-how-it-works-translation)
 
-→ [Get started](http://blog.naaln.com/2013/06/echoprint-get-started-translate)
+→ [Get started](https://blog.naaln.com/2013/06/echoprint-get-started-translate)
 
 → [Contact / Support](http://echoprint.me/contact)
 
-→ [Data access](http://blog.naaln.com/2013/06/echoprint-data-access-translation)
+→ [Data access](https://blog.naaln.com/2013/06/echoprint-data-access-translation)
 
-→ [Server](http://blog.naaln.com/2013/06/echoprint-server-translation)
+→ [Server](https://blog.naaln.com/2013/06/echoprint-server-translation)
 
-→ [Codegen](http://blog.naaln.com/2013/06/echoprint-codegen-translation)
+→ [Codegen](https://blog.naaln.com/2013/06/echoprint-codegen-translation)
 
 → [Twitter - @echonest](http://twitter.com/echonest)
 
@@ -55,4 +55,4 @@ Codegen 4.12 is 「gold」 —— 一个重大的版本，直到没有进一步�
 
 原文: [http://echoprint.me/](http://echoprint.me/post/6824417079/echoprint-status)
 
-翻译: [Liam](http://blog.naaln.com/2013/06/echoprint-status-translation)
+翻译: [Liam](https://blog.naaln.com/2013/06/echoprint-status-translation)

@@ -68,7 +68,7 @@ Scala-ish pseudocode:
 
 SQL是一个直观的查询语言，适合做业务分析，业务分析师和程序员都很常用。SQL查询非常简单，而且还非常快——只有数据库使用了正确的索引，要花几秒钟的sql查询都不太常见。
 
-Hadoop没有索引的概念，Hadoop只有全表扫描，而且Hadoop抽象层次太多了——我之前的项目尽在应付Java内存错误 [java memory errors](/blog/2013/gc_overhead_limit.html)、内存碎片和集群竞用了，而这些时间远多于实际的数据分析工作。
+Hadoop没有索引的概念，Hadoop只有全表扫描，而且Hadoop抽象层次太多了——我之前的项目尽在应付Java内存错误 [java memory errors](https://blog.naaln.com/blog/2013/gc_overhead_limit.html)、内存碎片和集群竞用了，而这些时间远多于实际的数据分析工作。
 
 如果你的数据并不是像SQL表那样的结构化数据（比如纯文本、JSON对象、二进制对象），通常是直接写一个小的Python脚本或者Ruby脚本逐行处理更直接。保存到多个文件，然后逐个处理即可，SQL不适用的情况下，从编程来说Hadoop也没那么糟糕，但相比Python脚本仍然没有什么优势。
 

@@ -55,6 +55,6 @@ tags:
 
 大功告成！
 
-至于数据库里面的具体关系，大家可以参阅文章 [iOS 微信的本地存储结构简析](/2016/11/wechat-data-structure/)。
+至于数据库里面的具体关系，大家可以参阅文章 [iOS 微信的本地存储结构简析](https://blog.naaln.com/2016/11/wechat-data-structure/)。
 
 来源： [如何备份导出 IOS 微信聊天数据库](https://github.com/Unknwon/wuwen.org/issues/15?hmsr=toutiao.io&utm_medium=toutiao.io&utm_source=toutiao.io)
