@@ -11,21 +11,21 @@ tags:
 
 欢迎来到EchoprintEchoprint 是一个开源的音乐是识别系统，他允许任何人在他们自己的应用上构建音乐指纹识别系统。感谢[The Echo Nest](http://the.echonest.com/)的技术支持，以及[Musicbrainz](http://musicbrainz.org/)的合作。
 
-→ [Home / FAQ](http://blog.naaln.com/2013/06/echoprint-home-faq-translations)
+→ [Home / FAQ](https://blog.naaln.com/2013/06/echoprint-home-faq-translations)
 
 → [Download from GitHub](http://github.com/echonest/)
 
-→ [How it works](http://blog.naaln.com/2013/06/echoprint-how-it-works-translation)
+→ [How it works](https://blog.naaln.com/2013/06/echoprint-how-it-works-translation)
 
-→ [Get started](http://blog.naaln.com/2013/06/echoprint-get-started-translate)
+→ [Get started](https://blog.naaln.com/2013/06/echoprint-get-started-translate)
 
 → [Contact / Support](http://echoprint.me/contact)
 
-→ [Data access](http://blog.naaln.com/2013/06/echoprint-data-access-translation)
+→ [Data access](https://blog.naaln.com/2013/06/echoprint-data-access-translation)
 
-→ [Server](http://blog.naaln.com/2013/06/echoprint-server-translation)
+→ [Server](https://blog.naaln.com/2013/06/echoprint-server-translation)
 
-→ [Codegen](http://blog.naaln.com/2013/06/echoprint-codegen-translation)
+→ [Codegen](https://blog.naaln.com/2013/06/echoprint-codegen-translation)
 
 → [Twitter - @echonest](http://twitter.com/echonest)
 
@@ -79,7 +79,7 @@ Echoprint 对于开发者或者音乐产业是一个十分合适的工具。目�
 
 ### 准备开源？我可以用于商业化吗？
 
-是的，可以。代码开发者是 MIT，服务器是Apache 2.。在你的应用中当然没有限制来使用代码生成器或者服务器。在Github中检出，如果你使用我们的数据，你需要阅读[数据许可](http://blog.naaln.com/?p=1843)——但是它只是说了加入你收集到新的指纹时，你需要向社区贡献它。
+是的，可以。代码开发者是 MIT，服务器是Apache 2.。在你的应用中当然没有限制来使用代码生成器或者服务器。在Github中检出，如果你使用我们的数据，你需要阅读[数据许可](https://blog.naaln.com/?p=1843)——但是它只是说了加入你收集到新的指纹时，你需要向社区贡献它。
 
 ### 它可以 「OTA」 吗？通过麦克风识别歌曲？
 
@@ -133,4 +133,4 @@ Echoprint— 服务主要在Echo Nest上启用和服务于查询歌曲的识别�
 
 原文: [http://echoprint.me/](http://echoprint.me/)
 
-翻译: [Liam](http://blog.naaln.com/2013/06/echoprint-home-faq-translations)
+翻译: [Liam](https://blog.naaln.com/2013/06/echoprint-home-faq-translations)
