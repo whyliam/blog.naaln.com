@@ -3,8 +3,9 @@ layout: post
 title: 关于朋友圈语音
 date: 2015/03/05 02:51:00
 categories:
-- 旅行
+- 技术
 tags:
+- 微信
 ---
 
 今日微信 朋友圈语音 又爆红了朋友圈。
@@ -63,8 +64,8 @@ ps.这个链接做了限制，必须在手机查看。可以使用手机浏览�
 
 有这几个SDK足以欺骗大部分人。
 
- [1]: http://www.we7.cc/
+[1]: http://www.we7.cc/
 
- [2]: http://voice.wx7plus.com/wx/timelineplay.html?serverId=MPbNr-j9UgqRtLDvs79Vdd-YcWDAuVkgcXjdWwpebkoTUM-aJOJymTp9r2vASGO0&date=2:5:14:42:4:1425537722679&recordtime=4&from=timeline&isappinstalled=0
+[2]: http://voice.wx7plus.com/wx/timelineplay.html?serverId=MPbNr-j9UgqRtLDvs79Vdd-YcWDAuVkgcXjdWwpebkoTUM-aJOJymTp9r2vASGO0&date=2:5:14:42:4:1425537722679&recordtime=4&from=timeline&isappinstalled=0
 
- [3]: http://mp.weixin.qq.com/wiki/7/aaa137b55fb2e0456bf8dd9148dd613f.html
+[3]: http://mp.weixin.qq.com/wiki/7/aaa137b55fb2e0456bf8dd9148dd613f.html
