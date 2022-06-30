@@ -5,6 +5,7 @@ date: 2022/06/18  20:00:00
 categories:
 - 随笔
 tags:
+- 投资
 ---
 
 最后从宏观回到我们自身，未来10年你希望学习什么样的能力应对这个不确定的未来？本文来自：[10 Powerful Life Skills for the New Decade](https://neilkakkar.com/powerful-life-skills.html)

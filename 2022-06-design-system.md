@@ -14,15 +14,15 @@ tags:
 
 或许你已经熟知许多设计流程相关的模型或框架。比如BDC(British Design Council)提出的那套原始版双钻石模型（关于双钻石原始模型，我在后文会有详细介绍），见图一。比如IDEO的HCD（Human-Centered Design）思想体系，见图二。哦，可千万不能落下斯坦福设计学院的著名的设计思维流程（Design Thinking Process），见图三。你将在接下来的文字里熟悉这些模型的主要方法，步骤和工具。
 
-![进阶好文！如何把那么多经典的设计模型用起来？](https://pics.naaln.com/blog/2022-06-22-174551.png-basicBlog)
+![双钻石模型  Naaln](https://pics.naaln.com/blog/2022-06-22-174551.png-basicBlog)
 
 △  BDC原始版的双钻石模型
 
-![进阶好文！如何把那么多经典的设计模型用起来？](https://pics.naaln.com/blog/2022-06-22-486010.png-basicBlog)
+![双钻石模型  Naaln](https://pics.naaln.com/blog/2022-06-22-486010.png-basicBlog)
 
 △  IDEO HCD（图片由李佳翻译）
 
-![进阶好文！如何把那么多经典的设计模型用起来？](https://pics.naaln.com/blog/2022-06-22-37bb52.png-basicBlog)
+![双钻石模型  Naaln](https://pics.naaln.com/blog/2022-06-22-37bb52.png-basicBlog)
 
 △  斯坦福设计学院的DESIGN THINKING PROCESS
 
@@ -55,7 +55,7 @@ tags:
 
 **阶段二**——用正确的方法做事（第二颗钻石：发展期和交付期）一旦你找到了真正要解决的问题或该做的事，你要保证自己在用正确的方式执行。这是一个关于如何做的阶段。
 
-![进阶好文！如何把那么多经典的设计模型用起来？](https://pics.naaln.com/blog/2022-06-22-5a5591.png-basicBlog)
+![双钻石模型  Naaln](https://pics.naaln.com/blog/2022-06-22-5a5591.png-basicBlog)
 
 △  双钻石模型的两个大阶段
 
@@ -80,7 +80,7 @@ tags:
 3. 找出 insights（所谓insighs就是在某个特殊主题上的未知的真相，它们是关于用户动机，用户诉求或痛点的），创建机会点。
 4. 创建HMW问题（HMW问题即以“How might we…”开头的问题，以问“我们如何能…”这种更易于感知的形式列出哪些问题是可行的和亟待解决的）。
 
-![进阶好文！如何把那么多经典的设计模型用起来？](https://pics.naaln.com/blog/2022-06-22-1d8c71.png-basicBlog)
+![双钻石模型  Naaln](https://pics.naaln.com/blog/2022-06-22-1d8c71.png-basicBlog)
 
 △  阶段一：做正确的事
 
@@ -107,7 +107,7 @@ tags:
 
 顺便说说MVP（minimum viable products）的作用：用一个可感知的产品或原型去测试它是否能够回过头去解决最初的那个问题。
 
-![进阶好文！如何把那么多经典的设计模型用起来？](https://pics.naaln.com/blog/2022-06-22-06a4ca.png-basicBlog)
+![双钻石模型  Naaln](https://pics.naaln.com/blog/2022-06-22-06a4ca.png-basicBlog)
 
 △  阶段二：用正确的方法做事
 
@@ -121,7 +121,7 @@ tags:
 
 这个修订版的双钻石模型也只是一种我个人的方法，它不是唯一的。我今天在这里把它分享出来就是来接受更多人的挑战、质疑或在此基础上的再修改。
 
-![进阶好文！如何把那么多经典的设计模型用起来？](https://pics.naaln.com/blog/2022-06-22-67ffa4.png-basicBlog)
+![双钻石模型  Naaln](https://pics.naaln.com/blog/2022-06-22-67ffa4.png-basicBlog)
 
 △  完整的双钻石模型
 
