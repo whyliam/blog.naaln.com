@@ -46,7 +46,7 @@ algolia:
 hexo algolia
 ```
 
-第三步：修改Hexo主题集成Algolia
+### 第三步：修改Hexo主题集成Algolia
 
 确保在head.swig文件中加入如下配置，注意改成自己的
 
