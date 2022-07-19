@@ -29,6 +29,7 @@
     "hexo-renderer-stylus": "^2.1.0",
     "hexo-server": "^3.0.0",
     "hexo-submit-urls-to-search-engine": "^2.1.0",
+    "hexo-talk": "^1.1.6",
     "hexo-theme-next": "^8.12.1"
   }
 }

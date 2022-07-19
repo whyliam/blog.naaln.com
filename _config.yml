@@ -176,3 +176,14 @@ hexo_submit_urls_to_search_engine:
   replace: 0  # 是否替换链接中的部分字符串，可选值：1 | 0（0：否；1：是）
   find_what: 
   replace_with: 
+
+# Talk
+talk:
+  enable: true  # 是否启用本插件
+  type: flomo   # 说说的数据来源，暂时（1.0.0）只有 flomo 一个选项
+  title: Talk   # 页面 title
+  theme: Paper  # 设置说说主题，暂时（1.0.0）只有 Paper 这一个选项。
+  flomo:
+    cookie:  
+    tag: 奇葩说
+    limit: 30   # 展示多少条说说

@@ -48,3 +48,4 @@ jobs:
         BING_TOKEN: ${{ secrets.BING_TOKEN }} 
         UPYUN_OPERATOR: ${{ secrets.UPYUN_OPERATOR }}
         UPYUN_PASSWORD: ${{ secrets.UPYUN_PASSWORD }}
+        FLOMO_COOKIE: ${{ secrets.FLOMO_COOKIE }}
