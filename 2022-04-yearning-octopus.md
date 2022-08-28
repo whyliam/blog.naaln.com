@@ -5,7 +5,7 @@ date: 2022/04/01 20:00:00
 categories:
 - 随笔
 tags:
--  职业规划
+- 职业规划
 ---
 
 昨天花了几个小时读了这篇文章，[How to Pick a Career](https://waitbutwhy.com/2018/04/picking-career.html)，建议每个正在做职业选择的同学都可以去看一下。
