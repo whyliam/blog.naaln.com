@@ -662,7 +662,7 @@ isso: # <data_isso>
 # For more information: https://waline.js.org, https://github.com/walinejs/waline
 waline:
   enable: true
-  serverURL: naaln-waline-whyliam.vercel.app # Waline server address url
+  serverURL: comment.naaln.com # Waline server address url
   placeholder: Just go go # Comment box placeholder
   avatar: mm # Gravatar style
   meta: [nick, mail, link] # Custom comment header
@@ -761,6 +761,11 @@ algolia_search:
   enable: true
   hits:
     per_page: 10
+  fields:
+    - content:strip:truncate,0,500
+    - excerpt:strip
+    - tags
+    - title
 
 # Local Search
 # Dependencies: https://github.com/next-theme/hexo-generator-searchdb
