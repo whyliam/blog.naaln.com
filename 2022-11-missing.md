@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 迷失方向
+title: 躺平
 date: 2022/11/05/ 20:00:00
 categories:
 - 随笔
