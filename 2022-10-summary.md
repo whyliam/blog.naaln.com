@@ -10,6 +10,8 @@ tags:
 
 ---
 
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=28996919&auto=1&height=66"></iframe>
+
 ### 关于时间
 
 > 要从时间成本的角度做决策，如果做某件事外包的成本低于时薪，那就外包；
