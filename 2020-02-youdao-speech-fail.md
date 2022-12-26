@@ -5,7 +5,7 @@ date: 2020/02/23 20:00:00
 categories:
 - 技术
 tags:
-- 
+- 有道翻译
 ---
 
 在使用 [whyliam.workflows.youdao](https://github.com/whyliam/whyliam.workflows.youdao)  的时候，有时候会发音失败。

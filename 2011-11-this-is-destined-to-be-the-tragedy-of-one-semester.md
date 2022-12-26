@@ -5,6 +5,7 @@ date: 2011/11/06 19:00:00
 categories:
 - 随笔
 tags:
+- 上课
 ---
 
 ![](http://pics.naaln.com/blog/2019-05-14-123504.jpg-basicBlog)

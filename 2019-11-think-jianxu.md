@@ -1,11 +1,11 @@
 ---
 layout: post
-title: 碎念
+title: 对2019的思考
 date: 2019/11/15 20:00:00
 categories:
 - 随笔
 tags:
--
+- 自醒
 ---
 
 今天刚好看到[兼续对2019的思考](https://www.yuque.com/jianxu/diary/gttl7h)，有几句话特别的有感触，所以有了以下的收集。

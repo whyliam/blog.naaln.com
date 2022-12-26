@@ -5,7 +5,7 @@ date: 2020/02/24 20:00:00
 categories:
 - 产品
 tags:
-- 
+- 业务
 ---
 
 今天偶然看到一个广告，[880可以住一年的民宿](https://mp.weixin.qq.com/s?__biz=MjM5NDkyNTUzOA==&mid=2657923678&idx=1&sn=1d87c42846a3cb8aa0de179bf3c37949&chksm=bd184cd38a6fc5c5b57ecfc363bc27dd984c6bae86185d32ae38be3bcf553fbf2285eaa7a253)，看完之后还特别的心动是否想入手。

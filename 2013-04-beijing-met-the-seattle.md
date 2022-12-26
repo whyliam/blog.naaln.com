@@ -5,6 +5,7 @@ date: 2013/04/05 14:20:00
 categories:
 - 旅行
 tags:
+- 电影
 ---
 
 ![](http://pics.naaln.com/blog/2019-01-14-091657.jpg-basicBlog)
