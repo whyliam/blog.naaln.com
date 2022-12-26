@@ -5,6 +5,7 @@ date: 2011/12/22 04:07:00
 categories:
 - 随笔
 tags:
+- 散文诗
 ---
 
 <embed src="http://player.youku.com/player.php/sid/XMjg3MjY3MDk2/v.swf" allowFullScreen="true" quality="high" width="480" height="400" align="middle" allowScriptAccess="always" type="application/x-shockwave-flash"></embed>

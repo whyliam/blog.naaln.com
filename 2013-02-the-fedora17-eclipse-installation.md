@@ -5,6 +5,7 @@ date: 2013/02/23 19:00:00
 categories:
 - 技术
 tags:
+- Fedora
 ---
 
 Android 是 Google 推出的基于 Linux 的开源智能手机平台，本文讲述如何在 Fedora 17系统下架设 Android 开发全部流程以 Fedora 17 X86 版本为例。

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 让事情发生
-date: 2022/11/29/ 20:00:00
+date: 2022/11/29 20:00:00
 categories:
 - 随笔
 tags:

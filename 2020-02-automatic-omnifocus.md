@@ -5,7 +5,7 @@ date: 2020/02/23 20:00:00
 categories:
 - 技术
 tags:
-- 
+- 自动化
 ---
 
 使用 GTD 的软件已经有一段时间了，GTD 是什么可以参考这本书 [《搞定》](https://blog.naaln.com/2020/01/gtd/)。

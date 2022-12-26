@@ -5,6 +5,7 @@ date: 2012/08/27 07:36:00
 categories:
 - 随笔
 tags:
+- 会议
 ---
 
 ![ 第八届全国高校社团会长年会·速录 ](http://pics.naaln.com/blog/2019-01-14-091841.jpg-basicBlog)
