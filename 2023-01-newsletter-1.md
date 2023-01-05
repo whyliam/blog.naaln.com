@@ -66,3 +66,7 @@ tags:
 「重要的是顾客感到满意」，这种思维则是将顾客作为主体。怎么做，顾客才会感到满意？此时，需要让自己与顾客融为一体，将自己视为顾客。如果不能站在顾客的立场上思考问题，就不可能寻找到顾客感到满意的答案。
 
 《[铃木敏文](https://pmthinking.super.site/ecd14a51de41446f910dfa8ad52da4a5)》，少楠
+
+
+
+> [博客](https://blog.naaln.com/categories/NewsLetter/) ｜ [竹白](https://space.zhubai.love/)
