@@ -85,7 +85,7 @@ tags:
 
 ---
 
-## 17个思考：人们如何思考
+## 十七个思考：人们如何思考
 
 ![how people think](https://pics.naaln.com/blog/2023-01-28-475d7a.jpg-basicBlog)
 
@@ -125,7 +125,7 @@ tags:
 来自：[How People Think · Collab Fund](https://collabfund.com/blog/think/)
 
 ---
-## 2个大脑：GPT-3 如何将你的笔记变成第二大脑
+## 两个大脑：GPT-3 如何将你的笔记变成第二大脑
 
 ![The End of Organizing](https://pics.naaln.com/blog/2023-01-28-9c8282.jpeg-basicBlog)
 
@@ -172,8 +172,6 @@ tags:
 其次，它们可以在您撰写笔记时丰富笔记并将它们综合到研究报告中，从而消除了大部分标记和链接的需求。
 
 第三，他们可以将以前笔记中的关键信息重新呈现为类似 [CoPilot 的笔记体验](https://every.to/chain-of-thought/the-end-of-organizing)。这使得无需搜索旧笔记，并帮助您在每次敲击按键时都记下*所有已记下的信息*。
-
-让我们逐一分解。
 
 #### ▎笔记的未来
 组织将变得没有必要，因为没有人真的想回去看看他们的旧笔记。
