@@ -8,7 +8,7 @@ tags:
 - NewsLetter
 ---
 
-今天是兔年的第一天，祝大家新年快乐。新年有一个好的开始～
+过年不要看什么 newsletter 了，多买些鞭炮、烟花和酒肉，抛下「俗务」，放肆地过个快乐的春节吧，「Real generosity toward the future lies in giving all to the present（对未来真正的慷慨就是把一切献给现在）。」
 
 ---
 

@@ -2,6 +2,7 @@
 db.json
 package-lock.json
 
+_gsdata_
 node_modules
 public
 source
