@@ -37,10 +37,10 @@ tags:
 当代青年的空虚和荒芜感可能正是来自于他们的选择和现在主流话语所能提供的阐释意义的工具之间存在着距离。大家不知道该怎么用大家愿意接受的话语来反映自己的所思所感。同时又不愿意完全顺应着主流话语规定的路线来生活。不是说青年的生活、青年人本身空虚了，这个空虚其实是一个间隔、是一种断裂，也就是相对单一的主流话语和多样的不断变化的个体实践之间的断裂。
 
 **参考阅读：**
-陈嘉映，2015 ，《五味盐》，载《从感觉出发》，214 页
+- 陈嘉映，2015 ，《五味盐》，载《从感觉出发》，214 页
 
 **来自：**
-[海子说从明天起做一个幸福的人，为什么不是从现在开始？](https://mp.weixin.qq.com/s/dES2rEsEBH1EYr8FGF0vAw)
+- [海子说从明天起做一个幸福的人，为什么不是从现在开始？](https://mp.weixin.qq.com/s/dES2rEsEBH1EYr8FGF0vAw)
 
 ---
 
@@ -69,11 +69,11 @@ tags:
 当你有了觉知 —— 就像知道自己走在悬崖的边缘，了解前面的危险但是仍旧可以继续前行。带着觉知行走不再那么恐怖，反而是非常刺激，因为**不知才是恐惧的真正根源**。
 
 **参考阅读：**
-[正见 (豆瓣) (douban.com)](https://book.douban.com/subject/1963912/)
-[正念禅修 (豆瓣) (douban.com)](https://book.douban.com/subject/23037911/)
+- [正见 (豆瓣) (douban.com)](https://book.douban.com/subject/1963912/)
+- [正念禅修 (豆瓣) (douban.com)](https://book.douban.com/subject/23037911/)
 
 **来自：**
-[人生哲学：为什么佛学是真的 (notion.so)](https://www.notion.so/c2c09b77a53249479af77774ace975f8)
+- [人生哲学：为什么佛学是真的 (notion.so)](https://www.notion.so/c2c09b77a53249479af77774ace975f8)
 
 ---
 
@@ -88,8 +88,8 @@ Zwicky Box 打破我们熟悉的解决问题的方式，并在整个解决方案
 使用 Zwicky Box 来解题分三步
 
 1. **将你的问题拆开，进行分类：分析出影响决策的重要因素（相互独立）** 提出类别的一个好策略是拿一个你已经拥有的东西的例子， 列出每个部分，并询问它是否可以被抽象成一个参数。
-2. **对每个分类的值进行头脑风暴** 发现最初的几个是很容易想出来的。 在一次头脑风暴中，除非你有了 50 个左右的想法，否则就不要停下来。 此外，不要急着对这些想法进行过滤，不管这些想法有多么荒诞或者愚蠢，都一股脑儿先把它们写下来。 而且在上面的 50 个想法中，「前三分之一的想法可能是轻而易举想到的， 中间的三分之一会有一定的难度，而最后的三分之一会很难想，而这部分也正是精华所在。」
-3. **遍历每一种组合创造全新的组合** 有了更多的类别和更多的值，Zwicky Box 变得更加有用，因为您可以发现一些真正意想不到的组合。
+2. **对每个分类的值进行头脑风暴**：发现最初的几个是很容易想出来的。 在一次头脑风暴中，除非你有了 50 个左右的想法，否则就不要停下来。 此外，不要急着对这些想法进行过滤，不管这些想法有多么荒诞或者愚蠢，都一股脑儿先把它们写下来。 而且在上面的 50 个想法中，「前三分之一的想法可能是轻而易举想到的， 中间的三分之一会有一定的难度，而最后的三分之一会很难想，而这部分也正是精华所在。」
+3. **遍历每一种组合创造全新的组合**：有了更多的类别和更多的值，Zwicky Box 变得更加有用，因为您可以发现一些真正意想不到的组合。
 
 ![桌子的例子](https://pics.naaln.com/blog/2023-02-12-8b08dc.jpg-basicBlog)
 _桌子的例子_
@@ -99,10 +99,10 @@ _桌子的例子_
 Zwicky Box 的优势不在于建立思考原创想法的能力，而在于系统地探索许多可以带来惊人见解的想法。**很多时候，问题并不一定是想出来的点子，而是过早地找到了一些解决方案。**我们发现，仅仅是把不同的元素并列在一起，就会触发大脑的联想思维引擎去寻找有意义的联系，这通常会产生一些新鲜的想法。
 
 **参考阅读：**
-[Use a Zwicky Box To Solve HardProblems in Unexpected Ways](https://every.to/superorganizers/use-a-zwicky-box-to-solve-hard-problems-399122)
-[Thinking Outside The (Zwicky) Box](http://blog.mindantix.com/2015/11/thinking-outside-the-zwicky-box/)
-[the History and pracice of the Zwicky Box](http://www.matttaylor.com/public/zwicky_box_uses.htm)
-[一种非量化建模的通用方法](http://www.swemorph.com/ma.html)
+- [Use a Zwicky Box To Solve HardProblems in Unexpected Ways](https://every.to/superorganizers/use-a-zwicky-box-to-solve-hard-problems-399122)
+- [Thinking Outside The (Zwicky) Box](http://blog.mindantix.com/2015/11/thinking-outside-the-zwicky-box/)
+- [the History and pracice of the Zwicky Box](http://www.matttaylor.com/public/zwicky_box_uses.htm)
+- [一种非量化建模的通用方法](http://www.swemorph.com/ma.html)
 
 ---
 
