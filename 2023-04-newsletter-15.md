@@ -1,7 +1,7 @@
 ---
 layout: post
 title: L15_最重要的资源
-date: 2023/01/01/ 20:00:00
+date: 2023/04/08/ 20:00:00
 categories:
 - NewsLetter
 tags:
@@ -114,9 +114,8 @@ AI 会进一步让更多的商业，变成黄色的指数曲线。
 
 但看到他用接线员（最早打电话，需要中间靠人工转接）和电梯小姐（嗯，是的，最早电梯需要专业人员操控）来做类比，说明中间层消亡的时候，还是感受到了这个教授的恶毒啊：p
 
-
 **相关延伸**：
-- 通用人工智能（AGI）真的来了](https://mp.weixin.qq.com/s/26yQrlLN6A9A5T8NHl-tUw)
+- [通用人工智能（AGI）真的来了](https://mp.weixin.qq.com/s/26yQrlLN6A9A5T8NHl-tUw)
 - [Stanford Webinar - Artificial Intelligence for Business Leaders - YouTube](https://www.youtube.com/watch?v=wUHBoNOmGzs&t=3s)
 
 ---
@@ -137,7 +136,6 @@ ChatGPT 对教育会产生什么影响？几十年来，上海高校毕业生就
 	
 如果一个教育人理解这个道理，那么也就知道在这个新事物层出不穷的世界里，如何保持教育定力，坚持改革方向，真正为我们的孩子提供适切、有意义的教育。
 
-
 **相关延伸**：
 - [上海市教委副主任倪闽景：面对ChatGPT，传统教育已被逼入墙角？](https://m.thepaper.cn/newsDetail_forward_21865456)
 
@@ -155,7 +153,6 @@ ChatGPT 对教育会产生什么影响？几十年来，上海高校毕业生就
 - 假装你要向小学生来讲述你的学习成果。
 - 找到你无法清晰解释和描述的知识点，然后回到信息/知识来源，重新学习并理解，直到可以顺利地教授相应的知识。
 - 对上面学习的内容进行提炼和简化，去掉冗余或者概念化的信息，并且能够用通俗的语言简单明了地表达出来。
-
 
 **相关延伸**：
 - [浅谈费曼学习法、书籍推荐和荒谬世界](https://www.camelliayang.com/blog/richard-feynman-book-recommendations-love)
