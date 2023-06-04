@@ -3,7 +3,7 @@ layout: post
 title: L8_自知与核心动机
 date: 2023/02/19/ 20:00:00
 categories:
-- NewsLetter
+- 资讯
 tags:
 - NewsLetter
 ---

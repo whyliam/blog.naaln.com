@@ -3,7 +3,7 @@ layout: post
 title: L1_白月光
 date: 2023/01/01/ 20:00:00
 categories:
-- NewsLetter
+- 资讯
 tags:
 - NewsLetter
 

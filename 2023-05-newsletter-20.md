@@ -3,7 +3,7 @@ layout: post
 title: L20_财务自由与业务理解
 date: 2023/05/14/ 20:00:00
 categories:
-- NewsLetter
+- 资讯
 tags:
 - NewsLetter
 ---
