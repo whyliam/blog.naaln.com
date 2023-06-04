@@ -3,7 +3,7 @@ layout: post
 title: L22_知识精英与拖延
 date: 2023/05/28/ 20:00:00
 categories:
-- NewsLetter
+- 资讯
 tags:
 - NewsLetter
 ---

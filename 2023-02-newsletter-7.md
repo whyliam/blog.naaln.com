@@ -3,7 +3,7 @@ layout: post
 title: L7_让无能的人安乐
 date: 2023/02/12/ 20:00:00
 categories:
-- NewsLetter
+- 资讯
 tags:
 - NewsLetter
 ---

@@ -3,7 +3,7 @@ layout: post
 title: L11_开放态度看待世界
 date: 2023/03/12/ 20:00:00
 categories:
-- NewsLetter
+- 资讯
 tags:
 - NewsLetter
 ---

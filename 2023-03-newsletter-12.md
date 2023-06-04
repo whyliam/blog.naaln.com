@@ -3,7 +3,7 @@ layout: post
 title: L12_小步迈进创造成功
 date: 2023/03/19/ 20:00:00
 categories:
-- NewsLetter
+- 资讯
 tags:
 - NewsLetter
 ---

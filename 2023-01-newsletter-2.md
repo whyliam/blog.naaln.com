@@ -3,7 +3,7 @@ layout: post
 title: L2_新年计划
 date: 2023/01/08/ 20:00:00
 categories:
-- NewsLetter
+- 资讯
 tags:
 - NewsLetter
 ---
