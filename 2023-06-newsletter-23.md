@@ -16,6 +16,8 @@ tags:
 
 ## 一个 Listing 业务
 
+![img](https://pics.naaln.com/getImage.jpeg-basicBlog)
+
 来到 58 以后，第一个接触的词应该是 Listing，这个用中文怎么翻译呢，列表，我一直找不出一个特别合适的词，所以就用 Listing 来描述 58，实际上多数的生活服务网站都是 Listing，例如搜房，前程无忧等等，都是将信息从线下发布到线上的过程。
 
 Listing 最大的特点是每条信息只对两个人有效，而信息被浏览系数越多，失效的概率越大。所以，两件事变的非常重要，一个叫做**信息越多用户体验越好**，Big is more，一个叫做**流动性越快越好**。
@@ -35,7 +37,9 @@ Listing 最大的特点是每条信息只对两个人有效，而信息被浏览
 
 ---
 
-## 关于时间管理的误区，你必须接纳自己的有限性
+## 一个时间管理的误区
+
+![img](https://pics.naaln.com/6367ddbbfa8aebba50fd824c_6259f7cc35ba017efda63bee_Time-Management-Tips.png-basicBlog)
 
 如果说在研究笔记工具的时候，找到的核心问题是：**你希望在什么领域发展。**
 
@@ -65,6 +69,8 @@ Listing 最大的特点是每条信息只对两个人有效，而信息被浏览
 ---
 
 ## 一些生活小技巧
+
+![img](https://pics.naaln.com/life-tips.jpg-basicBlog)
 
 来自 Alexey Guzey 的感悟，他是一位致力于研究科学结构、人工智能等领域的作家和研究员。
 
