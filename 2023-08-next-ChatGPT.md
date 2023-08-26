@@ -67,6 +67,24 @@ David Luan 6 岁从中国随家人搬到美国。原本，David Luan 的兴趣�
 
 ![Adept](https://pics.naaln.com/blog/2023-08-25-8ffe40.gif)
 
+**其他列子：**
+
+Google Sheets
+- 为上一个季度创建损益表
+- 更新 2022 年的收入总和
+- 添加一个新的列，并显示平均花费
+
+Salesforce
+- 将 Andy 录入到销售机会系统
+- 添加来自 Acme Co 的 Emma Jacobs 作为新联系人
+- 设置一个提醒，明天早上给 Sho Ito 发送电子邮件
+
+Redfin
+- 找一处价格低于 60 万美元的休斯顿房产
+
+Craigslist
+- 找一台价格低于 1,000 美元的冰箱
+
 ### ACT-1
 
 AI 模型最近时间层出不穷。其中不同类型的 Transformer 模型，在不同领域都有及其重要的贡献。
