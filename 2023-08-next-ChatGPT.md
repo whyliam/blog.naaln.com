@@ -31,7 +31,7 @@ tags:
 | Stability.ai | 10 亿  | 2022 年 10 月 17 日 | 大模型/文生图     |
 | Glean        | 10 亿  | 2023 年 5 月 18 日  | 企业知识管理      |
 
-![image-20230825163215281](https://pics.naaln.com/blog/2023-08-25-19989e.png-basicBlog)
+![AI 公司的基础模型](https://pics.naaln.com/blog/2023-08-25-19989e.png-basicBlog)
 
 *AI 公司的基础模型*
 
@@ -43,7 +43,7 @@ Adept AI 是一家由前 OpenAI 工程副总裁 David Luan 创立的初创公司
 
 ### 发展
 
-![img](https://img.36krcdn.com/hsossms/20230306/v2_75a7443ebc274bca9ade4ba56b3d78de_oswg560838oswg1080oswg614_img_000)
+![Adept 团队](https://pics.naaln.com/blog/2023-08-26-fe06db.png-basicBlog)
 
 David Luan 6 岁从中国随家人搬到美国。原本，David Luan 的兴趣方向是机器人。从高中起他就尝试独立开发智能机器人的控制系统，在耶鲁就读期间，他曾休学两年去创立机器人应用商店项目，后来他专注研究深度学习技术，创立了人工智能公司 Dextro，主要业务对视频和场景进行自动分类和分割，后来被警用安全上市公司 Axon 收购。
 

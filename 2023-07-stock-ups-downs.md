@@ -26,7 +26,8 @@ $R = \frac{G \times Z\&K}{S \times (1 - Z)\&\frac{1}{K}}$
 注：＆为关联公式，其中 Z&K 与 (1-Z）&1/K 的值介于 0~1 之间
 
 **R 值与涨跌力度的关系：**  
-![](Pasted%20image%2020230724211938.png)
+
+![](https://pics.naaln.com/blog/2023-08-26-701340.png-basicBlog)
 
 ## 二、市场关注度的八点属性
 
@@ -122,11 +123,11 @@ $R = \frac{G \times Z\&K}{S \times (1 - Z)\&\frac{1}{K}}$
 
 ### 主要判断依据的特定情境记忆
 
-![](Pasted%20image%2020230724213410.png)
+![](https://pics.naaln.com/blog/2023-08-26-1df18e.png-basicBlog)
 
 ### 各涨与不涨确定性判断依据之间的关系
 
-![](Pasted%20image%2020230724213446.png)
+![](https://pics.naaln.com/blog/2023-08-26-719529.png-basicBlog)
 
 直接关联：是指当一个判断依据的强度发生变化时，可能会直接导致另一个判断依据的强度也发生变化的一种关系。
 
