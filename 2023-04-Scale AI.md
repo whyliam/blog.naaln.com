@@ -125,13 +125,13 @@ Scale 同时也受益于数据网络效应，随着更多的客户使用 Scale�
 <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="900px" height="500px"
 src="https://fast.wistia.net/embed/iframe/sk212njbxf">
 </iframe>
-**Scale Catalog** 主要针对电商和零售企业，除了提供标注服务，还能自动生成产品图，是 Scale 切入 Generative AI 应用领域的一款核心产品
+**Scale Catalog** 主要针对电商和零售企业，除了提供标注服务，还能自动生成产品图，是 Scale 切入 Generative AI 应用领域的一款核心产品
 
 ### 3. Developer（Spellbook）
 
 ![](https://pics.naaln.com/blog/2023-04-20-60decf.png-basicBlog)
 
-**Scale Spellbook** 做一个基于大语言模型的 to 开发者的工具平台。
+**Scale Spellbook** 做一个基于大语言模型的 to 开发者的工具平台。
 
 **上传**  
 上传数据并轻松查看和编辑您的 prompt。
@@ -170,7 +170,7 @@ src="https://fast.wistia.net/embed/iframe/sk212njbxf">
 2021 年 5 月, Scale AI 聘请前美国首席技术官 Michael Kratsios 担任战略主管。
 2022 年 2 月，Scale AI 有 450 员正式员工。[^12]
 
-2022 年成立 200+ 人的团队，专门服务于美国政府的数据标注服务。（暂时没有查到自有标注团队总人数）  
+2022 年成立 200+ 人的团队，专门服务于美国政府的数据标注服务。（暂时没有查到自有标注团队总人数）  
 同时，有非公开资料表示 Remotasks 是 Scale 的子公司，有 24 万标注人员分布在肯尼亚、菲律宾和委内瑞拉等国家/地区工作。为了避免竞争对手的打击，Scale 有意将两个品牌分开。[^13]
 
 ![](https://pics.naaln.com/blog/2023-04-20-c6bcb6.png-basicBlog)
@@ -189,9 +189,9 @@ Scale 的竞争对手包括：公司内部自建的数据标注团队；谷歌�
 
 由于某些数据比较敏感，有的公司会选择内部自建数据标注团队，作为 Scale 等外包方案的补充。例如 Airbnb 使用内部数据标注产品来标记隐私数据，并用于公司内部的机器学习模型，但是对于不敏感的数据，Airbnb 通常会外包给第三方供应商进行标注。
 
-**•** 第三方供应商做数据标注可以比 Airbnb 内部自建团队更便宜；  
-**•** 第三方供应商具有灵活性，可以根据 Airbnb 的需求灵活调整；  
-**•** 数据标注并不是 Airbnb 的重点业务，第三方供应商的工具可以更准确高效地完成标注。
+**•** 第三方供应商做数据标注可以比 Airbnb 内部自建团队更便宜；  
+**•** 第三方供应商具有灵活性，可以根据 Airbnb 的需求灵活调整；  
+**•** 数据标注并不是 Airbnb 的重点业务，第三方供应商的工具可以更准确高效地完成标注。
 
 ### 2. 数据标注创业公司
 
