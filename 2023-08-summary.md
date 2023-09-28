@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 8月小结｜AIGC 进行时
-date: 2023/07/31 20:00:00
+date: 2023/08/31 20:00:00
 categories:
 - 随笔
 tags:
