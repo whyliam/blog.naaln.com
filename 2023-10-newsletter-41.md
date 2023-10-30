@@ -16,7 +16,7 @@ tags:
 
 ## 如何保护时间
 
-![如何保护时间](https://pics.naaln.com/photo-1501139083538-0139583c060f?auto=format&fit=crop&q=80&w=1000&ixlib=rb-4.0.jpeg-basicBlog)
+![如何保护时间](https://pics.naaln.com/photo-1501139083538-0139583c060f.jpeg-basicBlog)
 
 管理者最重要的时间，就和做业务最重要的是增长一样。
 
@@ -51,7 +51,7 @@ tags:
 
 ## 回购时间
 
-![回购时间](https://pics.naaln.com/photo-1524678714210-9917a6c619c2?auto=format&fit=crop&q=80&w=2669&ixlib=rb-4.0.jpeg-basicBlog)
+![回购时间](https://pics.naaln.com/photo-1524678714210-9917a6c619c2.jpeg-basicBlog)
 
 不要雇人来增长你的业务，而是雇人来解放你的时间。
 
@@ -111,7 +111,7 @@ tags:
 
 ## 个人品牌
 
-![个人品牌](https://pics.naaln.com/photo-1496449903678-68ddcb189a24?auto=format&fit=crop&q=80&w=1000&ixlib=rb-4.0.jpeg-basicBlog)
+![个人品牌](https://pics.naaln.com/photo-1496449903678-68ddcb189a24.jpeg-basicBlog)
 
 - 品牌并不代表品质，而是代表着某种一致性，其结果表现为拥有议价权；
 - 声誉是别人对你的评价，而个人品牌是你对你自己在其他地方的投射，两者并非总是一致；
