@@ -112,7 +112,7 @@ tags:
 
 ## 人类总是在模仿他人
 
-![人类总是在模仿他人](https://pics.naaln.com/bluewing-heroic-fantasy-world-by-edward-tufte-and-kilian-eng-la-123fecdf-5c12-49f4-84bc-ec6017a9eef5_orig.jpeg-basicBlog)
+![人类总是在模仿他人](https://pics.naaln.com/123fecdf-5c12-49f4-84bc-ec6017a9eef5_orig.jpeg-basicBlog)
 
 人类总是在模仿他人，想要他人拥有的东西，追寻社会给大众设定的目标。欲望达成会痛苦，欲求不满也痛苦，只因人们过着一种「虚假」的生活。欲望产生时，别忘了扪心自问：那真的是我想要的吗？我为什么会有这样的欲望？
 

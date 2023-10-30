@@ -3,10 +3,10 @@ layout: post
 title: 7月小结｜不会休息的一代
 date: 2023/07/31 20:00:00
 categories:
-- 随笔
+  - 随笔
 tags:
-- 爱与鲜活
-- 小结
+  - 爱与鲜活
+  - 小结
 ---
 
 <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=209758&auto=1&height=66"></iframe>
