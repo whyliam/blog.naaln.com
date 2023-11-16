@@ -32,8 +32,8 @@ tags:
 
 第四层次：主题阅读。一般做学术和科研研究为业者多为主题阅读，即就一个主题从多本或多系列书籍展开阅读，钩沉索隐，穷搜经典，发覆探幽。
 
-**相关延伸**:  
-[读什么书成什么人？](https://v.youku.com/v_show/id_XMzU1MDM4MzI0OA==.html?playMode=pugv&frommaciku=1)  
+**相关延伸**:
+[读什么书成什么人？](https://v.youku.com/v_show/id_XMzU1MDM4MzI0OA==.html?playMode=pugv&frommaciku=1)
 [魔鬼藏在细节里](https://v.youku.com/v_show/id_XMzU0MzMwNjA4NA==.html?playMode=pugv&frommaciku=1)
 
 ---
@@ -58,7 +58,7 @@ tags:
 
 事实。现在和未来，我们都会生活在系统中，受技术和算法驱使、控制和奴役。因为没有制衡的存在。
 
-**相关延伸**:  
+**相关延伸**:
 [🚥 未来我们都会生活在系统中，受其驱使、控制和奴役](https://rizime.substack.com/p/--3eb)
 
 ---
@@ -86,7 +86,7 @@ Paul Graham 的文章总像是一个睿智的长者在给你讲述一些道理�
 
 没有万无一失的选择，所以如何找到自己痴迷的路径还是得看自己的「投资风格」。如果还在犹豫的时候，记得 Hamming 那句著名的双关问题：**你所在领域，最重要的问题是什么，为什么你没有致力于其中之一？**
 
-**相关延伸**:  
+**相关延伸**:
 [天才的车票理论](https://www.notion.so/8b9a0810bed7427f937f95eab10d95cf)
 
 ---

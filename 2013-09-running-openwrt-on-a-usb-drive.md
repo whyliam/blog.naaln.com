@@ -8,11 +8,12 @@ tags:
 - OpenWrt
 ---
 
-1、 前提条件：
+1、前提条件：
 
-路由器要有USB接口，如水星4530； 拥有USB存储设备，如U盘或移动硬盘；
+路由器要有 USB 接口，如水星 4530； 拥有 USB 存储设备，如 U 盘或移动硬盘；
 
-2、 所需组件：
+2、所需组件：
+
 ```
    kmod-usb-ohci                对应usb1.1
    kmod-usb2                        对应USB2.0
@@ -21,6 +22,7 @@ tags:
 ```
 
 ### 3、执行命令
+
 ```
    opkg update #更新软件列表
    opkg install block-mount block-hotplug     #自动挂载
@@ -33,14 +35,15 @@ tags:
    mount /dev/sda1 /mnt
    mkdir /tmp/root
    mount -o bind / /tmp/root  #挂载并同步
-   cp /tmp/root/* /mnt -a                                            
-   umount /tmp/root      
+   cp /tmp/root/* /mnt -a
+   umount /tmp/root
    echo "Boot from USB" >> /mnt/etc/banner      #添加标记用于重启后区分USB启动
 ```
 
-### 4、 编辑配置文件
+### 4、编辑配置文件
 
-修改/etc/config/fstab文件
+修改/etc/config/fstab 文件
+
 ```
    config mount
    option target        /home　                   #本行可以+#

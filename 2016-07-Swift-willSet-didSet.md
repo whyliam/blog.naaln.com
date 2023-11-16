@@ -25,7 +25,7 @@ class People
     var firstName:String = ""
     var lastName:String  = ""
     var nickName:String  = ""
-    
+
     //计算属性
     var fullName:String
     {
@@ -34,7 +34,7 @@ class People
             return nickName + " " + firstName + " " + lastName
         }
     }
-    
+
     //带属性监视器的普通属性
     var age:Int = 0
     {
@@ -56,12 +56,12 @@ class People
             }
         }
     }
-    
+
     func toString() -> String
     {
         return "Full Name: \(fullName) " + ", Age: \(age) "
     }
-    
+
 }
 
 let me = People()

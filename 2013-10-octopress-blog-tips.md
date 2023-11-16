@@ -10,7 +10,7 @@ tags:
 
 ## 0.首页仅显示部分
 
-只需要在post的markdown文档里面适当位置加上`<!--more-->`即可。这样就不会在首页显示此代码以后的部分。另外，还会在首页的相同位置添加一个read on的链接，点击即可阅读全文。 
+只需要在post的markdown文档里面适当位置加上`<!--more-->`即可。这样就不会在首页显示此代码以后的部分。另外，还会在首页的相同位置添加一个read on的链接，点击即可阅读全文。
 
 ![octopress_logo](http://ginsmile.github.io/images/pic/octopress_logo.png-basicBlog "octopress_logo")
 
@@ -23,7 +23,7 @@ tags:
 
 ## 2.草稿
 
-只需要在新的post的头步加入`published: false`即可。  
+只需要在新的post的头步加入`published: false`即可。
 
 比如本文头部为：
 ```
@@ -67,10 +67,10 @@ rake deploy失败通常是因为不小心在GitHub修改了master分支，错误
    error: 无法推送一些引用到 'git@github.com:GinSmile/ginsmile.github.io.git'
    提示：更新被拒绝，因为您当前分支的最新提交落后于其对应的远程分支。
    提示：再次推送前，先与远程变更合并（如 'git pull ...'）。详见
-   提示：'git push --help' 中的 'Note about fast-forwards' 小节。   
+   提示：'git push --help' 中的 'Note about fast-forwards' 小节。
 ```
 
-这时候，需要修改RakeFile文件（Octopress目录下）来强制推送，这里参考了[stackoverflow的解决办法](http://stackoverflow.com/questions/17609453/rake-gen-deploy-rejected-in-octopress) 
+这时候，需要修改RakeFile文件（Octopress目录下）来强制推送，这里参考了[stackoverflow的解决办法](http://stackoverflow.com/questions/17609453/rake-gen-deploy-rejected-in-octopress)
 
 第264行：
 ```
@@ -129,12 +129,12 @@ PID指的是杀掉的进程的ID，可以从第一个命令中获得。
 
 ## 参考资料
 
-> [stackoverflow/rake-gen-deploy-rejected-in-octopress](http://stackoverflow.com/questions/17609453/rake-gen-deploy-rejected-in-octopress)  
+> [stackoverflow/rake-gen-deploy-rejected-in-octopress](http://stackoverflow.com/questions/17609453/rake-gen-deploy-rejected-in-octopress)
 
->  [octopress docs/blogging](http://octopress.org/docs/blogging/)  
+>  [octopress docs/blogging](http://octopress.org/docs/blogging/)
 
->  [Chatswood](http://blog.chatswood.org.uk/)  
+>  [Chatswood](http://blog.chatswood.org.uk/)
 
->  [stackoverflow/warn-could-not-determine-content-length-of-response-body-set-content-length-of](http://stackoverflow.com/questions/9612618/warn-could-not-determine-content-length-of-response-body-set-content-length-of)  
+>  [stackoverflow/warn-could-not-determine-content-length-of-response-body-set-content-length-of](http://stackoverflow.com/questions/9612618/warn-could-not-determine-content-length-of-response-body-set-content-length-of)
 
 >  [stackoverflow/failed-to-build-gem-native-extension-when-install-redcloth-4-2-9-install-linux](http://stackoverflow.com/questions/12119138/failed-to-build-gem-native-extension-when-install-redcloth-4-2-9-install-linux)

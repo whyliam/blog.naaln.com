@@ -128,7 +128,7 @@ tags:
 ```
 
 #### 获得当前SelectList选择的选项及SelectList的设定
-```  
+```
    form = page.forms.name(form1).first
    返回的值为  xk3 = form.fields.name('select1').value
    返回的值为 xk3 = form.fields.name('select1').options[2].select
@@ -235,18 +235,18 @@ leftpage = page.frames.src('frame_left.htm').click
 ---
    require 'rubygems'
    require 'mechanize'
-   
+
    agent = WWW::Mechanize.new
    agent.max_history = 1
    agent.user_agent_alias = 'Windows IE 7'
-   
+
    page = agent.get("http://www.iteye.com/login")
    form = page.forms[0]
    form.fields[0].value = "javaeye帐号"
    form.fields[1].value = "javaeye密码"
-       
+
    agent.submit form #登录JavaEye
-   
+
    page = agent.get("http://qichunren.iteye.com/admin/messages/new") #### 这里的域名改成你个人的
    form =  page.forms[0]
    form.fields[0].value = "qichunren" #### 消息接收者
@@ -256,6 +256,6 @@ leftpage = page.frames.src('frame_left.htm').click
    地址是http://mars.group.iteye.com/ 点击申请加入。
    火星口号：火星新闻，火星笑话，火星文， 只要你的想法够火星 地球很危险 JE很严肃 大家还是回火星去吧
    }
-   
+
    5.times{agent.submit form} #### 把这个数字写成 1000 也是可以的，＊＿＊
 ```

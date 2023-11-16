@@ -40,7 +40,7 @@ order：阶数，等于次数加1，与控制点数相等。
    #include <GL/glut.h>
    #include <stdlib.h>
    GLfloat ctrlpoints[9][3] = {{0,-0.2,0},{-1.2,-0.5,0},{-1.6,-1,0},{-1.4,-1.5,0},{-1,-2.2,0},{-0.5,-2.7,0},{-0.35,-3.2,0},{-0.6,-3.7,0},{-1.6,-4.2,0}};//控制点
-  
+
    void init(void)
    {
       glClearColor(0.0, 0.0, 0.0, 0.0);
@@ -48,7 +48,7 @@ order：阶数，等于次数加1，与控制点数相等。
       glMap1f(GL_MAP1_VERTEX_3, 0.0, 1.0, 3, 9, &ctrlpoints[0][0]);
       glEnable(GL_MAP1_VERTEX_3);
    }
-  
+
    void display(void)
    {
       int i;
@@ -150,7 +150,7 @@ value：设置指定属性的值。
    GLUnurbsObj *theNurb;
    GLfloat ctrlpoints[9][3] = {{0,-0.2,0},{-1.2,-0.5,0},{-1.6,-1,0},{-1.4,-1.5,0},{-1,-2.2,0},{-0.5,-2.7,0},{-0.35,-3.2,0},{-0.6,-3.7,0},{-1.6,-4.2,0}};//控制点
    GLfloat color[9][3]={{1.0,0.0,0.0},{1.0,1.0,0.0},{0.0,1.0,0.0},{-1.0,1.0,0.0},{-1.0,0.0,0.0},{-1.0,-1.0,0.0},{0.0,-1.0,0.0},{1.0,-1.0,0.0},{1.0,-1.0,0.0}};
-  
+
    void myInit(void)
    {
        glClearColor(1.0,1.0,1.0,0.0);//设置背景色
@@ -201,7 +201,7 @@ value：设置指定属性的值。
        glutInitWindowSize(600,400);
        glutInitWindowPosition(200,200);
        glutCreateWindow("NURBS curve");
-      
+
        /*绘制与显示*/
        myInit();
        glutReshapeFunc(myReshape);

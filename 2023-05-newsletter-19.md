@@ -26,7 +26,7 @@ tags:
 
 当前的技术劳动力已经习惯了每一个声音都得到投票，现在他们将不得不屈服于一个新的世界——一个期望更高、投资有纪律的世界。不考虑变革之风将使许多获得授权的员工的职业生涯处于危险之中。
 
-**相关延伸**:  
+**相关延伸**:
 [The Era of Happy Tech Workers Is Over (aawsat.com)](https://english.aawsat.com/home/article/4122156/nadia-rawlinson/era-happy-tech-workers-over)
 
 ---
@@ -74,7 +74,7 @@ UWES 对员工敬业度的定义基于三个因素：
 
 让我们再重复一遍，更有力一点：大多数研究过的个体干预都不起作用。正念不起作用。冥想不起作用。气功不行。唯一有效的方法是让自己远离导致倦怠的环境，然后花时间恢复。好消息是恢复是有保证的。一项对 2017 年 14 项不同的职业倦怠干预研究进行审查的元分析得出结论，「职业倦怠不是一种稳定的现象；它会随着时间的推移而减少，大多数患者会继续工作。」换句话说，一旦你将自己从让你筋疲力尽的工作环境中解脱出来，你完全康复只是时间问题。
 
-**相关延伸**:  
+**相关延伸**:
 [Burnout Guide: Symptoms, Causes, and Prevention | annotated by Jerry --- 倦怠指南：症状、原因和预防 |由杰瑞注释 (readwise.io)](https://readwise.io/reader/shared/01gma4pc0pe1djweg956fhk3qp/?utmsource=substack&utmmedium=email)
 
 ---
@@ -95,7 +95,7 @@ Brian Christian 在他的书《生存算法：人类决策的计算机科学》�
 
 当然，不同的人在不同的时间更具探索性或剥削性。青少年和企业家倾向于探索更多。成年人和管理者剥削更多。
 
-**相关延伸**:  
+**相关延伸**:
 [The 37% rule: How many people should you date before settling down? (bigthink.com)](https://bigthink.com/neuropsych/the-37-percent-rule/)
 
 ---

@@ -66,7 +66,7 @@ tags:
 
 如果你不能用你的假设来证明你的结论，那么试想结论已经成立，反过来证明这个假设，看看会发生什么。也许从这个方向证明相对容易，你会发现相对直接的路径。好比你在证明的路上做了个标记，然后反过来看你将如何抵达，也许只需要经历几个不那么困难的步骤。
 
-**相关延伸**:  
+**相关延伸**:
 - **原文：**[1952年3月20日 贝尔实验室 Creative Thinking](http://www1.ece.neu.edu/~naderi/Claude%20Shannon.html)
 - **参考：**[LiangFang ：创意从何而来？](https://fangfrancis.github.io/culture/2017/09/01/creativity/)**、**[香农的“创意思维"在编程的应用](https://juejin.cn/post/6844903581791813646)
 
@@ -103,7 +103,7 @@ tags:
 
 悲剧在于，地位游戏是一个零和游戏。我们在争的不是某个物质对象，而是达到甚至超越身边模仿对象的社会地位，这样的争夺势必会引起剧烈的冲突。当参与冲突的人越多，冲突剧烈到无法解决的时候，参与者往往会推举出来一个「替罪羊」，然后将其「献祭」作为冲突的解决方式。想想公司中内部斗争中失败的案例，其实往往冲突者并不是只有一方，但是当乱到一定程度的时候，总会需要某个倒霉鬼出来背锅，然后让整个即将崩坏的系统继续运转下去。
 
-**相关延伸**:  
+**相关延伸**:
 - [Mimetic Desire 101](https://read.lukeburgis.com/p/mimetic-desire-101?s=r)
 - [Mimetic Desire 102](https://read.lukeburgis.com/p/mimetic-desire-102-mimes-memes?s=r)
 - [We're All Chasing One Another's Goals](https://read.lukeburgis.com/p/were-all-chasing-one-anothers-goals?s=r)
@@ -130,7 +130,7 @@ tags:
 
 **但我什么都不是，所以我终于可以自由地做我自己了。**
 
-**相关延伸**:  
+**相关延伸**:
 - [I am nothing](http://paulbuchheit.blogspot.com/2011/08/i-am-nothing.html)
 
 ---

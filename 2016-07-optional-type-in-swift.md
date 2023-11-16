@@ -36,7 +36,7 @@ public enum Optional<Wrapped> : _Reflectable, NilLiteralConvertible {
 
   @warn_unused_result
   public func flatMap<U>(@noescape f: (Wrapped) throws -> U?) rethrows -> U?
-       
+
   public init(nilLiteral: ())
 }
 ```

@@ -27,5 +27,5 @@ GPT 只需要符合语词之间的语法，必然带来信任机制的缺失，�
 
 很难说这一次的变革是否会重新牵引社会、经济乃至政治的变革，至少还没有看到基础产业的升级，更多的是在信息时代的延长线上。
 
-[我们谈论知识时，我们在谈论什么？](https://blog.naaln.com/2023/04/newsletter-18/#%E5%BD%93%E6%88%91%E4%BB%AC%E8%B0%88%E8%AE%BA%E7%9F%A5%E8%AF%86%E6%97%B6%EF%BC%8C%E6%88%91%E4%BB%AC%E5%9C%A8%E8%B0%88%E8%AE%BA%E4%BB%80%E4%B9%88%EF%BC%9F)  
+[我们谈论知识时，我们在谈论什么？](https://blog.naaln.com/2023/04/newsletter-18/#%E5%BD%93%E6%88%91%E4%BB%AC%E8%B0%88%E8%AE%BA%E7%9F%A5%E8%AF%86%E6%97%B6%EF%BC%8C%E6%88%91%E4%BB%AC%E5%9C%A8%E8%B0%88%E8%AE%BA%E4%BB%80%E4%B9%88%EF%BC%9F)
 [符号的世界——人学理论的一次新突破——恩斯特•卡西尔人学思想探析](http://www.semiotics.net.cn/index.php/view/index/theory/2945)

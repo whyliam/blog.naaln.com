@@ -88,7 +88,7 @@ TestFlight
 
 [lra/mackup: Keep your application settings in sync (OS X/Linux) (github.com)](https://github.com/lra/mackup)
 
-开源软件镜像 
+开源软件镜像
 
 [清华大学开源软件镜像站 | Tsinghua Open Source Mirror](https://mirrors.tuna.tsinghua.edu.cn/)
 

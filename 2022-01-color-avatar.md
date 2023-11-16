@@ -25,7 +25,7 @@ NFT 本身没有价值，而是炒的人多了才有价值。好的`NFT`在项�
 
 ![2](https://pics.naaln.com/blog/2022-01-20-f43843.png-basicBlog)
 
-本项目基于 [Vue Color Avatar](https://github.com/Codennnn/vue-color-avatar), builed by [Codennnn](https://github.com/Codennnn)，licensed under MIT to create this collection. 
+本项目基于 [Vue Color Avatar](https://github.com/Codennnn/vue-color-avatar), builed by [Codennnn](https://github.com/Codennnn)，licensed under MIT to create this collection.
 
 ![](https://github.com/Codennnn/vue-color-avatar/raw/main/images/social-preview-1.png)
 

@@ -47,7 +47,7 @@ tags:
    resolver-address=106.186.17.181:2053
    provider-name=2.dnscrypt-cert.ns2.jp.dns.opennic.glue
    provider-key=8768:C3DB:F70A:FBC6:3B64:8630:8167:2FD4:EE6F:E175:ECFD:46C9:22FC:7674:A1AC:2E2A
-```  
+```
 
 更多可用的 DNSCrypt 服务器在 [DNSCrypt 主页][2] 可以找到。
 
@@ -60,11 +60,11 @@ tags:
 配置文件地址在 [ 这里][3]
 ```
    # 为了方便日后更新，把这个仓库 clone 到本地而不是直接下载。
-  
+
    git clone https://github.com/felixonmars/dnsmasq-china-list.git cd dnsmasq-china-list
-  
+
    # 创建到 DNSMasq 配置目录的软链接，当前该目录在 /root/dnsmasq-china-list 下。
-  
+
    ln -s /root/dnsmasq-china-list/accelerated-domains.china.conf /etc/dnsmasq.d/ ln -s /root/dnsmasq-china-list/bogus-nxdomain.china.conf /etc/dnsmasq.d/
 ```
 
@@ -88,19 +88,19 @@ hosts 神马的最喜欢了。自从有了它，妈妈再也不用担心我上�
 这里只写修改了的配置，其他的保持默认即可。
 ```
    # 不读取 /etc/resolv.conf ，取消注释即可
-  
+
    no-resolv no-poll
-  
+
    # 添加上游服务器为 DNSCrypt，如果还有其他的 server= 记得取消注释。
-  
+
    server=127.0.0.1#5301
-  
+
    # 在所有网卡上关闭 DHCP，用不着这个功能。如果有多个网卡那么一行一个。
-  
+
    no-dhcp-interface=eth0
-  
+
    # 添加自定义 hosts 文件
-  
+
    addn-hosts=/etc/dns/hosts
 ```
 

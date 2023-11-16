@@ -44,17 +44,17 @@ Xcode现在支持建立动态库工程，但生成的是framework，可以通过
 ```
 - (void)cb_AsyncOnAddMsg:(NSString *)msg MsgWrap:(CMessageWrap *)wrap {
    [self cb_AsyncOnAddMsg:msg MsgWrap:wrap];
-  
+
    [CBNewestMsgManager sharedInstance].username = msg;
    [CBNewestMsgManager sharedInstance].content = wrap.m_nsContent;
-  
+
    [[NSNotificationCenter defaultCenter] postNotificationName:CBWeChatNewMessageNotification object:nil];
 
 }
 
 - (void)cb_msgContentViewControllerViewDidLoad {
    [self cb_msgContentViewControllerViewDidLoad];
-  
+
    UIButton *button = [[UIButton alloc] initWithFrame:CGRectMake(self.view.frame.size.width - 40, 74, 40, 40)];
    UIImage *image = [UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"WeChatMsgPreview_safari@2x" ofType:@"png"]];
    [button setImage:image forState:UIControlStateNormal];
@@ -65,7 +65,7 @@ Xcode现在支持建立动态库工程，但生成的是framework，可以通过
 
 - (void)cb_webViewControllerViewDidLoad {
    [self cb_webViewControllerViewDidLoad];
-  
+
    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(cb_didReceiveNewMessage) name:CBWeChatNewMessageNotification object:nil];
 
 }
@@ -75,7 +75,7 @@ Xcode现在支持建立动态库工程，但生成的是framework，可以通过
    NSString *content = [CBNewestMsgManager sharedInstance].content;
    CContactMgr *contactMgr = [[objc_getClass("MMServiceCenter") defaultCenter] getService:[objc_getClass("CContactMgr") class]];
    CContact *contact = [contactMgr getContactByName:username];
-  
+
    dispatch_async(dispatch_get_main_queue(), ^{
        NSString *text = [NSString stringWithFormat:@"  %@: %@  ", contact.m_nsNickName, content];
        [CBMessageHud showHUDInView:self.view text:text target:self action:@selector(backToMsgContentViewController)];
@@ -95,11 +95,11 @@ Xcode现在支持建立动态库工程，但生成的是framework，可以通过
    // 返回聊天界面ViewController前记录当前navigationController的VC堆栈，以便快速返回
    NSArray *webViewViewControllers = [objc_getClass("CAppViewControllerManager") getCurrentNavigationController].viewControllers;
    [CBNewestMsgManager sharedInstance].webViewViewControllers = webViewViewControllers;
-  
+
    // 返回rootViewController
    UINavigationController *navVC = [objc_getClass("CAppViewControllerManager") getCurrentNavigationController];
    [navVC popToRootViewControllerAnimated:NO];
-  
+
    // 进入聊天界面ViewController
    NSString *username = [CBNewestMsgManager sharedInstance].username;
    CContactMgr *contactMgr = [[objc_getClass("MMServiceCenter") defaultCenter] getService:[objc_getClass("CContactMgr") class]];

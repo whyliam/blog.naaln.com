@@ -52,7 +52,7 @@ git clone git://github.com/h5bp/html5-boilerplate.git
 ├── crossdomain.xml
 ├── favicon.ico
 └── [apple-touch-icons]
-``` 
+```
 ```
 
 从上向下看
@@ -282,7 +282,7 @@ require.config({
       'css!../css/jquery.mobile-1.3.0.min.css'
       ]
     },
-    underscore: { 
+    underscore: {
       exports: '_'
     }
   }
@@ -315,7 +315,7 @@ var restaurants = [
   }
 ]
 ```
-  
+
 
 载入这段数据:
 
@@ -392,7 +392,7 @@ var foodOrder = {
 
 ```
 foodOrder.dataReady(function(){
-  alert(1);    
+  alert(1);
 });
 foodOrder.init();
 ```
@@ -430,7 +430,7 @@ $('body').append('<div>' + data.name + '</div>');
 </script>
 </ul>
 ```
-  
+
 
 调用引擎
 

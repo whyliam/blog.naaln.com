@@ -87,8 +87,8 @@ tags:
 或者通过axes函数来重新规定子窗口的大小和位置
 ```
    axes('position',[.1 .1 .8 .6])
-   mesh(peaks(20)); 
-   axes('position',[.1 .7 .8 .2]) 
+   mesh(peaks(20));
+   axes('position',[.1 .7 .8 .2])
    pcolor([1:10;1:10]);
 *```
 

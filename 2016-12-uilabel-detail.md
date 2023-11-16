@@ -104,7 +104,7 @@ label.minimumScaleFactor = 0.5;
 myLabel.adjustsLetterSpacingToFitWidth = NO;
 ```
 
-14\.  lineBreakMode //设置文字过长时的显示格式            
+14\.  lineBreakMode //设置文字过长时的显示格式
 
 ```swift
 label.lineBreakMode = NSLineBreakByCharWrapping; //以字符为显示单位显示，后面部分省略不显示。
@@ -115,7 +115,7 @@ label.lineBreakMode = NSLineBreakByTruncatingTail; //结尾部分的内容以…
 label.lineBreakMode = NSLineBreakByWordWrapping; //以单词为显示单位显示，后面部分省略不显示。
 ```
 
-15\.  adjustsFontSizeToFitWidth //设置字体大小适应label宽度 
+15\.  adjustsFontSizeToFitWidth //设置字体大小适应label宽度
 
 ```swift
 label.adjustsFontSizeToFitWidth = YES;
@@ -196,86 +196,86 @@ titleLabel.layer.borderWidth = 2;
 #### 在iOS中默认的UILabel中的文字在竖直方向上只能居中对齐，博主参考国外网站，从UILabel继承了一个新类，实现了居上对齐，居中对齐，居下对齐。具体如下：
 
 ```object-c
-#import <UIKit/UIKit.h> 
-typedef enum 
-{ 
-    VerticalAlignmentTop = 0, // default 
-    VerticalAlignmentMiddle, 
-    VerticalAlignmentBottom, 
-} VerticalAlignment; 
-@interface myUILabel : UILabel 
-{ 
-@private 
-VerticalAlignment _verticalAlignment; 
-} 
- 
-@property (nonatomic) VerticalAlignment verticalAlignment; 
- 
-@end 
+#import <UIKit/UIKit.h>
+typedef enum
+{
+    VerticalAlignmentTop = 0, // default
+    VerticalAlignmentMiddle,
+    VerticalAlignmentBottom,
+} VerticalAlignment;
+@interface myUILabel : UILabel
+{
+@private
+VerticalAlignment _verticalAlignment;
+}
+
+@property (nonatomic) VerticalAlignment verticalAlignment;
+
+@end
 ```
 
 ```object-c
-// 
-//  myUILabel.m 
-//   
-// 
-//  Created by yexiaozi_007 on 3/4/13. 
-//  Copyright (c) 2013 yexiaozi_007. All rights reserved. 
-// 
- 
-#import "myUILabel.h" 
- 
-@implementation myUILabel 
-@synthesize verticalAlignment = verticalAlignment_; 
- 
--(id)initWithFrame:(CGRect)frame { 
-    if (self = [super initWithFrame:frame]) { 
-        self.verticalAlignment = VerticalAlignmentMiddle; 
-    } 
-    return self; 
-} 
- 
--(void)setVerticalAlignment:(VerticalAlignment)verticalAlignment { 
-    verticalAlignment_ = verticalAlignment; 
-    [self setNeedsDisplay]; 
-} 
- 
--(CGRect)textRectForBounds:(CGRect)bounds limitedToNumberOfLines:(NSInteger)numberOfLines { 
-    CGRect textRect = [super textRectForBounds:bounds limitedToNumberOfLines:numberOfLines]; 
-    switch (self.verticalAlignment) { 
-        case VerticalAlignmentTop: 
-            textRect.origin.y = bounds.origin.y; 
-            break; 
-        case VerticalAlignmentBottom: 
-            textRect.origin.y = bounds.origin.y + bounds.size.height - textRect.size.height; 
-            break; 
-        case VerticalAlignmentMiddle: 
-            // Fall through. 
-        default: 
-            textRect.origin.y = bounds.origin.y + (bounds.size.height - textRect.size.height) / 2.0; 
-    } 
-    return textRect; 
-} 
- 
--(void)drawTextInRect:(CGRect)requestedRect { 
-    CGRect actualRect = [self textRectForBounds:requestedRect limitedToNumberOfLines:self.numberOfLines]; 
-    [super drawTextInRect:actualRect]; 
-} 
- @end 
+//
+//  myUILabel.m
+//
+//
+//  Created by yexiaozi_007 on 3/4/13.
+//  Copyright (c) 2013 yexiaozi_007. All rights reserved.
+//
+
+#import "myUILabel.h"
+
+@implementation myUILabel
+@synthesize verticalAlignment = verticalAlignment_;
+
+-(id)initWithFrame:(CGRect)frame {
+    if (self = [super initWithFrame:frame]) {
+        self.verticalAlignment = VerticalAlignmentMiddle;
+    }
+    return self;
+}
+
+-(void)setVerticalAlignment:(VerticalAlignment)verticalAlignment {
+    verticalAlignment_ = verticalAlignment;
+    [self setNeedsDisplay];
+}
+
+-(CGRect)textRectForBounds:(CGRect)bounds limitedToNumberOfLines:(NSInteger)numberOfLines {
+    CGRect textRect = [super textRectForBounds:bounds limitedToNumberOfLines:numberOfLines];
+    switch (self.verticalAlignment) {
+        case VerticalAlignmentTop:
+            textRect.origin.y = bounds.origin.y;
+            break;
+        case VerticalAlignmentBottom:
+            textRect.origin.y = bounds.origin.y + bounds.size.height - textRect.size.height;
+            break;
+        case VerticalAlignmentMiddle:
+            // Fall through.
+        default:
+            textRect.origin.y = bounds.origin.y + (bounds.size.height - textRect.size.height) / 2.0;
+    }
+    return textRect;
+}
+
+-(void)drawTextInRect:(CGRect)requestedRect {
+    CGRect actualRect = [self textRectForBounds:requestedRect limitedToNumberOfLines:self.numberOfLines];
+    [super drawTextInRect:actualRect];
+}
+ @end
 ```
 
 在使用时：
 
 ```object-c
 
-lbl_mylabel = [[myUILabel alloc] initWithFrame:CGRectMake(20, 50, 150, 600)]; 
-UIColor *color = [UIColor colorWithPatternImage:[UIImage imageNamed:@"halfTransparent.png"]];//使用半透明图片作为label的背景色 
-lbl_mylabel.backgroundColor = color; 
-lbl_mylabel.textAlignment = UITextAlignmentLeft; 
-lbl_mylabel.textColor = UIColor.whiteColor; 
-lbl_mylabel.lineBreakMode = UILineBreakModeWordWrap; 
-lbl_mylabel.numberOfLines = 0; 
-[lbl_mylabel setVerticalAlignment:VerticalAlignmentTop]; 
+lbl_mylabel = [[myUILabel alloc] initWithFrame:CGRectMake(20, 50, 150, 600)];
+UIColor *color = [UIColor colorWithPatternImage:[UIImage imageNamed:@"halfTransparent.png"]];//使用半透明图片作为label的背景色
+lbl_mylabel.backgroundColor = color;
+lbl_mylabel.textAlignment = UITextAlignmentLeft;
+lbl_mylabel.textColor = UIColor.whiteColor;
+lbl_mylabel.lineBreakMode = UILineBreakModeWordWrap;
+lbl_mylabel.numberOfLines = 0;
+[lbl_mylabel setVerticalAlignment:VerticalAlignmentTop];
 [self addSubview:lbl_mylabel];
 ```
 
@@ -285,86 +285,86 @@ lbl_mylabel.numberOfLines = 0;
     /*
      1.控件 UIView UILabel UITextField UITextView UIButton
      2.字体、大小、单位、颜色
-     */ 
-    UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(10, 30, 300, 260)]; 
-    label.text = @"Label Text Content, This is a text label things attribute";//默认为空 
-    label.font = [UIFont systemFontOfSize:17];//默认使用系统的17 
-    label.textColor = [UIColor orangeColor];//默认使用文本黑色 
-    label.shadowColor = [UIColor lightGrayColor];//默认没有阴影 
-    label.shadowOffset = CGSizeMake(1,0);//默认是一个向上的阴影(0,-1) 
-    label.textAlignment = NSTextAlignmentCenter;//默认是左对齐 
-    label.lineBreakMode = NSLineBreakByTruncatingTail;//段落样式，默认是最后截断尾巴，用……代替 
+     */
+    UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(10, 30, 300, 260)];
+    label.text = @"Label Text Content, This is a text label things attribute";//默认为空
+    label.font = [UIFont systemFontOfSize:17];//默认使用系统的17
+    label.textColor = [UIColor orangeColor];//默认使用文本黑色
+    label.shadowColor = [UIColor lightGrayColor];//默认没有阴影
+    label.shadowOffset = CGSizeMake(1,0);//默认是一个向上的阴影(0,-1)
+    label.textAlignment = NSTextAlignmentCenter;//默认是左对齐
+    label.lineBreakMode = NSLineBreakByTruncatingTail;//段落样式，默认是最后截断尾巴，用……代替
 ```
 
 ```object-c
-    //富文本的基本数据类型，属性字符串。以此为基础，如果这个设置了相应的属性，则会忽略上面设置的属性，默认为空 
-    NSString *string = label.text; 
-    const CGFloat fontSize = 16.0; 
-    NSMutableAttributedString *attrString = [[NSMutableAttributedString alloc] initWithString:string]; 
+    //富文本的基本数据类型，属性字符串。以此为基础，如果这个设置了相应的属性，则会忽略上面设置的属性，默认为空
+    NSString *string = label.text;
+    const CGFloat fontSize = 16.0;
+    NSMutableAttributedString *attrString = [[NSMutableAttributedString alloc] initWithString:string];
     NSUInteger length = [string length];
 ```
 
 ```object-c
-    //设置字体 
-    UIFont *baseFont = [UIFont systemFontOfSize:fontSize]; 
-    [attrString addAttribute:NSFontAttributeName value:baseFont range:NSMakeRange(0, length)];//设置所有的字体 
-    UIFont *boldFont = [UIFont boldSystemFontOfSize:fontSize]; 
+    //设置字体
+    UIFont *baseFont = [UIFont systemFontOfSize:fontSize];
+    [attrString addAttribute:NSFontAttributeName value:baseFont range:NSMakeRange(0, length)];//设置所有的字体
+    UIFont *boldFont = [UIFont boldSystemFontOfSize:fontSize];
     [attrString addAttribute:NSFontAttributeName value:boldFont range:[string rangeOfString:@"Text"]];//设置Text这四个字母的字体为粗体
 ```
 
 ```object-c
-    //设置倾斜，需要导入coreText 
-    UIFont *italicFont = GetVariationOfFontWithTrait(baseFont, 
-                                                     kCTFontTraitItalic); 
-    [attrString addAttribute:NSFontAttributeName value:italicFont 
-                       range:[string rangeOfString:@"Label"]]; 
+    //设置倾斜，需要导入coreText
+    UIFont *italicFont = GetVariationOfFontWithTrait(baseFont,
+                                                     kCTFontTraitItalic);
+    [attrString addAttribute:NSFontAttributeName value:italicFont
+                       range:[string rangeOfString:@"Label"]];
 ```
 
 ```object-c
-    // 设置颜色 
-    UIColor *color = [UIColor redColor]; 
-    [attrString addAttribute:NSForegroundColorAttributeName 
-                       value:color 
-                       range:[string rangeOfString:@"Content"]]; 
-    [attrString addAttribute:NSBackgroundColorAttributeName value:[UIColor blueColor] range:[string rangeOfString:@"ent"]]; 
+    // 设置颜色
+    UIColor *color = [UIColor redColor];
+    [attrString addAttribute:NSForegroundColorAttributeName
+                       value:color
+                       range:[string rangeOfString:@"Content"]];
+    [attrString addAttribute:NSBackgroundColorAttributeName value:[UIColor blueColor] range:[string rangeOfString:@"ent"]];
 ```
 
 ```object-c
-    //可以对这些属性设置值 
-    //字体名称有以下： 
-//    label.font = [UIFont fontWithName:@"Arial-BoldItalicMT" size:24]; 
-    [attrString addAttribute:NSFontAttributeName value:[UIFont fontWithName:@"Verdana-BoldItalic" size:18] range:[string rangeOfString:@"Label"]]; 
-    label.numberOfLines = 2; 
-    NSMutableParagraphStyle * 
-    style = [[NSParagraphStyle defaultParagraphStyle] mutableCopy]; 
-    style.lineSpacing = 10;//增加行高 
-    style.headIndent = 10;//头部缩进，相当于左padding 
-    style.tailIndent = -10;//相当于右padding 
-    style.lineHeightMultiple = 1.5;//行间距是多少倍 
-    style.alignment = NSTextAlignmentLeft;//对齐方式 
-    style.firstLineHeadIndent = 20;//首行头缩进 
-    style.paragraphSpacing = 10;//段落后面的间距 
-    style.paragraphSpacingBefore = 20;//段落之前的间距 
-    [attrString addAttribute:NSParagraphStyleAttributeName value:style range:NSMakeRange(0, length)]; 
-     
-    [attrString addAttribute:NSKernAttributeName value:@2 range:NSMakeRange(0, length)];//字符间距 2pt 
-    [attrString addAttribute:NSStrokeColorAttributeName value:[UIColor blueColor] range:[string rangeOfString:@"is"]];//设置文字描边颜色，需要和NSStrokeWidthAttributeName设置描边宽度，这样就能使文字空心 
-    [attrString addAttribute:NSStrokeWidthAttributeName value:@2 range:[string rangeOfString:@"is"]];//空心字，文字边框描述 
-    [attrString addAttribute:NSUnderlineStyleAttributeName value:@(NSUnderlineStyleSingle) range:[string rangeOfString:@"text"]];//下划线 
-    [attrString addAttribute:NSUnderlineStyleAttributeName value:@(NSUnderlineStyleThick) range:[string rangeOfString:@"label"]];//厚的下划线 
-    [attrString addAttribute:NSStrikethroughStyleAttributeName value:@(NSUnderlinePatternSolid | NSUnderlineStyleSingle) range:[string rangeOfString:@"things"]];//删除线 
-    [attrString addAttribute:NSStrikethroughColorAttributeName value:[UIColor blueColor] range:[string rangeOfString:@"things"]];//删除线蓝色 
-   label.attributedText = attrString; 
-     
-    label.highlightedTextColor = [UIColor redColor];//设置文本高亮显示颜色，与highlighted一起使用。 
-    label.highlighted = NO; //高亮状态是否打开 
-    label.enabled = YES;//设置文字内容是否可变 
-    label.userInteractionEnabled = YES;//设置标签是否忽略或移除用户交互。默认为NO 
-    label.baselineAdjustment = UIBaselineAdjustmentNone;//如果adjustsFontSizeToFitWidth属性设置为YES，这个属性就来控制文本基线的行为。 
-//    UIBaselineAdjustmentAlignBaselines=0，默认，文本最上端与中线对齐。 
-//    UIBaselineAdjustmentAlignCenters,   文本中线与label中线对齐。 
-//    UIBaselineAdjustmentNone,  文本最低端与label中线对齐。; 
-    [self.view addSubview:label]; 
+    //可以对这些属性设置值
+    //字体名称有以下：
+//    label.font = [UIFont fontWithName:@"Arial-BoldItalicMT" size:24];
+    [attrString addAttribute:NSFontAttributeName value:[UIFont fontWithName:@"Verdana-BoldItalic" size:18] range:[string rangeOfString:@"Label"]];
+    label.numberOfLines = 2;
+    NSMutableParagraphStyle *
+    style = [[NSParagraphStyle defaultParagraphStyle] mutableCopy];
+    style.lineSpacing = 10;//增加行高
+    style.headIndent = 10;//头部缩进，相当于左padding
+    style.tailIndent = -10;//相当于右padding
+    style.lineHeightMultiple = 1.5;//行间距是多少倍
+    style.alignment = NSTextAlignmentLeft;//对齐方式
+    style.firstLineHeadIndent = 20;//首行头缩进
+    style.paragraphSpacing = 10;//段落后面的间距
+    style.paragraphSpacingBefore = 20;//段落之前的间距
+    [attrString addAttribute:NSParagraphStyleAttributeName value:style range:NSMakeRange(0, length)];
+
+    [attrString addAttribute:NSKernAttributeName value:@2 range:NSMakeRange(0, length)];//字符间距 2pt
+    [attrString addAttribute:NSStrokeColorAttributeName value:[UIColor blueColor] range:[string rangeOfString:@"is"]];//设置文字描边颜色，需要和NSStrokeWidthAttributeName设置描边宽度，这样就能使文字空心
+    [attrString addAttribute:NSStrokeWidthAttributeName value:@2 range:[string rangeOfString:@"is"]];//空心字，文字边框描述
+    [attrString addAttribute:NSUnderlineStyleAttributeName value:@(NSUnderlineStyleSingle) range:[string rangeOfString:@"text"]];//下划线
+    [attrString addAttribute:NSUnderlineStyleAttributeName value:@(NSUnderlineStyleThick) range:[string rangeOfString:@"label"]];//厚的下划线
+    [attrString addAttribute:NSStrikethroughStyleAttributeName value:@(NSUnderlinePatternSolid | NSUnderlineStyleSingle) range:[string rangeOfString:@"things"]];//删除线
+    [attrString addAttribute:NSStrikethroughColorAttributeName value:[UIColor blueColor] range:[string rangeOfString:@"things"]];//删除线蓝色
+   label.attributedText = attrString;
+
+    label.highlightedTextColor = [UIColor redColor];//设置文本高亮显示颜色，与highlighted一起使用。
+    label.highlighted = NO; //高亮状态是否打开
+    label.enabled = YES;//设置文字内容是否可变
+    label.userInteractionEnabled = YES;//设置标签是否忽略或移除用户交互。默认为NO
+    label.baselineAdjustment = UIBaselineAdjustmentNone;//如果adjustsFontSizeToFitWidth属性设置为YES，这个属性就来控制文本基线的行为。
+//    UIBaselineAdjustmentAlignBaselines=0，默认，文本最上端与中线对齐。
+//    UIBaselineAdjustmentAlignCenters,   文本中线与label中线对齐。
+//    UIBaselineAdjustmentNone,  文本最低端与label中线对齐。;
+    [self.view addSubview:label];
 ```
 
 ```object-c
@@ -384,25 +384,25 @@ lbl_mylabel.numberOfLines = 0;
 ```
 
 ```object-c
-//获取斜体 
-UIFont * GetVariationOfFontWithTrait(UIFont *baseFont, 
-                                     CTFontSymbolicTraits trait) { 
-    CGFloat fontSize = [baseFont pointSize]; 
-    CFStringRef 
-    baseFontName = (__bridge CFStringRef)[baseFont fontName]; 
-    CTFontRef baseCTFont = CTFontCreateWithName(baseFontName, 
-                                                fontSize, NULL); 
-    CTFontRef ctFont = 
-    CTFontCreateCopyWithSymbolicTraits(baseCTFont, 0, NULL, 
-                                       trait, trait); 
-    NSString *variantFontName = 
-    CFBridgingRelease(CTFontCopyName(ctFont, 
-                                     kCTFontPostScriptNameKey)); 
- 
-    UIFont *variantFont = [UIFont fontWithName:variantFontName 
-                                          size:fontSize]; 
-    CFRelease(ctFont); 
-    CFRelease(baseCTFont); 
-    return variantFont; 
+//获取斜体
+UIFont * GetVariationOfFontWithTrait(UIFont *baseFont,
+                                     CTFontSymbolicTraits trait) {
+    CGFloat fontSize = [baseFont pointSize];
+    CFStringRef
+    baseFontName = (__bridge CFStringRef)[baseFont fontName];
+    CTFontRef baseCTFont = CTFontCreateWithName(baseFontName,
+                                                fontSize, NULL);
+    CTFontRef ctFont =
+    CTFontCreateCopyWithSymbolicTraits(baseCTFont, 0, NULL,
+                                       trait, trait);
+    NSString *variantFontName =
+    CFBridgingRelease(CTFontCopyName(ctFont,
+                                     kCTFontPostScriptNameKey));
+
+    UIFont *variantFont = [UIFont fontWithName:variantFontName
+                                          size:fontSize];
+    CFRelease(ctFont);
+    CFRelease(baseCTFont);
+    return variantFont;
 };
 ```

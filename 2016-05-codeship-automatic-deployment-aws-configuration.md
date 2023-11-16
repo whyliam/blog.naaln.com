@@ -110,10 +110,10 @@ Secret Access Key:  Ze*******crCpZt
 3. 修改 策略名称 `deploy `
 4. 修改 策略文档 表示 用户部署的权限`ec2`的权限， 自行替换`YOUR_AWS_REGION`,`YOUR_AWS_ACCOUNT_ID`,`CODE_DEPLOY_APPLICATION_NAME`
 
-``` 
+```
 {
    "Version": "2012-10-17",
-   "Statement": [    
+   "Statement": [
        {
            "Effect": "Allow",
            "Action": [

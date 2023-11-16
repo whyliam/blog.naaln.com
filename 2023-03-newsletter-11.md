@@ -92,4 +92,4 @@ Life audit，自我反省的练习，帮助你清除杂乱的、外部的目标�
 希望尝试这个方法的朋友，可以有个难忘美妙的周末。
 
 **来自：**
-- [How and Why to do a Life Audit](https://xsvengoechea.medium.com/how-and-why-to-do-a-life-audit-1d8bfbe1798)  
+- [How and Why to do a Life Audit](https://xsvengoechea.medium.com/how-and-why-to-do-a-life-audit-1d8bfbe1798)

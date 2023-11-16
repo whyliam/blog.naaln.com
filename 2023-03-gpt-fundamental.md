@@ -64,7 +64,7 @@ Transformer 把序列中的所有单词或者符号并行处理，同时借助�
 
 ![transform20fps.gif](https://pics.naaln.com/blog/2023-03-22-1676895366887-cba7006f-a04b-4dc0-9b3d-6c15c698bbab.gif)
 
-使用 Transformer 模型进行翻译工作的示意图（来源 [Google](https://ai.googleblog.com/2017/08/transformer-novel-neural-network.html)）  
+使用 Transformer 模型进行翻译工作的示意图（来源 [Google](https://ai.googleblog.com/2017/08/transformer-novel-neural-network.html)）
 
 > Transformer 在 2017 年由 Google 在题为《Attention Is All You Need》
 

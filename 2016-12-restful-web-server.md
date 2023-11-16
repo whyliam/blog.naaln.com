@@ -7,7 +7,7 @@ categories:
 tags:
 ---
 
-随着 REST 成为大多数 Web 和 Mobile 应用的默认选择，势必要对它的基本原理有所了解。 
+随着 REST 成为大多数 Web 和 Mobile 应用的默认选择，势必要对它的基本原理有所了解。
 
 在它提出十多年后的今天，REST 已经成为最重要的 Web 应用技术之一。随着所有技术朝着 API 方向发展，它的重要性有可能持续快速地增长。每门主要编程语言现在已经包含构建 RESTful Web 服务的框架。同样地，Web 开发者和架构师对 REST 和 RESTful 服务有一个清晰的理解是很重要的。这篇教程解释了 REST 架构，然后研究使用它构建通用地基于API的任务的细节。
 
@@ -282,7 +282,7 @@ Request2: GET [http://MyService/Persons/2](http://MyService/Persons/2) HTTP/1.1
 ### 列表6：Club
 
 ```
-    <Club>       
+    <Club>
         <Name>Authors Club</Name>
         <Persons>
             <Person>
@@ -307,7 +307,7 @@ Request2: GET [http://MyService/Persons/2](http://MyService/Persons/2) HTTP/1.1
 
 这些头部的值可以组合起来用在Cache-Control指令中来检查缓存结果是否有效。最通用的用于Cache-Control的指令如下：
 
-![](http://pics.naaln.com/blog/2019-01-14-032323.jpg-basicBlog) 
+![](http://pics.naaln.com/blog/2019-01-14-032323.jpg-basicBlog)
 
 服务决定这些头和指令的值是根据资源的特性。
 
@@ -321,7 +321,7 @@ Service Name：MyService
 
 Address: [http://MyService/](http://MyService/)
 
-![](http://pics.naaln.com/blog/2019-01-14-032324.jpg-basicBlog) 
+![](http://pics.naaln.com/blog/2019-01-14-032324.jpg-basicBlog)
 
 你也可以文档化每个资源的模型表示（representations ）并且提供一些简单的模型表示（representations ）。
 
