@@ -81,6 +81,6 @@ tags:
 
 我把它做成思维导图了，建议保存至本地，随时查看，遇到问题可以按照这个流程来自查。
 
-![](http://pics.naaln.com/blog/2019-01-14-031641.jpg-basicBlog) 
+![](http://pics.naaln.com/blog/2019-01-14-031641.jpg-basicBlog)
 
 [点击查看思维导图](https://mubu.com/doc/explore/18272)

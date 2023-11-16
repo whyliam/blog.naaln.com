@@ -110,7 +110,7 @@ var kvc:KVOViewController = KVOViewController() // 全局的KVOvc方便在deinit
 ```swift
 @IBAction func KVOButtonDidTapped(sender: AnyObject) {
     kvc.k = kvo()
-       
+
     // addObserver添加监听
     kvc.k.addObserver(self, forKeyPath: "title", options: [NSKeyValueObservingOptions.Old, NSKeyValueObservingOptions.New], context: nil)
     kvc.k.title = self.positiveTF.text!
@@ -143,7 +143,7 @@ deinit {
 //要监听的对象的定义
 class kvo: NSObject {
     var ptitle : String = ""
-   
+
     // dynamic修饰的即为可支持KVO
     dynamic var title : String {
         get {
@@ -153,11 +153,11 @@ class kvo: NSObject {
             self.ptitle = newValue
         }
     }
-   
+
     override init() {
         println("init")
     }
-   
+
     deinit {
         println("deinit")
     }
@@ -189,8 +189,8 @@ NSNotificationCenter.defaultCenter().addObserver(self, selector: "notifReceive:"
 @IBAction func NotificationButtonDidTapped(sender: AnyObject) {
     let noti:NotificationViewController = NotificationViewController()
     noti.positiveValue = self.positiveTF.text!
-       
-    self.presentViewController(noti, animated: true, completion: nil)   
+
+    self.presentViewController(noti, animated: true, completion: nil)
 }
 
 // 每次调用对应name的postNotificationName方法会由selector处理
@@ -211,10 +211,10 @@ deinit {
 ```swift
 func back(sender:UIButton) {
     let tit = (self.view.viewWithTag(10004) as! UITextField).text
-       
+
     // 发送一个通知，name要对应。单一数据可用object传，多个数据可以用dictionary放进userInfo传
     NSNotificationCenter.defaultCenter().postNotificationName("notifName", object: tit, userInfo: nil)
-   
+
     self.dismissViewControllerAnimated(true, completion: nil)
 }
 ```

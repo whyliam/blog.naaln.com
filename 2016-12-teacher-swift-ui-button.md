@@ -24,7 +24,7 @@ tags:
 
 ### 2.1创建
 
-UIButton提供了一个简单的构造方法 
+UIButton提供了一个简单的构造方法
 
 ```
 convenience init(type buttonType: UIButtonType)
@@ -42,19 +42,19 @@ func createButton() {
 }
 
 func buttonPressed(button: UIButton) {
-   
+
 }
 ```
 
 #### Tips:
 
-1.设置按钮标题时，一定要通过 
+1.设置按钮标题时，一定要通过
 
 ```
 func setTitle(_ title: String?, forState state: UIControlState)
 ```
 
-不可通过 
+不可通过
 
 ```
 button.titleLabel?.text = "确定"
@@ -64,16 +64,16 @@ button.titleLabel?.text = "确定"
 
 ### 2.2图片使用
 
-UIButton提供了以下两个接口使用图片： 
+UIButton提供了以下两个接口使用图片：
 
 ```
 func setImage(image: UIImage?, forState state: UIControlState)
 func setBackgroundImage(image: UIImage?, forState state: UIControlState)
 ```
 
-(1)其中接口**setImage**用来设置按钮的图片，默认情况下，它会与按钮文字水平线性排列 
+(1)其中接口**setImage**用来设置按钮的图片，默认情况下，它会与按钮文字水平线性排列
 
-(2)接口**setBackgroundImage**用来设置按钮的背景图片，**setImage**及按钮文字都会显示在背景图片之上 
+(2)接口**setBackgroundImage**用来设置按钮的背景图片，**setImage**及按钮文字都会显示在背景图片之上
 
 这里着重讨论一下**setBackgroundImage**接口，很多时候，按钮看起来是这样的
 
@@ -85,13 +85,13 @@ func setBackgroundImage(image: UIImage?, forState state: UIControlState)
 
 ##### 2.2.1.1 原理说明
 
-在UIImage接口中，有以下方法 
+在UIImage接口中，有以下方法
 
 ```
 func resizableImageWithCapInsets(_ capInsets: UIEdgeInsets) -> UIImage
 ```
 
-使用此方法时，需要传递**UIEdgeInsets**作为参数，创建接口如下： 
+使用此方法时，需要传递**UIEdgeInsets**作为参数，创建接口如下：
 
 ```
 func UIEdgeInsetsMake(_ top: CGFloat, _ left: CGFloat, _ bottom: CGFloat, _ right: CGFloat)
@@ -121,13 +121,13 @@ button.setBackgroundImage(resizeImage!, forState: UIControlState.Normal)
 
 ##### 2.2.1.2性能与可变区域大小的关系
 
-(1) 性能最好：可变区为1像素宽或者高时，绘图时通过拉伸1像素方式 
+(1) 性能最好：可变区为1像素宽或者高时，绘图时通过拉伸1像素方式
 
-(2) 性能较好：可变区为整张图片，方法**resizableImageWithCapInsets**参数为**UIEdgeInsetsZero**，绘制时通过平铺整张图片方式 
+(2) 性能较好：可变区为整张图片，方法**resizableImageWithCapInsets**参数为**UIEdgeInsetsZero**，绘制时通过平铺整张图片方式
 
 (3) 性能较差：可变区宽或者高大于1像素时，绘图时通过平铺方式，此种方式性能较差，但是在实际开发中此种方式也是用的最多的一种。
 
-##### Tips 
+##### Tips
 在一些应用中，应用程序有一些非纯色背景，这个背景会在多个界面使用，由于设备分辨率、界面控件的尺寸差别，会要求制作多个尺寸的图，导致ipa包变大、内存使用增加。这里结合上面**(2)**设置可变区为整张图片，可以解决此问题，原理请看[无缝贴图](http://baike.baidu.com/link?url=EDIwNePycksKQ9MceuZpQLk0C12VWOS4lvb1wVQlzEgW8zliYw44HqDP8RHwArL8uldvUWpXZ3qg4MHgeDtm4K)
 
 ![](http://pics.naaln.com/blog/2019-01-14-032300.jpg-basicBlog)
@@ -160,7 +160,7 @@ Xcode提供了Asset Catalogs的方式来管理图片资源，Asset Catalogs提�
 
 ![](http://pics.naaln.com/blog/2019-01-14-032302.jpg-basicBlog)
 
-可变区：操作线1与操作线2指定的区域，在拉伸时，会根据最终尺寸改变此区域的大小 
+可变区：操作线1与操作线2指定的区域，在拉伸时，会根据最终尺寸改变此区域的大小
 
 删除区：操作线2与操作线3指定的区域（白色半透明层），可以简单的理解为，此区域在拉伸时会被直接删除。使用方法跟普通图片一样，代码如下：
 
@@ -205,7 +205,7 @@ func checkBoxButton() {
     button.setImage(UIImage(named: "check"), forState: UIControlState.Normal)
     button.setImage(UIImage(named: "uncheck"), forState: UIControlState.Selected)
     self.view.addSubview(button)
-   
+
 }
 
 func buttonPressed(button: UIButton) {
@@ -223,9 +223,9 @@ let button = UIButton(type: UIButtonType.System)
 
 在测试时会发现，当定时器每隔一秒更改标题时，会有闪烁现象，将**UIButtonType.System**更改为**UIButtonType.Custom**即可
 
-这里提供封装好的倒计时按钮大家可以直接下载使用 
+这里提供封装好的倒计时按钮大家可以直接下载使用
 
-[http://00red.com/download/Swift之贪婪的UIButton/ILCountDownButton.swift](http://00red.com/download/Swift之贪婪的UIButton/ILCountDownButton.swift) 
+[http://00red.com/download/Swift之贪婪的UIButton/ILCountDownButton.swift](http://00red.com/download/Swift之贪婪的UIButton/ILCountDownButton.swift)
 
 使用示例如下：
 
@@ -249,7 +249,7 @@ UIButton的frame会直接影响到**setImage**及**setBackgroundImage**的显示
 
 ```
 class ILGreedButton: UIButton {
-   
+
     override func hitTest(point: CGPoint, withEvent event: UIEvent?) -> UIView? {
         return self
     }

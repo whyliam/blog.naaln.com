@@ -30,7 +30,7 @@ CODE 的历史 CODE 的第一行代码开始于 2012 年 2 月 14 日，在豆�
 *   [linguist][3]
 *   [ellen][4]
 *   [gpack][5]
-*   [scanner][6] 今年 (2014) 2 月 14 日，CODE 也正式开源了。  
+*   [scanner][6] 今年 (2014) 2 月 14 日，CODE 也正式开源了。
 
 **Staring 目前 CODE 仅开放了一个框架，支持：**
 

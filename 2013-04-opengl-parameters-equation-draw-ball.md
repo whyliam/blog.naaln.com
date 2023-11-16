@@ -19,10 +19,10 @@ tags:
 ```
 Sphere.h
    #pragma once
-  
+
    // Windows Header Files
    #include <windows.h>
-  
+
    // C RunTime Header Files
    #include <stdlib.h>
    #include <malloc.h>
@@ -35,20 +35,20 @@ Sphere.h
 Sphere.h
    #include "Sphere.h"
    #include <glut.h>
-  
+
    #define pi 3.1415926
    #define SOLID 3000
    #define WIRE  3001
-  
+
    typedef int SPHERE_MODE;
-  
+
    typedef struct Point3f
    {
     GLfloat x;
     GLfloat y;
     GLfloat z;
    }point;
-  
+
    void init(void);
    void reshape(int w,int h);
    void display(void);
@@ -56,7 +56,7 @@ Sphere.h
    void drawSlice(point &p1,point &p2,point &p3,point &p4,SPHERE_MODE mode);
    point* getPointMatrix(GLfloat radius,GLint slices);
    int drawSphere(GLfloat radius,GLint slices,SPHERE_MODE mode);
-  
+
    int APIENTRY _tWinMain(HINSTANCE hInstance,HINSTANCE hPrevInstance,LPTSTR lpCmdLine,int nCmdShow)
    {
     glutInitDisplayMode (GLUT_SINGLE | GLUT_RGB | GLUT_DEPTH);
@@ -146,7 +146,7 @@ Sphere.h
     matrix=(point *)malloc(length*sizeof(point));
     if(!matrix)return NULL;
     for(a=0.0,i=0;i<h;i++,a+=hStep)
-     for(b=0.0,j=0;j<w;j++,b+=wStep) 
+     for(b=0.0,j=0;j<w;j++,b+=wStep)
       getPoint(radius,a,b,matrix[i*w+j]);
     return matrix;
    }
@@ -301,7 +301,7 @@ r是球的半径，α角是半径与Z轴正向的夹角，β角是半径在xy平
     matrix=(point *)malloc(length*sizeof(point));
     if(!matrix)return NULL;
     for(a=0.0,i=0;i<h;i++,a+=hStep)
-     for(b=0.0,j=0;j<w;j++,b+=wStep) 
+     for(b=0.0,j=0;j<w;j++,b+=wStep)
       getPoint(radius,a,b,matrix[i*w+j]);
     return matrix;
    }

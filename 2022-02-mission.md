@@ -37,7 +37,7 @@ via: [如何编写个人任务声明（和28个使命陈述示例）](https://ww
 
 * [使命模板](https://www.limoonet.com/wp-content/uploads/2015/10/mission_statement_template.pdf)
 
-  
+
 
 ## 写个人使命的8个步骤
 

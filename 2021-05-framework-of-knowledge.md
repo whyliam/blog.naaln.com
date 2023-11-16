@@ -16,4 +16,4 @@ tags:
 
 - **生产和传播你自己的种子**，不断地重复你知道的东西。为了确保质量，我们应该和比较尊重的人讨论调查结果，获得反馈保证其完整性；并且通过教育的形式传播给他人。
 
-via: MoretoThan 《From Ignorance to Wisdom: A Framework for Knowledge[6]》 
+via: MoretoThan 《From Ignorance to Wisdom: A Framework for Knowledge[6]》

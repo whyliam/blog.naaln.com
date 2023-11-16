@@ -25,7 +25,7 @@ tags:
 
 
 ```
-sudo tlmgr update --self  
+sudo tlmgr update --self
 sudo tlmgr install enumitem
 sudo tlmgr install xifthen
 sudo tlmgr install ifmtarg
@@ -33,5 +33,6 @@ sudo tlmgr install sourcesanspro
 sudo tlmgr install tcolorbox
 sudo tlmgr install environ
 sudo tlmgr install ctex
+sudo tlmgr install tikzfill
 ```
 

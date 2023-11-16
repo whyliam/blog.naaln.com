@@ -8,11 +8,11 @@ tags:
 - echoprint
 ---
 
-[Echoprint: Open acoustic fingerprinting](http://lwn.net/Articles/449650/) 
+[Echoprint: Open acoustic fingerprinting](http://lwn.net/Articles/449650/)
 
-June 29, 2011 
+June 29, 2011
 
-This article was contributed by Nathan Willis 
+This article was contributed by Nathan Willis
 
 翻译：王鑫/曾怀东
 

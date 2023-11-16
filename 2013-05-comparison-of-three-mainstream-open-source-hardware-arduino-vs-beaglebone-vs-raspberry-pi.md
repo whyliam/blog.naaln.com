@@ -14,7 +14,7 @@ tags:
 
 以下是译文：
 
-![](http://pics.naaln.com/blog/2019-01-14-85007.jpg-basicBlog) 
+![](http://pics.naaln.com/blog/2019-01-14-85007.jpg-basicBlog)
 
 从左到右: Arduino Uno, BeagleBone, Raspberry Pi
 
@@ -24,33 +24,33 @@ tags:
 
 三款开源平台分别是Arduino、BeagleBone和Raspberry Pi。之所以选择他们，原因在于他们唾手可得，价格实惠，而且大小规格相似（大约2*3寸），更重要的是，他们可以广泛应用于电子产品开发工作中。在比较前，我们先进行简单的介绍。
 
-![](http://pics.naaln.com/blog/2019-01-14-085007.jpg-basicBlog) 
+![](http://pics.naaln.com/blog/2019-01-14-085007.jpg-basicBlog)
 
 Arduino Uno在Maker的圈子里很常见。Arduino有许多不同尺寸和特性，但是在此我们选择Arduino Uno作为其中的代表。它是一个非常易于开发的平台，有很多开发者也都选择它作为开发环境，而且它的设计让它易于和其他设备相连。
 
-![](http://pics.naaln.com/blog/2019-01-14-085008.jpg-basicBlog) 
+![](http://pics.naaln.com/blog/2019-01-14-085008.jpg-basicBlog)
 
 与Arduino相比，Raspberry Pi是一个比较新的成员。它实际上是一个嵌入式电脑。它也是一个并不昂贵的全功能桌面电脑。它是一个准系统，而作为$35的电脑，它在很多项目中都是一个很好的平台。
 
-![](http://pics.naaln.com/blog/2019-01-14-085009.jpg-basicBlog) 
+![](http://pics.naaln.com/blog/2019-01-14-085009.jpg-basicBlog)
 
 BeagleBone可能是三个平台中最鲜为人知的一种，但它有很好的兼容性，许多项目都可使用。它是一款强大的Linux电脑，而且可以安装到Altoid』s的容器中。
 
-![](http://pics.naaln.com/blog/2019-01-14-085009.jpg-basicBlog) 
+![](http://pics.naaln.com/blog/2019-01-14-085009.jpg-basicBlog)
 
 Arduino背面
 
-![](http://pics.naaln.com/blog/2019-01-14-085011.jpg-basicBlog) 
+![](http://pics.naaln.com/blog/2019-01-14-085011.jpg-basicBlog)
 
 Raspberry Pi背面
 
-![](http://pics.naaln.com/blog/2019-01-14-085012.jpg-basicBlog) 
+![](http://pics.naaln.com/blog/2019-01-14-085012.jpg-basicBlog)
 
 BeagleBone背面
 
 这三款平台各有所长，对于爱好者来说都非常有价值。下表是三款平台的规格与特色。
 
-![](http://pics.naaln.com/blog/2019-01-14-85013.jpg-basicBlog) 
+![](http://pics.naaln.com/blog/2019-01-14-85013.jpg-basicBlog)
 
 首先，Arduino和Raspberry Pi非常便宜，不到40美元，BeagleBone的价值几乎是Arduino Uno的三倍，而Arduino的每秒周转速率大约比另外两款慢40倍，RAM则是其他两款的1/128000。从中你可以发现他们的差异逐渐产生了，Arduino和Raspberry Pi价格较低，而Rasphberry Pi与BeagleBone功能较强。从这点来看的话Rasphberry Pi似乎是最好的选择，但事情没有这么简单。首先它的价格并不如第一眼看到的那么美好，因为运行Raspberry Pi，你需要提供SD卡，而这额外增加了5%到10%的成本。
 

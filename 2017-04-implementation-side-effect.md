@@ -75,25 +75,25 @@ struct Common {
 import UIKit
 
 class ViewController: UIViewController {
-   
+
     var homeViewController: HomeViewController!
     var distance: CGFloat = 0
-   
+
     let FullDistance: CGFloat = 0.78
     let Proportion: CGFloat = 0.77
 
     override func viewDidLoad() {
         super.viewDidLoad()
-       
+
         // 给主视图设置背景
         let imageView = UIImageView(image: UIImage(named: "back"))
         imageView.frame = UIScreen.mainScreen().bounds
         self.view.addSubview(imageView)
-       
+
         // 通过 StoryBoard 取出 HomeViewController 的 view，放在背景视图上面
         homeViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("HomeViewController") as! HomeViewController
         self.view.addSubview(homeViewController.view)
-       
+
         // 绑定 UIPanGestureRecognizer
         homeViewController.panGesture.addTarget(self, action: Selector("pan:"))
     }
@@ -107,7 +107,7 @@ class ViewController: UIViewController {
     func pan(recongnizer: UIPanGestureRecognizer) {
         let x = recongnizer.translationInView(self.view).x
         let trueDistance = distance + x // 实时距离
-       
+
         // 如果 UIPanGestureRecognizer 结束，则激活自动停靠
         if recongnizer.state == UIGestureRecognizerState.Ended {
 
@@ -118,7 +118,7 @@ class ViewController: UIViewController {
             } else {
                 showHome()
             }
-           
+
             return
         }
 
@@ -135,9 +135,9 @@ class ViewController: UIViewController {
         recongnizer.view!.center = CGPointMake(self.view.center.x + trueDistance, self.view.center.y)
         recongnizer.view!.transform = CGAffineTransformScale(CGAffineTransformIdentity, proportion, proportion)
     }
-   
+
     // 封装三个方法，便于后期调用
-   
+
     // 展示左视图
     func showLeft() {
         distance = self.view.center.x * (FullDistance + Proportion / 2)

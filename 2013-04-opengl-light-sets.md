@@ -144,7 +144,7 @@ tags:
 
    /*  draw sphere in first row, first column
 
-    *  diffuse reflection only; no ambient or specular 
+    *  diffuse reflection only; no ambient or specular
 
     */
 
@@ -240,7 +240,7 @@ tags:
 
    /*  draw sphere in second row, first column
 
-    *  ambient and diffuse reflection; no specular 
+    *  ambient and diffuse reflection; no specular
 
     */
 
@@ -336,7 +336,7 @@ tags:
 
    /*  draw sphere in third row, first column
 
-    *  colored ambient and diffuse reflection; no specular 
+    *  colored ambient and diffuse reflection; no specular
 
     */
 

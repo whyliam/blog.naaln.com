@@ -139,7 +139,7 @@ Github：[weixin/WeSketch](https://github.com/weixin/WeSketch/blob/master/README
 
 ### 3、导出图片格式设置（支持小程序）
 
-![](http://pics.naaln.com/blog/2019-01-14-031755.jpg-basicBlog) 
+![](http://pics.naaln.com/blog/2019-01-14-031755.jpg-basicBlog)
 
 ### 4、插件设置
 

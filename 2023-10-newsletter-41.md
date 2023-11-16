@@ -44,7 +44,7 @@ tags:
 
 时间最宝贵，但解决之道并不是提高效率，而是不做立省 100%。就像幸福一样，不是买更多的东西，而是抛弃诸多欲望，让其降低到自己的能力之下。
 
-**相关延伸**:  
+**相关延伸**:
 [理解人们的自证信仰，尊重他们的错觉](https://xiaobot.net/post/102fe717-e1e2-40a9-b671-fdbec4a0bc86)
 
 ---
@@ -99,7 +99,7 @@ tags:
 - 对任务进行价格排序，从 1-4 进行 ranking；
 - 然后对事情进行标记，看到哪些是自己喜欢的，哪些是自己不喜欢的；
 
-**相关延伸**:  
+**相关延伸**:
 
 - [**《Buy back your time》官网**](https://www.buybackyourtime.com/)
 - [**《Buy Back Your Time》小书摘**](https://summaries.com/blog/buy-back-your-time)

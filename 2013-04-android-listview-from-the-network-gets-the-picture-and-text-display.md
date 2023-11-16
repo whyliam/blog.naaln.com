@@ -36,7 +36,7 @@ tags:
 </LinearLayout>
 ```
 
-ListView的每一行的布局，list_raw.xml，看一下结构图： 
+ListView的每一行的布局，list_raw.xml，看一下结构图：
 
 ![][2]
 
@@ -52,12 +52,12 @@ ListView的每一行的布局，list_raw.xml，看一下结构图：
    <LinearLayout android:id="@+id/thumbnail"
        android:layout_width="wrap_content"
        android:layout_height="wrap_content"
-       android:padding="3dip"     
+       android:padding="3dip"
        android:layout_alignParentLeft="true"
        android:background="@drawable/image_bg"
        android:layout_marginRight="5dip">
-       <ImageView    
-           android:id="@+id/list_image"  
+       <ImageView
+           android:id="@+id/list_image"
            android:layout_width="50dip"
            android:layout_height="50dip"
            android:src="@drawable/rihanna"/>
@@ -98,7 +98,7 @@ ListView的每一行的布局，list_raw.xml，看一下结构图：
        android:textSize="10dip"
        android:textColor="#10bcc9"
        android:textStyle="bold"/>
-    <!-- 进入播放 -->   
+    <!-- 进入播放 -->
     <ImageView android:layout_width="wrap_content"
        android:layout_height="wrap_content"
        android:src="@drawable/arrow"
@@ -127,7 +127,7 @@ android:state_pressed="false"
 </selector>
 ```
 
-![][3] 
+![][3]
 
 2. gradient_bg.xml，是默认背景梯度风格
 
@@ -173,7 +173,7 @@ android:state_pressed="false"
    </layer-list>
 ```
 
-以上效果基本上都用到了shape，对此不了解的可以去查看相关资料。上面就是全部的xml布局文件，下面将开始写代码。  
+以上效果基本上都用到了shape，对此不了解的可以去查看相关资料。上面就是全部的xml布局文件，下面将开始写代码。
 
 **(2)主要代码**
 
@@ -249,7 +249,7 @@ import java.util.Collections;
 import java.util.Map;
 import java.util.WeakHashMap;
 import java.util.concurrent.ExecutorService;
-import java.util.concurrent.Executors; 
+import java.util.concurrent.Executors;
 import android.app.Activity;
 import android.content.Context;
 import android.graphics.Bitmap;
@@ -261,7 +261,7 @@ public class ImageLoader {
   MemoryCache memoryCache=new MemoryCache();
   FileCache fileCache;
   private Map<ImageView, String> imageViews=Collections.synchronizedMap(new WeakHashMap<ImageView, String>());
-  ExecutorService executorService; 
+  ExecutorService executorService;
 
   public ImageLoader(Context context){
     fileCache=new FileCache(context);
@@ -436,7 +436,7 @@ public class Utils {
 }
 ```
 
-还可以像下面这样表达，方法是一样的，就是表达形式上不同：  
+还可以像下面这样表达，方法是一样的，就是表达形式上不同：
 
 ```
 public static byte[] readStream(InputStream inStream) throws Exception{
@@ -507,7 +507,7 @@ public class CustomizedListView extends Activity {
     }
 
     list=(ListView)findViewById(R.id.list);
-    adapter=new LazyAdapter(this, songsList);       
+    adapter=new LazyAdapter(this, songsList);
     list.setAdapter(adapter);
 
     //为单一列表行添加单击事件
@@ -518,13 +518,13 @@ public class CustomizedListView extends Activity {
 
        //这里可以自由发挥，比如播放一首歌曲等等
       }
-    });    
-    }  
+    });
+    }
   }
 }
 ```
 
-最后看一下效果： 
+最后看一下效果：
 
 ![请输入图片描述][4]
 

@@ -16,7 +16,7 @@ tags:
 
 ```bash
     /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-   
+
     brew tap caskroom/cask
     brew install mas
 ```
@@ -65,7 +65,7 @@ tags:
     brew cask install rightfont
     brew cask install notion
     幕布
-    mas lucky ipic  
+    mas lucky ipic
 ```
 
 ### 娱乐

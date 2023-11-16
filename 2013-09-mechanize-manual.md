@@ -105,7 +105,7 @@ Mechanize可以让你通过几种不同的方式访问form里面可以输入的�
 让我们看看到现在为止写的代码：
 ```
    require 'rubygems'
-   require 'mechanize'             
+   require 'mechanize'
    agent = WWW::Mechanize.new
    page = agent.get('http://google.com/')
    google_form = page.form('f')

@@ -44,7 +44,7 @@ tags:
 
 ```
   # -*- coding: utf-8 -*-
- 
+
   import re
   import urllib
   from workflow import Workflow, ICON_WEB, web

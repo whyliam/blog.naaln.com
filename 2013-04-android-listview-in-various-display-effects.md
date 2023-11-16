@@ -26,7 +26,7 @@ protected void onCreate(Bundle savedInstanceState) {
    // TODO Auto-generated method stub
    super.onCreate(savedInstanceState);
    setContentView(R.layout.layout_listview_simple);
-  
+
    //取得ListView实例
    ListView lvwSimple = (ListView)findViewById(R.id.lvw_simple);
    //要在ListView中显示的数据集合
@@ -62,8 +62,8 @@ protected void onCreate(Bundle savedInstanceState) {
              android:layout_width="wrap_content"
              android:layout_height="wrap_content"
              android:layout_gravity="center_vertical"
-             android:layout_margin="5dip"   
-             android:background="@drawable/custom"   
+             android:layout_margin="5dip"
+             android:background="@drawable/custom"
              />
        <LinearLayout
            xmlns:android="http://schemas.android.com/apk/res/android"
@@ -116,7 +116,7 @@ protected void onCreate(Bundle savedInstanceState) {
            map.put("lvw_custom_name", "item名称");
            //描述
            map.put("lvw_custom_description", "item描述");
-          
+
            items.add(map);
        }
        return items;
@@ -187,7 +187,7 @@ private void bindView(int position, View view) {
                    setViewText((TextView) v, text);
                } else if (v instanceof ImageView) {
                    if (data instanceof Integer) {
-                       setViewImage((ImageView) v, (Integer) data);                           
+                       setViewImage((ImageView) v, (Integer) data);
                    }
                    //这里增加对Bitmap类型的判断
                        else if(data instanceof Bitmap) {
@@ -227,7 +227,7 @@ MP3的封面图片突然不显示了，不知道咋回事。 步骤：
 * @return
 */
 private List<Map<String, Object>> getSongList(int playlistId) {
-  
+
    // 取得符合条件的所有歌曲
    List<Song> songs = getSongs(playlistId);
    // 构造SongList的数据
@@ -277,7 +277,7 @@ list_songs.xml:
          android:layout_height="48dip"
          android:layout_alignParentLeft="true"
          android:layout_centerVertical="true"
-         android:layout_marginLeft="6dip"       
+         android:layout_marginLeft="6dip"
          />
     <LinearLayout
         android:orientation="vertical"
@@ -313,7 +313,7 @@ list_songs.xml:
                 android:id="@+id/songlist_song_artist"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="3dip"       
+                android:layout_marginTop="3dip"
                 android:layout_marginRight="6dip"
                 android:layout_alignParentRight="true"
                 android:textSize="10dip"
@@ -349,7 +349,7 @@ list_main_btn.xml:
          android:layout_width="wrap_content"
          android:layout_height="wrap_content"
          android:layout_gravity="center_vertical"
-         android:layout_marginLeft="6dip"       
+         android:layout_marginLeft="6dip"
          />
 </LinearLayout>
 ```
@@ -360,8 +360,8 @@ list_main_btn.xml:
 @Override
 public View getView(int position, View convertView, ViewGroup parent) {
    LayoutInflater inflater = LayoutInflater.from(context);
-   //产生一个View 
-   View view = null; 
+   //产生一个View
+   View view = null;
    //根据type不同的数据类型构造不同的View，0代表歌曲，1代表按钮菜单
    //这个list是ListView的数据项集合，是通过构造方法传递进来的
    int type = (Integer)list.get(position).get("type");
@@ -393,9 +393,9 @@ public View getView(int position, View convertView, ViewGroup parent) {
        int resId = (Integer)list.get(position).get("mainlist_btn_img");
        mainlist_btn_img.setImageResource(resId);
    } else {
-      
+
    }
-  
+
    return view;
 }
 ```

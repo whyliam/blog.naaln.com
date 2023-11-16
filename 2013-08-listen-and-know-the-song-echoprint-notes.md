@@ -86,20 +86,20 @@ Echoprint生成后应该会有codegen.exe的文件，以及两个动态链接库
                Process process = new Process();
                process.StartInfo.FileName = "codegen.windows.exe";
                process.StartInfo.Arguments ="\""+fileName+"\"";
-   
+
                process.StartInfo.WindowStyle = ProcessWindowStyle.Hidden;
                process.StartInfo.RedirectStandardOutput = true;
                process.StartInfo.UseShellExecute = false;
                process.StartInfo.CreateNoWindow = true;
                process.Start();
-   
+
                using (StreamReader streamReader = process.StandardOutput)
                {
                    return streamReader.ReadToEnd();
                }
-   
+
            }
-   
+
        }
 ```
 
@@ -118,23 +118,23 @@ Echoprint生成后应该会有codegen.exe的文件，以及两个动态链接库
                Process process = new Process();
                process.StartInfo.FileName = "codegen.windows.exe";
                process.StartInfo.Arguments ="\""+fileName+"\"";
-   
+
                process.StartInfo.WindowStyle = ProcessWindowStyle.Hidden;
                process.StartInfo.RedirectStandardOutput = true;
                process.StartInfo.UseShellExecute = false;
                process.StartInfo.CreateNoWindow = true;
                process.Start();
-   
+
                using (StreamReader streamReader = process.StandardOutput)
                {
                    return streamReader.ReadToEnd();
                }
-   
+
            }
        }
 ```
 
-之后应该就可以在输出中看到Debug输出的调用结果的Json串了。 写在最后: 可能是由于Echoprint数据库的原因很多歌曲返回的结果都是空的，特别是中文歌。注意到Echoprint的原因是希望写个小程序来帮u的音乐找到正确的名字和Tag信息，但由于实验结果有点差强人意，所以u就偷懒没打算继续了。 嗯，这不是个好习惯!  
+之后应该就可以在输出中看到Debug输出的调用结果的Json串了。 写在最后: 可能是由于Echoprint数据库的原因很多歌曲返回的结果都是空的，特别是中文歌。注意到Echoprint的原因是希望写个小程序来帮u的音乐找到正确的名字和Tag信息，但由于实验结果有点差强人意，所以u就偷懒没打算继续了。 嗯，这不是个好习惯!
 
 via:[http://www.ultre.cn/archives/25][5]
 

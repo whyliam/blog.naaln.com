@@ -171,6 +171,6 @@ Dropbox应用的空状态界面。_
 
 原文链接：[UX Design for Mobile: Bottom Navigation](https://uxplanet.org/perfect-bottom-navigation-for-mobile-app-effabbb98c0f#.3z87f9p1s)
 
-作者信息：[Nick Babich](https://uxplanet.org/@101) 
-I'm a software developer, tech enthusiast and UI/UX lover. 
+作者信息：[Nick Babich](https://uxplanet.org/@101)
+I'm a software developer, tech enthusiast and UI/UX lover.
 <span class="md_line md_line_dom_embed">[http://babich.biz](http://babich.biz/)

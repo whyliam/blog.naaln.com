@@ -34,7 +34,7 @@ Octopress的安装不同于WordPress，WordPress是安装到服务器上面的�
 4. 安装
 
 [RVM][4]（或者参考： [http://beginrescueend.com/rvm/install/][5] ）：
-```  
+```
    $ bash -s stable < <(curl -s https://raw.github.com/wayneeseguin/rvm/master/binscripts/rvm-installer)
 ```
 

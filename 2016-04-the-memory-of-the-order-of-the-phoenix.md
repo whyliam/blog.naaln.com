@@ -11,7 +11,7 @@ tags:
 
 以前的我总是看到杂志里的旅行者背着70升的旅行包，穿梭于世界的每一个角落。自然，年少的我对这种生活方式充满了向往，但直到我工作了，也没有踏上过这种旅途。
 
-以前最流行的一句话是 要么读书，要么旅行，身体和灵魂必须有一个在路上。这句话来自于罗马假日 「You can either travel or read, but either your body or soul must be on the way」。 
+以前最流行的一句话是 要么读书，要么旅行，身体和灵魂必须有一个在路上。这句话来自于罗马假日 「You can either travel or read, but either your body or soul must be on the way」。
 
 ![](http://pics.naaln.com/blog/2019-05-14-125656.jpg-basicBlog)
 

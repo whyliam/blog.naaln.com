@@ -107,7 +107,7 @@ func mailComposeController(controller: MFMailComposeViewController, didFinishWit
   print("发送成功")
  default:
   break
- }  
+ }
  self.dismissViewControllerAnimated(true, completion: nil)
 
 }
@@ -141,12 +141,12 @@ let deviceUUID = UIDevice.currentDevice().identifierForVendor?.UUIDString
 import Foundation
 
 extension UIDevice {
-   
+
     ///The device model name, e.g. "iPhone 6s", "iPhone SE", etc
     var modelName: String {
         var systemInfo = utsname()
         uname(&systemInfo)
-       
+
         let machineMirror = Mirror(reflecting: systemInfo.machine)
         let identifier = machineMirror.children.reduce("") { identifier, element in
             guard let value = element.value as? Int8, value != 0 else {
@@ -154,7 +154,7 @@ extension UIDevice {
             }
             return identifier + String(UnicodeScalar(UInt8(value)))
         }
-       
+
         switch identifier {
         case "iPod5,1":                                 return "iPod Touch 5"
         case "iPod7,1":                                 return "iPod Touch 6"
