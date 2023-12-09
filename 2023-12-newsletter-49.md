@@ -122,7 +122,7 @@ tags:
 - 无论你们的关系中发生了什么，你们每人都有 50% 责任。
 
 **相关延伸**:  
-[吵架”的正面观念](https://m.okjike.com/originalPosts/649ff0022552fcb33d655d25?s=eyJ1IjoiNTg1ZjY5MjcwNjI0OTkwMDEyZjQ4MGRhIiwiZCI6MX0%3D)
+[「吵架」的正面观念](https://m.okjike.com/originalPosts/649ff0022552fcb33d655d25?s=eyJ1IjoiNTg1ZjY5MjcwNjI0OTkwMDEyZjQ4MGRhIiwiZCI6MX0%3D)
 
 ---
 
