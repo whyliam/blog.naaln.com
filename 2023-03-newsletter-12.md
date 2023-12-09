@@ -53,7 +53,7 @@ ChatGPT 对教育会产生什么影响？几十年来，上海高校毕业生就
 
 ---
 
-### 一个行为方式：开火与前进
+#### ▎ 一个行为方式：开火与前进
 
 ![img](https://pics.naaln.com/blog/2023-03-20-093e4f.jpeg-basicBlog)
 
