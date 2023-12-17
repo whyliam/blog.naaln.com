@@ -16,6 +16,8 @@ tags:
 
 ## 管理您的容量，而不是您的时间
 
+![selective focus photo of brown and blue hourglass on stones](https://pics.naaln.com/blog/2023-12-18-212d87.jpeg-basicBlog)
+
 > 我们痴迷于管理我们的时间。然而，我们应该专注于管理我们的能力：这是我们把工作做到最好的能力
 
 无论你在哪里工作，无论你的资历有多高，你的能力都是有限的：每天你只有那么多时间可以有效地工作，而你只有那么多时间可以花在生产力和流动的状态上。
@@ -60,6 +62,8 @@ tags:
 ---
 
 ## Akin 的航天飞行器设计定律
+
+![a white airplane flying over a brown ground](https://pics.naaln.com/blog/2023-12-18-3277ba.jpeg-basicBlog)
 
 航天飞行器设计师可能还比软件工程师要负责，借鉴一下航天飞机设计定律，学习成为一个更好的软件工程师。
 
@@ -164,6 +168,8 @@ tags:
 ---
 
 ## 哲学 ：无所事事的重要性
+
+![person using track pad](https://pics.naaln.com/blog/2023-12-18-25ea67.jpeg-basicBlog)
 
 作为一个忙碌的现代人，再加上中文的语境下，「无所事事」在大多数人心里一个贬义词，一旦进入无所事事的状态，就会很慌 —— 然而吊诡的事实是，我们今天其实非常难进入这种状态。
 
