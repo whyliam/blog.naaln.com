@@ -16,6 +16,8 @@ tags:
 
 ## 快速决策
 
+![man in white long sleeve shirt writing on white board](https://pics.naaln.com/blog/2023-12-18-36be4e.jpeg-basicBlog)
+
 所有组织都浪费了大量时间，_认为他们在决策上取得了进展，而实际上他们只是参与了决策的舞台_。这是通过间接行动发生的，这些行动感觉正在取得进展，但实际上对此没有任何贡献。微小的改变可以大大加快进度。
 
 #### ▎错误#1：让免费的日历时段决定你的时间线
@@ -94,6 +96,8 @@ tags:
 ---
 
 ## 视角：如果思维工具是公共产品，我们该如何应对？
+
+![man in gray shirt looking at city buildings during daytime](https://pics.naaln.com/blog/2023-12-18-f5fdcf.jpeg-basicBlog)
 
 **▍思维工具是公共产品**
 

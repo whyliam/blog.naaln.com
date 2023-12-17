@@ -108,6 +108,8 @@ tags:
 
 ## 如何正确吵架
 
+![man in gray crew neck long sleeve shirt standing beside woman in black crew neck shirt](https://pics.naaln.com/blog/2023-12-18-5cb5dd.jpeg-basicBlog)
+
 - 爱情是混乱的，只有充分意识到亲密关系的混乱本质，才会明白争吵的必要性。
 - 适当的冲突是实现甜蜜互动的秘密武器，当我們清楚地意识到为何争吵、如何争吵以及争吵的目的之后，爭吵将会拉近彼此的关系。
 - 不要在争吵中推卸责任，而是明确你到底在为什么而烦恼、什么地方出了问题，以及如何改变现状。

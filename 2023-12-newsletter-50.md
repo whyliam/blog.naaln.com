@@ -16,6 +16,8 @@ tags:
 
 ## 做笔记，到底能为我们提供什么价值
 
+![gray and black fountain pen and book](https://pics.naaln.com/blog/2023-12-18-d90e1d.jpeg-basicBlog)
+
 **▎ 我们都误解了什么才是「记笔记」**
 
 人类的许多冲突，都源于无法对相关概念进行澄清。概念的模糊，导致我们无法清晰地思考，也就无法指导具体的生活。
@@ -52,6 +54,8 @@ tags:
 
 ## Sam Altman｜论如何高效工作
 
+![three people sitting in front of table laughing together](https://pics.naaln.com/blog/2023-12-18-5537f5.jpeg-basicBlog)
+
 **如果你在错误的道路上前行，无论你前进的多快，都是在做无用功。选择正确的事情去做，才是提供效率的根本，也是经常容易被人们忽略的部分。**所以，留出足够的时间想想你的方向吧！独立思考能力是极为稀缺的，但是通过不断地实践，你可以逐渐培养这项能力。
 
 在我认识的人当中，能给我留下深刻印象的都是那些可以坚持自我的人，这在人群中并不常见。如果你发现自己总是在人云亦云，这可不是一个好的迹象。也许你在反对他人的时候会犯错，但是你需要培养自信心，坚持那些你认为是正确的原则，这样当你在面对重要的决策上，就不会随波逐流，而有勇气坚持己见。
@@ -76,6 +80,8 @@ tags:
 ---
 
 ## 你的思维速度是固定的
+
+![man holding his head while sitting on chair near computer desk](https://pics.naaln.com/blog/2023-12-18-051e81.jpeg-basicBlog)
 
 *你不能强迫自己思考得更快。如果你尝试，你最终可能会做出更糟糕的决定。以下是如何提高决策的实际质量，而不是寻求技巧来加快决策速度。*
 

@@ -70,6 +70,8 @@ tags:
 
 ## 技术是唯一永恒的增长源泉
 
+![man on beach during sunset](https://pics.naaln.com/blog/2023-12-18-9297b3.jpeg-basicBlog)
+
 Marc Andreessen 在 a16z 官网正式发布了技术乐观主义者宣言《The Techno-Optimist Manifest》，这份宣言接近万字，分别从谎言、真相、技术、市场等角度做了说明，可谓激情澎湃。
 
 在这个宣言里，Marc Andreessen 说**增长的源泉只有三个：人口增长、自然资源利用和技术。唯一永恒的增长源泉只有技术。而自由市场是组织技术经济的最有效方式，市场经济是一台发现机器，一种智能形式——一个探索性、进化性、适应性的系统。**
