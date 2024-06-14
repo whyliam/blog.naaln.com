@@ -13,10 +13,10 @@
   },
   "dependencies": {
     "@waline/hexo-next": "^3.0.1",
-    "hexo": "^7.0.0",
+    "hexo": "^7.2.0",
     "hexo-algolia": "^1.3.2",
     "hexo-deployer-upyun": "https://github.com/whyliam/hexo-deployer-upyun.git",
-    "hexo-excerpt": "^1.3.0",
+    "hexo-excerpt": "^1.3.1",
     "hexo-generator-archive": "^2.0.0",
     "hexo-generator-baidu-sitemap": "^0.1.9",
     "hexo-generator-category": "^2.0.0",
@@ -26,11 +26,11 @@
     "hexo-generator-tag": "^2.0.0",
     "hexo-inject": "^1.0.0",
     "hexo-renderer-ejs": "^2.0.0",
-    "hexo-renderer-marked": "^6.2.0",
-    "hexo-renderer-stylus": "^3.0.0",
+    "hexo-renderer-marked": "^6.3.0",
+    "hexo-renderer-stylus": "^3.0.1",
     "hexo-server": "^3.0.0",
     "hexo-submit-urls-to-search-engine": "^2.1.0",
-    "hexo-theme-next": "^8.19.1",
-    "hexo-util": "^3.1.0"
+    "hexo-theme-next": "^8.20.0",
+    "hexo-util": "^3.3.0"
   }
 }
