@@ -81,25 +81,25 @@ tags:
 
 本文想要介绍的四个类别，是由独特的「心情」或「心态」启发的。在这个系统中，至少有四种这样的心态：生产力心态、好奇心态、想象心态和反思心态。
 
-####  Being Productive 提高工作效率
+#### Being Productive 提高工作效率
 
 ![img](https://pics.naaln.com/blog/2024-01-07-fe1aaa.jpeg-basicBlog)
 
 生产力心态的笔记首选 Craft。在这种模式下，人们将关注追踪日常工作和家庭的责任，为自己和他人的承诺保持前瞻，保持事项优先级列表，并记下实现目标所需的信息。主要的生产力对象包括各种粒度的日期（天、周、月等）。
 
-####  Being Curious 保持好奇心
+#### Being Curious 保持好奇心
 
 ![img](https://pics.naaln.com/blog/2024-01-07-fe1aaa.jpeg-basicBlog)
 
 有好奇心态的人可能选择 Roam Research。这种模式下，人们会热衷于跟踪所有生活领域的学习和做事情，以精进其技艺、成为更了解社会的公民，或是更加有爱的伴侣等等。收集和联系思想，得出的方式就是重写它们的精髓（用自己的话）
 
-####  Being Imaginative 富有想象力
+#### Being Imaginative 富有想象力
 
 ![img](https://pics.naaln.com/blog/2024-01-07-dc75ce.png-basicBlog)
 
 对于想象力心态的人，mymind 是个好选择。在这个模式下，我最关心的是收集具有审美，美丽和超越智慧的项目。收集此类项目的目标是建成一种可以随时退隐以刷新和激发心情的「心灵宫殿」或「禅宗花园」。
 
-####  Being Reflective 善于反思
+#### Being Reflective 善于反思
 
 ![img](https://pics.naaln.com/blog/2024-01-07-520c83.png-basicBlog)
 
