@@ -7,14 +7,12 @@ categories:
 tags:
 ---
 
-今天瞎搞在黑群晖上点升级系统，没有提前关闭docker，重启后docker一直启动失败，点击修复也会失败，排查了好久
+今天瞎搞在黑群晖上点升级系统，没有提前关闭 docker，重启后 docker 一直启动失败，点击修复也会失败，排查了好久
 
 ```bash
 root@Znas:/var/packages/Docker/conf/systemd# systemctl start pkg-Docker-dockerd.service
 Job for pkg-Docker-dockerd.service failed. See "systemctl status pkg-Docker-dockerd.service" and "journalctl -xe" for details.
 ```
-
-
 
 ```bash
 root@Znas:/var/packages/Docker/conf/systemd# systemctl status pkg-Docker-dockerd.service
@@ -35,23 +33,17 @@ Mar 19 22:09:51 Znas systemd[1]: Unit pkg-Docker-dockerd.service entered failed 
 Mar 19 22:09:51 Znas systemd[1]: pkg-Docker-dockerd.service failed.
 ```
 
-
-
 在进一步的追查日志中
 
 ```bash
 journalctl -xe |grep docker
 ```
 
-
-
 肉眼归纳错误如下
 
 ```bash
 Mar 19 22:09:49 Znas dockerd[26739]: unable to configure the Docker daemon with file /var/packages/Docker/etc/dockerd.json: invalid character '}' looking for beginning of object key string
 ```
-
-
 
 查看对应文件 `/var/packages/Docker/etc/dockerd.json`
 
@@ -64,8 +56,6 @@ Mar 19 22:09:49 Znas dockerd[26739]: unable to configure the Docker daemon with 
 }
 ```
 
-
-
 打开另一台群晖进行比对
 
 ```bash
@@ -77,8 +67,6 @@ Mar 19 22:09:49 Znas dockerd[26739]: unable to configure the Docker daemon with 
 }
 ```
 
+发现重装后，docker 的配置文件多了一个逗号，删掉！
 
-
-发现重装后，docker的配置文件多了一个逗号，删掉！
-
-然后直接进入群晖web页面，点击修复（直接`systemctl start pkg-Docker-dockerd.service` 不会成功，涉及到网卡的一些配置）。等待修复完成就成功启动了。
+然后直接进入群晖 web 页面，点击修复（直接 `systemctl start pkg-Docker-dockerd.service` 不会成功，涉及到网卡的一些配置）。等待修复完成就成功启动了。

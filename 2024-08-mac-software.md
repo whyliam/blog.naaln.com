@@ -12,13 +12,13 @@ tags:
 
 ## 前言
 
-本文整理了2024年Mac电脑上一些实用的软件和开发工具,以及它们的安装方法。希望能为新入手Mac的朋友或想要优化工作流程的开发者提供参考。
+本文整理了 2024 年 Mac 电脑上一些实用的软件和开发工具,以及它们的安装方法。希望能为新入手 Mac 的朋友或想要优化工作流程的开发者提供参考。
 
 ## 基础工具安装
 
 ### 安装 Homebrew
 
-Homebrew是Mac上非常强大的包管理工具,可以方便地安装和管理各种软件。
+Homebrew 是 Mac 上非常强大的包管理工具,可以方便地安装和管理各种软件。
 
 ```bash
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
