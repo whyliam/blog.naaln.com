@@ -1,6 +1,6 @@
 ---
 layout: post
-title: hammerspan 和 rclone 同步
+title: hammerspoon 和 rclone 同步
 date: 2024/09/07 22:39:00
 categories:
   - 技术
@@ -51,12 +51,12 @@ rclone lsd webdav:/
 rclone bisync /Users/XXX/Library/Mobile\ Documents/iCloud~md~obsidian/Documents/Afanty webdav:/Afanty --resync
 ```
 
-## Hammerspan
+## hammerspoon
 
-### 安装 Hammerspan
+### 安装 hammerspoon
 
 ```bash
-brew install hammerspan
+brew install hammerspoon
 ```
 
 ### 配置 Spoons
