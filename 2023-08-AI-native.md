@@ -3,10 +3,10 @@ layout: post
 title: 关于 AI Native
 date: 2023/08/27/ 20:00:00
 categories:
-- 技术
+  - 技术
 tags:
-- AI
-
+  - AI
+  - 产品
 ---
 
 ![Ways to add AI to a system](https://pics.naaln.com/blog/2023-08-26-be4f2e.svg-basicBlog)

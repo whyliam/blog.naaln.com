@@ -3,8 +3,9 @@ layout: post
 title: 我对财务自由的思考和探索
 date: 2024/11/04 22:49:00
 categories:
-  - 随笔
+  - 经济
 tags:
+  - 财务自由
 ---
 
 ### 人为什么要工作？

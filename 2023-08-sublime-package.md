@@ -3,10 +3,10 @@ layout: post
 title: Sublime Text 无法调用 Install Package
 date: 2023/08/29/ 20:00:00
 categories:
-- 技术
+  - 技术
 tags:
-- 开发
-
+  - 开发
+  - Sublime Text  
 ---
 
 最近 Sublime Text 无法调用 Install Package，我一度以为是我的电脑或者版本的问题。
