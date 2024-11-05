@@ -5,7 +5,8 @@ date: 2024/09/20 22:39:00
 categories:
   - 技术
 tags:
-
+  - Alfred
+  - Youdao  
 ---
 
 回想起来，这已经是 9 年前的 workflows.youdao 了。当时我还是一名 Python 的初学者，因在双语学校学习，日常生活中有大量的中英文翻译需求。因此，我决定开发一个 Alfred 的 [workflows](https://github.com/whyliam/whyliam.workflows.youdao)，以满足自己的翻译需求。

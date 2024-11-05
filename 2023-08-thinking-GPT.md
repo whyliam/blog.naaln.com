@@ -3,10 +3,10 @@ layout: post
 title: 关于 GPT 的一点想法
 date: 2023/08/23/ 20:00:00
 categories:
-- 技术
+  - 技术
 tags:
-- AI
-
+  - AI
+  - 符号
 ---
 
 ### 关于符号

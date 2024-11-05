@@ -5,7 +5,8 @@ date: 2024/09/07 22:39:00
 categories:
   - 技术
 tags:
-
+  - hammerspoon
+  - rclone  
 ---
 
 由于公司电脑的资料和家里电脑的资料不同步，而我有个人的资料库希望在公司电脑上也可以查看。
@@ -51,9 +52,9 @@ rclone lsd webdav:/
 rclone bisync /Users/XXX/Library/Mobile\ Documents/iCloud~md~obsidian/Documents/Afanty webdav:/Afanty --resync
 ```
 
-## hammerspoon
+## Hammerspoon
 
-### 安装 hammerspoon
+### 安装 Hammerspoon
 
 ```bash
 brew install hammerspoon

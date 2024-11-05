@@ -3,10 +3,10 @@ layout: post
 title: Next After ChatGPT
 date: 2023/08/26/ 20:00:00
 categories:
-- 技术
+  - 技术
 tags:
-- AI
-
+  - AI
+  - 生成式
 ---
 
 ## 13 家海外生成式 AI 独角兽及其估值
@@ -90,7 +90,7 @@ Craigslist
 AI 模型最近时间层出不穷。其中不同类型的 Transformer 模型，在不同领域都有及其重要的贡献。
 
 | 模型类型 |  |
-| :--- | :----------------------------- |
+|:--- |:----------------------------- |
 | 语言模型    | GPT，PaLM，Chinchila |
 | 编码    | Codex，AlphaCode         |
 | 图像生成    | DALL-E，Imagen       |
