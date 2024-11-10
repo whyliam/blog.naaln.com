@@ -49,4 +49,4 @@ tags:
 
 除了通货膨胀率和人均 GDP 增速不受个人掌控外，其他都是我们可控的：保护好当前可投资资产、控制住年总开销、学习投资技巧提高收益率。
 
-[# 我对财务自由的思考和探索](https://mp.weixin.qq.com/s/IC9-BGcagSTveanbKhS-Kg)
+[我对财务自由的思考和探索](https://mp.weixin.qq.com/s/IC9-BGcagSTveanbKhS-Kg)
