@@ -112,9 +112,9 @@ tags:
 闭环沟通的好处：
 
 1. **产品改进更快**。与其凭直觉开发新功能，不如把用户的反馈放在首位，这样改进会更有效。
-	 
+	
 2. **产生口碑效应**。你可以拼速度—，早期用户提供极佳体验，让他们愿意主动推荐给朋友。
-	 
+	
 3. **用户反馈是个良性循环**。就像滚雪球一样，你越多听取用户意见并采取行动，他们就会给你更多有价值的反馈。
 
 失败模式：
@@ -136,7 +136,7 @@ tags:
 
 列出你认为理想客户画像可能有的需求、已有的特征及属性。这些内容应该非常具体，可以是个人层面或公司层面的。例如：
 
-![图片](data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3Csvg width='1px' height='1px' viewBox='0 0 1 1' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Ctitle%3E%3C/title%3E%3Cg stroke='none' stroke-width='1' fill='none' fill-rule='evenodd' fill-opacity='0'%3E%3Cg transform='translate(-249.000000, -126.000000)' fill='%23FFFFFF'%3E%3Crect x='249' y='126' width='1' height='1'%3E%3C/rect%3E%3C/g%3E%3C/g%3E%3C/svg%3E)
+![img](https://pics.naaln.com/85.png-basicBlog)
 
 **PostHog 在考虑理想客户画像时会关注的内容：**
 
