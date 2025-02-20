@@ -8,7 +8,7 @@ tags:
   - NewsLetter
 ---
 
-![你又在绘制新的航线了吗](https://wcd-image-bucket-prod.oss-cn-zhangjiakou.aliyuncs.com/raw/3hqSpD3syMtD23gRRSnmF79.png)
+![你又在绘制新的航线了吗](https://pics.naaln.com/3hqSpD3syMtD23gRRSnmF79.png-basicBlog)
 
 ## 随便看看
 
@@ -24,7 +24,7 @@ tags:
 
 闫俊杰认为，用户数量等指标并不是 AI 竞争的核心。他强调，不应使用移动互联网时代的产品方法论来思考 AI 大模型产品。他指出，中国大部分公司，无论是创业公司还是大厂，仍然在使用推荐系统的方法来开发大模型产品。然而，AI 大模型与产品的关系是：更好的模型可以带来更好的应用，但更好的应用和更多的用户并不会直接导致模型的改进。例如，ChatGPT 的日活跃用户数（DAU）是 Claude 的 50 到 100 倍，但两者的模型性能却相差无几。
 
-[# 晚点对话 MiniMax 闫俊杰：千万别套用移动互联网的逻辑来做 AI](https://mp.weixin.qq.com/s/XGnHruXL3P0s-2TNss0LIg)
+[晚点对话 MiniMax 闫俊杰：千万别套用移动互联网的逻辑来做 AI](https://mp.weixin.qq.com/s/XGnHruXL3P0s-2TNss0LIg)
 
 ------
 
@@ -32,7 +32,7 @@ tags:
 
 Anthropic CEO Dario Amodei 认为，DeepSeek 的技术进步并未颠覆 AI 领域的成本下降趋势，而是在既有的技术进步轨道上实现的优化。他强调，出口管制的目的是防止中国获得大规模 AI 计算资源，从而避免中美在 AI 领域形成「两极对抗」格局。Amodei 指出，DeepSeek 的成功并未证明出口管制失败，反而凸显了其必要性，因为中国可能利用 AI 技术取得军事主导地位。
 
-[# On DeepSeek and Export Controls](https://darioamodei.com/on-deepseek-and-export-controls)
+[On DeepSeek and Export Controls](https://darioamodei.com/on-deepseek-and-export-controls)
 
 ------
 
