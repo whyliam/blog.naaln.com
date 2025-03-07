@@ -43,7 +43,7 @@ tags:
 
 以下是一些获得会面的方式，从易到难排名：
 
-![图片](https://pics.naaln.com/640-basicBlog)
+![img](https://pics.naaln.com/2025-03-08-ed1a334912fe4df8b2aa798be7619733.png-basicBlog)
 
 会面建议：
 
