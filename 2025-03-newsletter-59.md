@@ -7,7 +7,7 @@ categories:
 tags:
   - NewsLetter
 ---
-![会变革与技术新纪元](https://pics.naaln.com/2025-03-08-53d74f0bf6824997a24187e88a50a1ec.jpg.jpeg-basicBlog)
+![社会变革与技术新纪元](https://pics.naaln.com/2025-03-11-3b0af92299b14475b6de85e1aac96f23.jpeg-basicBlog)
 
 ## 随便看看
 
