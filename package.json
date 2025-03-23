@@ -25,12 +25,14 @@
     "hexo-generator-sitemap": "^3.0.1",
     "hexo-generator-tag": "^2.0.0",
     "hexo-inject": "^1.0.0",
+    "hexo-reference": "https://github.com/whyliam/hexo-reference",
     "hexo-renderer-ejs": "^2.0.0",
     "hexo-renderer-marked": "^7.0.1",
     "hexo-renderer-stylus": "^3.0.1",
     "hexo-server": "^3.0.0",
     "hexo-submit-urls-to-search-engine": "^2.1.0",
     "hexo-theme-next": "^8.22.0",
-    "hexo-util": "^3.3.0"
+    "hexo-util": "^3.3.0",
+    "highlight.js": "^11.11.1"
   }
 }
