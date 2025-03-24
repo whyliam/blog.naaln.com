@@ -9,109 +9,115 @@ tags:
 - Octopress
 ---
 
-### 今年一直推荐的一种写作方式。
+### 今年一直推荐的一种写作方式
 
-markdown语法快速成文，git与github实时保存，jekyll或octopress实时成书或者showoff实时成ppt。入门略有门槛，但是习惯了，写作效率会好很多。以下以octopress为例，进行说明。
+markdown 语法快速成文，git 与 github 实时保存，jekyll 或 octopress 实时成书或者 showoff 实时成 ppt。入门略有门槛，但是习惯了，写作效率会好很多。以下以 octopress 为例，进行说明。
 
-### 配置个人github账号 登陆
+### 配置个人 Github 账号 登陆
 
-[github][1]，创建一个个人账号。假设叫做：rubyonchina。 然后回到ubuntu或者Mac里面，仍然是在终端里面，输入：
+[github][1]，创建一个个人账号。假设叫做：rubyonchina。然后回到 ubuntu 或者 Mac 里面，仍然是在终端里面，输入：
+
 ```
-    [[ -f ~/.ssh/id_rsa.pub ]] || ssh-keygen -t rsa
-```
-
-按照默认提示一路确认，生成密钥之后，将生成的信息复制到github页面中，如下所示：
-```
-    [[ -f ~/.ssh/id_rsa.pub ]] && cat ~/.ssh/id_rsa.pub | xclip
+[[ -f ~/.ssh/id_rsa.pub ]] || ssh-keygen -t rsa
 ```
 
-然后在浏览器中打开页面： https://github.com/account/ssh 点击，Add another public key，粘贴前面步骤复制的信息，请格外注意，不要在Title中填写内容，直接将复制的内容粘贴到Key中，然后点击：Add Key即可。
+按照默认提示一路确认，生成密钥之后，将生成的信息复制到 github 页面中，如下所示：
 
-### 配置octopress个人博客
 ```
-   cd ~/dev/
-   git clone git://github.com/imathis/octopress.git rubyonchina.github.com
-   cd ~/dev/rubyonchina.github.com
+[[ -f ~/.ssh/id_rsa.pub ]] && cat ~/.ssh/id_rsa.pub | xclip
 ```
 
-修改默认的。rvmrc文件的内容为：
+然后在浏览器中打开页面： https://github.com/account/ssh 点击，Add another public key，粘贴前面步骤复制的信息，请格外注意，不要在 Title 中填写内容，直接将复制的内容粘贴到 Key 中，然后点击：Add Key 即可。
+
+### 配置 Octopress 个人博客
+
 ```
-   rvm use 1.9.2@rails31
+cd ~/dev/
+git clone git://github.com/imathis/octopress.git rubyonchina.github.com
+cd ~/dev/rubyonchina.github.com
 ```
 
-安装相应的gem:
+修改默认的。rvmrc 文件的内容为：
+
 ```
-   bundle update
+rvm use 1.9.2@rails31
+```
+
+安装相应的 gem:
+
+```
+bundle update
 ```
 
 然后生成模版文件：
+
 ```
-   rake install
+rake install
 ```
 
-分发到github上。分发之前，假设你已经注册用户名为rubyonchina的github.com账号，已经创建名为rubyonchina.github.com项目。
+分发到 github 上。分发之前，假设你已经注册用户名为 rubyonchina 的 github.com 账号，已经创建名为 rubyonchina.github.com 项目。
+
 ```
-   cd ~/dev/rubyonchina.github.com
-   git remote add rubyonchina git@github.com:rubyonchina/rubyonchina.github.com.git
+cd ~/dev/rubyonchina.github.com
+git remote add rubyonchina git@github.com:rubyonchina/rubyonchina.github.com.git
 ```
 
 新增一篇测试博客：
+
 ```
-   rake new_post["post title"]
+rake new_post["post title"]
 ```
 
 生成静态站点：
+
 ```
-   rake generate
+rake generate
 ```
 
-配置octopress与github的连接：
+配置 octopress 与 github 的连接：
+
 ```
-   rake setup_github_pages
+rake setup_github_pages
 ```
 
-按照提示填入你的github项目网址，比如，本示例是：
+按照提示填入你的 github 项目网址，比如，本示例是：
+
 ```
-   git@github.com:rubyonchina/rubyonchina.github.com.git
+git@github.com:rubyonchina/rubyonchina.github.com.git
 ```
 
-分发到github上：
+分发到 github 上：
+
 ```
-   rake deploy
+rake deploy
 ```
 
-第一次运行时，会询问是否建立对github的授权，输入：yes。然后将站点更新的内容推送到github上。
+第一次运行时，会询问是否建立对 github 的授权，输入：yes。然后将站点更新的内容推送到 github 上。
+
 ```
-   git push -u rubyonchina master
+git push -u rubyonchina master
 ```
 
 尝试浏览，
 
-[http://rubyonchina.github.com][2] OK！成功！然后，此时，再创建一个新的github的source分支，用于保存写作的md源文件等。
+[http://rubyonchina.github.com][2] OK！成功！然后，此时，再创建一个新的 github 的 source 分支，用于保存写作的 md 源文件等。
+
 ```
-   git add .
-   git commit -m "some changes"
-   git push rubyonchina source
+git add .
+git commit -m "some changes"
+git push rubyonchina source
 ```
 
 现在，你就拥有了一个强大的个人站点。
 
 ### 相关参考
 
-*   [octopress][3]
-
-*   [Git与Github入门资料][4]
-
-*   [告别wordpress，拥抱jekyll][5] 本作品采用
-
-<a href="http://creativecommons.org/licenses/by-nc-nd/3.0/" rel="license">知识共享署名-非商业性使用-禁止演绎 3.0 Unported许可协议</a>进行许可。
+- [octopress][3]
+- [Git 与 Github 入门资料][4]
+- [告别 wordpress，拥抱 jekyll][5]
 
 [1]: https://github.com/signup/free
-
 [2]: http://rubyonchina.github.com/
-
 [3]: http://octopress.org/
-
 [4]: http://www.yangzhiping.com/tech/git.html
-
 [5]: http://www.yangzhiping.com/tech/wordpress-to-jekyll.html
