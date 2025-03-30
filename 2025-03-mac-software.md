@@ -12,9 +12,9 @@ tags:
 
 ## 前言
 
-一年一度的 Mac Software 整理如期而至，本次是因为新入手了 Mac mini。谁叫这个价格实在是太香了。
-
-去年的见：[[2024-08-mac-software]]
+ 一年一度的 Mac Software 整理如期而至，本次是因为新入手了 Mac mini。谁叫这个价格实在是太香了。
+ 
+ 去年的见：[[2024-08-mac-software]]
 
 ## 基础工具安装
 
@@ -35,9 +35,15 @@ sh -c "$(curl -fsSL https://install.ohmyz.sh/)"
 ### 安装 Command
 
 ```bash
-brew install autojump
-brew install git
 brew install zsh
+brew install autojump
+brew install zsh-autosuggestions
+```
+
+如果是用 brew 安装 zsh-autosuggestions，需要在 `.zshrc` 在中设置
+
+```
+source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 ```
 
 ### 配置 Mackup
@@ -143,6 +149,7 @@ brew install --cask drawio              # 流程图工具
 brew install --cask betterdisplay       # 显示器管理工具
 brew install --cask keka                # 文件压缩和解压工具
 brew install --cask balenaetcher        # 系统镜像烧录工具
+brew install --cask beyond-compare
 
 # 云存储
 brew install --cask baidunetdisk        # 百度网盘
@@ -172,12 +179,114 @@ Stash  # 代码片段管理工具
 Texifier  # LaTeX编辑器
 tinymediamanager  # 影视资料管理软件
 夸克网盘  # 阿里巴巴旗下的云存储服务
-Beyond Compare
-Cherry Studio
 Follow
 imFile
 InjectGUI
-Trae
+```
+
+### 安装 Git
+
+```bash
+brew install git 
+```
+
+### 安装 Node
+
+```bash
+brew install node 
+```
+
+### 安装 Python
+
+#### 安装 Pyenv
+
+使用 Homebrew 安装 `pyenv`：
+
+```bash
+brew install pyenv
+```
+
+#### 配置 Shell 环境
+
+将 `pyenv` 添加到你的 Shell 配置文件（例如 `.zshrc` 或 `.bashrc`）中：
+
+```bash
+echo 'export PYENV_ROOT="$HOME/.pyenv"' >> ~/.zshrc
+echo 'export PATH="$PYENV_ROOT/bin:$PATH"' >> ~/.zshrc
+echo -e 'if command -v pyenv 1>/dev/null 2>&1; then\n  eval "$(pyenv init --path)"\nfi' >> ~/.zshrc
+```
+
+然后重新加载配置文件：
+
+```bash
+source ~/.zshrc
+```
+
+#### 使用 Pyenv 安装和管理 Python 版本
+
+运行以下命令查看可以安装的 Python 版本：
+
+```bash
+pyenv install --list
+```
+
+#### 安装指定版本的 Python
+
+例如，安装 Python 3.10.9：
+
+```bash
+pyenv install 3.10.9
+```
+
+#### 设置全局或局部 Python 版本
+
+- 设置全局 Python 版本（影响所有终端会话）：
+
+	```bash
+  pyenv global 3.10.9
+  ```
+
+- 设置局部 Python 版本（仅影响当前目录）：
+
+	```bash
+  pyenv local 3.10.9
+  ```
+
+### 配置 Python 虚拟环境
+
+为了隔离项目依赖，建议结合 `pyenv-virtualenv` 使用虚拟环境。
+
+#### 安装 Pyenv-virtualenv
+
+```bash
+brew install pyenv-virtualenv
+```
+
+将其添加到 Shell 配置文件：
+
+```bash
+echo 'eval "$(pyenv virtualenv-init -)"' >> ~/.zshrc
+source ~/.zshrc
+```
+
+#### 创建虚拟环境
+
+例如，基于 Python 3.13.2 创建一个虚拟环境：
+
+```bash
+pyenv virtualenv 3.13.2 myenv
+```
+
+激活虚拟环境：
+
+```bash
+pyenv activate myenv
+```
+
+退出虚拟环境：
+
+```bash
+pyenv deactivate
 ```
 
 ### 安装 Latex
@@ -189,7 +298,7 @@ brew install basictex
 如果找不到 tlmgr `tlmgr: command not found`，需要设置
 
 ```bash
-export PATH="/usr/local/texlive/2024basic/bin/universal-darwin:$PATH"
+export PATH="/usr/local/texlive/2025basic/bin/universal-darwin:$PATH"
 ```
 
 如果运行提示 `(not verified: gpg unavailable)`，需要安装
