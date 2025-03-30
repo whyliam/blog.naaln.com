@@ -145,15 +145,13 @@ algolia:
   chunkSize: 5000
   indexName: "blog"
   fields:
+    - title
+    - tags
+    - date
+    - categories
     - content:strip:truncate,0,500
-    - excerpt:strip
-    - gallery
     - permalink
     - photos
-    - slug
-    - tags
-    - title
-
 
 excerpt:
   depth: 4

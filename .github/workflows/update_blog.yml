@@ -11,40 +11,43 @@ on:
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
-
     strategy:
       matrix:
         node-version: [22.x]
-        # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
 
     steps:
-    - uses: actions/checkout@v2
-    - name: Use Node.js ${{ matrix.node-version }}
-      uses: actions/setup-node@v2
-      with:
-        node-version: ${{ matrix.node-version }}
-        cache: 'npm'
-    - uses: webfactory/ssh-agent@v0.5.3
-      with:
-        ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
-    
-    - run: npm install hexo-cli -g
-    - run: npm ci
-    - run: npm install hexo
-    
-    - run: git submodule update --init --recursive
-    - run: git submodule update --recursive --remote
-    - run: hexo clean
-    - run: hexo algolia
-      env:
-        ALGOLIA_ADMIN_API_KEY: ${{ secrets.ALGOLIA_ADMIN_API_KEY }}
+      - uses: actions/checkout@v4  # 更新到 v4
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v4  # 更新到 v4
+        with:
+          node-version: ${{ matrix.node-version }}
+          cache: 'npm'
 
-    - run: hexo generate
-    - run: hexo deploy
-      env:
-        BAIDU_TOKEN: ${{ secrets.BAIDU_TOKEN }}
-        BING_TOKEN: ${{ secrets.BING_TOKEN }} 
-        UPYUN_OPERATOR: ${{ secrets.UPYUN_OPERATOR }}
-        UPYUN_PASSWORD: ${{ secrets.UPYUN_PASSWORD }}
+      - uses: webfactory/ssh-agent@v0.5.3
+        with:
+          ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
+
+      - run: npm install hexo-cli -g
+      - run: npm ci
+      - run: npm install hexo
+
+      - run: git submodule update --init --recursive
+      - run: git submodule update --recursive --remote
+      - run: hexo clean
+
+      # 先运行 hexo generate 生成 db.json
+      - run: hexo generate
+
+      # 然后运行 hexo algolia
+      - run: hexo algolia
+        env:
+          ALGOLIA_ADMIN_API_KEY: ${{ secrets.ALGOLIA_ADMIN_API_KEY }}
+
+      # 最后部署
+      - run: hexo deploy
+        env:
+          BAIDU_TOKEN: ${{ secrets.BAIDU_TOKEN }}
+          BING_TOKEN: ${{ secrets.BING_TOKEN }}
+          UPYUN_OPERATOR: ${{ secrets.UPYUN_OPERATOR }}
+          UPYUN_PASSWORD: ${{ secrets.UPYUN_PASSWORD }}
