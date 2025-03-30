@@ -39,7 +39,7 @@ jobs:
     - run: hexo clean
     - run: hexo algolia
       env:
-        HEXO_ALGOLIA_INDEXING_KEY: ${{ secrets.HEXO_ALGOLIA_INDEXING_KEY }}
+        ALGOLIA_ADMIN_API_KEY: ${{ secrets.ALGOLIA_ADMIN_API_KEY }}
 
     - run: hexo generate
     - run: hexo deploy
