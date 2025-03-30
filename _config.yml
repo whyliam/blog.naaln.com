@@ -104,6 +104,7 @@ ignore:
 ## Plugins: https://hexo.io/plugins/
 plugins:
   hexo-reference
+  hexo-algoliasearch
 
 ## Themes: https://hexo.io/themes/
 theme: next
@@ -137,12 +138,20 @@ feed:
   icon: icon.png
   autodiscovery: true
   template:
-
+    
 algolia:
-  applicationID: 'WVAWDPSYBR'
-  apiKey: '004cb5884c6903947d25c8cb8ba4ab3b'
-  indexName: 'blog'
+  appId: "WVAWDPSYBR"
+  apiKey: "004cb5884c6903947d25c8cb8ba4ab3b"
   chunkSize: 5000
+  indexName: "blog"
+  fields:
+    - title
+    - tags
+    - date
+    - categories
+    - content:strip:truncate,0,500
+    - permalink
+    - photos
 
 excerpt:
   depth: 4
