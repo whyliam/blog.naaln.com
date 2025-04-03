@@ -34,12 +34,10 @@ Paul 在这篇文章里面说：
 
 2）在现在或未来，用这些钱去换取别人生产的，我们需要的产品和服务。
 
-
-
 钱是一种交易媒介，它让交易变得更加方便，但却会模糊交易的本质。
 
 钱并不是我们追逐的目标，财富才是。
 
 想搞钱，请先创造财富，创造出一些人们真正需要的东西。
 
-摘自：https://mp.weixin.qq.com/s/X1j8nGeMrFwOPBXLXYKbRQ -孟岩
+摘自：https://mp.weixin.qq.com/s/X1j8nGeMrFwOPBXLXYKbRQ - 孟岩

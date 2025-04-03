@@ -99,7 +99,7 @@ GeForce 256 的推出标志着真正 GPU 时代的开始，也为图形处理技
 
 ![](https://pics.naaln.com/Pasted%20image%2020241218193111.png-basicBlog)
 
-> 2. 当时黄仁勋把世上第一台「DGX-1 AI 超级电脑」捐赠给 OpenAI。
+> 1. 当时黄仁勋把世上第一台「DGX-1 AI 超级电脑」捐赠给 OpenAI。
 
 英伟达持续创新，在 2017 年推出 Volta 架构，2018 年发布 Turing 架构，引入实时光线追踪技术，随后在 2020 年推出的 Ampere 架构，特别是在 AI 应用中表现出色。
 

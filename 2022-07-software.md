@@ -18,6 +18,7 @@ Reeder
 Cubox
 
 ### 沉淀&记录
+
 Typora
 Obsidian
 语雀
@@ -25,6 +26,7 @@ Notion
 Texpad
 
 ### 效率工具
+
 MenubarX
 Alfred
 Bartender 4
@@ -34,23 +36,28 @@ SwitchHosts
 Pomotodo
 
 ### 敲代码的
+
 xcode
 sublime-text
 
 ### 沟通
+
 iDingTalk
 
 ### 娱乐
+
 IINA
 NeteaseMusic
 优酷
 QQLive
 
 ### 设计
+
 Sketch
 Axure RP 10
 
 ### 工具
+
 Downie 4
 ClashX
 Charles
@@ -68,6 +75,7 @@ Zotero
 OmniFocus
 
 ### 浏览器
+
 Brave Browser
 Microsoft Edge
 Google Chrome
@@ -75,8 +83,6 @@ Google Chrome
 ### 常用软件
 
 TestFlight
-
-
 
 ## 配置
 

@@ -9,7 +9,7 @@ tags:
 - 翻译
 ---
 
-欢迎来到EchoprintEchoprint 是一个开源的音乐是识别系统，他允许任何人在他们自己的应用上构建音乐指纹识别系统。感谢[The Echo Nest](http://the.echonest.com/)的技术支持，以及[Musicbrainz](http://musicbrainz.org/)的合作。
+欢迎来到 EchoprintEchoprint 是一个开源的音乐是识别系统，他允许任何人在他们自己的应用上构建音乐指纹识别系统。感谢 [The Echo Nest](http://the.echonest.com/) 的技术支持，以及 [Musicbrainz](http://musicbrainz.org/) 的合作。
 
 → [Home / FAQ](https://blog.naaln.com/2013/06/echoprint-home-faq-translations)
 
@@ -33,19 +33,15 @@ tags:
 
 ##Codegen
 
-Echoprint  「编码」（一系列的哈希值和时间戳记），音频可以通过文件读取或现场麦克风输入。这是用C + +写的，可以运行在几乎所有的硬件上：服务器，台式机，手机，嵌入式。
+Echoprint「编码」（一系列的哈希值和时间戳记），音频可以通过文件读取或现场麦克风输入。这是用 C + + 写的，可以运行在几乎所有的硬件上：服务器，台式机，手机，嵌入式。
 
 Echoprint 的代码生成器是麻省理工学院的许可。
 
 CODEGEN Echoprint 的操作模式有两种：
-
--
-代码生成器库（libcodegen）是指被链接到，传递给它的PCM数据的缓冲，将输出的代码串的代码。
-
--
+代码生成器库（libcodegen）是指被链接到，传递给它的 PCM 数据的缓冲，将输出的代码串的代码。
 代码生成的二进制文件独立运行，接受文件名作为输入并运行在多线程工人模式。
 
-访问GitHub的网页，最新的开发源代码或最新的稳定版本（4.12版）。
+访问 GitHub 的网页，最新的开发源代码或最新的稳定版本（4.12 版）。
 
 原文: [http://echoprint.me/](http://echoprint.me/codegen)
 

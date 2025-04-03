@@ -8,7 +8,7 @@ tags:
 - 有道翻译
 ---
 
-在使用 [whyliam.workflows.youdao](https://github.com/whyliam/whyliam.workflows.youdao)  的时候，有时候会发音失败。
+在使用 [whyliam.workflows.youdao](https://github.com/whyliam/whyliam.workflows.youdao) 的时候，有时候会发音失败。
 
 这个问题一般是在 Catalina 正式版会出现的问题，say 命令反馈错误信息是：
 

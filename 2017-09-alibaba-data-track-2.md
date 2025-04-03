@@ -22,7 +22,7 @@ tags:
 
 <!-- ![](http://pics.naaln.com/blog/2019-01-14-031946.jpg-basicBlog) -->
 
-### H5 和 native 日志统一
+### H5 和 Native 日志统一
 
 H5 和 native 日志统一：H5 日志通过 JS 接口传给 Native 的方法，转换成 native 的格式统一输出
 
@@ -76,17 +76,17 @@ H5 越来越流行，Hybrid 的应用越来越普及，用户并不关心你的�
 
 ## Next
 
-上期的[分享](https://blog.naaln.com/2017/08/alibaba-data-track-1/)
+上期的 [分享](https://blog.naaln.com/2017/08/alibaba-data-track-1/)
 
 - 流量产品整体介绍
 - 采集规范
-  - 采集规则统一
-  - SPM 和 SCM
-  - 黄金令箭
+	- 采集规则统一
+	- SPM 和 SCM
+	- 黄金令箭
 - 数据采集
-  - 整体设计
-  - Aplus - WEB 采集
-  - UserTrack - APP 采集
-  - UTDID
+	- 整体设计
+	- Aplus - WEB 采集
+	- UserTrack - APP 采集
+	- UTDID
 
-文章中图片因版权原因移除，详细内容可以查看[《大数据之路》](https://book.douban.com/subject/27074564/)。
+文章中图片因版权原因移除，详细内容可以查看 [《大数据之路》](https://book.douban.com/subject/27074564/)。

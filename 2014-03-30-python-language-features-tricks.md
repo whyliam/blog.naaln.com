@@ -12,15 +12,15 @@ By Sahand Saba 翻译 Liam
 
 ## Introduction
 
-自从我开始学习python,我决定记录下一系列经常用的技巧。当我看到一些代码（例如，在 `Overflow`，或者一些开源的应用等等）我觉得很酷，我觉得我们应该不知道这一些用法。当我理解这些代码的时候，我会测试这些代码，然后加入这个列表中。下面发表的是一部分整理后的列表。假如你是一个很专业的`Python`工程师，即使你已经知道大部分用法，你还是可以找到一些你不知道的。假如你是C, C++, Java工程师，并且最近想学Python，或者最近想拓展新的编程方式，那么你将会发现有一部分真的很有用，就想我一样。 每一个技巧和语言的特性都将会通过例子演示，而没有解释。同时，我将会尽量使例子简洁明了，可能有一些仍然讲的不清楚，因为专业水平不够。如果有一些例子看完之后还是不能明白的话，你可以利用例子的标题去`Google`找到更多有用的信息。 例子大致的按难度排序，一些比较简单和常见的功能和技巧会放在前面。 内容的目录我将会放在最后
+自从我开始学习 python,我决定记录下一系列经常用的技巧。当我看到一些代码（例如，在 `Overflow`，或者一些开源的应用等等）我觉得很酷，我觉得我们应该不知道这一些用法。当我理解这些代码的时候，我会测试这些代码，然后加入这个列表中。下面发表的是一部分整理后的列表。假如你是一个很专业的 `Python` 工程师，即使你已经知道大部分用法，你还是可以找到一些你不知道的。假如你是 C, C++, Java 工程师，并且最近想学 Python，或者最近想拓展新的编程方式，那么你将会发现有一部分真的很有用，就想我一样。每一个技巧和语言的特性都将会通过例子演示，而没有解释。同时，我将会尽量使例子简洁明了，可能有一些仍然讲的不清楚，因为专业水平不够。如果有一些例子看完之后还是不能明白的话，你可以利用例子的标题去 `Google` 找到更多有用的信息。例子大致的按难度排序，一些比较简单和常见的功能和技巧会放在前面。内容的目录我将会放在最后
 
 #### 更新 - March 14th, 2014
 
-Roy Keyes 提了一个非常好的建议，把这个文章放在github上，让人们通过提PR方式来增加内容。这个仓库是[https://github.com/sahands/python-by-exampl](https://github.com/sahands/python-by-exampl)。欢迎大家 fork，提 pull requests。我会更新这篇文章的，当有仓库跟新的时候。
+Roy Keyes 提了一个非常好的建议，把这个文章放在 github 上，让人们通过提 PR 方式来增加内容。这个仓库是 [https://github.com/sahands/python-by-exampl](https://github.com/sahands/python-by-exampl)。欢迎大家 fork，提 pull requests。我会更新这篇文章的，当有仓库跟新的时候。
 
 #### 更新 - March 8th, 2014
 
-这篇文章在 [Reddit](http://redd.it/1zv3q3), [Hacker News](https://news.ycombinator.com/item?id=7365410) 有很多的讨论， 在那些评论中，很多读者提了很多建议和修改。我已经更新了我的列表，根据改进的建议，并且增加了一些新的条目。我现在确实有这样的一瞬间。"Cool! I didn't know you could do that!" 另外，我不太清楚 `itertools.chain.from_iterable` 和 `dictionary comprehensions`. 同时，有一些十分有趣的讨论关于是否有一些技术导致难以调试代码的可能性 就我而言，下面的条目本质上是没有很难调试的。但是我可以断定，如果代码写的太长，将会增加调试的难度，以及更加难理解和维护。 根据你的判断，如果你的代码足够的简洁，那是有那好维护和阅读。 举例来说，我觉得列表推导式可以很好阅读，而且易于调试和维护。但是如果列表推导式在另一个列表推导式中来传递给映射，然后到`itertools.chain`？可能不是好主意！
+这篇文章在 [Reddit](http://redd.it/1zv3q3), [Hacker News](https://news.ycombinator.com/item?id=7365410) 有很多的讨论， 在那些评论中，很多读者提了很多建议和修改。我已经更新了我的列表，根据改进的建议，并且增加了一些新的条目。我现在确实有这样的一瞬间。"Cool! I didn't know you could do that!" 另外，我不太清楚 `itertools.chain.from_iterable` 和 `dictionary comprehensions`. 同时，有一些十分有趣的讨论关于是否有一些技术导致难以调试代码的可能性 就我而言，下面的条目本质上是没有很难调试的。但是我可以断定，如果代码写的太长，将会增加调试的难度，以及更加难理解和维护。根据你的判断，如果你的代码足够的简洁，那是有那好维护和阅读。举例来说，我觉得列表推导式可以很好阅读，而且易于调试和维护。但是如果列表推导式在另一个列表推导式中来传递给映射，然后到 `itertools.chain`？可能不是好主意！
 
 #### 1.1 Unpacking
 
@@ -55,7 +55,7 @@ Roy Keyes 提了一个非常好的建议，把这个文章放在github上，让�
 4
 ```
 
-#### 1.2 Unpacking for swapping variables
+#### 1.2 Unpacking for Swapping Variables
 
 ```python
 >>>  a, b = 1, 2
@@ -66,7 +66,7 @@ Roy Keyes 提了一个非常好的建议，把这个文章放在github上，让�
 (2, 1)
 ```
 
-#### 1.3 Extended unpacking (Python 3 only)
+#### 1.3 Extended Unpacking (Python 3 only)
 
 ```python
 >>>  a, *b, c = [1, 2, 3, 4, 5]
@@ -81,7 +81,7 @@ Roy Keyes 提了一个非常好的建议，把这个文章放在github上，让�
 5
 ```
 
-#### 1.4 Negative indexing
+#### 1.4 Negative Indexing
 
 ```python
 >>>  a = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
@@ -93,7 +93,7 @@ Roy Keyes 提了一个非常好的建议，把这个文章放在github上，让�
 8
 ```
 
-#### 1.5 List slices (a[start:end])
+#### 1.5 List Slices (a[start:end])
 
 ```python
 >>>  a = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
@@ -102,7 +102,7 @@ Roy Keyes 提了一个非常好的建议，把这个文章放在github上，让�
 [2, 3, 4, 5, 6, 7]
 ```
 
-#### 1.6 List slices with negative indexing
+#### 1.6 List Slices with Negative Indexing
 
 ```python
 >>>  a = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
@@ -111,7 +111,7 @@ Roy Keyes 提了一个非常好的建议，把这个文章放在github上，让�
 [7, 8]
 ```
 
-#### 1.7 List slices with step (a[start:end:step])
+#### 1.7 List Slices with step (a[start:end:step])
 
 ```python
 >>>  a = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
@@ -126,7 +126,7 @@ Roy Keyes 提了一个非常好的建议，把这个文章放在github上，让�
 [2, 4, 6]
 ```
 
-#### 1.8 List slices with negative step
+#### 1.8 List Slices with Negative step
 
 ```python
 >>>  a = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
@@ -138,7 +138,7 @@ Roy Keyes 提了一个非常好的建议，把这个文章放在github上，让�
 [10, 8, 6, 4, 2, 0]
 ```
 
-#### 1.9 List slice assignment
+#### 1.9 List Slice Assignment
 
 ```python
 >>>  a = [1, 2, 3, 4, 5]
@@ -159,7 +159,7 @@ Roy Keyes 提了一个非常好的建议，把这个文章放在github上，让�
 [1, 5]
 ```
 
-#### 1.10 Naming slices (slice(start, end, step))
+#### 1.10 Naming Slices (slice(start, End, step))
 
 ```python
 >>>  a = [0, 1, 2, 3, 4, 5]
@@ -173,7 +173,7 @@ slice(-3, None, None)
 [3, 4, 5]
 ```
 
-#### 1.11 Zipping and unzipping lists and iterables
+#### 1.11 Zipping and Unzipping Lists and Iterables
 
 ```python
 >>>  a = [1, 2, 3]
@@ -189,7 +189,7 @@ slice(-3, None, None)
 [(1, 2, 3), ('a', 'b', 'c')]
 ```
 
-#### 1.12 Grouping adjacent list items using zip
+#### 1.12 Grouping Adjacent List Items Using Zip
 
 ```python
 >>>  a = [1, 2, 3, 4, 5, 6]
@@ -226,7 +226,7 @@ slice(-3, None, None)
 [(1,), (2,), (3,), (4,), (5,), (6,)]
 ```
 
-#### 1.13 Inverting a dictionary using zip
+#### 1.13 Inverting a Dictionary Using Zip
 
 ```python
 >>>  m = {'a': 1, 'b': 2, 'c': 3, 'd': 4}
@@ -243,7 +243,7 @@ slice(-3, None, None)
 {1: 'a', 2: 'b', 3: 'c', 4: 'd'}
 ```
 
-#### 1.14 Flattening lists:
+#### 1.14 Flattening Lists
 
 ```python
 >>>  a = [[1, 2], [3, 4], [5, 6]]
@@ -271,7 +271,7 @@ slice(-3, None, None)
 Note: according to Python's documentation on sum, itertools.chain.from_iterable is the preferred method for this.
 ```
 
-#### 1.15 Generator expressions
+#### 1.15 Generator Expressions
 
 ```python
 >>>  g = (x ** 2 for x in xrange(10))
@@ -295,7 +295,7 @@ Note: according to Python's documentation on sum, itertools.chain.from_iterable 
 408
 ```
 
-#### 1.16 Dictionary comprehensions
+#### 1.16 Dictionary Comprehensions
 
 ```python
 >>>  m = {x: x ** 2 for x in range(5)}
@@ -309,7 +309,7 @@ Note: according to Python's documentation on sum, itertools.chain.from_iterable 
 {0: 'A0', 1: 'A1', 2: 'A2', 3: 'A3', 4: 'A4', 5: 'A5', 6: 'A6', 7: 'A7', 8: 'A8', 9: 'A9'}
 ```
 
-#### 1.17 Inverting a dictionary using a dictionary comprehension
+#### 1.17 Inverting a Dictionary Using a Dictionary Comprehension
 
 ```python
 >>>  m = {'a': 1, 'b': 2, 'c': 3, 'd': 4}
@@ -321,7 +321,7 @@ Note: according to Python's documentation on sum, itertools.chain.from_iterable 
 {1: 'a', 2: 'b', 3: 'c', 4: 'd'}
 ```
 
-#### 1.18 Named tuples (collections.namedtuple)
+#### 1.18 Named Tuples (collections.namedtuple)
 
 ```python
 >>>  Point = collections.namedtuple('Point', ['x', 'y'])
@@ -341,7 +341,7 @@ Point(x=1.0, y=2.0)
 2.0
 ```
 
-#### 1.19 Inheriting from named tuples:
+#### 1.19 Inheriting from Named Tuples
 
 ```python
 >>>  class Point(collections.namedtuple('PointBase', ['x', 'y'])):
@@ -358,7 +358,7 @@ Point(x=1.0, y=2.0)
 Point(x=3.0, y=5.0)
 ```
 
-#### 1.20 Sets and set operations
+#### 1.20 Sets and Set Operations
 
 ```python
 >>>  A = {1, 2, 3, 3}
@@ -390,7 +390,7 @@ set([1, 2, 4, 5, 6, 7])
 True
 ```
 
-#### 1.21 Multisets and multiset operations (collections.Counter)
+#### 1.21 Multisets and Multiset Operations (collections.Counter)
 
 ```python
 >>>  A = collections.Counter([1, 2, 2])
@@ -419,7 +419,7 @@ Counter({1: 1})
 Counter({3: 1})
 ```
 
-#### 1.22 Most common elements in an iterable (collections.Counter)
+#### 1.22 Most Common Elements in an Iterable (collections.Counter)
 
 ```python
 >>>  A = collections.Counter([1, 1, 2, 2, 3, 3, 3, 3, 4, 5, 6, 7])
@@ -434,7 +434,7 @@ Counter({3: 4, 1: 2, 2: 2, 4: 1, 5: 1, 6: 1, 7: 1})
 [(3, 4), (1, 2), (2, 2)]
 ```
 
-#### 1.23 Double-ended queue (collections.deque)
+#### 1.23 Double-ended Queue (collections.deque)
 
 ```python
 >>>  Q = collections.deque()
@@ -470,7 +470,7 @@ deque([2, 1, 3, 5])
 deque([5, 2, 1, 3])
 ```
 
-#### 1.24 Double-ended queue with maximum length (collections.deque)
+#### 1.24 Double-ended Queue with Maximum Length (collections.deque)
 
 ```python
 >>>  last_three = collections.deque(maxlen=3)
@@ -491,7 +491,7 @@ deque([5, 2, 1, 3])
 7, 8, 9
 ```
 
-#### 1.25 Ordered dictionaries (collections.OrderedDict)
+#### 1.25 Ordered Dictionaries (collections.OrderedDict)
 
 ```python
 >>>  m = dict((str(x), x) for x in range(10))
@@ -510,7 +510,7 @@ deque([5, 2, 1, 3])
 10, 9, 8, 7, 6, 5, 4, 3, 2, 1
 ```
 
-#### 1.26 Default dictionaries (collections.defaultdict)
+#### 1.26 Default Dictionaries (collections.defaultdict)
 
 ```python
 >>>  m = dict()
@@ -549,7 +549,7 @@ KeyError: 'a'
 '[default value]'
 ```
 
-#### 1.27 Using default dictionaries to represent simple trees
+#### 1.27 Using Default Dictionaries to Represent Simple Trees
 
 ```python
 >>>  import json
@@ -598,7 +598,7 @@ KeyError: 'a'
 (See https://gist.github.com/hrldcpr/2012250 for more on this.)
 ```
 
-#### 1.28 Mapping objects to unique counting numbers (collections.defaultdict)
+#### 1.28 Mapping Objects to Unique counting Numbers (collections.defaultdict)
 
 ```python
 >>>  import itertools, collections
@@ -621,7 +621,7 @@ KeyError: 'a'
 1
 ```
 
-#### 1.29 Largest and smallest elements (heapq.nlargest and heapq.nsmallest)
+#### 1.29 Largest and Smallest Elements (heapq.nlargest and heapq.nsmallest)
 
 ```python
 >>>  a = [random.randint(0, 100) for __ in xrange(100)]
@@ -633,7 +633,7 @@ KeyError: 'a'
 [100, 100, 99, 98, 98]
 ```
 
-#### 1.30 Cartesian products (itertools.product)
+#### 1.30 Cartesian Products (itertools.product)
 
 ```python
 >>>  for p in itertools.product([1, 2, 3], [4, 5]):
@@ -665,7 +665,7 @@ KeyError: 'a'
 1111
 ```
 
-#### 1.31 Combinations and combinations with replacement (itertools.combinations and itertools.combinations_with_replacement)
+#### 1.31 Combinations and Combinations with Replacement (itertools.combinations and itertools.combinations_with_replacement)
 
 ```python
 >>>  for c in itertools.combinations([1, 2, 3, 4, 5], 3):
@@ -725,7 +725,7 @@ KeyError: 'a'
 4321
 ```
 
-#### 1.33 Chaining iterables (itertools.chain)
+#### 1.33 Chaining Iterables (itertools.chain)
 
 ```python
 >>>  a = [1, 2, 3, 4]
@@ -765,7 +765,7 @@ KeyError: 'a'
 (1, 2, 3, 4)
 ```
 
-#### 1.34 Grouping rows by a given key (itertools.groupby)
+#### 1.34 Grouping Rows by a given Key (itertools.groupby)
 
 ```python
 >>>  import itertools

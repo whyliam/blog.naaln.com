@@ -18,18 +18,18 @@ tags:
 
 19 年，张潇雨把一直以来思考的东西总结成了 50 条文字，作为一个阶段的人生总结。我摘抄了其中的几条。在翻阅自己历史的博客的时候，发现有一些文字对于当下的我，还是有一些启迪。我觉得在后面我也可以写一篇对我有用的一些警句。
 
-5. 只向最好的人学习，其他人都不知道自己在干什么。不要理会他们的「建议」；
-6. 决策的第一要务是给自己创造足够多的好选项。大多数决策失败来源于在几个都不够好的选择中反复纠结；
-7. 对于日常小决策，决策速度大于决策质量，不要拖；对于重大而难逆转的大决策，要收集足够多信息尽量保证做对；
-8. 不是生活中的每一个问题都要解决，和问题共处是人生常态。把精力用在重要的事情上；
-9. 不要将决策结果等同于决策质量。学着建立自己的**决策系统**；
-10. 财富来自于对杠杆的使用，常见的杠杆有：互联网、人力、资本、声望、时间等等；
-11. 财富的累积不仅在于你做对了多少次决策，更在于决策正确的时候你的下注有多高；
-12. 多和「真、善、美」的东西在一起。它们的珍贵程度也正是这个顺序；
-13. 在解决生存问题之后，人的幸福感主要由身边关系的质量决定；
-14. 学会不带评判地自我觉察，这是一切改变的起点；
-15. 想要帮助他人，先照顾好自己。靠消耗自身来帮助他人是无法持续的；
-16. 道力之限，要靠愿力突破。人生是一个自我实现的预言
+1. 只向最好的人学习，其他人都不知道自己在干什么。不要理会他们的「建议」；
+2. 决策的第一要务是给自己创造足够多的好选项。大多数决策失败来源于在几个都不够好的选择中反复纠结；
+3. 对于日常小决策，决策速度大于决策质量，不要拖；对于重大而难逆转的大决策，要收集足够多信息尽量保证做对；
+4. 不是生活中的每一个问题都要解决，和问题共处是人生常态。把精力用在重要的事情上；
+5. 不要将决策结果等同于决策质量。学着建立自己的**决策系统**；
+6. 财富来自于对杠杆的使用，常见的杠杆有：互联网、人力、资本、声望、时间等等；
+7. 财富的累积不仅在于你做对了多少次决策，更在于决策正确的时候你的下注有多高；
+8. 多和「真、善、美」的东西在一起。它们的珍贵程度也正是这个顺序；
+9. 在解决生存问题之后，人的幸福感主要由身边关系的质量决定；
+10. 学会不带评判地自我觉察，这是一切改变的起点；
+11. 想要帮助他人，先照顾好自己。靠消耗自身来帮助他人是无法持续的；
+12. 道力之限，要靠愿力突破。人生是一个自我实现的预言
 
 来源：[我的人生信念](https://weibo.com/1977585731/HmF3Uh1Gs)，张潇雨
 
@@ -115,9 +115,9 @@ The Plus One part of this is setting aside time every single week to go through 
 
 **3.1 好的观点最是稀缺**
 
-这解释了为什么观点内容（punditry）是付费订阅网站 Substack 上[溢价最高](https://on.substack.com/p/how-lenny-rachitsky-earned-65000?r=akac)的文体（Lenny Rachitsky）。
+这解释了为什么观点内容（punditry）是付费订阅网站 Substack 上 [溢价最高](https://on.substack.com/p/how-lenny-rachitsky-earned-65000?r=akac) 的文体（Lenny Rachitsky）。
 
-**Punditry 的本质是向读者兜售一种**[**新的思考范式**](https://future.a16z.com/creator-platforms-neglect-the-sell/)（Nathan Baschez），故应说理清晰、论据扎心、语势上有权威感。在推特，42% 的用户表示他们来到推特[最重要的原因](https://www.pewresearch.org/internet/2021/11/15/1-the-views-and-experiences-of-u-s-adult-twitter-users/)是娱乐，20% 的用户表示是获取信息，我的直观感受是后者在即刻会更高。
+**Punditry 的本质是向读者兜售一种**[**新的思考范式**](https://future.a16z.com/creator-platforms-neglect-the-sell/)（Nathan Baschez），故应说理清晰、论据扎心、语势上有权威感。在推特，42% 的用户表示他们来到推特 [最重要的原因](https://www.pewresearch.org/internet/2021/11/15/1-the-views-and-experiences-of-u-s-adult-twitter-users/) 是娱乐，20% 的用户表示是获取信息，我的直观感受是后者在即刻会更高。
 
 如你发的不是抖机灵的短评或金句，而是写中长 post，那就请只讲清楚 WHY/HOW/WHAT 中的一件事。
 
@@ -127,7 +127,7 @@ The Plus One part of this is setting aside time every single week to go through 
 
 包括自拍穿搭/热点快评/生活求助等，利于打造可同理的生活人格，避免时间线太「高冷」（大佬请忽略）
 
-同时，如果你想表达极端的情绪，建议在文末走向「消解（resolve）」而避免「宣泄（vent）」，虽然后者的传播力更强大，但并不意味着这类传播有益于你在社区中获得声望。实际上，年轻人比例越高的社区，越容易[反感](https://www.pewresearch.org/fact-tank/2015/11/20/40-of-millennials-ok-with-limiting-speech-offensive-to-minorities/)煽动性言论（[仇恨、厌恶、敌视](https://www.pnas.org/content/118/26/e2024292118)等）（Pew 2018；PNAS 2021）、越推崇宣导新、善、美、[变革](https://www.standard.co.uk/tech/demos-facebook-young-people-social-media-a3942121.html)与多元
+同时，如果你想表达极端的情绪，建议在文末走向「消解（resolve）」而避免「宣泄（vent）」，虽然后者的传播力更强大，但并不意味着这类传播有益于你在社区中获得声望。实际上，年轻人比例越高的社区，越容易 [反感](https://www.pewresearch.org/fact-tank/2015/11/20/40-of-millennials-ok-with-limiting-speech-offensive-to-minorities/) 煽动性言论（[仇恨、厌恶、敌视](https://www.pnas.org/content/118/26/e2024292118) 等）（Pew 2018；PNAS 2021）、越推崇宣导新、善、美、[变革](https://www.standard.co.uk/tech/demos-facebook-young-people-social-media-a3942121.html) 与多元
 
 #### ▎4. 高传播的内容，会为个人主页带来访问，故有必要提前优化好
 

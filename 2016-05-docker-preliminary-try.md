@@ -8,15 +8,15 @@ tags:
 - Docker
 ---
 
-昨天调试完`Codeship`和`EC2`的连接后开始尝试，连接`Docker`
+昨天调试完 `Codeship` 和 `EC2` 的连接后开始尝试，连接 `Docker`
 
-`Docker`之所以有用，是因为把代码从一个机器迁移到另一个机器经常是困难的。它尝试去使得软件迁移的过程变得更加可信和自动化。`Docker` 容器可以移植到所有支持运行 `Docker` 的操作系统上。
+`Docker` 之所以有用，是因为把代码从一个机器迁移到另一个机器经常是困难的。它尝试去使得软件迁移的过程变得更加可信和自动化。`Docker` 容器可以移植到所有支持运行 `Docker` 的操作系统上。
 
 ### 安装
 
 简答一点，我直接安装 [Docker Toolbox](https://www.docker.com/products/docker-toolbox).
 
-我们使用`Terminal`进入`Docker`
+我们使用 `Terminal` 进入 `Docker`
 
 ```bash
 
@@ -36,7 +36,7 @@ For help getting started, check out the docs at https://docs.docker.com
 
 ```
 
-`docker info`来查看我们安装的Docker信息:
+`docker info` 来查看我们安装的 Docker 信息:
 
 ```
 
@@ -56,7 +56,7 @@ Stopped: 0
 
 ### 试玩
 
-比如从官方获取`centos 7`
+比如从官方获取 `centos 7`
 
 ```
 
@@ -86,7 +86,7 @@ centos              7                   8596123a638e        2 days ago          
 
 ```
 
-随便安装一点东西，比如nodejs
+随便安装一点东西，比如 nodejs
 
 ```bash
 
@@ -100,7 +100,7 @@ v4.4.4
 
 ```
 
-退出`Docker`
+退出 `Docker`
 
 ```
 
@@ -108,7 +108,7 @@ v4.4.4
 
 ```
 
-查看刚刚运行的`Docker`
+查看刚刚运行的 `Docker`
 
 ```
 
@@ -120,7 +120,7 @@ CONTAINER ID        IMAGE               COMMAND             CREATED             
 
 ```
 
-使用`commit`命令用来将容器转化为镜像
+使用 `commit` 命令用来将容器转化为镜像
 
 ```
 
@@ -132,15 +132,15 @@ CONTAINER ID        IMAGE               COMMAND             CREATED             
 
 `-a "whyliam"` 用户信息
 
-`950a6fcf0182` 代表的时容器的id
+`950a6fcf0182` 代表的时容器的 id
 
-`whyliam/centos-nodejs`指定目标镜像的用户名、仓库名和 tag 信息
+`whyliam/centos-nodejs` 指定目标镜像的用户名、仓库名和 tag 信息
 
 `1.0` 版本号
 
 ### 上传到 Docker Hub
 
-登入`Docker`
+登入 `Docker`
 
 ```
 
@@ -161,4 +161,3 @@ CONTAINER ID        IMAGE               COMMAND             CREATED             
 ![](http://pics.naaln.com/blog/2019-01-14-060809.jpg-basicBlog)
 
 ----------
-

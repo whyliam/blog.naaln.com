@@ -8,19 +8,13 @@ tags:
 - 汇报
 ---
 
-
-
 ![img](https://pics.naaln.com/blog/2022-01-03-0af0b5.jpeg-basicBlog)
-
-
 
 ## Tips1: 使句子简洁直接
 
 词语要精炼。
 
 ![img](https://pics.naaln.com/blog/2022-01-03-fe9573.jpeg-basicBlog)
-
-
 
 ## Tips2：避免使用形容词和副词
 

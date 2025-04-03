@@ -6,7 +6,7 @@ categories:
 tags:
 ---
 
-vuejs中methods中的方法可以互相调用吗
+vuejs 中 methods 中的方法可以互相调用吗
 
 如一下的代码，想要在 test3 中调用 test2 的代码。
 
@@ -32,7 +32,7 @@ new Vue({
 })
 ```
 
-methods中的`function`中的`this`指向`vue`实例，没有任何的`this`绑定，所以肯定访问不到。
+methods 中的 `function` 中的 `this` 指向 `vue` 实例，没有任何的 `this` 绑定，所以肯定访问不到。
 
 可以尝试
 
@@ -40,7 +40,7 @@ methods中的`function`中的`this`指向`vue`实例，没有任何的`this`绑�
 this.$options.methods.test2.bind(this)();
 ```
 
-这是vue的调用方式
+这是 vue 的调用方式
 
 ```
 /**

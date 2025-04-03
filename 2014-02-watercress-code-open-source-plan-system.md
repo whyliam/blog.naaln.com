@@ -8,7 +8,7 @@ tags:
 - 豆瓣
 ---
 
-豆瓣为了解决自身的开发流程，代码管理，上线等问题，开发一套系统，内部称作"Code"，随着这套系统的完善，希望可以有更多的人可以使用这套系统，并且参与这套系统的开发，豆瓣准备将Code开源，吸引更多的人加入其中。
+豆瓣为了解决自身的开发流程，代码管理，上线等问题，开发一套系统，内部称作 "Code"，随着这套系统的完善，希望可以有更多的人可以使用这套系统，并且参与这套系统的开发，豆瓣准备将 Code 开源，吸引更多的人加入其中。
 
 CODE 是什么 C: Community O: Original D: Developer E: Eldamar 一个基于 git 版本控制系统的协作平台。
 
@@ -16,42 +16,43 @@ CODE 为何开源 希望更多的人可以使用 CODE，希望更多的人可以
 
 ### CODE 的架构
 
-*   Web：Quixote
-*   Template：Mako
-*   MySQL：DoubanSQLStore
-*   Memcached：DoubanMC
-*   git：Pygit2 & git(shell)
+- Web：Quixote
+- Template：Mako
+- MySQL：DoubanSQLStore
+- Memcached：DoubanMC
+- git：Pygit2 & git(shell)
 
 ![请输入图片描述][1]
 
-CODE 的历史 CODE 的第一行代码开始于 2012 年 2 月 14 日，在豆瓣内部使用已有 2 年，Web 框架也从 Bottle 迁移 到 Quixote，依旧在不停的进化中。 CODE 的开源计划 CODE 是从去年年初 (2013) 开始，就已经把使用中的一些基础库开源了，像:
+CODE 的历史 CODE 的第一行代码开始于 2012 年 2 月 14 日，在豆瓣内部使用已有 2 年，Web 框架也从 Bottle 迁移 到 Quixote，依旧在不停的进化中。CODE 的开源计划 CODE 是从去年年初 (2013) 开始，就已经把使用中的一些基础库开源了，像:
 
-*   [PyCharlockHolmes][2]
-*   [linguist][3]
-*   [ellen][4]
-*   [gpack][5]
-*   [scanner][6] 今年 (2014) 2 月 14 日，CODE 也正式开源了。
+- [PyCharlockHolmes][2]
+- [linguist][3]
+- [ellen][4]
+- [gpack][5]
+- [scanner][6] 今年 (2014) 2 月 14 日，CODE 也正式开源了。
 
 **Staring 目前 CODE 仅开放了一个框架，支持：**
 
-*   clone & push project
-*   create project
-*   create user
+- clone & push project
+- create project
+- create user
 
 * * *
 
 ### 准备环境
 
-*   MySQL
-*   Memcached
-*   Python
-*   pip
-*   virtualenv
-*   git
+- MySQL
+- Memcached
+- Python
+- pip
+- virtualenv
+- git
 
 * * *
 
 ### 部署
+
 ```
    git clone https://github.com/douban-code/code.git
    cd code
@@ -65,14 +66,16 @@ CODE 的历史 CODE 的第一行代码开始于 2012 年 2 月 14 日，在豆�
    gunicorn -w 2 -b 127.0.0.1:8000 app:app
 ```
 
-### 定制 config
+### 定制 Config
 
 创建自己的 config 文件
+
 ```
    touch {CODE_REPO}/code/local_config.py
 ```
 
 覆盖 `code/config.py` 默认设置
+
 ```
    vim {CODE_REPO}/code/local_config.py
 ```
@@ -81,7 +84,7 @@ CODE 的历史 CODE 的第一行代码开始于 2012 年 2 月 14 日，在豆�
 
 ### FAQ
 
-1.  code.config.DOMAIN 是指的是程序运行的域名，包含IP地址和端口，例如: `http://127.0.0.1:8000/`
+1. code.config.DOMAIN 是指的是程序运行的域名，包含 IP 地址和端口，例如: `http://127.0.0.1:8000/`
 
  [1]: http://douban-code.github.io/images/code-arch.svg
 
@@ -94,4 +97,3 @@ CODE 的历史 CODE 的第一行代码开始于 2012 年 2 月 14 日，在豆�
  [5]: https://github.com/douban/gpack
 
  [6]: https://github.com/cuteio/scanner
-

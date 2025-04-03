@@ -9,7 +9,7 @@ tags:
 - ZEN
 ---
 
-一直都觉得`Python`是一个禅意很浓的语言，十分的有趣。
+一直都觉得 `Python` 是一个禅意很浓的语言，十分的有趣。
 
 最近在准备面试的时候，偶然发现了一个小彩蛋。
 
@@ -57,7 +57,7 @@ Namespaces are one honking great idea -- let's do more of those!
 命名空间是一种绝妙的理念，我们应当多加利用（倡导与号召）
 ```
 
-还有更加有趣的事，当你看`this`源码的时候会发现， `this` 模块的代码完全违背了这些原则:
+还有更加有趣的事，当你看 `this` 源码的时候会发现， `this` 模块的代码完全违背了这些原则:
 
 ```python
    s = """Gur Mra bs Clguba, ol Gvz Crgref

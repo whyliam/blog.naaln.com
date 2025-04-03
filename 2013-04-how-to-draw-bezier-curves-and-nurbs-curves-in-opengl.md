@@ -8,23 +8,23 @@ tags:
 - OpenGL
 ---
 
-**一、Bezier曲线**
+**一、Bezier 曲线**
 
-主要注意两个函数：`glMap1`和`glEvalCoord1`。
+主要注意两个函数：`glMap1` 和 `glEvalCoord1`。
 
 1.`voidglMap1{fd}(GLenumtarget,TYPEu1,TYPEu2,GLintstride,GLintorder,constTYPE*points)`;
 
 功能：定义求值器。　
 
-参数：target：指出了控制顶点的意义以及在points参数中需要提供多少值。
+参数：target：指出了控制顶点的意义以及在 points 参数中需要提供多少值。
 
-points：可以指向控制点集、RGBA颜色值或是纹理坐标串等。
+points：可以指向控制点集、RGBA 颜色值或是纹理坐标串等。
 
-u1、u2：限定了变量U的取值范围，通常是从0变化到1。
+u1、u2：限定了变量 U 的取值范围，通常是从 0 变化到 1。
 
 stride：表示跨度（在每块存储区内浮点数或双精度数的个数，即两个控制点间的偏移量）。
 
-order：阶数，等于次数加1，与控制点数相等。
+order：阶数，等于次数加 1，与控制点数相等。
 
 2.`voidglEvalCoord1{fd}[v](TYPEu)`。
 
@@ -32,9 +32,9 @@ order：阶数，等于次数加1，与控制点数相等。
 
 参数：u：为定义域内的任意值，每调用一次将只产生一个坐标，此坐标值也是任意的。
 
-但目前较多采用的是定义均匀间隔曲线坐标值，依次调用glMapGrid1*()和glEvalMesh1()可以获得等间隔值。这两个函数分别用来定义一个一维网格和计算相应的坐标值。
+但目前较多采用的是定义均匀间隔曲线坐标值，依次调用 glMapGrid1*() 和 glEvalMesh1() 可以获得等间隔值。这两个函数分别用来定义一个一维网格和计算相应的坐标值。
 
-另外，曲线定义后必须再glEnable()函数显式启动后才能起作用，其参数与target保持一致。在使用完毕后通过glDisable()函数将其关闭。
+另外，曲线定义后必须再 glEnable() 函数显式启动后才能起作用，其参数与 target 保持一致。在使用完毕后通过 glDisable() 函数将其关闭。
 
 ```
    #include <GL/glut.h>
@@ -110,7 +110,7 @@ order：阶数，等于次数加1，与控制点数相等。
 
 ![][1]
 
-**二、NURBS曲线**
+**二、NURBS 曲线**
 
 主要注意函数：
 
@@ -118,31 +118,31 @@ order：阶数，等于次数加1，与控制点数相等。
 
 功能：定义曲线形状。
 
-参数：nobj：指向NURBS对象的指针。
+参数：nobj：指向 NURBS 对象的指针。
 
-nknots：节点数，节点数=控制点数+阶数。
+nknots：节点数，节点数=控制点数 + 阶数。
 
-knot：nknots数组非递减节点值。
+knot：nknots 数组非递减节点值。
 
 stride：跨度，相邻控制点的偏移量。
 
-Ctlarry：指向NURBS的控制点数组的指针。
+Ctlarry：指向 NURBS 的控制点数组的指针。
 
-order：NURBS曲线的阶数，阶数=次数+1。
+order：NURBS 曲线的阶数，阶数=次数 +1。
 
 type：曲线、面类型。
 
 2.`voidgluNurbsProperty(GLUnurbsObj*nobj,GLenumproperty,GLfloatvalue)`
 
-功能：设置NURBS属性。
+功能：设置 NURBS 属性。
 
-参数：nobj：指向NURBS对象的指针。
+参数：nobj：指向 NURBS 对象的指针。
 
 property：需设置的属性。
 
 value：设置指定属性的值。
 
-3.`gluBeginCurve`、`gluEndCurve`限定NURBS曲面。返回值均为void，参数均为GLUnurbsObj*nobj，为指向NURBS对象的指针。
+3.`gluBeginCurve`、`gluEndCurve` 限定 NURBS 曲面。返回值均为 void，参数均为 GLUnurbsObj*nobj，为指向 NURBS 对象的指针。
 
 ```
    #include <windows.h>

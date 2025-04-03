@@ -12,9 +12,9 @@ tags:
 
 ## 前言
 
- 一年一度的 Mac Software 整理如期而至，本次是因为新入手了 Mac mini。谁叫这个价格实在是太香了。
- 
- 去年的见：[[2024-08-mac-software]]
+一年一度的 Mac Software 整理如期而至，本次是因为新入手了 Mac mini。谁叫这个价格实在是太香了。
+
+去年的见：[2024-08-mac-software](https://blog.naaln.com/2024/08/mac-software/)
 
 ## 基础工具安装
 
@@ -40,7 +40,7 @@ brew install autojump
 brew install zsh-autosuggestions
 ```
 
-如果是用 brew 安装 zsh-autosuggestions，需要在 `.zshrc` 在中设置
+如果是用 brew 安装 zsh-autosuggestions，需要在 `.zshrc` 在中设置
 
 ```
 source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh

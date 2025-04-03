@@ -8,14 +8,16 @@ tags:
 - Matlab
 ---
 
-1、用audioread('');函数读取电脑中的音频文件，参数是音频文件的路径：
+1、用 audioread(''); 函数读取电脑中的音频文件，参数是音频文件的路径：
+
 ```
    [sampledata,FS] = audioread('F:\1.mp3');
 ```
 
-sampledata保存音频信号数据，FS是音频采样率，MP3格式的采样率一般为44100；
+sampledata 保存音频信号数据，FS 是音频采样率，MP3 格式的采样率一般为 44100；
 
-2、判断音频数据是否是双声道，如果是双声道则保留一个声道的数据，用calsample.m文件的函数完成此功能，文件内容如下：
+2、判断音频数据是否是双声道，如果是双声道则保留一个声道的数据，用 calsample.m 文件的函数完成此功能，文件内容如下：
+
 ```
    function sample = calsample(sampledata,FS)
    temp_sample = resample(sampledata,1,FS/11025);
@@ -28,7 +30,8 @@ sampledata保存音频信号数据，FS是音频采样率，MP3格式的采样�
    end
 ```
 
-3、对音频数据进行快速傅里叶变换得到频谱图，并选取scope区域内的能量最大并且能量增幅最大的点作为峰值点，进行特征提取，keypoint.m文件内容如下：
+3、对音频数据进行快速傅里叶变换得到频谱图，并选取 scope 区域内的能量最大并且能量增幅最大的点作为峰值点，进行特征提取，keypoint.m 文件内容如下：
+
 ```
    function point = keypoint(sample,scope)
    %对音频数据进行快速傅里叶变换，得到变换后的数据为b，频率为f，时间为t
@@ -107,7 +110,8 @@ sampledata保存音频信号数据，FS是音频采样率，MP3格式的采样�
    end
 ```
 
-4、keypoint(sample,scope);函数中用到的caldiffenergy(energy);函数内容在caldiffenergy.m文件中，内容如下：
+4、keypoint(sample,scope); 函数中用到的 caldiffenergy(energy); 函数内容在 caldiffenergy.m 文件中，内容如下：
+
 ```
    function diffenergy = caldiffenergy(energy)
    v = diff(energy');

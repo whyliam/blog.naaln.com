@@ -9,7 +9,7 @@ tags:
 - 小结
 ---
 
-<iframe width=330 height=86 src="//music.163.com/outchain/player?type=2&id=1901371647&auto=1&height=66"  frameborder="no" border="0" marginwidth="0" marginheight="0" ></iframe>
+<iframe width=330 height=86 src="//music.163.com/outchain/player?type=2&id=1901371647&auto=1&height=66" frameborder="no" border="0" marginwidth="0" marginheight="0" ></iframe>
 
 5 月转瞬而来，项目的规划迟迟没有完成，而周围的同事正在迈着大步份往前走，加速了我对工作的恐惧，也对自己承受了自我怀疑。
 

@@ -8,17 +8,17 @@ tags:
 - Android
 ---
 
-如何从网络获取图片以及文本来显示。事实上，一般是先获取Josn或sml数据，然后解释显示。我们先从网上获取xml，然后对其进行解析，最后显示在ListView上。具体步骤：
+如何从网络获取图片以及文本来显示。事实上，一般是先获取 Josn 或 sml 数据，然后解释显示。我们先从网上获取 xml，然后对其进行解析，最后显示在 ListView 上。具体步骤：
 
-*   客户端发出请求，获取xml
-*   客户端异步解析xml
-*   ListView将解析完的数据显示
+- 客户端发出请求，获取 xml
+- 客户端异步解析 xml
+- ListView 将解析完的数据显示
 
-**一、Android客户端**
+**一、Android 客户端**
 
 ![][1]
 
-**(1)xml布局文件**
+**(1)xml 布局文件**
 
 ```
 <?xml version="1.0" encoding="utf-8"?>
@@ -36,7 +36,7 @@ tags:
 </LinearLayout>
 ```
 
-ListView的每一行的布局，list_raw.xml，看一下结构图：
+ListView 的每一行的布局，list_raw.xml，看一下结构图：
 
 ![][2]
 
@@ -107,7 +107,7 @@ ListView的每一行的布局，list_raw.xml，看一下结构图：
 </RelativeLayout>
 ```
 
-另外我们打算使用几个特效，一个是当点击列表项目的时候，项目背景色改变，其实就是一个selector；另一个就是用shape美化视觉效果，具体看xml代码：
+另外我们打算使用几个特效，一个是当点击列表项目的时候，项目背景色改变，其实就是一个 selector；另一个就是用 shape 美化视觉效果，具体看 xml 代码：
 
 1. list_selector.xml
 
@@ -129,7 +129,7 @@ android:state_pressed="false"
 
 ![][3]
 
-2. gradient_bg.xml，是默认背景梯度风格
+1. gradient_bg.xml，是默认背景梯度风格
 
 ```
 <?xml version="1.0" encoding="utf-8"?>
@@ -144,7 +144,7 @@ android:state_pressed="false"
 </shape>
 ```
 
-3. gradient_bg_hover.xml 梯度风格在悬停状态
+1. gradient_bg_hover.xml 梯度风格在悬停状态
 
 ```
 <?xml version="1.0" encoding="utf-8"?>
@@ -158,7 +158,7 @@ android:state_pressed="false"
 </shape>
 ```
 
-4.image_bg.xml在图片周围的白色边条
+4.image_bg.xml 在图片周围的白色边条
 
 ```
    <?xml version="1.0" encoding="utf-8"?>
@@ -173,13 +173,13 @@ android:state_pressed="false"
    </layer-list>
 ```
 
-以上效果基本上都用到了shape，对此不了解的可以去查看相关资料。上面就是全部的xml布局文件，下面将开始写代码。
+以上效果基本上都用到了 shape，对此不了解的可以去查看相关资料。上面就是全部的 xml 布局文件，下面将开始写代码。
 
-**(2)主要代码**
+**(2) 主要代码**
 
-代码部分主要涉及到一下几个功能，重写ListView的适配器（BaseAdapter），从网络获取图片，图片缓存的处理，xml的解析。
+代码部分主要涉及到一下几个功能，重写 ListView 的适配器（BaseAdapter），从网络获取图片，图片缓存的处理，xml 的解析。
 
-①重写ListView的适配器，这部分可以参考上一篇文章，LazyAdapter.java
+①重写 ListView 的适配器，这部分可以参考上一篇文章，LazyAdapter.java
 
 ```
   import java.util.ArrayList;
@@ -452,7 +452,7 @@ public static byte[] readStream(InputStream inStream) throws Exception{
 }
 ```
 
-最后就是主Activity的代码了，
+最后就是主 Activity 的代码了，
 
 ```
 package com.example.androidhive;

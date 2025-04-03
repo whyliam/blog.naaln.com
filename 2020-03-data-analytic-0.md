@@ -9,27 +9,27 @@ tags:
 - 埋点
 ---
 
-由于自己所从事的领域，一直想写这样的一篇文章。大致的讲解一下整个`流量统计`的整体结构。有一些不恰当的地方还请指正和见谅。
+由于自己所从事的领域，一直想写这样的一篇文章。大致的讲解一下整个 `流量统计` 的整体结构。有一些不恰当的地方还请指正和见谅。
 
 ### 零、目录
 
-* [壹、流量统计的构成](https://blog.naaln.com/2020/03/data-analytic-1/#壹、流量统计的构成)
-  * [1. 测量](https://blog.naaln.com/2020/03/data-analytic-1/#1-测量)
-  * [2. 收集](https://blog.naaln.com/2020/03/data-analytic-1/#2-收集)
-  * [3. 传输](https://blog.naaln.com/2020/03/data-analytic-1/#3-传输)
-  * [4. 处理](https://blog.naaln.com/2020/03/data-analytic-1/#4-处理)
-  * [5. 分析](https://blog.naaln.com/2020/03/data-analytic-1/#5-分析)
-  * [6. 报告](https://blog.naaln.com/2020/03/data-analytic-1/#6-报告)
-* [贰、流量统计的起源](https://blog.naaln.com/2020/03/data-analytic-1/#贰、流量统计的起源)
-  * [1. Google GA](https://blog.naaln.com/2020/03/data-analytic-1/#1-Google-GA)
-  * [2. Mixpanel](https://blog.naaln.com/2020/03/data-analytic-1/#2-Mixpanel)
-* [叁、流量统计的意义](https://blog.naaln.com/2020/03/data-analytic-1/#叁、流量统计的意义)
-* [肆、采集方式分类](https://blog.naaln.com/2020/03/data-analytic-2/#肆、采集方式分类)
-  * [1、按采集媒介分类](https://blog.naaln.com/2020/03/data-analytic-2/#1-按采集媒介分类)
-  * [2、按采集模型分类](https://blog.naaln.com/2020/03/data-analytic-2/#2-按采集模型分类)
-  * [3、按采集技术分类](https://blog.naaln.com/2020/03/data-analytic-2/#3-按采集技术分类)
-* [伍、前端采集](https://blog.naaln.com/2020/03/data-analytic-2/#伍、前端采集)
-  * [1. JS 采集](https://blog.naaln.com/2020/03/data-analytic-2/#1-JS-采集)
-  * [2. APP 采集](https://blog.naaln.com/2020/03/data-analytic-2/#2-APP-采集)
-* [陆、后台采集](https://blog.naaln.com/2020/03/data-analytic-2/#陆、后台采集)
-* [柒、数据传输](https://blog.naaln.com/2020/03/data-analytic-2/#柒、数据传输)
+- [壹、流量统计的构成](https://blog.naaln.com/2020/03/data-analytic-1/#壹、流量统计的构成)
+	- [1. 测量](https://blog.naaln.com/2020/03/data-analytic-1/#1-测量)
+	- [2. 收集](https://blog.naaln.com/2020/03/data-analytic-1/#2-收集)
+	- [3. 传输](https://blog.naaln.com/2020/03/data-analytic-1/#3-传输)
+	- [4. 处理](https://blog.naaln.com/2020/03/data-analytic-1/#4-处理)
+	- [5. 分析](https://blog.naaln.com/2020/03/data-analytic-1/#5-分析)
+	- [6. 报告](https://blog.naaln.com/2020/03/data-analytic-1/#6-报告)
+- [贰、流量统计的起源](https://blog.naaln.com/2020/03/data-analytic-1/#贰、流量统计的起源)
+	- [1. Google GA](https://blog.naaln.com/2020/03/data-analytic-1/#1-Google-GA)
+	- [2. Mixpanel](https://blog.naaln.com/2020/03/data-analytic-1/#2-Mixpanel)
+- [叁、流量统计的意义](https://blog.naaln.com/2020/03/data-analytic-1/#叁、流量统计的意义)
+- [肆、采集方式分类](https://blog.naaln.com/2020/03/data-analytic-2/#肆、采集方式分类)
+	- [1、按采集媒介分类](https://blog.naaln.com/2020/03/data-analytic-2/#1-按采集媒介分类)
+	- [2、按采集模型分类](https://blog.naaln.com/2020/03/data-analytic-2/#2-按采集模型分类)
+	- [3、按采集技术分类](https://blog.naaln.com/2020/03/data-analytic-2/#3-按采集技术分类)
+- [伍、前端采集](https://blog.naaln.com/2020/03/data-analytic-2/#伍、前端采集)
+	- [1. JS 采集](https://blog.naaln.com/2020/03/data-analytic-2/#1-JS-采集)
+	- [2. APP 采集](https://blog.naaln.com/2020/03/data-analytic-2/#2-APP-采集)
+- [陆、后台采集](https://blog.naaln.com/2020/03/data-analytic-2/#陆、后台采集)
+- [柒、数据传输](https://blog.naaln.com/2020/03/data-analytic-2/#柒、数据传输)

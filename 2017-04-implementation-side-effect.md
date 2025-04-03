@@ -22,11 +22,11 @@ Xcode Version 6.3 (6D570)
 
 ### 基本数据采集
 
-初步体验，手Q采用的应该是线性动画，即缩放比例等随着手指滑动的距离以一次方程的形式变化。动画达到最大幅度时截图如下（4.7 寸）：
+初步体验，手 Q 采用的应该是线性动画，即缩放比例等随着手指滑动的距离以一次方程的形式变化。动画达到最大幅度时截图如下（4.7 寸）：
 
 ![](http://pics.naaln.com/blog/2019-01-14-032118.jpg-basicBlog)
 
-### 提取基本数据：
+### 提取基本数据
 
 右侧主视图左边界距离屏幕左边界的距离占屏幕宽度的比例为：78%
 
@@ -40,23 +40,22 @@ Xcode Version 6.3 (6D570)
 
 ![](http://pics.naaln.com/blog/2019-01-14-032119.jpg-basicBlog)
 
-2. 矩形中心向右移动距离和手指移动距离相等
+1. 矩形中心向右移动距离和手指移动距离相等
 
 ### 实现侧滑
 
 1. 新建项目，在 StoryBoard 中新增一个 View Controller，并新增一个名为 HomeViewController 的 UIViewController 类，并在 StoryBoard 中完成绑定。
-
 2. 给 HomeViewController 设置背景颜色以示区分。也可以像我一样设一个大 Label 作为更明显的区分。
 
 ![](http://pics.naaln.com/blog/2019-01-14-32120.jpg-basicBlog)
 
-3. 给 HomeViewController 拖放一个 UIPanGestureRecognizer 并绑定到代码。
+1. 给 HomeViewController 拖放一个 UIPanGestureRecognizer 并绑定到代码。
 
 从右下角拖一个 Pan Gesture Recognizer 到主窗体上，这一步会让它与 HomeViewController.view 自动绑定。下图为第二步，绑定到代码。
 
 ![](http://pics.naaln.com/blog/2019-01-14-032121.jpg-basicBlog)
 
-3. 编写代码实现效果：
+1. 编写代码实现效果：
 
 新建 Common.swift，存储屏幕宽度、高度：
 

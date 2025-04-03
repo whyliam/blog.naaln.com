@@ -6,12 +6,12 @@ categories:
 - 技术
 ---
 
-今天看到有人因为 hexo 文件遗失 以前的文章全没有了 所以我准备在Github备份我的代码
+今天看到有人因为 hexo 文件遗失 以前的文章全没有了 所以我准备在 Github 备份我的代码
 
 ### 基本思路
 
 1. 本地编写文章
-2. push 到Github
+2. push 到 Github
 3. Travis CI 检测到代码变化
 4. Travis CI 构建代码环境，编译代码，生产博客文件，并自动部署
 
@@ -19,17 +19,17 @@ categories:
 
 ### Travis CI
 
-顾名思义，Travis CI 是一个持续集成(Continuous integration，简称CI)的工具。它可以在公共的 Github 仓库上免费使用。
+顾名思义，Travis CI 是一个持续集成 (Continuous integration，简称 CI) 的工具。它可以在公共的 Github 仓库上免费使用。
 
-#### 开启travis-ci
+#### 开启 Travis-ci
 
-首先去travis-ci官网，点击右上角Sign in with GitHub通过github授权登录。然后去到个人信息页面，开启需要使用travis的项目关：
+首先去 travis-ci 官网，点击右上角 Sign in with GitHub 通过 github 授权登录。然后去到个人信息页面，开启需要使用 travis 的项目关：
 
 ![](http://pics.naaln.com/blog/2019-01-14-060814.jpg-basicBlog)
 
-#### 创建 SSH key
+#### 创建 SSH Key
 
-创建一个部署在 Travis CI 上面的 `SSH key` 利用这个 `SSH key` 可以让 `Travis CI` 向我们自己的项目提交代码(也就是将博客部署到 gh-page)。
+创建一个部署在 Travis CI 上面的 `SSH key` 利用这个 `SSH key` 可以让 `Travis CI` 向我们自己的项目提交代码 (也就是将博客部署到 gh-page)。
 
 ```
 $ ssh-keygen -t rsa -C "youremail@example.com"
@@ -43,9 +43,9 @@ $ ssh-keygen -t rsa -C "youremail@example.com"
 
 #### 加密私钥
 
-刚才讲公钥文件配置好了，然后就要配置私钥文件，在 hexo 项目下面建立一个 .travis 的文件夹来放置需要配置的文件。
+刚才讲公钥文件配置好了，然后就要配置私钥文件，在 hexo 项目下面建立一个.travis 的文件夹来放置需要配置的文件。
 
-首先要安装 travis 命令行工具(如果在国内的网络环境下建议安装之前先换源)。
+首先要安装 travis 命令行工具 (如果在国内的网络环境下建议安装之前先换源)。
 
 ```
 $ gem install travis
@@ -73,7 +73,7 @@ openssl aes-256-cbc -K $encrypted_xxxxxxxxxxx_key -iv $encrypted_xxxxxxxxxxx_iv
 
 这样格式的信息，这是 travis 用来解密 `id_rsa.enc` 的 key，先保存起来，后面配置 `.travis.yml` 会用到它。
 
-为了让 git 默认连接 SSH 还要创建一个 ssh_config 文件。在 .travis 文件夹下创建一个 ssh_config 文件，输入以下内容：
+为了让 git 默认连接 SSH 还要创建一个 ssh_config 文件。在.travis 文件夹下创建一个 ssh_config 文件，输入以下内容：
 
 ```
 Host github.com
@@ -95,11 +95,11 @@ Host github.com
 
 ![](http://pics.naaln.com/blog/2019-01-14-60818.jpg-basicBlog)
 
-这样，当向项目 push 代码的时候 travis CI 就会根据 .travis.yml 的内容去部署我们的项目了。
+这样，当向项目 push 代码的时候 travis CI 就会根据.travis.yml 的内容去部署我们的项目了。
 
-#### .travis.yml
+####.travis.yml
 
-最后就要配置 .travis.yml。在项目的根目录创建 .travis.yml 文件。
+最后就要配置.travis.yml。在项目的根目录创建.travis.yml 文件。
 
 ```
 language: node_js
@@ -135,7 +135,7 @@ script:
 
 #### 后记
 
-在部署了一遍之后发现，运行 `npm install` 安装 node 的库时候占据了部署的很大一部分时间，这里有一个技巧，可以将 `node_modules`缓存起来，这样可以节省部署的时间。
+在部署了一遍之后发现，运行 `npm install` 安装 node 的库时候占据了部署的很大一部分时间，这里有一个技巧，可以将 `node_modules` 缓存起来，这样可以节省部署的时间。
 
 ```
 # .travis.yml 配置
@@ -144,9 +144,9 @@ cache:
     - node_modules
 ```
 
-#### 遇到Authentication failed
+#### 遇到 Authentication Failed
 
-这是因为hexo 根目录下的 _config.yml中配置问题导致的：
+这是因为 hexo 根目录下的 _config.yml 中配置问题导致的：
 
 把如下配置:
 

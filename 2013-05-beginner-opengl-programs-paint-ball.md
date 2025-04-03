@@ -8,12 +8,12 @@ tags:
 - OpenGL
 ---
 
-1\. 利用Glut库，编写一个OpenGL程序，实现以下功能：
+1\. 利用 Glut 库，编写一个 OpenGL 程序，实现以下功能：
 
-- 仿照课本2.4.3的例子，绘制若干OpenGL基本体素（三角形、三角形带、四边形、四边形带）构成的球体，
+- 仿照课本 2.4.3 的例子，绘制若干 OpenGL 基本体素（三角形、三角形带、四边形、四边形带）构成的球体，
 - 可以控制改变球的数量和球的体积，来改变基本体素的数量以及顶点的数量。
-- 可以通过改变glPolygonMode，切换是否填充所绘制的基本体素。
-- 用函数glutGet(GLUT_ELAPSED_TIME)（returns the time in milliseconds since
+- 可以通过改变 glPolygonMode，切换是否填充所绘制的基本体素。
+- 用函数 glutGet(GLUT_ELAPSED_TIME)（returns the time in milliseconds since
 
 ```
   glutInit or the first invocation of the function）统计绘制时间

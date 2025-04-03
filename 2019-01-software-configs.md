@@ -10,7 +10,7 @@ tags:
 
 <!--more-->
 
-## sublime 插件
+## Sublime 插件
 
 ```
 BeyondCompare          // 文件对比
@@ -41,4 +41,3 @@ v2ex.ext
     AC-baidu:重定向优化百度搜狗谷歌搜索
     V2EX增强插件
 ```
-

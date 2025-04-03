@@ -8,30 +8,30 @@ tags:
 - Google
 ---
 
-gae不用多说了，wall也行，反正全天开着
+gae 不用多说了，wall 也行，反正全天开着
 
 ```
 https://www.google.com/ncr
 ```
 
-这个不用多说了，去掉根据ip跳转，不过清除cooike后需要再进来一次撒，貌似以后不能再进去任何hk的域名，首页可以设置这个撒 非SSL版的google触发敏感词后会有90秒的时间无法访问google任何服务 Quote:
+这个不用多说了，去掉根据 ip 跳转，不过清除 cooike 后需要再进来一次撒，貌似以后不能再进去任何 hk 的域名，首页可以设置这个撒 非 SSL 版的 google 触发敏感词后会有 90 秒的时间无法访问 google 任何服务 Quote:
 
-> 虽然没有研究过，但是从目前的症状来看，GFW 在屏蔽关键字的时候使用了 DNS 挟持。 也就是说，只要手动修改 HOSTS 文件即可达到不被屏蔽的效果。
+> 虽然没有研究过，但是从目前的症状来看，GFW 在屏蔽关键字的时候使用了 DNS 挟持。也就是说，只要手动修改 HOSTS 文件即可达到不被屏蔽的效果。
 
-更改hosts。推荐云hosts( [https://code.google.com/p/smarthosts](https://code.google.com/p/smarthosts)) 注意改好后刷新DNS缓存——运行：ipconfig /flushdns 偶的hosts自己ping的美国的ip，总感觉在北京的服务器也不踏实
+更改 hosts。推荐云 hosts([https://code.google.com/p/smarthosts](https://code.google.com/p/smarthosts)) 注意改好后刷新 DNS 缓存——运行：ipconfig /flushdns 偶的 hosts 自己 ping 的美国的 ip，总感觉在北京的服务器也不踏实
 
-记得当初寻找，记录，筛选这些ip费了一天的事
+记得当初寻找，记录，筛选这些 ip 费了一天的事
 
 ```
 dns 8.8.8.8
 8.8.4.4
 ```
 
-关闭 google 安全搜索 ncr进去后点击右上角齿轮选择语言为简体中文，之后关掉，或者hk进去点击google in english再弄
+关闭 google 安全搜索 ncr 进去后点击右上角齿轮选择语言为简体中文，之后关掉，或者 hk 进去点击 google in english 再弄
 
 偶的语言配置
 
-修改默认的搜索引擎，都是ssl的，登陆谷歌账户的话默认都是ssl
+修改默认的搜索引擎，都是 ssl 的，登陆谷歌账户的话默认都是 ssl
 
 ```
 台湾的     https://www.google.com.tw/search?hl=zh- CN&q=%s
@@ -41,19 +41,19 @@ hk        https: //www.google.com.hk/search?hl=zh-CN&q=%s
 
 [http://www.googlestable.com/](http://www.googlestable.com/) [https://encrypted.google.com/search?q=%s](https://encrypted.google.com/search?q=%25s) 这两个搜索串哪个好呢，太多了，对比不出来了 Quote:
 
-> googlestable很聪明，针对google在国内经常出现的搜索不稳定的现状，找出了根源（重定向等问题），然后减少了一些环节，加快了搜索速度和稳定性，其实在googlestable上搜的就是google的，这一点得到了广大用户的支持和拥护
+> googlestable 很聪明，针对 google 在国内经常出现的搜索不稳定的现状，找出了根源（重定向等问题），然后减少了一些环节，加快了搜索速度和稳定性，其实在 googlestable 上搜的就是 google 的，这一点得到了广大用户的支持和拥护
 
-奶奶的名字不错，谷歌病了，还谷歌sb呢 [https://www.google.com.sb/](https://www.google.com.sb/) Quote:
+奶奶的名字不错，谷歌病了，还谷歌 sb 呢 [https://www.google.com.sb/](https://www.google.com.sb/) Quote:
 
-> 谷歌加密搜索（Google SSL） [https://www.google.com](https://www.google.com) 即将切换到新的域名 https://encrypted.google.com/， 使用SSL搜索前还是老规矩，需要先打开 [http://www.google.com/ncr](http://www.google.com/ncr) 禁用本地跳转后再尝试访问。 这次更改SSL搜索域名主要原因是由于一些学校机构反应自身的过滤引擎不能过滤一些关键字，而作出的调整。话说回来，墙其实还是无处不在的。
+> 谷歌加密搜索（Google SSL） [https://www.google.com](https://www.google.com) 即将切换到新的域名 https://encrypted.google.com/， 使用 SSL 搜索前还是老规矩，需要先打开 [http://www.google.com/ncr](http://www.google.com/ncr) 禁用本地跳转后再尝试访问。这次更改 SSL 搜索域名主要原因是由于一些学校机构反应自身的过滤引擎不能过滤一些关键字，而作出的调整。话说回来，墙其实还是无处不在的。
 
-这个搜索串貌似需要对应的hosts gfw又不敢封了 https://www.google.com/，这样还会连累不带ssl的谷歌的部分业务，天朝这么光明，不会这么干的…… Quote:
+这个搜索串貌似需要对应的 hosts gfw 又不敢封了 https://www.google.com/，这样还会连累不带 ssl 的谷歌的部分业务，天朝这么光明，不会这么干的…… Quote:
 
-> 昨天，伟大的GFW和谐掉了encrypted.google.com，于是乎，众多同学发现 https://www.google.com可以打开，但是搜索任何内容都挂掉。。。 encrypted.google.com被和谐并非偶然，party早就想办掉https的google了，它知道的太多了，但是一直没办法，因为和谐 https://www.google.com的话， http://www.google.com也会被和谐掉，因为它们的域名相同，只有协议不太一样，一向重视形象，一向表面很光辉伟大、内心阴冷狭隘的party自然不可能和谐 www.google.com 后来，过去了很长一段时间， https://www.google.com相安无事，google很傻很天真的以为会一直没事下去，于是把加密搜索转向了一个独立的子域名encrypted.google.com，但是在这个天真被狗欺的社会，它真的被狗欺了。。。于是乎就有了昨天下午能打开 https://www.google.com但是不能搜索的一幕。。。
+> 昨天，伟大的 GFW 和谐掉了 encrypted.google.com，于是乎，众多同学发现 https://www.google.com 可以打开，但是搜索任何内容都挂掉。。。encrypted.google.com 被和谐并非偶然，party 早就想办掉 https 的 google 了，它知道的太多了，但是一直没办法，因为和谐 https://www.google.com 的话， http://www.google.com 也会被和谐掉，因为它们的域名相同，只有协议不太一样，一向重视形象，一向表面很光辉伟大、内心阴冷狭隘的 party 自然不可能和谐 www.google.com 后来，过去了很长一段时间， https://www.google.com 相安无事，google 很傻很天真的以为会一直没事下去，于是把加密搜索转向了一个独立的子域名 encrypted.google.com，但是在这个天真被狗欺的社会，它真的被狗欺了。。。于是乎就有了昨天下午能打开 https://www.google.com 但是不能搜索的一幕。。。
 
 到底选择啥搜索串呢
 
-到底默认哪个好呢，据说谷歌日本或者ca 也不错，送上谷歌全球域名吧
+到底默认哪个好呢，据说谷歌日本或者 ca 也不错，送上谷歌全球域名吧
 
 [https://www.google.com/supported_domains](https://www.google.com/supported_domains)
 
@@ -73,7 +73,7 @@ Remove Google Redirects
 
 Search by Image (by Google)
 
-site命令 [https://chrome.google.com/webstore/detail/search-by-image-by-google/dajedkncpodkggklbegccjpmnglmnflm](https://chrome.google.com/webstore/detail/search-by-image-by-google/dajedkncpodkggklbegccjpmnglmnflm)
+site 命令 [https://chrome.google.com/webstore/detail/search-by-image-by-google/dajedkncpodkggklbegccjpmnglmnflm](https://chrome.google.com/webstore/detail/search-by-image-by-google/dajedkncpodkggklbegccjpmnglmnflm)
 
 Search by Image (by Google)
 
@@ -87,7 +87,7 @@ Search by Image (by Google)
 
 各位大神，还有啥好玩意或者好配置啥的，敬请指教啊，总感觉东西不够的感觉，有时候不给力啊 其实啦，貌似我纠结了…………还是肉身爬墙好啊，求神级无敌配置，有木有 还有啥我这不知道的好东西都给我研究下啊 我可是把家底都掏出来分享了！！！！!
 
-对了，上个小地址，谷歌网页快照，进不去的404的网站你懂的
+对了，上个小地址，谷歌网页快照，进不去的 404 的网站你懂的
 
 带图片的版本
 

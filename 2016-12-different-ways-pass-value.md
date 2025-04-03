@@ -9,7 +9,7 @@ tags:
 
 这是一个工程，展示了如何在 VC 之间进行传值，包括正向传值、反向传值和无向传值。
 
-* 本示例代码基于 Xcode 7 ，并使用Swift 2.0 写成。
+- 本示例代码基于 Xcode 7 ，并使用 Swift 2.0 写成。
 
 ![](http://pics.naaln.com/blog/2019-01-14-032309.gif-basicBlog)
 
@@ -31,7 +31,7 @@ var positiveValue:String = String() // 正向传值，接收方
 
 ## 反向传值
 
-反向传值包括 delegate 、闭包、KVO 和 Notification 四种种方式：
+反向传值包括 delegate、闭包、KVO 和 Notification 四种种方式：
 
 ### Delegate
 
@@ -99,7 +99,7 @@ func back(sender:UIButton) {
 
 ### KVO
 
-KVO只要是监听的属性，不管是正向还是反向都会触发`observeValueForKeyPath`方法，在其中做相应的显示即可。
+KVO 只要是监听的属性，不管是正向还是反向都会触发 `observeValueForKeyPath` 方法，在其中做相应的显示即可。
 
 **RootVC:**
 
@@ -221,10 +221,10 @@ func back(sender:UIButton) {
 
 ## 无向传值
 
-其实就是利用`NSUserDefaults`来存取数据，哈哈。
+其实就是利用 `NSUserDefaults` 来存取数据，哈哈。
 
 ## PS
 
-* 所谓「反向传值」只是在业务逻辑上是从第二个 VC 回到第一个 VC 的过程中传值。并不是说列出的几种传值方式只能在反向情况下使用。
+- 所谓「反向传值」只是在业务逻辑上是从第二个 VC 回到第一个 VC 的过程中传值。并不是说列出的几种传值方式只能在反向情况下使用。
 
 Demo: [](https://github.com/LinusLing/DifferentWaysToPassValueSwift)

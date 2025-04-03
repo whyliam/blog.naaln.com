@@ -7,9 +7,9 @@ categories:
 tags:
 ---
 
-去Mexico和Canada返回美国时，可以凭借过期签证和I-94重新进入美国，不需要有效美国签证。对于持有F和J类签证的非美国居民，除Mexico和Canada以外还可以去加勒比海诸岛旅行后持过期签证返回美国。
+去 Mexico 和 Canada 返回美国时，可以凭借过期签证和 I-94 重新进入美国，不需要有效美国签证。对于持有 F 和 J 类签证的非美国居民，除 Mexico 和 Canada 以外还可以去加勒比海诸岛旅行后持过期签证返回美国。
 
-这个过程称作 Automatic Revalidation，详情参见 http://travel.state.gov/visa/temp/info/info_1299.html 。所以如果你问「我的美国签证过期了能不能去Mexico并返回美国」，答案是yes，但需要申请墨西哥签证。
+这个过程称作 Automatic Revalidation，详情参见 http://travel.state.gov/visa/temp/info/info_1299.html。所以如果你问「我的美国签证过期了能不能去 Mexico 并返回美国」，答案是 yes，但需要申请墨西哥签证。
 
 接下来上一点图。详细内容，且听我慢慢道来。
 

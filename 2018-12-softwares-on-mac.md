@@ -12,7 +12,7 @@ tags:
 
 <!--more-->
 
-### 安装 brew & cask & mas
+### 安装 Brew & Cask & Mas
 
 ```bash
     /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
@@ -98,6 +98,6 @@ tags:
 
 <script src="https://gist.github.com/whyliam/d6265cc96d2be75246bc265cd347d7df.js"></script>
 
-### 其他：
+### 其他
 
 以前的配置：[自己在用的Mac软件及配置](https://blog.naaln.com/2017/06/softwares-on-mac/)

@@ -26,7 +26,6 @@ tags:
 
 - **独到知识**是那种不可以通过培训而获得的知识。这是因为，如果这种知识可以经由培训而得，那么其他人同样也可以，并且以此取代你。在真正的好奇心和热情驱使你前进的路上，你更有可能获得独到知识，而不是在追逐潮流热点的闻风起舞脚步里。创建独到知识的过程对于你就像是在玩，而对于别人则像是工作。
 
-
 **相关延伸**:
 [Notion – The all-in-one workspace for your notes, tasks, wikis, and databases.](https://www.notion.so/plidezus/9133613f4ca84b17a86120a7057dc7fe)
 

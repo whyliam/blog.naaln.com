@@ -8,17 +8,17 @@ tags:
 - 豆瓣
 ---
 
-豆瓣乃一藏龙卧虎之地，各种文人骚客，英雄豪杰辈出。这些推荐上了500的豆瓣原创文章，各种类型都有，有助于了解豆瓣风格，更好的使用豆瓣，熟而生优雅。
+豆瓣乃一藏龙卧虎之地，各种文人骚客，英雄豪杰辈出。这些推荐上了 500 的豆瓣原创文章，各种类型都有，有助于了解豆瓣风格，更好的使用豆瓣，熟而生优雅。
 
 豆瓣那些事儿：
 
-<a href="http://www.douban.com/note/70834158/" rel="nofollow" target="_blank">还我友邻：关于友邻的9个问题<em></em></a>（阿北）
+<a href="http://www.douban.com/note/70834158/" rel="nofollow" target="_blank">还我友邻：关于友邻的 9 个问题<em></em></a>（阿北）
 
 <a href="http://www.douban.com/note/302051203/" rel="nofollow" target="_blank">将豆瓣变为学习管理工具<em></em></a> （五花王）
 
 <a href="http://www.douban.com/note/158844365/" rel="nofollow" target="_blank">豆瓣掉关注原因汇总<em></em></a>（沐风而遇周星星）
 
-<a href="http://www.douban.com/note/188823441/" rel="nofollow" target="_blank">【豆瓣2011】<em></em></a>（易老邪）
+<a href="http://www.douban.com/note/188823441/" rel="nofollow" target="_blank">【豆瓣 2011】<em></em></a>（易老邪）
 
 <a href="http://www.douban.com/note/191586995/" rel="nofollow" target="_blank">如果三国人物也上豆瓣<em></em></a>（沐风而遇周星星）
 
@@ -28,9 +28,9 @@ tags:
 
 <a href="http://www.douban.com/note/124038432/" rel="nofollow" target="_blank">你把阿北给我叫出来<em></em></a>（半辈子）
 
-<a href="http://www.douban.com/note/281310606/" rel="nofollow" target="_blank">《2013年豆瓣高考》<em></em></a> （沐风而遇周星星）
+<a href="http://www.douban.com/note/281310606/" rel="nofollow" target="_blank">《2013 年豆瓣高考》<em></em></a> （沐风而遇周星星）
 
-<a href="http://www.douban.com/note/181471594/" rel="nofollow" target="_blank">豆瓣改版，三五年一更替，不XX就是死，以及没什么不能死。<em></em></a>（半辈子）
+<a href="http://www.douban.com/note/181471594/" rel="nofollow" target="_blank">豆瓣改版，三五年一更替，不 XX 就是死，以及没什么不能死。<em></em></a>（半辈子）
 
 小说类：
 
@@ -106,7 +106,7 @@ tags:
 
 <a href="http://www.douban.com/note/139220341/" rel="nofollow" target="_blank">离开灾难，我们还能谈些什么<em></em></a>（这么远那么近）
 
-<a href="http://www.douban.com/note/155629522/" rel="nofollow" target="_blank">为高考感动J8，命重要还是分重要<em></em></a>（沐风而遇周星星）
+<a href="http://www.douban.com/note/155629522/" rel="nofollow" target="_blank">为高考感动 J8，命重要还是分重要<em></em></a>（沐风而遇周星星）
 
 <a href="http://www.douban.com/note/309011698/" rel="nofollow" target="_blank">叫我怎么说这些小偷呢<em></em></a> （张佳玮）
 
@@ -132,7 +132,7 @@ tags:
 
 <a href="http://www.douban.com/note/142761608/" rel="nofollow" target="_blank">就当我是浮夸吧<em></em></a>（米没了）
 
-<a href="http://www.douban.com/note/150596537/" rel="nofollow" target="_blank">理解伤害<em></em></a>（温柔WseeY）
+<a href="http://www.douban.com/note/150596537/" rel="nofollow" target="_blank">理解伤害<em></em></a>（温柔 WseeY）
 
 <a href="http://www.douban.com/note/151235424/" rel="nofollow" target="_blank">好久不见，不如不见<em></em></a>（沐风而遇周星星）
 
@@ -224,13 +224,13 @@ tags:
 
 <a href="http://www.douban.com/note/135569482/" rel="nofollow" target="_blank">我们小区停车场里有一个姓黄的保安<em></em></a>（李青菜）
 
-<a href="http://www.douban.com/note/195353927/" rel="nofollow" target="_blank">一个很难的推理，月野兔和包青天关灯以后。 <em></em></a>（遇颜友止）
+<a href="http://www.douban.com/note/195353927/" rel="nofollow" target="_blank">一个很难的推理，月野兔和包青天关灯以后。<em></em></a>（遇颜友止）
 
 <a href="http://www.douban.com/note/180605969/" rel="nofollow" target="_blank">回不去海里的鲸鱼 <em></em></a>（遇颜友止）
 
-<a href="http://www.douban.com/note/195590521/" rel="nofollow" target="_blank">为什么香港满街都是歌词？<em></em></a>（公元1874）
+<a href="http://www.douban.com/note/195590521/" rel="nofollow" target="_blank">为什么香港满街都是歌词？<em></em></a>（公元 1874）
 
-<a href="http://www.douban.com/note/152888059/" rel="nofollow" target="_blank">夏夏脚疼吃到撑香港游美食攻略（二）<em></em></a> (吃货14夏梓妤)
+<a href="http://www.douban.com/note/152888059/" rel="nofollow" target="_blank">夏夏脚疼吃到撑香港游美食攻略（二）<em></em></a> (吃货 14 夏梓妤)
 
 <a href="http://www.douban.com/note/194143001/" rel="nofollow" target="_blank">喵，自己过冬哟<em></em></a> （木偶人）
 
@@ -252,7 +252,7 @@ tags:
 
 <a href="http://www.douban.com/note/99503226/" rel="nofollow" target="_blank">Douban Talk 发布啦！<em></em></a>（disound）
 
-<a href="http://www.douban.com/note/113594379/" rel="nofollow" target="_blank">【豆瓣chrome插件】豆瓣精灵<em></em></a> (大菠萝)
+<a href="http://www.douban.com/note/113594379/" rel="nofollow" target="_blank">【豆瓣 chrome 插件】豆瓣精灵<em></em></a> (大菠萝)
 
 体育娱乐类：
 
@@ -270,27 +270,27 @@ tags:
 
 <a href="http://www.douban.com/note/149875539/" rel="nofollow" target="_blank">马克 扎克伯格不穿低腰牛仔裤<em></em></a>（水木丁）
 
-<a href="http://www.douban.com/note/145513583/" rel="nofollow" target="_blank">牛B就是天才加勤奋<em></em></a>（水木丁）
+<a href="http://www.douban.com/note/145513583/" rel="nofollow" target="_blank">牛 B 就是天才加勤奋<em></em></a>（水木丁）
 
 <a href="http://www.douban.com/note/153647715/" rel="nofollow" target="_blank">你们这群大人们怎么好意思？<em></em></a>（水木丁）
 
 <a href="http://www.douban.com/note/94836163/" rel="nofollow" target="_blank">文艺是一种信仰<em></em></a>（艾小柯）
 
-<a href="http://www.douban.com/note/152530421/" rel="nofollow" target="_blank">坑爹啊你们这些烂食谱！！<em></em></a>（囧之女神daisy）
+<a href="http://www.douban.com/note/152530421/" rel="nofollow" target="_blank">坑爹啊你们这些烂食谱！！<em></em></a>（囧之女神 daisy）
 
 <a href="http://www.douban.com/note/156133260/" rel="nofollow" target="_blank">你们骂我吧，都是我的错，把这东西搞了出来<em></em></a>（张佳玮）
 
 独特视角：
 
-<a href="http://www.douban.com/note/142491681/" rel="nofollow" target="_blank">试论致命8刀与弹钢琴的重复性动作的不成立关系<em></em></a>(小卵球)
+<a href="http://www.douban.com/note/142491681/" rel="nofollow" target="_blank">试论致命 8 刀与弹钢琴的重复性动作的不成立关系<em></em></a>(小卵球)
 
-<a href="http://www.douban.com/note/96832320/" rel="nofollow" target="_blank">lie to me的方法揭穿李刚父子在镜头面前的表演<em></em></a>（逐影）
+<a href="http://www.douban.com/note/96832320/" rel="nofollow" target="_blank">lie to me 的方法揭穿李刚父子在镜头面前的表演<em></em></a>（逐影）
 
 <a href="http://9.douban.com/site/entry/180487436/" rel="nofollow" target="_blank">模特、添加剂及剩女<em></em></a>（不许联想）
 
-<a href="http://www.douban.com/note/81109969/" rel="nofollow" target="_blank">爸爸经常抚摸18岁女儿胸部，是不是变态？<em></em></a>（腹黑）
+<a href="http://www.douban.com/note/81109969/" rel="nofollow" target="_blank">爸爸经常抚摸 18 岁女儿胸部，是不是变态？<em></em></a>（腹黑）
 
-<a href="http://www.douban.com/note/283002850/" rel="nofollow" target="_blank">谁唱了KTV前50首歌<em></em></a> (王坏)
+<a href="http://www.douban.com/note/283002850/" rel="nofollow" target="_blank">谁唱了 KTV 前 50 首歌<em></em></a> (王坏)
 
 <a href="http://www.douban.com/note/287823630/" rel="nofollow" target="_blank">穷逼的喧嚣和孤独<em></em></a> (王坏)
 
@@ -300,7 +300,7 @@ tags:
 
 书评类：
 
-<a href="http://book.douban.com/review/4931397/" rel="nofollow" target="_blank">1分钟背诵的神奇<em></em></a> (Jack）
+<a href="http://book.douban.com/review/4931397/" rel="nofollow" target="_blank">1 分钟背诵的神奇<em></em></a> (Jack）
 
 <a href="http://www.douban.com/note/154383767/" rel="nofollow" target="_blank">读书的迷思之一：读书的原因<em></em></a>（伊卡洛斯）
 
@@ -310,13 +310,13 @@ tags:
 
 星座那些事儿：
 
-<a href="http://www.douban.com/note/140677232/" rel="nofollow" target="_blank">搜集12星座男对女友小出轨的反应<em></em></a>（炫酷多金小奶球）
+<a href="http://www.douban.com/note/140677232/" rel="nofollow" target="_blank">搜集 12 星座男对女友小出轨的反应<em></em></a>（炫酷多金小奶球）
 
-<a href="http://www.douban.com/note/152489475/" rel="nofollow" target="_blank">12星座都像金庸群侠中的谁，<em></em></a>（沐风而遇周星星）
+<a href="http://www.douban.com/note/152489475/" rel="nofollow" target="_blank">12 星座都像金庸群侠中的谁，<em></em></a>（沐风而遇周星星）
 
-<a href="http://www.douban.com/note/155185942/" rel="nofollow" target="_blank">处女座谈恋爱其实是这样的<em></em></a>（Alex大叔）
+<a href="http://www.douban.com/note/155185942/" rel="nofollow" target="_blank">处女座谈恋爱其实是这样的<em></em></a>（Alex 大叔）
 
-<a href="http://www.douban.com/note/267744727/" rel="nofollow" target="_blank">反星座论者请点[右上角]X<em></em></a> （ex都被我玩坏了）
+<a href="http://www.douban.com/note/267744727/" rel="nofollow" target="_blank">反星座论者请点 [右上角]X<em></em></a> （ex 都被我玩坏了）
 
 人间道：
 
@@ -332,7 +332,7 @@ tags:
 
 时光记：
 
-<a href="http://www.douban.com/note/113860564/" rel="nofollow" target="_blank">80年前民国时期上海报刊上的征婚标准<em></em></a>（水木丁）
+<a href="http://www.douban.com/note/113860564/" rel="nofollow" target="_blank">80 年前民国时期上海报刊上的征婚标准<em></em></a>（水木丁）
 
 术业有专攻：
 
@@ -346,7 +346,7 @@ tags:
 
 <a href="http://www.douban.com/note/184241030/" rel="nofollow" target="_blank">基佬，你真的懂艾滋的恐怖吗？<em></em></a>（威锐是我）
 
-<a href="http://www.douban.com/note/172363660/" rel="nofollow" target="_blank">留一手教你在美国网gou，让国内代gou都去吃屎！<em></em></a>（留一手）
+<a href="http://www.douban.com/note/172363660/" rel="nofollow" target="_blank">留一手教你在美国网 gou，让国内代 gou 都去吃屎！<em></em></a>（留一手）
 
 <a href="http://www.douban.com/note/167639618/" rel="nofollow" target="_blank">带猫去美国攻略<em></em></a> （蘭花花）
 
@@ -372,25 +372,25 @@ tags:
 
 <a href="http://www.douban.com/note/62717771/" rel="nofollow" target="_blank">总有友邻让我们觉得留在豆瓣能学到不少东西<em></em></a> (Jack)
 
-<a href="http://www.douban.com/note/91619037/" rel="nofollow" target="_blank">让你一次读完75本书<em></em></a> (Jack)
+<a href="http://www.douban.com/note/91619037/" rel="nofollow" target="_blank">让你一次读完 75 本书<em></em></a> (Jack)
 
 <a href="http://www.douban.com/group/topic/18335863/" rel="nofollow" target="_blank">摄影教材<em></em></a>（和尚整理）
 
-<a href="http://www.douban.com/note/141752953/" rel="nofollow" target="_blank">相册整理<em></em></a>（Fawcett整理）
+<a href="http://www.douban.com/note/141752953/" rel="nofollow" target="_blank">相册整理<em></em></a>（Fawcett 整理）
 
 <a href="http://www.douban.com/note/136460711/" rel="nofollow" target="_blank">北京市图书馆系统攻略<em></em></a>（迷宝 让更多的熊猫扭起来）
 
-<a href="http://www.douban.com/note/172241744/" rel="nofollow" target="_blank">Jack推荐的咨询报告完整整理<em></em></a>（伊卡洛斯）
+<a href="http://www.douban.com/note/172241744/" rel="nofollow" target="_blank">Jack 推荐的咨询报告完整整理<em></em></a>（伊卡洛斯）
 
 <a href="http://www.douban.com/note/161620204/" rel="nofollow" target="_blank">人际交往主题阅读相关笔记整理<em></em></a> （Zen）
 
-<a href="http://www.douban.com/note/167910361/" rel="nofollow" target="_blank">反清新反装逼吃货厦门游攻略<em></em></a> (温柔WseeY)
+<a href="http://www.douban.com/note/167910361/" rel="nofollow" target="_blank">反清新反装逼吃货厦门游攻略<em></em></a> (温柔 WseeY)
 
 <a href="http://www.douban.com/note/211748394/" rel="nofollow" target="_blank">做爱做的事，看有趣的人<em></em></a> (Jack)
 
 <a href="http://www.douban.com/group/topic/15341332/" rel="nofollow" target="_blank">【实例】从荣格心理学看星座<em></em></a>(知更鸟)
 
-<a href="http://www.douban.com/group/topic/16418700/" rel="nofollow" target="_blank">购书网址大全<em></em></a> （彷徨的漂泊 )
+<a href="http://www.douban.com/group/topic/16418700/" rel="nofollow" target="_blank">购书网址大全<em></em></a> （彷徨的漂泊)
 
 <a href="http://www.douban.com/note/170378415/" rel="nofollow" target="_blank">一次充满快感的阅读冒险<em></em></a> （ovonarchimbo）
 

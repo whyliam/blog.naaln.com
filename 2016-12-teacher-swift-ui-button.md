@@ -11,20 +11,20 @@ tags:
 
 ![](http://pics.naaln.com/blog/2019-01-14-032255.jpg-basicBlog)
 
-按钮是所有UI体系中非常重要的组件，在iOS中按钮UIButton的使用也非常灵活，本文将从以下几点介绍UIButton的使用（**基于Swift2.0**）：
+按钮是所有 UI 体系中非常重要的组件，在 iOS 中按钮 UIButton 的使用也非常灵活，本文将从以下几点介绍 UIButton 的使用（**基于 Swift2.0**）：
 
-1. UIButton基础
-2. UIButton图片使用
+1. UIButton 基础
+2. UIButton 图片使用
 3. 圆角按钮
 4. 复选框按钮
 5. 倒计时按钮（闪烁问题也轻松解决）
-6. 贪婪按钮(父控件事件也归我，扩大事件响应区域)
+6. 贪婪按钮 (父控件事件也归我，扩大事件响应区域)
 
-## 二、UIButton基础
+## 二、UIButton 基础
 
-### 2.1创建
+### 2.1 创建
 
-UIButton提供了一个简单的构造方法
+UIButton 提供了一个简单的构造方法
 
 ```
 convenience init(type buttonType: UIButtonType)
@@ -46,7 +46,7 @@ func buttonPressed(button: UIButton) {
 }
 ```
 
-#### Tips:
+#### Tips
 
 1.设置按钮标题时，一定要通过
 
@@ -60,20 +60,20 @@ func setTitle(_ title: String?, forState state: UIControlState)
 button.titleLabel?.text = "确定"
 ```
 
-此方式会在点击时标题自动变为**setTitle**方法Normal状态下的文字
+此方式会在点击时标题自动变为**setTitle**方法 Normal 状态下的文字
 
-### 2.2图片使用
+### 2.2 图片使用
 
-UIButton提供了以下两个接口使用图片：
+UIButton 提供了以下两个接口使用图片：
 
 ```
 func setImage(image: UIImage?, forState state: UIControlState)
 func setBackgroundImage(image: UIImage?, forState state: UIControlState)
 ```
 
-(1)其中接口**setImage**用来设置按钮的图片，默认情况下，它会与按钮文字水平线性排列
+(1) 其中接口**setImage**用来设置按钮的图片，默认情况下，它会与按钮文字水平线性排列
 
-(2)接口**setBackgroundImage**用来设置按钮的背景图片，**setImage**及按钮文字都会显示在背景图片之上
+(2) 接口**setBackgroundImage**用来设置按钮的背景图片，**setImage**及按钮文字都会显示在背景图片之上
 
 这里着重讨论一下**setBackgroundImage**接口，很多时候，按钮看起来是这样的
 
@@ -81,11 +81,11 @@ func setBackgroundImage(image: UIImage?, forState state: UIControlState)
 
 这些按钮，背景相同，只是尺寸不一样，下面来谈一下，如何复用这一类图片资源。
 
-#### 2.2.1代码方式
+#### 2.2.1 代码方式
 
 ##### 2.2.1.1 原理说明
 
-在UIImage接口中，有以下方法
+在 UIImage 接口中，有以下方法
 
 ```
 func resizableImageWithCapInsets(_ capInsets: UIEdgeInsets) -> UIImage
@@ -97,18 +97,18 @@ func resizableImageWithCapInsets(_ capInsets: UIEdgeInsets) -> UIImage
 func UIEdgeInsetsMake(_ top: CGFloat, _ left: CGFloat, _ bottom: CGFloat, _ right: CGFloat)
 ```
 
-这个方法提供了上下左右的参数来创建**可变区域**,如下图（Tips:下图标明的可变区域与视图内边距是不同的概念）
+这个方法提供了上下左右的参数来创建**可变区域**,如下图（Tips: 下图标明的可变区域与视图内边距是不同的概念）
 
 ![](http://pics.naaln.com/blog/2019-01-14-032258.jpg-basicBlog)
 
-图中，蓝色标识为可变区域， 绿色标识为不变区域。**UIEdgeInsets**结构体的属性**top**与**bottom**为一对，用来指定纵向可变区域（黑色虚线矩形），**left**与**right**为一对，用来指定横向可变区域(白色虚线矩形)。当UIButton/UIImageView的**size**大于UIImage的**size**时，会调整图片中可变区域大小以铺满整个控件，具体调整规则如下：
+图中，蓝色标识为可变区域， 绿色标识为不变区域。**UIEdgeInsets**结构体的属性**top**与**bottom**为一对，用来指定纵向可变区域（黑色虚线矩形），**left**与**right**为一对，用来指定横向可变区域 (白色虚线矩形)。当 UIButton/UIImageView 的**size**大于 UIImage 的**size**时，会调整图片中可变区域大小以铺满整个控件，具体调整规则如下：
 
     (1)控件宽度大于图片宽度，拉伸白色虚线矩形
     (2)控件高度大于图片高度，拉伸黑色虚线矩形
     (3)控制宽度小于图片宽度时，横向整体缩小(可变区与不变区比例不变)
     (4)控制高度小于图片高度时，纵向整体缩小(可变区与不变区比例不变)
 
-iOS系统会根据设备的分辨率自动加载1倍图、2倍图、3倍图，而方法**resizableImageWithCapInsets**中的上下左右是以像素为单位，这就要求在使用时，根据**x**倍图，来设置对应的边距，例如：
+iOS 系统会根据设备的分辨率自动加载 1 倍图、2 倍图、3 倍图，而方法**resizableImageWithCapInsets**中的上下左右是以像素为单位，这就要求在使用时，根据**x**倍图，来设置对应的边距，例如：
 
 ```
 let image = UIImage(named: "image_name")
@@ -119,16 +119,17 @@ let resizeImage = image?.resizableImageWithCapInsets(edge)
 button.setBackgroundImage(resizeImage!, forState: UIControlState.Normal)
 ```
 
-##### 2.2.1.2性能与可变区域大小的关系
+##### 2.2.1.2 性能与可变区域大小的关系
 
-(1) 性能最好：可变区为1像素宽或者高时，绘图时通过拉伸1像素方式
+(1) 性能最好：可变区为 1 像素宽或者高时，绘图时通过拉伸 1 像素方式
 
 (2) 性能较好：可变区为整张图片，方法**resizableImageWithCapInsets**参数为**UIEdgeInsetsZero**，绘制时通过平铺整张图片方式
 
-(3) 性能较差：可变区宽或者高大于1像素时，绘图时通过平铺方式，此种方式性能较差，但是在实际开发中此种方式也是用的最多的一种。
+(3) 性能较差：可变区宽或者高大于 1 像素时，绘图时通过平铺方式，此种方式性能较差，但是在实际开发中此种方式也是用的最多的一种。
 
 ##### Tips
-在一些应用中，应用程序有一些非纯色背景，这个背景会在多个界面使用，由于设备分辨率、界面控件的尺寸差别，会要求制作多个尺寸的图，导致ipa包变大、内存使用增加。这里结合上面**(2)**设置可变区为整张图片，可以解决此问题，原理请看[无缝贴图](http://baike.baidu.com/link?url=EDIwNePycksKQ9MceuZpQLk0C12VWOS4lvb1wVQlzEgW8zliYw44HqDP8RHwArL8uldvUWpXZ3qg4MHgeDtm4K)
+
+在一些应用中，应用程序有一些非纯色背景，这个背景会在多个界面使用，由于设备分辨率、界面控件的尺寸差别，会要求制作多个尺寸的图，导致 ipa 包变大、内存使用增加。这里结合上面**(2)**设置可变区为整张图片，可以解决此问题，原理请看 [无缝贴图](http://baike.baidu.com/link?url=EDIwNePycksKQ9MceuZpQLk0C12VWOS4lvb1wVQlzEgW8zliYw44HqDP8RHwArL8uldvUWpXZ3qg4MHgeDtm4K)
 
 ![](http://pics.naaln.com/blog/2019-01-14-032300.jpg-basicBlog)
 
@@ -140,9 +141,9 @@ let resizeImage = image?.resizableImageWithCapInsets(UIEdgeInsetsZero)
 self.bkImageView.image = resizeImage
 ```
 
-#### 2.2.2 Asset Catalogs方式(推荐)
+#### 2.2.2 Asset Catalogs 方式 (推荐)
 
-Xcode提供了Asset Catalogs的方式来管理图片资源，Asset Catalogs提供了可视化界面来设置图片的可变区，操作方便，使用简单。点击右下方的**Show Slicing**
+Xcode 提供了 Asset Catalogs 的方式来管理图片资源，Asset Catalogs 提供了可视化界面来设置图片的可变区，操作方便，使用简单。点击右下方的**Show Slicing**
 
 ![](http://pics.naaln.com/blog/2019-01-14-32301.jpg-basicBlog)
 
@@ -156,13 +157,13 @@ Xcode提供了Asset Catalogs的方式来管理图片资源，Asset Catalogs提�
     按钮2水平垂直都拉伸
     按钮3只做垂直拉伸
 
-水平及垂直的拉伸处理相同，这里以水平为例，选择水平拉伸按钮1后，会提供三条操作线用来指定可变区及删除区
+水平及垂直的拉伸处理相同，这里以水平为例，选择水平拉伸按钮 1 后，会提供三条操作线用来指定可变区及删除区
 
 ![](http://pics.naaln.com/blog/2019-01-14-032302.jpg-basicBlog)
 
-可变区：操作线1与操作线2指定的区域，在拉伸时，会根据最终尺寸改变此区域的大小
+可变区：操作线 1 与操作线 2 指定的区域，在拉伸时，会根据最终尺寸改变此区域的大小
 
-删除区：操作线2与操作线3指定的区域（白色半透明层），可以简单的理解为，此区域在拉伸时会被直接删除。使用方法跟普通图片一样，代码如下：
+删除区：操作线 2 与操作线 3 指定的区域（白色半透明层），可以简单的理解为，此区域在拉伸时会被直接删除。使用方法跟普通图片一样，代码如下：
 
 ```
 let image = UIImage(named: "image_asset_name")
@@ -171,9 +172,9 @@ button.setBackgroundImage(image, forState: UIControlState.Normal)
 
 ![](http://pics.naaln.com/blog/2019-01-14-032303.jpg-basicBlog)
 
-## 三、UIButton其它用法
+## 三、UIButton 其它用法
 
-### 3.1圆角按钮
+### 3.1 圆角按钮
 
 有些时候，我们需要一个圆形按钮，例如头像：
 
@@ -185,9 +186,9 @@ self.button.setImage(image, forState: UIControlState.Normal)
 self.button.imageView?.layer.cornerRadius = self.button.frame.width / 2
 ```
 
-### 3.2复选框按钮
+### 3.2 复选框按钮
 
-UIKit中没有复选框组件怎么办？
+UIKit 中没有复选框组件怎么办？
 
 ![](http://pics.naaln.com/blog/2019-01-14-032305.jpg-basicBlog)
 
@@ -213,9 +214,9 @@ func buttonPressed(button: UIButton) {
 }
 ```
 
-### 3.3倒计时按钮（闪烁问题也轻松解决）
+### 3.3 倒计时按钮（闪烁问题也轻松解决）
 
-很多应用中发短信倒计时功能，一般都会将NSTimer与UIButton结合来实现此功能，如果UIButton是这么初使化的：
+很多应用中发短信倒计时功能，一般都会将 NSTimer 与 UIButton 结合来实现此功能，如果 UIButton 是这么初使化的：
 
 ```
 let button = UIButton(type: UIButtonType.System)
@@ -241,11 +242,11 @@ self.view.addSubview(countButton)
 
 ## 四、贪婪按钮
 
-UIButton的frame会直接影响到**setImage**及**setBackgroundImage**的显示效果，有的时候我们只需要扩大UIButton的点击区域，而不想直接修改UIButton的frame而影响显示。这时可以通过以下方法来处理
+UIButton 的 frame 会直接影响到**setImage**及**setBackgroundImage**的显示效果，有的时候我们只需要扩大 UIButton 的点击区域，而不想直接修改 UIButton 的 frame 而影响显示。这时可以通过以下方法来处理
 
 ![](http://pics.naaln.com/blog/2019-01-14-032307.jpg-basicBlog)
 
-将UIButton的父视图(superView)的点击事件占有，所有的触控操作全部转嫁到UIButton控件上。iOS在处理事件分发时，分为两个步骤：第一步，查找哪一个UI组件响应此事件，第二步，事件处理，响应者链。要实现事件的转嫁，在第一步中来处理即可，代码如下：
+将 UIButton 的父视图 (superView) 的点击事件占有，所有的触控操作全部转嫁到 UIButton 控件上。iOS 在处理事件分发时，分为两个步骤：第一步，查找哪一个 UI 组件响应此事件，第二步，事件处理，响应者链。要实现事件的转嫁，在第一步中来处理即可，代码如下：
 
 ```
 class ILGreedButton: UIButton {
@@ -257,6 +258,6 @@ class ILGreedButton: UIButton {
 }
 ```
 
-在使用**ILGreedButton**时，就会出现点击父视图，UIButton响应事件的效果
+在使用**ILGreedButton**时，就会出现点击父视图，UIButton 响应事件的效果
 
 来源 ：[](http://00red.com/blog/2015/07/28/teacher-swift-ui-button/)

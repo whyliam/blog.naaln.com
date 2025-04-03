@@ -8,7 +8,7 @@ tags:
 - OpenGL
 ---
 
-刚刚开始学opengl，mark一下
+刚刚开始学 opengl，mark 一下
 
 ```c++
 #include<GL/glut.h >

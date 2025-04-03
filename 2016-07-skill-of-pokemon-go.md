@@ -6,15 +6,15 @@ categories:
 - 技术
 ---
 
-消息来源主要是贴吧，Reddit，pokemon一个数据网站，以及我自己的一点经验。
+消息来源主要是贴吧，Reddit，pokemon 一个数据网站，以及我自己的一点经验。
 
 Reddit 已经有人把游戏数据解包，解包结果：[https://gist.github.com/anonymous/077d6dea82d58b8febde54ae9729b1bf](https://gist.github.com/anonymous/077d6dea82d58b8febde54ae9729b1bf)
 
 贴吧翻译结果：[【重要消息】Reddit已经有人解包了游戏数据，一大波信息来袭_pokemongo吧](http://tieba.baidu.com/p/4674928820?see_lz=1)
 
-pokemon网站：[Pokemon Go Database](http://pokemongo.gamepress.gg/)
+pokemon 网站：[Pokemon Go Database](http://pokemongo.gamepress.gg/)
 
-1.当使用熏香时，站立不动的刷新频率为5分钟，如果处于移动状态并且位移超过200m，刷新频率为1分钟。
+1.当使用熏香时，站立不动的刷新频率为 5 分钟，如果处于移动状态并且位移超过 200m，刷新频率为 1 分钟。
 
 ```
 Incense {
@@ -25,7 +25,7 @@ Incense {
     }
 ```
 
-2.游戏中的属性一致加成（Same-type attack bonus）确实存在，加成系数为1.2。
+2.游戏中的属性一致加成（Same-type attack bonus）确实存在，加成系数为 1.2。
 
 ```
 Items {
@@ -56,14 +56,14 @@ Items {
 
 ![](http://pics.naaln.com/blog/2019-01-14-032440.jpg-basicBlog)
 
-5.训练家最高等级LV.100
+5.训练家最高等级 LV.100
 
 ```
 TrainerLevelMin: 1
 TrainerLevelMax: 100
 ```
 
-6.游戏中有大师球，根据目前的数据，12级之前只有poke ball，12级之后出现great ball，20级之后出现ultra ball，master ball可能需要30级甚至更高的等级才能解锁。（根据@刘昊伯 的评论， Reddit上已经有人到30级了，然而升级奖励当中并没有master ball，看来还需要更高的等级才行）
+6.游戏中有大师球，根据目前的数据，12 级之前只有 poke ball，12 级之后出现 great ball，20 级之后出现 ultra ball，master ball 可能需要 30 级甚至更高的等级才能解锁。（根据@刘昊伯 的评论， Reddit 上已经有人到 30 级了，然而升级奖励当中并没有 master ball，看来还需要更高的等级才行）
 
 ```
 Items {
@@ -75,7 +75,7 @@ Items {
   }
 ```
 
-7.扔球存在一个里程碑阈值，正作里捕获度受图鉴已捕获数量影响，所以这里可能是当你抓一种PM超过多少数量之后（达到里程碑），之后再抓这种PM就会容易一些了；也有人猜测是和游戏中的奖牌（Metal）系统挂钩的。
+7.扔球存在一个里程碑阈值，正作里捕获度受图鉴已捕获数量影响，所以这里可能是当你抓一种 PM 超过多少数量之后（达到里程碑），之后再抓这种 PM 就会容易一些了；也有人猜测是和游戏中的奖牌（Metal）系统挂钩的。
 
 ![](http://pics.naaln.com/blog/2019-01-14-032442.jpg-basicBlog)
 
@@ -129,7 +129,7 @@ Items {
   }
 ```
 
-9.精灵的MAX LEVEL为40，孵蛋得到的精灵最高等级20，野外精灵最高等级30，另外游戏中的精灵还存在一个的「family types」属性，可能以后会推出繁殖系统
+9.精灵的 MAX LEVEL 为 40，孵蛋得到的精灵最高等级 20，野外精灵最高等级 30，另外游戏中的精灵还存在一个的「family types」属性，可能以后会推出繁殖系统
 
 ![](http://pics.naaln.com/blog/2019-01-14-032443.jpg-basicBlog)
 
@@ -145,43 +145,43 @@ Items {
   }
 ```
 
-10.三维公式，CP公式已经得出
+10.三维公式，CP 公式已经得出
 
 ![](http://pics.naaln.com/blog/2019-01-14-032445.jpg-basicBlog)
 
 11.在捕捉精灵的时候，将精灵球在屏幕底端进行顺时针或逆时针旋转几圈之后，精灵球会开始转动，之后需要用弧线投法投出精灵球（顺时针从屏幕左侧投出，逆时针从屏幕右侧投出），应该对捕捉率有所提升
 
-12.关于power up和等级的计算。
+12.关于 power up 和等级的计算。
 
-隐藏属性越高，每次power up所增加的CP值越高。每次power up等级增加0.5级。
+隐藏属性越高，每次 power up 所增加的 CP 值越高。每次 power up 等级增加 0.5 级。
 
-一只CP值为该种精灵最小可能数字的精灵即为等级1。
+一只 CP 值为该种精灵最小可能数字的精灵即为等级 1。
 
-想要计算自己的精灵等级，公式是将精灵最新的CP值除以power up所增加的CP值，再将结果除以2.
+想要计算自己的精灵等级，公式是将精灵最新的 CP 值除以 power up 所增加的 CP 值，再将结果除以 2.
 
-每power up 4次（等级提高2级）星尘（stardust）的消耗会增加，每power up 20次（等级提高10级）， 糖果使用量增加1.
+每 power up 4 次（等级提高 2 级）星尘（stardust）的消耗会增加，每 power up 20 次（等级提高 10 级）， 糖果使用量增加 1.
 
-训练师不能power up一只等级超过自己训练师等级的精灵。
+训练师不能 power up 一只等级超过自己训练师等级的精灵。
 
 > Powering up costs both Stardust and candies specific to that Pokémon type. When you power up, the Pokémon gains CP following a complicated formula, gaining more CP the better its hidden stats are.
 > Whenever you power up a Pokémon, their level increases by 1/2. A Pokémon at the minimum possible CP is at level 1. To calculate a Pokémon's level, divide its current CP by how much CP you gain per power up, and then divide that again by 2.
 > Every 2 levels (or 4 power ups), the Stardust cost of powering up increases. Every 10 levels (or 20 power ups), the candy cost of powering up increases by 1. Note that since level determines Stardust cost, it is possible for a lower CP Pokémon to cost more to upgrade since it can gain less CP per level and thus have a lower max CP cap.
 > Don't forget, you cannot power up a Pokémon past your trainer level.
 
-13.pokemon最大CP值列表已经被发布了，目前为止CP最大值最低的是鲤鱼王，262.70，最高的是超梦，4144.75（真的有人捉到过超梦吗？），第二高的是快龙，3500.06。
+13.pokemon 最大 CP 值列表已经被发布了，目前为止 CP 最大值最低的是鲤鱼王，262.70，最高的是超梦，4144.75（真的有人捉到过超梦吗？），第二高的是快龙，3500.06。
 
 具体列表：[Pokemon | Pokemon Go](http://pokemongo.gamepress.gg/pokemon-list)
 
-14.有人一直在好奇为什么自己的pokemon列表里面有的呈现蓝色背景，有的没有。甚至一度怀疑是否蓝色背景表示精英或稀有程度。事实上，蓝色背景表示，该只精灵是在过去24小时内被你所捕获的
+14.有人一直在好奇为什么自己的 pokemon 列表里面有的呈现蓝色背景，有的没有。甚至一度怀疑是否蓝色背景表示精英或稀有程度。事实上，蓝色背景表示，该只精灵是在过去 24 小时内被你所捕获的
 
 > The blue glow that appears behind Pokémon in your storage mean that you caught it in the last 24 hours.
 
 15.关于进化。
-当一只精灵进化，它的基础数值会改变从而获得CP和HP的提升，但是该精灵的等级和个体值并不会改变。
+当一只精灵进化，它的基础数值会改变从而获得 CP 和 HP 的提升，但是该精灵的等级和个体值并不会改变。
 
 > When a Pokémon evolves, its base stats change so the displayed HP and CP increase. However, its Pokémon level and IVs do not change, so if you had a naturally powerful basic Pokémon, its evolution will also be naturally powerful.
 
-16.精灵拥有攻击，防御，耐力和个体值这几个隐藏属性。每种精灵都有自己的基础值，而个体值是在这个基础数值上面随机增加0~15.
+16.精灵拥有攻击，防御，耐力和个体值这几个隐藏属性。每种精灵都有自己的基础值，而个体值是在这个基础数值上面随机增加 0~15.
 
 > Pokémon have the following hidden core stats similar to the games:
 > Attack
@@ -191,7 +191,7 @@ Items {
 
 17.每种精灵都拥有攻击，防御，耐力这几个属性，从而得到攻击，防御，生命，特攻，特防这几个属性（基于种类，即同类精灵的基础攻击，防御等等是相同的）
 
-PS：修正：根据某些评论和贴吧的说法，应该是gen6的种族值，即HP, Atk, Def, SpA, SpD, Spe（血 物攻 物防 特攻 特防 速度）转化而来。也就是说不是由三个隐藏属性推导得到六个属性，而是从gen6的六个属性简化合并成PMG的三个隐藏属性。
+PS：修正：根据某些评论和贴吧的说法，应该是 gen6 的种族值，即 HP, Atk, Def, SpA, SpD, Spe（血 物攻 物防 特攻 特防 速度）转化而来。也就是说不是由三个隐藏属性推导得到六个属性，而是从 gen6 的六个属性简化合并成 PMG 的三个隐藏属性。
 
 ```
 Base Attack = 2.6 * (Atk^0.46)(SpAtk^0.46)(Sp^0.04) + 3
@@ -199,7 +199,7 @@ Base Defense = 2.6 * (Def^0.46)(SpDef^0.46)(Sp^0.04) + 3
 Base Stamina = 2 * HP
 ```
 
-举个例子，这是某只精灵的一段base stats的代码：
+举个例子，这是某只精灵的一段 base stats 的代码：
 
 ```
 Stats {
@@ -209,7 +209,7 @@ Stats {
     }
 ```
 
-再通过精灵本身不同的个体值和CP乘数，我们就可以得到该精灵的各项属性：
+再通过精灵本身不同的个体值和 CP 乘数，我们就可以得到该精灵的各项属性：
 
 ```
 Attack = (Base Attack + Individual Attack) * Total_CP_Multiplier
@@ -219,35 +219,35 @@ Stamina = (Base Stamina + Individual Stamina) * Total_CP_Multiplier
 
 即：
 
-耐力=(耐力种族+耐力个体值)*TCpM
+耐力=(耐力种族 + 耐力个体值)*TCpM
 
-攻击=(攻击种族+攻击个体值)*TCpM
+攻击=(攻击种族 + 攻击个体值)*TCpM
 
-防御=(攻击种族+防御个体值)*TCpM
+防御=(攻击种族 + 防御个体值)*TCpM
 
-18.CP乘数计算。
+18.CP 乘数计算。
 
 ```
 Total_CP_Multiplier = CP_Multiplier + Additional_CP_Multiplier
 ```
 
-精灵的不同等级对应不同的CP乘数，CP乘数由先天乘数（CP_Multiplier）和后天乘数（ Additional_CP_Multiplier）相加而来。
+精灵的不同等级对应不同的 CP 乘数，CP 乘数由先天乘数（CP_Multiplier）和后天乘数（ Additional_CP_Multiplier）相加而来。
 
-当你第一次抓到某只精灵时，该精灵的先天乘数为其等级所对应的乘数，后天乘数为0.
+当你第一次抓到某只精灵时，该精灵的先天乘数为其等级所对应的乘数，后天乘数为 0.
 
-后天乘数取决于你power up的次数。
+后天乘数取决于你 power up 的次数。
 
 乘数与等级对应列表：CP Multiplier
 
-19.CP最大值的计算。
+19.CP 最大值的计算。
 
-CP公式：
+CP 公式：
 
 ```
 CP = (Attack * Defense^0.5 * Stamina^0.5 * Total_CP_Multiplier^2) / 10
 ```
 
-最大CP推算公式：
+最大 CP 推算公式：
 
 ```
 Max CP = ((Base_Attack + 15) * ((Base_Defense + 15)^0.5 * (Base_Stamina + 15)^0.5 * 0.7903001^2) / 10
@@ -266,7 +266,7 @@ Level Formula
 
 20.关于身高和体重。
 
-很多人在纠结身高和体重的问题，甚至为了刷一只双XL的精灵煞费苦心。但是目前从代码来看，身高体重似乎是给了一个随机值····也就是说这两个属性并没有什么卵用
+很多人在纠结身高和体重的问题，甚至为了刷一只双 XL 的精灵煞费苦心。但是目前从代码来看，身高体重似乎是给了一个随机值····也就是说这两个属性并没有什么卵用
 
 21.关于捕捉时的反抗和跳跃行为。每个精灵都有自己的反抗和跳跃时长。
 
@@ -279,4 +279,4 @@ Level Formula
       AttackTimerS: 23
 ```
 
-随着抓的动物等级越来越高，我的NiaoPHD都排不上最强了……
+随着抓的动物等级越来越高，我的 NiaoPHD 都排不上最强了……
