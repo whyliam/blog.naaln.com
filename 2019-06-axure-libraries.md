@@ -7,18 +7,17 @@ categories:
 tags:
 ---
 
-在使用Axure的过程中，会加入一些 Library。除了基本的自带的库以外，以下是我常用的一些额外的库。
+在使用 Axure 的过程中，会加入一些 Library。除了基本的自带的库以外，以下是我常用的一些额外的库。
 
 ### FontAwesome
 
 ![](http://pics.naaln.com/blog/2019-06-13-020530.png-basicBlog)
 
-此次推出的FontAwesome图标元件库不再是由小楼制作，而是Axure官方制作并提供的。
+此次推出的 FontAwesome 图标元件库不再是由小楼制作，而是 Axure 官方制作并提供的。
 
 [Font Awesome Widget Library for RP 8 (Icon Fonts)](https://forum.axure.com/t/font-awesome-widget-library-for-rp-8-icon-fonts/25599)
 
-翻译版：[
-FontAwesome图标元件库V5.5.0版](http://www.iaxure.com/6814.html)
+翻译版：[FontAwesome图标元件库V5.5.0版](http://www.iaxure.com/6814.html)
 
 ### Element UI
 
@@ -37,4 +36,3 @@ Ant Design 服务于企业级产品的设计体系，基于确定和自然的设
 [Ant Design Axure Components](http://library.ant.design/)
 
 注意这个库，需要安装额外的字体。
-

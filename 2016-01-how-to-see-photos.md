@@ -23,7 +23,7 @@ tags:
 
 ![](http://pics.naaln.com/blog/2019-01-14-061009.jpg-basicBlog)
 
-点击image viewer，可以看到图片
+点击 image viewer，可以看到图片
 
 ![](http://pics.naaln.com/blog/2019-01-14-060958.gif-basicBlog)
 

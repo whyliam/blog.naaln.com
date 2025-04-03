@@ -79,8 +79,6 @@ AI Native 与 AI Based 产品的最显著区别是，AI Native 的产品和服�
 [Sidekick](https://www.shopify.com/hk-en/magic)
 - [Meet Sidekick: Our AI-powered assistant for merchants](https://youtu.be/HVvbY7A7lIQ?si=IhIwgT53jwafB086&t=75)
 
-
-
 ---
 
 **参考阅读**

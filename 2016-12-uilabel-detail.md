@@ -7,7 +7,7 @@ tags:
 - Swift
 ---
 
-### 常用属性和方法有：
+### 常用属性和方法有
 
 1\. 创建
 
@@ -16,7 +16,7 @@ CGRect rect = CGRectMake(100, 200, 50, 50);
 UILabel *label = [[UILabel alloc] initWithFrame:rect];
 ```
 
-2\. text //设置和读取文本内容，默认为nil
+2\. text //设置和读取文本内容，默认为 nil
 
 ```swift
 label.text = @"文本信息"; //设置内容
@@ -29,7 +29,7 @@ NSLog(@"%@", label.text); //读取内容
 lable.textColor = [UIColor redColor];
 ```
 
-4\. font //设置字体大小，默认17
+4\. font //设置字体大小，默认 17
 
 ```swift
 label.font = [UIFont systemFontOfSize:20]; //⼀一般方法
@@ -46,13 +46,13 @@ label.textAlignment = NSTextAlignmentCenter; //还有
 NSTextAlignmentLeft、 NSTextAlignmentRight.
 ```
 
-6\. numberOfLines //标签最多显示行数，如果为0则表示多行。
+6\. numberOfLines //标签最多显示行数，如果为 0 则表示多行。
 
 ```swift
 label.numberOfLines = 2;
 ```
 
-7\. enabled //只是决定了Label的绘制方式，将它设置
+7\. enabled //只是决定了 Label 的绘制方式，将它设置
 
 ```swift
 为NO将会使文本变暗，表示它没有激活，这时向它设置颜色值是无效的。
@@ -79,7 +79,7 @@ label.highlightedTextColor = [UIColor orangeColor];
 [label setShadowOffset:CGSizeMake(-1, -1)];
 ```
 
-11\. baselineAdjustment //如果adjustsFontSizeToFitWidth属性设
+11\. baselineAdjustment //如果 adjustsFontSizeToFitWidth 属性设
 
 ```swift
 //置为YES，这个属性就来控制文本基线的行为。
@@ -98,13 +98,13 @@ minimumFontSize //设置最小收缩字号，如果Label宽度小于文字长度
 label.minimumScaleFactor = 0.5;
 ```
 
-13\. adjustsLetterSpacingToFitWidth //改变字母之间的间距来适应Label大小
+13\. adjustsLetterSpacingToFitWidth //改变字母之间的间距来适应 Label 大小
 
 ```swift
 myLabel.adjustsLetterSpacingToFitWidth = NO;
 ```
 
-14\.  lineBreakMode //设置文字过长时的显示格式
+14\. lineBreakMode //设置文字过长时的显示格式
 
 ```swift
 label.lineBreakMode = NSLineBreakByCharWrapping; //以字符为显示单位显示，后面部分省略不显示。
@@ -115,7 +115,7 @@ label.lineBreakMode = NSLineBreakByTruncatingTail; //结尾部分的内容以…
 label.lineBreakMode = NSLineBreakByWordWrapping; //以单词为显示单位显示，后面部分省略不显示。
 ```
 
-15\.  adjustsFontSizeToFitWidth //设置字体大小适应label宽度
+15\. adjustsFontSizeToFitWidth //设置字体大小适应 label 宽度
 
 ```swift
 label.adjustsFontSizeToFitWidth = YES;
@@ -144,7 +144,7 @@ label.numberOfLines = [label.text length];
 
 ```
 
-18\. 计算UIlabel 随字体多行后的高度
+18\. 计算 UIlabel 随字体多行后的高度
 
 ```swift
 CGRect bounds = CGRectMake(0, 0, 200, 300);
@@ -153,7 +153,7 @@ limitedToNumberOfLines:20]; //计算20行后的Label的Frame
 NSLog(@"%f",heightLabel.size.height);
 ```
 
-19\. UILabel根据字数多少自动实现适应高度
+19\. UILabel 根据字数多少自动实现适应高度
 
 ```swift
 UILabel *msgLabel = [[UILabel alloc]
@@ -169,7 +169,7 @@ constrainedToSize:size];
 [msgLabel setFrame:CGRectMake(15, 45, 290, msgSie.height)];
 ```
 
-20\. 渐变字体Label
+20\. 渐变字体 Label
 
 ```swift
 UIColor *titleColor = [UIColor colorWithPatternImage:[UIImage
@@ -185,7 +185,7 @@ titleLabel.backgroundColor = [UIColor clearColor];
 [titleLabel release];
 ```
 
-21\. Label添加边框
+21\. Label 添加边框
 
 ```swift
 titleLabel.layer.borderColor = [[UIColor grayColor] CGColor];
@@ -193,7 +193,7 @@ titleLabel.layer.borderColor = [[UIColor grayColor] CGColor];
 titleLabel.layer.borderWidth = 2;
 ```
 
-#### 在iOS中默认的UILabel中的文字在竖直方向上只能居中对齐，博主参考国外网站，从UILabel继承了一个新类，实现了居上对齐，居中对齐，居下对齐。具体如下：
+#### 在 iOS 中默认的 UILabel 中的文字在竖直方向上只能居中对齐，博主参考国外网站，从 UILabel 继承了一个新类，实现了居上对齐，居中对齐，居下对齐。具体如下
 
 ```object-c
 #import <UIKit/UIKit.h>

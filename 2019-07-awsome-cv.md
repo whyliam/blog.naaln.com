@@ -13,7 +13,7 @@ tags:
 
 ### 安装过程
 
-1. 安装 [`mactex`](https://tug.org/mactex/)。安装 `Smaller Download` 就行了，不需要安装完整版。安装完整版需要 20G，精简版才 200M 。
+1. 安装 [`mactex`](https://tug.org/mactex/)。安装 `Smaller Download` 就行了，不需要安装完整版。安装完整版需要 20G，精简版才 200M。
 2. 安装其他的库。
 
 ```bash

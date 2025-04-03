@@ -55,13 +55,13 @@ Flask-
 
 以下以阅读顺序列出一些笔记
 
-建议先去看werkzeug源码，依赖很多
+建议先去看 werkzeug 源码，依赖很多
 
 ### init.py
 
 [init.py](https://github.com/pallets/flask/blob/master/flask/__init__.py)
 
-将所有变量从对应模块中import进来放到这里，然后可以直接通过
+将所有变量从对应模块中 import 进来放到这里，然后可以直接通过
 
 ```
 
@@ -95,7 +95,7 @@ Config(dict)             #具体配置对象，可以通过三种方式给Config
 
 ```
 
-#### Config的三个方法
+#### Config 的三个方法
 
 ```
 
@@ -109,7 +109,7 @@ def from_object(self, obj)                         #模块对象
 
 ```
 
-这里定义了三种方法，所以你可以通过三种不同的方式初始化flask配置
+这里定义了三种方法，所以你可以通过三种不同的方式初始化 flask 配置
 
 1.从文件
 
@@ -143,7 +143,7 @@ app.config.from_envvar('YOURAPPLICATION_SETTINGS')
 
 ### 扩展
 
-#### 1.
+#### 1
 
 ```
 
@@ -156,7 +156,7 @@ with open(filename) as config_file:
 
 ```
 
-#### 2.
+#### 2
 
 ```
 
@@ -167,7 +167,7 @@ except IOError as e:
 
 ```
 
-#### 3.继承父类的init方法
+#### 3.继承父类的 Init 方法
 
 ```
 
@@ -176,7 +176,7 @@ def __init__(self, root_path, defaults=None):
 
 ```
 
-#### 4.
+#### 4
 
 ```
 
@@ -213,7 +213,7 @@ g = LocalProxy(partial(_lookup_app_object, 'g'))              #g对象， 从 _a
 
 #### 扩展
 
-##### 1.
+##### 1
 
 ```
 
@@ -223,7 +223,7 @@ session = LocalProxy(partial(_lookup_req_object, 'session')) #session对象，�
 
 ```
 
-#### 2.
+#### 2
 
 ```
 
@@ -232,7 +232,7 @@ if top is None:
 
 ```
 
-#### 3.
+#### 3
 
 ```
 

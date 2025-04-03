@@ -6,30 +6,30 @@ categories:
 - 技术
 ---
 
-Swiftype搜索最近停了，开始收费，不想收费又想有这个站内搜索功能怎么办？
-可以用Algolia免费版！不仅免费，感觉上要比Swiftype要快，下面简单说下集成步骤。
+Swiftype 搜索最近停了，开始收费，不想收费又想有这个站内搜索功能怎么办？
+可以用 Algolia 免费版！不仅免费，感觉上要比 Swiftype 要快，下面简单说下集成步骤。
 
-### 第一步：到官网注册帐号(可以用github登录)
+### 第一步：到官网注册帐号 (可以用 Github 登录)
 
-[官网地址](https://www.algolia.com/referrals/c57f7b70/join)注册帐号
+[官网地址](https://www.algolia.com/referrals/c57f7b70/join) 注册帐号
 
-新建一个INDEX如图
+新建一个 INDEX 如图
 
 ![](http://pics.naaln.com/blog/2019-01-14-032504.jpg-basicBlog)
 
-来到`API-KEYS`页面，上面有后面需要的信息（记得还有上面的INDEX名）。
+来到 `API-KEYS` 页面，上面有后面需要的信息（记得还有上面的 INDEX 名）。
 
 ![](http://pics.naaln.com/blog/2019-01-14-032505.jpg-basicBlog)
 
-### 第二步：上传数据到`Algolia`
+### 第二步：上传数据到 `Algolia`
 
-在Hexo工程目录的根目录下执行
+在 Hexo 工程目录的根目录下执行
 
 ```zsh
 npm install hexo-algolia --save
 ```
 
-在根目录的_config.yml中加入如下配置，注意改成前面第一步注册成果数据
+在根目录的 _config.yml 中加入如下配置，注意改成前面第一步注册成果数据
 
 ```
 algolia:
@@ -46,9 +46,9 @@ algolia:
 hexo algolia
 ```
 
-### 第三步：修改Hexo主题集成Algolia
+### 第三步：修改 Hexo 主题集成 Algolia
 
-确保在head.swig文件中加入如下配置，注意改成自己的
+确保在 head.swig 文件中加入如下配置，注意改成自己的
 
 ```html
 <script type="text/javascript" id="hexo.configuration">
@@ -65,7 +65,7 @@ hexo algolia
 </script>
 ```
 
-在要搜索的页面加入如下div
+在要搜索的页面加入如下 div
 
 ```html
 <div class="site-search">
@@ -90,7 +90,7 @@ hexo algolia
 </div>
 ```
 
-在要触发搜索的HTML节点加入一个CLASS名为popup-trigger，如图
+在要触发搜索的 HTML 节点加入一个 CLASS 名为 popup-trigger，如图
 
 ```html
 <li class="menu-item menu-item-search">
@@ -102,7 +102,7 @@ hexo algolia
 </li>
 ```
 
-确保要搜索页包含如下JS代码（可以单独建立一个。swig文件，然后在整体layout的swig文件中加入）
+确保要搜索页包含如下 JS 代码（可以单独建立一个。swig 文件，然后在整体 layout 的 swig 文件中加入）
 
 ```js
 <script src="http://cdn.bootcss.com/instantsearch.js/1.5.1/instantsearch.js"></script>
@@ -355,7 +355,7 @@ $(document).ready(function () {
 </script>
 ```
 
-确保要搜索页包含如下CSS代码（可以单独建立一个`.styl`文件，然后在整体css的styl文件中加入，注意确保生成正确，必要时可以执行`hexo clean`）
+确保要搜索页包含如下 CSS 代码（可以单独建立一个 `.styl` 文件，然后在整体 css 的 styl 文件中加入，注意确保生成正确，必要时可以执行 `hexo clean`）
 
 ```css
 ul.search-result-list {
@@ -575,7 +575,7 @@ a.search-result {
 }
 ```
 
-将下面这张图片拷贝到你的source目录的images目录下
+将下面这张图片拷贝到你的 source 目录的 images 目录下
 
 ![](http://pics.naaln.com/blog/2019-01-14-032506.jpg-basicBlog)
 

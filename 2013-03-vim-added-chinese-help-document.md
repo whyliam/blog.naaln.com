@@ -10,29 +10,29 @@ tags:
 
 安装中文帮助文档之前首先执行下列操作：
 
-在home目录下列新建文件夹  ：
+在 home 目录下列新建文件夹 ：
 
-`.vim ------------------>.vim`是一个隐藏文件，不要漏了 「。」
+`.vim ------------------>.vim` 是一个隐藏文件，不要漏了「。」
 
-`.vim/plugin ---------->.vim`目录下的plugin文件夹
+`.vim/plugin ---------->.vim` 目录下的 plugin 文件夹
 
-`.vim/doc ------------->.vim`目录下的doc文件夹
+`.vim/doc ------------->.vim` 目录下的 doc 文件夹
 
-`.vim/syntax --------->.vim`目录下的syntax文件夹
+`.vim/syntax --------->.vim` 目录下的 syntax 文件夹
 
-在home目录下新建隐藏文件 `.vimrc`
+在 home 目录下新建隐藏文件 `.vimrc`
 
-接着安装vim中文帮助文档：
+接着安装 vim 中文帮助文档：
 
-vim中文文档的主页是：
+vim 中文文档的主页是：
 
 [http://vimcdoc.sourceforge.net/][1]
 
-它将vim的help文件翻译成为中文，已经支持目前最新的vim 7.3。
+它将 vim 的 help 文件翻译成为中文，已经支持目前最新的 vim 7.3。
 
-如果想使用vim中文文档，可以遵循以下步骤：
+如果想使用 vim 中文文档，可以遵循以下步骤：
 
-**1、下载针对vim7.3的版本的中文帮助文档**
+**1、下载针对 vim7.3 的版本的中文帮助文档**
 
 在终端输入代码：
 
@@ -40,23 +40,23 @@ vim中文文档的主页是：
 $wget http://nchc.dl.sourceforge.net/sourceforge/vimcdoc/vimcdoc-1.8.0.tar.gz
 ```
 
-PS：wget命令下载到当前目录，例如：你在home目录下执行wget命令的话，下载后压缩文件vimcdoc-1.8.0.tar.gz 将在home目录下。
+PS：wget 命令下载到当前目录，例如：你在 home 目录下执行 wget 命令的话，下载后压缩文件 vimcdoc-1.8.0.tar.gz 将在 home 目录下。
 
-**2、解压vimcdoc-1.8.0.tar.gz**
+**2、解压 vimcdoc-1.8.0.tar.gz**
 
-解压后其中有个doc文件夹， 将其中的内容全部复制到home/.vim/doc, 或者vim安装目录下的doc目录中。
+解压后其中有个 doc 文件夹， 将其中的内容全部复制到 home/.vim/doc, 或者 vim 安装目录下的 doc 目录中。
 
-打开gvim，输入 `：help`  此时vim中的help信息已经是中文的了。
+打开 gvim，输入 `：help` 此时 vim 中的 help 信息已经是中文的了。
 
 注意:
 
-a. 如果无法显示中文， 在`home/.vimrc`中增加下面这句试试：
+a. 如果无法显示中文， 在 `home/.vimrc` 中增加下面这句试试：
 
 ```
 set helplang=cn
 ```
 
-b. 帮助文件的文本是utf-8编码的， 如果想用vim直接查看， 需要在`home/.vimrc`中设置：
+b. 帮助文件的文本是 utf-8 编码的， 如果想用 vim 直接查看， 需要在 `home/.vimrc` 中设置：
 
 ```
 set encoding=utf-8
@@ -64,23 +64,22 @@ set encoding=utf-8
 
 另外：
 
-vim中文文档不会覆盖原英文文档，安装后vim默认使用中文文档。
+vim 中文文档不会覆盖原英文文档，安装后 vim 默认使用中文文档。
 
-若想使用英文文档，可在`home/.vimrc`中执行以下命令：
+若想使用英文文档，可在 `home/.vimrc` 中执行以下命令：
 
 `:set helplang=en （即将cn改为en）`
 
-简要介绍一下vim的配置文件： `/etc/vim/vimrc` 和 `home/.vimrc`
+简要介绍一下 vim 的配置文件： `/etc/vim/vimrc` 和 `home/.vimrc`
 
-`/etc/vim/vimrc`是全局的配置文件，修改这个配置文件将改变所有用户的vim配置。
+`/etc/vim/vimrc` 是全局的配置文件，修改这个配置文件将改变所有用户的 vim 配置。
 
-这个文件还在目录`/usr/share/vim`目录下创建了链接文件。
+这个文件还在目录 `/usr/share/vim` 目录下创建了链接文件。
 
-默认情况下，debian在这个配置文件中将语法颜色显示关掉了。
+默认情况下，debian 在这个配置文件中将语法颜色显示关掉了。
 
-某个用户要是需要语法颜色显示，可以在自己的主目录下建立文件。vimrc，在这个文件中修改配置，这样只会影响本用户的显示，这种方式更符合linux的精神。
+某个用户要是需要语法颜色显示，可以在自己的主目录下建立文件。vimrc，在这个文件中修改配置，这样只会影响本用户的显示，这种方式更符合 linux 的精神。
 
-2. `home/.vimrc`是用户自己的vim配置文件，在这个配置文件中设置的配置只影响该用户自己。
+1. `home/.vimrc` 是用户自己的 vim 配置文件，在这个配置文件中设置的配置只影响该用户自己。
 
  [1]: http://vimcdoc.sourceforge.net/
-

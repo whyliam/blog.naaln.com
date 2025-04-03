@@ -8,19 +8,20 @@ tags:
 - Android
 ---
 
-在android应用开发中，ListView是使用频率非常高的一个组件，基本上稍微复杂点的布局都会用到它，利用它可以让你的界面美观，有层次
+在 android 应用开发中，ListView 是使用频率非常高的一个组件，基本上稍微复杂点的布局都会用到它，利用它可以让你的界面美观，有层次
 。
 
-ListView可以用来作为数据显示的容器，也可以作为界面的布局。学习ListView需要关注的内容大概有三点：显示、数据适配器以及各种
-事件的监听器。内容有点多，这里先只讲如何让ListView达到你想要的显示效果。
+ListView 可以用来作为数据显示的容器，也可以作为界面的布局。学习 ListView 需要关注的内容大概有三点：显示、数据适配器以及各种
+事件的监听器。内容有点多，这里先只讲如何让 ListView 达到你想要的显示效果。
 
-** 一、普通的ListView **
+** 一、普通的 ListView **
 
-普通的ListView是指每一个item只显示一条文本数据，程序运行效果图如下：
+普通的 ListView 是指每一个 item 只显示一条文本数据，程序运行效果图如下：
 
 ![请输入图片描述][1]
 
 代码：
+
 ```
 protected void onCreate(Bundle savedInstanceState) {
    // TODO Auto-generated method stub
@@ -38,15 +39,15 @@ protected void onCreate(Bundle savedInstanceState) {
 }
 ```
 
-** 二、自定义ListView **
+** 二、自定义 ListView **
 
-上面的那种方法只能显示简单的文字信息，显然在很多场合下都不够用，比如你想要在一个item中显示图片，显示多行文字，这就需要你自定义ListView的布局了。 效果图如下：
+上面的那种方法只能显示简单的文字信息，显然在很多场合下都不够用，比如你想要在一个 item 中显示图片，显示多行文字，这就需要你自定义 ListView 的布局了。效果图如下：
 
 ![请输入图片描述][2]
 
 步骤：
 
-1、分析你想要实现的布局效果，自定义布局文件lvw_custom.xml，该布局文件针对的是ListView的item，而不是整个ListView：
+1、分析你想要实现的布局效果，自定义布局文件 lvw_custom.xml，该布局文件针对的是 ListView 的 item，而不是整个 ListView：
 
 ```
    <?xml version="1.0" encoding="utf-8"?>
@@ -90,7 +91,7 @@ protected void onCreate(Bundle savedInstanceState) {
    </LinearLayout>
 ```
 
-2、取得用于ListView的数据集合，类型是ArrayList<Map<String, Object>>，每一个Map对应于ListView的一个item，多个map就构成了ListView的数据集合：
+2、取得用于 ListView 的数据集合，类型是 ArrayList<Map<String, Object>>，每一个 Map 对应于 ListView 的一个 item，多个 map 就构成了 ListView 的数据集合：
 
 ```
    /**
@@ -123,7 +124,7 @@ protected void onCreate(Bundle savedInstanceState) {
    }
 ```
 
-3、为ListView设置SimpleAdapter：
+3、为 ListView 设置 SimpleAdapter：
 
 ```
  //取得ListView实例
@@ -144,11 +145,11 @@ protected void onCreate(Bundle savedInstanceState) {
  lvwCustom.setAdapter(adapter);
 ```
 
-**三、显示非资源id类型图片的ListView**
+**三、显示非资源 id 类型图片的 ListView**
 
-通过上面的例子可以看到Map中图片项的value是资源id，这是针对项目中已存在的图片文件，为什么要用资源id而不是其他（比如Bitmap类型）呢，这是因为adapter的bindView()方法是负责解析图片并将其显示到ImageView中，但它只针对资源id类型做了判断。然而有一种情况，比如你的图片是从网络读取的Bitmap类型，你就需要对代码进行改写了。分析SimpleAdapter的源码，发现getView()方法是负责够造界面布局的的，而getView又是调用bindView来往控件里填充值的，所以我这里对bindView()方法进行改写。
+通过上面的例子可以看到 Map 中图片项的 value 是资源 id，这是针对项目中已存在的图片文件，为什么要用资源 id 而不是其他（比如 Bitmap 类型）呢，这是因为 adapter 的 bindView() 方法是负责解析图片并将其显示到 ImageView 中，但它只针对资源 id 类型做了判断。然而有一种情况，比如你的图片是从网络读取的 Bitmap 类型，你就需要对代码进行改写了。分析 SimpleAdapter 的源码，发现 getView() 方法是负责够造界面布局的的，而 getView 又是调用 bindView 来往控件里填充值的，所以我这里对 bindView() 方法进行改写。
 
-新建一个类CustomImageAdapter，代码完全copy自SimpleAdapter，找到bindView方法，对其进行改写：
+新建一个类 CustomImageAdapter，代码完全 copy 自 SimpleAdapter，找到 bindView 方法，对其进行改写：
 
 ```
 private void bindView(int position, View view) {
@@ -206,17 +207,17 @@ private void bindView(int position, View view) {
 }
 ```
 
-然后像自定义ListView的步骤一样使用就行了，只是把SimpleAdapter替换为CustomImageAdapter，Map中图片项的value变为Bitmap类型了。
+然后像自定义 ListView 的步骤一样使用就行了，只是把 SimpleAdapter 替换为 CustomImageAdapter，Map 中图片项的 value 变为 Bitmap 类型了。
 
-**四、Item使用不同布局的ListView**
+**四、Item 使用不同布局的 ListView**
 
-通过前面的例子可以看到，ListView的所有item使用的都是相同的布局，如果想使用不同的布局呢？ 这个例子是我从以前做的音乐播放器代码里找的，效果图:
+通过前面的例子可以看到，ListView 的所有 item 使用的都是相同的布局，如果想使用不同的布局呢？ 这个例子是我从以前做的音乐播放器代码里找的，效果图:
 
 ![请输入图片描述][3]
 
-MP3的封面图片突然不显示了，不知道咋回事。 步骤：
+MP3 的封面图片突然不显示了，不知道咋回事。步骤：
 
-1、在Map中存放的键值对中多增加一项布局类型：
+1、在 Map 中存放的键值对中多增加一项布局类型：
 
 ```
 /**
@@ -260,7 +261,7 @@ private List<Map<String, Object>> getSongList(int playlistId) {
 }
 ```
 
-2、为不同的item布局分别定义不同的布局文件。
+2、为不同的 item 布局分别定义不同的布局文件。
 
 list_songs.xml:
 
@@ -354,7 +355,7 @@ list_main_btn.xml:
 </LinearLayout>
 ```
 
-3、自定义Adapter类SongListAdapter，继承自BaseAdapter，重写getView方法，在该方法中使用LayoutInflator，根据map中定义的布局类型，构造对应的布局：
+3、自定义 Adapter 类 SongListAdapter，继承自 BaseAdapter，重写 getView 方法，在该方法中使用 LayoutInflator，根据 map 中定义的布局类型，构造对应的布局：
 
 ```
 @Override
@@ -400,7 +401,7 @@ public View getView(int position, View convertView, ViewGroup parent) {
 }
 ```
 
-3、为ListView设置adapter：
+3、为 ListView 设置 adapter：
 
 ```
 list = getSongList(playlistId);

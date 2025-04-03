@@ -96,25 +96,20 @@ tags:
 这里有一些列表：
 
 - [YC 投资孵化器对创业项目的要求](投资孵化器对创业项目的要求)，他们在找解决什么问题的创业项目；
-
-- Jay Zaveri 整理了一个[世界上最难的问题](https://docs.google.com/document/d/1Vb8WWbsVyEJzl66_qqtZfFr2uLL07Y7SJH5XKldjDPY/edit)。
-
-- Github 前 CEO Nat Friedman 征集的[让人感到兴奋的技术](https://nintil.com/technology-some-people-are-excited-about/)。
-
+- Jay Zaveri 整理了一个 [世界上最难的问题](https://docs.google.com/document/d/1Vb8WWbsVyEJzl66_qqtZfFr2uLL07Y7SJH5XKldjDPY/edit)。
+- Github 前 CEO Nat Friedman 征集的 [让人感到兴奋的技术](https://nintil.com/technology-some-people-are-excited-about/)。
 - [James Ough 的研究思想](https://web.archive.org/web/20190130140607/https://github.com/tensor8/idea_dump)，主要是人工智能和机器人技术。
-
 - Daniel Gross 的文章中 [Markets To Build In (2019)](https://pioneer.app/blog/2019-frontier-markets/)。
-
-- 经济学家 Tyler Cowen 想自己[出资的项目](https://marginalrevolution.com/marginalrevolution/2019/12/work-on-these-things.html)。
+- 经济学家 Tyler Cowen 想自己 [出资的项目](https://marginalrevolution.com/marginalrevolution/2019/12/work-on-these-things.html)。
 
 #### ▎ 如何找到你真正喜欢并想解决的问题？
 
 - 写下一个看起来令人兴奋的问题的短名单
 - 只留下 1-3 个最令人兴奋和容易处理的问题
-- 开始学习一切解题所需的必要基本知识，可能简单地使用 Google 搜索 「how to learn x reddit」。
-  - 找个家教
-  - 给当地大学的教授发电子邮件，请求他们帮助解决具体问题
-  - 在当地大学旁听课程
+- 开始学习一切解题所需的必要基本知识，可能简单地使用 Google 搜索「how to learn x reddit」。
+	- 找个家教
+	- 给当地大学的教授发电子邮件，请求他们帮助解决具体问题
+	- 在当地大学旁听课程
 - 开始进行与问题相关的项目，能产生最小的正反馈效果
 - 与你认识的同道中人通过邮件和社交媒体分享交流，如果他们喜欢认可，那你就走对路了
 

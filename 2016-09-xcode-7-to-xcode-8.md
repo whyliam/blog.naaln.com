@@ -17,13 +17,13 @@ XXX has conflicting provisioning settings. XXX is automatically provisioned, but
 
 #### 一、证书管理
 
-用Xcode8打开工程后，比较明显的就是下图了，这个是苹果的新特性，可以帮助我们自动管理证书。建议大家勾选这个Automatically manage signing
+用 Xcode8 打开工程后，比较明显的就是下图了，这个是苹果的新特性，可以帮助我们自动管理证书。建议大家勾选这个 Automatically manage signing
 
 ![](http://pics.naaln.com/blog/2019-01-14-32501.jpg-basicBlog)
 
 ![](http://pics.naaln.com/blog/2019-01-14-032503.jpg-basicBlog)
 
-解决办法是：大家在Xcode的偏好设置中，添加苹果账号，即可。
+解决办法是：大家在 Xcode 的偏好设置中，添加苹果账号，即可。
 
 #### Pod 管理
 

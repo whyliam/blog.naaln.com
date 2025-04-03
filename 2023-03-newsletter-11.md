@@ -64,7 +64,7 @@ ChatGPT 的训练方式与 InstructGPT 非常相似，使用了一种名为「�
 三个思维方式，都需要反复的思考、应用，才能让它们融入自己的潜意识中。正如在文章的开头，我之所以花了较多的篇幅来记录我找到答案的过程，是想告诉大家：很多重要的结论、想法，可能不是一瞬间产生，而是经由时间、经历等各种各样输入和输出锤炼之结成的果。所以保持耐心，也是与自己和世界相处的前提之一。
 
 **三本书：**
-- 《学会提问》 _Asking the right questions : a guide to critical thinking_ by M. Neil Browne / Stuart M. Keeley
+- 《学会提问》_Asking the right questions: a guide to critical thinking_ by M. Neil Browne / Stuart M. Keeley
 - _How to Fail at Almost Everything and Still Win Big_ by Scott Adams
 - _Decisive: How to Make Better Decisions_ by Dan Heath & Chip Heath
 

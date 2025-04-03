@@ -8,7 +8,7 @@ tags:
 - MATLAB
 ---
 
-MATLAB的edge函数只能处理灰度图或者黑白图（或者说imread之后得到的矩阵是个二维矩阵），而对RGB的真彩图是没法处理的，当然，也可以通过把RGB图先转化成灰度图再进行边缘检测。edge函数的输入参数就是imread之后的二维矩阵，和指示的字符串和限定方法的一些数值参数。edge函数支持六种经典边缘检测方法，分别是`Sobel Method`、`Prewitt Method`、`Roberts Method`、`Laplacian of Gaussian Method`、`Zero-cross Method`和`Canny Method`。至于具体算法，我就不清楚了，这里只给出matlab的实现方法：
+MATLAB 的 edge 函数只能处理灰度图或者黑白图（或者说 imread 之后得到的矩阵是个二维矩阵），而对 RGB 的真彩图是没法处理的，当然，也可以通过把 RGB 图先转化成灰度图再进行边缘检测。edge 函数的输入参数就是 imread 之后的二维矩阵，和指示的字符串和限定方法的一些数值参数。edge 函数支持六种经典边缘检测方法，分别是 `Sobel Method`、`Prewitt Method`、`Roberts Method`、`Laplacian of Gaussian Method`、`Zero-cross Method` 和 `Canny Method`。至于具体算法，我就不清楚了，这里只给出 matlab 的实现方法：
 
 源程序如下
 

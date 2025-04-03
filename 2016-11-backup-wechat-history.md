@@ -21,11 +21,11 @@ tags:
 
 ![](http://pics.naaln.com/blog/2019-01-14-032512.jpg-basicBlog)
 
-在`备份`区域内，选择`本电脑`，并务必取消勾选`给 iPhone 备份加密`，否则之后我们取出的数据也是无法使用的：
+在 `备份` 区域内，选择 `本电脑`，并务必取消勾选 `给 iPhone 备份加密`，否则之后我们取出的数据也是无法使用的：
 
 ![](http://pics.naaln.com/blog/2019-01-14-032513.jpg-basicBlog)
 
-接着，点击`立即备份`并等待备份完成：
+接着，点击 `立即备份` 并等待备份完成：
 
 ![](http://pics.naaln.com/blog/2019-01-14-032514.jpg-basicBlog)
 

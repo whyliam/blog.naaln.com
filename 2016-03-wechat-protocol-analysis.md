@@ -30,7 +30,7 @@ typedef struct wx_header_s {
 
 注：其它平台，软件版本，和网络环境未做测试！！！
 
-安卓手机平台的POST URI为：
+安卓手机平台的 POST URI 为：
 
 `POST http://szshort.weixin.qq.com/cgi-bin/micromsg-bin/geta8key HTTP/1.1`
 
@@ -68,7 +68,7 @@ typedef struct wx_header_s {
 
 `POST http://short.weixin.qq.com/cgi-bin/micromsg-bin/searchorrecommendbiz HTTP/1.1`
 
-微信的登录态(getA8key服务 安卓手机)
+微信的登录态 (getA8key 服务 安卓手机)
 
 `POST http://szshort.weixin.qq.com/cgi-bin/micromsg-bin/geta8key HTTP/1.1`
 
@@ -78,19 +78,18 @@ typedef struct wx_header_s {
 
 `0x00000013` 语音聊天
 
-`0x000000ed`  文字聊天
+`0x000000ed` 文字聊天
 
-`0x0000009b`  获取新闻（购物、大众点评）
+`0x0000009b` 获取新闻（购物、大众点评）
 
-`0x00000038`  摇一摇
+`0x00000038` 摇一摇
 
-`0x00000039`  摇一摇
+`0x00000039` 摇一摇
 
-`0x00000022`  扫一扫（测试smart6公众号、搜索QQ号）
+`0x00000022` 扫一扫（测试 smart6 公众号、搜索 QQ 号）
 
-`0x0000002c`  测试关注xxx公众号、增加QQ好友
+`0x0000002c` 测试关注 xxx 公众号、增加 QQ 好友
 
 来源：[Candoit&暗影之余](http://www.dpifw.cn/index.php/page/3/)
 
 ----------
-

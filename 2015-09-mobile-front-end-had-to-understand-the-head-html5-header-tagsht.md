@@ -8,9 +8,9 @@ tags:
 - HTML
 ---
 
-本文主要内容来自一丝的常用的 [HTML 头部标签](https://github.com/yisibl/blog/issues/1)和百度FEX的[HTML head 头标签](http://fex.baidu.com/blog/2014/10/html-head-tags/)。
+本文主要内容来自一丝的常用的 [HTML 头部标签](https://github.com/yisibl/blog/issues/1) 和百度 FEX 的 [HTML head 头标签](http://fex.baidu.com/blog/2014/10/html-head-tags/)。
 
-移动端的工作已经越来越成为前端工作的重要内容，除了平常的项目开发，HTML 头部标签功能，特别是meta标签显得非常重要。
+移动端的工作已经越来越成为前端工作的重要内容，除了平常的项目开发，HTML 头部标签功能，特别是 meta 标签显得非常重要。
 
 ### DOCTYPE
 
@@ -22,7 +22,7 @@ DOCTYPE(Document Type)，该声明位于文档中最前面的位置，处于 `ht
 
 	
 
-### charset
+### Charset
 
 声明文档使用的字符编码，
 
@@ -34,7 +34,7 @@ html5 之前网页中会这样写：
 
 这两个是等效的，具体可移步阅读：[`<meta charset='utf-8'>` vs `<meta http-equiv='Content-Type'>`](http://stackoverflow.com/questions/4696499/meta-charset-utf-8-vs-meta-http-equiv-content-type)，所以建议使用较短的，易于记忆。
 
-### lang属性
+### Lang 属性
 
 更加标准的 lang 属性写法 [http://zhi.hu/XyIa](http://zhi.hu/XyIa)
 
@@ -62,13 +62,11 @@ html5 之前网页中会这样写：
 
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 
-### 360 使用Google Chrome Frame
+### 360 使用 Google Chrome Frame
 
 	<meta name="renderer" content="webkit">
 
-360 浏览器就会在读取到这个标签后，立即切换对应的极速核。 另外为了保险起见再加入
-
-	
+360 浏览器就会在读取到这个标签后，立即切换对应的极速核。另外为了保险起见再加入
 
 	<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
 
@@ -86,59 +84,47 @@ html5 之前网页中会这样写：
 
 ### SEO 优化部分
 
-*   页面标题`<title>`标签(head 头部必须)
+- 页面标题 `<title>` 标签 (head 头部必须)
 
 	<title>your title</title>
 
-	
-
-*   页面关键词 keywords
+- 页面关键词 keywords
 
 	<meta name="keywords" content="your keywords">
 
-*   页面描述内容 description
+- 页面描述内容 description
 
 	<meta name="description" content="your description">
 
-	
-
-*   定义网页作者 author
+- 定义网页作者 author
 
 	<meta name="author" content="author,email address">
 
-*   定义网页搜索引擎索引方式，robotterms 是一组使用英文逗号「,」分割的值，通常有如下几种取值：none，noindex，nofollow，all，index和follow。
+- 定义网页搜索引擎索引方式，robotterms 是一组使用英文逗号「,」分割的值，通常有如下几种取值：none，noindex，nofollow，all，index 和 follow。
 
 	<meta name="robots" content="index,follow">
 
 相关链接：[WEB1038 – 标记包含无效的值](http://msdn.microsoft.com/zh-cn/library/ff724037(v=expression.40).aspx)
 
-### 为移动设备添加 viewport
+### 为移动设备添加 Viewport
 
-`viewport` 可以让布局在移动浏览器上显示的更好。 通常会写
+`viewport` 可以让布局在移动浏览器上显示的更好。通常会写
 
 	<meta name ="viewport" content ="initial-scale=1, maximum-scale=3, minimum-scale=1, user-scalable=no"> <!-- `width=device-width` 会导致 iPhone 5 添加到主屏后以 WebApp 全屏模式打开页面时出现黑边 http://bigc.at/ios-webapp-viewport-meta.orz -->
 
-`width=device-width` 会导致 iPhone 5 添加到主屏后以 WebApp 全屏模式打开页面时出现黑边([http://bigc.at/ios-webapp-viewport-meta.orz](http://bigc.at/ios-webapp-viewport-meta.orz))
+`width=device-width` 会导致 iPhone 5 添加到主屏后以 WebApp 全屏模式打开页面时出现黑边 ([http://bigc.at/ios-webapp-viewport-meta.orz](http://bigc.at/ios-webapp-viewport-meta.orz))
 
 content 参数：
 
-*   width viewport 宽度(数值/device-width)
-
-*   height viewport 高度(数值/device-height)
-
-*   initial-scale 初始缩放比例
-
-*   maximum-scale 最大缩放比例
-
-*   minimum-scale 最小缩放比例
-
-*   user-scalable 是否允许用户缩放(yes/no)
-
-*   minimal-ui iOS 7.1 beta 2 中新增属性（注意：iOS8 中已经删除），可以在页面加载时最小化上下状态栏。这是一个布尔值，可以直接这样写：
+- width viewport 宽度 (数值/device-width)
+- height viewport 高度 (数值/device-height)
+- initial-scale 初始缩放比例
+- maximum-scale 最大缩放比例
+- minimum-scale 最小缩放比例
+- user-scalable 是否允许用户缩放 (yes/no)
+- minimal-ui iOS 7.1 beta 2 中新增属性（注意：iOS8 中已经删除），可以在页面加载时最小化上下状态栏。这是一个布尔值，可以直接这样写：
 
 	<meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
-
-	
 
 而如果你的网站不是响应式的，请不要使用 initial-scale 或者禁用缩放。
 
@@ -154,7 +140,7 @@ content 参数：
 
 大部分 4.7~5 寸的安卓设备的 viewport 宽设为 360px，iPhone 6 上却是 375px，大部分 5.5 寸安卓机器（比如说三星 Note）的 viewport 宽为 400，iPhone 6 plus 上是 414px。
 
-### ios 设备
+### Ios 设备
 
 添加到主屏后的标题（iOS 6 新增）
 
@@ -170,15 +156,13 @@ content 参数：
 
 	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" /> <!-- 设置状态栏的背景颜色，只有在 `"apple-mobile-web-app-capable" content="yes"` 时生效 -->
 
-只有在 「apple-mobile-web-app-capable」 content=」yes」 时生效
+只有在「apple-mobile-web-app-capable」content=」yes」时生效
 
 content 参数：
 
-*   default 默认值。
-
-*   black 状态栏背景是黑色。
-
-*   black-translucent 状态栏背景是黑色半透明。 如果设置为 default 或 black ,网页内容从状态栏底部开始。 如果设置为 black-translucent ,网页内容充满整个屏幕，顶部会被状态栏遮挡。
+- default 默认值。
+- black 状态栏背景是黑色。
+- black-translucent 状态栏背景是黑色半透明。如果设置为 default 或 black,网页内容从状态栏底部开始。如果设置为 black-translucent,网页内容充满整个屏幕，顶部会被状态栏遮挡。
 
 禁止数字识自动别为电话号码
 
@@ -186,7 +170,7 @@ content 参数：
 
 ### iOS 图标
 
-rel 参数： apple-touch-icon 图片自动处理成圆角和高光等效果。 apple-touch-icon-precomposed 禁止系统自动添加效果，直接显示设计原图。 iPhone 和 iTouch，默认 57×57 像素，必须有
+rel 参数： apple-touch-icon 图片自动处理成圆角和高光等效果。apple-touch-icon-precomposed 禁止系统自动添加效果，直接显示设计原图。iPhone 和 iTouch，默认 57×57 像素，必须有
 
 	<link rel="apple-touch-icon-precomposed" href="/apple-touch-icon-57x57-precomposed.png" /> <!-- iPhone 和 iTouch，默认 57x57 像素，必须有 -->
 
@@ -202,7 +186,7 @@ Retina iPad，144×144 像素，可以没有，但推荐有
 
 	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="/apple-touch-icon-114x114-precomposed.png" /> <!-- Retina iPhone 和 Retina iTouch，114x114 像素，可以没有，但推荐有 -->
 
-IOS 图标大小在iPhone 6 plus上是180×180，iPhone 6 是120×120。 适配iPhone 6 plus，则需要在中加上这段
+IOS 图标大小在 iPhone 6 plus 上是 180×180，iPhone 6 是 120×120。适配 iPhone 6 plus，则需要在中加上这段
 
 	<link rel="apple-touch-icon-precomposed" sizes="180x180" href="retinahd_icon.png">
 
@@ -246,7 +230,7 @@ iPhone 5/iPod Touch 5 竖屏 640×1136 (Retina)
 
 	<meta name="apple-itunes-app" content="app-id=myAppStoreID, affiliate-data=myAffiliateData, app-argument=myURL"> <!-- 添加智能 App 广告条 Smart App Banner（iOS 6+ Safari） -->
 
-iPhone 6对应的图片大小是750×1294，iPhone 6 Plus 对应的是1242×2148 。
+iPhone 6 对应的图片大小是 750×1294，iPhone 6 Plus 对应的是 1242×2148。
 
 	<link rel="apple-touch-startup-image" href="launch6.png" media="(device-width: 375px)">
 
@@ -272,29 +256,29 @@ Windows 8 磁贴图标
 
 <pre class="prettyprint lang-html linenums:1 prettyprinted">
 
-1.  <span class="tag"><meta</span> <span class="pln"></span> <span class="atn">name</span><span class="pun">=</span><span class="atv">"msapplication-TileImage"</span> <span class="pln"></span> <span class="atn">content</span><span class="pun">=</span><span class="atv">"icon.png"</span><span class="tag">/></span> <span class="pln"></span> <span class="com"><!-- Windows 8 磁贴图标 --></span>
+1. <span class="tag"><meta</span> <span class="pln"></span> <span class="atn">name</span><span class="pun">=</span><span class="atv">"msapplication-TileImage"</span> <span class="pln"></span> <span class="atn">content</span><span class="pun">=</span><span class="atv">"icon.png"</span><span class="tag">/></span> <span class="pln"></span> <span class="com"><!-- Windows 8 磁贴图标 --></span>
 
 </pre>
 
-### rss订阅
+### Rss 订阅
 
 	<link rel="alternate" type="application/rss+xml" title="RSS" href="/rss.xml" /> <!-- 添加 RSS 订阅 -->
 
-### favicon icon
+### Favicon Icon
 
 	<link rel="shortcut icon" type="image/ico" href="/favicon.ico" /> <!-- 添加 favicon icon -->
 
-比较详细的 favicon 介绍可参考[https://github.com/audreyr/favicon-cheat-sheet](https://github.com/audreyr/favicon-cheat-sheet)
+比较详细的 favicon 介绍可参考 [https://github.com/audreyr/favicon-cheat-sheet](https://github.com/audreyr/favicon-cheat-sheet)
 
-### 关闭chrome浏览器下翻译插件
+### 关闭 Chrome 浏览器下翻译插件
 
-有些时候感觉chrome浏览器下翻译插件很烦人，可以通过下面的代码禁用它。
+有些时候感觉 chrome 浏览器下翻译插件很烦人，可以通过下面的代码禁用它。
 
 	<meta name="google" value="notranslate" />
 
 ![A70DF5F6-374B-448D-B433-EB99081A9F13](http://pics.naaln.com/blog/2019-01-14-061012.jpg-basicBlog)
 
-### 移动端的头部标签和meta
+### 移动端的头部标签和 Meta
 
 ```
 	<!DOCTYPE html> <!-- 使用 HTML5 doctype，不区分大小写 -->
@@ -387,24 +371,18 @@ Windows 8 磁贴图标
 
 	</head>
 ```
-	
 
 更多的 meta 标签参考
 
-*   [COMPLETE LIST OF HTML META TAGS](http://code.lancepollard.com/complete-list-of-html-meta-tags/)
-
-*   [18 Meta Tags Every Webpage Should Have in 2013](http://www.iacquire.com/blog/18-meta-tags-every-webpage-should-have-in-2013)
+- [COMPLETE LIST OF HTML META TAGS](http://code.lancepollard.com/complete-list-of-html-meta-tags/)
+- [18 Meta Tags Every Webpage Should Have in 2013](http://www.iacquire.com/blog/18-meta-tags-every-webpage-should-have-in-2013)
 
 参考文章：
 
-*   [常用的 HTML 头部标签](https://github.com/yisibl/blog/issues/1)
-
-*   [html5_header](https://gist.github.com/paddingme/6182708733917ae36331)
-
-*   [amazeui css](http://amazeui.org/css/)
-
-*   [DOCTYPE](http://www.douban.com/note/170560091/)
-
-*   [WEB 工程师和设计师必学的 10 个 IOS 8 新鲜改变](http://www.uisdc.com/ios8-ten-new-feature)
+- [常用的 HTML 头部标签](https://github.com/yisibl/blog/issues/1)
+- [html5_header](https://gist.github.com/paddingme/6182708733917ae36331)
+- [amazeui css](http://amazeui.org/css/)
+- [DOCTYPE](http://www.douban.com/note/170560091/)
+- [WEB 工程师和设计师必学的 10 个 IOS 8 新鲜改变](http://www.uisdc.com/ios8-ten-new-feature)
 
 </div>

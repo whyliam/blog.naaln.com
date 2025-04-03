@@ -7,9 +7,9 @@ categories:
 tags:
 ---
 
-我觉得，基本上可以说每个程序员都很熟悉「Hello World!」程序。依照惯例，它是学习编程语言、编译并运行你的首个程序的一种快速方法。然而，除此之外，它的价值不大。下面是我认为Hello World的十个问题。</span>
+我觉得，基本上可以说每个程序员都很熟悉「Hello World!」程序。依照惯例，它是学习编程语言、编译并运行你的首个程序的一种快速方法。然而，除此之外，它的价值不大。下面是我认为 Hello World 的十个问题。</span>
 
-**10.为什么是「Hello World」？为什么不叫「Hello Dave」或者「It Works!」?**（Dave就是《2011太空漫游》中的HAL 9000）
+**10.为什么是「Hello World」？为什么不叫「Hello Dave」或者「It Works!」?**（Dave 就是《2011 太空漫游》中的 HAL 9000）
 
 我知道这个问题有点夸张。「Hello World」这种说法从何而来呢？除你之外，最后一次有人运行你的程序是什么时候？也许用「Hello」更合理些。
 
@@ -45,11 +45,11 @@ tags:
 
 如果你观察一下不同语言编写的「Hello World!」程序，你会发现它们之间非常相似。
 
-一旦你精通于用一种语言写出 「Hello World!」程序，那么你也差不多能用其他语言熟练地编写这个程序。
+一旦你精通于用一种语言写出「Hello World!」程序，那么你也差不多能用其他语言熟练地编写这个程序。
 
 **3. 只使用一个关键字**
 
-如果你看过各种Hello World范例，你会发现他们的共同点就是都只使用一个关键字。
+如果你看过各种 Hello World 范例，你会发现他们的共同点就是都只使用一个关键字。
 
 一门编程语言有多少关键字：数百？上千？在编程语言的学习中，只学一个关键字是微乎其微的一步。
 
@@ -63,24 +63,21 @@ tags:
 
 「Hello World」例子至少可以用一个常量来储存「Hello World」字符串的值。
 
-**1. 忽略了函数和OO等概念**
+**1. 忽略了函数和 OO 等概念**
 
 「Hello World!」例子并没有用到一门给定编程语言的其他特性。
 
 比如下面这些：
 
-*   函数签名
-
-*   类结构
-
-*   命名空间
-
-*   继承
+- 函数签名
+- 类结构
+- 命名空间
+- 继承
 
 大多数老练的程序员能理解这些东西，但对于那些新手或者只有过程化编程背景的人来说，这还是会让他们沮丧。
 
 原文作者：[Repeat Geek](http://repeatgeek.com/technical/10-problems-with-hello-world/)
 
-编译：[伯乐](http://www.jobBole.com)在线 [敏捷翻译](http://www.jobbole.com/showthread.php/3546) - **[高志翔](http://www.jobbole.com/member.php/901-%E9%AB%98%E5%BF%97%E7%BF%94)**
+编译：[伯乐](http://www.jobBole.com) 在线 [敏捷翻译](http://www.jobbole.com/showthread.php/3546) - **[高志翔](http://www.jobbole.com/member.php/901-%E9%AB%98%E5%BF%97%E7%BF%94)**
 
  [1]: http://blog.jobbole.com/wp-content/uploads/vb/469-thumb_20110123%20helloWorld.jpg

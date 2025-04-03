@@ -20,7 +20,7 @@ tags:
 
 ### 1. 管理外部文件夹
 
-这类的场主要是我有一些按文件夹分类的Markdown文件，在管理上希望可以有文件目录。符合这一类的软件有，Yu Writer，Ulysses，MWeb，markeditor……
+这类的场主要是我有一些按文件夹分类的 Markdown 文件，在管理上希望可以有文件目录。符合这一类的软件有，Yu Writer，Ulysses，MWeb，markeditor……
 
 相比较而言，我比较青睐 MWeb。因为在管理 Hexo 的时候，只有 Mweb 的渲染速度可以达到秒出，其他的都需要等待几秒钟。（我里面的文件数量有点多）
 
@@ -44,5 +44,4 @@ Sublime Text 配合 MarkdownEditing 使用，效果很不错哦。
 
 ### 4. 在线文档管理
 
-之前想要用 Markdown 写Evernote，所以接触了马克飞象，后来因为收费的原因就不用了。现在在线文档基本就用语雀，其实石墨文档也不错。
-
+之前想要用 Markdown 写 Evernote，所以接触了马克飞象，后来因为收费的原因就不用了。现在在线文档基本就用语雀，其实石墨文档也不错。

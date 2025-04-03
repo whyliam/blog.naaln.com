@@ -8,11 +8,12 @@ tags:
 - Fedora
 ---
 
-## 1. 安装fedora19后的初始化配置
+## 1. 安装 Fedora19 后的初始化配置
 
 ### 1.1. 防火墙
 
 如果你的电脑处于局域网内，那么防火墙是不需要的的，停止它！
+
 ```
    sudo systemctl stop firewalld.service
    sudo systemctl disable firewalld.service
@@ -21,6 +22,7 @@ tags:
 ### 1.1. SELinux
 
 停止 SELinux，如果你不需要它。
+
 ```
    sudo vi /etc/sysconfig/selinux
    # This file controls the state of SELinux on the system.
@@ -35,9 +37,10 @@ tags:
    SELINUXTYPE=targeted
 ```
 
-## 2. 安装rpmfusion源
+## 2. 安装 Rpmfusion 源
 
-### 2.1. 它有非常多的免费和非免费的软件，音视频解码器。
+### 2.1. 它有非常多的免费和非免费的软件，音视频解码器
+
 ```
    Fedora 14的源：
    sudo yum localinstall --nogpgcheck http://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-14.noarch.rpm
@@ -62,7 +65,8 @@ tags:
 
 ## 3. 安装一下有用的一些软件包
 
-### 3.1. 安32位装库文件
+### 3.1. 安 32 位装库文件
+
 ```
    sudo yum install glibc.i686
    sudo yum install libstdc++.so.6
@@ -84,7 +88,8 @@ tags:
    qt-x11.i686 pulseaudio-libs.i686 pulseaudio-libs-glib2.i686 alsa-plugins-pulseaudio.i686
 ```
 
-### 3.2. wps
+### 3.2. Wps
+
 ```
    [http://linux.wps.cn/](http://linux.wps.cn/)
    Debian（Ubuntu、Mint、LinuxDeepin等）用户请下载： 文件名： symbol-fonts_1.2_all.deb
@@ -104,6 +109,7 @@ tags:
 ```
 
 Windows 和 MS Office 的全部字体的安装包下载：
+
 ```
    Debian（Ubuntu、Mint、LinuxDeepin等）用户请下载： 文件名： winfonts_1.3_all.deb
    百度网盘下载链接： [http://pan.baidu.com/share/link?shareid=1223565760&uk=505215462](http://pan.baidu.com/share/link?shareid=1223565760&uk=505215462)
@@ -119,36 +125,44 @@ Windows 和 MS Office 的全部字体的安装包下载：
    sha1码： 2bf3369a89583837710d380f4dbd5bb89d730e01
 ```
 
-### 3.3. 安装tweak
+### 3.3. 安装 Tweak
+
 ```
    yum install gnome-tweak-tool
 ```
-### 3.4. 安装sublime
+
+### 3.4. 安装 Sublime
+
 ```
 [https://gist.github.com/whyliam/6220684](https://gist.github.com/whyliam/6220684)
 ```
 
-### 3.5. 安装 fcitx 输入法
+### 3.5. 安装 Fcitx 输入法
+
 ```
    sudo yum install fcitx fcitx-table-chinese
 ```
 
 配置以允许使用 iBus 之外的输入法：
+
 ```
    gsettings set org.gnome.settings-daemon.plugins.keyboard active false
 ```
 
 在终端使用
+
 ```
    $ yum-chooser
 ```
 
 或者利用输入法配置工具选择 fcitx（安装输入法选择：
+
 ```
    sudo yum install im-chooser）
 ```
 
 在输入法配置工具中注销或者利用终端注销
+
 ```
    $ gnome-session-quit
 ```
@@ -156,11 +170,12 @@ Windows 和 MS Office 的全部字体的安装包下载：
 重新登入，即可用 Ctrl+Space 切换
 
 ### 3.6. Logout
+
 ```
    $ gsettings set org.gnome.shell always-show-log-out true
 ```
 
-然后Alt+F2输入r打回车，就能在你的用户名下面的菜单里看到Log Out菜单了。
+然后 Alt+F2 输入 r 打回车，就能在你的用户名下面的菜单里看到 Log Out 菜单了。
 
 ### 3.7. 启用第三方软件库
 
@@ -170,46 +185,56 @@ Windows 和 MS Office 的全部字体的安装包下载：
 
 ### 3.8. 安装一下有用的一些软件包
 
-from: [http://blog.csdn.net/sabalol/article/details/8512462](http://blog.csdn.net/sabalol/article/details/8512462) 有些包比较大，你也可以不安装， 比如 texlive。 自己选择吧。
+from: [http://blog.csdn.net/sabalol/article/details/8512462](http://blog.csdn.net/sabalol/article/details/8512462) 有些包比较大，你也可以不安装， 比如 texlive。自己选择吧。
+
 ```
    sudoyum-yinstallyum-fastestmirrorunrarthunderbirdemacsibus-tableredhat-lsbgstreamer-plugins-badgstreamer-plugins-uglygstreamer-ffmpegcompat-libstdc++-33NetworkManager-develpython-geventtracker-ui-toolsqemulibpciaccess-develxorg-x11-util-macrosllvm-develmtdev*muttmsmtptftptftp-serverpolicycoreutils-guimtd-utilsmtd-utils-ubivimibus-pinyingnome-tweak-toolckermitstardictstardict-dic-zh_CNstardict-dic-entexliveibus-table-chinese-wubi-haifenggnashsmplayervlcsambapidginpidgin-sipemeldexpectglibc-staticncurses-staticgenromfscmakeccachep7zip;gummi
 ```
 
-### 3.9. 升级一下系统：
+### 3.9. 升级一下系统
+
 ```
    sudo yum -y update
 ```
 
-### 3.10. 安装chrome
+### 3.10. 安装 Chrome
+
 ```
    yum install google-chrome-stable
 ```
 
-### 3.11. 安装 flash plugin
+### 3.11. 安装 Flash Plugin
 
 32 位系统：
+
 ```
    wget http://linuxdownload.adobe.com/adobe-release/adobe-release-i386-1.0-1.noarch.rpm
    sudo rpm -ivh adobe-release-i386-1.0-1.noarch.rpm
 ```
 
-64位系统：
+64 位系统：
+
 ```
    wget http://linuxdownload.adobe.com/adobe-release/adobe-release-x86_64-1.0-1.noarch.rpm
    sudo rpm -ivh adobe-release-x86_64-1.0-1.noarch.rpm
    sudo yum -y install flash-plugin
 ```
 
-### 3.12. 安装音视频解压器：
+### 3.12. 安装音视频解压器
+
 ```
    wget http://mplayerhq.hu/MPlayer/releases/codecs/all-20110131.tar.bz2
    tar jxf all-20110131.tar.bz
 ```
-   32 位系统：
+
+	 32 位系统：
+
 ```
    sudo mkdir -p /usr/lib/codecs sudo cp all-20110131/* /usr/lib/codecs
 ```
-   64位系统：
+
+	 64位系统：
+
 ```
    sudo mkdir -p /usr/lib64/codecs sudo cp all-20110131/* /usr/lib64/codecs
 ```

@@ -12,11 +12,11 @@ tags:
 
 （1）定义光源的颜色和位置
 
-   GLfloat ambient[] = { 0.0, 0.0, 0.0, 1.0 };
+	 GLfloat ambient[] = { 0.0, 0.0, 0.0, 1.0 };
 
-   GLfloat diffuse[] = { 1.0, 1.0, 1.0, 1.0 };
+	 GLfloat diffuse[] = { 1.0, 1.0, 1.0, 1.0 };
 
-   GLfloat position[] = { 0.0, 3.0, 2.0, 0.0 };
+	 GLfloat position[] = { 0.0, 3.0, 2.0, 0.0 };
 
 （2）创建光源
 
@@ -34,57 +34,57 @@ tags:
 
 2.选择光照模型
 
-   GLfloat lmodel_ambient[] = { 0.4, 0.4, 0.4, 1.0 };
+	 GLfloat lmodel_ambient[] = { 0.4, 0.4, 0.4, 1.0 };
 
-   GLfloat local_view[] = { 0.0 };
+	 GLfloat local_view[] = { 0.0 };
 
-   glLightModelfv(GL_LIGHT_MODEL_AMBIENT, lmodel_ambient);
+	 glLightModelfv(GL_LIGHT_MODEL_AMBIENT, lmodel_ambient);
 
-   glLightModelfv(GL_LIGHT_MODEL_LOCAL_VIEWER, local_view);
+	 glLightModelfv(GL_LIGHT_MODEL_LOCAL_VIEWER, local_view);
 
 3.定义材质
 
 （1）材料属性
 
-   GLfloat no_mat[] = { 0.0, 0.0, 0.0, 1.0 };
+	 GLfloat no_mat[] = { 0.0, 0.0, 0.0, 1.0 };
 
-   GLfloat mat_ambient[] = { 0.7, 0.7, 0.7, 1.0 };
+	 GLfloat mat_ambient[] = { 0.7, 0.7, 0.7, 1.0 };
 
-   GLfloat mat_ambient_color[] = { 0.8, 0.8, 0.2, 1.0 };
+	 GLfloat mat_ambient_color[] = { 0.8, 0.8, 0.2, 1.0 };
 
-   GLfloat mat_diffuse[] = { 0.1, 0.5, 0.8, 1.0 };
+	 GLfloat mat_diffuse[] = { 0.1, 0.5, 0.8, 1.0 };
 
-   GLfloat mat_specular[] = { 1.0, 1.0, 1.0, 1.0 };
+	 GLfloat mat_specular[] = { 1.0, 1.0, 1.0, 1.0 };
 
-   GLfloat no_shininess[] = { 0.0 };
+	 GLfloat no_shininess[] = { 0.0 };
 
-   GLfloat low_shininess[] = { 5.0 };
+	 GLfloat low_shininess[] = { 5.0 };
 
-   GLfloat high_shininess[] = { 100.0 };
+	 GLfloat high_shininess[] = { 100.0 };
 
-   GLfloat mat_emission[] = {0.3, 0.2, 0.2, 0.0};
+	 GLfloat mat_emission[] = {0.3, 0.2, 0.2, 0.0};
 
 （2）指定材料属性
 
-   glMaterialfv(GL_FRONT, GL_AMBIENT, no_mat);
+	 glMaterialfv(GL_FRONT, GL_AMBIENT, no_mat);
 
-   glMaterialfv(GL_FRONT, GL_DIFFUSE, mat_diffuse);
+	 glMaterialfv(GL_FRONT, GL_DIFFUSE, mat_diffuse);
 
-   glMaterialfv(GL_FRONT, GL_SPECULAR, no_mat);
+	 glMaterialfv(GL_FRONT, GL_SPECULAR, no_mat);
 
-   glMaterialfv(GL_FRONT, GL_SHININESS, no_shininess);
+	 glMaterialfv(GL_FRONT, GL_SHININESS, no_shininess);
 
-   glMaterialfv(GL_FRONT, GL_EMISSION, no_mat);
+	 glMaterialfv(GL_FRONT, GL_EMISSION, no_mat);
 
 4.绘制物体
 
-   glutSolidSphere(1.0, 16, 16);
+	 glutSolidSphere(1.0, 16, 16);
 
-引用OpenGL编程指南中的例子：
+引用 OpenGL 编程指南中的例子：
 
-   void init(void)
+	 void init(void)
 
-   {
+	 {
 
       GLfloat ambient[] = { 0.0, 0.0, 0.0, 1.0 };
 
@@ -116,11 +116,11 @@ tags:
 
       glEnable(GL_LIGHT0);
 
-   }
+	 }
 
-   void display(void)
+	 void display(void)
 
-   {
+	 {
 
       GLfloat no_mat[] = { 0.0, 0.0, 0.0, 1.0 };
 
@@ -142,7 +142,7 @@ tags:
 
       glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 
-   /*  draw sphere in first row, first column
+	 /* draw sphere in first row, first column
 
     *  diffuse reflection only; no ambient or specular
 
@@ -166,7 +166,7 @@ tags:
 
       glPopMatrix();
 
-   /*  draw sphere in first row, second column
+	 /* draw sphere in first row, second column
 
     *  diffuse and specular reflection; low shininess; no ambient
 
@@ -190,7 +190,7 @@ tags:
 
       glPopMatrix();
 
-   /*  draw sphere in first row, third column
+	 /* draw sphere in first row, third column
 
     *  diffuse and specular reflection; high shininess; no ambient
 
@@ -214,7 +214,7 @@ tags:
 
       glPopMatrix();
 
-   /*  draw sphere in first row, fourth column
+	 /* draw sphere in first row, fourth column
 
     *  diffuse reflection; emission; no ambient or specular reflection
 
@@ -238,7 +238,7 @@ tags:
 
       glPopMatrix();
 
-   /*  draw sphere in second row, first column
+	 /* draw sphere in second row, first column
 
     *  ambient and diffuse reflection; no specular
 
@@ -262,7 +262,7 @@ tags:
 
       glPopMatrix();
 
-   /*  draw sphere in second row, second column
+	 /* draw sphere in second row, second column
 
     *  ambient, diffuse and specular reflection; low shininess
 
@@ -286,7 +286,7 @@ tags:
 
       glPopMatrix();
 
-   /*  draw sphere in second row, third column
+	 /* draw sphere in second row, third column
 
     *  ambient, diffuse and specular reflection; high shininess
 
@@ -310,7 +310,7 @@ tags:
 
       glPopMatrix();
 
-   /*  draw sphere in second row, fourth column
+	 /* draw sphere in second row, fourth column
 
     *  ambient and diffuse reflection; emission; no specular
 
@@ -334,7 +334,7 @@ tags:
 
       glPopMatrix();
 
-   /*  draw sphere in third row, first column
+	 /* draw sphere in third row, first column
 
     *  colored ambient and diffuse reflection; no specular
 
@@ -358,7 +358,7 @@ tags:
 
       glPopMatrix();
 
-   /*  draw sphere in third row, second column
+	 /* draw sphere in third row, second column
 
     *  colored ambient, diffuse and specular reflection; low shininess
 
@@ -382,7 +382,7 @@ tags:
 
       glPopMatrix();
 
-   /*  draw sphere in third row, third column
+	 /* draw sphere in third row, third column
 
     *  colored ambient, diffuse and specular reflection; high shininess
 
@@ -406,7 +406,7 @@ tags:
 
       glPopMatrix();
 
-   /*  draw sphere in third row, fourth column
+	 /* draw sphere in third row, fourth column
 
     *  colored ambient and diffuse reflection; emission; no specular
 
@@ -432,11 +432,11 @@ tags:
 
       glFlush();
 
-   }
+	 }
 
-   void reshape(int w, int h)
+	 void reshape(int w, int h)
 
-   {
+	 {
 
       glViewport(0, 0, w, h);
 
@@ -460,11 +460,11 @@ tags:
 
       glLoadIdentity();
 
-   }
+	 }
 
-   int main(int argc, char** argv)
+	 int main(int argc, char** argv)
 
-   {
+	 {
 
       glutInit(&argc, argv);
 
@@ -486,4 +486,4 @@ tags:
 
       return 0;
 
-   }
+	 }
