@@ -154,10 +154,10 @@ algolia:
     - photos
 
 excerpt:
-  depth: 4
-  excerpt_excludes: [h1,h2,h3,h4,h5,h6,img,table,iframe]
+  depth: 6
+  excerpt_excludes: [h1,h2,h3,h4,h5,h6,img,table,iframe,hr,blockquote]
   more_excludes: []
-  hideWholePostExcerpts: true
+  hideWholePostExcerpts: false
 
 sitemap:
   path: sitemap.xml
