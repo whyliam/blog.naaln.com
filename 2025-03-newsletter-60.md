@@ -6,6 +6,8 @@ categories:
   - 资讯
 tags:
   - NewsLetter
+photos:
+  - https://pics.naaln.com/2025-03-21-860b430989df4832b7b4ffb3d53cabb0-basicBlog
 ---
 ![AI技术革新与商业战略：未来发展的双引擎](https://pics.naaln.com/2025-03-21-860b430989df4832b7b4ffb3d53cabb0-basicBlog)
 
