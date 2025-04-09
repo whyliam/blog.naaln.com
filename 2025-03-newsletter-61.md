@@ -6,8 +6,6 @@ categories:
   - 资讯
 tags:
   - NewsLetter
-photos:
-  - https://pics.naaln.com/2025-03-21-32c19c15a5ae4ae7a57dfdfaef2e9b54-basicBlog
 ---
 ![人工智能革命：重构组织形态与技术边疆的破界时刻](https://pics.naaln.com/2025-03-21-32c19c15a5ae4ae7a57dfdfaef2e9b54-basicBlog)
 

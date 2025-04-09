@@ -133,6 +133,7 @@ brew install --cask downie              # 视频下载工具
 brew install --cask tencent-video       # 腾讯视频
 brew install --cask youku               # 优酷
 brew install --cask qqlive              # 腾讯视频(QQ视频)
+brew install --cask tinymediamanager    # 影视资料管理软件
 
 # 音乐
 brew install --cask neteasemusic        # 网易云音乐
@@ -177,7 +178,6 @@ photoSweeper  # 重复照片查找和清理工具
 Retrobatch  # 批量图片处理工具
 Stash  # 代码片段管理工具
 Texifier  # LaTeX编辑器
-tinymediamanager  # 影视资料管理软件
 夸克网盘  # 阿里巴巴旗下的云存储服务
 Follow
 imFile
