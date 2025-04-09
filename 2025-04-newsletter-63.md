@@ -6,8 +6,6 @@ categories:
   - 资讯
 tags:
   - NewsLetter
-photos:
-  - https://pics.naaln.com/2025-04-03-211b83eef0434b01a43814b3e8ca77ec-basicBlog
 ---
 ![从大模型到智能体的全面突破](https://pics.naaln.com/2025-04-03-211b83eef0434b01a43814b3e8ca77ec-basicBlog)
 
@@ -61,11 +59,7 @@ ICLR 2025 会议的这些论文为 AI 研究者和从业者提供了宝贵的知
 该报告揭示了智能体技术在存储、模型服务等层面的独特之处，如 RAG（检索增强生成）等技术的应用。通过这些技术，智能体能够更有效地处理和利用知识，提供更准确、更相关的信息和建议。
 这一全景图的发布为 AI 研究者和从业者提供了宝贵的参考，帮助他们更好地理解 AI Agent 技术栈的现状和发展趋势。随着技术的不断发展和应用场景的不断拓展，AI Agent 技术栈将不断完善和丰富，为各种应用场景提供更强大、更灵活的支持。
 
-### Reference
-
----
-
-> 关注不迷路 [博客](https://blog.naaln.com/)
+## 参考资料
 
 [^1]: OpenAI 重磅升级 GPT-4o：指令更准、代码更强，超越 GPT-4.5？ 原创. https://blog.csdn.net/weixin_40774379/article/details/146590833.
 [^2]: 最新实测，新版 GPT-4o 生图功能太强了（附一些使用方式） - 知乎. https://zhuanlan.zhihu.com/p/1889071688152483794.
@@ -80,3 +74,8 @@ ICLR 2025 会议的这些论文为 AI 研究者和从业者提供了宝贵的知
 [^11]: 王炸创新：Spring AI 结合 MCP 协议，三步迈入智能体开发新纪元. https://www.showapi.com/news/article/67edf3824ddd79013c15955e.
 [^12]: LLM Agent 前沿研究速览（含 ICLR2025 收录 Agent 论文） - 知乎专栏. https://zhuanlan.zhihu.com/p/1888564058556461727.
 [^13]: 2025 AI Agent 技术栈全景图 - 53AI. https://www.53ai.com/news/LargeLanguageModel/2025032420694.html.
+
+
+---
+
+> 关注不迷路 [博客](https://blog.naaln.com/)

@@ -6,8 +6,6 @@ categories:
   - 资讯
 tags:
   - NewsLetter
-photos:
-  - https://pics.naaln.com/2025-03-30-29ed93aeb65b42d782de629380f5d033.png-basicBlog
 ---
 ![从模型突破到工具革命](https://pics.naaln.com/2025-03-30-29ed93aeb65b42d782de629380f5d033.png-basicBlog)
 
