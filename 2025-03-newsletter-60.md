@@ -43,4 +43,5 @@ OpenAI 与 Anthropic 的技术路线之争揭示了 AI 产品化的深层逻辑�
 相关延伸：[好故事赢得未来](https://mp.weixin.qq.com/s/NJnbXxyI7s08boHUFIEKDA)
 
 ---
-更多技术洞察请访问 [AI前沿观察博客](https://blog.naaln.com/)
+
+> 关注不迷路 [博客](https://blog.naaln.com/)
