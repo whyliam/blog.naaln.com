@@ -79,6 +79,4 @@ tags:
 **相关延伸**：
 [永远不要超越自己的极限](https://xiaobot.net/post/3dcdeff7-acf9-419d-a0ed-56449ce8a78c)
 
----
 
-> 关注不迷路 [博客](https://blog.naaln.com/)｜[竹白](https://space.zhubai.love/)

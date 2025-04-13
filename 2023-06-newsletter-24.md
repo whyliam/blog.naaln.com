@@ -115,6 +115,4 @@ tags:
 **相关延伸**:
 - [The Technology](http://paulbuchheit.blogspot.com/2014/07/the-technology.html)
 
----
 
-> 关注不迷路 [博客](https://blog.naaln.com/)｜[竹白](https://space.zhubai.love/)

@@ -46,6 +46,4 @@ OpenAI 和 DeepSeek 在基础技术上虽然差异不大，但各有侧重。Dee
 
 [和最了解Sam Altman的中国作者，聊聊OpenAI和DeepSeek](https://mp.weixin.qq.com/s/mBifXtBP_FbcJCUyRBmWAQ)
 
----
 
-> 关注不迷路 [博客](https://blog.naaln.com/)

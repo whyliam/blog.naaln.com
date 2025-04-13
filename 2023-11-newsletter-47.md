@@ -146,6 +146,4 @@ tags:
 - [45 逃离算法 | CyberClip (zhubai.love)](https://shyrz.zhubai.love/posts/2337529637406367744)
 - [Feed your Creativity: How to Escape the Algorithm with Active Content Consumption](https://nesslabs.com/creative-input-output-active-content-consumption)
 
----
 
-> 关注不迷路 [博客](https://blog.naaln.com/)｜[竹白](https://space.zhubai.love/)

@@ -205,6 +205,4 @@ tags:
 
 - [《**沉思的生活，或无所事事》**](https://book.douban.com/subject/36425441/)
 
----
 
-> 关注不迷路 [博客](https://blog.naaln.com/)｜[竹白](https://space.zhubai.love/)

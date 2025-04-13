@@ -139,6 +139,4 @@ The Plus One part of this is setting aside time every single week to go through 
 
 来源：[泛精英社区「即刻」的高传播写作](https://zhiy.cc/letter/1624)，逆流 Upstream
 
----
 
-> 关注不迷路 [博客](https://blog.naaln.com/)｜[竹白](https://space.zhubai.love/)

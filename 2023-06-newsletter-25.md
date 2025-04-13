@@ -133,6 +133,4 @@ tags:
 **相关延伸**:
 - [I am nothing](http://paulbuchheit.blogspot.com/2011/08/i-am-nothing.html)
 
----
 
-> 关注不迷路 [博客](https://blog.naaln.com/)｜[竹白](https://space.zhubai.love/)

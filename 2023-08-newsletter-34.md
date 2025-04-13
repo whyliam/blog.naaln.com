@@ -159,6 +159,4 @@ KPI 靠不靠谱：为什么指定这个目标，目标是怎么来的，
 **相关延伸**:
 - [Unpopular ideas about social norm](https://juliagalef.com/2017/08/23/unpopular-ideas-about-social-norms/)
 
----
 
-> 关注不迷路 [博客](https://blog.naaln.com/)｜[竹白](https://space.zhubai.love/)

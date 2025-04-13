@@ -139,6 +139,4 @@ tags:
 
 最后，每天花点时间反思一天的行为和经历，从中吸取经验，以待未来的改进。
 
----
 
-> 关注不迷路 [博客](https://blog.naaln.com/)｜[竹白](https://space.zhubai.love/)

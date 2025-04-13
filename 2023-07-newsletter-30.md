@@ -83,6 +83,4 @@ tags:
 **相关延伸**:
 [Vol.014：不要崇拜谁，而是要问他想创造一个什么样的世界](https://xiaobot.net/post/93af76ac-bfae-44e5-a7f5-4a096039f994)
 
----
 
-> 关注不迷路 [博客](https://blog.naaln.com/)｜[竹白](https://space.zhubai.love/)

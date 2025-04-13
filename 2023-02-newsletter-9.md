@@ -72,6 +72,4 @@ tags:
 **来自：**
 - [Bertrand Russell](https://www.nobelprize.org/prizes/literature/1950/russell/lecture/)
 
----
 
-> 关注不迷路 [博客](https://blog.naaln.com/)｜[竹白](https://space.zhubai.love/)

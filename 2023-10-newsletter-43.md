@@ -192,6 +192,4 @@ tags:
 - [*The empty promises of Marie Kondo and the craze for minimalism*](https://www.theguardian.com/lifeandstyle/2020/jan/03/empty-promises-marie-kondo-craze-for-minimalism) — Kyle Chayka
 - [#42 极简主义的幻象 | CyberClip (zhubai.love)](https://shyrz.zhubai.love/posts/2317186475051565056)
 
----
 
-> 关注不迷路 [博客](https://blog.naaln.com/)｜[竹白](https://space.zhubai.love/)

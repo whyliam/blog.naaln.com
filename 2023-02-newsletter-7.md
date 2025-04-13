@@ -104,6 +104,4 @@ Zwicky Box 的优势不在于建立思考原创想法的能力，而在于系统
 - [the History and pracice of the Zwicky Box](http://www.matttaylor.com/public/zwicky_box_uses.htm)
 - [一种非量化建模的通用方法](http://www.swemorph.com/ma.html)
 
----
 
-> 关注不迷路 [博客](https://blog.naaln.com/)｜[竹白](https://space.zhubai.love/)

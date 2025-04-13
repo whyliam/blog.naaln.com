@@ -98,6 +98,4 @@ Brian Christian 在他的书《生存算法：人类决策的计算机科学》�
 **相关延伸**:
 [The 37% rule: How many people should you date before settling down? (bigthink.com)](https://bigthink.com/neuropsych/the-37-percent-rule/)
 
----
 
-> 关注不迷路 [博客](https://blog.naaln.com/)｜[竹白](https://space.zhubai.love/)

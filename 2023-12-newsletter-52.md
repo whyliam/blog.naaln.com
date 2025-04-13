@@ -109,6 +109,4 @@ tags:
 
 - [The Four Note-Taking Mindsets](https://cameron-sea.medium.com/the-four-note-taking-mindsets-8b3302c4d963)
 
----
 
-> 关注不迷路 [博客](https://blog.naaln.com/)｜[竹白](https://space.zhubai.love/)

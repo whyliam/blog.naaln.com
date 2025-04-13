@@ -157,6 +157,4 @@ ChatGPT 对教育会产生什么影响？几十年来，上海高校毕业生就
 **相关延伸**：
 - [浅谈费曼学习法、书籍推荐和荒谬世界](https://www.camelliayang.com/blog/richard-feynman-book-recommendations-love)
 
----
 
-> 关注不迷路 [博客](https://blog.naaln.com/)｜[竹白](https://space.zhubai.love/)

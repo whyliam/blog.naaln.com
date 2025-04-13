@@ -67,6 +67,3 @@ tags:
 
 《[铃木敏文](https://pmthinking.super.site/ecd14a51de41446f910dfa8ad52da4a5)》，少楠
 
----
-
-> [博客](https://blog.naaln.com/categories/NewsLetter/) ｜ [竹白](https://space.zhubai.love/)

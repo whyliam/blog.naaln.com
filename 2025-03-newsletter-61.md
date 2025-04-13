@@ -66,6 +66,4 @@ Anthropic 掌门人描绘出 AI 颠覆性图景：多数工作被替代的同时
 
 相关延伸：[英伟达技术预言](https://mp.weixin.qq.com/s/j0rNKQPv9GkB8GBnB4VA9w)
 
----
 
-> 关注不迷路 [博客](https://blog.naaln.com/)

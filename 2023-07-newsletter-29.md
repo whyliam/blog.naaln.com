@@ -92,6 +92,4 @@ tags:
 **相关延伸**:
 [Turning Fear of Failure into Increments of Curiosity](https://nesslabs.com/fear-of-failure) — Anne-Laure Le Cunff / NessLabs
 
----
 
-> 关注不迷路 [博客](https://blog.naaln.com/)｜[竹白](https://space.zhubai.love/)

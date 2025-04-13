@@ -98,6 +98,4 @@ ChatGPT 等工具会提高人的工作效率和产出。但它会让人类使用
 **相关延伸**：
 - [为什么现在生活比以前（或者古代）好了，我却感觉不到幸福？](https://www.zhihu.com/question/21802983/answer/206850629)
 
----
 
-> 关注不迷路 [博客](https://blog.naaln.com/)｜[竹白](https://space.zhubai.love/)

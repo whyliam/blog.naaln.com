@@ -90,6 +90,4 @@ Kinopio 的发展是一种演进过程，创作者仍有很多新的功能和改
 - [Kinopio's Design Principles](https://pketh.org/design-principles.html)
 - [Productivity vs Insight, Tools for Reflection, and Other Questions Answered](https://pketh.org/kinopio-qa.html)
 
----
 
-> 关注不迷路 [博客](https://blog.naaln.com/)｜[竹白](https://space.zhubai.love/)

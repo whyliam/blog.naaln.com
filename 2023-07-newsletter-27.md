@@ -74,6 +74,4 @@ tags:
 **相关延伸**:
 [与项飙对话：在不确定的世界，建设自己的大后方](https://mp.weixin.qq.com/s/Sbby84fxZ7jQVYRo25iJFA)
 
----
 
-> 关注不迷路 [博客](https://blog.naaln.com/)｜[竹白](https://space.zhubai.love/)

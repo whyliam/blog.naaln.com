@@ -227,6 +227,4 @@ b) 是一个错误。这是为什么。
 
 - [These 38 Reading Rules Changed My Life](https://ryanholiday.net/these-38-reading-rules-changed-my-life/)
 
----
 
-> 关注不迷路 [博客](https://blog.naaln.com/)｜[竹白](https://space.zhubai.love/)

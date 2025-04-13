@@ -98,6 +98,4 @@ tags:
 
 [禅与社交网络维修艺术](https://mp.weixin.qq.com/s/mrBubnkgJP1mffzleguuRg)
 
----
 
-> 关注不迷路 [博客](https://blog.naaln.com/)｜[竹白](https://space.zhubai.love/)
