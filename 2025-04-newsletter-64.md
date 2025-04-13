@@ -129,35 +129,35 @@ AI 正变得更高效、更普惠。根据斯坦福 HAI 报告，推理成本大
 
 ## 参考资料
 
-[^1]: 斯坦福最新报告：中美顶级大模型性能差距缩小至 0.3% - 科技日报. https://www.stdaily.com/web/gdxw/2025-04/10/content_322580.html.
-[^2]: 重磅报告出炉！性能近乎持平，但美国 AI 投资是中国 12 倍 - 证券时报. http://stcn.com/article/detail/1650702.html.
-[^3]: 月访问量超 ChatGPT DeepSeek 正在重新定义 AI 竞赛 - 新浪财经. https://finance.sina.com.cn/stock/wbstock/2025-04-01/doc-inerrnxq7462899.shtml?froms=ggmp.
-[^4]: 我在硅谷看 AI：Deepseek 狂飙背后，2025 年 15 条 AI 关键投资启示 -36 氪. https://m.36kr.com/p/3157157338340103.
-[^5]:【LLM 技术报告】DeepSeek-V3 技术报告（全文） - 知乎专栏. https://zhuanlan.zhihu.com/p/14890557782.
-[^6]: DeepSeek 开源生态解析：从 3FS 到 AGI 基础设施的野心 - 知乎专栏. https://zhuanlan.zhihu.com/p/27565179840.
-[^7]: 新华深读丨 DeepSeek 赋能潮起. http://www.news.cn/fortune/20250321/9220aa12e2364e21a69ab5eb691a33d1/c.html.
-[^8]: DeepSeek 开源影响几何？ - 证券时报. https://www.stcn.com/article/detail/1534277.html.
-[^9]: DeepSeek 爆火的背后，大模型/生成式 AI 市场生态的潜在影响引人关注. https://www.idc.com/getdoc.jsp?containerId=prCHC53185925.
-[^10]: OpenAI，重磅官宣！ - 每日经济新闻. https://cd.nbd.com.cn/articles/2025-04-01/3814116.html.
-[^11]: 官宣开源新模型！OpenAI 终于要摸着 DeepSeek 过河了 - 澎湃新闻. https://m.thepaper.cn/newsDetail_forward_30546004.
-[^12]: DeepSeek 逼出了大招，OpenAI 预告开源大模型，GPT-2 后首次. https://wallstreetcn.com/articles/3744320.
-[^13]: OpenAI 将在几个月内发布 GPT-5 - 开源中国. https://www.oschina.net/news/343249.
-[^14]: 密切跟进 OpenAI，国产 o1 类推理模型陆续登场 - 证券时报. https://www.stcn.com/article/detail/1508804.html.
-[^15]: 网易有道推出轻量级推理模型「子曰 -o1」，更小规模实现更强推理效果. https://www.qbitai.com/2025/01/247195.html.
-[^16]: 谷歌 AI 狂飙突进的两年：从追赶到领跑，它还是没摆脱焦虑. https://www.mittrchina.com/news/detail/14604.
-[^17]: 谷歌深夜炸场发布 Gemini 2.0，2025 属于智能体之年？ - 第一财经. https://www.yicai.com/news/102397405.html.
-[^18]: 谷歌深夜炸场发布 Gemini 2.0 2025 属于智能体？ - 新浪财经. https://finance.sina.com.cn/jjxw/2024-12-13/doc-inczfsee9435494.shtml.
-[^19]: 国内外知名大模型及应用列表——模型维度（2025/04/11）. https://zhuanlan.zhihu.com/p/670574382.
-[^20]: AI Agent 摩尔定律：每 7 个月能力翻倍，带来软件智能大爆炸 - 53AI. https://www.53ai.com/news/LargeLanguageModel/2025041114983.html.
-[^21]: Nature 发文「智能体摩尔定律」，Agent 能力每 7 个月翻倍 - 澎湃新闻. https://www.thepaper.cn/newsDetail_forward_30454678.
-[^22]: Anthropic 推出混合推理模型，可控制模型思考时间 - 新闻 - 科学网. https://news.sciencenet.cn/htmlnews/2025/2/539326.shtm.
-[^23]: Anthropic 大动作，发布首个双思维模型，代码能力超过 DeepSeek. https://www.stcn.com/article/detail/1543723.html.
-[^24]: Anthropic 发布首个混合推理模型 Claude 3.7 Sonnet：编码能力一流. https://finance.sina.com.cn/tech/roll/2025-02-25/doc-inemsfys0095285.shtml.
-[^25]: Anthropic 秘密「混合模型」Claude 4 首曝细节，硬刚 GPT … - 新浪财经. https://finance.sina.com.cn/tech/csj/2025-02-14/doc-inekmitk7538892.shtml.
-[^26]: 写好 Prompt 仍是 2025 年 AI 时代的超能力 - 腾讯新闻 - QQ News. https://news.qq.com/rain/a/20250330A0695H00.
-[^27]: 谷歌发布 69 页白皮书：如何通过提示工程优化 AI 模型 - AIbase. https://www.aibase.com/zh/news/www.aibase.com/zh/news/17051.
-[^28]: AI 大模型进阶系列 (03) prompt 工程指南| 实战核心技术有哪些？. https://developer.aliyun.com/article/1660390.
-[^29]: 人人关注的中国 AI 大模型发展得怎么样了 - 新闻频道. http://news.cnwest.com/szyw/a/2025/02/28/23012564.html.
-[^30]: 一大波产品「上新」广东发布 8 个 AI 行业大模型、30 个应用场景. https://news.dayoo.com/guangdong/202504/09/139996_54810103.htm.
-[^31]: 2025 年，人工智能如何进化 - 新闻频道 - 央视网. https://news.cctv.com/2025/01/05/ARTIemzgpxHcci59S0s4M0VQ250105.shtml.
-[^32]: 2025 年斯坦福 HAI 报告：中美 AI 模型差距骤缩至 0.3%，推理成本暴降 …. https://wallstreetcn.com/articles/3744827.
+[^1]: 斯坦福最新报告：中美顶级大模型性能差距缩小至 0.3% - 科技日报. https://www.stdaily.com/web/gdxw/2025-04/10/content_322580.html
+[^2]: 重磅报告出炉！性能近乎持平，但美国 AI 投资是中国 12 倍 - 证券时报. http://stcn.com/article/detail/1650702.html
+[^3]: 月访问量超 ChatGPT DeepSeek 正在重新定义 AI 竞赛 - 新浪财经. https://finance.sina.com.cn/stock/wbstock/2025-04-01/doc-inerrnxq7462899.shtml?froms=ggmp
+[^4]: 我在硅谷看 AI：Deepseek 狂飙背后，2025 年 15 条 AI 关键投资启示 -36 氪. https://m.36kr.com/p/3157157338340103
+[^5]:【LLM 技术报告】DeepSeek-V3 技术报告（全文） - 知乎专栏. https://zhuanlan.zhihu.com/p/14890557782
+[^6]: DeepSeek 开源生态解析：从 3FS 到 AGI 基础设施的野心 - 知乎专栏. https://zhuanlan.zhihu.com/p/27565179840
+[^7]: 新华深读丨 DeepSeek 赋能潮起. http://www.news.cn/fortune/20250321/9220aa12e2364e21a69ab5eb691a33d1/c.html
+[^8]: DeepSeek 开源影响几何？ - 证券时报. https://www.stcn.com/article/detail/1534277.html
+[^9]: DeepSeek 爆火的背后，大模型/生成式 AI 市场生态的潜在影响引人关注. https://www.idc.com/getdoc.jsp?containerId=prCHC53185925
+[^10]: OpenAI，重磅官宣！ - 每日经济新闻. https://cd.nbd.com.cn/articles/2025-04-01/3814116.html
+[^11]: 官宣开源新模型！OpenAI 终于要摸着 DeepSeek 过河了 - 澎湃新闻. https://m.thepaper.cn/newsDetail_forward_30546004
+[^12]: DeepSeek 逼出了大招，OpenAI 预告开源大模型，GPT-2 后首次. https://wallstreetcn.com/articles/3744320
+[^13]: OpenAI 将在几个月内发布 GPT-5 - 开源中国. https://www.oschina.net/news/343249
+[^14]: 密切跟进 OpenAI，国产 o1 类推理模型陆续登场 - 证券时报. https://www.stcn.com/article/detail/1508804.html
+[^15]: 网易有道推出轻量级推理模型「子曰 -o1」，更小规模实现更强推理效果. https://www.qbitai.com/2025/01/247195.html
+[^16]: 谷歌 AI 狂飙突进的两年：从追赶到领跑，它还是没摆脱焦虑. https://www.mittrchina.com/news/detail/14604
+[^17]: 谷歌深夜炸场发布 Gemini 2.0，2025 属于智能体之年？ - 第一财经. https://www.yicai.com/news/102397405.html
+[^18]: 谷歌深夜炸场发布 Gemini 2.0 2025 属于智能体？ - 新浪财经. https://finance.sina.com.cn/jjxw/2024-12-13/doc-inczfsee9435494.shtml
+[^19]: 国内外知名大模型及应用列表——模型维度（2025/04/11）. https://zhuanlan.zhihu.com/p/670574382
+[^20]: AI Agent 摩尔定律：每 7 个月能力翻倍，带来软件智能大爆炸 - 53AI. https://www.53ai.com/news/LargeLanguageModel/2025041114983.html
+[^21]: Nature 发文「智能体摩尔定律」，Agent 能力每 7 个月翻倍 - 澎湃新闻. https://www.thepaper.cn/newsDetail_forward_30454678
+[^22]: Anthropic 推出混合推理模型，可控制模型思考时间 - 新闻 - 科学网. https://news.sciencenet.cn/htmlnews/2025/2/539326.shtm
+[^23]: Anthropic 大动作，发布首个双思维模型，代码能力超过 DeepSeek. https://www.stcn.com/article/detail/1543723.html
+[^24]: Anthropic 发布首个混合推理模型 Claude 3.7 Sonnet：编码能力一流. https://finance.sina.com.cn/tech/roll/2025-02-25/doc-inemsfys0095285.shtml
+[^25]: Anthropic 秘密「混合模型」Claude 4 首曝细节，硬刚 GPT … - 新浪财经. https://finance.sina.com.cn/tech/csj/2025-02-14/doc-inekmitk7538892.shtml
+[^26]: 写好 Prompt 仍是 2025 年 AI 时代的超能力 - 腾讯新闻 - QQ News. https://news.qq.com/rain/a/20250330A0695H00
+[^27]: 谷歌发布 69 页白皮书：如何通过提示工程优化 AI 模型 - AIbase. https://www.aibase.com/zh/news/www.aibase.com/zh/news/17051
+[^28]: AI 大模型进阶系列 (03) prompt 工程指南| 实战核心技术有哪些？. https://developer.aliyun.com/article/1660390
+[^29]: 人人关注的中国 AI 大模型发展得怎么样了 - 新闻频道. http://news.cnwest.com/szyw/a/2025/02/28/23012564.html
+[^30]: 一大波产品「上新」广东发布 8 个 AI 行业大模型、30 个应用场景. https://news.dayoo.com/guangdong/202504/09/139996_54810103.htm
+[^31]: 2025 年，人工智能如何进化 - 新闻频道 - 央视网. https://news.cctv.com/2025/01/05/ARTIemzgpxHcci59S0s4M0VQ250105.shtml
+[^32]: 2025 年斯坦福 HAI 报告：中美 AI 模型差距骤缩至 0.3%，推理成本暴降 …. https://wallstreetcn.com/articles/3744827

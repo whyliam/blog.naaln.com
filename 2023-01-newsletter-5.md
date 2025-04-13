@@ -175,6 +175,4 @@ tags:
 
 来自：[The End of Organizing](https://every.to/chain-of-thought/the-end-of-organizing)
 
----
 
-> 关注不迷路 [博客](https://blog.naaln.com/)｜[竹白](https://space.zhubai.love/)

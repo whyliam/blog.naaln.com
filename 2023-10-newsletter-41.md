@@ -162,6 +162,4 @@ Morgan Housel 说：品牌并不代表最高的质量，而是你知道对他们
 - [**The Gap Between Reputation and Personal Brand**](https://commoncog.com/gap-between-reputation-personal-brand/)
 - [**Personal Brand as Moat, Personal Brand as Soft Landing**](https://commoncog.com/personal-brand-as-moat-personal-brand-as-soft-landing/)
 
----
 
-> 关注不迷路 [博客](https://blog.naaln.com/)｜[竹白](https://space.zhubai.love/)

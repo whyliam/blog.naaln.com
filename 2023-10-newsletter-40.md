@@ -118,6 +118,4 @@ tags:
 **相关延伸**:
 - [马斯克的心魔 (qq.com)](https://mp.weixin.qq.com/s/y7KZLQLf3pjAhb1XO3rWVw)
 
----
 
-> 关注不迷路 [博客](https://blog.naaln.com/)｜[竹白](https://space.zhubai.love/)

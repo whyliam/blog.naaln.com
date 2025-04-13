@@ -105,6 +105,4 @@ tags:
 
 来自： [硅谷知名风投 A16Z：衡量交易市场类公司，只需 13 个指标](https://mp.weixin.qq.com/s/VQN6We-FqpQV5cnP6pt7Bg)
 
----
 
-> 关注不迷路 [博客](https://blog.naaln.com/)｜[竹白](https://space.zhubai.love/)

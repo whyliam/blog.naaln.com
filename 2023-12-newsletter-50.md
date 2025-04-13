@@ -102,6 +102,4 @@ tags:
 **相关延伸**:  
 [Your Thinking Rate Is Fixed](https://fs.blog/thinking-rate-fixed/?via=xdash_CICERO)
 
----
 
-> 关注不迷路 [博客](https://blog.naaln.com/)｜[竹白](https://space.zhubai.love/)

@@ -179,6 +179,4 @@ Syed 官网上罗列了他这些年来的总结，其中有年度高光时刻，
 - [**Syed Balkhi 的个人网站**](https://syedbalkhi.com/)
 - [**How Syed Balkhi Went From $0 To +$100M Before Age 30**](https://www.podcastrecap.org/how-syed-balkhi-went-from-0-to-100m-before-age-30/)
 
----
 
-> 关注不迷路 [博客](https://blog.naaln.com/)｜[竹白](https://space.zhubai.love/)

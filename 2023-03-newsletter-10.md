@@ -91,6 +91,4 @@ Ryan Holiday 在 Tim Ferriss 博客上分享的一篇博文 ——《28 种方�
 **更多方式：**
 - [28种方式助你通往成功和快乐之路](https://tim.blog/2019/09/26/stillness-is-the-key-ryan-holiday/)
 
----
 
-> 关注不迷路 [博客](https://blog.naaln.com/)｜[竹白](https://space.zhubai.love/)

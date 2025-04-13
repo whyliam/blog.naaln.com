@@ -78,6 +78,4 @@ tags:
 **相关延伸**:
 [We’re Mostly Trying to Escape This Moment](https://zenhabits.net/escape/) — Leo Babauta / Zen Habits
 
----
 
-> 关注不迷路 [博客](https://blog.naaln.com/)｜[竹白](https://space.zhubai.love/)

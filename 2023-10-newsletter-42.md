@@ -132,6 +132,4 @@ tags:
 **相关延伸**:
 [浅谈模仿欲望、AI写作、墨菲挑战和播客推荐 - Camellia Yang](https://www.camelliayang.com/blog/ai-murph-writing)
 
----
 
-> 关注不迷路 [博客](https://blog.naaln.com/)｜[竹白](https://space.zhubai.love/)

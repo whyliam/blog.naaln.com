@@ -76,6 +76,4 @@ ChatGPT 对教育会产生什么影响？几十年来，上海高校毕业生就
 **来自：**
 - [Fire And Motion – Joel on Software](https://www.joelonsoftware.com/2002/01/06/fire-and-motion/)
 
----
 
-> 关注不迷路 [博客](https://blog.naaln.com/)｜[竹白](https://space.zhubai.love/)

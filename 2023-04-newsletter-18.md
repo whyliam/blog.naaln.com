@@ -78,6 +78,4 @@ Paul Graham 在文中提到了很多我们觉得习以为常，但是深究下�
 **相关延伸**：
 [How to Do What You Love (paulgraham.com)](http://www.paulgraham.com/love.html)
 
----
 
-> 关注不迷路 [博客](https://blog.naaln.com/)｜[竹白](https://space.zhubai.love/)

@@ -165,6 +165,4 @@ HP·洛夫克拉夫特（HP Lovecraft）有言：「人类最古老、最强烈�
 **相关延伸**:
 [浅谈谈判技巧、自律和《简史》系列赫拉利](https://mp.weixin.qq.com/s?__biz=MzAwODgwMjU2Ng==&mid=2651983064&idx=1&sn=16a4df1881503574e641d426679e3f51&chksm=808ff4b1b7f87da7074dcbf5a8bf08aff00dbd7bcd864350bcff3eb85a6ad2873883d5ea00fe&token=809904144&lang=zh_CN&scene=21#wechat_redirect)
 
----
 
-> 关注不迷路 [博客](https://blog.naaln.com/)｜[竹白](https://space.zhubai.love/)

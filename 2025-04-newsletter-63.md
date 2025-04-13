@@ -59,23 +59,18 @@ ICLR 2025 会议的这些论文为 AI 研究者和从业者提供了宝贵的知
 该报告揭示了智能体技术在存储、模型服务等层面的独特之处，如 RAG（检索增强生成）等技术的应用。通过这些技术，智能体能够更有效地处理和利用知识，提供更准确、更相关的信息和建议。
 这一全景图的发布为 AI 研究者和从业者提供了宝贵的参考，帮助他们更好地理解 AI Agent 技术栈的现状和发展趋势。随着技术的不断发展和应用场景的不断拓展，AI Agent 技术栈将不断完善和丰富，为各种应用场景提供更强大、更灵活的支持。
 
-## 参考资料
+### Reference
 
-[^1]: OpenAI 重磅升级 GPT-4o：指令更准、代码更强，超越 GPT-4.5？ 原创. https://blog.csdn.net/weixin_40774379/article/details/146590833.
-[^2]: 最新实测，新版 GPT-4o 生图功能太强了（附一些使用方式） - 知乎. https://zhuanlan.zhihu.com/p/1889071688152483794.
-[^3]: ChatGPT 4o 更新了图像能力，效果怎么样？ - 少数派. https://sspai.com/post/97797.
-[^4]: AI 人工智能. https://www.cnbeta.com.tw/topics/468.htm.
-[^5]: AI 能边想边干活了？智谱发布最新 AI 智能体 - 中国日报网. https://cn.chinadaily.com.cn/a/202504/01/WS67ebc2e4a310e29a7c4a737b.html.
-[^6]: 百度李彦宏：2025 年或成 AI 智能体爆发元年 " 智能经济 " 将跑出加速度. http://stcn.com/article/detail/1571397.html.
-[^7]: AI 智能体：它来了 - 证券时报. https://www.stcn.com/article/detail/1487819.html.
-[^8]: MCP 协议引爆 AI 交互：智能体突破数字边界，物理 AI 如何被重构？. https://www.163.com/dy/article/JRGB1HSO055691TB.html.
-[^9]: MCP：AI 时代的 " 万能转接头 " 来了！ - 53AI-AI 知识库. https://www.53ai.com/news/LargeLanguageModel/2025032017389.html.
-[^10]: MCP：智能体协作路径与 AI 网络融合设想 - 网易. https://www.163.com/dy/article/JS2FPTIG055691TB.html.
-[^11]: 王炸创新：Spring AI 结合 MCP 协议，三步迈入智能体开发新纪元. https://www.showapi.com/news/article/67edf3824ddd79013c15955e.
-[^12]: LLM Agent 前沿研究速览（含 ICLR2025 收录 Agent 论文） - 知乎专栏. https://zhuanlan.zhihu.com/p/1888564058556461727.
-[^13]: 2025 AI Agent 技术栈全景图 - 53AI. https://www.53ai.com/news/LargeLanguageModel/2025032420694.html.
-
-
----
-
-> 关注不迷路 [博客](https://blog.naaln.com/)
+[^1]: OpenAI 重磅升级 GPT-4o：指令更准、代码更强，超越 GPT-4.5？ 原创. https://blog.csdn.net/weixin_40774379/article/details/146590833
+[^2]: 最新实测，新版 GPT-4o 生图功能太强了（附一些使用方式） - 知乎. https://zhuanlan.zhihu.com/p/1889071688152483794
+[^3]: ChatGPT 4o 更新了图像能力，效果怎么样？ - 少数派. https://sspai.com/post/97797
+[^4]: AI 人工智能. https://www.cnbeta.com.tw/topics/468.htm
+[^5]: AI 能边想边干活了？智谱发布最新 AI 智能体 - 中国日报网. https://cn.chinadaily.com.cn/a/202504/01/WS67ebc2e4a310e29a7c4a737b.html
+[^6]: 百度李彦宏：2025 年或成 AI 智能体爆发元年 " 智能经济 " 将跑出加速度. http://stcn.com/article/detail/1571397.html
+[^7]: AI 智能体：它来了 - 证券时报. https://www.stcn.com/article/detail/1487819.html
+[^8]: MCP 协议引爆 AI 交互：智能体突破数字边界，物理 AI 如何被重构？. https://www.163.com/dy/article/JRGB1HSO055691TB.html
+[^9]: MCP：AI 时代的 " 万能转接头 " 来了！ - 53AI-AI 知识库. https://www.53ai.com/news/LargeLanguageModel/2025032017389.html
+[^10]: MCP：智能体协作路径与 AI 网络融合设想 - 网易. https://www.163.com/dy/article/JS2FPTIG055691TB.html
+[^11]: 王炸创新：Spring AI 结合 MCP 协议，三步迈入智能体开发新纪元. https://www.showapi.com/news/article/67edf3824ddd79013c15955e
+[^12]: LLM Agent 前沿研究速览（含 ICLR2025 收录 Agent 论文） - 知乎专栏. https://zhuanlan.zhihu.com/p/1888564058556461727
+[^13]: 2025 AI Agent 技术栈全景图 - 53AI. https://www.53ai.com/news/LargeLanguageModel/2025032420694.html

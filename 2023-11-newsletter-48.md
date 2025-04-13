@@ -79,6 +79,4 @@ Marc Andreessen 在 a16z 官网正式发布了技术乐观主义者宣言《The 
 **相关延伸**:  
 [技术是唯一永恒的增长源泉](https://www.techflowpost.com/article/detail_14228.html)
 
----
 
-> 关注不迷路 [博客](https://blog.naaln.com/)｜[竹白](https://space.zhubai.love/)
