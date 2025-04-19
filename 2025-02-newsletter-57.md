@@ -6,6 +6,11 @@ categories:
   - 资讯
 tags:
   - NewsLetter
+  - AI
+  - 技术突破
+  - 人才流动
+  - 市场分析
+  - 算力竞赛
 ---
 ![开启AI竞赛新纪元](https://pics.naaln.com/image-20250220214349910.png-basicBlog)
 

@@ -6,6 +6,11 @@ categories:
   - 资讯
 tags:
   - NewsLetter
+  - AI
+  - 技术创新
+  - 全球竞争
+  - 推理模型
+  - 科技平权
 ---
 ![推理、平权与全球博弈](https://pics.naaln.com/2025-03-08-c1cc6ea9b81144aaa7e6c0c6c39d58a3-Xnapper_2025_02_28_09_20_00_5177d69467.jpg-basicBlog)
 

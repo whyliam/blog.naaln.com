@@ -6,6 +6,9 @@ categories:
   - 技术
 tags:
   - 群晖
+  - Docker
+  - 系统维护
+  - 故障排查
 ---
 
 今天瞎搞在黑群晖上点升级系统，没有提前关闭 docker，重启后 docker 一直启动失败，点击修复也会失败，排查了好久
@@ -46,7 +49,7 @@ journalctl -xe |grep docker
 Mar 19 22:09:49 Znas dockerd[26739]: unable to configure the Docker daemon with file /var/packages/Docker/etc/dockerd.json: invalid character '}' looking for beginning of object key string
 ```
 
-查看对应文件 `/var/packages/Docker/etc/dockerd.json`
+查看对应文件 `/var/packages/Docker/etc/dockerd.json`
 
 ```bash
 {
@@ -70,4 +73,4 @@ Mar 19 22:09:49 Znas dockerd[26739]: unable to configure the Docker daemon with 
 
 发现重装后，docker 的配置文件多了一个逗号，删掉！
 
-然后直接进入群晖 web 页面，点击修复（直接 `systemctl start pkg-Docker-dockerd.service` 不会成功，涉及到网卡的一些配置）。等待修复完成就成功启动了。
+然后直接进入群晖 web 页面，点击修复（直接 `systemctl start pkg-Docker-dockerd.service` 不会成功，涉及到网卡的一些配置）。等待修复完成就成功启动了。

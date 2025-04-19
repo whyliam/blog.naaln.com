@@ -6,6 +6,11 @@ categories:
   - 资讯
 tags:
   - NewsLetter
+  - AI
+  - 技术创新
+  - 商业战略
+  - Agent
+  - 大模型
 ---
 ![AI技术革新与商业战略：未来发展的双引擎](https://pics.naaln.com/2025-03-21-860b430989df4832b7b4ffb3d53cabb0-basicBlog)
 

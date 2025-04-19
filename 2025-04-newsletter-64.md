@@ -6,6 +6,13 @@ categories:
   - 资讯
 tags:
   - NewsLetter
+  - AI
+  - 大模型
+  - OpenAI
+  - DeepSeek
+  - Gemini
+  - Claude
+  - Prompt工程
 ---
 ![开源浪潮与技术迭代重塑AI格局](https://pics.naaln.com/2025-04-13-b89d518e5b0542ee86ce0ab02797b11e.png-basicBlog)
 

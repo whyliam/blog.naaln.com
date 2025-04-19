@@ -6,6 +6,15 @@ categories:
   - 资讯
 tags:
   - NewsLetter
+  - AI
+  - GPT
+  - LLM
+  - Agent
+  - 智能体
+  - OpenAI
+  - Anthropic
+  - ICLR
+  - 技术前沿
 ---
 ![从大模型到智能体的全面突破](https://pics.naaln.com/2025-04-03-211b83eef0434b01a43814b3e8ca77ec-basicBlog)
 

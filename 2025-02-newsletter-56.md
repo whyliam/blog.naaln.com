@@ -5,7 +5,10 @@ date: 2025/02/14/ 20:00:00
 categories:
   - 资讯
 tags:
-  - NewsLetter
+  - Newsletter
+  - AI
+  - 深度学习
+  - 技术前沿
 ---
 
 ![DeepSeek 的朋友圈](https://pics.naaln.com/1739707966059-7ccd7cb1-b6df-41ea-9893-0b70bd32f5f5.png-basicBlog)
@@ -45,7 +48,3 @@ DeepSeek 的最新研究 R1 采用了一种全新的 system prompt 设定：AI �
 这一研究表明，合理的引导可以让 AI 更具思维能力，而不只是简单的问答工具。
 
 [DeepSeek 的「技术之美」：详解 R1 是怎样炼成的？](https://lingowhale.com/reader/web/67b53d49bce6381a7ba3124d)
-
----
-
-> 关注不迷路 [博客](https://blog.naaln.com/)
