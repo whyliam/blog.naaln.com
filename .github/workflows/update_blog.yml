@@ -27,15 +27,6 @@ jobs:
       - uses: webfactory/ssh-agent@v0.5.3
         with:
           ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
-          
-      # 恢复图片大小缓存
-      - name: Restore image size cache
-        uses: actions/cache@v3
-        with:
-          path: .image-size-cache.json
-          key: ${{ runner.os }}-image-cache-${{ hashFiles('source/**/*.md') }}
-          restore-keys: |
-            ${{ runner.os }}-image-cache-
 
       - run: npm install hexo-cli -g
       # 替换原来的 npm ci 命令
