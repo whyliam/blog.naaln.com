@@ -6,6 +6,11 @@ categories:
   - 资讯
 tags:
   - NewsLetter
+  - AI
+  - OpenAI
+  - DeepSeek
+  - AI Agent
+  - Prompt Engineering
 ---
 ![从多模态推理到自主决策智能体](https://pics.naaln.com/2025-04-19-605fa627935246ad88d2e4b8a30dd7d9.png-basicBlog)
 
@@ -58,7 +63,7 @@ DeepSeek 的崛起对 OpenAI 构成了直接挑战：
 2. **技术对比**：DeepSeek-R1 模型因其开放、免费的特性，以及极低的训练成本，吸引了众多开发者的关注。DeepSeek 的 R1 模型展示了思考过程，让用户在获取答案的同时，能理解其推理逻辑，这一点唯有少数模型能够实现 [^14]。
 3. **政策反应**：面对 DeepSeek 的崛起，OpenAI 向白宫提交了一份长达 15 页的政策建议报告，矛头直指中国 AI 公司 DeepSeek。报告中强调，DeepSeek 的技术可能受到中国官方控制，构成 " 国家安全威胁 "，并指控 DeepSeek 存在 " 极度不安全 " 和 " 侵犯知识产权 " 等问题，呼吁美国政府采取紧急措施，限制中国 AI 技术的扩散 [^29][^15]。
 
-## 参考资料
+### 参考资料
 
 [^1]: OpenAI 推最强推理模型 o3/o4-mini: 支持 " 图像思考 "、可自主调用工具. https://so.html5.qq.com/page/real/search_news?docid=70000021_2906800472216952&faker=1.
 [^2]: OpenAI 发布最新推理模型 o3 和 o4-mini,图像思考与工具使用能力全面提升 _ 进行 _Altman_ 技术. https://www.sohu.com/a/885444995_121956424.

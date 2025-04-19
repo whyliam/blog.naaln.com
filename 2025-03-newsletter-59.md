@@ -6,6 +6,13 @@ categories:
   - 资讯
 tags:
   - NewsLetter
+  - AI
+  - 技术
+  - 社会
+  - 创新
+  - 世界模型
+  - DeepSeek
+  - Manus
 ---
 ![社会变革与技术新纪元](https://pics.naaln.com/2025-03-11-3b0af92299b14475b6de85e1aac96f23.jpeg-basicBlog)
 

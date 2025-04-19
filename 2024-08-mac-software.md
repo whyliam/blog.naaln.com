@@ -6,8 +6,10 @@ categories:
   - 技术
 tags:
   - Mac
-  - 软件
+  - macOS
+  - 效率工具
   - 开发工具
+  - 软件推荐
 ---
 
 ## 前言
@@ -144,4 +146,27 @@ sudo tlmgr install xifthen
 sudo tlmgr install xstring
 sudo tlmgr install roboto
 sudo tlmgr install fontawesome5
+```
+
+### 安装字体
+
+```bash
+# Apple Fonts
+brew install font-sf-pro
+brew install font-sf-compact
+brew install font-sf-mono
+brew install font-new-york
+# GOOLE Fonts
+brew install font-open-sans
+brew install font-noto-sans
+brew install font-roboto
+# LXGW Fonts
+brew install --cask font-lxgw-neoxihei
+brew install --cask font-lxgw-neozhisong
+brew install --cask font-lxgw-wenkai
+brew install --cask font-lxgw-wenkai-gb
+brew install --cask font-lxgw-wenkai-lite
+brew install --cask font-lxgw-wenkai-mono-tc
+brew install --cask font-lxgw-wenkai-tc
+brew install --cask font-lxgw-zhenkai
 ```

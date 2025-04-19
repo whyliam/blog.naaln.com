@@ -6,6 +6,10 @@ categories:
   - 随笔
 tags:
   - 英伟达
+  - GPU
+  - AI
+  - 科技
+  - 芯片
 ---
 
 ![](https://pics.naaln.com/Pasted%20image%2020241217234311.png-basicBlog)

@@ -3,10 +3,12 @@ layout: post
 title: Figure AI
 date: 2024/04/18 20:00:00
 categories:
-- 随笔
+  - 随笔
 tags:
-- AGI
-
+  - AGI
+  - 人工智能
+  - 机器人
+  - OpenAI
 ---
 
 ![img](https://pics.naaln.com/blog/2024-04-19-c2f808.jpg-basicBlog)
