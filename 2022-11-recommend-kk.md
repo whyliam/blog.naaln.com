@@ -3,10 +3,12 @@ layout: post
 title: 给年轻人的 99 条建议
 date: 2022/11/20 20:00:00
 categories:
-- 随笔
+  - 随笔
 tags:
-- 他说
-
+  - 随笔
+  - 建议
+  - 人生
+  - 智慧
 ---
 
 KK 在中国互联网界算是非常出名了，其《失控》几乎是从业者必读书。
@@ -67,11 +69,11 @@ KK 在中国互联网界算是非常出名了，其《失控》几乎是从业�
 
 当与他人进行头脑风暴、即兴创作、即兴表演时，如果你用俏皮的 " 是的……和 " 的例子，而不是瘪嘴的 " 不……但是 " 的回答，你会走得更远、更深。
 
-> When brainstorming, improvising, jamming with others, you’ll go much further and deeper if you build upon each contribution with a playful 「yes — and」 example instead of a deflating 「no — but」 reply.
+> When brainstorming, improvising, jamming with others, you’ll go much further and deeper if you build upon each contribution with a playful「yes — and」example instead of a deflating「no — but」reply.
 
 当孩子不停地问「为什么?」问题时，最聪明的回答是，「我不知道，你觉得怎么样?」
 
-> When a child asks an endless string of 「why?」 questions, the smartest reply is, 「I don’t know, what do you think?」
+> When a child asks an endless string of「why?」questions, the smartest reply is,「I don’t know, what do you think?」
 ｜ 对自己也是一样，但我想探索新事物的时候，先思考我认为是什么
 
 清除杂乱会为你真正的宝贝腾出空间。
@@ -88,7 +90,7 @@ KK 在中国互联网界算是非常出名了，其《失控》几乎是从业�
 
 解开缠结的最好方法不是「解开」绳结，而是把绳结拉得越来越大。尽可能地把这些乱七八糟的东西弄得大大的，松散的，敞开的。当你打开这些结时，它们会自己解开。适用于软线、绳、软管、纱线或电子电缆。
 
-> The best way to untangle a knotty tangle is not to 「untie」 the knots, but to keep pulling the loops apart wider and wider. Just make the mess as big, loose and open as possible. As you open up the knots they will unravel themselves. Works on cords, strings, hoses, yarns, or electronic cables.
+> The best way to untangle a knotty tangle is not to「untie」the knots, but to keep pulling the loops apart wider and wider. Just make the mess as big, loose and open as possible. As you open up the knots they will unravel themselves. Works on cords, strings, hoses, yarns, or electronic cables.
 
 不要害怕问一个听起来很愚蠢的问题，因为其他人 99% 的时间都在思考同样的问题，而且都不好意思问这个问题。
 
@@ -104,7 +106,7 @@ KK 在中国互联网界算是非常出名了，其《失控》几乎是从业�
 
 如果你不知道自己热爱什么，追随天赐之福是导致麻痹的秘诀。对于大多数年轻人来说，一个更好的座右铭是「掌握一些东西，任何东西」。通过掌握一件事，你可以漂移到那种掌握的延伸，带给你更多的快乐，并最终发现你的极乐在哪里。
 
-> Following your bliss is a recipe for paralysis if you don’t know what you are passionate about. A better motto for most youth is 「master something, anything」. Through mastery of one thing, you can drift towards extensions of that mastery that bring you more joy, and eventually discover where your bliss is.
+> Following your bliss is a recipe for paralysis if you don’t know what you are passionate about. A better motto for most youth is「master something, anything」. Through mastery of one thing, you can drift towards extensions of that mastery that bring you more joy, and eventually discover where your bliss is.
 
 研究中的 7 法则。如果你愿意尝试七个层次，你可以找到任何东西。如果你问的第一个来源不知道，问他们下一个你应该问谁，以此类推。如果你愿意去第七个来源，你几乎总能得到你的答案。
 
@@ -193,7 +195,7 @@ KK 在中国互联网界算是非常出名了，其《失控》几乎是从业�
 
 你对侮辱的最佳回应是「你可能是对的」。事实往往如此。
 
-> Your best response to an insult is 「You’re probably right.」 Often they are.
+> Your best response to an insult is「You’re probably right.」Often they are.
 
 当有人告诉你有些事情不对劲时，他们通常是对的。当有人告诉你如何解决这个问题时，他们通常是错误的。
 
@@ -228,7 +230,7 @@ KK 在中国互联网界算是非常出名了，其《失控》几乎是从业�
 
 能够倾听是一种超能力。当听到你爱的人说话时，不停地问他们「还有更多吗?」，直到没有更多。
 
-> Being able to listen well is a superpower. While listening to someone you love keep asking them 「Is there more?」, until there is no more.
+> Being able to listen well is a superpower. While listening to someone you love keep asking them「Is there more?」, until there is no more.
 
 请一个人吃饭从来不会失败，而且很容易做到。它对老朋友很有用，也是结交新朋友的好方法。
 
@@ -324,7 +326,7 @@ KK 在中国互联网界算是非常出名了，其《失控》几乎是从业�
 
 当你年轻的时候，至少花六个月到一年的时间，尽可能地过穷日子，尽可能少地拥有财富，在一个小房间或帐篷里吃豆子和米饭，体验你「最糟糕」的生活方式。这样，在未来的任何时候，你都不用担心最坏的情况。
 
-> When you are young spend at least 6 months to one year living as poor as you can, owning as little as you possibly can, eating beans and rice in a tiny room or tent, to experience what your 「worst」 lifestyle might be. That way any time you have to risk something in the future you won’t be afraid of the worst case scenario.
+> When you are young spend at least 6 months to one year living as poor as you can, owning as little as you possibly can, eating beans and rice in a tiny room or tent, to experience what your「worst」lifestyle might be. That way any time you have to risk something in the future you won’t be afraid of the worst case scenario.
 
 优化你的慷慨。没有人在临终前会后悔付出了太多。
 
@@ -372,7 +374,7 @@ We are not bodies that temporarily have souls. We are souls that temporarily hav
 > Recipe for success: under-promise and over-deliver.
 
 > 最伟大的老师被称为「行动」。
-The greatest teacher is called 「doing」.
+The greatest teacher is called「doing」.
 
 如果你只吃三口，你可以吃任何你想吃的甜点。
 
@@ -504,9 +506,9 @@ It’s not an apology if it comes with an excuse. It is not a compliment if it c
 
 > When you die you take absolutely nothing with you except your reputation.
 
-历史告诉我们，从现在开始的 100 年后，你认为会被证明是错误的一些假设。今天问自己一个很好的问题: 「我可能错在哪里?」
+历史告诉我们，从现在开始的 100 年后，你认为会被证明是错误的一些假设。今天问自己一个很好的问题:「我可能错在哪里?」
 
-> History teaches us that in 100 years from now some of the assumptions you believed will turn out to be wrong. A good question to ask yourself today is 「What might I be wrong about?」
+> History teaches us that in 100 years from now some of the assumptions you believed will turn out to be wrong. A good question to ask yourself today is「What might I be wrong about?」
 
 从长远来看，未来由乐观主义者决定。作为一个乐观主义者，你不必忽视我们制造的所有问题; 你只需想象提高我们解决问题的能力。
 

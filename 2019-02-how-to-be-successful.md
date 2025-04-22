@@ -4,6 +4,11 @@ categories:
   - 随笔
 date: 2019/02/11 10:01:53
 tags:
+  - 随笔
+  - 成功
+  - 创业
+  - 个人成长
+  - Sam Altman
 ---
 
 How To Be Successful | 如何成功
