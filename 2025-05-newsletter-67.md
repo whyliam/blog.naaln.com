@@ -11,8 +11,7 @@ tags:
   - 工作流
   - PMF
   - DeepSeek
-  - 技术创新
-
+  - 数学推理
 ---
 ![聚焦Agent系统构建](https://pics.naaln.com/2025-05-06-deae5c81140141ebb7ca0ccd68800631.png-basicBlog)
 
