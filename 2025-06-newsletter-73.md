@@ -6,6 +6,13 @@ categories:
   - 资讯
 tags:
   - NewsLetter
+  - AI
+  - OpenAI
+  - Google
+  - 技术突破
+  - 行业动态
+  - 大模型
+  - 视频生成
 ---
 ![技术迭代加速](https://pics.naaln.com/2025-06-15-c75ba008143c499db013435c27ec8efc.png-basicBlog)
 
