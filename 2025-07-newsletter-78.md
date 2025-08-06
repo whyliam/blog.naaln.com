@@ -6,6 +6,12 @@ categories:
   - 资讯
 tags:
   - NewsLetter
+  - AI
+  - ChatGPT
+  - Agent
+  - 数字工作伙伴
+  - 技术更新
+  - 人工智能
 ---
 ![L78_数字工作伙伴的升级与未来](https://pics.naaln.com/2025-07-27-06aaa98b3c6e4ad0aaf76f8d06b2fd1d.png-basicBlog)
 
