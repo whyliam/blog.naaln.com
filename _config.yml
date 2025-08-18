@@ -64,6 +64,9 @@ index_generator:
   path: ''
   per_page: 10
   order_by: -date
+  # 添加以下这部分来排除分类
+  exclude:
+    - category: newsletter
 
 # Category & Tag
 default_category:  随笔
