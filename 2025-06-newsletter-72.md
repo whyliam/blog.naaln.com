@@ -10,10 +10,6 @@ tags:
   - Anthropic
   - Claude
   - Cursor
-  - ElevenLabs
-  - AI工具
-  - 提示工程
-  - TTS
   - 多模态
 ---
 ![工具进化、提示工程与多模态突破](https://pics.naaln.com/2025-06-15-0df1df04cd1046a894bff2e0cb8990da.png-basicBlog)

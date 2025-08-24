@@ -7,13 +7,10 @@ categories:
 tags:
   - NewsLetter
   - AI
-  - GPT-5
   - ChatGPT
-  - 智谱AI
   - Manus
   - Copilot
   - AI产品经理
-
 ---
 ![驾驭延迟、颠覆与智能体时代的曙光](https://pics.naaln.com/2025-08-06-ad9dc23b8dfc46899a63eb1e1086e70b.png-basicBlog)
 

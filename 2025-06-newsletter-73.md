@@ -8,8 +8,6 @@ tags:
   - NewsLetter
   - AI
   - OpenAI
-  - Google
-  - 技术突破
   - 行业动态
   - 大模型
   - 视频生成
