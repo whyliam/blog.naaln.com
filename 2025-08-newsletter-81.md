@@ -8,6 +8,7 @@ tags:
   - NewsLetter
   - AI模型
   - 技术趋势
+description: 本期newsletter聚焦AI领域的「逐鹿之战」，OpenAI、Anthropic与Google同台竞技，GPT-5、Claude Opus 4.1与Gemini 2.5 Deep Think各展所长。从全能博士生到编码工程师，再到未来主义的并行思考者，三大模型的差异化定位正重塑AI生态。本文深入解析它们的技术亮点、应用场景与市场策略，探讨多模型协同的未来趋势。
 ---
 
 ![AI三国杀的「逐鹿之战」模式](https://pics.naaln.com/2025-08-11-603e39c9ca7d4c96aa57c64e63ba6a96.png-basicBlog)

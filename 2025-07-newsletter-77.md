@@ -15,6 +15,7 @@ tags:
   - 人工智能
   - 大语言模型
   - AI浏览器
+description: 本期 Newsletter 聚焦 AI 领域的三大动态：OpenAI 因安全考量再度推迟开源大模型发布，xAI 推出更强但争议不断的 Grok 4，Perplexity 则携 AI 浏览器 Comet 入局新赛道。三者分别代表了当前 AI 发展中「谨慎」、「激进」与「落地」的不同路径，也揭示出技术突破背后在安全、偏见与信任机制上的深层挑战。
 ---
 ![从谨慎推迟到激进竞逐](https://pics.naaln.com/2025-07-15-d6cf990539ae46b1b4332e9fd0e510bf.png-basicBlog)
 

@@ -15,7 +15,7 @@ tags:
   - 谷歌
   - 人工智能
   - 科技新闻
-
+description: 本期 Newsletter 聚焦于全球科技巨头在 AI 领域的最新动态，涵盖 Meta 挖角 OpenAI 人才、微软裁员转型 AI 服务、阿里巴巴豪投 530 亿美元布局云计算与 AI，以及 OpenAI 面临的内外压力。同时，谷歌、Meta 和微软在 AI 应用体验上的创新，预示着 AI 正深入渗透用户日常生活。此外，AI 在科研、体育、硬件和法律等领域的拓展也展现出其广泛影响。
 ---
 
 ![L76_科技巨头的AI新战场](https://pics.naaln.com/b44f1469-1fe0-40ad-83df-2f592e71c080.png-basicBlog)

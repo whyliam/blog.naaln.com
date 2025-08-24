@@ -11,6 +11,7 @@ tags:
   - Manus
   - Copilot
   - AI产品经理
+description: 本期AI行业周报深入探讨了GPT-5延迟发布背后的战略意义、ChatGPT对认知能力的影响、智谱AI开源模型GLM-4.5带来的行业变革、Manus AI多智能体系统的创新、微软Edge Copilot如何重塑浏览体验，以及AI产品经理在新时代下面临的挑战与转型路径。
 ---
 ![驾驭延迟、颠覆与智能体时代的曙光](https://pics.naaln.com/2025-08-06-ad9dc23b8dfc46899a63eb1e1086e70b.png-basicBlog)
 
