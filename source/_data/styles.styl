@@ -1,64 +1,20 @@
-// 首页
-.brand {
-  background: transparent;
-  padding: 0;
+/* 默认字体大小 */
+body {
+    font-size: 14px; /* 默认值，适用于普通屏幕 */
 }
 
-.site-title {
-  font: bold 44px/1.22 "Times New Roman", Georgia, Times, sans-serif;
-  color: #555;
+/* 针对 5k 分辨率（约 218 DPI 或 5x DPPX） */
+@media (-webkit-min-device-pixel-ratio: 5), (min-resolution: 5dppx) {
+    body {
+        font-size: 14px;
+    }
 }
 
-.header-inner {
-  padding: 70px 0 20px;
-}
-
-.posts-expand .post-meta {
-  margin: 3px 0 5px 0;
-}
-.posts-expand .post-body {
-  text-align: left;
-}
-.posts-expand .post-body img {
-  max-width: 80%;
-  max-height: 500px;
-}
-
-@media (max-width: 767px) {
-  .site-title {
-    font-size: 2em;
-  }
-
-  .site-subtitle {
-    display: none;
-  }
-
-  .posts-expand .post-title {
-    margin: 3px 0 20px 0;
-    font-size: 1em;
-    font-weight: 600;
-  }
-
-  .posts-expand .post-body {
-    font-size: 0.875em;
-  }
-
-  .posts-expand .post-body img {
-    max-width: 90%;
-  }
-}
-
-ul, ol {
-  padding-inline-start: 16px;
-}
-
-blockquote {
-  border-left: 4px solid rgb(195, 39, 43);
-  margin: 0 -8px;
-}
-
-hr {
-  height: 1px;
+/* 针对 4k 分辨率（约 192 DPI 或 4x DPPX） */
+@media (-webkit-min-device-pixel-ratio: 4), (min-resolution: 4dppx) {
+    body {
+        font-size: 16px;
+    }
 }
 
 .video-container {
@@ -81,15 +37,5 @@ hr {
 
 // 版权
 p.cc {
-  color: transparent;
-  line-height: 0;
-  margin: 0;
+  display: none;
 }
-
-p.cc a {
-  color: transparent;
-  text-decoration: none;
-  border-bottom: none;
-}
-
-

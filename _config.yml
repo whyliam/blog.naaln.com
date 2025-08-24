@@ -108,6 +108,7 @@ ignore:
 plugins:
   hexo-reference
   hexo-algoliasearch
+  hexo-auto-canonical
 
 ## Themes: https://hexo.io/themes/
 theme: next
@@ -158,7 +159,7 @@ algolia:
 
 excerpt:
   depth: 6
-  excerpt_excludes: [h1,h2,h3,h4,h5,h6,img,table,iframe,hr,blockquote]
+  excerpt_excludes: [h1,h2,h3,h4,h5,h6,table,iframe,hr]
   more_excludes: []
   hideWholePostExcerpts: false
 
@@ -166,8 +167,8 @@ sitemap:
   path: sitemap.xml
   template:
   rel: false
-  tags: true
-  categories: true
+  tags: false
+  categories: false
 
 baidusitemap:
     url:    #[可选]自定义url，不指定则为站点url
@@ -192,3 +193,18 @@ hexo_submit_urls_to_search_engine:
   replace: 0  # 是否替换链接中的部分字符串，可选值：1 | 0（0：否；1：是）
   find_what: 
   replace_with: 
+
+all_minifier:
+  enable: true
+  js_minifier:
+    enable: true
+  css_minifier:
+    enable: true
+  html_minifier:
+    enable: true
+    exclude:
+
+nofollow:
+  enable: true
+  exclude:
+    - naaln.com
