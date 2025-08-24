@@ -10,6 +10,7 @@ tags:
   - Agent
   - Productivity
   - Security
+description: 本期 Newsletter 聚焦于 Agent AI 在生产力与安全领域的突破性进展。从 OpenAI 的 ChatGPT Agent 到 Walmart 的 Super Agents，再到 Google 的 Big Sleep 主动防御系统，展示 agent 如何重塑企业服务与用户交互方式，并在真实攻击中实现主动防护。
 ---
 ![L79_重塑生产力与安全的未来](https://pics.naaln.com/2025-07-27-126542b082bc4b28826ee2e5876dd4f1.png-basicBlog)
 

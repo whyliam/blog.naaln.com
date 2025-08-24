@@ -11,6 +11,7 @@ tags:
   - 行业动态
   - 大模型
   - 视频生成
+description: 本期Newsletter聚焦于AI领域的技术迭代加速，涵盖OpenAI、谷歌、Mistral等最新模型发布，以及苹果、微软、字节跳动等科技巨头的AI战略布局。同时介绍开源社区动态与行业专家观点，展现AI技术的快速发展及其广泛应用前景。
 ---
 ![技术迭代加速](https://pics.naaln.com/2025-06-15-c75ba008143c499db013435c27ec8efc.png-basicBlog)
 
