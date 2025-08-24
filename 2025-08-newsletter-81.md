@@ -6,6 +6,8 @@ categories:
   - 资讯
 tags:
   - NewsLetter
+  - AI模型
+  - 技术趋势
 ---
 
 ![AI三国杀的「逐鹿之战」模式](https://pics.naaln.com/2025-08-11-603e39c9ca7d4c96aa57c64e63ba6a96.png-basicBlog)
