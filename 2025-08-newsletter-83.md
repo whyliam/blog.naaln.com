@@ -16,10 +16,13 @@ tags:
   - 技术趋势
 description: 在 AI 时代，外部知识已不再稀缺，真正稀缺的是关于你自己的「上下文」。本文分享了 9 个 Aha Moments，涵盖 AI Agent、创业洞察与 GTM 深度研究方法，帮助你在快速变化的技术浪潮中抓住关键机会。
 ---
+![L83_关于你自己的「上下文」](https://pics.naaln.com/2025-08-25-0cf20b6df9db41d0b3c3a1b1ca76761e.png-basicBlog)
 
 ## 小记
 
 在 AI 时代，缺少的不是外部知识，而是关于你自己的「上下文」—— Flomo
+
+---
 
 ## 阅读
 
@@ -53,6 +56,8 @@ description: 在 AI 时代，外部知识已不再稀缺，真正稀缺的是关
 AI 除了提高效率，也能为人类提供情感价值。「独响」App 的「AI 陪你睡觉」功能每天有一万多人使用，这表明 AI 能够很好地满足人们对陪伴和情感互动的需求。一位 AI 宠物创始人的使命「创造爱的瞬间」，尤其令人动容。这一顿悟揭示了 AI 的另一个重要维度：它不仅是生产力的工具，更是情感连接的载体。当效率被无限提高后，AI 可以帮助我们回归人性的核心需求。
 
 阅读更多：[# 2025过去一半了， AI带给我的9个Aha Moments](https://mp.weixin.qq.com/s?__biz=MzAxMDMxOTI2NA==&mid=2649094876&idx=1&sn=26c46825e7e33ac971a4648a9767b7ad&poc_token=HP4mqGijCbrTNOpNa3z3nqG6Ofg2VKiMF_0ZUOfe)
+
+---
 
 ### 如何提升 GTM 深度研究
 
@@ -107,7 +112,7 @@ Use overview tables or visuals instead of text blocks where appropriate
 # 在适当的情况下使用概述表或视觉对象而不是文本块
 ```
 
-### 如何写一个好的深度研究 Prompt
+#### 如何写一个好的深度研究 Prompt
 
 只需复制此内容并插入您自己的信息（标有「#」的注释用于解释每个部分，不应包含在提示中）：
 
@@ -141,6 +146,8 @@ Use overview tables or visuals instead of text blocks where appropriate
 ```
 
 阅读更多：[How to use Deep Research for GTM - by Torsten Walbaum](https://www.growthunhinged.com/p/deep-research-for-gtm)
+
+---
 
 ## 随便看看
 
