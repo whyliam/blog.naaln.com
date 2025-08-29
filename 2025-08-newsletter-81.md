@@ -1,7 +1,7 @@
 ---
 layout: post
 title: L81_AI三国杀的「逐鹿之战」模式
-date: 2025/08/09/ 20:00:00
+date: 2025/08/09 20:00:00
 categories:
   - 资讯
 tags:

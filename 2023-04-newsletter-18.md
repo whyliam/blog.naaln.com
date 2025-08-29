@@ -1,7 +1,7 @@
 ---
 layout: post
 title: L18_社会性的拐点
-date: 2023/04/30/ 20:00:00
+date: 2023/04/30 20:00:00
 categories:
 - 资讯
 tags:

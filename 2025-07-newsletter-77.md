@@ -1,7 +1,7 @@
 ---
 layout: post
 title: L77_从谨慎推迟到激进竞逐
-date: 2025/07/12/ 20:00:00
+date: 2025/07/12 20:00:00
 categories:
   - 资讯
 tags:

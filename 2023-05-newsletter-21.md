@@ -1,7 +1,7 @@
 ---
 layout: post
 title: L21_成功学与焦虑
-date: 2023/05/21/ 20:00:00
+date: 2023/05/21 20:00:00
 categories:
 - 资讯
 tags:

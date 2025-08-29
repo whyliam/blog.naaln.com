@@ -1,7 +1,7 @@
 ---
 layout: post
 title: L29_第一原理的思考方式
-date: 2023/07/16/ 20:00:00
+date: 2023/07/16 20:00:00
 categories:
 - 资讯
 tags:

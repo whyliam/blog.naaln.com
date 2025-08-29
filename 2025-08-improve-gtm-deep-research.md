@@ -1,0 +1,101 @@
+---
+layout: post
+title: 如何提升 GTM 深度研究
+date: 2025/08/21 20:00:00
+categories:
+  - 随笔
+tags:
+  - GTM
+  - 深度研究
+  - 市场营销
+  - 数据分析
+  - 信息整理
+  - 报告撰写
+description: 本文探讨如何通过人工智能中的「深度研究」功能，提升市场营销（GTM）项目的效率与质量。深度研究能够快速处理复杂任务，节省大量时间并生成高质量分析报告。文章分享了托尔斯滕·瓦尔鲍姆关于优化深度研究的实用方法，包括指定高质量数据源、提供定制化上下文、优化报告格式以及撰写高效的Prompt策略，帮助读者在实际工作中更好地应用AI工具，实现数据驱动的市场决策。
+---
+
+托尔斯滕·瓦尔鲍姆（Torsten Walbaum）分享了如何利用人工智能中的「深度研究」功能，特别是针对市场营销（GTM）项目，以节省大量时间并获得高质量分析。
+
+深度研究是能端到端解决复杂非工程任务的 AI 功能，可以大幅压缩原本需要 10 小时以上的工作，将其缩短到几分钟内完成。尽管其名称听起来像是学术或投资工具，但它对任何涉及信息审查和提炼实际见解的任务都至关重要，尤其适用于 GTM 项目。
+
+#### 指定高质量来源
+
+AI 代理有时会使用低质量或过时的数据。为了解决这个问题，用户应在提示中指定优先使用哪些类型的来源（如政府数据），或先使用其他 AI 模型（如 GPT-5）生成高质量来源列表，再将其提供给深度研究。
+如果想要更高的透明度，还可以要求研究代理：
+
+```
+Always provide in-text citations for any claim it makes
+# 始终为其提出的任何声明提供文本引用
+
+Add a table to the report that lists all sources and shows which source was used for what, what type of source it is, what year the data is from, etc.
+# 在报告中添加一个表格，列出所有来源，并显示哪个来源用于什么、来源类型、数据来自哪一年等。
+
+Outline where different sources disagree (esp. when it comes to data) and what the reason might be (e.g. differences in methodology)
+# 概述不同来源存在分歧的地方（尤其是在数据方面）以及原因可能是什么（例如方法的差异）
+```
+
+![指定高质量来源](https://pics.naaln.com/202508221738268.png-basicBlog)
+
+#### 提供上下文以获得定制见解
+
+AI 不会主动要求背景信息，因此需要主动提供，以获得量身定制的见解。这包括：
+- **公司信息**：公司规模、运营模式、技术栈等。
+- **明确目标**：清晰说明希望通过研究实现什么。
+- **面临的限制**：如预算、时间表等。
+
+为了让事情变得更容易，可以向 AI 征求意见（GPT-5 和 Claude Opus 都做得很好）：
+
+```
+I'm planning to generate a Deep Research report on [X] in order to [Y]. What context should I provide so that I get a customized, actionable report? Pretend you have no context from any prior conversations.
+#我计划针对 [X] 生成一份深度研究报告，以便 [Y] 完成这项工作。我应该提供哪些背景信息才能获得一份定制化、可操作的报告？假设你之前没有任何对话记录。
+```
+
+#### 指定易于理解的报告格式
+
+返回的默认报告通常难以阅读，尤其是想浏览它们以获取最重要的见解时。可以加入提示词：
+
+```
+Include a summary at the beginning of the document and every individual section
+# 在文档开头和每个单独的部分包含摘要
+
+Start with the key insights or recommendations before going into details
+# 在详细介绍之前，先从关键见解或建议开始
+
+Use overview tables or visuals instead of text blocks where appropriate
+# 在适当的情况下使用概述表或视觉对象而不是文本块
+```
+
+#### 如何写一个好的深度研究 Prompt
+
+只需复制此内容并插入您自己的信息（标有「#」的注释用于解释每个部分，不应包含在提示中）：
+
+```
+# 目标：说明 1) 您最终想要实现的目标，以及 2) 您希望 AI 实现的具体目标。示例：
+
+<goal> We want to build an account score to inform account allocation to SDRs and prioritize which accounts we reach out to. The desired model will assign 1) a firmographic fit score (i.e. "Is this company generally a good fit?”) as well as 2) an intent score (i.e. "Is this account currently in the market / likely to buy?") to each account. </goal>
+# Goal: State 1) what you’re ultimately trying to accomplish, and 2) what exactly you want the AI to do. Example:
+
+<goal> We want to build an account score to inform account allocation to SDRs and prioritize which accounts we reach out to. The desired model will assign 1) a firmographic fit score (i.e. "Is this company generally a good fit?”) as well as 2) an intent score (i.e. "Is this account currently in the market / likely to buy?") to each account. </goal>
+
+# 上下文：包含项目中尚未包含的与请求相关的所有上下文。示例：
+
+<context> We’re currently focused on the US market only. Our GTM and data stack consists of Salesforce, Marketo, Outreach, dbt and Snowflake; we’re open to buying intent data sources. Explainability of the model and scores is key </context>
+
+# [可选] 内容：指定您希望在最终输出中包含的内容，例如比较、SQL 代码片段、Salesforce 自定义对象的规范等。示例：
+
+<content> Please cover, at a minimum: 1) A detailed 「build vs. buy」 analysis and recommendation, 2) An overview of the various approaches for building this in-house, 3) How to operationalize the account score between Marketing and Sales, 4) How we can provide visibility for sales reps into how the scores were derived </content>
+
+# [可选] 样式：定义报告的格式。最好将其包含在项目自定义说明中，因为每个研究任务的格式通常相同。示例：
+
+<style> Follow the Pyramid Principle: State key takeaways or recommendations first, then add supporting arguments and data where appropriate. When you give a recommendation, make sure you explain exactly how you arrived at it. Use bullet points, overview tables and other formatting to make the report easy to parse. </style>
+
+# [可选] 来源：指定 AI 应优先考虑的来源以及/或者应如何记录这些来源。例如：
+
+<sources> For tool comparisons, focus on assessments from leading industry blogs or practitioners instead of claims from the companies themselves </sources>
+
+# [可选] 说明：提供其他说明（例如，您希望 AI 遵循的具体方法或步骤）。例如：
+
+<instructions> Please ask for any additional context you need before you proceed </instructions>
+```
+
+阅读更多：[How to use Deep Research for GTM - by Torsten Walbaum](https://www.growthunhinged.com/p/deep-research-for-gtm)

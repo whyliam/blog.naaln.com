@@ -1,7 +1,7 @@
 ---
 layout: post
 title: L51_慢，未必不是一种向前迈进的姿态
-date: 2023/12/17/ 20:00:00
+date: 2023/12/17 20:00:00
 categories:
   - 资讯
 tags:

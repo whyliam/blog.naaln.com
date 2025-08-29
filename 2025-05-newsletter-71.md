@@ -1,7 +1,7 @@
 ---
 layout: post
 title: L71_人工智能创新加速
-date: 2025/05/30/ 20:00:00
+date: 2025/05/30 20:00:00
 categories:
   - 资讯
 tags:

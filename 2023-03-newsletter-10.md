@@ -1,7 +1,7 @@
 ---
 layout: post
 title: L10_人类是模仿的动物
-date: 2023/03/05/ 20:00:00
+date: 2023/03/05 20:00:00
 categories:
 - 资讯
 tags:

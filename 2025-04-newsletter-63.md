@@ -1,7 +1,7 @@
 ---
 layout: post
 title: L63_从大模型到智能体的全面突破
-date: 2025/04/04/ 20:00:00
+date: 2025/04/04 20:00:00
 categories:
   - 资讯
 tags:

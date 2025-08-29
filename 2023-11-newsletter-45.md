@@ -1,7 +1,7 @@
 ---
 layout: post
 title: L45_让自己无所事事
-date: 2023/11/05/ 20:00:00
+date: 2023/11/05 20:00:00
 categories:
   - 资讯
 tags:

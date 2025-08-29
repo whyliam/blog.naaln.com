@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Scale AI
-date: 2023/04/20/ 20:00:00
+date: 2023/04/20 20:00:00
 categories:
 - 技术
 tags:

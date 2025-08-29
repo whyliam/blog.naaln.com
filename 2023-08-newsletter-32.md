@@ -1,7 +1,7 @@
 ---
 layout: post
 title: L32_在领域中痴迷
-date: 2023/08/06/ 20:00:00
+date: 2023/08/06 20:00:00
 categories:
 - 资讯
 tags:

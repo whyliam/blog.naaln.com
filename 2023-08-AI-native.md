@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 关于 AI Native
-date: 2023/08/27/ 20:00:00
+date: 2023/08/27 20:00:00
 categories:
   - 技术
 tags:

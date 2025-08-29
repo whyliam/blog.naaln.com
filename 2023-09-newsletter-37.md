@@ -1,7 +1,7 @@
 ---
 layout: post
 title: L37_重新塑造活方式和社会结构
-date: 2023/09/10/ 20:00:00
+date: 2023/09/10 20:00:00
 categories:
   - 资讯
 tags:

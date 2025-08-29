@@ -1,7 +1,7 @@
 ---
 layout: post
 title: L46_寻找适合自己的方式最重要
-date: 2023/11/12/ 20:00:00
+date: 2023/11/12 20:00:00
 categories:
   - 资讯
 tags:

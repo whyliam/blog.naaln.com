@@ -1,7 +1,7 @@
 ---
 layout: post
 title: L59_社会变革与技术新纪元
-date: 2025/03/07/ 20:00:00
+date: 2025/03/07 20:00:00
 categories:
   - 资讯
 tags:

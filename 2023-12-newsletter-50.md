@@ -1,7 +1,7 @@
 ---
 layout: post
 title: L50_自我增强独立思考的能力
-date: 2023/12/10/ 20:00:00
+date: 2023/12/10 20:00:00
 categories:
   - 资讯
 tags:

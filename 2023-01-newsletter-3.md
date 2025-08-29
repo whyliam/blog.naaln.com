@@ -1,7 +1,7 @@
 ---
 layout: post
 title: L3_信念和传播
-date: 2023/01/15/ 20:00:00
+date: 2023/01/15 20:00:00
 categories:
 - 资讯
 tags:

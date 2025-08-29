@@ -1,7 +1,7 @@
 ---
 layout: post
 title: L58_推理、平权与全球博弈
-date: 2025/02/28/ 20:00:00
+date: 2025/02/28 20:00:00
 categories:
   - 资讯
 tags:

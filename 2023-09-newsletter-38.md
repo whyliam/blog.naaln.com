@@ -1,7 +1,7 @@
 ---
 layout: post
 title: L38_建立一个真实的小世界
-date: 2023/09/17/ 20:00:00
+date: 2023/09/17 20:00:00
 categories:
   - 资讯
 tags:
