@@ -1,7 +1,7 @@
 ---
 layout: post
 title: L5_思考和决策
-date: 2023/01/29/ 20:00:00
+date: 2023/01/29 20:00:00
 categories:
 - 资讯
 tags:

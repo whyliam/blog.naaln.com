@@ -1,7 +1,7 @@
 ---
 layout: post
 title: L48_深刻理解自己
-date: 2023/11/26/ 20:00:00
+date: 2023/11/26 20:00:00
 categories:
   - 资讯
 tags:

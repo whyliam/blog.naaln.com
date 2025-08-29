@@ -1,7 +1,7 @@
 ---
 layout: post
 title: L75_动态、混沌而又极具变革性
-date: 2025/06/27/ 20:00:00
+date: 2025/06/27 20:00:00
 categories:
   - 资讯
 tags:

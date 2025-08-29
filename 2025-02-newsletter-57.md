@@ -1,7 +1,7 @@
 ---
 layout: post
 title: L57_开启AI竞赛新纪元
-date: 2025/02/21/ 20:00:00
+date: 2025/02/21 20:00:00
 categories:
   - 资讯
 tags:

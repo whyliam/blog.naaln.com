@@ -1,7 +1,7 @@
 ---
 layout: post
 title: L42_人类总是在模仿他人
-date: 2023/10/15/ 20:00:00
+date: 2023/10/15 20:00:00
 categories:
   - 资讯
 tags:

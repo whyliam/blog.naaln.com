@@ -1,7 +1,7 @@
 ---
 layout: post
 title: GPT 与产品
-date: 2023/08/26/ 20:00:00
+date: 2023/08/26 20:00:00
 categories:
   - 产品
 tags:

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: L36_反时间管理
-date: 2023/09/03/ 20:00:00
+date: 2023/09/03 20:00:00
 categories:
 - 资讯
 tags:

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: L74_人工智能的世界展现出巨大的分化
-date: 2025/06/20/ 20:00:00
+date: 2025/06/20 20:00:00
 categories:
   - 资讯
 tags:

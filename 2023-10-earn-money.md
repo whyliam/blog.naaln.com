@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 「赚钱」背后的真伪命题
-date: 2023/10/28/ 20:00:00
+date: 2023/10/28 20:00:00
 categories:
   - 经济
 tags:

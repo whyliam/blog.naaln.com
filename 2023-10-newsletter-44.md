@@ -1,7 +1,7 @@
 ---
 layout: post
 title: L44_对遥远的事物也要求真
-date: 2023/10/29/ 20:00:00
+date: 2023/10/29 20:00:00
 categories:
   - 资讯
 tags:

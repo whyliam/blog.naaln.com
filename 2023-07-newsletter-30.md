@@ -1,7 +1,7 @@
 ---
 layout: post
 title: L30_目标让我们焦虑，而愿景让我们笃定
-date: 2023/07/23/ 20:00:00
+date: 2023/07/23 20:00:00
 categories:
 - 资讯
 tags:

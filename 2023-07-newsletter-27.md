@@ -1,7 +1,7 @@
 ---
 layout: post
 title: L27_失序和撕裂
-date: 2023/07/02/ 20:00:00
+date: 2023/07/02 20:00:00
 categories:
 - 资讯
 tags:

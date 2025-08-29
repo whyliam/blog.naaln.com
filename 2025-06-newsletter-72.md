@@ -1,7 +1,7 @@
 ---
 layout: post
 title: L72_工具进化、提示工程与多模态突破
-date: 2025/06/06/ 20:00:00
+date: 2025/06/06 20:00:00
 categories:
   - 资讯
 tags:

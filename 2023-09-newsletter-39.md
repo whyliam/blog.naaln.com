@@ -1,7 +1,7 @@
 ---
 layout: post
 title: L39_正确选择解决的问题
-date: 2023/09/24/ 20:00:00
+date: 2023/09/24 20:00:00
 categories:
   - 资讯
 tags:

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: L17_人的优势是认知缺陷
-date: 2023/04/23/ 20:00:00
+date: 2023/04/23 20:00:00
 categories:
 - 资讯
 tags:

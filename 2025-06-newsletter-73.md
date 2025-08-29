@@ -1,7 +1,7 @@
 ---
 layout: post
 title: L73_技术迭代加速
-date: 2025/06/13/ 20:00:00
+date: 2025/06/13 20:00:00
 categories:
   - 资讯
 tags:

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: L82_脱离浪浪山
-date: 2025/08/16/ 20:00:00
+date: 2025/08/16 20:00:00
 categories:
   - 资讯
 tags:
@@ -10,7 +10,7 @@ tags:
   - 闲鱼监控
   - 证件照处理
   - 免费字体
-description: 本期 newsletter 推荐几款实用工具，包括闲鱼商品智能监控机器人、证件照自动处理程序 LiYing，以及 ZeoSeven Fonts 免费商用字体平台。同时分享电影《浪浪山小妖怪》带来的感动与思考，探讨在信息洪流中如何保持初心。
+description: 本期 newsletter 推荐几款实用工具，包括闲鱼商品智能监控机器人、证件照自动处理程序 LiYing，以及 ZeoSeven Fonts 免费商用字体平台。同时分享电影《浪浪山小妖怪》带来的感动与思考，探讨在信息洪流中如何保持初心，寻找属于自己的那座「浪浪山」。
 ---
 ![82_脱离浪浪山](https://pics.naaln.com/2025-08-25-b3209dcf8ca84eae93d4995735f065c1.png-basicBlog)
 
@@ -22,7 +22,7 @@ description: 本期 newsletter 推荐几款实用工具，包括闲鱼商品智�
 
 ---
 
-## 工具
+## 🛠️ 工具
 
 ### 闲鱼 (goofish) 智能监控机器人
 
@@ -82,7 +82,7 @@ ZeoSeven Fonts 是一个专注于免费商用字体分发与应用的公益平�
 
 ---
 
-## 电影
+## 🎬 电影
 
 ### 浪浪山小妖怪
 

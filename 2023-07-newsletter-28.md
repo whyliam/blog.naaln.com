@@ -1,7 +1,7 @@
 ---
 layout: post
 title: L28_Stay hungry, Stay young
-date: 2023/07/09/ 20:00:00
+date: 2023/07/09 20:00:00
 categories:
 - 资讯
 tags:

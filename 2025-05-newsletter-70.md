@@ -1,7 +1,7 @@
 ---
 layout: post
 title: L70_企业管理者结构化
-date: 2025/05/23/ 20:00:00
+date: 2025/05/23 20:00:00
 categories:
   - 资讯
 tags:

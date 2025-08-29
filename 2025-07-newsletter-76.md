@@ -1,7 +1,7 @@
 ---
 layout: post
 title: L76_科技巨头的AI新战场
-date: 2025/07/05/ 20:00:00
+date: 2025/07/05 20:00:00
 categories:
   - 资讯
 tags:
