@@ -138,5 +138,3 @@ The Plus One part of this is setting aside time every single week to go through 
 - **生活兴趣**（除了你履历所暗示的能力与特长，你还能给我哪些惊喜？建议幽默简洁地描述爱好或业余生活）；如果还有字数，推荐加一句话价值观/座右铭/态度宣言
 
 来源：[泛精英社区「即刻」的高传播写作](https://zhiy.cc/letter/1624)，逆流 Upstream
-
-

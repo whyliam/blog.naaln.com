@@ -17,7 +17,7 @@ description: 本文介绍了2025年Mac平台下一系列实用软件的安装与
 
 一年一度的 Mac Software 整理如期而至，本次是因为新入手了 Mac mini。谁叫这个价格实在是太香了。
 
-去年的见：[2024-08-mac-software](https://blog.naaln.com/2024/08/mac-software/)
+去年的见：[2024 Mac Software](https://blog.naaln.com/2024/08/mac-software/)
 
 ## 基础工具安装
 

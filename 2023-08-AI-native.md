@@ -28,8 +28,6 @@ AI Native 与 AI Based 产品的最显著区别是，AI Native 的产品和服�
 
 对于原来 Photoshop 复杂的键鼠操作，变成了语言的表述。对于用户而言，对产品细致颗粒（高光、虚化、模糊等）概念理解不再存在，转而由人机对话的 Promote 替代。[^3]
 
-<br>
-
 **[Firefly](https://www.adobe.com/sensei/generative-ai/firefly.html)**
 - [Adobe Firefly: Family of New Creative Generative AI Models](https://www.youtube.com/watch?v=DvBRj--sUMU)
 
@@ -41,8 +39,6 @@ AI Native 与 AI Based 产品的最显著区别是，AI Native 的产品和服�
 结构化的数据获取和处理方式也将被重新定义。过去为了数据结构化，而人为迁就流程化的操作流，以及一系列的输入框都将被抛弃，取而代之的是非结构化的输入以及上下文的理解。
 
 过去互联网社会的发展，人们通过产品或自身的约定来提高数据产品的稳定性，究其还是人类行为向程序妥协。但是在 AI First 背景之下，产品回归到产品，结构化的产品设计理念也可能被重写。
-
-<br>
 
 [ChatGPT](https://chat.openai.com/)，就放弃传统产品设计上输入结构，在一个大输入框内完成所有的上下文信息（且是非约定的信息要素），在返回端也是非结构的信息逻辑。
 
@@ -56,10 +52,8 @@ AI Native 与 AI Based 产品的最显著区别是，AI Native 的产品和服�
 
 图片来源 [^4]
 
-<br>
-
 [ACT-1](https://www.adept.ai/blog/act-1)，David Luan 所构建 ACT 模型，就希望打破互联网虚拟世界与现实世界的隔阂。
-- [Next After ChatGPT](https://blog.naaln.com/2023/08/next-ChatGPT/#Adept-AI)
+- [Next After ChatGPT](https://blog.naaln.com/2023/08/next-ChatGPT/)
 
 [Auto-GPT](https://github.com/Significant-Gravitas/Auto-GPT)
 - [The Official Auto-GPT Website](https://news.agpt.co/#demos)
@@ -73,8 +67,6 @@ AI Native 与 AI Based 产品的最显著区别是，AI Native 的产品和服�
 - Uber：是对司机和乘客撮合的减熵
 
 笼统来说，都是通过互联网实现了对信息的低成本分发，而 AI 2.0 将实现对智能的低成本分发。[^6] 可以预见传统的信息平台将从组织、撮合变成直接提供服务。
-
-<br>
 
 [Sidekick](https://www.shopify.com/hk-en/magic)
 - [Meet Sidekick: Our AI-powered assistant for merchants](https://youtu.be/HVvbY7A7lIQ?si=IhIwgT53jwafB086&t=75)
