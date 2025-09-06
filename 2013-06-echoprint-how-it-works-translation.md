@@ -11,21 +11,21 @@ tags:
 
 欢迎来到 EchoprintEchoprint 是一个开源的音乐是识别系统，他允许任何人在他们自己的应用上构建音乐指纹识别系统。感谢 [The Echo Nest](http://the.echonest.com/) 的技术支持，以及 [Musicbrainz](http://musicbrainz.org/) 的合作。
 
-→ [Home / FAQ](https://blog.naaln.com/2013/06/echoprint-home-faq-translations)
+→ [Home / FAQ](https://blog.naaln.com/2013/06/echoprint-home-faq-translations/)
 
 → [Download from GitHub](http://github.com/echonest/)
 
-→ [How it works](https://blog.naaln.com/2013/06/echoprint-how-it-works-translation)
+→ [How it works](https://blog.naaln.com/2013/06/echoprint-how-it-works-translation/)
 
-→ [Get started](https://blog.naaln.com/2013/06/echoprint-get-started-translate)
+→ [Get started](https://blog.naaln.com/2013/06/echoprint-get-started-translate/)
 
 → [Contact / Support](http://echoprint.me/contact)
 
-→ [Data access](https://blog.naaln.com/2013/06/echoprint-data-access-translation)
+→ [Data access](https://blog.naaln.com/2013/06/echoprint-data-access-translation/)
 
-→ [Server](https://blog.naaln.com/2013/06/echoprint-server-translation)
+→ [Server](https://blog.naaln.com/2013/06/echoprint-server-translation/)
 
-→ [Codegen](https://blog.naaln.com/2013/06/echoprint-codegen-translation)
+→ [Codegen](https://blog.naaln.com/2013/06/echoprint-codegen-translation/)
 
 → [Twitter - @echonest](http://twitter.com/echonest)
 
@@ -51,4 +51,4 @@ Echoprint 在手机或者电脑上接收音乐，并识别它是什么歌曲。�
 
 我们通过我们的「bigeva」软件跟踪精度， 这个软件在服务器安装时已经包涵。这里有一些初步的结果：<br />原文: [http://echoprint.me/](http://echoprint.me/how)
 
-翻译: [Liam](https://blog.naaln.com/2013/06/echoprint-how-it-works-translation)
+翻译: [Liam](https://blog.naaln.com/2013/06/echoprint-how-it-works-translation/)

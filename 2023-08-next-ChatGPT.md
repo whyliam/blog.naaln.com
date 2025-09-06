@@ -115,7 +115,7 @@ AI 模型最近时间层出不穷。其中不同类型的 Transformer 模型，�
 
 OpenAI 的视频预训练模型（VPT），它通过观看人类游戏来学习玩 Minecraft —— 也就是在某种程度上模仿人类的行为。但是，到目前为止，像 VPT 这样的系统并不多。
 
-GPT-3 是在 [有损压缩信息](https://blog.naaln.com/2023/02/newsletter-9/#%E4%B8%80%E4%B8%AA%E6%8A%80%E6%9C%AF%EF%BC%9AChatGPT-%E6%98%AF%E4%BA%92%E8%81%94%E7%BD%91%E7%9A%84%E6%9C%89%E6%8D%9F%E5%8E%8B%E7%BC%A9)，而 VPT 也只在修改互联网内状态 —— 但同样也无法与现实世界发生联动。[^3]
+GPT-3 是在 [有损压缩信息](https://blog.naaln.com/2023/02/newsletter-9/#一个技术：ChatGPT 是互联网的有损压缩)，而 VPT 也只在修改互联网内状态 —— 但同样也无法与现实世界发生联动。[^3]
 
 而今天讨论的主角 —— Adept AI 希望可以充当人类和数字世界之间的自然翻译。
 

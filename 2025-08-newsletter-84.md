@@ -29,7 +29,7 @@ description: 本期newsletter深入探讨了如何通过神经科学方法延缓
 
 这些方法通过刻意的干预和心态调整，可以帮助我们重新掌控时间感知，摆脱日常生活中的时间压缩感，提升对当下的体验和记忆。
 
-原文：[如何放慢时间](https://blog.naaln.com/2025/08/slow-time)
+原文：[如何放慢时间](https://blog.naaln.com/2025/08/slow-time/)
 
 ---
 

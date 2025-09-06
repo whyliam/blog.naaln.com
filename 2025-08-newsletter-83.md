@@ -55,7 +55,7 @@ description: 在 AI 时代，外部信息已不再稀缺，真正稀缺的是与
 
 整体来看，深度研究是 AI 在 GTM 场景下的重要杠杆工具，能够帮助团队快速获取洞察、提升研究质量，并以更低的成本完成原本高投入的任务。
 
-阅读原文：[如何提升 GTM 深度研究](https://blog.naaln.com/2025/08/improve-gtm-deep-research)
+阅读原文：[如何提升 GTM 深度研究](https://blog.naaln.com/2025/08/improve-gtm-deep-research/)
 
 ---
 
