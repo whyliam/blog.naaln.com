@@ -41,4 +41,4 @@ description: 在这篇文章中，我分享了9个关于AI、创业与技术趋�
 9. **「创造爱的瞬间」**
 AI 除了提高效率，也能为人类提供情感价值。「独响」App 的「AI 陪你睡觉」功能每天有一万多人使用，这表明 AI 能够很好地满足人们对陪伴和情感互动的需求。一位 AI 宠物创始人的使命「创造爱的瞬间」，尤其令人动容。这一顿悟揭示了 AI 的另一个重要维度：它不仅是生产力的工具，更是情感连接的载体。当效率被无限提高后，AI 可以帮助我们回归人性的核心需求。
 
-阅读更多：[# 2025过去一半了， AI带给我的9个Aha Moments](https://mp.weixin.qq.com/s?__biz=MzAxMDMxOTI2NA==&mid=2649094876&idx=1&sn=26c46825e7e33ac971a4648a9767b7ad&poc_token=HP4mqGijCbrTNOpNa3z3nqG6Ofg2VKiMF_0ZUOfe)
+阅读更多：[2025过去一半了， AI带给我的9个Aha Moments](https://mp.weixin.qq.com/s?__biz=MzAxMDMxOTI2NA==&mid=2649094876&idx=1&sn=26c46825e7e33ac971a4648a9767b7ad&poc_token=HP4mqGijCbrTNOpNa3z3nqG6Ofg2VKiMF_0ZUOfe)
