@@ -67,4 +67,4 @@ description: 在 AI 时代，外部信息已不再稀缺，真正稀缺的是与
 - OpenAI 的文化是**自下而上**的，没有固定的路线图，好的想法可以来自任何一个「迷你 CEO」式的研究员。他们鼓励「先干了再说」，经常有多个团队同时进行类似的原型开发。这种模式虽然可能导致重复造轮子，但极大地提升了行动力。[OpenAI 离职工程师万字长文：人均产出近 8 万个 PR，内部最真实的工作流、文化和技术内幕！](https://mp.weixin.qq.com/s/2oNxDKi5oDGNkDHnFUlnWQ)
 - 无论处于人生的哪个阶段，努力的目标都是不断提高自己的独立性，而不是升职加薪。[从腾讯离职不上班的三个月，我的人生完蛋了吗？](https://mp.weixin.qq.com/s/G8t4Csk8QBaQj0_Rx3RkTg)
 - 可以看看有什么用得上的 [a16z 投资人最高频使用的 10 个 AI 产品](https://mp.weixin.qq.com/s?__biz=Mzg5Mjc3MjIyMA==&mid=2247575627&idx=1&sn=84688c59b2fa8eeb6d0dca0b31073e2d&sharer_shareinfo=6dce396563b5e3de855258dc9b0c5f7c&sharer_shareinfo_first=6dce396563b5e3de855258dc9b0c5f7c&poc_token=HLolqGijzSSVzgQV-FEnwSpHtxOuspTs0RBma85T)
-- 上线 48 小时内，如果你的 AI 产品没有火遍社交网络，那就等于死了——48 小时，那可不得尸横遍野。[看完 1289 个死掉的 AI 产品，我发现这些需求就不该用 AI 解决 \| 爱范儿](https://www.ifanr.com/1629884?utm_campaign=)
+- 上线 48 小时内，如果你的 AI 产品没有火遍社交网络，那就等于死了——48 小时，那可不得尸横遍野。[看完 1289 个死掉的 AI 产品，我发现这些需求就不该用 AI 解决](https://www.ifanr.com/1629884?utm_campaign=)
