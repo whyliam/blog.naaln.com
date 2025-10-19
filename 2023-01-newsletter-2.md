@@ -95,7 +95,7 @@ tags:
 如果你不知道该做什么，那么就去寻找学习尝试，一个一个的找到能让你做起来内心认可的有意义的事情。
 这里有一些列表：
 
-- [YC 投资孵化器对创业项目的要求](投资孵化器对创业项目的要求)，他们在找解决什么问题的创业项目；
+- 创业项目的要求，他们在找解决什么问题的创业项目；
 - Jay Zaveri 整理了一个 [世界上最难的问题](https://docs.google.com/document/d/1Vb8WWbsVyEJzl66_qqtZfFr2uLL07Y7SJH5XKldjDPY/edit)。
 - Github 前 CEO Nat Friedman 征集的 [让人感到兴奋的技术](https://nintil.com/technology-some-people-are-excited-about/)。
 - [James Ough 的研究思想](https://web.archive.org/web/20190130140607/https://github.com/tensor8/idea_dump)，主要是人工智能和机器人技术。
