@@ -1,7 +1,7 @@
 ---
 layout: post
-title: AL91_AI 音乐革命与创意的重生
-date: 2025-10-16 20:00:00
+title: L91_AI 音乐革命与创意的重生
+date: 2025-10-18 20:00:00
 categories:
   - 资讯
 tags:
