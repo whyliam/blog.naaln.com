@@ -9,7 +9,7 @@ tags:
   - AI产品
   - 创业
   - 增长策略
-description: 本期 Newsletter 探讨了 AI 产品在激烈竞争中如何找到增长路径，涵盖 Kuse、PopAi 和 Fellou 的实战案例。同时分析了应用型 AI 公司无需自研模型，而应聚焦于市场认知与快速迭代的战略建议，并介绍了 Huxe 和 Karakeep 两款值得关注的 AI 工具。
+description: 本期 Newsletter 聚焦 AI 产品在激烈竞争中的增长策略，通过 Kuse、PopAi 和 Fellou 的实战案例，揭示如何从 0 到 1 找到产品市场契合点并实现突破。同时探讨应用型 AI 公司应避免自研模型，转而依靠市场认知与快速迭代构建壁垒，并推荐了 Huxe 和 Karakeep 两款实用 AI 工具。
 ---
 
 ![L90_产品增长之道与创业新机遇](https://pics.naaln.com/2025-10-12-913a76a83d0f43e981609166068ce6d0.png-basicBlog)

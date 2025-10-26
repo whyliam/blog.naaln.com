@@ -5,11 +5,10 @@ date: 2025-10-25 20:00:00
 categories:
   - 资讯
 tags:
-  - AI金融
   - NewsLetter
   - 技术观察
   - 科技趋势
-description: 深度剖析AI生态中的循环融资游戏，揭示万亿价值背后的金融闭环结构，同时反思AI时代产品思维的三大转变，从A/B测试到判断力的认知升级。
+description: 揭示AI产业万亿估值背后的资金循环游戏，解析英伟达、微软等巨头如何通过投资与订单形成金融闭环。同时探讨AI时代产品思维的三大变革：从追求局部数据优化转向全局判断力，从强调功能有用性到重视用户体验的新奇感，以及从命令式交互转变为引导式协作。
 ---
 
 ![技术真实的金融幻觉](https://pics.naaln.com/Gemini_Generated_Image_2p63r2p63r2p63r2.png-basicBlog)
