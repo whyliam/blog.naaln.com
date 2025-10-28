@@ -5,9 +5,11 @@ date: 2022/10/31 20:00:00
 categories:
 - 随笔
 tags:
-- 爱与鲜活
-- 小结
-
+  - 随笔
+  - 小结
+  - 思考
+  - 时间管理
+description: 作者的月度总结与深度思考，聚焦时间成本和工作哲学两个核心主题。文章探讨了时间成本决策框架，通过设定时薪标准来指导外包和自制选择，倡导将时间投入到更有价值的事情上。同时反思了职场中"舒适陷阱"现象，揭示聪明人容易被"刚刚好"的工作机会束缚的深层原因。文笔简洁有力，充满对生活和工作本质的洞察。
 ---
 
 <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=28996919&auto=1&height=66"></iframe>

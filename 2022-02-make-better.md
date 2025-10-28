@@ -5,7 +5,11 @@ date: 2022/02/12 20:00:00
 categories:
 - 随笔
 tags:
-- 总结
+  - 随笔
+  - 生活改进
+  - 自我提升
+  - 总结
+description: 介绍8+1生活管理系统，帮助读者实现全方位的自我提升。文章基于Henrik Werdelin的生活改进框架，将生活划分为8个关键领域：赚钱、投资、助人、学习、健康、家庭、社交、Ego，加上每周的定期回顾机制。作者结合自己的实际情况，为每个领域设定了具体的目标和行动计划，提供了一套完整的生活优化方案。
 ---
 
 ![black and white rectangular box on white textile](https://pics.naaln.com/blog/2022-02-15-f7038f.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80-basicBlog)

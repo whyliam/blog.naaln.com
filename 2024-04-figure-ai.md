@@ -5,10 +5,12 @@ date: 2024/04/18 20:00:00
 categories:
   - 随笔
 tags:
-  - AGI
+  - 科技
+  - AI
   - 人工智能
   - 机器人
-  - OpenAI
+  - AGI
+description: 深度解析Figure AI通用人形机器人的技术突破与商业价值。文章详细介绍了Figure 01的核心能力，包括通过端到端AI系统10小时学会冲泡咖啡的惊人学习能力，以及流畅执行递苹果、整理餐具等复杂操作的实用价值。分析了创始人Brett Adcock从Vettery到Archer再到Figure AI的创业历程，展现了通用人形机器人从概念走向现实的技术演进路径，为理解AI与机器人融合的未来趋势提供独特视角。
 ---
 
 ![img](https://pics.naaln.com/blog/2024-04-19-c2f808.jpg-basicBlog)

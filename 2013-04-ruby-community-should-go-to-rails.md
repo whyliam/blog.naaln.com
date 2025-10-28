@@ -5,6 +5,10 @@ date: 2013/04/06 10:28:00
 categories:
 - 技术
 tags:
+- Ruby
+- Rails
+- 编程
+description: 深度分析Ruby社区去Rails化的必要性。通过Linkedin和Iron.io从Ruby迁移到node.js和Go的案例，结合Ruby Web框架性能测试数据，指出Rails框架在移动时代Web Service场景下的局限性。文章详细阐述Rails调用堆栈过深、内存消耗过大、IO并发能力低等问题，推荐Sinatra、Padrino、Goliath等轻量级框架作为替代方案。为Ruby开发者提供在移动时代选择合适框架的参考建议。
 ---
 
 ## 从 Linkedin 和 Iron.io 抛弃 Ruby 说起

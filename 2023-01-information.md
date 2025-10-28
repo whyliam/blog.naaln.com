@@ -5,7 +5,11 @@ date: 2023/01/04 20:00:00
 categories:
 - 随笔
 tags:
-- 信息
+  - 随笔
+  - 信息管理
+  - Newsletter
+  - 学习
+description: 关于信息源管理的心得体会，涵盖开设Newsletter过程中的思考。探讨信息获取渠道的狭窄和单一性问题，强调信息源筛选的重要性。分享多个值得关注的Newsletter资源，包括Joe的折腾日记、DecoHack周刊、DEX周刊等，为读者提供优质的信息输入渠道推荐。适合关注信息管理和知识获取的读者参考。
 ---
 
 最近开了 NewsLetteter [Space.News](https://space.zhubai.love/) ，去年 8 月份 就一直就想开了。其实在更早的前几年在微信上做过一次，更新了 20 多期就没有更新下去。
