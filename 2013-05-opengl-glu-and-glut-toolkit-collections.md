@@ -6,6 +6,12 @@ categories:
 - 技术
 tags:
 - OpenGL
+- GLU
+- GLUT
+- 图形编程
+- 3D图形
+- API文档
+description: OpenGL中GLU和GLUT工具箱的详细函数参考手册。介绍GLUT工具箱提供的各种3维图形绘制函数，包括丝状和实心形式的球体、立方体、花环、圆锥体、茶壶等。同时提供GLU工具箱创建二次曲面对象的函数，如球体、圆柱体、圆盘等。详细解释OpenGL函数库体系结构：核心库(gl)、实用库(glu)、辅助库(aux)、工具库(glut)、窗口库(glx、agl、wgl)和扩展函数库。是3D图形编程和OpenGL开发的实用参考文档。
 ---
 
 GLUT 工具箱提供几种图形 3 维图形的函数：

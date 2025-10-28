@@ -7,6 +7,12 @@ categories:
 tags:
 - echoprint
 - 翻译
+- 数据许可
+- 开源
+- 音乐识别
+- 协议
+- 法律条款
+description: Echoprint数据许可协议翻译文档，详细规定了开源音乐识别系统的数据使用条款。Echoprint数据许可的核心原则：允许在任何情况下使用数据（商业或非商业），但如果下载并完善数据，需有义务回传数据给社区。协议涵盖三大核心内容：1）许可规则——消费者使用时需标注"powered by Echo Nest"标识和版权声明，商业用途需遵循完整的许可协议；2）数据共享义务——要求贡献者向Echo Nest提供附加数据（track_id、fp_code、artist_name等）；3）法律条款——包括免责声明、赔偿条款、终止条件、管辖法律等。为开发者使用Echoprint数据库提供完整的法律框架，确保开源社区的可持续发展。
 ---
 
 欢迎来到 EchoprintEchoprint 是一个开源的音乐是识别系统，他允许任何人在他们自己的应用上构建音乐指纹识别系统。感谢 [The Echo Nest](http://the.echonest.com/) 的技术支持，以及 [Musicbrainz](http://musicbrainz.org/) 的合作。

@@ -6,6 +6,10 @@ categories:
 - 技术
 tags:
 - OpenGL
+- 图形编程
+- 参数方程
+- C++
+description: 详细介绍如何使用OpenGL和参数方程绘制三维球体的完整教程。讲解球体空间坐标参数方程 x=r·sin(α)·cos(β)、y=r·sin(α)·sin(β)、z=r·cos(α) 的应用，展示从点坐标计算到矩阵生成，再到四边形绘面的完整流程。包含完整的C++代码实现，涵盖init()、reshape()、display()等OpenGL绘图核心函数，以及getPoint()、drawSphere()等球体绘制专用函数。支持实面球和网格球两种绘制模式，通过控制slices参数调节球面精度。
 ---
 
 **在 OpenGL 中用参数方程绘制球体**

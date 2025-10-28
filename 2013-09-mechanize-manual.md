@@ -6,6 +6,10 @@ categories:
 - 技术
 tags:
 - Mechanize
+- Ruby
+- 网页爬虫
+- 自动化
+description: Mechanize网页自动化工具的入门使用教程。Mechanize是Ruby语言的网络库，可模拟浏览器行为实现网页自动化操作。文章从基础用法开始，介绍如何抓取页面、查找和点击链接、填写和提交表单。通过Google搜索的具体实例演示完整流程，包括表单字段操作、下拉框选择、复选框和单选框处理、文件上传等高级功能。最后讲解使用Hpricot进行数据抽取的方法。为网络爬虫、自动化测试和数据采集提供实用指南。
 ---
 
 开始使用 [WWW::Mechanize](http://mechanize.rubyforge.org/mechanize/classes/WWW/Mechanize.html)

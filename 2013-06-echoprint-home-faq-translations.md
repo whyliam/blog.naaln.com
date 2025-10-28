@@ -7,6 +7,14 @@ categories:
 tags:
 - echoprint
 - 翻译
+- FAQ
+- 问答
+- 音乐识别
+- 开源项目
+- 开发者
+- OTA识别
+- 商业化
+description: Echoprint开源音乐识别系统官方主页和FAQ翻译文档，全面介绍Echoprint项目。文档涵盖三大部分：1）系统更新——Echoprint数据库已更新超过100万首歌曲，Codegen 4.12版本发布，包含bug修复和文档更新；2）核心FAQ——详细回答开发者关心的问题：是什么（音乐指纹识别系统）、目标用户（开发者和音乐产业）、商业化许可（MIT和Apache 2.0）、OTA支持（通过麦克风识别）、文件扫描、成熟度、扩展性等；3）项目状态——数据状态（15万首流行音乐）、质量保证（Codegen 4.12达gold标准）、服务状态（已在Echo Nest运行）。文档体现开源透明理念，为开发者提供完整的技术文档和使用指导，鼓励社区参与贡献。
 ---
 
 欢迎来到 EchoprintEchoprint 是一个开源的音乐是识别系统，他允许任何人在他们自己的应用上构建音乐指纹识别系统。感谢 [The Echo Nest](http://the.echonest.com/) 的技术支持，以及 [Musicbrainz](http://musicbrainz.org/) 的合作。

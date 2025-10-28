@@ -7,6 +7,16 @@ categories:
 tags:
 - echoprint
 - 翻译
+- Codegen
+- 代码生成器
+- C++
+- 音频处理
+- 哈希值
+- 时间戳
+- 音乐识别
+- 指纹生成
+- MIT许可
+description: Echoprint Codegen代码生成器组件翻译介绍，详细说明音乐指纹生成的核心原理。Codegen是Echoprint系统的重要组成部分，负责将音频信号转换为"编码"（一系列哈希值和时间戳），可从文件读取或现场麦克风输入。技术特点：1）跨平台支持——采用C++编写，可运行在几乎所有硬件平台（服务器、台式机、手机、嵌入式）；2）双操作模式——代码生成器库（libcodegen）作为链接库接收PCM数据缓冲输出代码串，独立二进制文件接受文件名输入运行在多线程工人模式；3）开源许可——Echoprint代码生成器采用MIT许可。文档强调Codegen作为音频到指纹转换的核心组件，为音乐识别系统提供基础技术支持。
 ---
 
 欢迎来到 EchoprintEchoprint 是一个开源的音乐是识别系统，他允许任何人在他们自己的应用上构建音乐指纹识别系统。感谢 [The Echo Nest](http://the.echonest.com/) 的技术支持，以及 [Musicbrainz](http://musicbrainz.org/) 的合作。

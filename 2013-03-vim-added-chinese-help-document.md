@@ -6,6 +6,13 @@ categories:
 - 技术
 tags:
 - vim
+- Linux
+- 配置
+- 中文文档
+- vimcdoc
+- 编辑器
+- 教程
+description: Vim编辑器中文帮助文档完整安装配置指南。教程从创建.vim目录结构开始：建立.vim、.vim/plugin、.vim/doc、.vim/syntax等目录，以及用户配置文件.vimrc。详细介绍从vimcdoc.sf.net下载适配Vim 7.3的中文文档、安装步骤（解压doc文件夹到vim/doc目录）、配置helplang和encoding参数。提供了中英文帮助文档切换方法（helplang=en/cn）、UTF-8编码设置、全局配置/etc/vim/vimrc与用户配置/home/.vimrc的区别。教程强调Linux精神：用户个性化配置优先于全局配置。为Vim中文用户提供了本地化帮助文档的完整解决方案。
 ---
 
 安装中文帮助文档之前首先执行下列操作：

@@ -6,6 +6,11 @@ categories:
 - 技术
 tags:
 - Octopress
+- Mac
+- 博客
+- GitHub
+- 静态网站
+description: Mac OS X系统下Octopress博客系统完整搭建教程。作者分享了从WordPress迁移到Octopress的经历，详细介绍在Mac上配置Octopress的全过程。教程包括：安装GCC、Xcode、Homebrew包管理器、Git版本控制、RVM Ruby版本管理器、Ruby 1.9.2环境、Pow服务器；克隆Octopress仓库、安装Bundler依赖、运行rake install；配置GitHub Pages连接、生成静态HTML、部署到GitHub；绑定自定义域名；创建和发布新文章；推荐使用Mou作为Markdown编辑器。文章强调Octopress的Geek特性，适合厌倦WordPress臃肿和技术人员使用。
 ---
 
 终于，耗时 N 天，把我的博客从 WordPress 转到了 Octopress，并且很无耻的托管到 GitHub 上面，免费高速～ 这篇文章教大家简单的 Octopress 的安装与使用。（如果你用的 Windows，你可能会碰到一堆雷⋯⋯强烈推荐 Linux 或者 Mac OS X）

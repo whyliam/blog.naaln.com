@@ -6,6 +6,14 @@ categories:
 - 技术
 tags:
 - echoprint
+- 声纹识别
+- 音乐识别
+- API
+- 音频处理
+- 指纹识别
+- ENMFP
+- 听音识曲
+description: Echoprint声纹识别技术实用笔记，介绍如何实现"听音识曲"功能。文章基于Echo Nest开源音乐指纹工具，详细讲解三个核心环节：1）准备工作——申请API账号，了解ENMFP（闭源）和Echoprint（开源）两套识别系统区别，下载并配置codegen可执行文件和动态库；2）指纹生成——使用codegen程序分析音乐文件，生成包含艺术家、标题、时长、采样率等元数据的JSON指纹；3）代码实现——在C#中使用Process类调用codegen.exe获取指纹，通过HttpWebRequest提交指纹到Echoprint API服务器获取识别结果。提供完整的Fingerprint类和异步处理方法。文章指出Echoprint数据库对中文歌曲识别效果有限，是实际应用中的局限。
 ---
 
 # 1.介绍

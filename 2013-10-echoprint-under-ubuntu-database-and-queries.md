@@ -6,6 +6,10 @@ categories:
 - 技术
 tags:
 - echoprint
+- Ubuntu
+- 音频识别
+- 数据库
+description: 在Ubuntu系统下部署Echoprint音乐识别服务的完整指南。介绍服务器搭建、环境配置、依赖安装（ffmpeg、libtag1-dev、zlib1g-dev、libboost-dev、g++-multilib），编译codegen的详细步骤。讲解使用find命令生成音乐列表、调用echoprint-codegen生成指纹、通过fastingest写入数据库的完整流程。提供API server的启动方法、curl命令使用、查询接口调用等操作指导。涵盖虚拟机网络配置（NAT与桥接模式）和跨平台查询的实现方案，为Linux环境下的音乐识别系统部署提供全面参考。
 ---
 
 在服务器搭建好之后可以试一试 readme 里面的几个例子，看一下有没有其他问题。

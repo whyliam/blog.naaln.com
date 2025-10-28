@@ -5,7 +5,10 @@ date: 2011/12/22 04:07:00
 categories:
 - 随笔
 tags:
-- 散文诗
+- 思念
+- 亲情
+- 孤独
+description: 深夜时分的深度情感反思，关于孤独、亲情和时间的思考。看到同学独自去拉萨过年的新闻，羡慕那份自由，也引发了关于独立过年的渴望。回忆传统家族的过年方式，表达对祖父母的深厚感情。通过"看一眼少一眼"这句话，感悟时间的残酷和陪伴的珍贵。思考人生中与父母相处的时间越来越少的现实，文字真挚感人，充满对家人的思念和对时间流逝的无奈。
 ---
 
 <embed src="http://player.youku.com/player.php/sid/XMjg3MjY3MDk2/v.swf" allowFullScreen="true" quality="high" width="480" height="400" align="middle" allowScriptAccess="always" type="application/x-shockwave-flash"></embed>

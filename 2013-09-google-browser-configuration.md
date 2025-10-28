@@ -6,6 +6,19 @@ categories:
 - 技术
 tags:
 - Google
+- 浏览器
+- 配置
+- 搜索
+- 代理
+- GFW
+- 翻墙
+- Chrome扩展
+- SSL
+- DNS
+- HOSTS
+- 谷歌搜索
+- 网络技术
+description: 谷歌浏览器配置完整指南，分享在大陆环境下优化Google搜索体验的实用技巧。教程涵盖核心配置：1）基础设置——使用Google NCR去除IP跳转，修改DNS为8.8.8.8/8.8.4.4，更改HOSTS文件（推荐Smarthosts项目）；2）搜索优化——关闭Google安全搜索，配置SSL搜索引擎（台湾版https://www.google.com.tw、国产版https://www.google.com、港版https://www.google.com.hk）；3）高级技巧——使用googlestable.com提高搜索稳定性，访问https://encrypted.google.com进行加密搜索；4）Chrome扩展推荐——Proxy SwitchySharp代理切换、Remove Google Redirects去除重定向、Search by Image以图搜图、Google SSL Webcache谷歌加密快照；5）实用工具——谷歌网页快照（带图片版和纯文字版）。分享作者多年实践经验，提供完整的网络搜索优化方案。
 ---
 
 gae 不用多说了，wall 也行，反正全天开着

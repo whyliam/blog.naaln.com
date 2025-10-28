@@ -6,6 +6,13 @@ categories:
 - 技术
 tags:
 - OpenWrt
+- 路由器
+- U盘
+- 系统安装
+- Linux
+- 嵌入式
+- 教程
+description: OpenWrt路由器系统U盘运行完整教程。详细介绍如何让OpenWrt在U盘上运行，替代路由器内置存储。教程包含四大部分：1）前提条件——路由器需有USB接口（如水星4530）和USB存储设备；2）所需组件——kmod-usb-ohci（USB1.1）、kmod-usb2（USB2.0）、kmod-usb-uhci（Intel/VIA控制器）、kmod-usb-stroage（USB存储设备）；3）执行命令——更新软件列表、安装自动挂载和USB启动组件、格式化U盘为ext3/ext4、同步系统文件到U盘；4）编辑配置文件——修改/etc/config/fstab设置自动挂载和USB启动。提供完整的命令行操作流程和配置文件示例。
 ---
 
 1、前提条件：
