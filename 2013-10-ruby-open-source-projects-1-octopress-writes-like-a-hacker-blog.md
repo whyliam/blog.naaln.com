@@ -7,6 +7,10 @@ categories:
 tags:
 - Ruby
 - Octopress
+- 博客
+- 静态网站
+- GitHub
+description: Octopress博客系统搭建教程，详细介绍如何像黑客一样写博客。文章推荐了基于markdown语法、git版本控制和Octopress/Jekyll的写作工作流，强调这种写作方式虽然有学习门槛，但能显著提高写作效率。教程包括配置GitHub账号、设置SSH密钥、克隆Octopress仓库、配置RVM、安装Gem包、生成模板文件、连接GitHub Pages、创建新文章、生成静态站点、部署到GitHub等完整流程。适合技术人员建立个人技术博客，实现纯文本写作和版本控制管理。
 ---
 
 ### 今年一直推荐的一种写作方式

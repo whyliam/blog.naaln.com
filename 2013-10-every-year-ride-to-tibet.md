@@ -5,6 +5,16 @@ date: 2013/10/15 21:12:00
 categories:
 - 旅行
 tags:
+- 骑行
+- 西藏
+- 间隔年
+- 旅行
+- 青春
+- 梦想
+- 成都
+- 拉萨
+- 视频
+description: 间隔年骑行西藏纪录片分享，记录2012年5-6月从成都到拉萨的2200公里骑行历程。视频展现了作者21岁时的间隔年经历，献给朋友们。文字表达了对青春梦想的感慨："曾经一个人走在陌生的旅途中泪湿眼眶的那份感动。当我们不再为当初一直激荡在内心的梦想澎湃时，当看着身边的朋友在为着生活、结婚、养儿育女、供房、买车朝九晚六的工作着，并开始接受、迎合现实，真的，一个人首先老去的是那份不顾一切、想走就走的心。我们有太多的无可奈何~趁年轻！"传达了对青春梦想的珍视和对现实的思考，鼓励年轻人珍惜年华，勇敢追逐梦想。
 ---
 
 <embed src="http://player.youku.com/player.php/sid/XNDE1MTQ5NzY4/v.swf" allowFullScreen="true" quality="high" width="480" height="400" align="middle" allowScriptAccess="always" type="application/x-shockwave-flash" />

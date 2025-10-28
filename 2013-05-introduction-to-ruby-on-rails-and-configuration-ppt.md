@@ -6,6 +6,11 @@ categories:
 - 技术
 tags:
 - Rails
+- Ruby
+- Web开发
+- MVC架构
+- 演讲
+description: Ruby on Rails框架深度介绍，包含Rails的设计理念、MVC架构解析和配置方法。文章阐述了Rails的核心精神"惯例优于配置"（Convention over Configuration），详细解释了MVC开发架构的三个组成部分：模型（Model）通过Active Record模式处理数据关系，控制器（Controller）协调用户界面和数据模型，视图（View）负责展示数据。追溯了Rails从2004年David Heinemeier Hanson从Basecamp分离并开源的历史，强调Rails作为"opinionated software"如何简化开发流程，提升开发效率。
 ---
 
 ##一、Ruby on Rails 介绍

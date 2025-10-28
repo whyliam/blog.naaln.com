@@ -7,6 +7,11 @@ categories:
 tags:
 - Ruby
 - Rails
+- 开发环境
+- 安装教程
+- Web开发
+- 跨平台
+description: Ruby和Ruby on Rails跨平台开发环境完整安装指南。详细介绍了在Windows、Linux、OS X三大主流操作系统下安装Ruby的多种方法：Windows系统推荐使用RubyInstaller一步安装包或二进制文件；Linux系统使用apt-get包管理器（如Debian/Ubuntu）或从源代码编译；Mac OS X系统可使用MacPorts、Fink或官方安装包。文章还提供了Ruby on Rails的安装步骤：使用gem install rails安装框架、创建Web应用（rails testweb）、启动Webrick服务器、在浏览器访问localhost:3000测试等。为Ruby on Rails初学者提供完整的环境搭建教程和开发流程指导。
 ---
 
 # Ruby 安装 在这里可以下载到适合您的最新的 Ruby 版本，当前稳定的版本是 2.0.0-p195。下载前请先阅读

@@ -5,6 +5,17 @@ date: 2013/11/24 05:32:00
 categories:
 - 随笔
 tags:
+- 自信
+- 社交
+- 沟通
+- 心理学
+- 人际交往
+- 职业发展
+- Networking
+- 演讲
+- 自我提升
+- 社交技巧
+description: 社交自信提升指南，基于作者在"Effective Business Communication"课程和多年社交经验的研究总结。文章提供了8个实用策略：1）从食物和酒开始——主动倒茶倒酒博得好感；2）主动打破僵局——做第一个伸出手和开口的人；3）保持好奇心——通过故事分享展现价值观；4）绝对不撒谎——保持透明度，建立信任；5）做好的倾听者——询问激情、短期目标、长期目标三个核心问题；6）记录笔记——借鉴克林顿记录他人信息的习惯；7）平滑结束对话——使用"I'm going to grab a cup of drink"的巧妙方式；8）成为给予者——基于沃顿商学院教授Adam Grant的"Give and Take"理论，强调贡献价值而非索取。传达"Be Smart. Be Generous. Be Thoughtful"的人际交往哲学。
 ---
 
 大三上过一节「Effective Business Communication」的课，Business Communication 基本是美国大学商学院的必备课程，不同学校不同教授的教法不一样，但感觉教科书上的内容太有限。随后深入研究了如何在陌生社交圈开口的问题，读了 Amazon 上搜索出来的关于 Networking 的第一页面的所有书，并做了很多笔记。

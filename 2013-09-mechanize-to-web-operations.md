@@ -6,6 +6,10 @@ categories:
 - 技术
 tags:
 - Mechanize
+- Ruby
+- 网页交互
+- 自动化测试
+description: Mechanize网页操作命令的参考手册。详细列举了Mechanize的各种操作方法，包括Agent对象设置、网页抓取、Form操作、链接点击、文件下载、表格数据提取等。涵盖user_agent配置、超时设置、认证处理、表单字段操作（文本框、密码框、下拉框、单选框、复选框、文件上传）、Frame处理、正则表达式匹配等实用功能。提供完整的代码示例，涵盖从基本的页面访问到复杂表单提交的完整流程。为网页自动化和测试提供全面的操作参考。
 ---
 
 与网页交互 (Interacting With a Web Page)

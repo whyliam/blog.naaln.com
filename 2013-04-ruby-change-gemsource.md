@@ -6,6 +6,12 @@ categories:
 - 技术
 tags:
 - Ruby
+- gem
+- 镜像源
+- 淘宝
+- 开发环境
+- Bundler
+description: Ruby gem源切换实用教程，解决中国大陆网络环境下gem安装缓慢或失败问题。详细介绍了ruby.taobao.org镜像源的使用方法，该镜像每15分钟同步一次rubygems.org资源。教程提供了完整的操作步骤：移除官方源（gem sources --remove）、添加淘宝镜像（gem sources -a）、列出当前源验证配置（gem sources -l）、使用新源安装gem等。同时提供了Bundle配置方式，在Gemfile中直接指定镜像源。为Ruby和Rails开发者在中国大陆快速搭建开发环境提供实用解决方案，显著提升gem安装速度。
 ---
 
 **为什么有这个？**

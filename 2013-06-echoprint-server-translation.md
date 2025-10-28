@@ -7,6 +7,15 @@ categories:
 tags:
 - echoprint
 - 翻译
+- 服务器
+- Solr
+- Tokyo Tyrant
+- 音乐识别
+- 索引
+- 存储
+- Apache2.0
+- bigeval
+description: Echoprint服务器组件翻译介绍，详解音乐识别系统的核心架构。服务器基于Apache Solr搜索引擎构建，集成Tokyo Tyrant快速键值存储，实现百万级音轨的快速匹配。技术架构：1）核心组件——基于Solr的Python粘合代码和匹配逻辑，以及Solr扩展；2）数据索引——使用倒排索引存储每个音轨的指纹代码，实现快速查找；3）评估工具——集成bigeval软件评估指纹识别准确性；4）许可协议——Echoprint服务器代码采用Apache2.0许可（Solr和Tokyo Tyrant分别采用Apache和LGPL许可）。文档说明正常使用中无需自建Echoprint服务器，可直接使用Echo Nest的识别API，但提供服务器源码供有需要的开发者自行部署和扩展。体现开源系统的灵活性和可扩展性。
 ---
 
 欢迎来到 EchoprintEchoprint 是一个开源的音乐是识别系统，他允许任何人在他们自己的应用上构建音乐指纹识别系统。感谢 [The Echo Nest](http://the.echonest.com/) 的技术支持，以及 [Musicbrainz](http://musicbrainz.org/) 的合作。
