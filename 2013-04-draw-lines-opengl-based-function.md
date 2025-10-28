@@ -5,7 +5,11 @@ date: 2013/04/02 20:32:00
 categories:
 - 技术
 tags:
-- OpenGL
+  - 技术
+  - OpenGL
+  - 图形编程
+  - C++
+description: OpenGL图形编程入门教程，详细演示了如何使用OpenGL库绘制基础线条。文章提供了完整的C++代码示例，包括初始化设置、画线函数实现、主程序结构等核心部分。通过GLUT工具包实现窗口管理，使用GL_LINES图元绘制红色线段，展示了OpenGL的基本绘图流程。
 ---
 
 刚刚开始学 opengl，mark 一下

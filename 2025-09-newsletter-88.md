@@ -6,10 +6,10 @@ categories:
   - 资讯
 tags:
   - NewsLetter
+  - 资讯
   - AI
-  - NotebookLM
-  - Agent
-  - 信息过滤
+  - 人工智能
+  - 科技
 description: 本期 Newsletter 聚焦 AI 领域的前沿动态与深度思考。从谷歌 NotebookLM 的设计哲学，看 AI 原生产品的用户体验创新；到 OpenAI 研究员姚顺雨对 Agent 未来发展的洞察，探讨通往 AGI 的路径；再到 News Minimalist 这一工具如何用 AI 帮助我们过滤信息噪音，把握世界脉搏。带你一览 AI 如何重塑信息获取、处理与创造的方式。
 ---
 ![L88_信息革命的下一站](https://pics.naaln.com/202509261557350.png-basicBlog)

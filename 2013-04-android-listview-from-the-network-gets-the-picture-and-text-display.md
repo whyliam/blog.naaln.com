@@ -6,6 +6,9 @@ categories:
 - 技术
 tags:
 - Android
+- Android开发
+- ListView
+description: Android开发教程，详细介绍如何实现ListView从网络获取图片及文字显示功能。教程涵盖完整的开发流程：创建XML布局文件（包括ListView主体布局和列表项布局）、使用selector和shape实现视觉效果、自定义BaseAdapter适配器、开发ImageLoader图片加载类（包含内存缓存和文件缓存机制）、编写Utils工具类处理数据流，以及主Activity的XML解析和数据绑定。文章提供完整代码实现，帮助开发者掌握Android应用中异步加载网络图片和显示列表数据的高级技巧。
 ---
 
 如何从网络获取图片以及文本来显示。事实上，一般是先获取 Josn 或 sml 数据，然后解释显示。我们先从网上获取 xml，然后对其进行解析，最后显示在 ListView 上。具体步骤：

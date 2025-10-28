@@ -6,6 +6,9 @@ categories:
 - 技术
 tags:
 - 程序员
+- 编程
+- 职业发展
+description: 总结高效程序员应具备的七个核心特征。内容包括：1）主动学习新技术和非技术知识，保持开放心态；2）务实不教条，根据业务需求灵活选择实现方案；3）善于通过研究找到答案，具备根本原因分析能力；4）对编程工作充满激情，全情投入；5）保持谦逊，将自负留在门外；6）具有企业家精神，关注产品成功；7）做事谨慎，先思考再行动。文章强调成为顶尖程序员不仅需要技术能力，更需要综合素质和正确的职业态度。
 ---
 
 英文原文：[Seven traits of effective programmers](http://www.techrepublic.com/blog/programming-and-development/seven-traits-of-effective-programmers/6750)
