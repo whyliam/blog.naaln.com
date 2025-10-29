@@ -3,12 +3,15 @@ layout: post
 title: 30个关于Python的你有所不知语言特效和技巧
 date: 2014/03/20 23:30:00
 categories:
-- 技术
+  - 技术
 tags:
-- Python
-- 编程
-- 技巧
-description: 收集整理Python编程中的30个语言特性和实用技巧。涵盖解包操作、负索引、列表切片、切片赋值、命名切片、zip/unzip操作、分组列表项、字典反转、列表扁平化、生成器表达式、字典推导式、命名元组、集合操作、计数器、双端队列、有序字典、默认字典、树形结构表示、最大最小元素、笛卡尔积、组合排列、迭代器链、按键分组等技巧。每个技巧都配有简洁的代码示例，按难度排序，帮助Python开发者深入理解语言特性，提升编程效率。
+  - Python
+  - Unpacking
+  - Slicing
+  - Collections
+  - Itertools
+description: 
+  展示Python常用且不常见的语言特性与技巧，涵盖序列解包、负索引、切片、列表推导、字典集合推导、生成器表达式、命名元组、Counter、双端队列、堆操作、itertools、笛卡尔积、组合与排列、分组迭代，适用于进阶开发者参考。
 ---
 
 By Sahand Saba 翻译 Liam

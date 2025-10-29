@@ -1,10 +1,16 @@
 ---
+layout: post
 title: Google 翻译重回中国
 categories:
   - 产品
 date: 2017/03/29 16:58:14
 tags:
   - Google
+  - Translate
+  - Voice
+  - Camera
+  - AI
+description: "谷歌翻译在网页版和移动端在中国大陆现已可用。语音互译支持三十二种语言，相机翻译无需联网支持三十种语言，文字翻译即时显示，支持分享和收藏。"
 ---
 
 由于一些不可告人的原因，我们知道 Google 的各项服务在国内都是半死不活的状态。

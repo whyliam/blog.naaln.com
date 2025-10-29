@@ -3,14 +3,14 @@ layout: post
 title: 善用时间轴，改变写歌和编曲协同方式的Splice想做音乐界的Github
 date: 2013/10/12 05:16:00
 categories:
-- 技术
+  - 技术
 tags:
-- 音乐科技
-- 协作工具
-- 产品设计
-- 创业
-- 互联网
-description: 介绍音乐创作协同工具Splice的创新理念。Splice通过引入时间轴概念，让音乐创作过程像软件开发一样拥有版本控制和协作功能。用户可以在云端保存每个版本的音乐作品，邀请合作者共同编辑，并查看每条音轨的修改历史。文章分析了Splice如何借鉴Github的模式，为音乐人提供隐私环境下的创作协作，以及其在商业模式、融资情况和发展前景方面的信息。探讨了协同工具在音乐行业的应用潜力。
+  - music
+  - collaboration
+  - timeline
+  - versioncontrol
+  - Splice
+description: Splice 是音乐创作协作平台，通过时间轴为音乐添加时间维度，实现版本保存、云端同步与合作者私密协作。每个版本记录音轨修改并支持评论和讨论，完成作品可导出标准文件并用 DNA播放器公开音轨邀请公众重编曲。采用免费增值与分发分成，兼容 Ableton、Logic 等主流宿主，获 USV 等机构 275 万美元种子投资，团队含 GroupMe 联合创始人。
 ---
 
 ![善用时间轴，改变写歌和编曲协同方式的Splice想做音乐界的Github](https://pics.naaln.com/blog/2022-02-15-600588.png-basicBlog)

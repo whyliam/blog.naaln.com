@@ -3,13 +3,15 @@ layout: post
 title: 构建音乐库并进行检索
 date: 2013/10/04 21:00:00
 categories:
-- 技术
+  - 技术
 tags:
-- echoprint
-- 音乐检索
-- 音频识别
-- 数据库
-description: 使用Echoprint构建本地音乐库并进行歌曲检索的实战教程。介绍如何将音乐文件放置在codegen目录，使用echoprint-server进行库构建，配置simplejson依赖。提供完整的Python代码示例，展示如何读取音频文件、生成指纹、存储到数据库。讲解如何将构建好的音乐库保存到disk.pki文件中，并进行歌曲匹配测试。实际测试使用林志炫的凤凰花开的路口片段进行识别验证。包含库构建和检索两个主要阶段的完整流程，为音乐识别系统开发提供实用参考。
+  - echoprint
+  - fingerprinting
+  - recognition
+  - python
+  - library
+description: 
+  使用echoprint将音乐文件放入codegenexemusic目录并下载服务器API到Python的sitepackages，安装simplejson后运行代码生成磁盘上的pkl数据库；库包含十首歌，随后解除注释进行查询，可通过更改测试文件为音频片段成功识别歌曲，若库中没有匹配则返回高分结果。
 ---
 
 这里介绍使用 echoprint 的库构建方法在本地建立一个音乐库的过程。

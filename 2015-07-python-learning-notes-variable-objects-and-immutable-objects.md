@@ -3,9 +3,13 @@ layout: post
 title: Python学习笔记——可变对象和不可变对象
 date: 2015/07/11 10:55:27
 categories:
-- 技术
+  - 技术
 tags:
-- python
+  - python
+  - immutable
+  - mutable
+  - objectreference
+description: "在Python中所有对象均在堆中分配，分为不可变对象如整数、字符串、浮点数、元组，和可变对象如列表、字典。不可变对象修改会生成新对象，可变对象直接在原对象上修改。函数参数对可变对象的影响会保留，对不可变对象则不影响，因为传递的是对象引用而非值。"
 ---
 
 > python 中，万物皆对象。

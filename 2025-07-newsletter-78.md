@@ -5,15 +5,13 @@ date: 2025/07/19 20:00:00
 categories:
   - 资讯
 tags:
-  - NewsLetter
-  - AI
-  - ChatGPT
-  - Agent
-  - 数字工作伙伴
-  - 技术更新
-  - 人工智能
-description: 本期 newsletter 聚焦于 OpenAI 最新发布的 ChatGPT Agent，解析其作为数字工作伙伴的全面升级。深入介绍 Agent 的核心能力，包括统一架构、丰富工具链与智能任务执行，并通过实际案例展示其在生活与工作中的应用潜力。同时，横向对比了 Manus 与 Skywork 等平台，凸显 ChatGPT Agent 在任务流畅度与结果完整性上的优势。最后，速览 AI 行业其他重要进展，覆盖 Google、百度、MiniMax、AWS 等多项技术更新。
+  - OpenAI
+  - AgentWorkflow
+  - DeepResearch
+  - Operator
+description: "ChatGPT Agent是OpenAI推出的统一智能体，整合Operator、Deep Research与ChatGPT能力，具工具链、深度接入、自动推送与高配额特性，适合生活与办公场景；文中对比Manus与Skywork的技术架构、执行方式、任务规划等维度，并汇总GoogleGemini通话与嵌入、百度Tizzy、AWS Kiro IDE、月之暗面Kimi K2、秘塔深度研究、PresentA"
 ---
+
 ![L78_数字工作伙伴的升级与未来](https://pics.naaln.com/2025-07-27-06aaa98b3c6e4ad0aaf76f8d06b2fd1d.png-basicBlog)
 
 最近，我参加了 OpenAI 的技术直播，重点发布内容是全新的 ChatGPT Agent。这个产品不仅是对现有 ChatGPT 的扩展，更像是一次对「数字工作伙伴」概念的全面升级。

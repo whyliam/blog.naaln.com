@@ -5,8 +5,13 @@ date: 2024/09/20 22:39:00
 categories:
   - 技术
 tags:
-  - Alfred
-  - Youdao  
+  - Alfred工作流
+  - 有道翻译
+  - 开源项目
+  - GitHub
+  - 版本迭代
+description: 
+  回顾九年前开发的Alfred工作流，因学习Python初学者及双语翻译需求而创建，项目在GitHub获得一千星并得到多位朋友的贡献，后被纳入开放源码软件保存计划，但因有道接口两次重大迭代导致词典查询功能逐渐停用，未来维护成谜，项目已宣布结束。
 ---
 
 回想起来，这已经是 9 年前的 workflows.youdao 了。当时我还是一名 Python 的初学者，因在双语学校学习，日常生活中有大量的中英文翻译需求。因此，我决定开发一个 Alfred 的 [workflows](https://github.com/whyliam/whyliam.workflows.youdao)，以满足自己的翻译需求。

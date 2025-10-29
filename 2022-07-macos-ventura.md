@@ -3,9 +3,15 @@ layout: post
 title: 在 MacBook 2013 安装 MacOS Ventura
 date: 2022/07/28 20:00:00
 categories:
-- 技术
+  - 技术
 tags:
-- 折腾
+  - 备份
+  - 时间机器
+  - macOSVentura
+  - 启动U盘
+  - OpenCore
+description: 
+  先在Mac上使用时间机器完成备份；随后通过macadminscripts或gibMacOS获取macOSVentura安装文件；将U盘格式化为macos扩展（日志式）并用createinstallmedia写入安装程序；下载OpenCoreLegacyPatcher设置SMBIOS并构建安装器；完成后选择硬盘安装OpenCore重新启动即可在不支持的Mac上安装macOSVentura。
 ---
 
 ### Create a Backup of Your Mac

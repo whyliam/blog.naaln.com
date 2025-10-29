@@ -3,8 +3,15 @@ layout: post
 title: RESTful Web 服务：教程
 date: 2016/12/13 19:00:00
 categories:
-- 技术
+  - 技术
+description: 
+  REST（表述性状态转移）是面向资源的网络架构风格，使用HTTP作为底层协议，围绕资源的定义、模型表示（JSON或XML）、消息与头部、URI定位、统一接口、安全与幂等、无状态约束、跨资源链接、缓存与文档化。设计强调可维护与可伸缩。URI使用名词、层级清晰、避免查询参数干扰搜索引擎。HTTP方法：GET（获取）、POST（创建/非幂等）、PUT（全量更新、幂等）、DELETE（删除）。请求包含方法
 tags:
+  - RESTful
+  - HTTP
+  - 无状态
+  - 统一接口
+  - 资源
 ---
 
 随着 REST 成为大多数 Web 和 Mobile 应用的默认选择，势必要对它的基本原理有所了解。

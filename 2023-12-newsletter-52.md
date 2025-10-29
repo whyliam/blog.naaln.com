@@ -5,12 +5,12 @@ date: 2023/12/24 20:00:00
 categories:
   - 资讯
 tags:
-  - NewsLetter
-  - 自我提升
   - 信息管理
-  - 学习方法
-  - 衰老与死亡
-  - 笔记心态
+  - 目标驱动
+  - 生产力
+  - 好奇心
+  - 反思
+description: "文章提出有目的地筛选信息与目标驱动的学习方式；揭示衰老导致的生理衰退包括脑萎缩、血管硬化与高血压；阐述四种笔记心态生产力、好奇、想象、反思，并介绍对应工具的适用场景。"
 ---
 
 - 以具周期性、目标性的方式接触信息，并通过有目的性的学习获取竞争优势。
@@ -113,5 +113,3 @@ tags:
 **相关延伸**:  
 
 - [The Four Note-Taking Mindsets](https://cameron-sea.medium.com/the-four-note-taking-mindsets-8b3302c4d963)
-
-

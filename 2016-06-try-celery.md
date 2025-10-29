@@ -1,9 +1,16 @@
 ---
+layout: post
 title: 试用 Celery
 date: 2016/06/28 12:25:53
-tags:
 categories:
-- 技术
+  - 技术
+description: Celery是一自带电池的任务队列，使用Redis、RabbitMQ等消息中间件，安装简单。代码使用Redis作为代理创建Celery实例，定义异步任务starcate处理耗时报告生成，启动celeryworker并发执行并监控任务状态，任务在数秒内完成返回结果。
+tags:
+  - Celery
+  - Redis
+  - RabbitMQ
+  - TaskQueue
+  - Python
 ---
 
 > `Celery` 是一个「自带电池」的任务队列。它易于使用，所以你可以无视其所解决问题的复杂程度而轻松入门。它遵照最佳实践设计，所以你的产品可以扩展，或与其他语言集成，并且它自带了在生产环境中运行这样一个系统所需的工具和支持。

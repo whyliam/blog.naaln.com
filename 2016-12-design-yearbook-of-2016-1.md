@@ -3,8 +3,14 @@ title: 2016设计年鉴（一）
 date: 2016/12/27 22:51:09
 categories:
   - 产品
+description: "那一年设计趋势回顾包括Uber品牌重塑推出彩色多边形标志，Instagram全新图标和彩虹渐变设计，网络热议原创争议，Facebook新增六种表情以表达情绪，DC漫画以复古风格更新品牌。"
 tags:
-- 设计
+  - Uber
+  - Instagram
+  - Facebook
+  - DC漫画
+  - 原创争议
+layout: post
 ---
 
 ![](http://pics.naaln.com/blog/2019-01-14-032221.jpg-basicBlog)

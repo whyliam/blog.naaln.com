@@ -3,9 +3,14 @@ layout: post
 title: 微信协议分析
 date: 2016/03/24 09:17:00
 categories:
-- 技术
+  - 技术
+description: "微信网络协议分析：测试iPhone6s iOS和安卓平台的HTTP请求，详细描述wx_header_t数据结构以及操作码对应登录、图片发送等功能。"
 tags:
-- 微信
+  - wechat
+  - protocol
+  - ios
+  - android
+  - opcode
 ---
 
 测试平台：iPhone6s iOS 9.2.1

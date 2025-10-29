@@ -3,9 +3,14 @@ layout: post
 title: L24_找到生活的热情
 date: 2023/06/11 20:00:00
 categories:
-- 资讯
+  - 资讯
 tags:
-- NewsLetter
+  - dopamine
+  - creativity
+  - game
+  - mindset
+  - passion
+description: "当情绪低落时需改变多巴胺来源转向创造性活动并尝试多巴胺断食以恢复生活热情；游戏设计应追求熵增避免重复过度商业化偏离动机；六个思维模式如放弃过往经验、消除负面声音、培养内在动机帮助个体突破限制激发创新活力和个人成长。"
 ---
 
 - 要改变心情低落的状态，需要改变多巴胺来源，避免只从消耗性活动中获取多巴胺，而应该将精力放在创造性活动上。
@@ -114,5 +119,3 @@ tags:
 
 **相关延伸**:
 - [The Technology](http://paulbuchheit.blogspot.com/2014/07/the-technology.html)
-
-

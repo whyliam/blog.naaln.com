@@ -3,10 +3,14 @@ layout: post
 title: GPT 的基本原理
 date: 2023/03/21 20:00:00
 categories:
-- 技术
+  - 技术
 tags:
-- AIGC
-- GPT
+  - AIGC
+  - 神经网络
+  - 注意力机制
+  - Transformer
+  - GPT
+description: "介绍了AIGC的流行背景，阐述神经网络、RNN的上下文记忆局限、注意力机制聚焦关键信息、Transformer自注意力的并行处理与长序列问题解决、GPT通过大规模无监督预训练和微调实现语言生成和任务适配的核心原理。"
 ---
 
 ### AIGC 突然火了？

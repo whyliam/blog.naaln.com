@@ -3,12 +3,14 @@ layout: post
 title: 史上最全MOOC平台收集
 date: 2014/03/05 06:12:00
 categories:
-- 技术
+  - 技术
 tags:
-- MOOC
-- 在线教育
-- 学习资源
-description: 全面梳理全球MOOC（大规模开放在线课程）平台的综合资源指南。详细介绍2012-2014年间世界各国推出的主要MOOC平台，包括Coursera、EdX、Udacity等三大平台，以及iversity、Future Learn、open2study等新兴平台。内容涵盖各国不同语言的专业MOOC平台，如日本Schoo、法国FUN、西班牙Miriada X等，还包括专业学科平台如MRUniversity（经济学）、openHPI（信息技术）等。为学习者提供丰富的在线教育资源选择，是了解MOOC发展历程和平台特色的珍贵资料。
+  - MOOC
+  - 在线课程
+  - Coursera
+  - EdX
+  - Udacity
+description: 2013年MOOC全球爆发，主流平台Coursera、EdX、Udacity；新锐平台iversity、FutureLearn、open2study；特色平台NovoED、P2PU；综合平台KhanAcademy、Alison；高校平台如斯坦福独立MOOC、清华学堂在线；语言平台Schoo、FUN、MiriadaX；专业平台MRUniversity、Poynter新闻大学等，提供大量免费或部分收
 ---
 
 如果说 2012 年是 MOOC 之年，那么 2013 年就是 MOOC 爆发之年。2013 年世界各国都推出了自己的 MOOC 平台。小编带你环游 MOOC 世界，盘点世界各国都有哪些 MOOC 平台。复制网址，还可以在手机浏览器上登录，总有一个 mooc 平台，是适合你的。

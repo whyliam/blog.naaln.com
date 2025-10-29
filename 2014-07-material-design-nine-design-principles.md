@@ -3,8 +3,14 @@ layout: post
 title: 「Material Design」的九大设计原则
 date: 2014/07/05 06:06:00
 categories:
-- 技术
+  - 技术
 tags:
+  - 材料隐喻
+  - 直观表面
+  - 维度交互
+  - 适应性设计
+  - 动画效果
+description: "谷歌发布材料设计语言，以材料隐喻、直观自然表面、维度交互、适应性设计、黑体图形意图、颜色表面图标动作、用户发起变化、统一动画及动作意义等原则，统一各平台外观，提升用户体验。"
 ---
 
 ![](http://pics.naaln.com/blog/2019-05-14-123114.jpg-basicBlog)

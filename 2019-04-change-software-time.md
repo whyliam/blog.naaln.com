@@ -1,10 +1,16 @@
 ---
+layout: post
 title: libfaketime 改变软件的运行时间
 categories:
   - 技术
 date: 2019/04/21 21:30:53
 tags:
-  - 破解
+  - libfaketime
+  - surge
+  - macos
+  - brew
+  - faketime
+description: "Libfaketime拦截系统调用返回伪时间，可单独修改程序时间而不影响系统。讲解使用brew或源码安装，提供在macos上借助faketime启动Surge的命令，并在10秒后自动退出以降低CPU占用。"
 ---
 
 ### Libfaketime

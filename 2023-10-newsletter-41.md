@@ -5,7 +5,12 @@ date: 2023/10/08 20:00:00
 categories:
   - 资讯
 tags:
-  - NewsLetter
+  - 时间管理
+  - 效率提升
+  - 个人品牌
+  - 任务转移
+  - 品牌建设
+description: "保护时间减少重复性工作和会议，回购时间雇人转移低价值任务填充高价值日程，个人品牌通过做印象深刻的事形成一致性和议价权。"
 ---
 
 - 保护时间的关键是减少浪费，通过消除重复性工作和控制会议数量来提高效率。
@@ -161,5 +166,3 @@ Morgan Housel 说：品牌并不代表最高的质量，而是你知道对他们
 - [知道低谷期存在，是一个很大的优势](https://xiaobot.net/post/434df029-aaf7-4cb7-ba6a-8b354d92ea72)
 - [**The Gap Between Reputation and Personal Brand**](https://commoncog.com/gap-between-reputation-personal-brand/)
 - [**Personal Brand as Moat, Personal Brand as Soft Landing**](https://commoncog.com/personal-brand-as-moat-personal-brand-as-soft-landing/)
-
-

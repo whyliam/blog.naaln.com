@@ -3,9 +3,14 @@ layout: post
 title: 产品经理认知
 date: 2020/02/15 20:00:00
 categories:
-- 产品
+  - 产品
 tags:
-- 产品经理
+  - Product
+  - UserNeeds
+  - ValueCreation
+  - ProductManager
+  - RequirementAnalysis
+description: "产品定义是满足用户需求的交换物，好产品需实现用户价值创造等价交换。产品经理角色是洞察需求创造价值促成交易者，核心职能包括认知用户需求设计方案和完成交易。"
 ---
 
 ### 1. 什么是产品

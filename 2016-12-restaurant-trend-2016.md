@@ -1,10 +1,16 @@
 ---
+layout: post
 title: 2016年餐饮领域出现的变化和趋势
 date: 2016/12/16 11:51:09
 categories:
   - 产品
+description: "2016年外卖行业竞争加剧，美团、饿了么、百度外卖三足鼎立，运营能力成关键；手机支付普及，餐厅支付场景占比最高；健康饮食受关注，植物基、古法与减废趋势升温；大众餐饮向小而精升级，单品店排队成风，融资快回报好。"
 tags:
-- 知乎
+  - fooddelivery
+  - mobilepayment
+  - healthydiet
+  - smallrestaurants
+  - markettrends
 ---
 
 答知乎问题： [2016 年餐饮领域出现了哪些变化和新趋势](https://www.zhihu.com/question/53176085#)

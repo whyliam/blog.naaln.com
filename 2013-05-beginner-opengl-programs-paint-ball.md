@@ -3,14 +3,14 @@ layout: post
 title: 初学OpenGL的程序（画球）
 date: 2013/05/30 20:16:00
 categories:
-- 技术
+  - 技术
 tags:
-- OpenGL
-- 3D图形
-- C++
-- 图形编程
-- GLUT
-description: OpenGL初学者入门程序，使用GLUT库实现球体绘制功能。程序实现了仿照教材2.4.3的例子，绘制由OpenGL基本体素（三角形、三角形带、四边形、四边形带）构成的球体。功能包括：通过控制glPolygonMode切换填充/线框模式；可改变球的数量和体积；使用glutGet(GLUT_ELAPSED_TIME)统计绘制时间；鼠标交互控制球体大小；右键菜单扩展功能（退出、增加半径、减小半径）。提供了完整的C++源代码实现，包含初始化、绘制、窗口调整、鼠标事件处理、旋转动画等模块。是学习OpenGL基本图形渲染和交互控制的实用示例。
+  - OpenGL
+  - GLUT
+  - Sphere
+  - Graphics
+  - Polygon
+description: 使用 GLUT 库在 OpenGL 中绘制球体，通过改变 a 参数调节经纬度分辨率控制球体数量和体积，利用 glPolygonMode 切换填充与线框模式，并通过 glutGet统计绘制时间，提供了完整示例代码及运行截图。
 ---
 
 1\. 利用 Glut 库，编写一个 OpenGL 程序，实现以下功能：

@@ -5,12 +5,11 @@ date: 2024/04/18 20:00:00
 categories:
   - 随笔
 tags:
-  - 科技
-  - AI
+  - 人形机器人
   - 人工智能
-  - 机器人
+  - 通用机器人
   - AGI
-description: 深度解析Figure AI通用人形机器人的技术突破与商业价值。文章详细介绍了Figure 01的核心能力，包括通过端到端AI系统10小时学会冲泡咖啡的惊人学习能力，以及流畅执行递苹果、整理餐具等复杂操作的实用价值。分析了创始人Brett Adcock从Vettery到Archer再到Figure AI的创业历程，展现了通用人形机器人从概念走向现实的技术演进路径，为理解AI与机器人融合的未来趋势提供独特视角。
+description: "Figure AI专注人形机器人开发，核心产品Figure 01身高170cm重60kg可载20kg，与OpenAI合作使用GPT模型实现智能对话思考能力。创始人Brett Adcock曾创立Vettery猎头平台和Archer电动飞机公司。Figure AI团队80人来自波士顿动力等公司，2024年2月完成B轮6.75亿美元融资估值26亿美元，参投方包括微软OpenAI英伟达等。公司使命通过先进"
 ---
 
 ![img](https://pics.naaln.com/blog/2024-04-19-c2f808.jpg-basicBlog)

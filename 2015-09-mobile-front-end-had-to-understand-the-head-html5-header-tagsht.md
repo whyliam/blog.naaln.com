@@ -3,9 +3,15 @@ layout: post
 title: 移动前端不得不了解的html5 head 头标签
 date: 2015/09/24 13:21:00
 categories:
-- 技术
+  - 技术
 tags:
-- HTML
+  - HTML
+  - meta
+  - 移动端
+  - SEO
+  - iOS
+description: 
+  该文系统阐述了HTML头部关键标签与meta信息，包括DOCTYPE、字符编码、lang属性、IE/Chrome兼容性、360极速核、百度禁止转码、SEO优化、viewport配置、iOS设备标识、图标和启动画面、Android主题色、Windows磁贴、RSS订阅、favicon以及关闭Google翻译插件等功能，并提供了完整的移动端头部示例，适用于前端开发者快速规范网页头部配置。
 ---
 
 本文主要内容来自一丝的常用的 [HTML 头部标签](https://github.com/yisibl/blog/issues/1) 和百度 FEX 的 [HTML head 头标签](http://fex.baidu.com/blog/2014/10/html-head-tags/)。

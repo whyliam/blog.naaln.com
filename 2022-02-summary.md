@@ -3,10 +3,15 @@ layout: post
 title: 2月小结｜一杯敬朝阳，一杯敬月光
 date: 2022/02/28 20:00:00
 categories:
-- 随笔
+  - 随笔
 tags:
-- 爱与鲜活
-- 小结
+  - 成长焦虑
+  - 第一性原理
+  - 职业发展
+  - 生活感悟
+  - 人生思考
+description: 
+  临近三十而立的年纪，疫情和妻子怀孕让作者半年未回家过年，面对老板未提拔的现实反思职业发展瓶颈。作者深刻体会到成长与赚钱的双重焦虑，引用巴菲特名言强调宁要模糊的正确也不要精确的错误，强调第一性原理思维的重要性。回顾之前加班严重的生活状态，渴望找到更加鲜活的人生意义，在立春时节重新审视自己的人生方向。
 ---
 
 <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=569200213&auto=1&height=66"></iframe>

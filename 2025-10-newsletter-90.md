@@ -5,11 +5,12 @@ date: 2025-10-11 11:07:00
 categories:
   - 资讯
 tags:
-  - NewsLetter
-  - AI产品
-  - 创业
-  - 增长策略
-description: 本期 Newsletter 聚焦 AI 产品在激烈竞争中的增长策略，通过 Kuse、PopAi 和 Fellou 的实战案例，揭示如何从 0 到 1 找到产品市场契合点并实现突破。同时探讨应用型 AI 公司应避免自研模型，转而依靠市场认知与快速迭代构建壁垒，并推荐了 Huxe 和 Karakeep 两款实用 AI 工具。
+  - AI增长策略
+  - 产品市场契合点
+  - 应用层创业
+  - AI工具
+  - 产品迭代
+description: "Linkloud 沙龙分享 AI 产品增长案例：Kuse.ai 通过 C2B 路径转型实现增长，PopAi 重 SEM 与长视频渠道策略，Fellou 创造 Agent Browser 新品类强调记忆能力。应用层创业公司应利用现有模型如 Gemini，认知与速度为核心壁垒而非自研。创始人需专注找细分用户与全球化视野。工具方面推荐 Huxe AI 播客与 Karakeep 网页收藏标签功能。"
 ---
 
 ![L90_产品增长之道与创业新机遇](https://pics.naaln.com/2025-10-12-913a76a83d0f43e981609166068ce6d0.png-basicBlog)

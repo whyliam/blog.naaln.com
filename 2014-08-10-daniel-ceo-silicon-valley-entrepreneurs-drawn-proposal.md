@@ -3,8 +3,14 @@ layout: post
 title: 10位硅谷大牛CEO们画出来的创业建议
 date: 2014/08/07 01:01:20
 categories:
-- 技术
+  - 技术
 tags:
+  - 创业
+  - YC
+  - Startup
+  - 创始人
+  - 投资人
+description: "《Paper版 Startup School 2013》用纸面展示10位创始人核心要点，内容聚焦产品、招聘、用户、创新，装帧独特，售价40美元，已被Business Insider分享。"
 ---
 
 ![](http://pics.naaln.com/blog/2019-05-14-123543.jpg-basicBlog)

@@ -3,17 +3,14 @@ layout: post
 title: 三大主流开源硬件对比：Arduino vs BeagleBone vs Raspberry Pi
 date: 2013/05/11 01:50:00
 categories:
-- 技术
+  - 技术
 tags:
-- Arduino
-- 树莓派
-- 开源硬件
-- 嵌入式
-- 对比
-- BeagleBone
-- 创客
-- 硬件开发
-description: 三大主流开源硬件平台的深度对比分析，由Roger Meike撰写。文章全面对比Arduino Uno、BeagleBone和Raspberry Pi三款开源硬件平台的性能、价格、扩展性等特性。分析了Arduino的简单易用性、Raspberry Pi作为35美元嵌入式电脑的高性价比、BeagleBone的强大Linux兼容性。提供了详细的规格对比表，揭示了各平台的差异：Arduino价格低廉但性能有限，Raspberry Pi和BeagleBone功能强大但需要额外存储卡成本。探讨了开源硬件对硬件创新的意义，分析了三者在微控制器项目中的应用潜力。为硬件开发者、创客和电子爱好者选择合适的开源硬件平台提供实用参考。
+  - Arduino
+  - BeagleBone
+  - RaspberryPi
+  - OpenSourceHardware
+  - Microcontroller
+description: 软硬件整合的趋势推动了开源硬件的快速发展，介绍Arduino Uno、BeagleBone和RaspberryPi三款主流开源平台，分别阐述其价格、性能、编程环境、支持操作系统以及可更换存储卡实现系统移植的优势和局限，帮助创客在成本、功能和易用性之间做出合适选择。
 ---
 
 软硬件整合是今年一再被提及的话题，如今我们也可以看到不少硬件创业的成功案例，比如 Jawbone Up、Pebble 手表等可穿戴设备，它们可与用户的手机同步，实现软件与硬件的结合。通过硬件创新与软件整合的概念还有许多。但是如何将创意变为现实，是一个难题。许多大公司均选择硬件闭源，从而形成的技术壁垒与专利版权，阻碍着小规模创新者的发展。而开源硬件，让创业者可以更轻松地将创意转化为现实。

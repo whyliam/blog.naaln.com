@@ -3,16 +3,15 @@ layout: post
 title: 让Openwrt在U盘运行
 date: 2013/09/22 10:39:00
 categories:
-- 技术
+  - 技术
 tags:
-- OpenWrt
-- 路由器
-- U盘
-- 系统安装
-- Linux
-- 嵌入式
-- 教程
-description: OpenWrt路由器系统U盘运行完整教程。详细介绍如何让OpenWrt在U盘上运行，替代路由器内置存储。教程包含四大部分：1）前提条件——路由器需有USB接口（如水星4530）和USB存储设备；2）所需组件——kmod-usb-ohci（USB1.1）、kmod-usb2（USB2.0）、kmod-usb-uhci（Intel/VIA控制器）、kmod-usb-stroage（USB存储设备）；3）执行命令——更新软件列表、安装自动挂载和USB启动组件、格式化U盘为ext3/ext4、同步系统文件到U盘；4）编辑配置文件——修改/etc/config/fstab设置自动挂载和USB启动。提供完整的命令行操作流程和配置文件示例。
+  - OpenWrt
+  - USB启动
+  - Ext文件系统
+  - 块挂载
+  - fstab
+description: 
+  通过opkg安装blockmount、blockhotplug、blockextroot及kmodusb模块，格式化USB存储为EXT文件系统，绑定挂载根目录并复制数据至USB，修改fstab使USB设备成为根文件系统，完成OpenWrt路由器的USB启动。
 ---
 
 1、前提条件：

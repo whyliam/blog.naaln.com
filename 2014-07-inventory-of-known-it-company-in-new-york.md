@@ -3,8 +3,15 @@ layout: post
 title: 纽约知名IT公司盘点
 date: 2014/07/18 12:28:00
 categories:
-- 技术
+  - 技术
 tags:
+  - 纽约
+  - 科技
+  - 创业
+  - 互联网
+  - 招聘
+description: 
+  纽约的知名IT公司包括Bitly、CodeCademy、FourSquare、Kickstarter、Meetup、MongoDB、Spotify、Tumblr和Vimeo。Bitly提供短链接服务，CodeCademy为在线编程学习平台，FourSquare提供位置签到与优惠券功能，Kickstarter是众筹平台，Meetup帮助组织线下活动，MongoDB为新型数据库，Spotify提供音乐
 ---
 
 在美国提起 IT 公司，很多人想到的是硅谷，因其独特的生态环境孕育了一批又一批伟大的公司，而提起纽约，大家想到的大都是金融公司，实际上美国很多地方都在学习硅谷模式，越来越多地方鼓励 IT 公司的发展，下面就盘点下在 New York City 孕育出来的知名 IT 公司，想在 NYC 找工作的同学也可以做个参考。

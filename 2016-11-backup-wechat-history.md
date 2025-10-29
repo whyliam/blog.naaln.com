@@ -2,9 +2,14 @@
 title: 如何备份导出 IOS 微信聊天数据库
 date: 2016/11/24 09:31:24
 categories:
-- 技术
+  - 技术
+description: "首先用数据线连接iPhone与Mac，打开iTunes选择本电脑并取消勾选加密，点击立即备份创建未加密的iTunes备份。随后下载安装iPhone Backup Extractor，打开左侧iTunes样式备份进入专家模式，选择应用程序com.tencent.xin目录下的用户UUID目录，定位DB目录内的MM.sqlite文件并导出。导出的即为微信聊天记录对应的SQLite数据库文件。"
 tags:
-- 微信
+  - iOS
+  - iTunes
+  - SQLite
+  - UUID
+layout: post
 ---
 
 网络上已经有一些关于探讨如何导出 IOS 版微信聊天记录的导出，比如 WeBack 和 iTools ，但这两类工具主导针对的都是小白用户，并没有给出如何获取完整数据库的方案，尽管实际原理相差无几，但想要程序更好地进行操作数据，还是所有差别，特此记录。

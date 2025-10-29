@@ -3,8 +3,14 @@ layout: post
 title: 如何不给红包就看朋友圈照片
 date: 2016/01/26 10:19:00
 categories:
-- 技术
+  - 技术
+description: "微信朋友圈新增红包才能查看照片功能，用户以抓包软件Replica抓取图片信息浏览Response页面，批评骗红包暗示建议花钱解决。"
 tags:
+  - wechat
+  - moments
+  - packet
+  - capture
+  - privacy
 ---
 
 好可恶，微信竟然弄了这个功能。然后我的朋友圈就雾霾了。有种想果断屏蔽的冲动。

@@ -3,16 +3,14 @@ layout: post
 title: Blog = GitHub + Octopress
 date: 2013/10/19 12:17:00
 categories:
-- 技术
+  - 技术
 tags:
-- Octopress
-- Github
-- 博客
-- 静态网站
-- Git
-- Ruby
-- 主题
-description: 基于GitHub + Octopress的博客搭建完整教程。作者分享了自己Fork的Octopress版本的定制功能和配置方法，包括单篇文章独立引用CSS/JS、修改RVM配置、使用淘宝gem源、用HAML替换Markdown、添加SHJS代码高亮插件、自定义标签生成器、主题定制等8个主要改动。文章详细介绍了8个步骤的完整建博流程：安装环境、配置主题、连接GitHub Pages、配置博客、数据备份准备、创建文章、部署到GitHub、数据备份。为想要摆脱WordPress臃肿、使用静态博客的开发者提供全面指导。
+  - Octopress
+  - GitHub
+  - 博客
+  - 搭建
+  - 部署
+description: "介绍基于作者Fork的Octopress版本在GitHub上建立博客的完整流程。包含版本改动说明和八个详细步骤：本地环境安装、主题安装、GitHub Pages连接、博客配置、备份准备、文章创建、部署发布、备份管理。详细说明每个步骤的具体操作命令和注意事项，提供完整的从零开始搭建个人博客的指南，帮助用户摆脱WordPress转向Octopress静态博客系统。"
 ---
 
 最近有些同学让我分享我的博客主题，其实主题早已经放在 GitHub 上了。下面索性基于 [我 Fork 的 Octopress][1]，讲一下如何使用 Octopress 在 GitHub 上建博客。先来看看我的版本和原始版本的主要不同之处：

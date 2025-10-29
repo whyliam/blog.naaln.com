@@ -5,7 +5,13 @@ date: 2020/07/25 20:00:00
 categories:
   - 随笔
 tags:
-  - 定位
+  - PersonalBrand
+  - WorkplaceValue
+  - TeamDynamics
+  - SelfAwareness
+  - ProfessionalGrowth
+description: 
+  团队组织调整后新同事自我介绍展现不同话题营造能力，有人通过突出车和买房等个人标签建立认知，温州朋友拒绝不符合自身价值的工作任务，强调职场中要找到自身长处创造更大价值才能有勇气拒绝不想做的事情，作者思考需要为个人定位和价值创造寻找答案。
 ---
 
 前段时间，我们组织架构的调整，我们迎来了新的老板，同时我们又开始了新的一轮的自我介绍。

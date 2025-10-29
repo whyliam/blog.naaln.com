@@ -3,15 +3,13 @@ layout: post
 title: Octopress博客技巧
 date: 2013/10/20 01:31:00
 categories:
-- 技术
+  - 技术
 tags:
-- Octopress
-- 博客
-- 静态网站
-- GitHub
-- 技巧
-- 教程
-description: Octopress博客使用技巧集合，涵盖8个实用技巧的详细说明。内容包括：1）首页文章部分显示（使用<!--more-->标签）；2）图片插入方法；3）草稿文章管理（设置published: false）；4）分类添加（单分类和多分类格式）；5）rake deploy失败强制推送解决方案；6）更换网站Favicon方法；7）解决preview端口占用问题；8）修复bundle install失败（Mac OS升级后的ruby重建）。每个技巧都提供了具体的操作步骤和代码示例，附有详细的错误信息分析和解决方法。是Octopress用户的实用参考手册。
+  - octopress
+  - blogging
+  - deploy
+  - markdown
+  - tutorial
 ---
 
 ## 0.首页仅显示部分

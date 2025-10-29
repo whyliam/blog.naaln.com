@@ -3,10 +3,14 @@ layout: post
 title: 消费品杂想
 date: 2022/03/31 20:00:00
 categories:
-- 随笔
+  - 随笔
 tags:
-- 消费
-
+  - meaning
+  - identity
+  - community
+  - authentic
+  - insight
+description: "消费趋势聚焦意义消费和身份构建，消费者购买品牌以表达自我转型愿望。品牌须支持社群运营并拥抱真诚沟通，建立信任与忠诚度。"
 ---
 
 最近听到身边很多做互联网的朋友都投身了消费品领域。

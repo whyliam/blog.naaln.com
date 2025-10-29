@@ -3,8 +3,15 @@ layout: post
 title: 杂想
 date: 2016/04/24 22:47:08
 categories:
-- 随笔
+  - 随笔
+description: 
+  我回忆自己的小众博客，从QQ空间迁移到WordPress、再转Hexo、最终放在Typecho上，伴随程序员博客文化的潮流。提到获得三元的赞助，并回顾一段青涩的暗恋：我曾用黑色背景和黑色文字隐晦表达对一个似沈佳宜的女孩的爱慕，暗藏的心意在日志中被埋藏。
 tags:
+  - 博客
+  - WordPress
+  - Hexo
+  - Typecho
+  - 记忆
 ---
 
 昨天我十分有幸获得了 3 元的赞助。

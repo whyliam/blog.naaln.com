@@ -2,9 +2,15 @@
 title: Swift之贪婪的UIButton
 date: 2016/12/14 10:33:23
 categories:
-- 技术
+  - 技术
+description: "阐述UIButton基础创建与标题设置图片与背景图的使用原理及resizableImageWithCapInsets的可变区域概念；说明AssetCatalogs可视切片的水平垂直拉伸方式；实现圆角头像复选框以及倒计时按钮的代码示例并指出UIButtonTypeCustom可避免闪烁；最后提供通过hitTest扩大点击响应范围的技巧适用于父视图捕获事件并转发至按钮。"
 tags:
-- Swift
+  - UIButton
+  - Swift
+  - iOS
+  - AssetCatalogs
+  - ImageSlicing
+layout: post
 ---
 
 ## 一、内容概要

@@ -4,7 +4,13 @@ categories:
   - 产品
 date: 2017/08/12 23:43:27
 tags:
-  - 增强现实
+  - AugmentedReality
+  - UserExperience
+  - ProductDesign
+  - SmartHome
+  - EyeTracking
+description: "探讨增强现实技术通过价值超越痛苦的评估框架，分析AR在日常生活中的十个直观应用场景。从智能家居导航、产品信息识别到设备状态管理，展示了语音交互和眼动追踪技术的实际应用。核心理念是评估AR技术能否足够引人注目，成为提升生活工作的必需品，通过Scott Jenson的价值痛苦理论进行深度分析。"
+layout: post
 ---
 
 ![](http://pics.naaln.com/blog/2019-01-14-031918.jpg-basicBlog)

@@ -3,15 +3,13 @@ layout: post
 title: 详解Fedora 18 U盘安装技巧
 date: 2013/08/12 06:20:00
 categories:
-- 技术
+  - 技术
 tags:
-- Fedora
-- Linux
-- 系统安装
-- U盘安装
-- 操作系统
-- 教程
-description: Fedora 18系统U盘安装完整图文教程，由2013系统下载网提供。详细介绍了Fedora 18开源操作系统的U盘安装方法，包括制作启动盘和系统安装全流程。教程重点讲解了isolinux.cfg配置文件的修改技巧：将Fedora-18-Beta-i686-Live-Desktop改为Fedora-18-B、复制配置文件到syslinux.cfg、调整盘符标签等关键操作步骤。提供了从下载ISO镜像、修改配置文件、重启安装到进入LiveSystem的完整流程。为需要在电脑上安装Fedora 18的用户提供详细的操作指南和注意事项，确保安装过程顺利进行。
+  - Fedora
+  - Linux
+  - USB安装
+  - 系统安装
+description: 先下载Fedora十八 三十二或六十四位官方ISO写入U盘；在isolinux目录找到isolinux配置 文件，将其中的Fedora 十八 Beta i686 Live Desktop改为Fedora 十八B；复制文件为syslinux配置 文件；确认盘符标签后重启，进入BIOS设为U盘启动，点Start Fedora 十八回车进入Live系统，再点LiveSystemUser即可安装。
 ---
 
 **导读**：

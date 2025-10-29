@@ -3,9 +3,15 @@ layout: post
 title: 有赞产品基本原则
 date: 2019/08/17 20:00:00
 categories:
-- 随笔
+  - 随笔
 tags:
-- 琢磨
+  - ProductDesign
+  - ToBProducts
+  - ProductStrategy
+  - UserExperience
+  - ProductOperations
+description: 
+  产品设计以发现、解决、验证问题为核心。产品人需具备清晰思维、表达能力和快速试错能力。核心是ToB产品的全场景闭环设计，确保每个商家独立个性化。必须坚持稳定压倒一切、说人话、一致表达原则。运营遵循先有再高效易用好看，持续关注产品不骚扰用户。产品结构需可延续可拓展，习惯路径比减少点击更重要。设计可持续正向增长模式，找到用户价值与商业价值结合点。
 ---
 
 ![](http://pics.naaln.com/blog/2019-08-18-085213.jpg-basicBlog)

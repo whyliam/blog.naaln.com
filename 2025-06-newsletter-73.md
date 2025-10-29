@@ -5,14 +5,14 @@ date: 2025/06/13 20:00:00
 categories:
   - 资讯
 tags:
-  - NewsLetter
-  - AI
   - OpenAI
-  - 行业动态
-  - 大模型
+  - AI模型
   - 视频生成
-description: 本期Newsletter聚焦于AI领域的技术迭代加速，涵盖OpenAI、谷歌、Mistral等最新模型发布，以及苹果、微软、字节跳动等科技巨头的AI战略布局。同时介绍开源社区动态与行业专家观点，展现AI技术的快速发展及其广泛应用前景。
+  - 企业战略
+  - 开源社区
+description: AI技术快速迭代，o3Pro、AlphaZero、MuZero、AlphaDev、Claude4、Sora、Veo3等突破；苹果WWDC25与OpenAI合作，字节Seedance10、微软Bing视频生成推进；开源Qwen3、AutoThink、MiMoVL、DeepResearch；特斯拉质检、讯飞机器人、水利标准AI、房地产Agent落地；SamAltman倡议马上行动，潘云鹤寄语创业。
 ---
+
 ![技术迭代加速](https://pics.naaln.com/2025-06-15-c75ba008143c499db013435c27ec8efc.png-basicBlog)
 
 AI 领域呈现出技术迭代加速、应用场景扩展、企业战略调整和投资热度上升的特点。从模型能力的提升到实际应用的落地，从开源社区的活跃到商业化的推进，AI 技术正以前所未有的速度改变着各行各业。

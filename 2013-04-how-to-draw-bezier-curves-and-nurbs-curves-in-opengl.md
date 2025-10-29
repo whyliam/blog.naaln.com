@@ -3,18 +3,14 @@ layout: post
 title: OpenGL中如何绘制Bezier曲线和NURBS曲线
 date: 2013/04/03 01:37:00
 categories:
-- 技术
+  - 技术
 tags:
-- OpenGL
-- Bezier曲线
-- NURBS曲线
-- 图形绘制
-- GLUT
-- 求值器
-- 曲线生成
-- 3D图形
-- 计算机图形学
-description: OpenGL高级曲线绘制教程，详细介绍Bezier曲线和NURBS曲线的绘制方法。第一部分Bezier曲线：讲解glMap1（定义求值器）和glEvalCoord1（生成曲线坐标）的使用，参数包括target目标类型、u1/u2变量范围、stride跨度、order阶数等；提供完整的9个控制点示例代码，使用GL_MAP1_VERTEX_3和glEvalMesh1生成光滑曲线。第二部分NURBS曲线：介绍gluNurbsCurve（定义曲线形状）、gluNurbsProperty（设置属性）、gluBeginCurve/gluEndCurve（限定曲线）的使用方法；详细解析参数含义：nknots节点数、knot节点值数组、ctlarray控制点数组、order阶数、type曲线类型等；提供完整的NURBS对象创建和曲线绘制代码，包含控制点显示功能。适合学习OpenGL高级图形绘制技术和曲线生成算法。
+  - Bezier
+  - NURBS
+  - OpenGL
+  - Curve
+  - Rendering
+description: "OpenGL中Bezier曲线的映射、求值以及NURBS曲线的节点、控制点和属性设置，包含完整C语言示例代码，实现曲线绘制。"
 ---
 
 **一、Bezier 曲线**

@@ -3,8 +3,14 @@ layout: post
 title: codeship 自动部署 - AWS 配置
 date: 2016/05/18 22:50:00
 categories:
-- 技术
+  - 技术
+description: "在AWS上配置CodeShip和CodeDeploy的步骤包括创建IAM用户和策略、配置S3存储桶、启动Compute实例、创建CodeDeploy应用程序及部署组，完成基础部署流程。"
 tags:
+  - CodeShip
+  - CodeDeploy
+  - AWS
+  - IAM
+  - Compute
 ---
 
 今天基本理清了 `CodeShip` 和 `CodeDeploy` 的用法。

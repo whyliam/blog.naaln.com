@@ -3,9 +3,14 @@ layout: post
 title: 创业虽火，量力而行
 date: 2015/03/09 00:12:00
 categories:
-- 随笔
+  - 随笔
 tags:
-- 创业
+  - 创业
+  - 风险
+  - 执行力
+  - 学习能力
+  - 校园社交
+description: "创业需量力而行，家庭朋友更重要；大学生盲目创业，成功率极低；五名名校生无产品经验，校园社交概念拼凑，依赖融资；缺乏执行力和学习能力难以成功；投资者不易被蒙骗。"
 ---
 
 The hot start, within our capabilities

@@ -4,7 +4,12 @@ categories:
   - 产品
 date: 2019/04/30 20:30:53
 tags:
-  - Markdown
+  - Markdown编辑器
+  - 写作工具
+  - 文档管理
+  - 博客工具
+description: "介绍多种Markdown写作和编辑工具的特点与选择依据。按外部文件夹管理、快速创建可视化文档、技术性文档编写和在线文档管理四个场景，对Yu Writer、Ulysses、MWeb、MacDown、Typora、Mark Text、Sublime Text、VSCode、语雀等工具进行对比分析。MWeb因Hexo渲染速度快而获推荐用于文件夹管理；快速可视化文档从MacDown转向开源的Mark Te"
+layout: post
 ---
 
 最近文章没有写多少，但是工具一定要挑好……

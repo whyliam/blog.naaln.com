@@ -3,18 +3,15 @@ layout: post
 title: echoprint服务端ubuntu环境塔建
 date: 2013/09/16 08:16:00
 categories:
-- 技术
+  - 技术
 tags:
-- echoprint
-- Ubuntu
-- 声纹识别
-- 服务器
-- 搭建
-- Java
-- Python
-- TokyoTyrant
-- Solr
-description: Echoprint声纹识别服务端在Ubuntu系统下的完整搭建教程。详细记录了从零开始搭建Echoprint服务器的全过程，包括：安装Java环境（配置JDK、设置环境变量）、安装web.py框架、安装setuptools、安装tokyocabinet和tokyotyrant数据库、配置ttserver服务、下载和运行echoprint-server、启动Solr搜索服务等。提供了详细的命令行操作步骤、错误处理方法（如Failed to extract文件处理、共享库错误修复）和服务验证命令（tcrmgr inform）。适合需要在Linux服务器上部署声纹识别系统的开发者参考。
+  - ubuntu
+  - java
+  - python
+  - webpy
+  - echoprint
+description: 
+  本文介绍了在Ubuntu上搭建运行音频指纹服务器的完整流程，包括安装Java、Python、web.py，配置tokyocabinet和tokyotyrant，启动ttserver，以及启动音频指纹服务器的步骤和注意事项。
 ---
 
 先配置一下 ubuntu 的环境以备后用，安装这些东西：

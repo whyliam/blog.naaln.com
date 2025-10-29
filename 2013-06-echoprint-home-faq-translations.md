@@ -3,38 +3,26 @@ layout: post
 title: Echoprint Home / FAQ （翻译）
 date: 2013/06/17 12:01:00
 categories:
-- 技术
+  - 技术
 tags:
-- echoprint
-- 翻译
-- FAQ
-- 问答
-- 音乐识别
-- 开源项目
-- 开发者
-- OTA识别
-- 商业化
-description: Echoprint开源音乐识别系统官方主页和FAQ翻译文档，全面介绍Echoprint项目。文档涵盖三大部分：1）系统更新——Echoprint数据库已更新超过100万首歌曲，Codegen 4.12版本发布，包含bug修复和文档更新；2）核心FAQ——详细回答开发者关心的问题：是什么（音乐指纹识别系统）、目标用户（开发者和音乐产业）、商业化许可（MIT和Apache 2.0）、OTA支持（通过麦克风识别）、文件扫描、成熟度、扩展性等；3）项目状态——数据状态（15万首流行音乐）、质量保证（Codegen 4.12达gold标准）、服务状态（已在Echo Nest运行）。文档体现开源透明理念，为开发者提供完整的技术文档和使用指导，鼓励社区参与贡献。
+  - 音乐识别
+  - 开源项目
+  - 码生成
+  - 数据库
+  - 接口
+description: "Echoprint 是开源音乐指纹识别系统，数据库由 EchoNest 提供，已更新至 4.12 编码器，新增百万歌曲列表；提供 GitHub 下载、服务器数据页面、Codegen 编译指南；FAQ 包括商业使用、OTA 麦克风识别、文件扫描、匹配性能、最佳匹配；系统可扩展至每秒 50 查询，适用于去重、版权检测等场景。"
 ---
 
 欢迎来到 EchoprintEchoprint 是一个开源的音乐是识别系统，他允许任何人在他们自己的应用上构建音乐指纹识别系统。感谢 [The Echo Nest](http://the.echonest.com/) 的技术支持，以及 [Musicbrainz](http://musicbrainz.org/) 的合作。
 
 → [Home / FAQ](https://blog.naaln.com/2013/06/echoprint-home-faq-translations/)
-
 → [Download from GitHub](http://github.com/echonest/)
-
 → [How it works](https://blog.naaln.com/2013/06/echoprint-how-it-works-translation/)
-
 → [Get started](https://blog.naaln.com/2013/06/echoprint-get-started-translate/)
-
 → [Contact / Support](http://echoprint.me/contact)
-
 → [Data access](https://blog.naaln.com/2013/06/echoprint-data-access-translation/)
-
 → [Server](https://blog.naaln.com/2013/06/echoprint-server-translation/)
-
 → [Codegen](https://blog.naaln.com/2013/06/echoprint-codegen-translation/)
-
 → [Twitter - @echonest](http://twitter.com/echonest)
 
 ![](http://pics.naaln.com/blog/2019-05-14-123222.jpg-basicBlog)

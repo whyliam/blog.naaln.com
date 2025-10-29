@@ -5,12 +5,12 @@ date: 2023/11/26 20:00:00
 categories:
   - 资讯
 tags:
-  - NewsLetter
-  - 刺猬概念
-  - 山姆·奥特曼
-  - 技术增长
-  - 自我理解
-  - 成功理念
+  - Focus
+  - Success
+  - Technology
+  - Economy
+  - Development
+description: "刺猬概念倡导聚焦个人和企业核心优势以达到卓越，Sam Altman 总结成功理念强调非线性成长、创新思维和资产积累，而 Marc Andreessen 断言只有技术是永恒的增长动力。"
 ---
 
 - 刺猬概念强调深刻理解自己能成为世界第一的领域、驱动财富的因素和真正热情之事，核心在于识别并放弃自己无法做到最好的事，专注于能出色完成的领域，如同富国银行案例所展示的，专注本土市场优势而非追求全球性业务，从而实现卓越成就。
@@ -83,5 +83,3 @@ Marc Andreessen 在 a16z 官网正式发布了技术乐观主义者宣言《The 
 
 **相关延伸**:  
 [技术是唯一永恒的增长源泉](https://www.techflowpost.com/article/detail_14228.html)
-
-

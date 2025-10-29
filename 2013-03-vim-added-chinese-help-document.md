@@ -3,16 +3,14 @@ layout: post
 title: VIM添加中文帮助文档
 date: 2013/03/31 20:00:00
 categories:
-- 技术
+  - 技术
 tags:
-- vim
-- Linux
-- 配置
-- 中文文档
-- vimcdoc
-- 编辑器
-- 教程
-description: Vim编辑器中文帮助文档完整安装配置指南。教程从创建.vim目录结构开始：建立.vim、.vim/plugin、.vim/doc、.vim/syntax等目录，以及用户配置文件.vimrc。详细介绍从vimcdoc.sf.net下载适配Vim 7.3的中文文档、安装步骤（解压doc文件夹到vim/doc目录）、配置helplang和encoding参数。提供了中英文帮助文档切换方法（helplang=en/cn）、UTF-8编码设置、全局配置/etc/vim/vimrc与用户配置/home/.vimrc的区别。教程强调Linux精神：用户个性化配置优先于全局配置。为Vim中文用户提供了本地化帮助文档的完整解决方案。
+  - vim
+  - vimrc
+  - helplang
+  - encoding
+  - doc
+description: 在用户主目录创建隐藏文件夹 .vim 并在其下新建 plugin、doc、syntax 子目录；再在主目录创建 .vimrc；下载并解压针对 vim7.3 的中文帮助文档 vimcdoc-1.8.0.tar.gz，将其中的 doc 内容复制到 .vim/doc；随后在 .vimrc 中加入帮助语言设为中文，即可启用中文帮助，并设置编码为统一编码以保证正确显示；中文帮助不会覆盖英文帮助，需使用英文时
 ---
 
 安装中文帮助文档之前首先执行下列操作：

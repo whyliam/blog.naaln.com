@@ -3,33 +3,26 @@ layout: post
 title: Echoprint Get started（翻译）
 date: 2013/06/17 12:04:00
 categories:
-- 技术
+  - 技术
 tags:
-- echoprint
-- 音乐识别
-- 开源
-- 翻译
-description: Echoprint开源音乐识别系统的入门指南翻译文档。Echoprint是由The Echo Nest技术支持、Musicbrainz合作的音乐指纹识别系统，允许开发者构建自己的音乐识别应用。文章介绍了四种主要使用场景：个人电脑或服务器上的歌曲识别、音乐库重复歌曲删除、iOS平台歌曲识别，以及运行Echoprint识别自定义数据。针对每种场景提供了具体的实现步骤和参考资源，为初学者提供了清晰的入门路径。
+  - 音乐识别
+  - 重复删除
+  - iOS
+  - 开源
+  - 系统
+description: "Echoprint 开源音乐识别系统用于在应用中构建指纹识别。支持个人电脑或服务器歌曲识别、音乐库重复删除、iOS 平台歌曲识别、自有数据识别。提供 GitHub 下载、服务器说明、iOS 示例、数据访问等资源，建议加入 Echoprint 谷歌小组。"
 ---
 
 欢迎来到 EchoprintEchoprint 是一个开源的音乐是识别系统，他允许任何人在他们自己的应用上构建音乐指纹识别系统。感谢 [The Echo Nest](http://the.echonest.com/) 的技术支持，以及 [Musicbrainz](http://musicbrainz.org/) 的合作。
 
 → [Home / FAQ](https://blog.naaln.com/2013/06/echoprint-home-faq-translations/)
-
 → [Download from GitHub](http://github.com/echonest/)
-
 → [How it works](https://blog.naaln.com/2013/06/echoprint-how-it-works-translation/)
-
 → [Get started](https://blog.naaln.com/2013/06/echoprint-get-started-translate/)
-
 → [Contact / Support](http://echoprint.me/contact)
-
 → [Data access](https://blog.naaln.com/2013/06/echoprint-data-access-translation/)
-
 → [Server](https://blog.naaln.com/2013/06/echoprint-server-translation/)
-
 → [Codegen](https://blog.naaln.com/2013/06/echoprint-codegen-translation/)
-
 → [Twitter - @echonest](http://twitter.com/echonest)
 
 ![](http://pics.naaln.com/blog/2019-05-14-123358.jpg-basicBlog)

@@ -1,9 +1,16 @@
 ---
 title: 理解Swift中Extension类型
 date: 2016/07/26 10:32:08
+description: "通过Ruby的times循环示例说明一切皆对象思想，随后用Swift的extension为Int添加times方法展示结构体亦可拥有方法；继续演示Double扩展实现单位换算的语法；最后提供UIView扩展添加点击上浮动画的完整代码，说明extension提升可读性、可维护性以及运行时替换的可行性。"
 tags:
+  - ruby
+  - swift
+  - extension
+  - uiview
+  - 动画
 categories:
-- 技术
+  - 技术
+layout: post
 ---
 
 ```

@@ -4,6 +4,13 @@ categories:
   - 技术
 date: 2019/05/04 18:30:53
 tags:
+  - iOSHealth
+  - StepModification
+  - DatabaseEditing
+  - SQLQuery
+  - Jailbreak
+description: "讲解修改iPhone健康应用步数数据的方法，通过越狱访问healthdb_secure.sqlite数据库，使用SQL语句修改quantity_samples表中的步数数值，实现数据更新以满足'一起来捉妖'游戏的孵蛋需求，并提供相关查询语句和操作示例。"
+layout: post
 ---
 
 最近上迷于「一起来捉妖」，里面有一个孵蛋的功能。就是由一天走路的步数转化为孵蛋的进度。

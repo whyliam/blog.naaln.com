@@ -1,9 +1,17 @@
 ---
+layout: post
 title: Pokemon Go 的奇技淫巧
 date: 2016/07/18 21:46:10
-tags:
 categories:
-- 技术
+  - 技术
+description: 
+  该文整合宝可梦最新拆包信息，概述熏香刷新规则（同属性加成系数一点二五），神兽无捕捉需大师球；训练师上限一百级，球类解锁规律及捕获里程碑；树果五种；精灵最高四十级（孵蛋二十、野三十）；进化不改变等级与个体值；隐藏攻击防御耐力属性及战斗值计算、乘数、最大战斗值估算；身高体重无影响；捕捉行为参数示例。
+tags:
+  - PokemonGo
+  - Incense
+  - SameTypeAttackBonus
+  - TrainerLevel
+  - MasterBall
 ---
 
 消息来源主要是贴吧，Reddit，pokemon 一个数据网站，以及我自己的一点经验。

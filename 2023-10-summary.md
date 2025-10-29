@@ -5,8 +5,12 @@ date: 2023/10/30 20:00:00
 categories:
   - 随笔
 tags:
-  - 爱与鲜活
-  - 小结
+  - 尼采
+  - 悬浮
+  - 理想
+  - 现实
+  - 生活哲学
+description: "尼采说生命应大胆冒险，最难在自我理解。现代社会悬浮现象：专注未来否定当下，追求目标不确定。理想源于现实会变形。生活关键在于行路贴切真实天性保持通透。"
 ---
 
 <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=27506031&auto=1&height=66"></iframe>

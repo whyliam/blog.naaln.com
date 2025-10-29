@@ -1,10 +1,16 @@
 ---
+layout: post
 title: 实现侧滑效果 Swift
 categories:
   - 技术
 date: 2017/04/03 23:04:06
 tags:
+  - iOS
   - Swift
+  - UIPanGestureRecognizer
+  - CGAffineTransform
+  - Animation
+description: "iOS开发中的侧滑菜单实现方法：使用Swift语言和手势识别进行线性缩放动画，包含环境配置、数据采集、代码实例和演示截图。"
 ---
 
 ### 代码示例

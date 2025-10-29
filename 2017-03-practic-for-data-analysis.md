@@ -1,10 +1,17 @@
 ---
+layout: post
 title: 入门篇图表练习
 date: 2017/03/03 20:55:03
 categories:
   - 产品
 tags:
-- 数据
+  - ExcelCharts
+  - DataVisualization
+  - BusinessCharts
+  - ChartDesign
+  - ExcelTools
+description: 
+  详细介绍Excel图表制作方法涵盖平均线图竖形折线图瀑布图帕累托图旋风图漏斗图六种图表类型操作技巧包括设置纵坐标单位坐标轴文字方向图例拖拽分类间隔等关键技术点及JWalkChartTools工具使用方法提供漏斗图转化率箭头文字处理和百分位数格式设置完整指南帮助读者掌握专业Excel数据可视化技能
 ---
 
 ### 平均线图

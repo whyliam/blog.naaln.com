@@ -1,10 +1,16 @@
 ---
+layout: post
 title: Beyond Compare 永久试用
 categories:
   - 技术
 date: 2019/04/21 11:30:53
 tags:
-  - 破解
+  - BeyondCompare
+  - Mac
+  - 注册信息
+  - 试用
+  - 脚本
+description: "在启动BeyondCompare前删除用户库中的registryDat恢复试用。将BCompare改名为BCompareReal并新建同名脚本调用删除registryDat后启动真实程序，设置脚本执行权限即可。"
 ---
 
 ### 一、原理

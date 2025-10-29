@@ -5,7 +5,13 @@ date: 2023/10/22 20:00:00
 categories:
   - 资讯
 tags:
-  - NewsLetter
+  - 讨好人格
+  - 极简主义
+  - 哲学
+  - 恐惧
+  - 自我接纳
+description: 
+  讨好型人格的心理根源包括无法拒绝、无条件附和、无法提出要求、过度积极主动、只做别人期待的事、过度自省，根源是自恋与自卑；哲学思想指出生活冲突与思想老旧，意志力本质是欲望，恐惧由记忆与时间支撑，提倡直截了当地观察自己；现代极简主义被商业包装，消费倾向与整理产业出现讽刺，主张以环保和自我为中心的极简实践。
 ---
 
 - 讨好型人格的心态，包括无法拒绝他人、无条件附和、无法提出要求、过分积极主动、只做别人期待的、过度自省等特点，并提到了解决方案是自我接纳和珍爱自己。
@@ -191,5 +197,3 @@ tags:
 - [*Have We Got Minimalism All Wrong?*](https://www.bbc.com/culture/article/20210330-is-a-simple-minimalist-life-the-key-to-happiness) — Beverley D’Silva
 - [*The empty promises of Marie Kondo and the craze for minimalism*](https://www.theguardian.com/lifeandstyle/2020/jan/03/empty-promises-marie-kondo-craze-for-minimalism) — Kyle Chayka
 - [#42 极简主义的幻象 | CyberClip (zhubai.love)](https://shyrz.zhubai.love/posts/2317186475051565056)
-
-

@@ -3,9 +3,14 @@ layout: post
 title: pcduino入手ssh连接开放vncserver远程服务
 date: 2014/03/07 06:58:00
 categories:
-- 技术
+  - 技术
 tags:
-- pcDuino
+  - pcDuino
+  - ArmLinux
+  - SSH
+  - VNC
+  - x11vnc
+description: 这台低成本迷你PC运行Ubuntu或AndroidICS并支持Arduino兼容接口。因无显示器通过SSH连接并解决VNC连接被拒绝问题。执行命令启动x11vnc并将密码与配置文件复制到系统目录，接着编写Upstart脚本实现登录后自启动，最后使用VNC客户端远程访问，键盘鼠标自动共享。文章简要记录操作步骤。
 ---
 
 pcDuino 是一种高性能，高性价比的迷你 PC 的平台，能够运行 PC 操作系统，如 Ubuntu 和 Android 的 ICS 等。它可以通过内置 HDMI 接口输出视频到电视或显示器屏幕。pcDuino 专门针对开源社区快速增长的需求，即希望有一个平台可以运行完整的 PC 操作系统，容易使用的工具链和兼容流行的 Arduino 开放的生态系统，如 Arduino shield 和开源项目等。就是如下这一只，板子其实很小，兼容 Arduino 接口：

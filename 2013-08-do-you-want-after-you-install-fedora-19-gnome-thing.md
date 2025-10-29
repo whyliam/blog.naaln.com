@@ -3,17 +3,15 @@ layout: post
 title: 安装 Fedora 19 GNOME 后需做的事
 date: 2013/08/13 08:48:00
 categories:
-- 技术
+  - 技术
 tags:
-- Fedora
-- Linux
-- GNOME
-- 系统配置
-- 软件安装
-- 系统优化
-- 桌面环境
-- 教程
-description: Fedora 19 GNOME系统安装后完整配置指南，涵盖系统优化和软件安装全流程。教程分为三大模块：1）系统初始化配置——停止firewalld防火墙服务、禁用SELinux安全模块；2）软件源配置——安装Rpmfusion免费和非免费源，获得丰富的软件资源和音视频解码器；3）常用软件安装——32位库文件支持、WPS办公软件、Gnome Tweak Tool、Sublime Text编辑器、Fcitx中文输入法、Chrome浏览器、Flash插件、音视频解码器等。提供详细的命令行操作步骤和下载链接，帮助用户快速搭建完善的Fedora工作环境。是Fedora新用户的实用配置手册。
+  - fedora
+  - rpmfusion
+  - gnometweaktool
+  - fcitx
+  - googlechrome
+description: 
+  在Fedora19首次安装后，推荐禁用firewalld与SELinux，配置SELinux为disabled，添加RPMFusion仓库，安装32位兼容库，安装WPS与字体，安装TweakTool、Sublime、Fcitx输入法，启用第三方仓库，更新系统，安装Chrome与Flash插件，下载MPlayer编解码器，完成桌面基本功能。
 ---
 
 ## 1. 安装 Fedora19 后的初始化配置

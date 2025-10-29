@@ -3,8 +3,14 @@ layout: post
 title: 批量获取QQ靓号的代码
 date: 2014/10/18 11:01:47
 categories:
-- 技术
+  - 技术
 tags:
+  - QQ
+  - 靓号
+  - 注册
+  - 激活
+  - 批量获取
+description: "QQ靓号注册需登录手机版激活靓号，一周内未激活自动回收。注册过程通过手机验证防恶意注册，限额参与每天不超过一百万人。使用Chrome控制台代码可批量获取QQ靓号。"
 ---
 
 ![enter image description here](http://pics.naaln.com/blog/2019-05-14-123525.png-basicBlog)

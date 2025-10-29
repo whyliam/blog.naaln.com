@@ -5,15 +5,12 @@ date: 2023/11/19 20:00:00
 categories:
   - 资讯
 tags:
-  - NewsLetter
   - 自我管理
-  - 创造力
-  - 现代性危机
   - 后现代性
+  - 创造力
   - 信息消费
-  - 社交媒体
-  - 个体与社会
-
+  - 时代进步
+description: "内容涵盖自我管理策略、聚焦优势、统计时间和专注任务；中国社会进步与个体受益的矛盾；现代性危机、互联网舆论和躺平内卷；信息时代激发创造力方法如主动信息消费、做笔记、解释概念和创意活动。"
 ---
 
 - 自我管理是成功的前提，应聚焦优势而非弱点，借助最佳工作方式实现高效。合理统计时间，专注单一任务，创造个人思考时间，减少决策，发挥独特价值。清晰辨别停止和开始的事项，保持精益运营，关注如何对他人有用，而非追求成功本身。
@@ -152,5 +149,3 @@ tags:
 
 - [45 逃离算法 | CyberClip (zhubai.love)](https://shyrz.zhubai.love/posts/2337529637406367744)
 - [Feed your Creativity: How to Escape the Algorithm with Active Content Consumption](https://nesslabs.com/creative-input-output-active-content-consumption)
-
-

@@ -5,17 +5,15 @@ date: 2025/04/04 20:00:00
 categories:
   - 资讯
 tags:
-  - NewsLetter
-  - AI
-  - GPT
-  - LLM
-  - Agent
-  - 智能体
   - OpenAI
-  - Anthropic
+  - MCP
+  - AutoGLM
   - ICLR
-  - 技术前沿
+  - RetailAI
+description: 
+  2025年，GPT4o在图像生成、指令解析和上下文理解方面实现突破，与ChatGPT付费用户规模增长同步；智谱发布具备深度研究与操作能力的AutoGLM沉思智能体，标志着AI从思考转向边想边干；MCP协议提供开放标准，实现模型无缝协作，提升效率；零售业引入AI智能体，实现自然语言导购、视觉库存监控和需求预测；ICLR2025收录多篇LLMAgent研究，聚焦多智能体协作可扩展性与技术栈全景图。
 ---
+
 ![从大模型到智能体的全面突破](https://pics.naaln.com/2025-04-03-211b83eef0434b01a43814b3e8ca77ec-basicBlog)
 
 > 封面设计 by 宇宙特工

@@ -3,13 +3,15 @@ layout: post
 title: ubuntu下实现echoprint建库和查询
 date: 2013/10/08 21:33:00
 categories:
-- 技术
+  - 技术
 tags:
-- echoprint
-- Ubuntu
-- 音频识别
-- 数据库
-description: 在Ubuntu系统下部署Echoprint音乐识别服务的完整指南。介绍服务器搭建、环境配置、依赖安装（ffmpeg、libtag1-dev、zlib1g-dev、libboost-dev、g++-multilib），编译codegen的详细步骤。讲解使用find命令生成音乐列表、调用echoprint-codegen生成指纹、通过fastingest写入数据库的完整流程。提供API server的启动方法、curl命令使用、查询接口调用等操作指导。涵盖虚拟机网络配置（NAT与桥接模式）和跨平台查询的实现方案，为Linux环境下的音乐识别系统部署提供全面参考。
+  - audiofingerprint
+  - server
+  - api
+  - vmware
+  - database
+description: 
+  服务器搭建后测试readme例子，在python中运行fp模块进行数据写入和查询操作。通过api.py开启API服务器，使用curl命令写入数据和查询。介绍网络配置概念包括0.0.0.0、127.0.0.1和物理IP地址。详细说明虚拟机NAT模式和桥接模式的网络配置差异。在ubuntu下编译codegen需要安装ffmpeg、libtag1-dev、zlib1g-dev、libboost-dev、
 ---
 
 在服务器搭建好之后可以试一试 readme 里面的几个例子，看一下有没有其他问题。

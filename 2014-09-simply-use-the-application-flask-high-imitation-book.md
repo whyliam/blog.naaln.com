@@ -3,8 +3,15 @@ layout: post
 title: 使用 FLASK 高仿 简书 的应用
 date: 2014/09/01 03:09:06
 categories:
-- 技术
+  - 技术
 tags:
+  - Python
+  - Flask
+  - Bootstrap
+  - 博客系统
+  - Web开发
+description: 
+  开发者从模仿V2EX的论坛项目转向模仿简书的博客系统尝试。选择Foundation框架后因文档难懂改回Bootstrap，后台使用Python语言由于掌握语言有限，原使用Ruby但SAE不支持故转向Flask轻量级框架替代Django。开发过程中遇到SSO登录等技术难题，后台管理界面简洁支持Markdown编写但暂不支持图片上传。承认代码质量需要提升，承认开发进度较慢但会继续完善功能。
 ---
 
 我本来是想写一个论坛，在修改一个开源的应用（，原本我是在抄袭 V2EX 的），但是后来实在改不下去了，打算自己写一个练练手。于是开始了模仿 `简书`。
