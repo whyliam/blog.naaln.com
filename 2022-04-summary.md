@@ -3,10 +3,14 @@ layout: post
 title: 4月小结｜假如我年少有为
 date: 2022/04/30 20:00:00
 categories:
-- 随笔
+  - 随笔
 tags:
-- 爱与鲜活
-- 小结
+  - family
+  - home
+  - death
+  - work
+  - hospital
+description: "作者半年回家与父母共进晚餐母亲提及企业压力未带礼物迁怒外婆家祠堂祭祀哭泣回忆外公喜爱食物与枇杷清明祭祖时体验传统反思死亡观念如《寻梦环游记》电影说法工作项目中沟通不足偏离目标陪妻住院度假前夕健康检查。"
 ---
 
 <iframe width=330 height=86 src="//music.163.com/outchain/player?type=2&id=1293886117&auto=1&height=66" frameborder="no" border="0" marginwidth="0" marginheight="0" ></iframe>

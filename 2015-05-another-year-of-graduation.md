@@ -3,8 +3,15 @@ layout: post
 title: 又是一年毕业时
 date: 2015/05/12 00:47:00
 categories:
-- 随笔
+  - 随笔
 tags:
+  - graduation
+  - nostalgia
+  - youth
+  - university
+  - time
+description: 
+  文章以网易云音乐播放器开场，引用生命长度等于对未来的好奇加对过去的想念这句话，表达毕业时的怀旧情绪。感叹四年大学时光如及时雨来得出其不意，散得措手不及，许多话来不及倾诉，真诚来不及表达。挥挥衣袖只剩模糊背影，呼吁珍重韶光，莫负少年。文章还提到拖欠一年多的视频终于要开始剪辑，嵌入优酷视频，末尾给出密码提示，充满青春感怀和时光易逝的感慨。
 ---
 
 <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=90% height=80 src="http://music.163.com/outchain/player?type=2&id=109734&auto=0&height=66"></iframe>

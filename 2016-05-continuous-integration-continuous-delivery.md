@@ -3,8 +3,15 @@ layout: post
 title: 持续整合＆持续交付
 date: 2016/05/18 00:24:00
 categories:
-- 技术
+  - 技术
+description: 
+  公司规划自动部署系统最初采用Jenkins集成Rundeck实现流程包括代码提交自动触发测试、Docker构建部署到开发环境验证后手动触发生产环境部署，后改用CircleCI优化实现持续集成包括代码推送触发测试、版本提交、Docker生产部署到生产环境的自动化流程。
 tags:
+  - 持续部署
+  - 持续集成
+  - Jenkins
+  - Rundeck
+  - CircleCI
 ---
 
 在公司继续打杂

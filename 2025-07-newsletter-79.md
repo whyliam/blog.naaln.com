@@ -5,13 +5,13 @@ date: 2025/07/26 20:00:00
 categories:
   - 资讯
 tags:
-  - NewsLetter
-  - AI
-  - Agent
-  - Productivity
-  - Security
-description: 本期 Newsletter 聚焦于 Agent AI 在生产力与安全领域的突破性进展。从 OpenAI 的 ChatGPT Agent 到 Walmart 的 Super Agents，再到 Google 的 Big Sleep 主动防御系统，展示 agent 如何重塑企业服务与用户交互方式，并在真实攻击中实现主动防护。
+  - AgentAI
+  - ChatGPTAgent
+  - SuperAgents
+  - VoiceAgent
+description: "OpenAI发布ChatGPT Agent整合Operator与Deep Research支持虚拟浏览器自主完成多步任务。Walmart推出客户员工供应商开发者四大Super Agents包括Sparky实现个性化推荐与视觉识别。Google Big Sleep agent首次在真实攻击前识别并中断SQLite零日漏洞展示主动防御能力。SoundHound发布Amelia 7.0企业级语音Agen"
 ---
+
 ![L79_重塑生产力与安全的未来](https://pics.naaln.com/2025-07-27-126542b082bc4b28826ee2e5876dd4f1.png-basicBlog)
 
 OpenAI 在 7 月 17 日发布 ChatGPT Agent，把 Operator 与 Deep Research 融为一体，让 ChatGPT 可以通过虚拟浏览器在 Gmail、Google Calendar、网页等环境中自主完成多步任务。与此同时，Walmart 正整合旗下数十个 AI 工具，推出面向客户、员工、供应商与开发者的四大 Super Agents（如 Sparky），统一用户与后端的交互方式。更引人注目的是 Google 的 Big Sleep agent：项目首次在实际攻击到来前识别并中断了 SQLite 零日漏洞（CVE‑2025‑6965），展示 agent 在网络安全中的主动防御能力。总的来说，这些变化彰显 agent AI 正在成为企业实践与安全防护的重要执行者。

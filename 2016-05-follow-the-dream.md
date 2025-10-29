@@ -3,8 +3,14 @@ layout: post
 title: 如果你想追随梦想，就要心无他念
 date: 2016/05/01 20:31:00
 categories:
-- 随笔
+  - 随笔
+description: "欲望分散如大黄蜂冲突导致目标无法实现建议设定大志在工作和周末三个方面各设一目标学会推迟非优先任务专注一个方向如成功人士般集中力量快速前进集齐相关目标如成功和健康互相促进实现最大效能"
 tags:
+  - Focus
+  - Goals
+  - Success
+  - Productivity
+  - Growth
 ---
 
 本文源自知乎上的一个问答贴 [《25岁，开始害怕自己到30岁还碌碌无为，却不知道如何前进？》](https://www.zhihu.com/question/26344285)，题主的补充：

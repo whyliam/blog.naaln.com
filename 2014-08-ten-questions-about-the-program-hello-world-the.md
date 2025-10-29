@@ -3,8 +3,13 @@ layout: post
 title: 关于程序「Hello World！」的十个问题
 date: 2014/08/25 10:08:00
 categories:
-- 技术
+  - 技术
 tags:
+  - HelloWorld
+  - Programming
+  - Education
+  - SoftwareDevelopment
+description: "HelloWorld程序在实际开发中的十个不足：仅进行基本输出，缺少交互性和业务逻辑；不同语言实现几乎相同，导致学习价值有限；仅使用关键字，忽视变量、常量、函数与面向对象概念；在现代应用中显得不切实际。"
 ---
 
 我觉得，基本上可以说每个程序员都很熟悉「Hello World!」程序。依照惯例，它是学习编程语言、编译并运行你的首个程序的一种快速方法。然而，除此之外，它的价值不大。下面是我认为 Hello World 的十个问题。</span>

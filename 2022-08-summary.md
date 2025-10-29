@@ -3,10 +3,14 @@ layout: post
 title: 8月小结｜没有理想的人不伤心
 date: 2022/08/31 20:00:00
 categories:
-- 随笔
+  - 随笔
 tags:
-- 爱与鲜活
-- 小结
+  - 创业
+  - 移动互联网
+  - 个人开发者
+  - 内心秩序
+  - 社会规训
+description: "作者因需发布APP创立工作室；后PC互联网以SAAS为重，个人开发者难生存；移动互联网被巨头垄断但有新意；Web 3尚未成熟。作者批判规训社会下人难寻自我，做自己与被认同的冲突，手机加剧孤独。"
 ---
 
 <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=1305364671&auto=1&height=66"></iframe>

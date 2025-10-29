@@ -3,17 +3,14 @@ layout: post
 title: 基于Sobel算子图像边缘检测的MATLAB实现
 date: 2013/09/24 05:49:13
 categories:
-- 技术
+  - 技术
 tags:
-- MATLAB
-- 图像处理
-- 边缘检测
-- Sobel算子
-- 计算机视觉
-- 数字图像
-- 算法
-- 边缘检测算法
-description: MATLAB图像边缘检测实战教程，详细介绍基于Sobel算子的边缘检测实现。edge函数支持六种经典算法：Sobel、Prewitt、Roberts、Laplacian of Gaussian、Zero-cross和Canny方法。教程提供完整MATLAB源代码，包括：RGB图像转灰度图、图像数据类型转换、垂直Sobel算子检测、水平垂直Sobel算子检测、45度角Sobel算子滤波器设计等。详细解释im2double归一化、imfilter滤波、阈值自动选择等技术细节。附有原始图像和四种不同角度的检测结果对比图。是计算机视觉、图像处理和数字信号处理课程的实践参考。
+  - MATLAB
+  - edge
+  - Sobel
+  - edgeDetection
+  - imageProcessing
+description: MATLAB的edge函数专为二维矩阵的灰度图像边缘检测设计，支持Sobel、Prewitt、Roberts、Laplacian ofGaussian、Zero-cross和Canny六种经典算法。使用前需将RGB彩色图像转换为灰度图并归一化处理。文章提供了完整的MATLAB代码示例，演示了垂直、水平和45度角的Sobel算子边缘检测方法，并通过imfilter函数实现自定义角度的滤波器操作。代
 ---
 
 MATLAB 的 edge 函数只能处理灰度图或者黑白图（或者说 imread 之后得到的矩阵是个二维矩阵），而对 RGB 的真彩图是没法处理的，当然，也可以通过把 RGB 图先转化成灰度图再进行边缘检测。edge 函数的输入参数就是 imread 之后的二维矩阵，和指示的字符串和限定方法的一些数值参数。edge 函数支持六种经典边缘检测方法，分别是 `Sobel Method`、`Prewitt Method`、`Roberts Method`、`Laplacian of Gaussian Method`、`Zero-cross Method` 和 `Canny Method`。至于具体算法，我就不清楚了，这里只给出 matlab 的实现方法：

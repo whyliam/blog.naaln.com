@@ -3,10 +3,14 @@ layout: post
 title: Scale AI
 date: 2023/04/20 20:00:00
 categories:
-- 技术
+  - 技术
 tags:
-- AIGC
-- GPT
+  - ScaleAI
+  - 数据标注
+  - AI基础设施
+  - 机器学习
+  - GPT模型
+description: 详细介绍Scale AI公司从2016年成立到成为73亿美元估值独角兽的发展历程，包括其在数据标注领域的核心业务、与OpenAI在InstructGPT项目上的合作、完整的产品线Build AI ApplyAI和Developer、服务的客户群体以及与Labelbox Snorkel AI等竞争对手的差异化优势。重点阐述Scale AI通过人机结合的数据标注模式和规模化效应建立的护城河，以及从数
 ---
 
 ChatGPT 背后的模型是 GPT-3.5-turbo，去年 OpenAI 发表了一篇《Training language models to follow instructions with human feedback》的论文，介绍了 GPT 3.0 到 GPT-3.5 模型的演进过程。

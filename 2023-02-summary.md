@@ -3,10 +3,15 @@ layout: post
 title: 2月小结｜工作与消费主义
 date: 2023/02/28 20:00:00
 categories:
-- 随笔
+  - 随笔
 tags:
-- 爱与鲜活
-- 小结
+  - 阅读感悟
+  - 工业小说
+  - 经济思考
+  - 工作哲学
+  - 消费主义
+description: 
+  作者回顾二月份阅读历程，阅读《大国重工》这本工业爽文，重温国企生活记忆，了解八十年代经济发展状况。该书作者为中国社会科学院工业经济研究所博士，为读者普及中国经济运行知识。阅读过程中重新启用Kindle，恢复阅读习惯。继而阅读《工作、消费主义和新穷人》，书中关于工作责任与义务的理论让作者重新思考工作本质，认识到工作可能是社会强加的生活方式。对工作和消费的深入思考为迷茫状态下的作者提供了思考方向。
 ---
 
 <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=28935312&auto=1&height=66"></iframe>

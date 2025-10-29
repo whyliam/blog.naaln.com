@@ -3,9 +3,15 @@ layout: post
 title: L7_让无能的人安乐
 date: 2023/02/12 20:00:00
 categories:
-- 资讯
+  - 资讯
 tags:
-- NewsLetter
+  - 三和青年
+  - 无常
+  - 无明
+  - ZwickyBox
+  - 青年压力
+description: 
+  文章从青年自称老与期望差距说起，指出老的实质是期待与现实的落差；分析三和青年通过退出竞争表达抗议，主张基本生活保障与宽容多元生活方式；阐释佛学无常与无明，指出无常是唯一确定，恐惧源于对确定性的执著，情绪根植于误解，需培养觉知；最后介绍ZwickyBox模型，阐述问题拆解、分类头脑风暴、组合再创的解题框架。
 ---
 
 为什么很多人年纪轻轻却总说自己已经老了。是因为自己没有达到自己心目中在这个年纪应该取得的成绩。老的不是年纪而是年纪与预期的之间的差距。老的实质是一种丧失，害怕死亡的人往往是因为没有好好活过。
@@ -103,5 +109,3 @@ Zwicky Box 的优势不在于建立思考原创想法的能力，而在于系统
 - [Thinking Outside The (Zwicky) Box](http://blog.mindantix.com/2015/11/thinking-outside-the-zwicky-box/)
 - [the History and pracice of the Zwicky Box](http://www.matttaylor.com/public/zwicky_box_uses.htm)
 - [一种非量化建模的通用方法](http://www.swemorph.com/ma.html)
-
-

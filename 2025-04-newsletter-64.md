@@ -5,15 +5,15 @@ date: 2025/04/11 20:00:00
 categories:
   - 资讯
 tags:
-  - NewsLetter
-  - AI
-  - 大模型
-  - OpenAI
+  - 人工智能
+  - 开源模型
   - DeepSeek
-  - Gemini
-  - Claude
-  - Prompt工程
+  - 大语言模型
+  - 智能体
+description: 
+  开源浪潮与技术迭代重塑AI格局，斯坦福HAI报告显示中美顶级大模型性能差距缩小至0.3%。DeepSeek引领开源，成本效益与推理速度领先，覆盖AI基础设施全栈，月访问量5.25亿次，市场份额6.58%。多家厂商宣布新计划，开源与多模态能力持续提升。AI智能体呈现摩尔式增长，推理任务能力每七个月翻倍。Claude在代码能力上表现突出，提示工程成为交互关键，中国大模型快速崛起并发布行业模型与应用场景
 ---
+
 ![开源浪潮与技术迭代重塑AI格局](https://pics.naaln.com/2025-04-13-b89d518e5b0542ee86ce0ab02797b11e.png-basicBlog)
 
 过去一周，AI 领域呈现出技术快速迭代、开源生态繁荣发展的态势。DeepSeek 引领开源浪潮，OpenAI 宣布开源新模型计划，Gemini 持续迭代更新，Anthropic 的 Claude 模型在代码能力上表现出色，AI Agent 能力呈现「摩尔定律」式增长，Prompt 工程成为 AI 交互的关键技术。

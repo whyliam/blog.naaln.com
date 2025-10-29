@@ -3,9 +3,15 @@ layout: post
 title: 豆瓣Code系统的开源计划
 date: 2014/02/11 21:57:00
 categories:
-- 技术
+  - 技术
 tags:
-- 豆瓣
+  - git
+  - douban
+  - opensource
+  - platform
+  - python
+description: 
+  豆瓣开发了Code系统，一个基于git的协作平台。系统采用Quixote框架、Mako模板、MySQL数据库和Memcached缓存等组件。支持创建项目、管理用户和代码推送协作功能。系统从2012年起内部使用，2014年开源开源计划包括部署环境配置和自定义配置文件等指南。
 ---
 
 豆瓣为了解决自身的开发流程，代码管理，上线等问题，开发一套系统，内部称作 "Code"，随着这套系统的完善，希望可以有更多的人可以使用这套系统，并且参与这套系统的开发，豆瓣准备将 Code 开源，吸引更多的人加入其中。

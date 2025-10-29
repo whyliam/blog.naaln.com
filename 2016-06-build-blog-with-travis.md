@@ -1,9 +1,16 @@
 ---
 title: 使用 Travis CI 构建博客
 date: 2016/06/23 22:56:17
-tags:
 categories:
-- 技术
+  - 技术
+description: "介绍使用Travis CI自动化部署Hexo博客的完整流程。包括本地编写文章推送到GitHub仓库，Travis CI检测代码变化自动构建部署，创建SSH密钥配置访问权限，加密私钥保护安全，配置.travis.yml文件实现自动化，以及解决部署过程中遇到的认证问题。通过缓存node_modules优化部署速度，实现完整的持续集成解决方案。"
+tags:
+  - Hexo
+  - TravisCI
+  - 自动化部署
+  - GitHub
+  - 持续集成
+layout: post
 ---
 
 今天看到有人因为 hexo 文件遗失 以前的文章全没有了 所以我准备在 Github 备份我的代码

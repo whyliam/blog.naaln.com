@@ -3,16 +3,14 @@ layout: post
 title: OpenGL基础画线函数
 date: 2013/04/02 20:32:00
 categories:
-- 技术
+  - 技术
 tags:
-  - OpenGL
-  - 画线
-  - GLUT
-  - 图形编程
-  - C++
-  - 3D图形
-  - 基础教程
-description: OpenGL图形编程入门教程，详细演示了如何使用OpenGL库绘制基础线条。文章提供了完整的C++代码示例，包括：1）初始化设置（清屏颜色、投影模式、正交投影裁剪窗设置）；2）画线函数实现（清颜色缓存、设置绘图颜色为红色、使用GL_LINES图元绘制线段）；3）主程序结构（GLUT初始化、显示模式配置、窗口创建、注册显示函数、主循环）。通过GLUT工具包实现跨平台窗口管理，使用OpenGL基本图元GL_LINES绘制从(180,15)到(10,145)的红色线段。适合OpenGL初学者学习图形绘制的基础流程和OpenGL程序的典型结构。
+  - opengl
+  - glut
+  - cpp
+  - drawing
+  - line
+description: "使用 GLUT 与 OpenGL 绘制红色线段的 C++ 程序，设置白色背景、视口位置与大小、投影矩阵、清除颜色缓存并绘制坐标点 (180,15) 到 (10,145) 的直线。"
 ---
 
 刚刚开始学 opengl，mark 一下

@@ -1,9 +1,16 @@
 ---
+layout: post
 title: Hexo集成Algolia搜索插件
 date: 2016/07/04 13:25:43
-tags:
 categories:
-- 技术
+  - 技术
+description: "用 Algolia 免费版为 Hexo 博客集成站内搜索：注册账号并创建索引，上传数据到 Algolia，在主题模板中添加搜索 UI 代码和 CSS 样式，完成替代 Swiftype 的搜索功能。"
+tags:
+  - Hexo
+  - Algolia
+  - 站内搜索
+  - 免费
+  - 替代
 ---
 
 Swiftype 搜索最近停了，开始收费，不想收费又想有这个站内搜索功能怎么办？

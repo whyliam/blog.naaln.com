@@ -3,8 +3,14 @@ layout: post
 title: 博客更新
 date: 2015/02/08 23:16:00
 categories:
-- 随笔
+  - 随笔
 tags:
+  - WordPress
+  - Typecho
+  - 博客系统
+  - 轻量级
+  - 迁移
+description: 因引擎不稳定且 WordPress 升级至 4点1 时失败，我决定迁移至轻量级博客程序 Typecho。Typecho 基于 PHP5，支持多种数据库，体积约为 WordPress的十分之一，运行速度更快，代码更简洁，能够无缝迁移现有 WordPress 文章。Typecho 的主题和插件虽不够完善但基本满足需求，同时因版权考虑将逐步整理或清理相关文章。
 ---
 
 因為 SAE 的不穩定，Wordpress 頻頻出問題。我昨天終於下了決心換了一個輕量的博客系統。

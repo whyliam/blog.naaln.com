@@ -3,10 +3,14 @@ layout: post
 title: 3月小结｜乘风在人海中远航迎着暖暖的晨光
 date: 2022/03/31 20:00:00
 categories:
-- 随笔
+  - 随笔
 tags:
-- 爱与鲜活
-- 小结
+  - 股市
+  - 中概股
+  - 乌克兰危机
+  - 黑天鹅
+  - 生活教练
+description: "3月俄乌冲突与金融政策导致股市波动，涉及BOIL和天然气行业认知不足；中概股在阿里巴巴回购计划推动下出现反弹；疫情卷土重来，东航MU5735航班失事形成黑天鹅；思考生活与职业方向，目标在4月重新出发。"
 ---
 
 <iframe width=330 height=86 src="//music.163.com/outchain/player?type=2&id=1926216108&auto=1&height=66" frameborder="no" border="0" marginwidth="0" marginheight="0" ></iframe>

@@ -3,8 +3,14 @@ layout: post
 title: Surge 3 试用
 date: 2019/06/07 20:00:00
 categories:
-- 技术
+  - 技术
 tags:
+  - surge
+  - 广告拦截
+  - 试用期
+  - libfaketime
+  - 证书替换
+description: "通过修改Surge试用期机制劫持人人影视广告，使用Libfaketime改变软件运行时间或替代方法如证书替换以延长试用期。"
 ---
 
 对于出国的方案，之前用的一直都是 `ClashX`，在正常的使用情况下完全够用。但是现在遇到了一个问题，想修改系统的网络请求。

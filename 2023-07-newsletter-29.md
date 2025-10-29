@@ -3,9 +3,15 @@ layout: post
 title: L29_第一原理的思考方式
 date: 2023/07/16 20:00:00
 categories:
-- 资讯
+  - 资讯
 tags:
-- NewsLetter
+  - 第一原理
+  - 阅读技巧
+  - 读书笔记
+  - 好奇心
+  - 成长
+description: 
+  从第一原理推理分析问题本质，提出反推解决方案的思维；结合《如何阅读一本书》阐明阅读四阶段技巧，强调有目的阅读、划线笔记、章节结构化并在输出中把书读薄；通过像孩子一样思考把对失败的恐惧转化为好奇，用小实验逐步扩大舒适区，避免后悔并实现成长。
 ---
 
 - 「从第一原理推理」是一种分析问题，找出其不可继续拆分的根本原因，并从中反推出解决方案的思考方式。
@@ -91,5 +97,3 @@ tags:
 
 **相关延伸**:
 [Turning Fear of Failure into Increments of Curiosity](https://nesslabs.com/fear-of-failure) — Anne-Laure Le Cunff / NessLabs
-
-

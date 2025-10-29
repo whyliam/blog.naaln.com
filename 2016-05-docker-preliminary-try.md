@@ -3,9 +3,14 @@ layout: post
 title: Docker 初步试玩
 date: 2016/05/19 22:13:49
 categories:
-- 技术
+  - 技术
+description: 介绍Docker的安装和基本使用方法。Docker能够解决代码在不同机器间迁移的困难问题，实现软件迁移的可信化。通过安装Docker Toolbox，使用dockerpull命令获取centos7镜像，然后运行容器并在容器内安装nodejs，最后使用docker commit将容器转换为镜像，最后上传到Docker Hub完成了整个容器化部署流程。
 tags:
-- Docker
+  - Docker
+  - 容器
+  - 镜像
+  - 部署
+  - 教程
 ---
 
 昨天调试完 `Codeship` 和 `EC2` 的连接后开始尝试，连接 `Docker`

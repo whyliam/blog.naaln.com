@@ -3,9 +3,14 @@ layout: post
 title: 重复造轮子之Alfred有道插件
 date: 2015/05/05 00:15:00
 categories:
-- 技术
+  - 技术
 tags:
-- Alfred
+  - Alfred工作流
+  - 有道翻译
+  - 快捷键
+  - 翻译工具
+  - GitHub
+description: "默认快捷键cd，实现英译中、中译英及短句翻译，回车复制结果，Control回车打开有道翻译页面，Command回车直接在当前应用中输出翻译，支持GitHub下载并提供多段演示。"
 ---
 
 默认快捷键 "cd"，查看翻译结果。

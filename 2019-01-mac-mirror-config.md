@@ -4,6 +4,13 @@ categories:
   - 技术
 date: 2019/01/11 09:14:59
 tags:
+  - 镜像
+  - Homebrew
+  - CocoaPods
+  - Rubygems
+  - PyPI
+description: "利用清华大学TUNA镜像和中科大镜像替换多个常用包管理器的官方源，提升下载速度和稳定性。"
+layout: post
 ---
 
 由于众所周知的原因，我们在访问国外代码的时候，会有请求丢失或者请求缓慢的原因，所以我们一般都会替换为大陆的镜像。以下是我使用的源：

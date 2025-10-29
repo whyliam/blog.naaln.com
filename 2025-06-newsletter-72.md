@@ -5,14 +5,14 @@ date: 2025/06/06 20:00:00
 categories:
   - 资讯
 tags:
-  - NewsLetter
   - OpenAI
   - Anthropic
-  - Claude
   - Cursor
-  - 多模态
-description: 本期 Newsletter 聚焦 AI 工具的最新进展，涵盖 OpenAI 的连接器与记录模式、Anthropic 对 Windsurf 断供引发的争议、Cursor 1.0 的多项新功能，以及 ElevenLabs v3 在多模态 TTS 领域的突破。同时探讨了高级提示工程、AI 友好型设计和 AI 集成趋势等话题。
+  - 提示工程
+  - ElevenLabs
+description: OpenAI推出连接器和记录模式功能提升企业协作效率；Anthropic对Windsurf断供引发争议，用户转向Cursor；Cursor1.0发布Bugbot、Jupyter支持等功能展现AIIDE野心；YC分享高级提示工程精髓强调提示即编程理念；Karpathy指出UI复杂不支持脚本软件前景堪忧；Thompson分析AI垂直整合与模块化之争；ElevenLabs v3在多模态多语言支持上实现
 ---
+
 ![工具进化、提示工程与多模态突破](https://pics.naaln.com/2025-06-15-0df1df04cd1046a894bff2e0cb8990da.png-basicBlog)
 
 OpenAI 推出了实用的连接器和记录模式功能，提升企业协作效率；Anthropic 对 Windsurf 断供引发争议，部分用户转向 Cursor；Cursor 1.0 则通过新增 Bugbot、Jupyter 支持等功能，展现了其成为跨场景 AI IDE 的野心，同时 ElevenLabs v3 在多模态与多语言支持上的突破进一步巩固了其在 TTS 领域的领先地位。

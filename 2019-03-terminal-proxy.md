@@ -1,14 +1,16 @@
 ---
+layout: post
 title: terminal 设置 代理
 categories:
   - 技术
 date: 2019/03/25 20:30:53
 tags:
-  - 技术
-  - 教程
-  - 网络代理
-  - 开发工具
-description: 详细介绍Mac系统下终端设置网络代理的两种实用方法。方法一：通过ShadowsocksX-NG配置终端代理命令，在.zshrc中设置alias别名，实现快速启用和禁用代理。方法二：使用Proxifier工具实现全局代理，让不支持代理的软件（如Xcode、Dash等）也能通过代理访问网络。
+  - SS
+  - Proxifier
+  - macOS
+  - Terminal
+  - DNS
+description: 在 macOS 上推荐使用 ShadowsocksX-NG 配置代理；先在 .zshrc 中添加 setproxy、disproxy、ip 等别名实现终端代理；其次使用 Proxifier 将 SOCKS5代理应用到 Xcode、Dash、iTerm 等不支持代理的软件，并可强制远程 DNS 解析。
 ---
 
 ## 方法一，ShadowsocksX-NG（推荐）

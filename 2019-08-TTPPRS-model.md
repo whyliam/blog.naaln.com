@@ -3,9 +3,15 @@ layout: post
 title: TTPPRS 模型
 date: 2019/08/06 20:00:00
 categories:
-- 产品
+  - 产品
 tags:
-- 琢磨
+  - BusinessModel
+  - ProductStrategy
+  - GrowthStrategy
+  - MarketAnalysis
+  - TrafficAcquisition
+description: 
+  TTPPRS商业分析框架通过趋势流量包装产品重复性消费可持续增长六个维度构建完整商业逻辑体系。趋势顺应商业发展潮流把握历史进程；流量精准渠道获取有效用户群体估算市场规模；包装强化产品优质属性塑造用户认知影响购买决策；产品满足真实需求包含服务体验产生自传播；重复性消费决定商业模式可持续性通过等级积分等设计增强频率；可持续增长需要快速资本助力或自我造血实现扩张。所有商业活动本质在于价值超越成本获得利润
 ---
 
 > TTPPRS = 趋势 – 流量 – 包装 – 产品 – 重复性消费 – 可持续增长

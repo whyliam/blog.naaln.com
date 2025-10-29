@@ -3,12 +3,14 @@ layout: post
 title: 人物-Sam Altman
 date: 2023/06/01 20:00:00
 categories:
-- 技术
+  - 技术
 tags:
-- 人物志
-- Open AI
-- Sam Altman
-
+  - Altman
+  - YC
+  - OpenAI
+  - Worldcoin
+  - AI
+description: "Sam Altman是YC创始人，Loopt创始人，后转让。投资Stripe、Hydrazine、Neuralink等，推动OpenAI并创建ChatGPT，推广Worldcoin计划，列出十三项成功建议。"
 ---
 
 ## 少年

@@ -3,9 +3,14 @@ layout: post
 title: L19_职业倦怠和最佳选择
 date: 2023/05/07 20:00:00
 categories:
-- 资讯
+  - 资讯
 tags:
-- NewsLetter
+  - 科技裁员
+  - 职业倦怠
+  - 三十七规则
+  - 职场文化
+  - 决策
+description: "科技公司曾以福利吸引人才，现因经济压力优化盈利致裁员。职业倦怠特征为疲惫、愤世嫉俗和无力感，需远离压力源方可恢复。三十七规则建议采样部分选项后选择最佳，平衡探索与利用。"
 ---
 
 - 科技公司的福利和个人发展关注已成为争夺人才的工作场所文化，但随着股市动荡和经济环境不平衡，科技公司正在转变为优化盈利能力而非增长，导致裁员潮和失业风险升高。
@@ -97,5 +102,3 @@ Brian Christian 在他的书《生存算法：人类决策的计算机科学》�
 
 **相关延伸**:
 [The 37% rule: How many people should you date before settling down? (bigthink.com)](https://bigthink.com/neuropsych/the-37-percent-rule/)
-
-

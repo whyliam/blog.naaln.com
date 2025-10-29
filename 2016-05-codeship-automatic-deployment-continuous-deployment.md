@@ -3,9 +3,14 @@ layout: post
 title: codeship 自动部署 - 持续部署
 date: 2016/05/19 00:01:19
 categories:
-- 技术
+  - 技术
+description: 介绍三大持续集成管理工具的配置方法，以Codeship为例详细演示项目绑定GitHub或Bitbucket、配置README状态徽章、设置测试和部署环境。深入讲解部署流水线配置流程，包括添加新部署流水线、选择master分支、配置AWSCodeDeploy和S3存储。阐述完整部署过程：代码提交后生成测试环境、更新代码、运行测试、安装AWS CLI、上传代码到S3、通过CodeDeploy部署到E
 tags:
-- 自动部署
+  - Codeship
+  - TravisCI
+  - CircleCI
+  - CodeDeploy
+  - AWS
 ---
 
 登入 `codeship`，`trivisCI`，`CircleCI` 任意一个，这三个都是可以持续集成的管理工具

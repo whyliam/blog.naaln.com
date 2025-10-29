@@ -3,12 +3,14 @@ layout: post
 title: Matlab 显示图片和SubPlot命令
 date: 2013/09/08 11:51:00
 categories:
-- 技术
+  - 技术
 tags:
-- Matlab
-- 图像显示
-- 数据可视化
-description: MATLAB中图像显示和SubPlot命令的使用教程。首先介绍imread()和imshow()函数的基本用法，然后重点讲解subplot()命令的各种形式和参数说明。subplot(m,n,p)可将多个图像排列在一个窗口中，支持m行n列的网格布局。文章还介绍了subplot的三种使用方式：标准网格布局、向量指定合并区块、以及Position参数精确控制位置。通过实际代码示例展示如何同时显示多幅图像，并提供了图表绘制的相关代码。为图像处理和数据可视化提供实用指导。
+  - MATLAB
+  - image
+  - subplot
+  - imread
+  - imshow
+description: "MATLAB中的imread函数读取图像数据，imshow函数显示图像。subplot函数用于在单个图形界面中创建多个子图显示多张图片，支持位置向量精确控制子图的大小和位置。提供具体代码示例演示显示多张图片的操作。"
 ---
 
 最近写个图片搜索引擎，恶补 Matlab 中。。。。

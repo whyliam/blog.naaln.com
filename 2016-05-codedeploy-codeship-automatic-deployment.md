@@ -3,9 +3,14 @@ layout: post
 title: codeship 自动部署 - Codedeploy
 date: 2016/05/18 23:08:00
 categories:
-- 技术
+  - 技术
+description: "配置AWS EC2服务器，创建appspec.yml和部署脚本上传至S3，利用CodeDeploy实现自动化部署。"
 tags:
-- 自动部署
+  - AWS
+  - CodeDeploy
+  - EC2
+  - S3
+  - 部署
 ---
 
 上篇我们配置了一大串的东西基本完成的 `AWS` 的配置，接下来我们可以试一下开始部署。

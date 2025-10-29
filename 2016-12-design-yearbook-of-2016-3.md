@@ -1,9 +1,17 @@
 ---
+layout: post
 title: 2016设计年鉴（三）
 date: 2016/12/29 22:51:09
 categories:
-- 产品
+  - 产品
+description: 
+  2016年用户体验设计趋势包括五大领域。用户测试数据驱动如CanvasFlip工具简化流程。聊天机器人和AI技术革命交互方式。开发新兴工具促进自动化协作。桌面设计手机化移动优先确保跨平台一致。卡片滚动视差UI元素如Tinder卡交互仍受欢迎。各趋势持续影响未来设计发展。
 tags:
+  - ux
+  - design
+  - trends
+  - chatbots
+  - tools
 ---
 
 ![](http://pics.naaln.com/blog/2019-01-14-032327.jpg-basicBlog)

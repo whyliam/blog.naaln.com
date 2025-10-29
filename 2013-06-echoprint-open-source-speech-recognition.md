@@ -3,17 +3,14 @@ layout: post
 title: Echoprint - 开源的声纹识别
 date: 2013/06/18 01:39:00
 categories:
-- 技术
+  - 技术
 tags:
-- 声纹识别
-- 开源
-- 音频处理
-- 音乐识别
-- Echoprint
-- Echo Nest
-- MusicBrainz
-- 音频算法
-description: Echoprint开源声纹识别技术深度解析。文章详细介绍移动智能推动下的声纹识别技术发展，对比声纹识别与数字指纹的本质差异。深入解析Echoprint系统架构：Codegen指纹生成器基于ENMFP算法生成声纹，Echoprint服务器维护声纹索引数据库，公共数据库存储公开音轨信息。探讨其与MusicBrainz整合替代MusicDNS的策略，分析MIT和Apache许可协议条款。审视专利风险和法律条款完善性。评估该技术在开源移动应用中的潜力与挑战，强调其在填补开源音乐识别领域空白的重要意义。为音频处理技术开发者提供开源声纹识别系统的全面参考。
+  - 声纹
+  - Echoprint
+  - 开源
+  - MusicBrainz
+  - 许可证
+description: Echoprint 是开源声纹识别系统，音频指纹算法生成指纹，提供 Codegen 库、Echoprint 服务器、公开数据库，采用 MIT、Apache 许可；数据库需公开贡献数据并标注 “poweredby”，使用 7Digital 音频与 MusicBrainz 元数据构建，结合 MusicBrainz 集成，可替代 MusicDNS 推动开放指纹应用。
 ---
 
 [Echoprint: Open acoustic fingerprinting](http://lwn.net/Articles/449650/)

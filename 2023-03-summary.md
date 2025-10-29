@@ -3,10 +3,14 @@ layout: post
 title: 3月小结｜新的混搭
 date: 2023/03/31 20:00:00
 categories:
-- 随笔
+  - 随笔
 tags:
-- 爱与鲜活
-- 小结
+  - ChatGPT
+  - 算力
+  - AI
+  - 投资
+  - 产品化
+description: 这个月的主旋律围绕 ChatGPT 展开，仿佛 WEB2 与 WEB3 已成过去式，人们仿佛找到了新金矿。投资仍围绕 GPT，误以为可短期弯道超车，选择非 ChatGPT 的一线企业，错失回报。目前 GPT未挖掘应有场景，类似 WEB3，偏向故事，缺少气候级产品。这个阶段大家焦虑，担心被 AI 替代而挖掘不可替代性，担心未吃到红利而探索产品化。如果有不可跨越的，仍是算力。ChatGPT 目前采取
 ---
 
 <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=28935312&auto=1&height=66"></iframe>

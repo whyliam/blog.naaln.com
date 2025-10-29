@@ -3,13 +3,14 @@ layout: post
 title: 信息源
 date: 2023/01/04 20:00:00
 categories:
-- 随笔
-tags:
   - 随笔
-  - 信息管理
-  - Newsletter
-  - 学习
-description: 关于信息源管理的心得体会，涵盖开设Newsletter过程中的思考。探讨信息获取渠道的狭窄和单一性问题，强调信息源筛选的重要性。分享多个值得关注的Newsletter资源，包括Joe的折腾日记、DecoHack周刊、DEX周刊等，为读者提供优质的信息输入渠道推荐。适合关注信息管理和知识获取的读者参考。
+tags:
+  - newsletter
+  - 信息源
+  - 内容创作
+  - 博客
+description: 
+  作者开通了Space.News通讯社，去年的计划终于实现。曾在微信上运营过20多期后停更，这次更新后发现自己获取信息的渠道过于狭窄单一。反思之前过多时间花在工具上，对信息源筛选投入不足。分享多个关注的高质量Newsletter，包括Joe的折腾日记、DecoHack周报、DEX周报、赛博反应堆等知名内容精选平台，以及Lenny的通讯社、LearnData开源笔记、Shyrism.News和Rapt
 ---
 
 最近开了 NewsLetteter [Space.News](https://space.zhubai.love/) ，去年 8 月份 就一直就想开了。其实在更早的前几年在微信上做过一次，更新了 20 多期就没有更新下去。

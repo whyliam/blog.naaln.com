@@ -5,15 +5,17 @@ date: 2025/05/23 20:00:00
 categories:
   - 资讯
 tags:
-  - NewsLetter
   - AI
-  - 企业管理
-  - 工作流程
   - Workday
-  - 科研创新
-  - 产品设计
+  - Agent
+  - TestTimeCompute
+  - AIGS
+description: 
+  红杉资本对WorkdayCEO访谈展示AI转型从成本向增长，指AI赋能员工、构建agent人事体系、数据为新用户界面与技能革命。TestTimeCompute框架阐释模型推理如双系统思维、思维链工具强化，推理资源分配优于扩大参数。产品协作流程八步闭环实现需求的AI全链路参与，角色转为导演。AIGS以波普尔证伪主义为基础，构建自动化假设—实验闭环。AI已从工具演进为组织成员与认知伙伴，聚焦AI运用。
 ---
+
 ![企业管理者结构化](https://pics.naaln.com/2025-05-25-751c879a3693406dac755d4c9d213cf6.lFAnQUjHYzn7X2EZSr38lqpC_MoqR2-_j9bE_exalSU-basicBlog)
+
 ## 一、企业 AI 转型的实践路径 —— Workday 案例解析
 
 红杉资本对 Workday CEO Carl Eschenbach 的访谈 [^1] 揭示了传统 SaaS 企业如何在守住基本盘的同时，完成 AI 时代的战略升级。
@@ -42,7 +44,7 @@ Workday 强调，AI 将重新定义岗位能力结构，人类需向更高维技
 
 ---
 
-## 二、理解 AI 模型的「思考机制」 —— Test-Time Compute 框架
+## 二、理解 AI 模型的「思考机制」—— Test-Time Compute 框架
 
 Lilian Weng 在《Test-Time Compute: Expanding the Inference Horizon》[^2] 一文中提出，「思考」可通过动态分配推理资源（如更多 Token、更深思维链）建模。这为企业更好理解与调优模型能力提供新视角。
 

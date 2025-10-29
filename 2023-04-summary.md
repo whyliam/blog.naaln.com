@@ -3,10 +3,15 @@ layout: post
 title: 4月小结｜人是万物的尺度
 date: 2023/04/30 20:00:00
 categories:
-- 随笔
+  - 随笔
 tags:
-- 爱与鲜活
-- 小结
+  - 人生母题
+  - 产品动机
+  - 行为经济学
+  - 哲学
+  - 职业倦怠
+description: 
+  少楠在播客中阐述人生母题，强调产品研究人性动机与欲望，聚焦行为经济学、群体心理学、微观经济学、宗教哲学及神经科学多巴胺视角；回顾青年时期职业选择受外部评价左右，认为十八岁确定方向不切实际，需持续自我探索；近期职业倦怠，以塔勒布所言规律性易使脆弱，暗示稳定不永恒；慢性倦怠中反思自我与世界意义，引用马斯克关于电子游戏的思考与自我怀疑。
 ---
 
 <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=1413863166&auto=1&height=66"></iframe>

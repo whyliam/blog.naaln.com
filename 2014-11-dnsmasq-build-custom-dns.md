@@ -3,9 +3,15 @@ layout: post
 title: DNSMasq 建立自定义 DNS
 date: 2014/11/06 21:29:00
 categories:
-- 技术
+  - 技术
 tags:
-- DNS
+  - 防污染
+  - 缓存
+  - 加速
+  - 自定义
+  - DNS
+description: 
+  安装dnsmasq与dnscrypt-proxy，使dnscrypt在本地5301端口监听并指向日本OpenNIC节点；克隆felixonmars/dnsmasq-china-list仓库获取反污染与加速列表，添加自定义hosts与Apple加速配置；修改dnsmasq.conf禁用resolv和DHCP并将上游指向dnscrypt，构建具备防污染、站点加速及自定义域名解析功能的共享DNS服务器。
 ---
 
 一直想写的 [微萌 DNS][1] 在今天上午准备好基本架构后却在下午遇到各种各样的坑而弃掉了… 心情有够不爽。所以把自己维护的缓存 DNS 解决方案写出来，想要折腾类似的东西的童鞋可以试试看。

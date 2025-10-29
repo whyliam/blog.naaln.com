@@ -3,12 +3,15 @@ layout: post
 title: Ruby社区应该去Rails化了
 date: 2013/04/06 10:28:00
 categories:
-- 技术
+  - 技术
 tags:
-- Ruby
-- Rails
-- 编程
-description: 深度分析Ruby社区去Rails化的必要性。通过Linkedin和Iron.io从Ruby迁移到node.js和Go的案例，结合Ruby Web框架性能测试数据，指出Rails框架在移动时代Web Service场景下的局限性。文章详细阐述Rails调用堆栈过深、内存消耗过大、IO并发能力低等问题，推荐Sinatra、Padrino、Goliath等轻量级框架作为替代方案。为Ruby开发者提供在移动时代选择合适框架的参考建议。
+  - Ruby
+  - NodeJS
+  - Go
+  - Rails
+  - WebService
+description: 
+  随着移动端需求崛起，网站转向轻量API服务，LinkedIn与Ironio放弃Ruby转向NodeJS与Go的案例引发争议，测试显示Ruby在事件驱动模型下并发性能并不逊色。Rails因中间件冗余、内存大而低并发不适合WebService，作者建议使用Sinatra、Padrino、Goliath等轻框架，去除ActionPack保留ActiveRecord，以满足并发需求。
 ---
 
 ## 从 Linkedin 和 Iron.io 抛弃 Ruby 说起

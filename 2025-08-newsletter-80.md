@@ -5,14 +5,15 @@ date: 2025/08/02 20:00:00
 categories:
   - 资讯
 tags:
-  - NewsLetter
-  - AI
   - ChatGPT
+  - 智谱
   - Manus
-  - Copilot
-  - AI产品经理
-description: 本期AI行业周报深入探讨了GPT-5延迟发布背后的战略意义、ChatGPT对认知能力的影响、智谱AI开源模型GLM-4.5带来的行业变革、Manus AI多智能体系统的创新、微软Edge Copilot如何重塑浏览体验，以及AI产品经理在新时代下面临的挑战与转型路径。
+  - EdgeCopilot
+  - 智能体
+description: 
+  本期报告聚焦OpenAI大语言模型发布延期的战略与安全考量、ChatGPT对批判性思维的潜在侵蚀及学习模式的应对、智谱AI开源的低成本模型、Manus多智能体协作革新任务编排、微软EdgeCopilot将浏览器转型为智能助理、以及AI产品经理在不确定性、伦理、信任与跨职能协作中的角色演进。
 ---
+
 ![驾驭延迟、颠覆与智能体时代的曙光](https://pics.naaln.com/2025-08-06-ad9dc23b8dfc46899a63eb1e1086e70b.png-basicBlog)
 
 AI 世界正在以惊人的速度发展，而每一次延迟和每一次突破，都在悄然塑造未来格局。本期 AI 行业周报为你梳理 GPT-5 的延迟发布背后的战略考量、ChatGPT 对认知的影响、智谱 AI 带来的开源变革、Manus AI 引领的智能体革新，以及微软 Edge Copilot 如何重塑浏览体验，最后深入探讨 AI 产品经理在巨变时代的角色演进。

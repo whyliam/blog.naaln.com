@@ -3,9 +3,15 @@ layout: post
 title: Flask 源码阅读注释版 目录结构
 date: 2016/05/03 12:20:59
 categories:
-- 技术
+  - 技术
+description: 
+  Flask项目源码结构深度解析，涵盖完整目录结构说明、核心模块功能介绍、配置管理三种方式详解、__init__.py模块导入机制、config.py配置对象实现、globals.py全局变量定义等关键内容，提供系统性源码阅读指导与学习路径。
 tags:
-- Flask
+  - Flask
+  - Python
+  - 源码分析
+  - Web框架
+  - 配置管理
 ---
 
 ### 目录结构

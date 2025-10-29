@@ -3,19 +3,15 @@ layout: post
 title: Android中ListView的各种显示效果
 date: 2013/04/09 07:57:00
 categories:
-- 技术
+  - 技术
 tags:
-- Android
-- ListView
-- UI设计
-- 数据适配器
-- 自定义布局
-- BaseAdapter
-- SimpleAdapter
-- Android开发
-- 移动应用
-- 界面优化
-description: Android ListView显示效果完整教程，详细介绍四种ListView显示模式。涵盖核心开发技巧：1）普通ListView——使用ArrayAdapter显示简单文本数据；2）自定义ListView——通过自定义布局文件和SimpleAdapter实现图文混排效果；3）Bitmap图片显示——扩展SimpleAdapter的bindView方法，支持网络Bitmap类型图片显示；4）多布局ListView——继承BaseAdapter并重写getView方法，根据数据类型动态加载不同布局文件。教程提供完整的XML布局代码、Java实现代码和详细的步骤解析，包含音乐播放器列表等实际应用场景。适合Android开发者学习ListView的高级用法和界面优化技巧。
+  - Android
+  - ListView
+  - ArrayAdapter
+  - SimpleAdapter
+  - BaseAdapter
+description: 
+  本篇介绍AndroidListView的四种实现方式：一使用ArrayAdapter显示单行文本；二通过自定义布局与SimpleAdapter在每项显示图片与多行文字；三扩展SimpleAdapter的bindView支持Bitmap图片；四自定义BaseAdapter子类在getView中按type动态选择布局，实现混合按钮与歌曲信息的列表。每种方式均提供示例代码和关键步骤。
 ---
 
 在 android 应用开发中，ListView 是使用频率非常高的一个组件，基本上稍微复杂点的布局都会用到它，利用它可以让你的界面美观，有层次

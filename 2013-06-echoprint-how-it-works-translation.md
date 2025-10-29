@@ -3,40 +3,27 @@ layout: post
 title: Echoprint How it works（翻译）
 date: 2013/06/17 12:03:00
 categories:
-- 技术
+  - 技术
 tags:
-- echoprint
-- 翻译
-- 工作原理
-- 音乐识别
-- 技术细节
-- 代码生成器
-- 音频处理
-- 指纹识别
-- 哈希算法
-- 倒排索引
-- 信号处理
-description: Echoprint技术原理深度解析翻译文档，详细说明开源音乐识别系统的工作机制。系统核心思想：在手机或电脑上接收音乐信号，快速准确识别歌曲名称，即使在嘈杂环境下也能准确识别。技术架构三大组件：1）代码生成器（Code Generator）——使用先进信号处理技术将音频信号转换为{时间,hash}键值对：从11kHz单声道信号开始，经白化滤波、8进制子带分解，智能搜索起始位置并存储哈希键值对；2）服务器——通过倒排索引快速查询匹配，返回与目标音轨的重合值，同时过滤时间直方图匹配确保排序；3）数据——从合作伙伴和用户获取并存储。文档强调Echoprint的快速性、高准确性、噪声处理能力，以及开源免费、世界音乐全覆盖的目标。
+  - 音乐识别
+  - 指纹技术
+  - 开源
+  - 信号处理
+  - 倒排索引
+description: 
+  Echoprint是开源音乐指纹识别系统，包含代码生成器、服务器索引和数据存储。利用信号处理从单声道音频提取时间哈希键，实现快速高精度匹配，可在嘈杂环境中准确识别。系统在倒排索引中查询并返回匹配度，已提供源码及白皮书。
 ---
 
 欢迎来到 EchoprintEchoprint 是一个开源的音乐是识别系统，他允许任何人在他们自己的应用上构建音乐指纹识别系统。感谢 [The Echo Nest](http://the.echonest.com/) 的技术支持，以及 [Musicbrainz](http://musicbrainz.org/) 的合作。
 
 → [Home / FAQ](https://blog.naaln.com/2013/06/echoprint-home-faq-translations/)
-
 → [Download from GitHub](http://github.com/echonest/)
-
 → [How it works](https://blog.naaln.com/2013/06/echoprint-how-it-works-translation/)
-
 → [Get started](https://blog.naaln.com/2013/06/echoprint-get-started-translate/)
-
 → [Contact / Support](http://echoprint.me/contact)
-
 → [Data access](https://blog.naaln.com/2013/06/echoprint-data-access-translation/)
-
 → [Server](https://blog.naaln.com/2013/06/echoprint-server-translation/)
-
 → [Codegen](https://blog.naaln.com/2013/06/echoprint-codegen-translation/)
-
 → [Twitter - @echonest](http://twitter.com/echonest)
 
 ![](http://pics.naaln.com/blog/2019-05-14-123339.jpg-basicBlog)

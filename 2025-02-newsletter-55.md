@@ -5,12 +5,12 @@ date: 2025/02/07 20:00:00
 categories:
   - 资讯
 tags:
-  - NewsLetter
-  - AI
-  - 大模型
-  - 技术创新
-  - Scaling Laws
+  - ScalingLaws
+  - PostTraining
+  - MoE
+  - FP8
   - DeepSeek
+description: 预训练阶段 Scaling Laws 效果放缓，但后训练与多模态仍有潜力；用户规模不是核心竞争力，ChatGPT 日活远超 Claude 而性能相近；DeepSeek 通过 MoE 与FP8、并行与通信等优化推动成本下降趋势，同时凸显出口管制必要性
 ---
 
 ![你又在绘制新的航线了吗](https://pics.naaln.com/3hqSpD3syMtD23gRRSnmF79.png-basicBlog)

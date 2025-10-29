@@ -1,9 +1,16 @@
 ---
 title: 关于研究生
 date: 2016/06/27 21:41:11
-tags:
 categories:
-- 随笔
+  - 随笔
+description: "某人美国研究生学位却读研不足，同学读研变化大但难理解。读研是选择，本科gpa低者高管，放弃腾讯offer读研。本科计算机基础如概念加减，研究生管理解题思路，然技能限于本科，会软件不明原理，数据工作数据无思路，技巧有余思维不足。读研补思维缺陷。"
+tags:
+  - careerdevelopment
+  - graduateeducation
+  - dataanalysis
+  - strategythinking
+  - computerscience
+layout: post
 ---
 
 虽然我有美国研究生的学士学位，但是我感觉自己还是没有读过研究生一样。

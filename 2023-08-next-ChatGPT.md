@@ -5,8 +5,12 @@ date: 2023/08/26 20:00:00
 categories:
   - 技术
 tags:
-  - AI
-  - 生成式
+  - 生成式AI
+  - 人工智能
+  - 独角兽企业
+  - AI创业公司
+  - 大模型技术
+description: 海外13家生成式AI独角兽企业估值表，OpenAI估值最高达290亿美元，HuggingFace、Anthropic等紧随其后。重点解析AdeptAI公司发展历程，其打造的ActionTransformer模型实现人机自然语言交互，可直接操作软件执行复杂任务。文章展望AI未来将改变传统GUI操作方式，通过自然语言指令完成工作，同时指出可靠性不足和prompt歧义性两大挑战。生成式AI正从概念走向
 ---
 
 ## 13 家海外生成式 AI 独角兽及其估值

@@ -3,9 +3,14 @@ layout: post
 title: 有道翻译发音失败
 date: 2020/02/23 20:00:00
 categories:
-- 技术
+  - 技术
 tags:
-- 有道翻译
+  - macOS
+  - Alfred
+  - Catalina
+  - TTS
+  - say
+description: 在Catalina中，whyliam.workflows.youdao的say指令偶发Open speech channel failed错误，可用sudo pkill speechsynthesisdsay重启语音合成服务解决；系统权限升级后Alfred权限失效，用tccutil reset All com.runningwithcrayons.Alfred重置并重新授权即可恢复正常。
 ---
 
 在使用 [whyliam.workflows.youdao](https://github.com/whyliam/whyliam.workflows.youdao) 的时候，有时候会发音失败。

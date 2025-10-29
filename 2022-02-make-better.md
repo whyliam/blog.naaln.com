@@ -3,13 +3,14 @@ layout: post
 title: Make 2022 Better
 date: 2022/02/12 20:00:00
 categories:
-- 随笔
-tags:
   - 随笔
-  - 生活改进
+tags:
+  - 生活管理
+  - 个人成长
+  - 目标设定
   - 自我提升
-  - 总结
-description: 介绍8+1生活管理系统，帮助读者实现全方位的自我提升。文章基于Henrik Werdelin的生活改进框架，将生活划分为8个关键领域：赚钱、投资、助人、学习、健康、家庭、社交、Ego，加上每周的定期回顾机制。作者结合自己的实际情况，为每个领域设定了具体的目标和行动计划，提供了一套完整的生活优化方案。
+  - 时间管理
+description: HenrikWerdelin提出8+1生活管理系统，通过将生活分为赚钱、投资、助人、学习、健康、家庭、社交、Ego八个方面，强调在所有生活领域都追求卓越而非单一领域完美。系统核心理念是快速高效完成各项活动而非牺牲其他方面。8个盒子覆盖职业发展、财务管理、知识积累、身体健康、家庭关系、社交网络、心理建设和个人价值实现。作者分享了自己的对应Box设计，包括工作晋升、投资回报、学习提升、健康运动、家庭
 ---
 
 ![black and white rectangular box on white textile](https://pics.naaln.com/blog/2022-02-15-f7038f.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80-basicBlog)

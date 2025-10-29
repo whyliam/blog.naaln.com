@@ -3,8 +3,14 @@ layout: post
 title: 被误读的大数据技术
 date: 2014/08/24 03:04:00
 categories:
-- 技术
+  - 技术
 tags:
+  - 大数据
+  - 数据分析
+  - 数据处理
+  - 商业智能
+  - 数据科学
+description: 大数据不仅是海量数据，更是对海量数据进行分析的方法论，通过算法分析来自不同渠道和格式的数据发现相关性。大数据价值体现在分析利用上，当前瓶颈是前端数据收集和结构化处理。数据分析师50%-80%时间用于数据处理，各行业产生的数据类型复杂包括结构化、半结构化和非结构化数据。企业需整合内外部数据统一格式进行商业决策。原始数据格式和来源不可计数，需要人工重复格式化工作。ClearStoryData和Pax
 ---
 
 > Big data is like teenage sex,everyone talks about it,nobody really knows how to do it,everyone thinks everyone else is doing it,so everyone claims they are doing it.」

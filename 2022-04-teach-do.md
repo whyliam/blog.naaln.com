@@ -3,9 +3,14 @@ layout: post
 title: 教我做事？
 date: 2022/04/01 20:00:00
 categories:
-- 随笔
+  - 随笔
 tags:
-- 产品经理
+  - CriticalThinking
+  - CognitiveBiases
+  - OccamsRazor
+  - HanlonsRazor
+  - FirstPrinciples
+description: "采用第一性原理、第三方故事、认知偏差模型、奥卡姆剃刀、汉隆剃刀、假设验证、中性思考、魔鬼辩护法等策略，避开思维陷阱并提升客观思维能力。"
 ---
 
 为了避开思维陷阱，你必须更客观地思考问题。试着从「第一性原理」出发，找出根本原因，寻找「第三方故事」。

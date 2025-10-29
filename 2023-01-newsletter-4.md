@@ -3,9 +3,15 @@ layout: post
 title: L4_新年快乐
 date: 2023/01/22 20:00:00
 categories:
-- 资讯
+  - 资讯
 tags:
-- NewsLetter
+  - 习惯养成
+  - 目标设定
+  - 时间管理
+  - 生产力
+  - 四千周
+description: 
+  主张用习惯替代目标，提出阅读、写作、冥想等复利习惯，从轻松易读的书开始培养；阐述四千年周的时间观念，强调在有限寿命中要聚焦专注，提出十项提升工作生活平衡的技巧，包括固定清单、串行化任务、管理注意力、接受无聊、培养慷慨与练习停止等。
 ---
 
 过年不要看什么 newsletter 了，多买些鞭炮、烟花和酒肉，抛下「俗务」，放肆地过个快乐的春节吧，「Real generosity toward the future lies in giving all to the present（对未来真正的慷慨就是把一切献给现在）。」
@@ -114,5 +120,3 @@ Lee Byron 建了一个网站来告诉你，你现在处于生命的第几周，�
 参考阅读：
 
 - [Four Thousand Weeks](https://book.douban.com/subject/35561914/)
-
-

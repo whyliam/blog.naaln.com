@@ -1,10 +1,16 @@
 ---
+layout: post
 title: 欢迎来到全新的 App Store！
 categories:
   - 产品
 date: 2017/06/07 00:18:39
 tags:
-  - Apple
+  - App Store
+  - 应用商店
+  - 用户界面
+  - 应用推荐
+  - 移动应用
+description: "App Store全新改版涵盖Today、Games、Apps三大Tab，编辑以故事形式推送应用并提供使用指南，展示全球首秀和新版本更新。Games Tab为游戏定制独特浏览体验，整合推荐理由、视频和排行榜。Apps Tab专注用户需求，整合应用推荐和精选集。新版应用详情页强调评分评价，展示视频截图。应用内购买功能增强可见性，用户可直接在App Store购买并获取内容。全新的界面设计和功能提升为"
 ---
 
 曾经，我们会问：「有没有一个 App 是用来做某某事的？」

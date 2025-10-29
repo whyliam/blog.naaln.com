@@ -5,8 +5,12 @@ date: 2024/09/07 22:39:00
 categories:
   - 技术
 tags:
-  - hammerspoon
-  - rclone  
+  - rclone
+  - WebDAV
+  - Obsidian
+  - macOS
+  - Lua
+description: "介绍在macOS上用rclone通过WebDAV同步iCloud中的Obsidian文档并用Hammerspoon的Lua实现文件夹监控与自动双向同步。"
 ---
 
 由于公司电脑的资料和家里电脑的资料不同步，而我有个人的资料库希望在公司电脑上也可以查看。

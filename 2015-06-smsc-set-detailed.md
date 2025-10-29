@@ -3,8 +3,14 @@ layout: post
 title: smsc设置
 date: 2015/06/25 13:52:00
 categories:
-- 技术
+  - 技术
 tags:
+  - SMS
+  - PDU
+  - Android
+  - SMSC
+  - Encoding
+description: "在安卓手机设置AT&T短信中心号码时出现update错误，解决方法为使用在线工具将号码编码为PDU格式并输入部分字符串完成配置。"
 ---
 
 自从有了微信以后就没有用过短信了，今天租房的时候发了条短信想询问详细的信息，发现短信功能坏了。我第一个想到的就是 `短信中心号码`（smsc）。

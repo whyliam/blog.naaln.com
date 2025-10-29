@@ -3,8 +3,14 @@ title: 这会是 2016 年前端的年末撕逼吗？
 date: 2016/12/14 10:26:10
 categories:
   - 产品
+description: "批判前端技术流行趋势如CSS预处理器和JavaScript框架，强调HTML、CSS、JavaScript是前端核心技能，反对全栈开发建议专注浏览器基础知识。"
 tags:
-- 前端
+  - frontend
+  - css
+  - javascript
+  - framework
+  - stack
+layout: post
 ---
 
 知乎传送门： [https://www.zhihu.com/question/53625252/answer/135820259](https://www.zhihu.com/question/53625252/answer/135820259)

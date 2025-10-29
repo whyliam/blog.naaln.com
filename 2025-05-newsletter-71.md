@@ -5,14 +5,14 @@ date: 2025/05/30 20:00:00
 categories:
   - 资讯
 tags:
-  - NewsLetter
-  - AI
-  - 人工智能
-  - 技术趋势
-  - 前沿科技
-  - 深度学习
-  - 大语言模型
+  - ArtificialIntelligence
+  - AgenticAI
+  - MultimodalAI
+  - OpenSource
+  - Economics
+description: "人工智能从概念演变为基础技术，2025年关键趋势包括自主智能体崛起、多模态AI和开源动态，前沿模型如GPT-5、Claude 4和DeepSeek R1-0528，经济影响显著。"
 ---
+
 ![人工智能创新加速](https://pics.naaln.com/2025-06-03-524651fc8551460b8ad3727d681aa381.png-basicBlog)
 
 人工智能正在从一个概念演变为一种基础技术。这种转变不仅体现在新工具的出现，更在于行业运作方式和价值创造模式的根本性变革。人工智能对职业和专业的影响，进一步证明了这种转型是系统性的，而非表面化的。
@@ -199,4 +199,4 @@ DeepSeek 的开源策略 [^17] 结合其较低的训练成本 [^20] 和令人印
 [^23]: How China Is Defeating U.S. Tech Sanctions: Huawei's AI Chip Breakthrough \- YouTube, accessed June 3, 2025, [https://www.youtube.com/watch?v=vTJ41C-pLi0](https://www.youtube.com/watch?v=vTJ41C-pLi0)  
 [^24]: OpenAI risks being undercut by cheaper rivals, says star investor Mary Meeker, accessed June 3, 2025, [https://admin.environment.sa.gov.au/openai-risks-being-undercut-by-cheaper-rivals-says-star-investor-mary-meeker/](https://admin.environment.sa.gov.au/openai-risks-being-undercut-by-cheaper-rivals-says-star-investor-mary-meeker/)  
 [^25]: Black Forest Labs: Europe's most-hyped — and elusive — startup …, accessed June 3, 2025, [https://sifted.eu/articles/black-forest-labs](https://sifted.eu/articles/black-forest-labs)  
-[^26]: Mary Meeker: Trends – Artificial Intelligence \- Netizen, accessed June 3, 2025, [https://www.netizen.page/2025/06/mary-meeker-trends-artificial.html](https://www.netizen.page/2025/06/mary-meeker-trends-artificial.html)  
+[^26]: Mary Meeker: Trends – Artificial Intelligence \- Netizen, accessed June 3, 2025, [https://www.netizen.page/2025/06/mary-meeker-trends-artificial.html](https://www.netizen.page/2025/06/mary-meeker-trends-artificial.html)

@@ -5,8 +5,13 @@ date: 2023/09/30 20:00:00
 categories:
   - 随笔
 tags:
-  - 爱与鲜活
-  - 小结
+  - 生活反思
+  - 亚运会
+  - AI比赛
+  - 个人成长
+  - 仪式感
+description: 
+  月末回顾生活忙碌状态，感叹时间流逝未留痕。亚运会开幕受限行影响，虽近距离却无法亲临现场。开幕式精彩但缺烟火少了仪式感。中国金牌破百展现绝对实力，看比赛心态从苛求转为欣赏。参加AI大赛获获奖却懊恼准备不足，临场表现如同小学生在博士生导师面前献丑，深刻反思能力不足与成长空间。
 ---
 
 <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=1836114738&auto=1&height=66"></iframe>

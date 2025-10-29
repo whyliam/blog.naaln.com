@@ -3,14 +3,15 @@ layout: post
 title: RTFSC (Read the fucking source code )
 date: 2013/09/08 21:50:00
 categories:
-- 技术
+  - 技术
 tags:
-- 编程文化
-- 源代码
-- 学习方法
-- 开源
-- Linux文化
-description: 介绍编程领域的经典文化术语RTFSC (Read The Fucking Source Code)。阐述阅读源代码在软件开发中的重要性，探讨程序员文化中的各种缩写表达，如RTFM、STFW、RTFSC等。解释这些术语背后的哲学：鼓励开发者主动学习、独立思考、查阅文档和源代码。强调在软件领域，RTFSC是提升技能和理解系统工作原理的关键方法。适合软件开发者和开源爱好者了解编程文化。
+  - RTFM
+  - RTFSC
+  - Linux
+  - 编程文化
+  - 网络礼仪
+description: 
+  RTFM和RTFSC是Unix程序员的重要传统，强调阅读手册和源代码的重要性。这些看似粗鲁的回应实际上体现了学习者应主动寻找答案的教育理念。STFW提醒在网络上搜索，RTFA鼓励阅读原文，还有UTFH、STFG、GIYF、JFGI、UTSL、RTFE、RTFC、RTFQ、LMGTFY、WIDGI、FIOTI等多种缩写表达了类似的自助学习建议。这些缩写虽然含有粗俗词汇，但传达了鼓励独立思考和学习者主
 ---
 
 搞 Linux 的，甚至可以说是搞软件的。

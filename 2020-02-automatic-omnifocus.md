@@ -3,9 +3,15 @@ layout: post
 title: OmniFocus 自动化流程
 date: 2020/02/23 20:00:00
 categories:
-- 技术
+  - 技术
 tags:
-- 自动化
+  - GTD
+  - OmniFocus
+  - workflow
+  - Alfred
+  - Hazel
+description: 
+  GTD是一种行为管理方法，作者使用OmniFocus进行任务管理，划分Misc、Work、Learning、Life、Hobby、System等项目，并通过Energy、优先级紧急、schedule、项目标签等分类，利用收件箱、项目、标签、预测、检查、TO-DO、Today、Routine等透视视图。为快速输入任务，使用Alfred工作流实现todo命令并支持due、estimate、contex
 ---
 
 使用 GTD 的软件已经有一段时间了，GTD 是什么可以参考这本书 [《搞定》](https://blog.naaln.com/2020/01/gtd/)。

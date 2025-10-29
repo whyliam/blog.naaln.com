@@ -1,10 +1,16 @@
 ---
+layout: post
 title: 让PWA支持HEXO
 categories:
   - 技术
 date: 2017/09/11 20:34:56
 tags:
+  - PWA
+  - Https
+  - WebApp
   - Hexo
+  - Offline
+description: "博客支持渐进式网页应用需启用安全超文本传输协议、使用离线插件缓存资源、配置服务工作者、添加清单文件和图标，实现离线访问和应用体验。"
 ---
 
 先说一下说明是 PWA，

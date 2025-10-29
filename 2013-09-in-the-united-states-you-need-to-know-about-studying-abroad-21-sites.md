@@ -5,17 +5,13 @@ date: 2013/09/17 09:19:00
 categories:
   - 旅行
 tags:
-  - 留学
-  - 美国
-  - 网站
-  - 生活
-  - 购物
-  - 学习
-  - 旅行
-  - 美食
-  - 娱乐
-  - 资源分享
-description: 留美生活必备网站大全，分享21个实用网站。涵盖6大类别：I. 必备网站（Amazon、EBAY）；II. 旅行网站（AMTRAK小火车、MEGABUS大巴、TripAdvisor机票景点推荐）；III. 美食网站（Yelp国外大众点评、Zagat高端餐厅评分、Opentable订餐、Groupon团购）；IV. 购物网站（Gilt品牌闪电打折、RueLaLa、iDelli、Bodyshop护肤品、Fab.com有趣小物件）；V. 学习网站（Coursera名校公开课、Sparknotes文章概括、StudyBlue背单词卡片、Bookfi电子书资源）；VI. 娱乐网站（Hulu、Netflix高清美剧电影）。每个网站都提供详细介绍、使用技巧和省钱攻略。为留美学生提供全方位生活指南。
+  - 留美生活
+  - 实用网站
+  - 购物攻略
+  - 旅行工具
+  - 学习资源
+description: 
+  美国生活常用网站包括购物、票务、旅行、美食、学习、影音六大类。购物有Amazon及闪购平台；票务推荐Amtrak、Megabus，早买更省；旅行使用TripAdvisor比较机票、景点和餐厅；美食点评借Yelp、Zagat与Groupon；学习资源有Coursera、Sparknotes、StudyBlue；影音平台为Hulu与Netflix；edu邮箱可获Amazon半年免费Prime。
 ---
 
 留美五年除了 google, 万恶的 College Board 还有学校查成绩网站以外，用得最多的就是下面这些网站啦~ 无私的分享给大家！

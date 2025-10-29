@@ -1,9 +1,17 @@
 ---
+layout: post
 title: vuejs中methods中的互相调用
 date: 2017/01/18 04:32:10
 categories:
-- 技术
+  - 技术
 tags:
+  - Vue
+  - methods
+  - binding
+  - this
+  - prototype
+description: 
+  Vue的methods中的方法可以互相调用，使用this直接调用实例已绑定的方法，方法内部this指向Vue实例；若通过实例的options属性中的methods对象调用，需要先bind（this）确保上下文；Vue内部通过initMethods函数将methods绑定到实例，使用bind函数包装方法以保持正确的this指向。
 ---
 
 vuejs 中 methods 中的方法可以互相调用吗

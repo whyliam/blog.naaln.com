@@ -3,11 +3,15 @@ layout: post
 title: 11月小结｜成为更好的自己
 date: 2022/11/30 20:00:00
 categories:
-- 随笔
+  - 随笔
 tags:
-- 爱与鲜活
-- 小结
-
+  - 职业成长
+  - 效率管理
+  - 品牌策略
+  - 关系维护
+  - 商业洞察
+description: 
+  事情永远不是目的，你才是你的目的。双十一后的业务远离感慨引发职业思考，围绕儿时梦想实践。工作要点包括表达想法提高效率、坚定立场、勇敢面对问题、人脉合作分红。交流餐具老板得出资源整合、品牌独家、AB测试、分享聚合人脉、产业精细把控等商业洞察。追求自我提升实现更好自我。
 ---
 
 <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=1813960297&auto=1&height=66"></iframe>

@@ -5,8 +5,12 @@ date: 2023/08/27 20:00:00
 categories:
   - 技术
 tags:
-  - AI
-  - 产品
+  - 原生产品
+  - 交互重构
+  - 数据重构
+  - 决策让渡
+  - 交易重构
+description: "文章阐述AI原生与AI基础的区分，强调AI原生在产品设计与开发中居于首要位置，交互从图形界面转向自然语言、数据从结构化转向非结构化、决策权从用户转移给AI、以及交易模式由信息撮合转向直接服务，标志着AI 2.0时代的智能化分发。"
 ---
 
 ![Ways to add AI to a system](https://pics.naaln.com/blog/2023-08-26-be4f2e.svg-basicBlog)

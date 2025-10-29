@@ -1,9 +1,16 @@
 ---
+layout: post
 title: 理解Swift中Optional类型
 date: 2016/07/23 10:32:08
-tags:
 categories:
-- 技术
+  - 技术
+description: "Objective‑C 中 nil 为空指针，数值上等价于 0，直接运算易产生歧义。Swift 用 Optional 枚举表示「有值」或「无值」，声明时使用 ?，未赋值默认 nil。对 Optional 使用解包：! 强制、if‑let 安全、?? 默认值、guard 等。map/flatMap 支持链式转换，避把 nil 当 0，提升安全。"
+tags:
+  - OC语言
+  - 空指针
+  - Swift
+  - 可选类型
+  - 可选解包
 ---
 
 ### Objective-C 中的 Nil

@@ -3,9 +3,14 @@ layout: post
 title: 10年投资清单
 date: 2022/06/18  20:00:00
 categories:
-- 随笔
+  - 随笔
 tags:
-- 投资
+  - 复利
+  - 品味
+  - 排序
+  - 决策
+  - 系统观察
+description: "内容包括十种强大生活技能：复利学习、品味培养、任务排序、他人观察、快速决策、凸凹世界识别、故事讲述、源码深挖、具体表达、系统观察，倡导在余生持续实践这些技能。"
 ---
 
 最后从宏观回到我们自身，未来 10 年你希望学习什么样的能力应对这个不确定的未来？本文来自：[10 Powerful Life Skills for the New Decade](https://neilkakkar.com/powerful-life-skills.html)

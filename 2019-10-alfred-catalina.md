@@ -3,9 +3,15 @@ layout: post
 title: 升级 Catalina 后 Alfred 出现问题
 date: 2019/10/08 20:00:00
 categories:
-- 技术
+  - 技术
 tags:
-- Alfred
+  - Mac
+  - Catalina
+  - Alfred
+  - Search
+  - Fix
+description: 
+  Mac升级Catalina后Alfred搜索结果重复或搜索不到软件。重新安装软件无效，在Alfred中输入reload重载即可解决重复搜索问题。Alfred版本4和MacOS10.15系统兼容性问题通过重载功能恢复搜索功能正常运行。
 ---
 
 Mac 升级 `Catalina` 后，Alfred 搜索出来的结果出现了两次，或者有的软件怎么也搜索不出来。

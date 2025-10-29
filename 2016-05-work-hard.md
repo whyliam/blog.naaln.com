@@ -3,8 +3,14 @@ layout: post
 title: 人既然知道努力就可以进步，为什么还是会不努力？
 date: 2016/05/10 12:21:53
 categories:
-- 随笔
+  - 随笔
+description: "人们倾向于即时满足，如旅行拍照、赌博、游戏、喝酒吸烟等迅速反馈的活动，而长期努力往往缺乏明确方向和动力，容易被即时快感吸引，导致速成、速瘦、速背、速富等捷径广受欢迎，却忽视真实的长期积累与坚持。"
 tags:
+  - instantfeedback
+  - delayedgratification
+  - habits
+  - motivation
+  - quickfix
 ---
 
 因为缺乏立竿见影的时效性。

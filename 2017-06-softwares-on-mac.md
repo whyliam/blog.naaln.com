@@ -4,7 +4,13 @@ categories:
   - 技术
 date: 2017/06/28 19:50:47
 tags:
-  - MAC
+  - MacSoftware
+  - Productivity
+  - DeveloperTools
+  - Utility
+  - Configuration
+description: "介绍了苹果操作系统平台常用的网盘、同步、管理、开发、聊天、产品设计及文档等软件，包括百度网盘、Dropbox、Alfred、Aria2GUI、Bartender、Moom、Chrome、ShadowsocksX 等，并提供了开启强触触控板三指拖移的设置步骤以及解决苹果操作系统应用无法打开或文件损坏的终端指令。"
+layout: post
 ---
 
 ## 软件

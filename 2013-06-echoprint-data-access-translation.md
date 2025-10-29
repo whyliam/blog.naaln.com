@@ -3,36 +3,26 @@ layout: post
 title: Echoprint Data access （翻译）
 date: 2013/06/17 12:06:00
 categories:
-- 技术
+  - 技术
 tags:
-- echoprint
-- 翻译
-- 数据许可
-- 开源
-- 音乐识别
-- 协议
-- 法律条款
-description: Echoprint数据许可协议翻译文档，详细规定了开源音乐识别系统的数据使用条款。Echoprint数据许可的核心原则：允许在任何情况下使用数据（商业或非商业），但如果下载并完善数据，需有义务回传数据给社区。协议涵盖三大核心内容：1）许可规则——消费者使用时需标注"powered by Echo Nest"标识和版权声明，商业用途需遵循完整的许可协议；2）数据共享义务——要求贡献者向Echo Nest提供附加数据（track_id、fp_code、artist_name等）；3）法律条款——包括免责声明、赔偿条款、终止条件、管辖法律等。为开发者使用Echoprint数据库提供完整的法律框架，确保开源社区的可持续发展。
+  - echoprint
+  - musicfingerprint
+  - opensource
+  - datasharing
+  - license
+description: Echoprint是开源的音乐指纹识别系统，可在自建应用中构建指纹识别功能。系统由The Echo Nest与MusicBrainz提供客户端、服务器和API接口。数据采用Echoprint DatabaseLicense许可，允许商业和非商业使用，下载或完善数据后需将改进数据共享回Echo Nest。协议规定了使用权、分发义务、数据共享流程、免责声明和责任限制。
 ---
 
 欢迎来到 EchoprintEchoprint 是一个开源的音乐是识别系统，他允许任何人在他们自己的应用上构建音乐指纹识别系统。感谢 [The Echo Nest](http://the.echonest.com/) 的技术支持，以及 [Musicbrainz](http://musicbrainz.org/) 的合作。
 
 → [Home / FAQ](https://blog.naaln.com/2013/06/echoprint-home-faq-translations/)
-
 → [Download from GitHub](http://github.com/echonest/)
-
 → [How it works](https://blog.naaln.com/2013/06/echoprint-how-it-works-translation/)
-
 → [Get started](https://blog.naaln.com/2013/06/echoprint-get-started-translate/)
-
 → [Contact / Support](http://echoprint.me/contact)
-
 → [Data access](https://blog.naaln.com/2013/06/echoprint-data-access-translation/)
-
 → [Server](https://blog.naaln.com/2013/06/echoprint-server-translation/)
-
 → [Codegen](https://blog.naaln.com/2013/06/echoprint-codegen-translation/)
-
 → [Twitter - @echonest](http://twitter.com/echonest)
 
 ![](http://pics.naaln.com/blog/2019-05-14-123131.jpg-basicBlog)

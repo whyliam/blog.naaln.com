@@ -3,9 +3,15 @@ layout: post
 title: 浏览器内核
 date: 2016/02/28 15:01:00
 categories:
-- 技术
+  - 技术
+description: 
+  阅读器内核是排版引擎与JavaScript引擎的统称，主要有Trident、Gecko、Presto、四大引擎。Trident始于IE4（1997），支持WebGL；Gecko开源源自Netcape6，现由Mozilla维护；Presto为Opera在2003年的高速渲染引擎；WebKit来自KDE的KHTML与KJS，现用于Safari并公开源码。各内核在性能、跨平台与安全特性上各具优势。
 tags:
-- HTML
+  - Trident
+  - Gecko
+  - Presto
+  - WebKit
+  - 排版引擎
 ---
 
 ## 啥是阅读器内核

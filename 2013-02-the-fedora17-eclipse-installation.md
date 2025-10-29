@@ -3,14 +3,14 @@ layout: post
 title: fedora17 eclipse安装
 date: 2013/02/23 19:00:00
 categories:
-- 技术
+  - 技术
 tags:
-- Android
-- 开发环境
-- Fedora
-- Eclipse
-- Linux
-description: Fedora 17系统下Android开发环境搭建教程。详细介绍在Fedora 17系统上安装和配置Android SDK、Eclipse集成开发环境及Android Development Tools的完整流程。教程涵盖六个关键步骤：1）下载Android SDK Linux平台i386架构套件；2）解压到指定目录；3）通过软件中心安装Eclipse 4.2.1；4）在Eclipse中添加Android Development Tools和DDMS插件，升级仓库地址为dl-ssl.google.com；5）在偏好设置中配置SDK目录路径；6）修改SDK目录权限以确保程序正常运行。为Linux系统开发者提供完整的Android应用开发环境配置指南。
+  - android
+  - sdk
+  - eclipse
+  - fedora
+  - adt
+description: 在 Fedora 17 上搭建 Android 开发环境，包括下载 i386 版 Android SDK、解压到本地路径、安装 Eclipse4点2点1、添加 Android Development Tools 插件、设置 SDK 路径并修改权限，完整流程可用于 Android 应用开发。
 ---
 
 Android 是 Google 推出的基于 Linux 的开源智能手机平台，本文讲述如何在 Fedora 17 系统下架设 Android 开发全部流程以 Fedora 17 X86 版本为例。

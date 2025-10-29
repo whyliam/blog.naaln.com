@@ -3,10 +3,14 @@ layout: post
 title: 闲谈流量统计（I）— 入门
 date: 2020/03/20 20:00:01
 categories:
-- 产品
+  - 产品
 tags:
-- 流量
-- 埋点
+  - WebAnalytics
+  - UserBehavior
+  - GoogleAnalytics
+  - DataAnalytics
+  - DigitalStrategy
+description: 流量统计系统包括测量、收集、传输、处理、分析、报告等环节，测量阶段规划目标如PV和UV指标，收集环节使用JS、SDK或埋点方式传输数据，处理阶段进行数据清洗和标准化，分析环节评估用户行为和转化，报告生成报表和大屏。流量统计起源于Web分析，最初聚焦页面访问，GoogleAnalytics提供全面报告，Mixpanel引入事件模型衡量行为。意义在于了解产品生命周期、支持决策、掌握用户行为、精细化运
 ---
 
 ### 壹、流量统计的构成

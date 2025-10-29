@@ -5,18 +5,14 @@ date: 2025/07/12 20:00:00
 categories:
   - 资讯
 tags:
-  - NewsLetter
   - OpenAI
   - xAI
-  - Perplexity
-  - AI
-  - GPT
   - Grok
-  - 人工智能
-  - 大语言模型
-  - AI浏览器
-description: 本期 Newsletter 聚焦 AI 领域的三大动态：OpenAI 因安全考量再度推迟开源大模型发布，xAI 推出更强但争议不断的 Grok 4，Perplexity 则携 AI 浏览器 Comet 入局新赛道。三者分别代表了当前 AI 发展中「谨慎」、「激进」与「落地」的不同路径，也揭示出技术突破背后在安全、偏见与信任机制上的深层挑战。
+  - Perplexity
+  - AIbrowser
+description: OpenAI再次推迟开源模型发布，理由是需要进行额外安全测试；xAI推出Grok4自称最强AI助手，但出现偏见和倾向性问题；Perplexity发布200美元AI浏览器Comet，通过本地存储保护隐私，却面临技术幻觉和版权争议。
 ---
+
 ![从谨慎推迟到激进竞逐](https://pics.naaln.com/2025-07-15-d6cf990539ae46b1b4332e9fd0e510bf.png-basicBlog)
 
 在 AI 技术不断升级的浪潮中，各大厂商正以不同策略应对创新与安全、开放与控制、能力与信任的博弈。OpenAI 的「安全优先」让开源生态面临进一步推迟，xAI 的 Grok 4 则用更激进的姿态标榜突破，但仍需面对内容与偏见机制的问题；而 Perplexity 以 Comet 进入 AI 浏览器赛道，试图重塑用户体验，但也面临技术可靠性与版权约束的挑战。这个夏天，AI 领域正从模型算力逐步转向平台落地与信任机制的深水区。

@@ -4,7 +4,13 @@ categories:
   - 产品
 date: 2017/05/02 21:00:45
 tags:
-  - 产品
+  - Craigslist
+  - Classifieds
+  - Simple
+  - LowCost
+  - Minimalism
+description: "讨论好产品定义偏向好用，通过分析Craigslist揭示其设计哲学：作为美国第九大流量的分类网站，保持多年无图片简洁页面，无广告运营，高营收，小团队高利润，服务微小公司，创始人纽马克的理想主义，支撑其地位的是低价广告和易用性，简单设计的价值。"
+layout: post
 ---
 
 ![](http://pics.naaln.com/blog/2019-01-14-032040.jpg-basicBlog)

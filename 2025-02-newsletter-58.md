@@ -5,13 +5,15 @@ date: 2025/02/28 20:00:00
 categories:
   - 资讯
 tags:
-  - NewsLetter
-  - AI
-  - 技术创新
-  - 全球竞争
-  - 推理模型
-  - 科技平权
+  - 推理语言模型
+  - AI平权
+  - AI视频模型
+  - 美国经济实验
+  - OpenAI与DeepSeek
+description: 
+  推理语言模型融合强化学习，实现推理训练数据生成三大流程；AI平权降低门槛却加剧资源集中，教育医疗价值受冲击，批判思维同理心关键；阿里万相开源视频模型支持文生图生，一点三B模型仅需八GB显存，十四B模型语义运动领先；美国经济实验用关税与补贴平衡AI安全，纳瓦尔防垄断、鼓励学习创新；两公司技术路径优势，DeepSeek多模态成本突出，ChatGPT快速增长，中美AI竞争将重塑生态。
 ---
+
 ![推理、平权与全球博弈](https://pics.naaln.com/2025-03-08-c1cc6ea9b81144aaa7e6c0c6c39d58a3-Xnapper_2025_02_28_09_20_00_5177d69467.jpg-basicBlog)
 
 ## 随便看看
@@ -50,5 +52,3 @@ AI 的普及正在降低技术门槛，使更多人能接触到前沿科技，�
 OpenAI 和 DeepSeek 在基础技术上虽然差异不大，但各有侧重。DeepSeek 在多模态模型和高效训练策略上展现优势，而 OpenAI 在大语言模型领域依然保持领先。Sam Altman 凭借精准的商业布局、投资视角和人脉资源，将 OpenAI 打造成全球 AI 领域的标杆，并成功推动 ChatGPT 成为史上增长最快的消费级 AI 应用。与此同时，DeepSeek 以更低的成本、更开放的研发模式快速崛起，成为 AI 领域的重要挑战者。随着中国 AI 创业公司的创新步伐加快，中美在技术追赶和应用落地上的差距正在缩小，未来 AI 领域的竞争将更加激烈，或将重塑全球科技生态。
 
 [和最了解Sam Altman的中国作者，聊聊OpenAI和DeepSeek](https://mp.weixin.qq.com/s/mBifXtBP_FbcJCUyRBmWAQ)
-
-
