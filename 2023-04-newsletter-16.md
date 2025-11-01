@@ -47,8 +47,8 @@ ChatGPT 等工具会提高人的工作效率和产出。但它会让人类使用
 科技表面上看是公平的、「民主的」、无歧视的。但应用到个体身上，科技一定是有选择、有歧视的。并非所有人都是受益者。有赢家，就有输家。
 
 **相关延伸**：
-- [GPT、科技、人类的生产、知识与未来（上）](https://mp.weixin.qq.com/s/EKwKoMLCR25CqQVFrEuEgg?ref=blog.naaln.com)
-- [GPT、科技、人类的生产、知识与未来（下）](https://mp.weixin.qq.com/s/vegZOl7ZoZBRDxS-gTqfAQ?ref=blog.naaln.com)
+- [GPT、科技、人类的生产、知识与未来（上）](https://mp.weixin.qq.com/s/EKwKoMLCR25CqQVFrEuEgg)
+- [GPT、科技、人类的生产、知识与未来（下）](https://mp.weixin.qq.com/s/vegZOl7ZoZBRDxS-gTqfAQ)
 
 ---
 
