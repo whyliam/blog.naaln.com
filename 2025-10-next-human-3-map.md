@@ -109,3 +109,4 @@ description: "HUMAN 3.0 模型，将人生划分为心智、身体、精神、�
 ---
 
 原文：[HUMAN 3.0 – A Map To Reach The Top 1% - by DAN KOE](https://letters.thedankoe.com/p/human-30-a-map-to-reach-the-top-1)
+prompt: [Prompt: HUMAN 3.0 Self-Discovery & Metatype Test](https://letters.thedankoe.com/p/prompt-human-30-self-discovery-and)

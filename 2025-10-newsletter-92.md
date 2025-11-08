@@ -167,5 +167,5 @@ AI 生态正爆发出万亿价值，英伟达（NVIDIA）和 OpenAI 的估值高
 
 ## ✨ 随便看看
 
-- **[《ChatGPT 成人模式要来了，但作为成年人我一点都不高兴》](https://www.huxiu.com/article/4792161.html?f=rss)** 一文，深入剖析了 OpenAI 即将推出的成人模式及其潜在影响。
-- **[《OpenAI’s new deal with Walmart shows how AI is going to shake up the shopping experience》](https://www.businessinsider.com/walmarts-new-chatgpt-deal-shows-agent-shopping-here-to-stay-2025-10)** 一文揭示了人工智能如何重塑零售购物体验的最新动态。文章指出，美国最大零售商沃尔玛与 OpenAI 达成合作，允许消费者直接在 ChatGPT 应用内完成购物，标志着 AI 代理购物正迈向主流。
+- **[《ChatGPT 成人模式要来了，但作为成年人我一点都不高兴》](https://www.huxiu.com/article/4792161.html?f=rss)** 一文，深入剖析了 OpenAI 即将推出的成人模式及其潜在影响。
+- **[《OpenAI’s new deal with Walmart shows how AI is going to shake up the shopping experience》](https://www.businessinsider.com/walmarts-new-chatgpt-deal-shows-agent-shopping-here-to-stay-2025-10)** 一文揭示了人工智能如何重塑零售购物体验的最新动态。文章指出，美国最大零售商沃尔玛与 OpenAI 达成合作，允许消费者直接在 ChatGPT 应用内完成购物，标志着 AI 代理购物正迈向主流。
