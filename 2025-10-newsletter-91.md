@@ -217,5 +217,5 @@ JJ Lin-style Mandopop/C-Pop, blending Pop-Rock with R&B and Ballad influences. T
 
 ## ✨ 随便看看
 
-- **[《AI 产品丨 OpenAI DevDay 2025 开场：从「模型公司」到「应用平台」的转身》](https://mp.weixin.qq.com/s?__biz=MzkyOTY5MzIwNw==&mid=2247488007&idx=1&sn=94b2b1a2e7428e8bfb6aba9447f8628d)** 深入剖析了 OpenAI 在 2025 年开发者大会上宣布的战略转型。文章指出，OpenAI 正从一家纯粹的模型提供商，全面转向构建应用平台的生态系统。
-- **[《Jony Ive says he’s juggling up to 20 ideas for OpenAI gadgets》](https://www.businessinsider.com/jony-ive-ideas-openai-family-ai-devices-sam-altman-design-2025-10)** 一文揭示了前苹果首席设计师 Jony Ive 与 OpenAI 合作的最新动态。在 OpenAI 的 DevDay 会议上，Ive 向 CEO Sam Altman 透露，他目前正同时构思多达 15 至 20 个 AI 设备创意，这些产品将构成一个全新的设备家族。
+- **[《AI 产品丨 OpenAI DevDay 2025 开场：从「模型公司」到「应用平台」的转身》](https://mp.weixin.qq.com/s?__biz=MzkyOTY5MzIwNw==&mid=2247488007&idx=1&sn=94b2b1a2e7428e8bfb6aba9447f8628d)** 深入剖析了 OpenAI 在 2025 年开发者大会上宣布的战略转型。文章指出，OpenAI 正从一家纯粹的模型提供商，全面转向构建应用平台的生态系统。
+- **[《Jony Ive says he’s juggling up to 20 ideas for OpenAI gadgets》](https://www.businessinsider.com/jony-ive-ideas-openai-family-ai-devices-sam-altman-design-2025-10)** 一文揭示了前苹果首席设计师 Jony Ive 与 OpenAI 合作的最新动态。在 OpenAI 的 DevDay 会议上，Ive 向 CEO Sam Altman 透露，他目前正同时构思多达 15 至 20 个 AI 设备创意，这些产品将构成一个全新的设备家族。

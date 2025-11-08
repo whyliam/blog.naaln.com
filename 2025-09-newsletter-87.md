@@ -76,4 +76,4 @@ description:
 ## ✨ 随便看看
 
 - 近期的外卖大战，其本质是电商巨头围绕「即时零售」这一高频入口展开的战略博弈。其核心逻辑在于，**利用外卖的「日活」属性，来拉动和巩固电商核心业务的「周活」或「月活」**，最终将用户「衣食住行」全方位整合进自身生态。[最近看了晚点关于阿里的报道，外卖大战前（4月），淘宝 APP - 即刻App](https://m.okjike.com/originalPosts/68c98b3514af706d82fbfa8f)
-- AI 时代，Notion 的底盘没有变厚，而是变薄了。不需要协作的文档，有更好的地方去写。Notion 里剩下的，是需要协作的文档。[昨天试用 Notion 3.0 过程中，越用越无趣。 比如 - 即刻App](https://m.okjike.com/originalPosts/68ce13713ea7571a78d5f3c8)
+- AI 时代，Notion 的底盘没有变厚，而是变薄了。不需要协作的文档，有更好的地方去写。Notion 里剩下的，是需要协作的文档。[昨天试用 Notion 3.0 过程中，越用越无趣。 比如 - 即刻App](https://m.okjike.com/originalPosts/68ce13713ea7571a78d5f3c8)
