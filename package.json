@@ -9,11 +9,11 @@
     "server": "hexo server"
   },
   "hexo": {
-    "version": "7.3.0"
+    "version": "8.1.0"
   },
   "dependencies": {
     "@waline/hexo-next": "^3.0.1",
-    "hexo": "^7.3.0",
+    "hexo": "^8.1.1",
     "hexo-algoliasearch": "whyliam/hexo-algoliasearch#2.0.1",
     "hexo-all-minifier": "^0.5.7",
     "hexo-auto-canonical": "^0.1.1",
@@ -34,8 +34,8 @@
     "hexo-renderer-stylus": "^3.0.1",
     "hexo-server": "^3.0.0",
     "hexo-submit-urls-to-search-engine": "^2.1.0",
-    "hexo-theme-next": "^8.24.1",
-    "hexo-util": "^3.3.0",
+    "hexo-theme-next": "^8.26.0",
+    "hexo-util": "^4.0.0",
     "highlight.js": "^11.11.1",
     "node-fetch": "^3.3.2"
   }
