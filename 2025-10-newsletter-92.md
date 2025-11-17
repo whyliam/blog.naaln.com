@@ -1,7 +1,7 @@
 ---
 layout: post
 title: L92_技术真实的金融幻觉
-date: 2025-10-25 20:00:00
+date: 2025/10/25 20:00:00
 categories:
   - 资讯
 tags:

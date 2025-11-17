@@ -1,7 +1,7 @@
 ---
 layout: post
 title: L91_AI 音乐革命与创意的重生
-date: 2025-10-18 20:00:00
+date: 2025/10/18 20:00:00
 categories:
   - 资讯
 tags:

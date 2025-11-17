@@ -1,7 +1,7 @@
 ---
 layout: post
 title: L94_知识管理与智能体探索
-date: 2025-11-07 20:00:00
+date: 2025/11/07 20:00:00
 categories:
   - 资讯
 tags:
