@@ -1,7 +1,7 @@
 ---
 layout: post
 title: L93_认知危机与设计思维
-date: 2025-10-31 20:00:00
+date: 2025/10/31 20:00:00
 categories:
   - 资讯
 tags:
