@@ -1,6 +1,6 @@
 ---
 layout: post
-title: L94_独角兽的管理法则
+title: L95_独角兽的管理法则
 date: 2025/11/15 20:00:00
 categories:
   - 资讯
