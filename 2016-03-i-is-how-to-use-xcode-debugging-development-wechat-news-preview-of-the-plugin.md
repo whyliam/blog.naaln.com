@@ -278,8 +278,8 @@ dyld: Library not loaded: @executable_path/libWeChatMsgPreview.dylib
 
 原因：签名不对，需保持重签名时 `codesign -fs "iPhone Developer: *** (***)" --no-strict --entitlements=entitlements.plist Payload/WeChat.app/${LIBNAME} codesign -fs "iPhone Developer: *** (***)" --no-strict --entitlements=entitlements.plist Payload/WeChat.app` 证书一致
 
-脚本中涉及到的 WeChat-dump-arm64.ipa 需要从越狱机器中提取。[对 App Store App 进行重签名–解密][1]
+脚本中涉及到的 WeChat-dump-arm64.ipa 需要从越狱机器中提取。[对 App Store App 进行重签名–解密](http://alayshchen.github.io/2015/11/05/Resign-AppStore-App/)
 
 来源：[我是如何利用Xcode调试开发微信消息预览插件的](http://alayshchen.github.io/2016/02/26/20160226/)
 
- [1]: http://alayshchen.github.io/2015/11/05/Resign-AppStore-App/
+ 

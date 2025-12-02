@@ -36,7 +36,7 @@ CodeCademy 是一家在线学编程的网站，现已有约 24 million 的注册
 
 公司地点：49 w 27th Street
 
-招聘网址：[http://www.codecademy.com/about/jobs][1]
+招聘网址：[http://www.codecademy.com/about/jobs](http://www.codecademy.com/about/jobs)
 
 **FourSquare**
 
@@ -106,12 +106,8 @@ Vimeo 大概是美国除了 Youtube 外的第二大视频分享网站。
 
 公司地点：555 w 18th Street
 
-招聘网址：<http://vimeo.com/jobs> From：[http://www.codetocareer.com/blog/544eaa97d764e537e7b8e6bd][2]
+招聘网址：<http://vimeo.com/jobs> From：[http://www.codetocareer.com/blog/544eaa97d764e537e7b8e6bd](http://www.codetocareer.com/blog/544eaa97d764e537e7b8e6bd)
 
-from:[http://blog.codetocareer.com/nyc-it-company/][3]
+from:[http://blog.codetocareer.com/nyc-it-company/](http://blog.codetocareer.com/nyc-it-company/)
 
- [1]: http://www.codecademy.com/about/jobs
-
- [2]: http://www.codetocareer.com/blog/544eaa97d764e537e7b8e6bd "http://www.codetocareer.com/blog/544eaa97d764e537e7b8e6bd"
-
- [3]: http://blog.codetocareer.com/nyc-it-company/
+ 

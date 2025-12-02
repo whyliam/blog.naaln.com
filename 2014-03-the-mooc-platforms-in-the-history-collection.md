@@ -336,5 +336,3 @@ http://mooc.guokr.com/opinion/437537/
 http://www.technoduet.com/a-comprehensive-list-of-mooc-massive-open-online-courses-providers/
 
 （via 果壳网 mooc 学院）
-
-[1]: http://mmbiz.qpic.cn/mmbiz/N2CRD1bp3XaZicN4OLW8HhxNDwaubHqr2dicdFoIVqCicruyuLrBvOQ6LAwEYEUBjyzLM6c8qCVfbNacxjom9pCHw/0

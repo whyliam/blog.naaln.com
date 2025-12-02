@@ -113,7 +113,7 @@ order：阶数，等于次数加 1，与控制点数相等。
    }
 ```
 
-![][1]
+![](http://p.blog.csdn.net/images/p_blog_csdn_net/wuzoujing/EntryImages/20091129/11111.jpg)
 
 **二、NURBS 曲线**
 
@@ -216,8 +216,6 @@ value：设置指定属性的值。
    }
 ```
 
-![][2]
+![](http://p.blog.csdn.net/images/p_blog_csdn_net/wuzoujing/EntryImages/20091129/2222.jpg)
 
-[1]: http://p.blog.csdn.net/images/p_blog_csdn_net/wuzoujing/EntryImages/20091129/11111.jpg
 
-[2]: http://p.blog.csdn.net/images/p_blog_csdn_net/wuzoujing/EntryImages/20091129/2222.jpg

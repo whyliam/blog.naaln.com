@@ -13,7 +13,7 @@ tags:
   - ContinuousImprovement
 ---
 
-![无网不剩][1]
+![无网不剩](http://www.uml.org.cn/DevProcess/images/201409251001.jpg)
 
 做人要有态度，做产品自然也要有态度。李宗盛在「致匠心」里提到：人不能孤独地活着，之所以有作品是为了沟通，透过作品去告诉人家心里的想法，眼中看世界的样子，所在意的，所珍惜的，所以，作品就是自己。
 
@@ -47,7 +47,7 @@ tags:
 - Show people
 - Learn from their feedback
 
-![各个阶段会有不同的问题][2]
+![各个阶段会有不同的问题](https://pics.naaln.com/blog/2022-02-14-af4a67.png-basicBlog)
 
 **Make**
 
@@ -101,10 +101,6 @@ tags:
 
 以上是做了一段时间产品经理总结的一些小经验，与君共勉。
 
-[原文链接][3]
+[原文链接](http://www.cocoachina.com/programmer/20140921/9702.html)
 
-[1]: http://www.uml.org.cn/DevProcess/images/201409251001.jpg
 
-[2]: https://pics.naaln.com/blog/2022-02-14-af4a67.png-basicBlog
-
-[3]: http://www.cocoachina.com/programmer/20140921/9702.html
