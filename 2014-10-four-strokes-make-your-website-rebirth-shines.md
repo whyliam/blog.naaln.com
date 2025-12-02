@@ -24,7 +24,7 @@ description:
 
 **1. 巧用动画**
 
-![animate 4 Ways to Go From a Boring to Amazing Website][1]
+![animate 4 Ways to Go From a Boring to Amazing Website](http://uisdc.qiniudn.com/wp-content/uploads/2013/03/animate.jpg)
 
 **屡试不爽:** 当你想在网站中添加动画时，你通常会使用 flash。然而！Flash 在过去几年经历了不堪的衰落过程。以至于现如今很多设备或浏览器都无法支持 Flash 插件的播放。
 
@@ -44,7 +44,7 @@ description:
 
 **2. 注重细节**
 
-![enter image description here][2]
+![enter image description here](http://uisdc.qiniudn.com/wp-content/uploads/2013/03/detail.jpg)
 
 **构成：**每个艺术家都知道好的构成能使我们的作品化腐朽为神奇。无论你是画图，画油画或者参加一个特别高级的绘画课程，你要学的第一件事就是构成。当然，你可能只画屋子里的一个玻璃杯。而构成是你通过画出杯子周围和其他细节来展现的。
 
@@ -62,7 +62,7 @@ description:
 
 **3. 弄点视频**
 
-![enter link description here][3]
+![enter link description here](http://uisdc.qiniudn.com/wp-content/uploads/2013/03/video.jpg)
 
 <http://www.teehanlax.com/>
 
@@ -82,7 +82,7 @@ Youtube 是当今最火的在线视频网站。这不是因为其酷炫的网页
 
 **4. 再大胆点吧**
 
-![enter image description here][4]
+![enter image description here](http://uisdc.qiniudn.com/wp-content/uploads/2013/03/bold.jpg)
 
 <http://www.blastprocessor.co.uk/>
 
@@ -106,18 +106,8 @@ Youtube 是当今最火的在线视频网站。这不是因为其酷炫的网页
 
 设计创意网站没有唯一的正确方法。简单易行的小技巧可以使网站看起来更具有针对性。我们的理念是打造很棒的作品。在你运用这些方法的过程中有什么收获或困惑吗？快来留言吧！
 
-SDC 翻茄匠：小米粥 微博：@[小米粥 8711][5]
+SDC 翻茄匠：小米粥 微博：@[小米粥 8711](http://weibo.com/mizhoushilv)
 
-原文地址：[teamtreehouse][6]
+原文地址：[teamtreehouse](http://blog.teamtreehouse.com/4-ways-to-go-from-a-boring-to-amazing-website)
 
-[1]: http://uisdc.qiniudn.com/wp-content/uploads/2013/03/animate.jpg
 
-[2]: http://uisdc.qiniudn.com/wp-content/uploads/2013/03/detail.jpg
-
-[3]: http://uisdc.qiniudn.com/wp-content/uploads/2013/03/video.jpg
-
-[4]: http://uisdc.qiniudn.com/wp-content/uploads/2013/03/bold.jpg
-
-[5]: http://weibo.com/mizhoushilv
-
-[6]: http://blog.teamtreehouse.com/4-ways-to-go-from-a-boring-to-amazing-website

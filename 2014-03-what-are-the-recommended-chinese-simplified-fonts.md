@@ -76,6 +76,6 @@ description:
 
 ![](http://pics.naaln.com/blog/2019-01-14-061951.jpg-basicBlog)
 
-via：[http://www.zhihu.com/question/20727176#answer-4194549][1]
+via：[http://www.zhihu.com/question/20727176#answer-4194549](http://www.zhihu.com/question/20727176#answer-4194549)
 
- [1]: http://www.zhihu.com/question/20727176#answer-4194549
+ 

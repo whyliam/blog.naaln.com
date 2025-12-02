@@ -18,13 +18,13 @@ description:
 
 > Echo Nest 宣布针对开发者推出 Echoprint，一个开源音乐「指纹」工具。该工具可免费使用，Echo Nest 表示，任何开发者都可以创建它们自己的乐纹应用。其他的乐纹服务 – notably Shazam, SoundHound, MusicID 和 PlayEar ，将关注点更多的放在了智能手机用户上。Echo Nest CTO 兼联合创始人 Brian Whitman 表示，「音乐「指纹」归属于互联网，它将是任何开发者依赖但无需担心许可费用或复杂的数据库实现的一种服务。「该公司表示期待开发者基于该工具，客户端、服务器端及数据，创建有趣的应用。
 
-以上是我复制的，具体请参见 [http://echoprint.me/][1].Echoprint 功能很强大，但这里只介绍一下如何使用它完成」听音识曲」。Echoprint 关于这方面的介绍可以参见 [Echoprint 的 API][2] 关于 identify 的介绍。
+以上是我复制的，具体请参见 [http://echoprint.me/](http://echoprint.me/).Echoprint 功能很强大，但这里只介绍一下如何使用它完成」听音识曲」。Echoprint 关于这方面的介绍可以参见 [Echoprint 的 API](http://developer.echonest.com/docs/v4/song.html#identify) 关于 identify 的介绍。
 
 # 2.准备
 
 先申请一个帐号 这是获取 API Key 的必要条件 EchoPrint 目前支持两套识别系统，
 
-[ENMFP][3] (闭源) 以及 [Echoprint][4](开源).两者之间的区别在 API 文档里面也有说明这里就不复述了。
+[ENMFP](http://developer.echonest.com/downloads/license) (闭源) 以及 [Echoprint](https://github.com/echonest/echoprint-codegen)(开源).两者之间的区别在 API 文档里面也有说明这里就不复述了。
 
 下载 ENMFP 的话比较简单，Echoprint 的话就得手动生成代码，过程比较复杂但是按照说明应该没什么问题。值得注意的是 u 在测试的时候使用的 cmake 是安装版 (绿色版冒事有点问题记得，应该是我不会用。大神请忽略).
 
@@ -147,14 +147,6 @@ Echoprint 生成后应该会有 codegen.exe 的文件，以及两个动态链接
 
 之后应该就可以在输出中看到 Debug 输出的调用结果的 Json 串了。写在最后: 可能是由于 Echoprint 数据库的原因很多歌曲返回的结果都是空的，特别是中文歌。注意到 Echoprint 的原因是希望写个小程序来帮 u 的音乐找到正确的名字和 Tag 信息，但由于实验结果有点差强人意，所以 u 就偷懒没打算继续了。嗯，这不是个好习惯!
 
-via:[http://www.ultre.cn/archives/25][5]
+via:[http://www.ultre.cn/archives/25](http://www.ultre.cn/archives/25)
 
- [1]: http://echoprint.me/
-
- [2]: http://developer.echonest.com/docs/v4/song.html#identify
-
- [3]: http://developer.echonest.com/downloads/license
-
- [4]: https://github.com/echonest/echoprint-codegen
-
- [5]: http://www.ultre.cn/archives/25
+ 

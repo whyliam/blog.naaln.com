@@ -20,7 +20,7 @@ markdown 语法快速成文，git 与 github 实时保存，jekyll 或 octopress
 
 ### 配置个人 Github 账号 登陆
 
-[github][1]，创建一个个人账号。假设叫做：rubyonchina。然后回到 ubuntu 或者 Mac 里面，仍然是在终端里面，输入：
+[github](https://github.com/signup/free)，创建一个个人账号。假设叫做：rubyonchina。然后回到 ubuntu 或者 Mac 里面，仍然是在终端里面，输入：
 
 ```
 [[ -f ~/.ssh/id_rsa.pub ]] || ssh-keygen -t rsa
@@ -105,7 +105,7 @@ git push -u rubyonchina master
 
 尝试浏览，
 
-[http://rubyonchina.github.com][2] OK！成功！然后，此时，再创建一个新的 github 的 source 分支，用于保存写作的 md 源文件等。
+[http://rubyonchina.github.com](http://rubyonchina.github.com) OK！成功！然后，此时，再创建一个新的 github 的 source 分支，用于保存写作的 md 源文件等。
 
 ```
 git add .
@@ -117,12 +117,7 @@ git push rubyonchina source
 
 ### 相关参考
 
-- [octopress][3]
-- [Git 与 Github 入门资料][4]
-- [告别 wordpress，拥抱 jekyll][5]
+- [octopress](http://octopress.org/)
+- [Git 与 Github 入门资料](http://www.yangzhiping.com/tech/git.html)
+- [告别 wordpress，拥抱 jekyll](http://www.yangzhiping.com/tech/wordpress-to-jekyll.html)
 
-[1]: https://github.com/signup/free
-[2]: http://rubyonchina.github.com/
-[3]: http://octopress.org/
-[4]: http://www.yangzhiping.com/tech/git.html
-[5]: http://www.yangzhiping.com/tech/wordpress-to-jekyll.html
