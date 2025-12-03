@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 别再把 UX 策略当成「路线图」
-date: 2025-11-25T13:15:00
+date: 2025/11/25 13:15:00
 categories:
   - 随笔
 tags:
