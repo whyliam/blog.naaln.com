@@ -1,7 +1,7 @@
 ---
 layout: post
 title: L96_Firefox 的衰落与英伟达的 AI 野心
-date: 2025-11-19 20:00:00
+date: 2025/11/19 20:00:00
 categories:
   - 资讯
 tags:
