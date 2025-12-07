@@ -1,7 +1,7 @@
 ---
 layout: post
 title: L97_AI 时代的商业逻辑
-date: 2025/11/27 20:00:00
+date: 2025/11/29 20:00:00
 categories:
   - 资讯
 tags:
