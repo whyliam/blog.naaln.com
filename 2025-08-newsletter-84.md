@@ -10,7 +10,7 @@ tags:
   - 角色一致性
   - 光影逻辑
   - anyquery
-description: "从大脑神经机制阐述时间感可变及延展方法；介绍nano-banana在角色一致性光影逻辑和照片级真实感上的突破并以台球序列等案例展示编辑能力；简述anyquery通过插件实现多源数据SQL查询"
+description: 从大脑神经机制阐述时间感可变及延展方法；介绍nano-banana在角色一致性光影逻辑和照片级真实感上的突破并以台球序列等案例展示编辑能力；简述anyquery通过插件实现多源数据SQL查询
 ---
 
 ![L84_放慢时间的感知](https://pics.naaln.com/2025-08-29-4928cbab744f43f49f3560824f4bbedd.png-basicBlog)

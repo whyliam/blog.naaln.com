@@ -10,8 +10,7 @@ tags:
   - TexPad
   - CTeX
   - TikZ
-description: 
-  简历使用LaTeX和AwesomeCV模板，安装BasicTeX、TexPad编辑器，并使用tlmgr安装enumitem、xifthen、ifmtarg、sourcesanspro、tcolorbox、environ、ctex、tikzfill等依赖包。
+description: 简历使用LaTeX和AwesomeCV模板，安装BasicTeX、TexPad编辑器，并使用tlmgr安装enumitem、xifthen、ifmtarg、sourcesanspro、tcolorbox、environ、ctex、tikzfill等依赖包。
 ---
 
 我的简历一直都是 `Latex` 写的，模板一直使用的是 `Awesome CV`。

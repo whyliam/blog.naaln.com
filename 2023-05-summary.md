@@ -10,8 +10,7 @@ tags:
   - LifeWorkBalance
   - NoteTaking
   - Writing
-description: 
-  作者反思工作状态并非好坏之别，而是适应与不适应的循环，提醒在新台阶上要放缓思考而勿急功近利。生活不止工作，倡导关注眼前人与事。为追求完美笔记工具与结构而陷入「为了写而写」的误区，直到未知初心仍未转向目标。建议目标导向与自我觉察，避免无谓消耗与时间浪费。
+description: 作者反思工作状态并非好坏之别，而是适应与不适应的循环，提醒在新台阶上要放缓思考而勿急功近利。生活不止工作，倡导关注眼前人与事。为追求完美笔记工具与结构而陷入「为了写而写」的误区，直到未知初心仍未转向目标。建议目标导向与自我觉察，避免无谓消耗与时间浪费。
 ---
 
 <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=1376142151&auto=1&height=66"></iframe>

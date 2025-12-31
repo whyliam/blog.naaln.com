@@ -9,7 +9,7 @@ tags:
   - OpenSource
   - Fingerprint
   - DataQuality
-description: "Echoprint是一个开源音乐指纹识别系统，由EchoNest技术支持并与Musicbrainz合作。数据目前约有15万首流行歌曲，外部目录同步正在开发。系统在文件匹配与去重方面表现接近完美，现场OTA测试仍在评估，所有后续质量保证集中在服务器匹配阶段。Codegen 4.12版为金版，已完成重大版本，不再引入新算法，欢迎提交编译和速度优化问题。服务主要在EchoNest上运行，可接受查询，并对"
+description: Echoprint是一个开源音乐指纹识别系统，由EchoNest技术支持并与Musicbrainz合作。数据目前约有15万首流行歌曲，外部目录同步正在开发。系统在文件匹配与去重方面表现接近完美，现场OTA测试仍在评估，所有后续质量保证集中在服务器匹配阶段。Codegen 4.12版为金版，已完成重大版本，不再引入新算法，欢迎提交编译和速度优化问题。服务主要在EchoNest上运行，可接受查询，并对
 ---
 
 欢迎来到 EchoprintEchoprint 是一个开源的音乐是识别系统，他允许任何人在他们自己的应用上构建音乐指纹识别系统。感谢 [The Echo Nest](http://the.echonest.com/) 的技术支持，以及 [Musicbrainz](http://musicbrainz.org/) 的合作。

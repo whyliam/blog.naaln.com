@@ -10,7 +10,7 @@ tags:
   - OpenAI
   - Worldcoin
   - AI
-description: "Sam Altman是YC创始人，Loopt创始人，后转让。投资Stripe、Hydrazine、Neuralink等，推动OpenAI并创建ChatGPT，推广Worldcoin计划，列出十三项成功建议。"
+description: Sam Altman是YC创始人，Loopt创始人，后转让。投资Stripe、Hydrazine、Neuralink等，推动OpenAI并创建ChatGPT，推广Worldcoin计划，列出十三项成功建议。
 ---
 
 ## 少年

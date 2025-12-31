@@ -10,8 +10,7 @@ tags:
   - GLU
   - 线框模型
   - 二次曲面
-description: 
-  本文概述GLUT提供的线框与实心几何体函数（球体、立方体、圆环、二十面体等），并说明GLUT缺少圆柱函数，推荐使用GLU的二次曲面对象（gluNewQuadric、gluSphere、gluCylinder）实现圆柱、球体和圆盘。随后简要介绍OpenGL核心库（gl）、实用库（glu）、辅助库（aux）及工具库（glut）的功能分类，包括矩阵变换、光照、纹理、窗口管理、回调和菜单等常用API。
+description: 本文概述GLUT提供的线框与实心几何体函数（球体、立方体、圆环、二十面体等），并说明GLUT缺少圆柱函数，推荐使用GLU的二次曲面对象（gluNewQuadric、gluSphere、gluCylinder）实现圆柱、球体和圆盘。随后简要介绍OpenGL核心库（gl）、实用库（glu）、辅助库（aux）及工具库（glut）的功能分类，包括矩阵变换、光照、纹理、窗口管理、回调和菜单等常用API。
 ---
 
 GLUT 工具箱提供几种图形 3 维图形的函数：

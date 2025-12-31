@@ -10,8 +10,7 @@ tags:
   - 样式
   - 前端
   - 工具
-description: 
-  Sass是CSS预处理器，通过变量、混入、函数等功能消除样式重复，提高代码可维护性；阐释Sass的核心概念、语法兼容CSS3、逐步迁移方式、常见误解及解决方案，介绍命令行与IDE使用指南，适合前端开发者提升样式组织效率。
+description: Sass是CSS预处理器，通过变量、混入、函数等功能消除样式重复，提高代码可维护性；阐释Sass的核心概念、语法兼容CSS3、逐步迁移方式、常见误解及解决方案，介绍命令行与IDE使用指南，适合前端开发者提升样式组织效率。
 ---
 
 > 本文由 [若强](http://www.deanishe.net/alfred-workflow) 根据 [DAN CEDERHOLM](http://alistapart.com/author/dancederholm) 的《[Why Sass?](http://alistapart.com/article/why-sass)》所译，整个译文带有我们自己的理解与思想，如果译得不好或不对之处还请同行朋友指点。如需转载此译文，需注明英文出处：<http://alistapart.com/article/why-sass>，以及作者相关信息

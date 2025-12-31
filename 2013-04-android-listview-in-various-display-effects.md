@@ -10,8 +10,7 @@ tags:
   - ArrayAdapter
   - SimpleAdapter
   - BaseAdapter
-description: 
-  本篇介绍AndroidListView的四种实现方式：一使用ArrayAdapter显示单行文本；二通过自定义布局与SimpleAdapter在每项显示图片与多行文字；三扩展SimpleAdapter的bindView支持Bitmap图片；四自定义BaseAdapter子类在getView中按type动态选择布局，实现混合按钮与歌曲信息的列表。每种方式均提供示例代码和关键步骤。
+description: 本篇介绍AndroidListView的四种实现方式：一使用ArrayAdapter显示单行文本；二通过自定义布局与SimpleAdapter在每项显示图片与多行文字；三扩展SimpleAdapter的bindView支持Bitmap图片；四自定义BaseAdapter子类在getView中按type动态选择布局，实现混合按钮与歌曲信息的列表。每种方式均提供示例代码和关键步骤。
 ---
 
 在 android 应用开发中，ListView 是使用频率非常高的一个组件，基本上稍微复杂点的布局都会用到它，利用它可以让你的界面美观，有层次

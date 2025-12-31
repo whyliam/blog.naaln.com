@@ -10,8 +10,7 @@ tags:
   - Optimization
   - Proxy
   - Firewall
-description: 
-  介绍Google搜索优化技巧，包括DNS配置、hosts文件修改、SSL搜索设置等方法规避网络屏蔽。提供多种Google搜索域名配置方案，推荐Chrome扩展提升搜索体验。涵盖代理设置、移除重定向、图片搜索等功能，帮助用户更稳定高效使用Google搜索服务。
+description: 介绍Google搜索优化技巧，包括DNS配置、hosts文件修改、SSL搜索设置等方法规避网络屏蔽。提供多种Google搜索域名配置方案，推荐Chrome扩展提升搜索体验。涵盖代理设置、移除重定向、图片搜索等功能，帮助用户更稳定高效使用Google搜索服务。
 ---
 
 gae 不用多说了，wall 也行，反正全天开着

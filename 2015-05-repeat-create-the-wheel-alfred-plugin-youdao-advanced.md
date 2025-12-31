@@ -10,8 +10,7 @@ tags:
   - Python
   - 有道翻译
   - AlfredWorkflow
-description: 
-  使用deanishe的alfredworkflowPython包实现有道翻译的Alfred工作流。步骤包括新建BlankWorkflow、设置ScriptFilter、下载alfredworkflow包并编写youdao代码、添加CopytoClipboard节点并连线。此为不完整示例，完整源码见项目仓库。
+description: 使用deanishe的alfredworkflowPython包实现有道翻译的Alfred工作流。步骤包括新建BlankWorkflow、设置ScriptFilter、下载alfredworkflow包并编写youdao代码、添加CopytoClipboard节点并连线。此为不完整示例，完整源码见项目仓库。
 ---
 
 首先感谢 [deanishe](http://www.deanishe.net/alfred-workflow) 为 Alfred Workflow 添加了 Python 框架库支持，自定义 Workflow 仅需要通过 Python 完成输入和输出的转换，最后输出到 Alfred 即可。这大大方便了我这种不会 `PHP` 开发的程序员

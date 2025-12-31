@@ -10,7 +10,7 @@ tags:
   - psychology
   - social
   - personality
-description: "文章基于《内向者优势》与卡尔金的论述，阐述内向者并非不爱说话、害羞、无礼等十大误解，解释其神经递质敏感、社交充电需求及深度思考的优势，强调内向者无需改造，应得到尊重并鼓励自我认同。"
+description: 文章基于《内向者优势》与卡尔金的论述，阐述内向者并非不爱说话、害羞、无礼等十大误解，解释其神经递质敏感、社交充电需求及深度思考的优势，强调内向者无需改造，应得到尊重并鼓励自我认同。
 ---
 
 英文原文： [10 Myths About Introverts](http://www.carlkingcreative.com/10-myths-about-introverts)，编译：[Lzhi』s Views](http://www.lzhi.org/views/480026)

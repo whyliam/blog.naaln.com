@@ -10,7 +10,7 @@ tags:
   - OpenGL
   - Curve
   - Rendering
-description: "OpenGL中Bezier曲线的映射、求值以及NURBS曲线的节点、控制点和属性设置，包含完整C语言示例代码，实现曲线绘制。"
+description: OpenGL中Bezier曲线的映射、求值以及NURBS曲线的节点、控制点和属性设置，包含完整C语言示例代码，实现曲线绘制。
 ---
 
 **一、Bezier 曲线**

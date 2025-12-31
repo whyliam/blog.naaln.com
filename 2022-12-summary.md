@@ -10,7 +10,7 @@ tags:
   - 年终
   - 财务
   - 亲情
-description: "疫情突然放开引发信息过载和囤药热潮，反思动态清零政策死亡率低但硬着陆导致医疗挤兑。年终财务评估股市跌40%、币市跌60%，因操作未记录无法复盘。宝贝出生成最大惊喜并占据全部独立思考时间，新年规划加强独立思考。"
+description: 疫情突然放开引发信息过载和囤药热潮，反思动态清零政策死亡率低但硬着陆导致医疗挤兑。年终财务评估股市跌40%、币市跌60%，因操作未记录无法复盘。宝贝出生成最大惊喜并占据全部独立思考时间，新年规划加强独立思考。
 ---
 
 <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=144163&auto=1&height=66"></iframe>

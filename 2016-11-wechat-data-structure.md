@@ -1,16 +1,16 @@
 ---
+layout: post
 title: iOS 微信的本地存储结构简析
 date: 2016/11/24 09:30:24
 categories:
   - 技术
-description: "利用iTunes备份定位微信App数据目录，读取MM.sqlite与WCDB_Contact.sqlite解析联系人、聊天记录并导出对应的图片、语音、视频等多媒体资源，形成完整的聊天记录导出工具。"
 tags:
   - iOS
   - 微信
   - SQLite
   - 数据导出
   - 备份
-layout: post
+description: 利用iTunes备份定位微信App数据目录，读取MM.sqlite与WCDB_Contact.sqlite解析联系人、聊天记录并导出对应的图片、语音、视频等多媒体资源，形成完整的聊天记录导出工具。
 ---
 
 大约四年前，我有了一个暗恋对象，所以想要把微信的聊天记录保存起来。那时在网上只有一种要付费的类似软件，所以我想，写一个开源的工具好了。于是这件事 [很快就完成了](https://github.com/tiancaihb/SaWechat-iOS)（对应微信 6.0；那时的代码质量很低我知道）。

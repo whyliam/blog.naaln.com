@@ -10,8 +10,7 @@ tags:
   - recognition
   - python
   - library
-description: 
-  使用echoprint将音乐文件放入codegenexemusic目录并下载服务器API到Python的sitepackages，安装simplejson后运行代码生成磁盘上的pkl数据库；库包含十首歌，随后解除注释进行查询，可通过更改测试文件为音频片段成功识别歌曲，若库中没有匹配则返回高分结果。
+description: 使用echoprint将音乐文件放入codegenexemusic目录并下载服务器API到Python的sitepackages，安装simplejson后运行代码生成磁盘上的pkl数据库；库包含十首歌，随后解除注释进行查询，可通过更改测试文件为音频片段成功识别歌曲，若库中没有匹配则返回高分结果。
 ---
 
 这里介绍使用 echoprint 的库构建方法在本地建立一个音乐库的过程。

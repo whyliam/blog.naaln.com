@@ -10,8 +10,7 @@ tags:
   - Homebrew
   - socket
   - config
-description: 
-  在Mac上安装MySQL时，使用Homebrew或dmg会出现socket错误，解决方案包括在/usr/local/etc/my.cnf指定socket路径和字符集，运行mysql_install_db初始化数据库，执行mysql_secure_installation完成安全配置，最后启动mysql.server即可正常连接。
+description: 在Mac上安装MySQL时，使用Homebrew或dmg会出现socket错误，解决方案包括在/usr/local/etc/my.cnf指定socket路径和字符集，运行mysql_install_db初始化数据库，执行mysql_secure_installation完成安全配置，最后启动mysql.server即可正常连接。
 ---
 
 为什么在 Mac 上装一个 MySQL 这么的难？据说用 HomeBrew 容易装，可我发现还是要一堆配置，配置过后还是没成功。我尝试过两种安装方式：

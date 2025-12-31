@@ -10,8 +10,7 @@ tags:
   - 购物攻略
   - 旅行工具
   - 学习资源
-description: 
-  美国生活常用网站包括购物、票务、旅行、美食、学习、影音六大类。购物有Amazon及闪购平台；票务推荐Amtrak、Megabus，早买更省；旅行使用TripAdvisor比较机票、景点和餐厅；美食点评借Yelp、Zagat与Groupon；学习资源有Coursera、Sparknotes、StudyBlue；影音平台为Hulu与Netflix；edu邮箱可获Amazon半年免费Prime。
+description: 美国生活常用网站包括购物、票务、旅行、美食、学习、影音六大类。购物有Amazon及闪购平台；票务推荐Amtrak、Megabus，早买更省；旅行使用TripAdvisor比较机票、景点和餐厅；美食点评借Yelp、Zagat与Groupon；学习资源有Coursera、Sparknotes、StudyBlue；影音平台为Hulu与Netflix；edu邮箱可获Amazon半年免费Prime。
 ---
 
 留美五年除了 google, 万恶的 College Board 还有学校查成绩网站以外，用得最多的就是下面这些网站啦~ 无私的分享给大家！

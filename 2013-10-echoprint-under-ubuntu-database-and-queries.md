@@ -10,8 +10,7 @@ tags:
   - api
   - vmware
   - database
-description: 
-  服务器搭建后测试readme例子，在python中运行fp模块进行数据写入和查询操作。通过api.py开启API服务器，使用curl命令写入数据和查询。介绍网络配置概念包括0.0.0.0、127.0.0.1和物理IP地址。详细说明虚拟机NAT模式和桥接模式的网络配置差异。在ubuntu下编译codegen需要安装ffmpeg、libtag1-dev、zlib1g-dev、libboost-dev、
+description: 服务器搭建后测试readme例子，在python中运行fp模块进行数据写入和查询操作。通过api.py开启API服务器，使用curl命令写入数据和查询。介绍网络配置概念包括0.0.0.0、127.0.0.1和物理IP地址。详细说明虚拟机NAT模式和桥接模式的网络配置差异。在ubuntu下编译codegen需要安装ffmpeg、libtag1-dev、zlib1g-dev、libboost-dev、
 ---
 
 在服务器搭建好之后可以试一试 readme 里面的几个例子，看一下有没有其他问题。

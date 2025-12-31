@@ -10,7 +10,7 @@ tags:
   - 码生成
   - 数据库
   - 接口
-description: "Echoprint 是开源音乐指纹识别系统，数据库由 EchoNest 提供，已更新至 4.12 编码器，新增百万歌曲列表；提供 GitHub 下载、服务器数据页面、Codegen 编译指南；FAQ 包括商业使用、OTA 麦克风识别、文件扫描、匹配性能、最佳匹配；系统可扩展至每秒 50 查询，适用于去重、版权检测等场景。"
+description: Echoprint 是开源音乐指纹识别系统，数据库由 EchoNest 提供，已更新至 4.12 编码器，新增百万歌曲列表；提供 GitHub 下载、服务器数据页面、Codegen 编译指南；FAQ 包括商业使用、OTA 麦克风识别、文件扫描、匹配性能、最佳匹配；系统可扩展至每秒 50 查询，适用于去重、版权检测等场景。
 ---
 
 欢迎来到 EchoprintEchoprint 是一个开源的音乐是识别系统，他允许任何人在他们自己的应用上构建音乐指纹识别系统。感谢 [The Echo Nest](http://the.echonest.com/) 的技术支持，以及 [Musicbrainz](http://musicbrainz.org/) 的合作。

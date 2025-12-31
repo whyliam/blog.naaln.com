@@ -10,7 +10,7 @@ tags:
   - subplot
   - imread
   - imshow
-description: "MATLAB中的imread函数读取图像数据，imshow函数显示图像。subplot函数用于在单个图形界面中创建多个子图显示多张图片，支持位置向量精确控制子图的大小和位置。提供具体代码示例演示显示多张图片的操作。"
+description: MATLAB中的imread函数读取图像数据，imshow函数显示图像。subplot函数用于在单个图形界面中创建多个子图显示多张图片，支持位置向量精确控制子图的大小和位置。提供具体代码示例演示显示多张图片的操作。
 ---
 
 最近写个图片搜索引擎，恶补 Matlab 中。。。。

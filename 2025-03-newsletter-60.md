@@ -10,8 +10,7 @@ tags:
   - DeepResearch
   - 商业叙事
   - 技术突破
-description: 
-  AI技术双引擎：端到端AI的Agent如DeepResearch和DeepSeek的算力与算法突破，实现万字级报告生成、跨平台数据聚合与强化学习推理，压缩知识工作至分钟级；中国模型以低成本实现高性价比的技术路径与开源策略；大模型未来以Agent主导或App依赖之争；商业叙事如Priceline案例重塑估值体系，技术硬实力与软实力协同重构十年科技竞争格局。
+description: AI技术双引擎：端到端AI的Agent如DeepResearch和DeepSeek的算力与算法突破，实现万字级报告生成、跨平台数据聚合与强化学习推理，压缩知识工作至分钟级；中国模型以低成本实现高性价比的技术路径与开源策略；大模型未来以Agent主导或App依赖之争；商业叙事如Priceline案例重塑估值体系，技术硬实力与软实力协同重构十年科技竞争格局。
 ---
 
 ![AI技术革新与商业战略：未来发展的双引擎](https://pics.naaln.com/2025-03-21-860b430989df4832b7b4ffb3d53cabb0-basicBlog)

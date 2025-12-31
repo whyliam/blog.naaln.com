@@ -10,8 +10,7 @@ tags:
   - 机器人触觉
   - AI医疗
   - 特斯拉Robotaxi
-description: 
-  苹果因AI承诺遭股东诉讼，谷歌AI概览覆盖半数查询重塑SEO。机器人新皮肤赋予触觉，AI医疗扩展到运营，密西西比合作Nvidia普及教育，特斯拉在奥斯汀公开测试Robotaxi，Anthropic获版权训练部分胜诉，教皇与维基百科讨论AI伦理与人类知识。
+description: 苹果因AI承诺遭股东诉讼，谷歌AI概览覆盖半数查询重塑SEO。机器人新皮肤赋予触觉，AI医疗扩展到运营，密西西比合作Nvidia普及教育，特斯拉在奥斯汀公开测试Robotaxi，Anthropic获版权训练部分胜诉，教皇与维基百科讨论AI伦理与人类知识。
 ---
 
 ![人工智能的世界展现出巨大的分化](https://pics.naaln.com/2025-06-29-e84fade3f1aa4c218f9dc1308e656d4d.png-basicBlog)

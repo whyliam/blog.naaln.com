@@ -10,8 +10,7 @@ tags:
   - Linux
   - 编程文化
   - 网络礼仪
-description: 
-  RTFM和RTFSC是Unix程序员的重要传统，强调阅读手册和源代码的重要性。这些看似粗鲁的回应实际上体现了学习者应主动寻找答案的教育理念。STFW提醒在网络上搜索，RTFA鼓励阅读原文，还有UTFH、STFG、GIYF、JFGI、UTSL、RTFE、RTFC、RTFQ、LMGTFY、WIDGI、FIOTI等多种缩写表达了类似的自助学习建议。这些缩写虽然含有粗俗词汇，但传达了鼓励独立思考和学习者主
+description: RTFM和RTFSC是Unix程序员的重要传统，强调阅读手册和源代码的重要性。这些看似粗鲁的回应实际上体现了学习者应主动寻找答案的教育理念。STFW提醒在网络上搜索，RTFA鼓励阅读原文，还有UTFH、STFG、GIYF、JFGI、UTSL、RTFE、RTFC、RTFQ、LMGTFY、WIDGI、FIOTI等多种缩写表达了类似的自助学习建议。这些缩写虽然含有粗俗词汇，但传达了鼓励独立思考和学习者主
 ---
 
 搞 Linux 的，甚至可以说是搞软件的。

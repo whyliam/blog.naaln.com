@@ -4,14 +4,13 @@ title: 前端资源管理
 date: 2016/04/25 12:12:00
 categories:
   - 技术
-description: 
-  内容包括前端设计工具Livo，PC框架Bootstrap、Meteor等，手机框架MUI、Ionic，JavaScript框架Vuejs、jQuery，动画库Touch等，图表库Plot，CSS预处理器SASS，字体图标Iconfont，构建工具gulp。
 tags:
   - 前端开发
   - Bootstrap
   - Vuejs
   - SASS
   - Gulp
+description: 内容包括前端设计工具Livo，PC框架Bootstrap、Meteor等，手机框架MUI、Ionic，JavaScript框架Vuejs、jQuery，动画库Touch等，图表库Plot，CSS预处理器SASS，字体图标Iconfont，构建工具gulp。
 ---
 
 ## 设计

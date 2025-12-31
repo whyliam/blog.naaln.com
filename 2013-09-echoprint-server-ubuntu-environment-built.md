@@ -10,8 +10,7 @@ tags:
   - python
   - webpy
   - echoprint
-description: 
-  本文介绍了在Ubuntu上搭建运行音频指纹服务器的完整流程，包括安装Java、Python、web.py，配置tokyocabinet和tokyotyrant，启动ttserver，以及启动音频指纹服务器的步骤和注意事项。
+description: 本文介绍了在Ubuntu上搭建运行音频指纹服务器的完整流程，包括安装Java、Python、web.py，配置tokyocabinet和tokyotyrant，启动ttserver，以及启动音频指纹服务器的步骤和注意事项。
 ---
 
 先配置一下 ubuntu 的环境以备后用，安装这些东西：

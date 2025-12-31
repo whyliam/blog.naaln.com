@@ -10,8 +10,7 @@ tags:
   - Ruby
   - 博客迁移
   - 静态网站
-description: 
-  详细讲解从WordPress迁移到Octopress的完整流程，包括Ruby环境搭建、GitHub仓库设置、域名绑定和文章发布等关键步骤。介绍Octopress作为静态网站生成器的优势，强调其相比WordPress的轻量化和免费托管特性，为用户提供从零开始的部署指南。
+description: 详细讲解从WordPress迁移到Octopress的完整流程，包括Ruby环境搭建、GitHub仓库设置、域名绑定和文章发布等关键步骤。介绍Octopress作为静态网站生成器的优势，强调其相比WordPress的轻量化和免费托管特性，为用户提供从零开始的部署指南。
 ---
 
 终于，耗时 N 天，把我的博客从 WordPress 转到了 Octopress，并且很无耻的托管到 GitHub 上面，免费高速～ 这篇文章教大家简单的 Octopress 的安装与使用。（如果你用的 Windows，你可能会碰到一堆雷⋯⋯强烈推荐 Linux 或者 Mac OS X）

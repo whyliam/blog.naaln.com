@@ -10,7 +10,7 @@ tags:
   - iOS
   - 开源
   - 系统
-description: "Echoprint 开源音乐识别系统用于在应用中构建指纹识别。支持个人电脑或服务器歌曲识别、音乐库重复删除、iOS 平台歌曲识别、自有数据识别。提供 GitHub 下载、服务器说明、iOS 示例、数据访问等资源，建议加入 Echoprint 谷歌小组。"
+description: Echoprint 开源音乐识别系统用于在应用中构建指纹识别。支持个人电脑或服务器歌曲识别、音乐库重复删除、iOS 平台歌曲识别、自有数据识别。提供 GitHub 下载、服务器说明、iOS 示例、数据访问等资源，建议加入 Echoprint 谷歌小组。
 ---
 
 欢迎来到 EchoprintEchoprint 是一个开源的音乐是识别系统，他允许任何人在他们自己的应用上构建音乐指纹识别系统。感谢 [The Echo Nest](http://the.echonest.com/) 的技术支持，以及 [Musicbrainz](http://musicbrainz.org/) 的合作。

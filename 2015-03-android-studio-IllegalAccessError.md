@@ -8,7 +8,7 @@ tags:
   - AndroidStudio
   - JARImport
   - Gradle
-description: "在Android平台开发微信插件过程中，使用Android Studio导入JAR包时遭遇IllegalAccessError错误。通过深入研究，发现问题源于依赖配置，将build.gradle中的compile改为provided后成功解决该错误，顺利完成微信启动抓取功能的实现。"
+description: 在Android平台开发微信插件过程中，使用Android Studio导入JAR包时遭遇IllegalAccessError错误。通过深入研究，发现问题源于依赖配置，将build.gradle中的compile改为provided后成功解决该错误，顺利完成微信启动抓取功能的实现。
 ---
 
 最近在寫一個 `微信` 的插件，因爲我使用的是 `android` 的平台。所以我也嘗試著使用 `android studio`，由於本人 android 學的不好，真的就只能用嘗試形容。
