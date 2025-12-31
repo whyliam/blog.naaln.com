@@ -9,8 +9,7 @@ tags:
   - 用户增长模型
   - HEART
   - 飞轮模型
-description: 
-  介绍了多种消费者行为模型如AIDA、AIDMA、AISAS、SIPS、SICAS、ISMAS、ADMAS以及用户增长模型AARRR、RARRA、HEART、PULSE、AIPL、FAST、GROW，分析模型演变、适用场景和核心指标，强调用户留存和价值创造是关键，推荐根据业务需求灵活选用并结合飞轮模型实现持续增长。
+description: 介绍了多种消费者行为模型如AIDA、AIDMA、AISAS、SIPS、SICAS、ISMAS、ADMAS以及用户增长模型AARRR、RARRA、HEART、PULSE、AIPL、FAST、GROW，分析模型演变、适用场景和核心指标，强调用户留存和价值创造是关键，推荐根据业务需求灵活选用并结合飞轮模型实现持续增长。
 ---
 
 > 转载自：[从消费者行为模式到用户增长模型-钱魏Way](https://www.biaodianfu.com/consumer-behavior-model.html)

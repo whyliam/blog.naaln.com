@@ -10,8 +10,7 @@ tags:
   - Slicing
   - Collections
   - Itertools
-description: 
-  展示Python常用且不常见的语言特性与技巧，涵盖序列解包、负索引、切片、列表推导、字典集合推导、生成器表达式、命名元组、Counter、双端队列、堆操作、itertools、笛卡尔积、组合与排列、分组迭代，适用于进阶开发者参考。
+description: 展示Python常用且不常见的语言特性与技巧，涵盖序列解包、负索引、切片、列表推导、字典集合推导、生成器表达式、命名元组、Counter、双端队列、堆操作、itertools、笛卡尔积、组合与排列、分组迭代，适用于进阶开发者参考。
 ---
 
 By Sahand Saba 翻译 Liam

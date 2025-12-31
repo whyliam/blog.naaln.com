@@ -10,7 +10,7 @@ tags:
   - MultimodalAI
   - OpenSource
   - Economics
-description: "人工智能从概念演变为基础技术，2025年关键趋势包括自主智能体崛起、多模态AI和开源动态，前沿模型如GPT-5、Claude 4和DeepSeek R1-0528，经济影响显著。"
+description: 人工智能从概念演变为基础技术，2025年关键趋势包括自主智能体崛起、多模态AI和开源动态，前沿模型如GPT-5、Claude 4和DeepSeek R1-0528，经济影响显著。
 ---
 
 ![人工智能创新加速](https://pics.naaln.com/2025-06-03-524651fc8551460b8ad3727d681aa381.png-basicBlog)

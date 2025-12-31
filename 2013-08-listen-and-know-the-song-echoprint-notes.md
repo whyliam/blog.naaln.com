@@ -10,8 +10,7 @@ tags:
   - 指纹生成
   - API使用
   - 编程实践
-description: 
-  Echoprint开源音乐指纹工具实现听音识曲。准备阶段申请API密钥，选择ENMFP或Echoprint下载生成codegen程序。编写代码用Process类调用codegen.exe获取指纹，用网络请求提交到API。测试中识别中文歌曲结果为空，项目暂停。
+description: Echoprint开源音乐指纹工具实现听音识曲。准备阶段申请API密钥，选择ENMFP或Echoprint下载生成codegen程序。编写代码用Process类调用codegen.exe获取指纹，用网络请求提交到API。测试中识别中文歌曲结果为空，项目暂停。
 ---
 
 # 1.介绍

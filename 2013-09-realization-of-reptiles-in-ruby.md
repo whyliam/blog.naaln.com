@@ -10,8 +10,7 @@ tags:
   - scraping
   - nokogiri
   - cookies
-description: 
-  Ruby使用mechanize抓取网页：安装mechanize后，agent.get抓取页面；link_with.click模拟点击；表单提交；nokogiri解析页面；JSESSIONID处理登录；save_as保存文件。
+description: Ruby使用mechanize抓取网页：安装mechanize后，agent.get抓取页面；link_with.click模拟点击；表单提交；nokogiri解析页面；JSESSIONID处理登录；save_as保存文件。
 ---
 
 Ruby 中实现网页抓取，一般用的是 mechanize，使用非常简单。安装

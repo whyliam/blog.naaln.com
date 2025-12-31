@@ -10,7 +10,7 @@ tags:
   - 道德反思
   - 纪伯伦
   - 人生感悟
-description: "该文描述了七个情境：故作谦卑、欲望填充、选择容易、错误借口、软弱坚韧、鄙视面具和赞美美德，揭示人性的自我欺骗与道德缺失。"
+description: 该文描述了七个情境：故作谦卑、欲望填充、选择容易、错误借口、软弱坚韧、鄙视面具和赞美美德，揭示人性的自我欺骗与道德缺失。
 ---
 
 > The first time when I saw her being meek that she might attain height.

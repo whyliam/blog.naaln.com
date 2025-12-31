@@ -10,8 +10,7 @@ tags:
   - Fingerprinting
   - Codegen
   - CPlusPlus
-description: 
-  Echoprint开源音乐识别系统介绍，重点讲解Codegen代码生成器。该组件生成音频指纹哈希值时间戳，支持文件读取和麦克风输入，采用MIT许可证。基于C++开发，兼容服务器、桌面、手机、嵌入式设备。提供两种操作模式：代码生成器库libcodegen链接方式，独立二进制文件多线程运行模式。最新稳定版本4.12，可从GitHub获取源码和文档。
+description: Echoprint开源音乐识别系统介绍，重点讲解Codegen代码生成器。该组件生成音频指纹哈希值时间戳，支持文件读取和麦克风输入，采用MIT许可证。基于C++开发，兼容服务器、桌面、手机、嵌入式设备。提供两种操作模式：代码生成器库libcodegen链接方式，独立二进制文件多线程运行模式。最新稳定版本4.12，可从GitHub获取源码和文档。
 ---
 
 欢迎来到 EchoprintEchoprint 是一个开源的音乐是识别系统，他允许任何人在他们自己的应用上构建音乐指纹识别系统。感谢 [The Echo Nest](http://the.echonest.com/) 的技术支持，以及 [Musicbrainz](http://musicbrainz.org/) 的合作。

@@ -10,8 +10,7 @@ tags:
   - gnometweaktool
   - fcitx
   - googlechrome
-description: 
-  在Fedora19首次安装后，推荐禁用firewalld与SELinux，配置SELinux为disabled，添加RPMFusion仓库，安装32位兼容库，安装WPS与字体，安装TweakTool、Sublime、Fcitx输入法，启用第三方仓库，更新系统，安装Chrome与Flash插件，下载MPlayer编解码器，完成桌面基本功能。
+description: 在Fedora19首次安装后，推荐禁用firewalld与SELinux，配置SELinux为disabled，添加RPMFusion仓库，安装32位兼容库，安装WPS与字体，安装TweakTool、Sublime、Fcitx输入法，启用第三方仓库，更新系统，安装Chrome与Flash插件，下载MPlayer编解码器，完成桌面基本功能。
 ---
 
 ## 1. 安装 Fedora19 后的初始化配置

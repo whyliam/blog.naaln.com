@@ -10,8 +10,7 @@ tags:
   - Pandas
   - SQL
   - DataAnalysis
-description: 
-  比较Hadoop与Pandas、SQL工具在处理大数据时的适用性。Hadoop适合TB级数据但表达力限制且性能低，Pandas适数百MB向量化处理，SQL适GB数据用索引支持。Hadoop迫使map-reduce模式增加编写复杂性，根据数据规模选择：数百MB用Pandas，几GB用SQL或升级硬件，TB级才考虑Hadoop。
+description: 比较Hadoop与Pandas、SQL工具在处理大数据时的适用性。Hadoop适合TB级数据但表达力限制且性能低，Pandas适数百MB向量化处理，SQL适GB数据用索引支持。Hadoop迫使map-reduce模式增加编写复杂性，根据数据规模选择：数百MB用Pandas，几GB用SQL或升级硬件，TB级才考虑Hadoop。
 ---
 
 「你在大数据和 Hadoop 方面有多少经验呢」，他们问我。我告诉他们，我一直在使用 Hadoop，但是很少处理几 TB 以上的数据。我基本上只是一个大数据新手——知道概念，写过代码，但是没有大规模经验。

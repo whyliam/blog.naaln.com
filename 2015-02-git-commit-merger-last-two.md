@@ -10,7 +10,7 @@ tags:
   - commit
   - 邮件列表
   - 补丁
-description: "Github 上的 git rebase 无法合并最后两个提交，使用软重置到上一次提交并重新提交解决问题。Git 邮件列表被赞为最活跃的帮助平台，曾提交补丁被拒但仍欣赏该列表的活跃度。"
+description: Github 上的 git rebase 无法合并最后两个提交，使用软重置到上一次提交并重新提交解决问题。Git 邮件列表被赞为最活跃的帮助平台，曾提交补丁被拒但仍欣赏该列表的活跃度。
 ---
 
 在使用 Github 的時候，常常使用 `rebase` 把多個 commit 合併成一個。但是最後兩個 commit 一直合併不了。

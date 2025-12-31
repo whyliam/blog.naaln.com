@@ -10,7 +10,7 @@ tags:
   - 编程哲学
   - 源码
   - this
-description: "Python的禅通过‘import this’输出多条编程原则，强调优美、明了、简洁、扁平等；随后提供中文翻译帮助理解，并指出 this 模块源码使用ROT13混淆，明显违背这些原则。"
+description: Python的禅通过‘import this’输出多条编程原则，强调优美、明了、简洁、扁平等；随后提供中文翻译帮助理解，并指出 this 模块源码使用ROT13混淆，明显违背这些原则。
 ---
 
 一直都觉得 `Python` 是一个禅意很浓的语言，十分的有趣。

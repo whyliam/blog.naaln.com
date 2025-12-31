@@ -9,7 +9,7 @@ tags:
   - AgentWorkflow
   - DeepResearch
   - Operator
-description: "ChatGPT Agent是OpenAI推出的统一智能体，整合Operator、Deep Research与ChatGPT能力，具工具链、深度接入、自动推送与高配额特性，适合生活与办公场景；文中对比Manus与Skywork的技术架构、执行方式、任务规划等维度，并汇总GoogleGemini通话与嵌入、百度Tizzy、AWS Kiro IDE、月之暗面Kimi K2、秘塔深度研究、PresentA"
+description: ChatGPT Agent是OpenAI推出的统一智能体，整合Operator、Deep Research与ChatGPT能力，具工具链、深度接入、自动推送与高配额特性，适合生活与办公场景；文中对比Manus与Skywork的技术架构、执行方式、任务规划等维度，并汇总GoogleGemini通话与嵌入、百度Tizzy、AWS Kiro IDE、月之暗面Kimi K2、秘塔深度研究、PresentA
 ---
 
 ![L78_数字工作伙伴的升级与未来](https://pics.naaln.com/2025-07-27-06aaa98b3c6e4ad0aaf76f8d06b2fd1d.png-basicBlog)

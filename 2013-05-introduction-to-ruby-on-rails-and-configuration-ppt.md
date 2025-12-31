@@ -9,7 +9,7 @@ tags:
   - Rails
   - MVC
   - ActiveRecord
-description: "Ruby on Rails 将 Ruby 语言与 Rails 框架结合，以 MVC 架构实现快速网页开发；模型基于 ActiveRecord 模式表示业务状态和数据关系，视图使用嵌入 Ruby 的模板生成界面，控制器负责接收请求并协调模型和视图。Rails 于 2004 年开源，坚持惯例优于配置，提供 opinionated 软件特性，简化配置并提升开发效率。"
+description: Ruby on Rails 将 Ruby 语言与 Rails 框架结合，以 MVC 架构实现快速网页开发；模型基于 ActiveRecord 模式表示业务状态和数据关系，视图使用嵌入 Ruby 的模板生成界面，控制器负责接收请求并协调模型和视图。Rails 于 2004 年开源，坚持惯例优于配置，提供 opinionated 软件特性，简化配置并提升开发效率。
 ---
 
 ##一、Ruby on Rails 介绍

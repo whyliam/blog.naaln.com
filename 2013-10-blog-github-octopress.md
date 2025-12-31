@@ -10,7 +10,7 @@ tags:
   - 博客
   - 搭建
   - 部署
-description: "介绍基于作者Fork的Octopress版本在GitHub上建立博客的完整流程。包含版本改动说明和八个详细步骤：本地环境安装、主题安装、GitHub Pages连接、博客配置、备份准备、文章创建、部署发布、备份管理。详细说明每个步骤的具体操作命令和注意事项，提供完整的从零开始搭建个人博客的指南，帮助用户摆脱WordPress转向Octopress静态博客系统。"
+description: 介绍基于作者Fork的Octopress版本在GitHub上建立博客的完整流程。包含版本改动说明和八个详细步骤：本地环境安装、主题安装、GitHub Pages连接、博客配置、备份准备、文章创建、部署发布、备份管理。详细说明每个步骤的具体操作命令和注意事项，提供完整的从零开始搭建个人博客的指南，帮助用户摆脱WordPress转向Octopress静态博客系统。
 ---
 
 最近有些同学让我分享我的博客主题，其实主题早已经放在 GitHub 上了。下面索性基于 [我 Fork 的 Octopress](https://github.com/jsw0528/octopress/tree/mrzhang_me/)，讲一下如何使用 Octopress 在 GitHub 上建博客。先来看看我的版本和原始版本的主要不同之处：

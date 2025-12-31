@@ -7,7 +7,7 @@ categories:
 tags:
   - 自制力
   - 未来可视化
-description: "可视化未来概念强调面对当下冲动与长期目标之间的选择，如吃蛋糕与减肥或消费与储蓄。通过想象未来自我并可视化其状态，提升自制力以避免短视决策，帮助做出更有利于未来的选择。"
+description: 可视化未来概念强调面对当下冲动与长期目标之间的选择，如吃蛋糕与减肥或消费与储蓄。通过想象未来自我并可视化其状态，提升自制力以避免短视决策，帮助做出更有利于未来的选择。
 ---
 
 <embed src="http://player.youku.com/player.php/sid/XNDcyMTYxNzk2/v.swf" allowFullScreen="true" quality="high" width="480" height="400" align="middle" allowScriptAccess="always" type="application/x-shockwave-flash"></embed>

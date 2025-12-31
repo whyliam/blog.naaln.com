@@ -10,8 +10,7 @@ tags:
   - Manus
   - EdgeCopilot
   - 智能体
-description: 
-  本期报告聚焦OpenAI大语言模型发布延期的战略与安全考量、ChatGPT对批判性思维的潜在侵蚀及学习模式的应对、智谱AI开源的低成本模型、Manus多智能体协作革新任务编排、微软EdgeCopilot将浏览器转型为智能助理、以及AI产品经理在不确定性、伦理、信任与跨职能协作中的角色演进。
+description: 本期报告聚焦OpenAI大语言模型发布延期的战略与安全考量、ChatGPT对批判性思维的潜在侵蚀及学习模式的应对、智谱AI开源的低成本模型、Manus多智能体协作革新任务编排、微软EdgeCopilot将浏览器转型为智能助理、以及AI产品经理在不确定性、伦理、信任与跨职能协作中的角色演进。
 ---
 
 ![驾驭延迟、颠覆与智能体时代的曙光](https://pics.naaln.com/2025-08-06-ad9dc23b8dfc46899a63eb1e1086e70b.png-basicBlog)

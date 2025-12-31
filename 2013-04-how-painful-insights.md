@@ -10,7 +10,7 @@ tags:
   - 永恒
   - 视频
   - 爱恋
-description: "嵌入音悦台视频，呈现爱情漩涡中的痛彻心扉，视为刻骨铭心的永恒，诠释爱的死亡，从此不再使用「我们」。"
+description: 嵌入音悦台视频，呈现爱情漩涡中的痛彻心扉，视为刻骨铭心的永恒，诠释爱的死亡，从此不再使用「我们」。
 ---
 
 <embed src="http://player.yinyuetai.com/video/player/571543/v_9620425.swf" quality="high" width="480" height="334" align="middle" allowScriptAccess="sameDomain" allowfullscreen="true" type="application/x-shockwave-flash">

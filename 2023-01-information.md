@@ -9,8 +9,7 @@ tags:
   - 信息源
   - 内容创作
   - 博客
-description: 
-  作者开通了Space.News通讯社，去年的计划终于实现。曾在微信上运营过20多期后停更，这次更新后发现自己获取信息的渠道过于狭窄单一。反思之前过多时间花在工具上，对信息源筛选投入不足。分享多个关注的高质量Newsletter，包括Joe的折腾日记、DecoHack周报、DEX周报、赛博反应堆等知名内容精选平台，以及Lenny的通讯社、LearnData开源笔记、Shyrism.News和Rapt
+description: 作者开通了Space.News通讯社，去年的计划终于实现。曾在微信上运营过20多期后停更，这次更新后发现自己获取信息的渠道过于狭窄单一。反思之前过多时间花在工具上，对信息源筛选投入不足。分享多个关注的高质量Newsletter，包括Joe的折腾日记、DecoHack周报、DEX周报、赛博反应堆等知名内容精选平台，以及Lenny的通讯社、LearnData开源笔记、Shyrism.News和Rapt
 ---
 
 最近开了 NewsLetteter [Space.News](https://space.zhubai.love/) ，去年 8 月份 就一直就想开了。其实在更早的前几年在微信上做过一次，更新了 20 多期就没有更新下去。

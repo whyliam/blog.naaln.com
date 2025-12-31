@@ -10,7 +10,7 @@ tags:
   - Streaming
   - MoviePlayer
   - Download
-description: "PopcornTime是开源电影播放器，支持直接播放yts高清电影并加载外挂字幕，因版权问题项目终止。该版本更换api重新编译，提供mac与win64安装包下载。"
+description: PopcornTime是开源电影播放器，支持直接播放yts高清电影并加载外挂字幕，因版权问题项目终止。该版本更换api重新编译，提供mac与win64安装包下载。
 ---
 
 Popcorn Time 是一个很火爆的开源电影播放器，无需完全下载就可以直接播放 yts 里的高清电影，并且能够加载外挂字幕文件。

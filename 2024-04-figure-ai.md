@@ -9,7 +9,7 @@ tags:
   - 人工智能
   - 通用机器人
   - AGI
-description: "Figure AI专注人形机器人开发，核心产品Figure 01身高170cm重60kg可载20kg，与OpenAI合作使用GPT模型实现智能对话思考能力。创始人Brett Adcock曾创立Vettery猎头平台和Archer电动飞机公司。Figure AI团队80人来自波士顿动力等公司，2024年2月完成B轮6.75亿美元融资估值26亿美元，参投方包括微软OpenAI英伟达等。公司使命通过先进"
+description: Figure AI专注人形机器人开发，核心产品Figure 01身高170cm重60kg可载20kg，与OpenAI合作使用GPT模型实现智能对话思考能力。创始人Brett Adcock曾创立Vettery猎头平台和Archer电动飞机公司。Figure AI团队80人来自波士顿动力等公司，2024年2月完成B轮6.75亿美元融资估值26亿美元，参投方包括微软OpenAI英伟达等。公司使命通过先进
 ---
 
 ![img](https://pics.naaln.com/blog/2024-04-19-c2f808.jpg-basicBlog)

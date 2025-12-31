@@ -10,7 +10,7 @@ tags:
   - XMLParser
   - ImageLoader
   - AsyncTask
-description: "演示Android应用中如何从网络获取XML数据，解析后通过自定义BaseAdapter显示在ListView上，并集成ImageLoader实现图片异步加载和缓存。"
+description: 演示Android应用中如何从网络获取XML数据，解析后通过自定义BaseAdapter显示在ListView上，并集成ImageLoader实现图片异步加载和缓存。
 ---
 
 如何从网络获取图片以及文本来显示。事实上，一般是先获取 Josn 或 sml 数据，然后解释显示。我们先从网上获取 xml，然后对其进行解析，最后显示在 ListView 上。具体步骤：

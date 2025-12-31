@@ -10,7 +10,7 @@ tags:
   - install
   - windows
   - linux
-description: "Ruby多平台安装如Windows一步安装、Linux apt-get、OS X MacPorts；安装Rails通过gem；创建Web应用运行服务器访问localhost:3000。"
+description: 'Ruby多平台安装如Windows一步安装、Linux apt-get、OS X MacPorts；安装Rails通过gem；创建Web应用运行服务器访问localhost:3000。'
 ---
 
 # Ruby 安装 在这里可以下载到适合您的最新的 Ruby 版本，当前稳定的版本是 2.0.0-p195。下载前请先阅读

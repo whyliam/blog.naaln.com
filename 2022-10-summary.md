@@ -10,7 +10,7 @@ tags:
   - 时薪比较
   - 工作陷阱
   - 职业规划
-description: "采用时间成本决策，外包或雇人取决于其费用与自身时薪比较；以假设月薪五万、时薪三百为基准，任务价值超过三百自行完成；工作中因才能显而易见易被提供恰好的工作与加薪晋升，长期陷入职场陷阱而难以实现财富自由。"
+description: 采用时间成本决策，外包或雇人取决于其费用与自身时薪比较；以假设月薪五万、时薪三百为基准，任务价值超过三百自行完成；工作中因才能显而易见易被提供恰好的工作与加薪晋升，长期陷入职场陷阱而难以实现财富自由。
 ---
 
 <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=28996919&auto=1&height=66"></iframe>

@@ -10,8 +10,7 @@ tags:
   - Ext文件系统
   - 块挂载
   - fstab
-description: 
-  通过opkg安装blockmount、blockhotplug、blockextroot及kmodusb模块，格式化USB存储为EXT文件系统，绑定挂载根目录并复制数据至USB，修改fstab使USB设备成为根文件系统，完成OpenWrt路由器的USB启动。
+description: 通过opkg安装blockmount、blockhotplug、blockextroot及kmodusb模块，格式化USB存储为EXT文件系统，绑定挂载根目录并复制数据至USB，修改fstab使USB设备成为根文件系统，完成OpenWrt路由器的USB启动。
 ---
 
 1、前提条件：

@@ -10,7 +10,7 @@ tags:
   - 疫情冲击
   - 股市低迷
   - 未来迷茫
-description: "面对项目规划滞后与同事快速推进，职场竞争导致恐惧与自我怀疑；疫情持续、经济下行、公司裁员使过去繁荣不复；股票长期下跌引发麻木与失落；过去离职仍有选择的情景已消失，年龄与家庭责任加深对未来的迷茫与无助。"
+description: 面对项目规划滞后与同事快速推进，职场竞争导致恐惧与自我怀疑；疫情持续、经济下行、公司裁员使过去繁荣不复；股票长期下跌引发麻木与失落；过去离职仍有选择的情景已消失，年龄与家庭责任加深对未来的迷茫与无助。
 ---
 
 <iframe width=330 height=86 src="//music.163.com/outchain/player?type=2&id=1901371647&auto=1&height=66" frameborder="no" border="0" marginwidth="0" marginheight="0" ></iframe>

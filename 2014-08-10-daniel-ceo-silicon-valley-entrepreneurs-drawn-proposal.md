@@ -10,7 +10,7 @@ tags:
   - Startup
   - 创始人
   - 投资人
-description: "《Paper版 Startup School 2013》用纸面展示10位创始人核心要点，内容聚焦产品、招聘、用户、创新，装帧独特，售价40美元，已被Business Insider分享。"
+description: 《Paper版 Startup School 2013》用纸面展示10位创始人核心要点，内容聚焦产品、招聘、用户、创新，装帧独特，售价40美元，已被Business Insider分享。
 ---
 
 ![](http://pics.naaln.com/blog/2019-05-14-123543.jpg-basicBlog)

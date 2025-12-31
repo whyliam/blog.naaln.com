@@ -10,7 +10,7 @@ tags:
   - JobMarket
   - Resilience
   - PostPandemic
-description: "后疫情经济失序背景下，年近三十职业探索需通过反向思考找到耐受度高的事项作方向。高考专业选择影响就业，因供需不平衡15%-30%毕业生失业。个人学习定型需自识。想跳伞体验新事物。"
+description: 后疫情经济失序背景下，年近三十职业探索需通过反向思考找到耐受度高的事项作方向。高考专业选择影响就业，因供需不平衡15%-30%毕业生失业。个人学习定型需自识。想跳伞体验新事物。
 ---
 
 <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=2002712975&auto=1&height=66"></iframe>

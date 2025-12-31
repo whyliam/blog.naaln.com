@@ -10,7 +10,7 @@ tags:
   - OpenSSL
   - macOS
   - 修复
-description: "在macOS系统下，Sublime Text无法调用Install Package，出现EVP_PKEY_size符号未找到错误。错误因OpenSSL版本不兼容，系统使用OpenSSL 3，Sublime依赖旧版。修复方法为安装openssl@1.1并创建符号链接到/usr/local/lib库文件，重启Sublime Text解决。"
+description: 在macOS系统下，Sublime Text无法调用Install Package，出现EVP_PKEY_size符号未找到错误。错误因OpenSSL版本不兼容，系统使用OpenSSL 3，Sublime依赖旧版。修复方法为安装openssl@1.1并创建符号链接到/usr/local/lib库文件，重启Sublime Text解决。
 ---
 
 最近 Sublime Text 无法调用 Install Package，我一度以为是我的电脑或者版本的问题。

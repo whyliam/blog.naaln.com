@@ -10,8 +10,7 @@ tags:
   - Go
   - Rails
   - WebService
-description: 
-  随着移动端需求崛起，网站转向轻量API服务，LinkedIn与Ironio放弃Ruby转向NodeJS与Go的案例引发争议，测试显示Ruby在事件驱动模型下并发性能并不逊色。Rails因中间件冗余、内存大而低并发不适合WebService，作者建议使用Sinatra、Padrino、Goliath等轻框架，去除ActionPack保留ActiveRecord，以满足并发需求。
+description: 随着移动端需求崛起，网站转向轻量API服务，LinkedIn与Ironio放弃Ruby转向NodeJS与Go的案例引发争议，测试显示Ruby在事件驱动模型下并发性能并不逊色。Rails因中间件冗余、内存大而低并发不适合WebService，作者建议使用Sinatra、Padrino、Goliath等轻框架，去除ActionPack保留ActiveRecord，以满足并发需求。
 ---
 
 ## 从 Linkedin 和 Iron.io 抛弃 Ruby 说起

@@ -10,8 +10,7 @@ tags:
   - CodeReview
   - OpenSource
   - GitHub
-description: 
-  豆瓣CODE项目源于工程师从SVN/Mercurial迁移Git的决定，2014年开源框架及周边如Mikoto等。技术用Git协议（http/ssh）、Pygit2、libgit2实现评审diff功能。规则设owner、committer、member角色，PR需review积分勋章激励。测试CI集成，问答分享Git经验如编码大仓库挑战，强调协作创新。
+description: 豆瓣CODE项目源于工程师从SVN/Mercurial迁移Git的决定，2014年开源框架及周边如Mikoto等。技术用Git协议（http/ssh）、Pygit2、libgit2实现评审diff功能。规则设owner、committer、member角色，PR需review积分勋章激励。测试CI集成，问答分享Git经验如编码大仓库挑战，强调协作创新。
 ---
 
 2014 年 2 月 14 日是豆瓣 CODE 项目成立两周年，同日豆瓣 CODE 团队宣布 [将整个框架开源](http://douban-code.github.io/)。本次开源包含 [CODE 框架](https://github.com/douban-code) 以及 [Mikoto](https://github.com/qingfeng/mikoto)、[Linguist](https://github.com/douban/linguist)、[P](https://github.com/qingfeng/p)、[CodeLive](https://github.com/qingfeng/codelive) 等周边项目，感兴趣的工程师可以在这个基础上继续开发。

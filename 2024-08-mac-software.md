@@ -10,7 +10,7 @@ tags:
   - Zsh
   - LaTeX
   - Automation
-description: "提供2024年Mac常用软件与开发工具清单，含Homebrew、Zsh、OhMyZsh、LaTeX等安装步骤与常用字体、手动/brew安装方法，帮助快速搭建高效开发环境。"
+description: 提供2024年Mac常用软件与开发工具清单，含Homebrew、Zsh、OhMyZsh、LaTeX等安装步骤与常用字体、手动/brew安装方法，帮助快速搭建高效开发环境。
 ---
 
 ## 前言

@@ -10,7 +10,7 @@ tags:
   - 课堂展示
   - 高桌晚宴
   - GPA严格
-description: "UIC全英教学无政治课程师资80%博士assignment essay presentation多样评估严格高桌晚宴WPE丰富生活成本高GPA要求高出国比例大文化活动多"
+description: UIC全英教学无政治课程师资80%博士assignment essay presentation多样评估严格高桌晚宴WPE丰富生活成本高GPA要求高出国比例大文化活动多
 ---
 
 半夜睡不着，就想着写一篇日志给我的学校，也好让有意向填报 UIC 的学弟学妹们了解一下非官方的情报。

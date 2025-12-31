@@ -10,7 +10,7 @@ tags:
   - 自我提升
   - 步骤指南
   - 模板示例
-description: "个人使命陈述是个人生活指南。通过审视理想、确定目标、发现天赋等八步撰写。包括定义使命重要性、提供写作步骤、示例声明及工具推荐。"
+description: 个人使命陈述是个人生活指南。通过审视理想、确定目标、发现天赋等八步撰写。包括定义使命重要性、提供写作步骤、示例声明及工具推荐。
 ---
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/c5-LfK2i2J4?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

@@ -10,8 +10,7 @@ tags:
   - Markdown
   - SSH
   - Jekyll
-description: 
-  使用Markdown与Git、GitHub配合Octopress快速搭建个人博客，配置SSH登录、克隆仓库、修改rvmrc、安装依赖、生成模板、设置远程并用rake部署至GitHub，同时推送源文件到source分支，实现即时写作与发布。
+description: 使用Markdown与Git、GitHub配合Octopress快速搭建个人博客，配置SSH登录、克隆仓库、修改rvmrc、安装依赖、生成模板、设置远程并用rake部署至GitHub，同时推送源文件到source分支，实现即时写作与发布。
 ---
 
 ### 今年一直推荐的一种写作方式

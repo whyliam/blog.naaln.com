@@ -9,7 +9,7 @@ tags:
   - warning
   - security
   - chmod
-description: "目录/home/refresh/.python-eggs因可写组其他用户而不安全，chmod命令修改权限至g-wx,o-wx。"
+description: 目录/home/refresh/.python-eggs因可写组其他用户而不安全，chmod命令修改权限至g-wx,o-wx。
 ---
 
 ```

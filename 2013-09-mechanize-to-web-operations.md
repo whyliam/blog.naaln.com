@@ -10,7 +10,7 @@ tags:
   - WebAutomation
   - Forms
   - Links
-description: "Mechanize库在Ruby中实现网页自动化，包括设置代理、访问网页、处理表单控件、提交数据、上传文件、遍历超链接、下载文件，并演示登录和消息发送脚本。"
+description: Mechanize库在Ruby中实现网页自动化，包括设置代理、访问网页、处理表单控件、提交数据、上传文件、遍历超链接、下载文件，并演示登录和消息发送脚本。
 ---
 
 与网页交互 (Interacting With a Web Page)

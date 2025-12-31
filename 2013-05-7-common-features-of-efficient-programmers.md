@@ -10,7 +10,7 @@ tags:
   - 研究
   - 激情
   - 计划
-description: '高效程序员需七个特质：主动学习新技术和非技术知识，务实不教条，善于研究解决问题，拥有激情，团队合作，企业家精神，测量两次下刀一次。'
+description: 高效程序员需七个特质：主动学习新技术和非技术知识，务实不教条，善于研究解决问题，拥有激情，团队合作，企业家精神，测量两次下刀一次。
 ---
 
 英文原文：[Seven traits of effective programmers](http://www.techrepublic.com/blog/programming-and-development/seven-traits-of-effective-programmers/6750)
