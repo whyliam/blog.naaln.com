@@ -100,4 +100,4 @@ Aparna 指出，我们需要强迫自己更新认知。一年前的 AI 像婴儿
 
 ## ✨ 随便看看
 
-- [工作流与Agent实战指南：从选型决策到高效实施](https://mp.weixin.qq.com/s/tdOV-j07jqcyaSJGaLbukA) 从Anthropic的文章《Build effective agents》出发，为构建高效的工作流、Agent提出实战指南。
+- [工作流与Agent实战指南：从选型决策到高效实施](https://mp.weixin.qq.com/s/tdOV-j07jqcyaSJGaLbukA) 从 Anthropic 的文章《Build effective agents》出发，为构建高效的工作流、Agent 提出实战指南。
