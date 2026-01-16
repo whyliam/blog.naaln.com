@@ -74,7 +74,9 @@ description: 本期探讨为什么用户说的不等于真正需要的，分享 
 ### I Skied Down Mount Everest (world First, no oxygen)
 
 **这个 Youtube 视频是我今年看到的最震撼的一个**  
-[https://www.youtube.com/watch?v=cjZvFY6__qw](https://www.youtube.com/watch?v=cjZvFY6__qw)  
+
+[![I Skied Down Mount Everest (world first, no oxygen)](https://i.ytimg.com/vi/cjZvFY6__qw/hqdefault.jpg)](https://www.youtube.com/watch?v=cjZvFY6__qw)
+
 非常真实的人与自然融合到一起的感觉，视频非常精美，推荐使用最高清模式用显示器播放。滑雪登山运动员 Andrzej Bargiel，成为第一个无氧登顶珠峰并滑雪回到大本营的人，第一次无氧登顶，第一次滑雪下山，真正的人类极限了。
 
 ---
