@@ -5,7 +5,6 @@ date: 2026/01/17 04:53:11
 categories:
   - Newsletter
 tags:
-  - Newsletter
   - AI
   - 进化
   - 商业思维
