@@ -13,7 +13,7 @@ tags:
 description: iTerm2的舒适主题和常用插件配置，使用ZSH和Oh-My-Zsh，安装zsh-autosuggestions、zsh-syntax-highlighting、node、npm、sublime、ruby、sudo、python、osx、pyenv、gem、xcode、github、pip等插件的完整步骤与代码示例。
 ---
 
-以下是我对 iterm 的配置，其实也说不上是什么配置。就是换了一个舒服一点的主题，然后安装了几个常用的插件。有一些可用可不用的插件，暂时就先不安装了，如果有真正使用必要的时候再安装。
+以下是我对 iTerm2 的配置，其实也说不上是什么配置。就是换了一个舒服一点的主题，然后安装了几个常用的插件。有一些可用可不用的插件，暂时就先不安装了，如果有真正使用必要的时候再安装。
 
 <!--more-->
 

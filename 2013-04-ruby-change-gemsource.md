@@ -21,26 +21,25 @@ description: 介绍ruby.taobao.org镜像解决方案，替换因网络问题导�
 
 **如何使用？**
 
-	 $ gem sources --remove https://rubygems.org/
+```bash
+$ gem sources --remove https://rubygems.org/
+$ gem sources -a https://ruby.taobao.org/
+$ gem sources -l
+*** CURRENT SOURCES ***
 
-	 $ gem sources -a https://ruby.taobao.org/
+https://ruby.taobao.org
+```
 
-	 $ gem sources -l
+> **请确保只有 ruby.taobao.org**
 
-	 *** CURRENT SOURCES ***
-
-
-
-	 https://ruby.taobao.org
-
-# 请确保只有 ruby.taobao.org
-
-	 $ gem install rails
+```bash
+$ gem install rails
+```
 
 **如果你是用 Bundle (Rails 项目)**
 
-	 source 'https://ruby.taobao.org/'
-
-	 gem 'rails', '4.1.0'
-
-	 …
+```ruby
+source 'https://ruby.taobao.org/'
+gem 'rails', '4.1.0'
+...
+```

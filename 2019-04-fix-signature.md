@@ -26,7 +26,7 @@ dyld: Library not loaded: @rpath/Sparkle.framework/Versions/A/Sparkle
 [1]    15203 abort      /Applications/Application.app
 ```
 
-从错误信息中看，应该是软件的签名出现了问题，只需要安装 `Xcode` 后，对软件重现签名就好了：
+从错误信息中看，应该是软件的签名出现了问题，只需要安装 `Xcode` 后，对软件重新签名就好了：
 
 ```
 sudo codesign -f -s - --deep /Applications/Application.app
