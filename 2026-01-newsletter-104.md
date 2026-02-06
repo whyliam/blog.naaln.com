@@ -3,7 +3,7 @@ layout: post
 title: L104_站在进化的十字路口
 date: 2026/01/17 04:53:11
 categories:
-  - Newsletter
+  - 资讯
 tags:
   - AI
   - 进化
