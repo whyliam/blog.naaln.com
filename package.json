@@ -9,7 +9,7 @@
     "server": "hexo server"
   },
   "hexo": {
-    "version": "8.1.0"
+    "version": "8.1.1"
   },
   "dependencies": {
     "@waline/hexo-next": "^3.0.1",
@@ -23,7 +23,7 @@
     "hexo-generator-archive": "^2.0.0",
     "hexo-generator-baidu-sitemap": "^0.1.9",
     "hexo-generator-category": "^2.0.0",
-    "hexo-generator-feed": "^3.0.0",
+    "hexo-generator-feed": "^4.0.0",
     "hexo-generator-index": "^4.0.0",
     "hexo-generator-sitemap": "^3.0.1",
     "hexo-generator-tag": "^2.0.0",
@@ -33,8 +33,8 @@
     "hexo-renderer-marked": "^7.0.1",
     "hexo-renderer-stylus": "^3.0.1",
     "hexo-server": "^3.0.0",
-    "hexo-submit-urls-to-search-engine": "^2.1.0",
-    "hexo-theme-next": "^8.26.0",
+    "hexo-submit-urls-to-search-engine": "whyliam/hexo-submit-urls-to-search-engine#main",
+    "hexo-theme-next": "^8.27.0",
     "hexo-util": "^4.0.0",
     "highlight.js": "^11.11.1",
     "node-fetch": "^3.3.2"
