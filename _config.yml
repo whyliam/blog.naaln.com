@@ -3,11 +3,11 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Why·Liam·Blog
-subtitle: 人生若如初見
-description: 人生若如初見
-keywords: 技术,技术,随笔,旅行
-author: WHY·LIAM
+title: Liam's Notes
+subtitle: AI、产品、数据、旅行与生活观察
+description: AI、产品、数据、商业系统、旅行、摄影，以及一个长期主义者对工作与生活的持续整理。
+keywords: AI,产品,数据,技术,商业,旅行,摄影,随笔,个人知识管理
+author: Liam
 language: zh-CN
 timezone: Asia/Shanghai
 
@@ -64,19 +64,14 @@ index_generator:
   path: ''
   per_page: 10
   order_by: -date
-  # 添加以下这部分来排除分类
-  exclude:
-    - category: newsletter
 
 # Category & Tag
-default_category:  随笔
+default_category: "Notes & Essays"
 category_map:
-  产品: product
-  随笔: jottings
-  经济: economic
-  技术: technology
-  旅行: tour
-  资讯: newsletter
+  "AI & Systems": AI-Systems
+  "Notes & Essays": Notes-Essays
+  "Product & Intelligence": Product-Intelligence
+  "Travel & Visuals": Travel-Visuals
 tag_map:
 
 # Metadata elements
