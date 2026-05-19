@@ -3,13 +3,11 @@ layout: post
 title: Swift - 属性观察者（willSet与didSet）
 date: 2016/07/17 13:09:45
 categories:
-  - 技术
+  - AI & Systems
 tags:
-  - Swift
-  - willSet
-  - didSet
-  - 属性观察者
-  - KVO
+  - Engineering
+  - SystemDesign
+  - Learning
 description: Swift属性观察者用于监视属性值变化，支持willSet和didSet；可自定义参数名，默认newValue和oldValue；初始化时不调用，设置相同值也会触发；常用于值变化前后进行副作用操作，如更新关联字段。
 ---
 

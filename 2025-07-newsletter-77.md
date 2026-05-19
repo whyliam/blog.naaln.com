@@ -3,13 +3,13 @@ layout: post
 title: L77_从谨慎推迟到激进竞逐
 date: 2025/07/12 20:00:00
 categories:
-  - 资讯
+  - Product & Intelligence
 tags:
-  - OpenAI
-  - xAI
-  - Grok
-  - Perplexity
-  - AIbrowser
+  - AI
+  - Strategy
+  - ProductThinking
+  - Platform
+  - Trust
 description: OpenAI再次推迟开源模型发布，理由是需要进行额外安全测试；xAI推出Grok4自称最强AI助手，但出现偏见和倾向性问题；Perplexity发布200美元AI浏览器Comet，通过本地存储保护隐私，却面临技术幻觉和版权争议。
 ---
 

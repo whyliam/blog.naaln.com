@@ -3,13 +3,12 @@ layout: post
 title: 阿里巴巴的日志采集分享（上）
 date: 2017/08/27 00:58:33
 categories:
-  - 产品
+  - AI & Systems
 tags:
-  - Aplus
-  - UserTrack
-  - SPM
-  - SCM
-  - UTDID
+  - Data
+  - Infrastructure
+  - SystemDesign
+  - ProductThinking
 description: 从数据采集规范、SPM、SCM、黄金令箭到Aplus和UserTrack日志采集，统一规则减少侵入，提升实时性，UTDID跨产品唯一标识，后续包括曝光预聚合、回退识别、日志分流等保障。
 ---
 

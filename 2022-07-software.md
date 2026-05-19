@@ -3,13 +3,12 @@ layout: post
 title: 2022 年我的 Mac 软件折腾之旅
 date: 2022/07/29 20:00:00
 categories:
-  - 技术
+  - AI & Systems
 tags:
-  - 效率
-  - 软件
-  - macOS
-  - 配置
-  - 工具
+  - Workflow
+  - KnowledgeManagement
+  - Productivity
+  - Infrastructure
 description: 围绕差生文具多的说法，列出信息获取、记录、效率、编程、沟通、娱乐、设计、网络、工具、浏览器等多类macOS与跨平台软件，并提供批量安装、配置同步、开源镜像与统一图标资源，助你快速搭建高效工作环境。
 ---
 

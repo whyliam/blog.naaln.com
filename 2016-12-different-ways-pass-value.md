@@ -3,13 +3,12 @@ layout: post
 title: Swift 反向传值
 date: 2016/12/18 21:05:10
 categories:
-  - 技术
+  - Notes & Essays
 tags:
-  - Swift
-  - ViewController
-  - delegation
-  - closure
-  - NSUserDefaults
+  - DataFlow
+  - SystemDesign
+  - EngineeringPatterns
+  - KnowledgeArchive
 description: 示例展示VC之间正向、反向与无向传值。VC跳转到B时，A在初始化或属性赋值时把值传给B为正向。B返回A时把值传回为反向，包括delegate、闭包、KVO与Notification四种实现方式。delegate由B定义协议并在A实现；闭包在A设置并在B调用；KVO通过动态属性在B修改触发A的observeValueForKeyPath；Notification在A注册并在B发送通知。跨页面共享数据
 ---
 
@@ -37,7 +36,7 @@ var positiveValue:String = String() // 正向传值，接收方
 
 ## 反向传值
 
-反向传值包括 delegate、闭包、KVO 和 Notification 四种种方式：
+反向传值包括 delegate、闭包、KVO 和 Notification 四种方式：
 
 ### Delegate
 

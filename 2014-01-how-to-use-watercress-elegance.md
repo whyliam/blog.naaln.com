@@ -3,13 +3,13 @@ layout: post
 title: 如何优雅地使用豆瓣？
 date: 2014/01/21 05:34:00
 categories:
-  - 随笔
+  - Notes & Essays
 tags:
-  - 豆瓣
-  - 原创文章
-  - 索引
-  - 社区
-  - 推荐
+  - Community
+  - InternetCulture
+  - Curation
+  - Observation
+  - Reading
 description: 提供豆瓣原创文章索引，分类包括小说、社会评论、爱情故事、技术科普等，帮助用户理解豆瓣社区特色和更好融入社区。
 ---
 

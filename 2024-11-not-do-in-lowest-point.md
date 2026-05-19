@@ -3,13 +3,12 @@ layout: post
 title: 人在低谷期的时候，有三件事情不能做
 date: 2024/11/05 22:49:00
 categories:
-  - 随笔
+  - Notes & Essays
 tags:
-  - 情绪低谷
-  - 生活秩序
-  - 专注力
-  - 创造力
-  - 表达
+  - Mindset
+  - Attention
+  - Expression
+  - Life
 description: 在低谷期避免摆烂、沉迷短视频、沉默寡言三点，分别强调保持生活秩序感、守护专注力与创造力、坚持表达的重要性，以提升情绪与生活品质，低谷时正是修炼自己的时机，需坚持积极行动与持续学习。
 ---
 

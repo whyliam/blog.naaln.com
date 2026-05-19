@@ -3,13 +3,12 @@ layout: post
 title: 搞定了自己的手机谷歌地图
 date: 2011/05/11 20:00:00
 categories:
-  - 随笔
+  - Travel & Visuals
 tags:
-  - KML
-  - AGPS
-  - GoogleMaps
-  - trail
-  - navigation
+  - Navigation
+  - Outdoor
+  - PersonalWorkflow
+  - Location
 description: 通过谷歌地图网页版创建并保存轨迹至我的地图，导出KML文件用于手机谷歌地图导航，特别针对非机动车道，关闭沿道路显示以避免偏移，利用A-GPS提升定位速度，操作需网络信号或预缓存KML，注意电池续航及精度优化。
 ---
 

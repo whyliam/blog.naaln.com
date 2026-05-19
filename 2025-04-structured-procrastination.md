@@ -3,13 +3,12 @@ layout: post
 title: 结构化拖延
 date: 2025/04/19 20:00:00
 categories:
-  - 随笔
+  - Notes & Essays
 tags:
-  - 结构化拖延
-  - 任务管理
-  - 清单
-  - 时间管理
-  - 效率提升
+  - SystemsThinking
+  - Productivity
+  - DecisionMaking
+  - SelfManagement
 description: 将拖延转化为动力的实用方法：维护三个清单——必须完成的任务、需持续跟进的事项、未来不紧急的想法；睡前写下次日三件优先事，醒来先处理；不要最小化承诺，用伪压力任务驱动行动；减少承诺、一天仅两次邮件与电话、谨慎答应他人，释放精力专注真正重要的事情。
 ---
 

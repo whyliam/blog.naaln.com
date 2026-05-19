@@ -3,13 +3,12 @@ layout: post
 title: 微信定制你自己的表情包
 date: 2017/01/25 15:05:44
 categories:
-  - 技术
+  - Notes & Essays
 tags:
-  - 春节
-  - 拜年
-  - 表情包
-  - 微信
-  - 定制
+  - ProductThinking
+  - UserExperience
+  - Observation
+  - Life
 description: 春节祝福短信的演变，从文字到装饰符号再到表情符号和微信群聊；随后介绍了两款定制新年表情包的功能，分别通过在微信搜索「新春快乐」「讨红包」「谢谢老板」「祝某某新春快乐」「谢谢某某老板」等关键词生成个性化贴纸，且可随机生成、适度截断字数，省略「老板」可能产生惊喜效果。
 ---
 

@@ -3,13 +3,12 @@ layout: post
 title: 闲谈流量统计 — 目录
 date: 2020/03/20 20:00:00
 categories:
-  - 产品
+  - AI & Systems
 tags:
-  - 流量统计
-  - 数据分析
-  - 数据采集
-  - 行为分析
-  - 数据处理
+  - Data
+  - SystemDesign
+  - ProductThinking
+  - DecisionMaking
 description: 本文系统阐述流量统计技术架构，涵盖测量、收集、传输、处理、分析、报告六大核心环节。追溯流量统计起源于GoogleAnalytics和Mixpanel等分析工具的发展历程，阐述其在数据驱动决策中的重要意义。详细介绍采集方式的多维分类方法，重点解析前端采集技术包括JavaScript和移动应用采集方式，以及后台采集方案。探讨数据传输环节的技术实现，为理解完整的数据分析流程提供全面指导。
 ---
 

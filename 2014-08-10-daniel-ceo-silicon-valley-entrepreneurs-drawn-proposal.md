@@ -3,19 +3,18 @@ layout: post
 title: 10位硅谷大牛CEO们画出来的创业建议
 date: 2014/08/07 01:01:20
 categories:
-  - 技术
+  - Product & Intelligence
 tags:
-  - 创业
-  - YC
+  - ProductThinking
+  - Strategy
+  - DecisionMaking
   - Startup
-  - 创始人
-  - 投资人
 description: 《Paper版 Startup School 2013》用纸面展示10位创始人核心要点，内容聚焦产品、招聘、用户、创新，装帧独特，售价40美元，已被Business Insider分享。
 ---
 
 ![](http://pics.naaln.com/blog/2019-05-14-123543.jpg-basicBlog)
 
-这本书完全用 Paper 制作完成，是今年 YC 的 Startup School 2013，包括 Face book、Twitter 等公司的 10 位创始人和投资人，每人通过一张 Paper 的形式将其核心内容呈记录的讲授的课程现出来，Paper 版售价 40 美元，Business Insider 将他们分享了出来。除了本身内容非常有价值外，书的形式真正硅谷味十足。
+这本书完全用 Paper 制作完成，是今年 YC 的 Startup School 2013，包括 Facebook、Twitter 等公司的 10 位创始人和投资人，每人通过一张 Paper 的形式将其核心内容呈现出来，Paper 版售价 40 美元，Business Insider 将他们分享了出来。除了本身内容非常有价值外，书的形式真正硅谷味十足。
 
 **10 位嘉宾名单：**
 

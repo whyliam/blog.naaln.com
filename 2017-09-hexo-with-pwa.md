@@ -3,17 +3,15 @@ layout: post
 title: 让PWA支持HEXO
 date: 2017/09/11 20:34:56
 categories:
-  - 技术
+  - AI & Systems
 tags:
-  - PWA
-  - Https
-  - WebApp
-  - Hexo
-  - Offline
+  - Infrastructure
+  - SystemDesign
+  - DigitalGarden
 description: 博客支持渐进式网页应用需启用安全超文本传输协议、使用离线插件缓存资源、配置服务工作者、添加清单文件和图标，实现离线访问和应用体验。
 ---
 
-先说一下说明是 PWA，
+先说一下什么是 PWA，
 
 > PWA(Progressive Web Apps) 是 Google 提出的用前沿的 Web 技术为网页提供 App 般使用体验的一系列方案。
 
@@ -73,7 +71,7 @@ service_worker:
 - http://cdn.some-else.org/some/path/deeply/some-style.css
 ```
 
-这种需求也可以通过配置 _config.yml 完成，在 servcie_worker 的配置后面补全下面格式的配置即可：
+这种需求也可以通过配置 _config.yml 完成，在 service_worker 的配置后面补全下面格式的配置即可：
 
 ```
 service_worker:
@@ -123,4 +121,4 @@ service_worker:
 
 比如我使用了 [hexo-theme-next](https://github.com/iissnan/hexo-theme-next) 的主题，在 `layout/_custom/header.swig` 中引用了 `manifest.json`。
 
-接下开就看效果吧!
+接下来就看效果吧!

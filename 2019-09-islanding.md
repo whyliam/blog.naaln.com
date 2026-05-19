@@ -3,13 +3,12 @@ layout: post
 title: 岛读上线 1000 天
 date: 2019/09/27 20:00:00
 categories:
-  - 随笔
+  - Notes & Essays
 tags:
-  - 岛读
-  - iOS
-  - 小程序
-  - Android
-  - 产品迭代
+  - ProductThinking
+  - LongTermism
+  - IndieProduct
+  - Observation
 description: 《岛读》上线已满千日，源自美国失败项目后的iOS练手产品，在第九个月因大V推荐走红，服务器承压，多次荣登AppStore推荐榜。2018年底更名并提出精神岛屿概念，日活达到新高，现已推出iOS、微信小程序、QQ小程序及Android版本，开启新的千日征程。
 ---
 

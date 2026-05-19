@@ -3,13 +3,12 @@ layout: post
 title: 从IBM到微软，从谷歌到脸书看IT产业趋势
 date: 2014/08/10 12:10:37
 categories:
-  - 技术
+  - Product & Intelligence
 tags:
-  - IT产业
-  - IBM
-  - Microsoft
-  - Google
-  - Facebook
+  - IndustryEvolution
+  - BusinessModel
+  - Innovation
+  - Strategy
 description: 从IBM到微软再到谷歌和Facebook，展示IT产业的演进从硬件到软件、服务再到差异化服务。这些公司都是刚需，出镜率下降不代表衰退。IBM虽被视为衰退但在市值和创新投资上仍有影响，微软和谷歌市值领先但创新面临瓶颈，需要变革。产业巨头在不同阶段支撑后续公司成长，但随时间推移，创新活力下降，企业必须自我变革保持竞争力。
 ---
 

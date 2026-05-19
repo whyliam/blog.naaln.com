@@ -3,13 +3,13 @@ layout: post
 title: 谷歌浏览器配置
 date: 2013/09/12 21:49:00
 categories:
-  - 技术
+  - AI & Systems
 tags:
-  - Google
   - Search
-  - Optimization
-  - Proxy
-  - Firewall
+  - Infrastructure
+  - Workflow
+  - Observation
+  - Life
 description: 介绍Google搜索优化技巧，包括DNS配置、hosts文件修改、SSL搜索设置等方法规避网络屏蔽。提供多种Google搜索域名配置方案，推荐Chrome扩展提升搜索体验。涵盖代理设置、移除重定向、图片搜索等功能，帮助用户更稳定高效使用Google搜索服务。
 ---
 
@@ -19,7 +19,7 @@ gae 不用多说了，wall 也行，反正全天开着
 https://www.google.com/ncr
 ```
 
-这个不用多说了，去掉根据 ip 跳转，不过清除 cooike 后需要再进来一次撒，貌似以后不能再进去任何 hk 的域名，首页可以设置这个撒 非 SSL 版的 google 触发敏感词后会有 90 秒的时间无法访问 google 任何服务 Quote:
+这个不用多说了，去掉根据 ip 跳转，不过清除 cookie 后需要再进来一次撒，貌似以后不能再进去任何 hk 的域名，首页可以设置这个撒 非 SSL 版的 google 触发敏感词后会有 90 秒的时间无法访问 google 任何服务 Quote:
 
 > 虽然没有研究过，但是从目前的症状来看，GFW 在屏蔽关键字的时候使用了 DNS 挟持。也就是说，只要手动修改 HOSTS 文件即可达到不被屏蔽的效果。
 

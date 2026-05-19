@@ -3,13 +3,13 @@ layout: post
 title: 2025 Mac Software
 date: 2025/03/25 09:39:00
 categories:
-  - 技术
+  - AI & Systems
 tags:
-  - Mac软件
-  - 安装指南
-  - 包管理
-  - 开发环境
-  - LaTeX工具
+  - Infrastructure
+  - Workflow
+  - Automation
+  - Knowledge
+  - AI Coding
 description: 提供Macmini软件安装完整流程，指导安装Homebrew、Ohmyzsh等基础工具，配置Mackup备份软件，设置Brew安装列表包括浏览器、办公、开发、视频、设计等多类软件，手动安装如图像、虚拟管理等工具，并覆盖Git、Node、Python开发环境配置，LaTeX排版环境和字体库安装。
 ---
 
@@ -316,7 +316,7 @@ sudo tlmgr --repository http://www.preining.info/tlgpg/ install tlgpg
 sudo tlmgr option repository https://mirrors.tuna.tsinghua.edu.cn/CTAN/systems/texlive/tlnet
 ```
 
-按照依赖的插件
+安装依赖的插件
 
 ```bash
 sudo tlmgr update --self

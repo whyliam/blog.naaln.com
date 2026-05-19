@@ -3,13 +3,12 @@ layout: post
 title: 提问的学问
 date: 2015/04/07 23:16:00
 categories:
-  - 随笔
+  - Notes & Essays
 tags:
-  - 提问
-  - 技术
-  - 智慧
-  - 指南
-  - 优化
+  - Learning
+  - Communication
+  - ProblemSolving
+  - KnowledgeManagement
 description: 文章介绍技术提问的准备工作包括搜索历史文档和网络资源、阅读技术手册和FAQ文档、进行实际试验验证、咨询专业人士、查看源代码等方法。同时详细阐述提问时要保持内容精炼且具有实质性价值，建议精简复杂的测试样例以提高获得有效回复的概率。
 ---
 

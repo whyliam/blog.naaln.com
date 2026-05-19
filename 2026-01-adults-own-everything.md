@@ -3,13 +3,13 @@ layout: post
 title: 成年人的世界不信二选一
 date: 2026/01/30 17:46:00
 categories:
-  - 随笔
+  - Notes & Essays
 tags:
-  - 个人成长
-  - 时间管理
-  - 错峰策略
-  - 生活平衡
-  - 自律系统
+  - SystemsThinking
+  - Life
+  - Learning
+  - HabitDesign
+  - LongTermism
 description: 分享如何通过重构生活动线实现工作、家庭、健康和个人成长的多重平衡。提出黄金时段管理策略（上午8-12点专注学习）、错峰策略（中午健身、下午力量训练）、自律无脑化原则（每日固定无需意志力），以及详细实操时间表，拒绝工作与生活的二元对立，在精密规划中实现对生活的掌控感。
 ---
 

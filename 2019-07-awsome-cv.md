@@ -3,13 +3,11 @@ layout: post
 title: Awesome-CV
 date: 2019/07/14 20:00:00
 categories:
-  - 技术
+  - Notes & Essays
 tags:
-  - LaTeX
-  - MacTeX
-  - TeXLive
-  - FontAwesome
-  - AwesomeCV
+  - KnowledgeManagement
+  - Workflow
+  - Writing
 description: 使用MacTeX安装AwesomeCV简历模板的步骤包括下载精简版MacTeX、配置CTAN镜像、使用tlmgr安装enumitem、xifthen、sourcesanspro、tcolorbox、FontAwesome等宏包，并提供FontAwesome字体安装指引，帮助快速生成专业LaTeX简历。
 ---
 

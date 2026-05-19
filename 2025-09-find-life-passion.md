@@ -3,13 +3,12 @@ layout: post
 title: 如何找到人生热爱的事
 date: 2025/09/04 15:43:00
 categories:
-  - 随笔
+  - Notes & Essays
 tags:
-  - 自我成长
-  - 生涯规划
-  - 热爱
-  - 成功
-  - 学习
+  - Life
+  - Learning
+  - SystemsThinking
+  - Observation
 description: 寻找人生热爱先要尊重看似低效的准备期，利用通用技能积累多元思维；随后创造信息与人脉的高质量环境，持续接触优秀作品和智者；最后通过多元尝试扩展视野，提升与新可能性的相遇概率。遵循这三条原则，可加速发现真正热爱并实现成功。
 ---
 

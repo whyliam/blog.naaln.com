@@ -3,13 +3,13 @@ layout: post
 title: 最后一次更新 workflows.youdao
 date: 2024/09/20 22:39:00
 categories:
-  - 技术
+  - Notes & Essays
 tags:
-  - Alfred工作流
-  - 有道翻译
-  - 开源项目
-  - GitHub
-  - 版本迭代
+  - OpenSource
+  - Automation
+  - LongTermism
+  - Observation
+  - Workflow
 description: 回顾九年前开发的Alfred工作流，因学习Python初学者及双语翻译需求而创建，项目在GitHub获得一千星并得到多位朋友的贡献，后被纳入开放源码软件保存计划，但因有道接口两次重大迭代导致词典查询功能逐渐停用，未来维护成谜，项目已宣布结束。
 ---
 

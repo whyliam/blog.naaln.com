@@ -3,12 +3,12 @@ layout: post
 title: L78_数字工作伙伴的升级与未来
 date: 2025/07/19 20:00:00
 categories:
-  - 资讯
+  - AI & Systems
 tags:
-  - OpenAI
-  - AgentWorkflow
-  - DeepResearch
-  - Operator
+  - Agent
+  - Workflow
+  - ProductThinking
+  - Observation
 description: ChatGPT Agent是OpenAI推出的统一智能体，整合Operator、Deep Research与ChatGPT能力，具工具链、深度接入、自动推送与高配额特性，适合生活与办公场景；文中对比Manus与Skywork的技术架构、执行方式、任务规划等维度，并汇总GoogleGemini通话与嵌入、百度Tizzy、AWS Kiro IDE、月之暗面Kimi K2、秘塔深度研究、PresentA
 ---
 

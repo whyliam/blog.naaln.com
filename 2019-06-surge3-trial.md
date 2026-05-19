@@ -3,13 +3,11 @@ layout: post
 title: Surge 3 试用
 date: 2019/06/07 20:00:00
 categories:
-  - 技术
+  - AI & Systems
 tags:
-  - surge
-  - 广告拦截
-  - 试用期
-  - libfaketime
-  - 证书替换
+  - Infrastructure
+  - Workflow
+  - SystemExploration
 description: 通过修改Surge试用期机制劫持人人影视广告，使用Libfaketime改变软件运行时间或替代方法如证书替换以延长试用期。
 ---
 
@@ -24,7 +22,7 @@ description: 通过修改Surge试用期机制劫持人人影视广告，使用Li
 这次修改的原理其实是一样的。
 
 1. 下载官方的试用版本，放到任意文件夹中
-2. 启动，选择试用，并进去主界面，然后退出
+2. 启动，选择试用，并进入主界面，然后退出
 3. 修改系统的时间，并运行 Surge。见 [surge.sh](https://gist.github.com/whyliam/a27bae053207dcb4c46bb5c9cf8ef274)
 
 ### 附加内容

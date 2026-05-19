@@ -3,23 +3,21 @@ layout: post
 title: Mac 环境镜像配置
 date: 2019/01/11 09:14:59
 categories:
-  - 技术
+  - AI & Systems
 tags:
-  - 镜像
-  - Homebrew
-  - CocoaPods
-  - Rubygems
-  - PyPI
+  - Infrastructure
+  - Workflow
+  - Engineering
 description: 利用清华大学TUNA镜像和中科大镜像替换多个常用包管理器的官方源，提升下载速度和稳定性。
 ---
 
-由于众所周知的原因，我们在访问国外代码的时候，会有请求丢失或者请求缓慢的原因，所以我们一般都会替换为大陆的镜像。以下是我使用的源：
+由于众所周知的原因，我们在访问国外代码的时候，会有请求丢失或者请求缓慢的情况，所以我们一般都会替换为大陆的镜像。以下是我使用的源：
 
 1. [清华大学 TUNA 协会](https://tuna.moe/)
 
 > 清华大学 TUNA 协会原名清华大学学生网管会，注册名清华大学学生网络与开源软件协会，是由清华大学网络技术和开源软件爱好者、技术宅组成的团体。现阶段向校内外提供开源软件镜像、DNS 解析和 NTP 授时等服务。
 
-1. [中国科学技术大学开源软件镜像](https://mirrors.ustc.edu.cn/)
+2. [中国科学技术大学开源软件镜像](https://mirrors.ustc.edu.cn/)
 
 > mirrors.ustc.edu.cn 是 Debian， Ubuntu， Fedora， Archlinux， CentOS 等多个发行版的官方源。目前是中国大陆高校访问量最大，收录最全的开源软件镜像。
 

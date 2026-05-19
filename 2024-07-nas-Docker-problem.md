@@ -3,13 +3,11 @@ layout: post
 title: 群晖docker启动失败
 date: 2024/07/16 09:39:00
 categories:
-  - 技术
+  - AI & Systems
 tags:
-  - Docker
-  - Synology
-  - 配置错误
-  - JSON
-  - 修复
+  - Infrastructure
+  - SystemDesign
+  - Engineering
 description: 黑群晖升级后Docker启动失败，排查日志发现配置文件存在多余逗号，删除逗号并通过Web页面修复后启动成功。
 ---
 

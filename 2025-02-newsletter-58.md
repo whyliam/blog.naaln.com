@@ -3,13 +3,13 @@ layout: post
 title: L58_推理、平权与全球博弈
 date: 2025/02/28 20:00:00
 categories:
-  - 资讯
+  - Notes & Essays
 tags:
-  - 推理语言模型
-  - AI平权
-  - AI视频模型
-  - 美国经济实验
-  - OpenAI与DeepSeek
+  - AI
+  - LLM
+  - Strategy
+  - Observation
+  - Newsletter
 description: 推理语言模型融合强化学习，实现推理训练数据生成三大流程；AI平权降低门槛却加剧资源集中，教育医疗价值受冲击，批判思维同理心关键；阿里万相开源视频模型支持文生图生，一点三B模型仅需八GB显存，十四B模型语义运动领先；美国经济实验用关税与补贴平衡AI安全，纳瓦尔防垄断、鼓励学习创新；两公司技术路径优势，DeepSeek多模态成本突出，ChatGPT快速增长，中美AI竞争将重塑生态。
 ---
 

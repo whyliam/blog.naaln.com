@@ -3,13 +3,13 @@ layout: post
 title: 2016设计年鉴（一）
 date: 2016/12/27 22:51:09
 categories:
-  - 产品
+  - Product & Intelligence
 tags:
-  - Uber
-  - Instagram
-  - Facebook
-  - DC漫画
-  - 原创争议
+  - ProductDesign
+  - UserExperience
+  - BrandStrategy
+  - DesignThinking
+  - Observation
 description: 那一年设计趋势回顾包括Uber品牌重塑推出彩色多边形标志，Instagram全新图标和彩虹渐变设计，网络热议原创争议，Facebook新增六种表情以表达情绪，DC漫画以复古风格更新品牌。
 ---
 
@@ -27,11 +27,11 @@ description: 那一年设计趋势回顾包括Uber品牌重塑推出彩色多边
 
 ![](http://pics.naaln.com/blog/2019-01-14-32222.jpg-basicBlog)
 
-Uber 的重塑品牌不经让人们联想是不是 Uber 是不是走错了方向。而人们对新品牌的质疑也使 Uber 的首席设计师 Andrew Crow 的声誉跌入了低谷。
+Uber 的重塑品牌不禁让人们联想 Uber 是不是走错了方向。而人们对新品牌的质疑也使 Uber 的首席设计师 Andrew Crow 的声誉跌入了低谷。
 
 ### 2. Instagram 大改造
 
-在 2016 年 5 月 11 日， Instagram 成了 Twitter 上头条。因为它完全重新设计了自己，包括图标，以及整个 App! 与之前的图标有着相同的概念，新的图标又一个更加简单的相机设计，渐变的彩虹的样式。它有着更加绚丽和活力的外观。
+在 2016 年 5 月 11 日， Instagram 成了 Twitter 上头条。因为它完全重新设计了自己，包括图标，以及整个 App! 与之前的图标有着相同的概念，新的图标有一个更加简单的相机设计，渐变的彩虹的样式。它有着更加绚丽和活力的外观。
 
 ![](http://pics.naaln.com/blog/2019-01-14-032222.jpg-basicBlog)
 
@@ -43,12 +43,12 @@ Uber 的重塑品牌不经让人们联想是不是 Uber 是不是走错了方向
 
 ![](http://pics.naaln.com/blog/2019-01-14-032224.jpg-basicBlog)
 
-中国在线零售商阿里巴巴市场营销和业务发展副总裁陈倩文，揭示了一些公司的标志和印刷在 1989 年设计书《世界商标和标志》中的相似之处，其中有有一些几乎完全相同，比如 Airbnb，Flipboard 和 Beats。
+中国在线零售商阿里巴巴市场营销和业务发展副总裁陈倩文，揭示了一些公司的标志和印刷在 1989 年设计书《世界商标和标志》中的相似之处，其中有一些几乎完全相同，比如 Airbnb，Flipboard 和 Beats。
 Twitter 上的设计人员很快指出，这种事情在设计世界中常常发生，特别是在有抽象字母构造的的标志中。
 
 ### 4. Facebook 上不是所有的东西都是令人喜欢的
 
-Facebook 的反馈系统突然多了很多表情。就像他们自己说的，网络中的信息不一地都是令人愉悦的。人们可能感到有趣，开心，悲伤或者。。。经过长期的研究，Facebook 加入了 6 个新的表情来正对不同的内容。
+Facebook 的反馈系统突然多了很多表情。就像他们自己说的，网络中的信息不一定都是令人愉悦的。人们可能感到有趣，开心，悲伤或者。。。经过长期的研究，Facebook 加入了 6 个新的表情来针对不同的内容。
 
 ![](http://pics.naaln.com/blog/2019-01-14-032225.jpg-basicBlog)
 

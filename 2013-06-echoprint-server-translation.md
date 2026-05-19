@@ -3,17 +3,17 @@ layout: post
 title: Echoprint Server （翻译）
 date: 2013/06/17 12:07:00
 categories:
-  - 技术
+  - AI & Systems
 tags:
-  - 音乐识别
-  - 指纹识别
-  - 开源系统
-  - Echoprint
-  - 服务器
+  - Data
+  - Infrastructure
+  - Search
+  - SystemDesign
+  - OpenSource
 description: Echoprint是开源音乐识别系统，支持音乐指纹识别，基于Apache Solr和TokyoTyrant技术构建，可查询百万音轨匹配歌曲，服务器代码采用Apache2.0许可，支持Python粘合匹配和Solr扩展，包含bigeval评估功能，无需引导即可使用Echo Nest API进行歌曲识别，可镜像Echoprint数据使用。
 ---
 
-欢迎来到 EchoprintEchoprint 是一个开源的音乐是识别系统，他允许任何人在他们自己的应用上构建音乐指纹识别系统。感谢 [The Echo Nest](http://the.echonest.com/) 的技术支持，以及 [Musicbrainz](http://musicbrainz.org/) 的合作。
+欢迎来到 Echoprint。Echoprint 是一个开源的音乐识别系统，它允许任何人在他们自己的应用上构建音乐指纹识别系统。感谢 [The Echo Nest](http://the.echonest.com/) 的技术支持，以及 [Musicbrainz](http://musicbrainz.org/) 的合作。
 
 → [Home / FAQ](https://blog.naaln.com/2013/06/echoprint-home-faq-translations/)
 → [Download from GitHub](http://github.com/echonest/)

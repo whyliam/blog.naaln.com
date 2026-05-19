@@ -3,13 +3,13 @@ layout: post
 title: 这会是 2016 年前端的年末撕逼吗？
 date: 2016/12/14 10:26:10
 categories:
-  - 产品
+  - Notes & Essays
 tags:
-  - frontend
-  - css
-  - javascript
-  - framework
-  - stack
+  - SystemsThinking
+  - FirstPrinciples
+  - TechEvolution
+  - CareerStrategy
+  - Observation
 description: 批判前端技术流行趋势如CSS预处理器和JavaScript框架，强调HTML、CSS、JavaScript是前端核心技能，反对全栈开发建议专注浏览器基础知识。
 ---
 
@@ -25,7 +25,7 @@ description: 批判前端技术流行趋势如CSS预处理器和JavaScript框架
 
 现在说 Angular、React 或者 Vue 的不好，都是政治不正确滴。
 
-声明，我没说我站在阿当这一边哈。我可是很怕得罪了整个前端界的呢 O(∩_∩)O ！。
+声明，我没说我站在阿当这一边哈。我可是很怕得罪了整个前端界的呢 O(∩_∩)O！
 
 不过依照中国大部分前端的计算机基础知识素养，能跟阿当正面撕逼的也没多少个。
 
@@ -67,7 +67,7 @@ CoffeeScript 是 Ruby 社区搞出来的， TypeScript 是 C# 社区搞出来的
 
 Node.js 作者本人就把这玩意儿当个玩具，你们前端居然当个宝。
 
-前端没有拿着玩意写后台，而是那它做脚本。
+前端没有拿这玩意写后台，而是拿它做脚本。
 
 写写脚本就算了，前端居然还妄图一门语言统一前后端。然后整天布道什么「全栈」。
 
@@ -145,7 +145,7 @@ HTML 标签、CSS ， JavaScript ， Form2.0、Websocket、离线缓存、Webwor
 
 ### 关于 React
 
-React 组件化的思路，我是认同的。Flex 的组件化方案比 HTML 不知高到那里去了。React 组件化 是对 HTML 很好的扩展。
+React 组件化的思路，我是认同的。Flex 的组件化方案比 HTML 不知高到哪里去了。React 组件化 是对 HTML 很好的扩展。
 
 但是 React 太重了，条条框框太多了，把简单事情搞复杂了。
 

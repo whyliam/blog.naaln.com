@@ -3,13 +3,12 @@ layout: post
 title: 意义不是想清楚才有，而是做着做着长出来的
 date: 2026/04/14 21:00:00
 categories:
-  - 随笔
+  - Notes & Essays
 tags:
-  - 王阳明
-  - 知行合一
-  - 行动
-  - 反馈
-  - 自我探索
+  - SystemsThinking
+  - ProductThinking
+  - Learning
+  - Writing
 description: 写完「为什么我总觉得自己没有梦想」之后，我继续往下想，发现真正困住我的未必是没有方向，而是总想先确认意义再行动。借王阳明心学重新理解内耗、反馈与行动：意义不是起点，而是行动和反馈的副产品。
 ---
 

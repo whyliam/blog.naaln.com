@@ -3,13 +3,12 @@ layout: post
 title: 在美国留学的你不能不知道的21个网站
 date: 2013/09/17 09:19:00
 categories:
-  - 旅行
+  - Notes & Essays
 tags:
-  - 留美生活
-  - 实用网站
-  - 购物攻略
-  - 旅行工具
-  - 学习资源
+  - Life
+  - Observation
+  - KnowledgeManagement
+  - Learning
 description: 美国生活常用网站包括购物、票务、旅行、美食、学习、影音六大类。购物有Amazon及闪购平台；票务推荐Amtrak、Megabus，早买更省；旅行使用TripAdvisor比较机票、景点和餐厅；美食点评借Yelp、Zagat与Groupon；学习资源有Coursera、Sparknotes、StudyBlue；影音平台为Hulu与Netflix；edu邮箱可获Amazon半年免费Prime。
 ---
 

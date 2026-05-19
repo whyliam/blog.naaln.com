@@ -3,13 +3,13 @@ layout: post
 title: 做产品的态度
 date: 2016/04/06 10:09:00
 categories:
-  - 产品
+  - Product & Intelligence
 tags:
-  - ProductAttitude
-  - DataSensitivity
-  - Prototyping
+  - ProductThinking
+  - Data
   - UserExperience
-  - ContinuousImprovement
+  - KnowledgeManagement
+  - DecisionMaking
 description: 产品经理应将产品视为艺术品精细打磨，敏感分析数据洞察用户行为，原型阶段实验最优解，体验优质应用提升品味，专注产品而非推广，完善知识避免细节纠结。
 ---
 

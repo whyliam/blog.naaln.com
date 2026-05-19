@@ -3,13 +3,13 @@ layout: post
 title: 10月小结｜责任与信任
 date: 2022/10/31 20:00:00
 categories:
-  - 随笔
+  - Notes & Essays
 tags:
-  - 时间成本
-  - 外包决策
-  - 时薪比较
-  - 工作陷阱
-  - 职业规划
+  - DecisionMaking
+  - Career
+  - TimeValue
+  - PersonalGrowth
+  - Reflection
 description: 采用时间成本决策，外包或雇人取决于其费用与自身时薪比较；以假设月薪五万、时薪三百为基准，任务价值超过三百自行完成；工作中因才能显而易见易被提供恰好的工作与加薪晋升，长期陷入职场陷阱而难以实现财富自由。
 ---
 

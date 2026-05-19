@@ -3,13 +3,13 @@ layout: post
 title: L59_社会变革与技术新纪元
 date: 2025/03/07 20:00:00
 categories:
-  - 资讯
+  - Notes & Essays
 tags:
-  - 社会变革
-  - 人工智能竞赛
-  - 世界模型
-  - 通用智能体
-  - 推理系统
+  - AI
+  - Agent
+  - Strategy
+  - Observation
+  - Newsletter
 description: 美国未来五年面对社会分裂与人工智能竞赛，全球秩序重构；世界模型技术自2018年发展至2024年实现实时交互，推动娱乐、工作与社交变革，同时加剧财富不均；国内首款通用智能体Manus在任务规划与执行上优于OpenAI的DeepResearch，实时同步交互凸显国产创新；DeepSeek开源的V3与R1推理系统利用跨节点专家并行提升吞吐，成本利润率高达545%但受定价与商业化限制，实际收益低于预期。
 ---
 

@@ -3,13 +3,12 @@ layout: post
 title: 有道理的废话
 date: 2021/06/10 20:00:00
 categories:
-  - 随笔
+  - Notes & Essays
 tags:
-  - 阅读感悟
-  - 知识管理
-  - 笔记整理
-  - 句子分类
-  - 心灵鸡汤
+  - KnowledgeManagement
+  - Learning
+  - SystemsThinking
+  - LongTermism
 description: 昨天在看书时划线一个句子有道理但像废话，阅读中经常遇到类似情况，知识管理时不知如何分类这些句子，曾考虑划分到心灵鸡汤等，最后选择删除它们，因为不长期丰富知识框架只提供短暂兴奋。
 ---
 

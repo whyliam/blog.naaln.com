@@ -3,13 +3,11 @@ layout: post
 title: 颜色减少，移动端设计中的新趋势
 date: 2016/12/15 22:30:37
 categories:
-  - 产品
+  - Product & Intelligence
 tags:
-  - ComplexionReduction
-  - MobileDesign
-  - Minimalism
-  - UserInterface
-  - AppleMusic
+  - UserExperience
+  - ProductThinking
+  - DesignTrends
 description: 化繁为简设计趋势，阐述其定义、决定性特征如加大加粗标题、简化图标、减少色彩。列举Instagram、Airbnb、Apple Music等案例，分析该趋势对移动端界面及整体设计流程的影响，并提供五大实用指南，预测未来移动应用界面将趋同于简洁、黑白为主，而应用图标则突出色彩。
 ---
 

@@ -3,13 +3,11 @@ layout: post
 title: 一次 IPv6-only 服务器的踩坑与自救记录
 date: 2026/03/24 11:29:00
 categories:
-  - 随笔
+  - AI & Systems
 tags:
-  - IPv6
-  - VPS
-  - SSH
-  - Cloudflare
-  - CloudCone
+  - Infrastructure
+  - SystemDesign
+  - Engineering
 description: 使用 Cloudflare WARP 解决本地单一 IPv4 网络的访问限制，以及在官方快捷配置失效的情况下，如何通过 VNC 终端手动修改服务器 DNS 解析并安全导入 SSH 密钥，最终成功实现本地终端远程连接的实战经验。
 ---
 

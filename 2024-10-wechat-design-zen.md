@@ -3,13 +3,12 @@ layout: post
 title: 工具的极致是平台：从微信的设计哲学谈起
 date: 2024/10/07 22:39:00
 categories:
-  - 产品
+  - Product & Intelligence
 tags:
-  - 工具产品
-  - 平台化
-  - 微信
-  - 小程序
-  - 产品哲学
+  - ProductThinking
+  - Platform
+  - UserExperience
+  - Strategy
 description: 工具的本质是提升效率，让用户以最短时间完成任务，注重目标导向并尊重时间。工具型产品应克制运营，避免过度干扰，用完即走。小程序带来所见即所得与即开即用的交互，移动互联网进入后时代，智能设备形态多变但任务本质不变。工具追求简约、无缝与自然融入生活，成为终极平台。
 ---
 

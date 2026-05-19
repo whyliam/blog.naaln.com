@@ -3,12 +3,11 @@ layout: post
 title: python python-eggs 异常解决方法
 date: 2013/10/04 09:23:00
 categories:
-  - 技术
+  - AI & Systems
 tags:
-  - Python
-  - warning
-  - security
-  - chmod
+  - Infrastructure
+  - SystemDesign
+  - Engineering
 description: 目录/home/refresh/.python-eggs因可写组其他用户而不安全，chmod命令修改权限至g-wx,o-wx。
 ---
 

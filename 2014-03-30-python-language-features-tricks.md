@@ -3,13 +3,12 @@ layout: post
 title: 30个关于Python的你有所不知语言特效和技巧
 date: 2014/03/20 23:30:00
 categories:
-  - 技术
+  - AI & Systems
 tags:
-  - Python
-  - Unpacking
-  - Slicing
-  - Collections
-  - Itertools
+  - Programming
+  - LanguageDesign
+  - EngineeringPractice
+  - SystemDesign
 description: 展示Python常用且不常见的语言特性与技巧，涵盖序列解包、负索引、切片、列表推导、字典集合推导、生成器表达式、命名元组、Counter、双端队列、堆操作、itertools、笛卡尔积、组合与排列、分组迭代，适用于进阶开发者参考。
 ---
 
@@ -17,15 +16,15 @@ By Sahand Saba 翻译 Liam
 
 ## Introduction
 
-自从我开始学习 python,我决定记录下一系列经常用的技巧。当我看到一些代码（例如，在 `Overflow`，或者一些开源的应用等等）我觉得很酷，我觉得我们应该不知道这一些用法。当我理解这些代码的时候，我会测试这些代码，然后加入这个列表中。下面发表的是一部分整理后的列表。假如你是一个很专业的 `Python` 工程师，即使你已经知道大部分用法，你还是可以找到一些你不知道的。假如你是 C, C++, Java 工程师，并且最近想学 Python，或者最近想拓展新的编程方式，那么你将会发现有一部分真的很有用，就想我一样。每一个技巧和语言的特性都将会通过例子演示，而没有解释。同时，我将会尽量使例子简洁明了，可能有一些仍然讲的不清楚，因为专业水平不够。如果有一些例子看完之后还是不能明白的话，你可以利用例子的标题去 `Google` 找到更多有用的信息。例子大致的按难度排序，一些比较简单和常见的功能和技巧会放在前面。内容的目录我将会放在最后
+自从我开始学习 python，我决定记录下一系列经常用的技巧。当我看到一些代码（例如，在 `Overflow`，或者一些开源的应用等等）我觉得很酷，我觉得我们应该不知道这一些用法。当我理解这些代码的时候，我会测试这些代码，然后加入这个列表中。下面发表的是一部分整理后的列表。假如你是一个很专业的 `Python` 工程师，即使你已经知道大部分用法，你还是可以找到一些你不知道的。假如你是 C, C++, Java 工程师，并且最近想学 Python，或者最近想拓展新的编程方式，那么你将会发现有一部分真的很有用，就像我一样。每一个技巧和语言的特性都将会通过例子演示，而没有解释。同时，我将会尽量使例子简洁明了，可能有一些仍然讲的不清楚，因为专业水平不够。如果有一些例子看完之后还是不能明白的话，你可以利用例子的标题去 `Google` 找到更多有用的信息。例子大致的按难度排序，一些比较简单和常见的功能和技巧会放在前面。内容的目录我将会放在最后
 
 #### 更新 - March 14th, 2014
 
-Roy Keyes 提了一个非常好的建议，把这个文章放在 github 上，让人们通过提 PR 方式来增加内容。这个仓库是 [https://github.com/sahands/python-by-exampl](https://github.com/sahands/python-by-exampl)。欢迎大家 fork，提 pull requests。我会更新这篇文章的，当有仓库跟新的时候。
+Roy Keyes 提了一个非常好的建议，把这个文章放在 github 上，让人们通过提 PR 方式来增加内容。这个仓库是 [https://github.com/sahands/python-by-exampl](https://github.com/sahands/python-by-exampl)。欢迎大家 fork，提 pull requests。我会更新这篇文章的，当有仓库更新的时候。
 
 #### 更新 - March 8th, 2014
 
-这篇文章在 [Reddit](http://redd.it/1zv3q3), [Hacker News](https://news.ycombinator.com/item?id=7365410) 有很多的讨论， 在那些评论中，很多读者提了很多建议和修改。我已经更新了我的列表，根据改进的建议，并且增加了一些新的条目。我现在确实有这样的一瞬间。"Cool! I didn't know you could do that!" 另外，我不太清楚 `itertools.chain.from_iterable` 和 `dictionary comprehensions`. 同时，有一些十分有趣的讨论关于是否有一些技术导致难以调试代码的可能性 就我而言，下面的条目本质上是没有很难调试的。但是我可以断定，如果代码写的太长，将会增加调试的难度，以及更加难理解和维护。根据你的判断，如果你的代码足够的简洁，那是有那好维护和阅读。举例来说，我觉得列表推导式可以很好阅读，而且易于调试和维护。但是如果列表推导式在另一个列表推导式中来传递给映射，然后到 `itertools.chain`？可能不是好主意！
+这篇文章在 [Reddit](http://redd.it/1zv3q3), [Hacker News](https://news.ycombinator.com/item?id=7365410) 有很多的讨论， 在那些评论中，很多读者提了很多建议和修改。我已经更新了我的列表，根据改进的建议，并且增加了一些新的条目。我现在确实有这样的一瞬间。"Cool! I didn't know you could do that!" 另外，我不太清楚 `itertools.chain.from_iterable` 和 `dictionary comprehensions`. 同时，有一些十分有趣的讨论关于是否有一些技术导致难以调试代码的可能性 就我而言，下面的条目本质上是没有很难调试的。但是我可以断定，如果代码写的太长，将会增加调试的难度，以及更加难理解和维护。根据你的判断，如果你的代码足够的简洁，那是有那么好维护和阅读。举例来说，我觉得列表推导式可以很好阅读，而且易于调试和维护。但是如果列表推导式在另一个列表推导式中来传递给映射，然后到 `itertools.chain`？可能不是好主意！
 
 #### 1.1 Unpacking
 

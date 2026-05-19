@@ -3,13 +3,13 @@ layout: post
 title: L82_脱离浪浪山
 date: 2025/08/16 20:00:00
 categories:
-  - 资讯
+  - Notes & Essays
 tags:
-  - AI时代
-  - 工具推荐
-  - 浪浪山
-  - 图像处理
-  - 字体平台
+  - AI
+  - Writing
+  - Observation
+  - Life
+  - Newsletter
 description: 内容AI时代信息搜集致内容价值感下降倡导回归真实热情工具部分有闲鱼监控机器人LiYing图像处理工具和ZeoSeven Fonts字体平台观电影《浪浪山小妖怪》探讨在忙碌中保持朴素善意。
 ---
 

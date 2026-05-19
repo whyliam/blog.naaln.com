@@ -3,13 +3,12 @@ layout: page
 title: Documents
 date: 2013/05/01 04:03:00
 categories:
-  - 资源
+  - AI & Systems
 tags:
-  - ruby
-  - rails
-  - 敏捷开发
-  - 教程
-  - 资源
+  - Learning
+  - KnowledgeManagement
+  - Engineering
+  - Archive
 description: 汇总Ruby语言简介、Rails敏捷Web开发应用指南、松本行弘《Ruby 编程语言》及相关资料链接，为初学者提供入门与实践参考。
 ---
 

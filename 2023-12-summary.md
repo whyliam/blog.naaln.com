@@ -3,13 +3,13 @@ layout: post
 title: 12月小结｜请回答2023
 date: 2023/12/31 20:00:00
 categories:
-  - 随笔
+  - Notes & Essays
 tags:
-  - 人生感悟
-  - 工作平衡
-  - 家庭生活
-  - 三十岁
-  - 人生态度
+  - Life
+  - Reflection
+  - Career
+  - Family
+  - Mindset
 description: 步入三十岁后的深度反思：从年初对时间流逝的焦虑，到全年表达欲的丧失和无力感，再到工作观的根本转变。曾将工作视为一切，深陷信息不对称导致的职业路径困扰，通过独立工作寻求成长却迷失自我。妻子带来源源不断的生活色彩，儿子成为人生礼物，使我重新审视工作与生活的关系。成为父亲后对父母付出有更深的理解，意识到亲情的珍贵。2023年是释然的一年，不再追求宏大叙事，专注于当下的体验。反思年轻时的梦想与现实处境的矛
 ---
 
@@ -45,7 +45,7 @@ Life is like a gift.
 
 Perhaps I have maintained this work status for several years, but I did not feel it. In the past, I really couldn't understand why people need to balance life and work. Maybe a monotonous life won't cause any impact for an individual. But, as a husband and father, I am different now.
 
-First, I would like to express my gratitude to my wife. she took me to music festivals, concerts, and often buys flowers and fruits. As a straight-laced man, I didn't have much desire for the taste of life. It was my wife who infused our home with the aroma of life.
+First, I would like to express my gratitude to my wife. She took me to music festivals, concerts, and often buys flowers and fruits. As a straight-laced man, I didn't have much desire for the taste of life. It was my wife who infused our home with the aroma of life.
 
 Second, I'm grateful for my son whose arrival has added concern to my life, ending the previous state of being alone and full with no worries about the whole family. At work, I'll miss about my son, allowing me to timely switch from work mode. He is a gift from heaven.
 

@@ -3,12 +3,13 @@ layout: post
 title: 戴雨森的 The Year of R：2026 年 AI 投资的回报与研究
 date: 2025/12/31 17:36:00
 categories:
-  - 随笔
+  - Product & Intelligence
 tags:
-  - 翻译
-  - 投资
-  - 趋势
-  - 观点
+  - Strategy
+  - DecisionMaking
+  - AICommercialization
+  - ProductThinking
+  - VentureCapital
 description: 真格基金管理合伙人戴雨森深度解析 2025 年 AI 发展与创投状况，提出 2026 年是"The Year of R"（回报与研究）的关键判断，探讨 AI 泡沫、技术商业化、创业者特质等重要话题。
 ---
 

@@ -3,12 +3,13 @@ layout: post
 title: L102_AI 用户需求洞察
 date: 2026/01/03 04:53:11
 categories:
-  - 资讯
+  - Notes & Essays
 tags:
-  - 用户研究
-  - LLM
-  - 效率
-  - 极限运动
+  - Newsletter
+  - ProductThinking
+  - AI
+  - Observation
+  - Writing
 description: 本期探讨为什么用户说的不等于真正需要的，分享 LLMs 的「幽灵革命」如何改变世界，介绍 Mac 音频 MIDI 设置技巧，推荐震撼人心的珠峰无氧滑雪纪录片，以及精选的 AI 投资故事和 NotebookLM 数据处理新功能。
 ---
 ![](https://pics.naaln.com/2026-01-09-d7d31b0c8b1813e501b13eb49062c1b2.webp-basicBlog)

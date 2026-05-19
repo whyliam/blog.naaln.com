@@ -3,13 +3,12 @@ layout: post
 title: OpenGL中如何绘制Bezier曲线和NURBS曲线
 date: 2013/04/03 01:37:00
 categories:
-  - 技术
+  - AI & Systems
 tags:
-  - Bezier
-  - NURBS
-  - OpenGL
-  - Curve
-  - Rendering
+  - SystemDesign
+  - Engineering
+  - VisualComputing
+  - Foundations
 description: OpenGL中Bezier曲线的映射、求值以及NURBS曲线的节点、控制点和属性设置，包含完整C语言示例代码，实现曲线绘制。
 ---
 

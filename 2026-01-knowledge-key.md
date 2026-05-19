@@ -3,13 +3,12 @@ layout: post
 title: 知识管理的三个核心特质
 date: 2026-01-14 18:00
 categories:
-  - 随笔
+  - AI & Systems
 tags:
-  - 知识管理
-  - 效率工具
-  - PARA
-  - 渐进式总结
-  - 双向链接
+  - KnowledgeManagement
+  - Workflow
+  - SystemsThinking
+  - Learning
 description: 揭示知识管理的核心本质应从信息仓库转向产出工厂。通过分析高效能人士的笔记系统，提炼出三个反直觉的核心特质：行动导向（按项目组织而非话题）、有机生长（链接优于层级，保持原子化）、低摩擦（渐进式总结而非完美主义）。提供三个体检问题检验系统有效性，强调知识在使用中被提炼而非收藏。
 ---
 

@@ -3,13 +3,13 @@ layout: post
 title: L75_动态、混沌而又极具变革性
 date: 2025/06/27 20:00:00
 categories:
-  - 资讯
+  - AI & Systems
 tags:
-  - 人工智能
-  - 民主化
-  - 工具
-  - 开源
-  - 算力
+  - AI
+  - Infrastructure
+  - Strategy
+  - Observation
+  - Newsletter
 description: 人工智能快速民主化，HeyGen、Anthropic、谷歌推低门槛工具；小米智能眼镜、EInerlabs、Midjourney实现音视频生成；开源FLUX.1竞争封闭生态；Meta收购ScaleAI，OpenAI租TPU，英伟达领跑；DeepMind AI解析DNA，Mayo Clinic AI筛查痴呆，FDA用Elsa监管；富士康与英伟达部署机器人，特斯拉Robotaxi无安全员运行。
 ---
 

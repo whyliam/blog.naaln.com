@@ -3,13 +3,12 @@ layout: post
 title: 万神殿
 date: 2022/12/25 20:00:00
 categories:
-  - 随笔
+  - Notes & Essays
 tags:
-  - 数字永生
-  - 意识上传
-  - 虚拟世界
-  - 科幻作品
-  - 技术伦理
+  - DigitalImmortality
+  - SystemsThinking
+  - Observation
+  - AI
 description: 探讨死亡时将思维上传到互联网的概念，通过电影桥段和《万神殿》引发思考，认为首批进入互联网的人将掌握新世界话语权，构建新秩序。新世界发展初期必然经历野蛮周期，直至出现神，预示着技术进步与权力重构的双重性，数字永生将重塑人类社会基本框架和生命本质。
 ---
 

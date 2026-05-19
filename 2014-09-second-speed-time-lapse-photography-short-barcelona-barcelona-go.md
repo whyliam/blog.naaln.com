@@ -3,13 +3,13 @@ layout: post
 title: 秒速巴塞隆那延时摄影短片《Barcelona GO》
 date: 2014/09/25 10:50:20
 categories:
-  - 旅行
+  - Travel & Visuals
 tags:
-  - Barcelona
-  - 短片
-  - 摄影
-  - 旅游
-  - 艺术
+  - Travel
+  - Photography
+  - Cities
+  - Observation
+  - VisualExpression
 description: 短片BarcelonaGO以女主人公的步伐为线索，通过快速流动的影像带领观众秒速逛穿巴塞罗那的大街小巷，展现了浪漫而五彩缤纷的巴塞罗那。黄昏中的古老教堂街头吹着萨克斯风的艺人圣洁的管风琴鸣响雄伟的歌剧院和墙上珍贵彩绘广场上的喷泉伴着延时摄影展现的巴塞罗那美丽的夕阳在斑驳的阳光下的古老城市和矗立于古老城市里的现代建筑。导演经历了363个小时的工作75小时的准备与游走31小时的拍摄地点探索78小时的
 ---
 
@@ -37,6 +37,6 @@ Santa Maria del Pi 松之圣母玛利亚教堂
 
 设备：
 
-Kit List Nikon D800 DSLR Nikon D7100 DSLR Nikon D7100 DSLR Nikon D3200 DSLR Nikon 10.5mm f/2.8G ED AF DX Fisheye NIkon 10-24mm f/3.5-4.5G ED AF-S DX Nikon 16-35 f/4G AF-S VR Zoom Nikkor Nikon 28mm AF f/2.8D
+Kit List Nikon D800 DSLR Nikon D7100 DSLR Nikon D3200 DSLR Nikon 10.5mm f/2.8G ED AF DX Fisheye Nikon 10-24mm f/3.5-4.5G ED AF-S DX Nikon 16-35 f/4G AF-S VR Zoom Nikkor Nikon 28mm AF f/2.8D
 
 ![Barcelona GO](http://pics.naaln.com/blog/2019-05-14-123124.jpg-basicBlog)

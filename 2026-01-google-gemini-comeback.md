@@ -3,12 +3,12 @@ layout: post
 title: Google Gemini 的逆袭之路：从承认落后到重新定义 AI
 date: 2026/01/09 17:40:00
 categories:
-  - 随笔
+  - Product & Intelligence
 tags:
-  - 技术
-  - Gemini
-  - 产品
-  - 企业文化
+  - AI
+  - Product
+  - Strategy
+  - SystemsThinking
 description: DeepMind CTO Koray Kavukcuoglu 揭示 Google Gemini 如何从落后状态实现逆袭，探讨承认现实、用户导向、团队协作等关键因素，为 AI 时代的产品开发提供深刻启示。
 ---
 

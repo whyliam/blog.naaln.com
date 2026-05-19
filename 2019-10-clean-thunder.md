@@ -3,13 +3,12 @@ layout: post
 title: 清理迅雷的各种垃圾功能
 date: 2019/10/07 20:00:00
 categories:
-  - 技术
+  - AI & Systems
 tags:
-  - Thunder
-  - Mac
-  - 插件
-  - 去广告
-  - 权限
+  - SystemDesign
+  - UserExperience
+  - DigitalMinimalism
+  - SystemsThinking
 description: 通过修改Thunder应用程序的插件权限，去除所有插件执行权，仅保留下载历史、会员中心、偏好设置、字幕、登录、会员任务、内置浏览器等必要插件，以实现去除广告、反馈、主页、软件管家等垃圾功能的目的，建议保留宽带提速、离线空间、会员任务等辅助插件，并避免删除应用程序、详情、在线更新、搜索任务、设置等核心插件以免应用异常。
 ---
 

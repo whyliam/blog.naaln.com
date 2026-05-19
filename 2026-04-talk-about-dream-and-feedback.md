@@ -3,12 +3,12 @@ layout: post
 title: 为什么我总觉得自己没有梦想
 date: 2026/04/13 21:00:00
 categories:
-  - 随笔
+  - Notes & Essays
 tags:
-  - 自我探索
-  - 梦想
-  - 焦虑
-  - 产品思维
+  - LongTermism
+  - ProductThinking
+  - Writing
+  - SystemsThinking
 description: 看了一个把兴趣做成事业的人之后，我开始重新理解自己的焦虑。也许问题并不在于没有梦想，而在于做了很多事，却始终没有形成稳定的反馈和积累。
 ---
 

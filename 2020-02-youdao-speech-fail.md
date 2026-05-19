@@ -3,13 +3,11 @@ layout: post
 title: 有道翻译发音失败
 date: 2020/02/23 20:00:00
 categories:
-  - 技术
+  - AI & Systems
 tags:
-  - macOS
-  - Alfred
-  - Catalina
-  - TTS
-  - say
+  - Workflow
+  - Automation
+  - Infrastructure
 description: 在Catalina中，whyliam.workflows.youdao的say指令偶发Open speech channel failed错误，可用sudo pkill speechsynthesisdsay重启语音合成服务解决；系统权限升级后Alfred权限失效，用tccutil reset All com.runningwithcrayons.Alfred重置并重新授权即可恢复正常。
 ---
 
@@ -30,7 +28,7 @@ sudo pkill speechsynthesisd say
 
 感谢：[Kleist's Blog](https://blog.kleist.top/2019/10/11/%E5%85%B3%E4%BA%8E-macOS-%E5%8D%87%E7%BA%A7%E5%88%B0-Catalina-%E4%B9%8B%E5%90%8E-say-%E5%91%BD%E4%BB%A4%E5%A4%B1%E6%95%88%E7%9A%84%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88)
 
-同时，在 Calalina 之后由于系统隔离并且加强了权限管理，导致这一功能需要重置 Alfred 的权限，原本上版本系统中获取的权限已经失效了。
+同时，在 Catalina 之后由于系统隔离并且加强了权限管理，导致这一功能需要重置 Alfred 的权限，原本上版本系统中获取的权限已经失效了。
 
 在终端中输入以下命令，并且重新打开
 

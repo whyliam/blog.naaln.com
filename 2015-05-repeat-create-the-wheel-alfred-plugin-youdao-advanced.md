@@ -3,13 +3,12 @@ layout: post
 title: 重复造轮子之Alfred有道插件  进阶篇
 date: 2015/05/06 00:20:00
 categories:
-  - 技术
+  - AI & Systems
 tags:
-  - Alfred
+  - Automation
   - Workflow
-  - Python
-  - 有道翻译
-  - AlfredWorkflow
+  - Tooling
+  - Productivity
 description: 使用deanishe的alfredworkflowPython包实现有道翻译的Alfred工作流。步骤包括新建BlankWorkflow、设置ScriptFilter、下载alfredworkflow包并编写youdao代码、添加CopytoClipboard节点并连线。此为不完整示例，完整源码见项目仓库。
 ---
 
@@ -37,7 +36,7 @@ description: 使用deanishe的alfredworkflowPython包实现有道翻译的Alfred
 
 ![](http://pics.naaln.com/blog/2019-01-14-061102.jpg-basicBlog)
 
-然后填入一下的信息
+然后填入以下的信息
 
 ![](http://pics.naaln.com/blog/2019-01-14-061104.jpg-basicBlog)
 

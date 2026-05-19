@@ -3,13 +3,12 @@ layout: post
 title: Ruby和Ruby on Rails的安装
 date: 2013/05/19 01:28:00
 categories:
-  - 技术
+  - Notes & Essays
 tags:
-  - ruby
-  - rails
-  - install
-  - windows
-  - linux
+  - Infrastructure
+  - Engineering
+  - Learning
+  - Archive
 description: 'Ruby多平台安装如Windows一步安装、Linux apt-get、OS X MacPorts；安装Rails通过gem；创建Web应用运行服务器访问localhost:3000。'
 ---
 
@@ -20,7 +19,7 @@ description: 'Ruby多平台安装如Windows一步安装、Linux apt-get、OS X M
 ### Ruby 源代码 如果您欲使之与您的平台更为兼容或者需要专一设置您的环境，那么从源代码安装是最好的解决方案。如果有预先做好的 Packages 需要安装到您的平台上，这也是一个好的方法
 
 [Ruby 2.0.0-p195]() (md5: 0672e5af309ae99d1703d0e96eff8ea5) 稳定版 (_推荐_)
-[稳定版快照]() 这里的 tar』ed 和 gzip』ed 文件是最新稳定的 CVS。它应该比上次发布的版本更稳定。
+[稳定版快照]() 这里的 tar'ed 和 gzip'ed 文件是最新稳定的 CVS。它应该比上次发布的版本更稳定。
 [开发版快照]() 这里的 tar』ed 和 gzip』ed 文件是最新的 CVS。它可能包含一些没有解决的问题。更多信息见
 
 [Ruby Core](http://www.ruby-lang.org/zh_cn/community/ruby-core/)

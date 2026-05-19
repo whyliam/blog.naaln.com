@@ -3,13 +3,13 @@ layout: post
 title: Echoprint - 开源的声纹识别
 date: 2013/06/18 01:39:00
 categories:
-  - 技术
+  - AI & Systems
 tags:
-  - 声纹
-  - Echoprint
-  - 开源
-  - MusicBrainz
-  - 许可证
+  - DataInfrastructure
+  - OpenSource
+  - SystemDesign
+  - AudioRecognition
+  - TechHistory
 description: Echoprint 是开源声纹识别系统，音频指纹算法生成指纹，提供 Codegen 库、Echoprint 服务器、公开数据库，采用 MIT、Apache 许可；数据库需公开贡献数据并标注 “poweredby”，使用 7Digital 音频与 MusicBrainz 元数据构建，结合 MusicBrainz 集成，可替代 MusicDNS 推动开放指纹应用。
 ---
 
@@ -25,7 +25,7 @@ This article was contributed by Nathan Willis
 
 **Fingerprints on the databases**
 
-尽管名字类似，声纹识别技术和用来检测文件改动的基于 hash 的数字指纹识别技术差别很大。hash 函数对单独比特的变化很敏感，声纹函数则必须努力得分析音频，分析的方法要独立于音频编码方式，比特率乃至静态或环境噪声。声纹关注于从音轨中提取可感知的信息，例如节奏，平均频谱以及周期性的音调模式。声纹识别技术主要用于从未知音频片段中获取可能的音轨信息，不过也可以用来查找相类似的音乐（依靠相关算法的调整）
+尽管名字类似，声纹识别技术和用来检测文件改动的基于 hash 的数字指纹识别技术差别很大。hash 函数对单独比特的变化很敏感，声纹函数则必须努力地分析音频，分析的方法要独立于音频编码方式，比特率乃至静态或环境噪声。声纹关注于从音轨中提取可感知的信息，例如节奏，平均频谱以及周期性的音调模式。声纹识别技术主要用于从未知音频片段中获取可能的音轨信息，不过也可以用来查找相类似的音乐（依靠相关算法的调整）
 
 声纹识别服务市场主要被专有软件垄断，其中比较著名的有 Shazam, SoundHound, 以及 Gracenote。许多自由软件组织的人都知道 Gracenote，原因是十年前发生那场争端，Gracenote 的母公司突然限制了对 CDDB（一个由用户建立的唱片识别数据库）的使用。很多人都由于政策的更改而感到被背叛，因为 CDDB 的数据都是由用户在播放或翻录 CD 时自愿提交的，但是用户们却不能使用或是享有 CDDB 带来的好处。这个数据库是因特网众包的早期例子，很多人发现自己无法访问这个数据库，自己努力的成果被公然掠夺了。
 

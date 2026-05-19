@@ -3,12 +3,12 @@ layout: post
 title: 37signals 决策指南：如何把控商业运营的核心艺术
 date: 2026/02/06 15:10:00
 categories:
-  - 随笔
+  - Product & Intelligence
 tags:
-  - 产品思维
-  - 方法论
-  - 决策科学
-  - 商业运营
+  - DecisionMaking
+  - Strategy
+  - ProductThinking
+  - BusinessModel
 description: 37signals作为Basecamp和HEY的幕后团队，在二十多年商业运营实践中提炼出的决策方法论。本文从决策必要性、人选匹配、犹豫反思、直觉数据、简化时机、连锁反应、外部影响、决策本质、后悔代价及原则回报等十个维度，提出40多个核心问题，帮助团队在商业运营中做出更明智的决策。
 ---
 

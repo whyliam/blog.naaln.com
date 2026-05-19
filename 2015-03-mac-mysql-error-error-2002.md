@@ -3,13 +3,12 @@ layout: post
 title: Mac上MySQL报错：ERROR 2002 (HY000)
 date: 2015/03/26 16:51:00
 categories:
-  - 技术
+  - AI & Systems
 tags:
-  - MySQL
-  - macOS
-  - Homebrew
-  - socket
-  - config
+  - Infrastructure
+  - Data
+  - SystemDesign
+  - KnowledgeManagement
 description: 在Mac上安装MySQL时，使用Homebrew或dmg会出现socket错误，解决方案包括在/usr/local/etc/my.cnf指定socket路径和字符集，运行mysql_install_db初始化数据库，执行mysql_secure_installation完成安全配置，最后启动mysql.server即可正常连接。
 ---
 
@@ -75,14 +74,14 @@ innodb_file_per_table=1
 timezone = '+0:00'
 ```
 
-1. 赞安装完 mysql 后，他会提示你 init database，并提供下面这两句让你执行，很可能你没执行这两句
+1. 在安装完 mysql 后，他会提示你 init database，并提供下面这两句让你执行，很可能你没执行这两句
 
 ```
 $ unset TMPDIR
 $ mysql_install_db --verbose --user=`whoami` --basedir="$(brew --prefix mysql)" --datadir=/usr/local/var/mysql --tmpdir=/tmp
 ```
 
-1. 然后就可以指向 mysql.server start 来启动了，为了安全，你还可以执行安全设置向导，根据提示一步一步配置
+1. 然后就可以执行 mysql.server start 来启动了，为了安全，你还可以执行安全设置向导，根据提示一步一步配置
 
 ```
 $ mysql_secure_installation

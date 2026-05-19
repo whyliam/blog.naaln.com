@@ -3,13 +3,13 @@ layout: post
 title: 史上最全MOOC平台收集
 date: 2014/03/05 06:12:00
 categories:
-  - 技术
+  - Product & Intelligence
 tags:
-  - MOOC
-  - 在线课程
-  - Coursera
-  - EdX
-  - Udacity
+  - Platform
+  - Knowledge
+  - ProductThinking
+  - OpenEducation
+  - Learning
 description: 2013年MOOC全球爆发，主流平台Coursera、EdX、Udacity；新锐平台iversity、FutureLearn、open2study；特色平台NovoED、P2PU；综合平台KhanAcademy、Alison；高校平台如斯坦福独立MOOC、清华学堂在线；语言平台Schoo、FUN、MiriadaX；专业平台MRUniversity、Poynter新闻大学等，提供大量免费或部分收
 ---
 
@@ -135,7 +135,7 @@ Blackboard 公司创建的 mooc 站
 
 http://academicearth.org/
 
-750.门大学公开的课程链接和资源汇集
+750门大学公开的课程链接和资源汇集
 
 独立机构或联合 mooc 平台
 
@@ -255,7 +255,7 @@ http://www.veduca.com.br/
 
 巴西的 mooc 平台（葡萄牙语）
 
-1. Jmoochttp://www.jmooc.jp/en/
+1. JMOOC http://www.jmooc.jp/en/
 
 日本的 mooc 平台 （日语）
 

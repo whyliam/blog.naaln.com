@@ -3,13 +3,13 @@ layout: post
 title: 个人投资系统的构建
 date: 2024/10/12 20:00:00
 categories:
-  - 经济
+  - Product & Intelligence
 tags:
-  - 个人认知
-  - 价值投资
-  - 安全边际
-  - 能力圈
-  - 投资系统
+  - DecisionMaking
+  - Strategy
+  - BusinessModel
+  - SystemsThinking
+  - LongTermism
 description: 阐述个人认知与投资哲学的根基作用，强调价值投资四大核心理念：买公司本质、忽略短期波动、保持安全边际、专注能力圈。系统化构建投资框架，以长期持有优质企业实现财富增长，体现知识、技术与商业模式协同。
 ---
 

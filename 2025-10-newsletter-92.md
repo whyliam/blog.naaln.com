@@ -3,13 +3,13 @@ layout: post
 title: L92_技术真实的金融幻觉
 date: 2025/10/25 20:00:00
 categories:
-  - 资讯
+  - AI & Systems
 tags:
-  - AI融资
-  - 循环融资
-  - AI产品
-  - AI代理
-  - 多账户管理
+  - AgenticAI
+  - ProductThinking
+  - SystemDesign
+  - Strategy
+  - Newsletter
 description: 悼念杨振宁逝世、学生自发献花；随后探讨 AI 循环融资闭环，指出英伟达、微软等投资实为自家云服务积分，核心公司 CoreWeave 风险凸显；分享 AI 产品实战经验，反驳 A/B 测试依赖，倡导判断力、创意与员工式模型；揭示 AI Agent 在生产环境 95% 失败，幸存者聚焦上下文工程、人类在环、记忆隐私、模型编排与混合交互；介绍 iOS 多账户管理工具；并收录 OpenAI 成人模式、沃尔玛合作等资讯。
 ---
 
@@ -155,7 +155,7 @@ AI 生态正爆发出万亿价值，英伟达（NVIDIA）和 OpenAI 的估值高
 
 ## 🛠️ 工具
 
-### 爱啪思道——在 Ios 管理多个 App Store 账户
+### 爱啪思道——在 iOS 管理多个 App Store 账户
 
 简化多个 Apple ID 的管理和 App Store 的使用体验。它支持用户跨区访问 App Store，轻松搜索和下载应用。用户可以在非越狱设备上安装和分享 IPA 文件，还能快速将免费应用加入购买记录，以及下载应用的历史版本。这款工具特别适合需要频繁更换账户或地区的用户。
 

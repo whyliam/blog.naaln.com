@@ -3,13 +3,12 @@ layout: post
 title: 我正在使用的 Axure 元件库
 date: 2019/06/13 20:00:00
 categories:
-  - 产品
+  - Product & Intelligence
 tags:
-  - Axure
-  - FontAwesome
-  - ElementUI
-  - AntDesign
-  - Vue
+  - Product
+  - UserExperience
+  - Workflow
+  - DesignSystems
 description: 列出常用的 Axure 库，包含官方提供的 FontAwesome 图标库、基于 Vue 二点零 的 Element UI 桌面组件库以及服务企业级产品的 Ant Design 组件库；其中 Ant Design库需额外安装字体。
 ---
 

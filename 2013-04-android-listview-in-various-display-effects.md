@@ -3,13 +3,12 @@ layout: post
 title: Android中ListView的各种显示效果
 date: 2013/04/09 07:57:00
 categories:
-  - 技术
+  - AI & Systems
 tags:
-  - Android
-  - ListView
-  - ArrayAdapter
-  - SimpleAdapter
-  - BaseAdapter
+  - SystemDesign
+  - Engineering
+  - Architecture
+  - Learning
 description: 本篇介绍AndroidListView的四种实现方式：一使用ArrayAdapter显示单行文本；二通过自定义布局与SimpleAdapter在每项显示图片与多行文字；三扩展SimpleAdapter的bindView支持Bitmap图片；四自定义BaseAdapter子类在getView中按type动态选择布局，实现混合按钮与歌曲信息的列表。每种方式均提供示例代码和关键步骤。
 ---
 
@@ -152,7 +151,7 @@ protected void onCreate(Bundle savedInstanceState) {
 
 **三、显示非资源 id 类型图片的 ListView**
 
-通过上面的例子可以看到 Map 中图片项的 value 是资源 id，这是针对项目中已存在的图片文件，为什么要用资源 id 而不是其他（比如 Bitmap 类型）呢，这是因为 adapter 的 bindView() 方法是负责解析图片并将其显示到 ImageView 中，但它只针对资源 id 类型做了判断。然而有一种情况，比如你的图片是从网络读取的 Bitmap 类型，你就需要对代码进行改写了。分析 SimpleAdapter 的源码，发现 getView() 方法是负责够造界面布局的的，而 getView 又是调用 bindView 来往控件里填充值的，所以我这里对 bindView() 方法进行改写。
+通过上面的例子可以看到 Map 中图片项的 value 是资源 id，这是针对项目中已存在的图片文件，为什么要用资源 id 而不是其他（比如 Bitmap 类型）呢，这是因为 adapter 的 bindView() 方法是负责解析图片并将其显示到 ImageView 中，但它只针对资源 id 类型做了判断。然而有一种情况，比如你的图片是从网络读取的 Bitmap 类型，你就需要对代码进行改写了。分析 SimpleAdapter 的源码，发现 getView() 方法是负责构造界面布局的，而 getView 又是调用 bindView 来往控件里填充值的，所以我这里对 bindView() 方法进行改写。
 
 新建一个类 CustomImageAdapter，代码完全 copy 自 SimpleAdapter，找到 bindView 方法，对其进行改写：
 

@@ -3,13 +3,13 @@ layout: post
 title: 躺平
 date: 2022/11/05 20:00:00
 categories:
-  - 随笔
+  - Notes & Essays
 tags:
-  - 延迟满足
-  - 社会压力
-  - 躺平
-  - 现代生活
-  - 理性
+  - SocialObservation
+  - DelayedGratification
+  - Rationality
+  - Life
+  - SystemsThinking
 description: 现代社会将理性使用无限期延期，满足交付不断推迟。从教育到就业再到婚姻生育养老，每个阶段的期望都延期兑现，消耗了人们运用理性的决心与信念。面对理性与努力能达到的极限，躺平成为相对幸运的选择，体现了一代人在大型延迟满足中的困境与应对。
 ---
 

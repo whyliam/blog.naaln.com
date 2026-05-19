@@ -3,13 +3,12 @@ layout: post
 title: L19_职业倦怠和最佳选择
 date: 2023/05/07 20:00:00
 categories:
-  - 资讯
+  - Notes & Essays
 tags:
-  - 科技裁员
-  - 职业倦怠
-  - 三十七规则
-  - 职场文化
-  - 决策
+  - DecisionMaking
+  - OrganizationalCulture
+  - CareerStrategy
+  - SystemsThinking
 description: 科技公司曾以福利吸引人才，现因经济压力优化盈利致裁员。职业倦怠特征为疲惫、愤世嫉俗和无力感，需远离压力源方可恢复。三十七规则建议采样部分选项后选择最佳，平衡探索与利用。
 ---
 

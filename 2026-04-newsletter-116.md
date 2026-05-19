@@ -3,13 +3,13 @@ layout: post
 title: L116_当智能变成基础设施
 date: 2026/04/11 11:48:15
 categories:
-  - 资讯
+  - Notes & Essays
 tags:
-  - NewsLetter
-  - AI应用
-  - 组织智能
-  - 护城河
-  - Agent-编排
+  - AgenticAI
+  - SystemDesign
+  - ProductThinking
+  - KnowledgeManagement
+  - Observation
 description: Block 想把公司本身做成一种 intelligence，而不是给每个人配一个 Copilot。当 AI 把执行变成水电煤，护城河回流到审美、判断和现实世界的交付能力。换电机不等于重新设计工厂。
 ---
 

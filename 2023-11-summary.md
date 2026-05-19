@@ -3,13 +3,13 @@ layout: post
 title: 11月小结｜在路上
 date: 2023/11/30 20:00:00
 categories:
-  - 随笔
+  - Notes & Essays
 tags:
-  - 工作
-  - 自由
-  - 自我实现
-  - 劳动
-  - 马克思
+  - Life
+  - Work
+  - Freedom
+  - Reflection
+  - LongTermism
 description: 现代工作应追求自由和个人生活，不应成为自我牺牲。妓女赎身与成为头牌的比喻强调选择自由的重要性，马克思指出工作应是自觉活动，最终目标是实现自我价值和自由。追求工作应以自由活动为目标，在劳动中保持自我意识。
 ---
 

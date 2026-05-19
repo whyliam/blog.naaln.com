@@ -3,13 +3,12 @@ layout: post
 title: 基于Sobel算子图像边缘检测的MATLAB实现
 date: 2013/09/24 05:49:13
 categories:
-  - 技术
+  - AI & Systems
 tags:
-  - MATLAB
-  - edge
-  - Sobel
-  - edgeDetection
-  - imageProcessing
+  - ComputerVision
+  - ImageProcessing
+  - Algorithm
+  - Data
 description: MATLAB的edge函数专为二维矩阵的灰度图像边缘检测设计，支持Sobel、Prewitt、Roberts、Laplacian ofGaussian、Zero-cross和Canny六种经典算法。使用前需将RGB彩色图像转换为灰度图并归一化处理。文章提供了完整的MATLAB代码示例，演示了垂直、水平和45度角的Sobel算子边缘检测方法，并通过imfilter函数实现自定义角度的滤波器操作。代
 ---
 

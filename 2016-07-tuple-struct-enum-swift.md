@@ -3,13 +3,12 @@ layout: post
 title: Swift中元组，结构体，枚举之间的区别
 date: 2016/07/26 11:17:22
 categories:
-  - 技术
+  - Notes & Essays
 tags:
-  - Swift
-  - Tuples
-  - Structs
-  - Enums
-  - DataStorage
+  - Learning
+  - SystemsThinking
+  - Engineering
+  - KnowledgeManagement
 description: Swift编程语言数据存储方式深度解析，涵盖元组结构体枚举的特性区别及应用场景。元组作为复合值类型支持下标和命名访问，适合简单数据组合；结构体具备数据存储和函数定义能力，属于命名类型可区分不同用途的数据类型如货币和重量；枚举用于互斥值选择可定义函数和带实际值的成员如货币符号映射。选择策略：简单需求优先元组，类型安全和命名类型使用结构体，互斥值选择使用枚举，确保代码清晰和类型安全。
 ---
 
@@ -23,7 +22,7 @@ Swift 有许多种存储数据方式，你可以用枚举 (`enums`),元组 (`tup
 let amout=(100,"USD")
 ```
 
-当你函数需要返回多个值时，元组这个时候非常有用，你可以使用下标方式来访问元组中的值，如。0,.1 以此类推，如下：
+当你函数需要返回多个值时，元组这个时候非常有用，你可以使用下标方式来访问元组中的值，如 .0, .1 以此类推，如下：
 
 ```
 let currency = money.1 // "USD"
@@ -35,7 +34,7 @@ let currency = money.1 // "USD"
 let money = (amount: 100, currency: "USD")
 ```
 
-现在，你不仅可以通过。1,而且可以通过。currency 访问元素值。
+现在，你不仅可以通过 .1，而且可以通过 .currency 访问元素值。
 
 ```
 let currency = money.currency // "USD"
@@ -136,7 +135,7 @@ enum Angle {
 }
 ```
 
-上面相当一个结构体: 可以增加函数，而且区分了 `Angle` 的值与 `double` 类型值，如果有需要，我们可以给它增加更多的 `case`(枚举成员)。
+上面相当于一个结构体: 可以增加函数，而且区分了 `Angle` 的值与 `double` 类型值，如果有需要，我们可以给它增加更多的 `case`(枚举成员)。
 
 ### 该使用哪一种呢?
 

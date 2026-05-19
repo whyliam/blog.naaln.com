@@ -3,13 +3,12 @@ layout: post
 title: 2024 Mac Software
 date: 2024/08/25 09:39:00
 categories:
-  - 技术
+  - AI & Systems
 tags:
-  - Mac
-  - Homebrew
-  - Zsh
-  - LaTeX
+  - Infrastructure
+  - Workflow
   - Automation
+  - KnowledgeManagement
 description: 提供2024年Mac常用软件与开发工具清单，含Homebrew、Zsh、OhMyZsh、LaTeX等安装步骤与常用字体、手动/brew安装方法，帮助快速搭建高效开发环境。
 ---
 
@@ -132,7 +131,7 @@ sudo tlmgr --repository http://www.preining.info/tlgpg/ install tlgpg
 sudo tlmgr option repository https://mirrors.tuna.tsinghua.edu.cn/CTAN/systems/texlive/tlnet
 ```
 
-按照依赖的插件
+安装依赖的插件
 
 ```bash
 sudo tlmgr update --self

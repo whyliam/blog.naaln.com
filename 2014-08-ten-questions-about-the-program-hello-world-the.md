@@ -3,12 +3,12 @@ layout: post
 title: 关于程序「Hello World！」的十个问题
 date: 2014/08/25 10:08:00
 categories:
-  - 技术
+  - Notes & Essays
 tags:
-  - HelloWorld
-  - Programming
-  - Education
-  - SoftwareDevelopment
+  - Learning
+  - KnowledgeManagement
+  - SystemsThinking
+  - TechCulture
 description: HelloWorld程序在实际开发中的十个不足：仅进行基本输出，缺少交互性和业务逻辑；不同语言实现几乎相同，导致学习价值有限；仅使用关键字，忽视变量、常量、函数与面向对象概念；在现代应用中显得不切实际。
 ---
 
@@ -18,7 +18,7 @@ description: HelloWorld程序在实际开发中的十个不足：仅进行基本
 
 我知道这个问题有点夸张。「Hello World」这种说法从何而来呢？除你之外，最后一次有人运行你的程序是什么时候？也许用「Hello」更合理些。
 
-**9. 它只适用于一件事情」？**
+**9. 它只适用于一件事情？**
 
 我不是在发表「Hello World」一无是处的言论。然而，他们唯一擅长的就是合理性检查。
 
@@ -40,7 +40,7 @@ description: HelloWorld程序在实际开发中的十个不足：仅进行基本
 
 **6.没有交互性**
 
-「Hello Word!」这个例子，除了需要终端用户验证「Hello World!」是否显示在屏幕上之外，不依赖用户做任何其它操作。它没有要求用户输入用户名、退出程序或重新运行程序之类的交互。关于终端用户和程序之间如何进行交互，「Hello Word!」并没有涉及相关内容。
+「Hello World!」这个例子，除了需要终端用户验证「Hello World!」是否显示在屏幕上之外，不依赖用户做任何其它操作。它没有要求用户输入用户名、退出程序或重新运行程序之类的交互。关于终端用户和程序之间如何进行交互，「Hello World!」并没有涉及相关内容。
 
 **5. 没有逻辑和运算**
 

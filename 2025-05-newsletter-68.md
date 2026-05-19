@@ -3,13 +3,13 @@ layout: post
 title: L68_从教育挑战到投资机遇
 date: 2025/05/09 20:00:00
 categories:
-  - 资讯
+  - Product & Intelligence
 tags:
   - AI
-  - 教育
-  - 设计
-  - 编程
   - Agent
+  - ProductThinking
+  - Strategy
+  - Observation
 description: AI以惊人速度改变教育与企业，推动交互范式从读心到织网，成为社交货币与创作入口。Figma把设计即代码变为现实；AI编程产品分AI IDE与VibeCoding两类。中国AI投资由模型叙事转向应用价值，投资者建议在技术未收敛期持续迭代，选择真正兴奋方向。教育体系面临普遍AI作弊与诚信挑战，评估需转向批判性思维与创造力。数据与垂直Agent正在企业落地，重塑工作流与协作方式。拥抱变化警惕风险，方能
 ---
 

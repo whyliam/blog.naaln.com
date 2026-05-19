@@ -3,13 +3,12 @@ layout: post
 title: Matlab 显示图片和SubPlot命令
 date: 2013/09/08 11:51:00
 categories:
-  - 技术
+  - AI & Systems
 tags:
-  - MATLAB
-  - image
-  - subplot
-  - imread
-  - imshow
+  - Data
+  - Search
+  - SystemDesign
+  - Learning
 description: MATLAB中的imread函数读取图像数据，imshow函数显示图像。subplot函数用于在单个图形界面中创建多个子图显示多张图片，支持位置向量精确控制子图的大小和位置。提供具体代码示例演示显示多张图片的操作。
 ---
 

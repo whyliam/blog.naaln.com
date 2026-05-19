@@ -3,17 +3,16 @@ layout: post
 title: 用Swift写一个发送邮件的iOS用户反馈
 date: 2016/12/18 21:13:46
 categories:
-  - 技术
+  - Notes & Essays
 tags:
-  - MFMailComposeViewController
-  - UIDevice
-  - StaticCells
-  - MessageUI
-  - iOSMail
+  - Engineering
+  - UserExperience
+  - ProductFeedback
+  - Development
 description: 介绍iOS应用中使用MFMailComposeViewController实现邮件反馈功能的完整流程，包括在Storyboard中建立静态列表、配置邮件视图、导入MessageUI框架、获取设备信息如系统版本设备型号以及应用版本号等关键步骤，并提供代码示例和实现细节注意事项，帮助开发者快速集成应用内邮件发送功能用于收集用户反馈。
 ---
 
-为了接收用户反馈，很多 iOS 应用都会在设置页面中，加入发送邮件功能——尤其当应用是由个人开发者开发时。当然 iOS 中邮件的发送方式有很多种，有体验相对较差 openURL 跳转方式，也有调用其他第三方库等办法。
+为了接收用户反馈，很多 iOS 应用都会在设置页面中，加入发送邮件功能——尤其当应用是由个人开发者开发时。当然 iOS 中邮件的发送方式有很多种，有体验相对较差的 openURL 跳转方式，也有调用其他第三方库等办法。
 
 不过较常用且方便的，还是如下图（应用为 [潮汐](https://itunes.apple.com/cn/app/chao-xi-mei-hao-fan-jia-zhong/id1077776989?mt=8)），调用系统的 MFMailComposeViewController 视图在应用内完成邮件发送，并返回应用。
 
@@ -213,6 +212,6 @@ let appBuildVersion = infoDic?["CFBundleVersion"]
 let appName = infoDic?["CFBundleDisplayName"]
 ```
 
-到这里，一个调用 MFMailComposeViewController 的 iOS 邮件反馈就基本写完了。运行的时候，要注意用虚拟器的话可能会报错，测试需要真机环境。效果如下。
+到这里，一个调用 MFMailComposeViewController 的 iOS 邮件反馈就基本写完了。运行的时候，要注意用模拟器的话可能会报错，测试需要真机环境。效果如下。
 
 ![](http://pics.naaln.com/blog/2019-01-14-032243.gif-basicBlog)

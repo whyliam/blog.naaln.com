@@ -3,12 +3,13 @@ layout: post
 title: L94_知识管理与智能体探索
 date: 2025/11/07 20:00:00
 categories:
-  - 资讯
+  - AI & Systems
 tags:
-  - NewsLetter
-  - AI
-  - 知识管理
-  - 智能体
+  - KnowledgeManagement
+  - Agent
+  - ContextEngineering
+  - WorldModel
+  - ProductThinking
 description: 探讨 AI 时代下的知识管理与智能体发展，涵盖 NotebookLM 的高效应用、AI Agent 的现实局限、上下文膨胀对性能的影响，以及世界模型的未来潜力。同时推荐多部优质电影，覆盖剧情、爱情与悬疑等类型。
 ---
 

@@ -3,13 +3,12 @@ layout: post
 title: Swift之贪婪的UIButton
 date: 2016/12/14 10:33:23
 categories:
-  - 技术
+  - AI & Systems
 tags:
-  - UIButton
-  - Swift
-  - iOS
-  - AssetCatalogs
-  - ImageSlicing
+  - SystemDesign
+  - UserExperience
+  - Engineering
+  - InteractionPatterns
 description: 阐述UIButton基础创建与标题设置图片与背景图的使用原理及resizableImageWithCapInsets的可变区域概念；说明AssetCatalogs可视切片的水平垂直拉伸方式；实现圆角头像复选框以及倒计时按钮的代码示例并指出UIButtonTypeCustom可避免闪烁；最后提供通过hitTest扩大点击响应范围的技巧适用于父视图捕获事件并转发至按钮。
 ---
 
@@ -111,8 +110,8 @@ func UIEdgeInsetsMake(_ top: CGFloat, _ left: CGFloat, _ bottom: CGFloat, _ righ
 
     (1)控件宽度大于图片宽度，拉伸白色虚线矩形
     (2)控件高度大于图片高度，拉伸黑色虚线矩形
-    (3)控制宽度小于图片宽度时，横向整体缩小(可变区与不变区比例不变)
-    (4)控制高度小于图片高度时，纵向整体缩小(可变区与不变区比例不变)
+    (3)控件宽度小于图片宽度时，横向整体缩小(可变区与不变区比例不变)
+    (4)控件高度小于图片高度时，纵向整体缩小(可变区与不变区比例不变)
 
 iOS 系统会根据设备的分辨率自动加载 1 倍图、2 倍图、3 倍图，而方法**resizableImageWithCapInsets**中的上下左右是以像素为单位，这就要求在使用时，根据**x**倍图，来设置对应的边距，例如：
 
@@ -222,7 +221,7 @@ func buttonPressed(button: UIButton) {
 
 ### 3.3 倒计时按钮（闪烁问题也轻松解决）
 
-很多应用中发短信倒计时功能，一般都会将 NSTimer 与 UIButton 结合来实现此功能，如果 UIButton 是这么初使化的：
+很多应用中发短信倒计时功能，一般都会将 NSTimer 与 UIButton 结合来实现此功能，如果 UIButton 是这么初始化的：
 
 ```
 let button = UIButton(type: UIButtonType.System)

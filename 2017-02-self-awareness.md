@@ -3,13 +3,12 @@ layout: post
 title: 关注自己的头脑思维和情绪
 date: 2017/02/05 19:41:52
 categories:
-  - 随笔
+  - Notes & Essays
 tags:
-  - 社会学
-  - 韦伯
-  - 行动
-  - 主观意义
-  - 习惯
+  - SelfAwareness
+  - CognitiveBiases
+  - SystemsThinking
+  - Observation
 description: 大多数行动出于本能或习惯，行动者的主观意义常模糊或无意识，明确自觉的行动只在少数情况下出现，理想的有意义行动是边缘情况，研究历史和社会必须考虑这一局限。
 ---
 

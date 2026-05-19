@@ -3,19 +3,18 @@ layout: post
 title: iOS 健康 数据数据库分析
 date: 2019/05/04 18:30:53
 categories:
-  - 技术
+  - AI & Systems
 tags:
-  - iOSHealth
-  - StepModification
-  - DatabaseEditing
-  - SQLQuery
-  - Jailbreak
+  - Data
+  - SystemsThinking
+  - Infrastructure
+  - Observation
 description: 讲解修改iPhone健康应用步数数据的方法，通过越狱访问healthdb_secure.sqlite数据库，使用SQL语句修改quantity_samples表中的步数数值，实现数据更新以满足'一起来捉妖'游戏的孵蛋需求，并提供相关查询语句和操作示例。
 ---
 
-最近上迷于「一起来捉妖」，里面有一个孵蛋的功能。就是由一天走路的步数转化为孵蛋的进度。
+最近着迷于「一起来捉妖」，里面有一个孵蛋的功能。就是由一天走路的步数转化为孵蛋的进度。
 
-由于走路的步数是来自于 iOS 的健康，所以就想着是否有办法可以博破解健康，来满足自己的虚荣心。
+由于走路的步数是来自于 iOS 的健康，所以就想着是否有办法可以破解健康，来满足自己的虚荣心。
 
 与修改微信的步数类似，目前市面上修改步数的方法都已经失效。我们需要一个更加给力的方法。
 
@@ -87,6 +86,6 @@ SELECT *,rowid "NAVICAT_ROWID" FROM "main"."quantity_samples" LIMIT 0,100
 
 ### 4. 补充一句
 
-「一起来捉妖」的步数对于的距离是 2800～3000 对于 2000 米，所以需要孵 2000 米的蛋，需要修改到 2800 左右。
+「一起来捉妖」的步数对应的距离是 2800～3000，对应 2000 米，所以需要孵 2000 米的蛋，需要修改到 2800 左右。
 
 以上

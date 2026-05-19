@@ -3,13 +3,13 @@ layout: post
 title: 通过图片地址找出你
 date: 2017/12/15 22:35:11
 categories:
-  - 技术
+  - AI & Systems
 tags:
-  - 图片追踪
-  - 微博
-  - QQ
-  - 微信
-  - 隐私
+  - Data
+  - Infrastructure
+  - DigitalPrivacy
+  - Observation
+  - SystemThinking
 description: 微博图片链接后缀 6 位 62 进制转换得到微博账号，QQ 图片地址中的用户编号直接是 QQ 号，微信图片消息 ID 可定位发图人，提醒网络行为可被追踪
 ---
 
@@ -43,7 +43,7 @@ description: 微博图片链接后缀 6 位 62 进制转换得到微博账号，
 
 微信的图片一般是这个样子 [https://wx.qq.com/cgi-bin/mmwebwx-bin/webwxgetmsgimg?&MsgID= 100010001000100000&skey=%40crypt_e7845284_fea59a9ef2bc6f42d17807e108a83733](https://wx.qq.com/cgi-bin/mmwebwx-bin/webwxgetmsgimg?&MsgID= 100010001000100000&skey=%40crypt_e7845284_fea59a9ef2bc6f42d17807e108a83733)
 
-其中的 `100010001000100000 ` 就是发图片人的 ID（，貌似没有什么用）。
+其中的 `100010001000100000 ` 就是发图片人的 ID，貌似没有什么用。
 
 ### 其他
 

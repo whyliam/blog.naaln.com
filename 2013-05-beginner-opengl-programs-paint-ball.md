@@ -3,13 +3,12 @@ layout: post
 title: 初学OpenGL的程序（画球）
 date: 2013/05/30 20:16:00
 categories:
-  - 技术
+  - Notes & Essays
 tags:
-  - OpenGL
-  - GLUT
-  - Sphere
-  - Graphics
-  - Polygon
+  - Learning
+  - Engineering
+  - Archive
+  - SystemsThinking
 description: 使用 GLUT 库在 OpenGL 中绘制球体，通过改变 a 参数调节经纬度分辨率控制球体数量和体积，利用 glPolygonMode 切换填充与线框模式，并通过 glutGet统计绘制时间，提供了完整示例代码及运行截图。
 ---
 

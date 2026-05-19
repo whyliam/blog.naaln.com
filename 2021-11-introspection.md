@@ -3,13 +3,12 @@ layout: post
 title: 沉淀自己
 date: 2021/11/24 20:00:00
 categories:
-  - 随笔
+  - Notes & Essays
 tags:
-  - 职业思考
-  - 作品沉淀
-  - 技术管理
-  - 产品成长
-  - 价值反思
+  - ProductThinking
+  - CareerGrowth
+  - LongTermism
+  - SelfReflection
 description: 同事离开蚂蚁后去新城市，强调沉淀个人作品，我也因此质疑自己的工作价值，多年负责的产品已是行业最大并逼近天花板，但回顾竟不知离开这些产品后自己还剩何物，呼吁避免成为需求翻译机和问题解决师。
 ---
 

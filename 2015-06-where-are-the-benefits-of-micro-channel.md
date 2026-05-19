@@ -3,13 +3,12 @@ layout: post
 title: 微信的好处究竟在哪里
 date: 2015/06/24 17:16:18
 categories:
-  - 随笔
+  - Notes & Essays
 tags:
-  - QQ
-  - 青春
-  - 社交软件
-  - 微信
-  - 回忆
+  - SocialSoftware
+  - DigitalIdentity
+  - Observation
+  - Life
 description: QQ从小学开始便是使用者最爱的社交平台，见证了青春期的成长与情感，包括加大量好友、养宠物和发表鸡汤式说说，后来因维护个人形象而逐渐远离，最终改用微信以优雅告别这段历程，强调社交软件的变迁源于心境的变化。
 ---
 

@@ -3,13 +3,13 @@ layout: post
 title: 你为什么不爽，因为你是个傻逼
 date: 2013/05/13 12:37:00
 categories:
-  - 随笔
+  - Notes & Essays
 tags:
-  - 青春
-  - 大学
-  - 焦虑
-  - 社会公平
-  - 个人成长
+  - CognitiveBiases
+  - Observation
+  - Life
+  - Writing
+  - SelfReflection
 description: 第一人称描述大学生活矛盾：条件优渥的学生感受社会不公平、人际孤独、学习困难，梦想女神主动接近却无行动；学霸坚信知识改变一切，忽视社交竞争，却别人成绩超越时不满。两者在竞争与孤独中自我质疑，最终都认为自己是傻逼。
 ---
 

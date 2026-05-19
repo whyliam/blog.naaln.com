@@ -3,13 +3,13 @@ layout: post
 title: Figma 的真正秘密：它不是关于协作，而是关于架构
 date: 2025/10/28 15:29:00
 categories:
-  - 随笔
+  - Product & Intelligence
 tags:
-  - 云原生
-  - 协作设计
-  - 元素中心
-  - 文件中心架构
-  - 人工智能原生
+  - ProductThinking
+  - SystemDesign
+  - PlatformStrategy
+  - AINative
+  - BusinessModel
 description: 这款设计协作工具的崛起源于云原生、元素中心的设计模型，它以可复用的组件为基本单元，实现实时多人协作并把价值从执行转向治理；相比之下，传统文件中心架构仍停留在桌面思维，虽迁移云端但难以复制这种协作与治理体系；未来人工智能原生企业将同理以最小任务单元重塑业务，架构而非执行成为竞争决定因素。
 ---
 

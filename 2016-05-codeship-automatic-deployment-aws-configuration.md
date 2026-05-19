@@ -3,13 +3,12 @@ layout: post
 title: codeship 自动部署 - AWS 配置
 date: 2016/05/18 22:50:00
 categories:
-  - 技术
+  - AI & Systems
 tags:
-  - CodeShip
-  - CodeDeploy
-  - AWS
-  - IAM
-  - Compute
+  - Automation
+  - Infrastructure
+  - Workflow
+  - SystemDesign
 description: 在AWS上配置CodeShip和CodeDeploy的步骤包括创建IAM用户和策略、配置S3存储桶、启动Compute实例、创建CodeDeploy应用程序及部署组，完成基础部署流程。
 ---
 
@@ -29,7 +28,7 @@ Access Key ID:      AK**********ICQ
 Secret Access Key:  Ze*******crCpZt
 ```
 
-##### 2.在写一点基本的策略分配权限
+##### 2.再写一点基本的策略分配权限
 
 在 IAM 中创建三个策略 [(`Proliies`)](https://console.aws.amazon.com/iam/home?region=us-east-1#policies)
 
@@ -177,7 +176,7 @@ Secret Access Key:  Ze*******crCpZt
 ##### 4.分配策略给用户
 
 1. 我们回到之前创建的用户 `codeship`
-2. 点击权限，附加次策略
+2. 点击权限，附加此策略
 3. 勾选策略 `s3`,`deploy` 表示赋予用户 `s3` 和 `deploy` 的权限
 
 **`S3`**

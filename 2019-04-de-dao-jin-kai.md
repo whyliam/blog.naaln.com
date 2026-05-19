@@ -3,13 +3,12 @@ layout: post
 title: 得到今楷-字体
 date: 2019/04/22 21:30:53
 categories:
-  - 产品
+  - Travel & Visuals
 tags:
-  - 楷体
-  - 得到今楷体
-  - 严永亮
-  - 中文字体
-  - 字体对比
+  - Typography
+  - VisualDesign
+  - Observation
+  - Aesthetics
 description: 得到今楷体是仓耳字库历时三年完成的中文楷体字体，设计者严永亮曾参与谷歌思源黑体中文版设计，采用楷体结构与笔形特点，提供舒适的视觉体验；与思源宋体、旗黑等字体对比，显示其耐看且不易疲劳的效果；适用于正式场合的字体选择。
 ---
 

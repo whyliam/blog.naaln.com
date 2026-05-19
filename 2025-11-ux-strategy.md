@@ -3,12 +3,12 @@ layout: post
 title: 别再把 UX 策略当成「路线图」
 date: 2025/11/25 13:15:00
 categories:
-  - 随笔
+  - Product & Intelligence
 tags:
-  - UX策略
-  - 用户体验
-  - 商业策略
-  - 产品设计
+  - ProductThinking
+  - Strategy
+  - UserExperience
+  - DecisionMaking
 description: 深度解析UX策略的本质，区分目标、策略与计划的概念，提供六个核心要素框架，帮助设计师用商业语言沟通价值，实现用户体验与商业目标的无缝对接。
 ---
 
