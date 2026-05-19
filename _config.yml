@@ -106,9 +106,10 @@ ignore:
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 plugins:
-  hexo-reference
-  hexo-algoliasearch
-  hexo-auto-canonical
+  - hexo-smart-seo
+  - hexo-reference
+  - hexo-algoliasearch
+  - hexo-auto-canonical
 
 ## Themes: https://hexo.io/themes/
 theme: next
@@ -208,3 +209,12 @@ nofollow:
   enable: true
   exclude:
     - naaln.com
+
+smart_seo:
+  enable: true
+  default_image: /images/favicon/apple-touch-icon-next.png
+  logo: /images/favicon/apple-touch-icon-next.png
+  meta_keywords: false
+  max_keywords: 20
+  description_length: 150
+  robots: index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1
