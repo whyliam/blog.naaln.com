@@ -3,17 +3,17 @@ layout: post
 title: Echoprint Data access （翻译）
 date: 2013/06/17 12:06:00
 categories:
-  - 技术
+  - AI & Systems
 tags:
-  - echoprint
-  - musicfingerprint
-  - opensource
-  - datasharing
-  - license
+  - Data
+  - Infrastructure
+  - OpenSource
+  - DataGovernance
+  - SystemDesign
 description: Echoprint是开源的音乐指纹识别系统，可在自建应用中构建指纹识别功能。系统由The Echo Nest与MusicBrainz提供客户端、服务器和API接口。数据采用Echoprint DatabaseLicense许可，允许商业和非商业使用，下载或完善数据后需将改进数据共享回Echo Nest。协议规定了使用权、分发义务、数据共享流程、免责声明和责任限制。
 ---
 
-欢迎来到 EchoprintEchoprint 是一个开源的音乐是识别系统，他允许任何人在他们自己的应用上构建音乐指纹识别系统。感谢 [The Echo Nest](http://the.echonest.com/) 的技术支持，以及 [Musicbrainz](http://musicbrainz.org/) 的合作。
+欢迎来到 Echoprint。Echoprint 是一个开源的音乐识别系统，它允许任何人在他们自己的应用上构建音乐指纹识别系统。感谢 [The Echo Nest](http://the.echonest.com/) 的技术支持，以及 [Musicbrainz](http://musicbrainz.org/) 的合作。
 
 → [Home / FAQ](https://blog.naaln.com/2013/06/echoprint-home-faq-translations/)
 → [Download from GitHub](http://github.com/echonest/)

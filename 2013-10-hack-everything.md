@@ -3,13 +3,13 @@ layout: post
 title: Hack, Everything!
 date: 2013/10/13 12:41:00
 categories:
-  - 随笔
+  - Notes & Essays
 tags:
-  - 创业
-  - 黑客思维
-  - 个人成长
-  - 效率
-  - 创新
+  - SystemsThinking
+  - FirstPrinciples
+  - Life
+  - Curiosity
+  - Optimization
 description: 作者分享了參與創業培訓學生參訪的經歷，闡述「Hack,everything!」的核心理念。Hack不僅是快速解決問題的方法，更是一種人生態度。文章詳細解釋了Hacker的定義，並提供十條實踐心法：提問方式轉變（問為什麼不能而非可不可以）、關注成功失敗背後原因、測試而非接受界線、將人視為系統進行分析、自主優化並邀請他人挑戰、持續追求效率、保持好奇心積極影響他人。這些心法幫助讀者培養Hacker精神
 ---
 
@@ -17,7 +17,7 @@ description: 作者分享了參與創業培訓學生參訪的經歷，闡述「H
 
 昨天，一群參加 [青年創業暨交流計畫](http://www.cyea.tw/yee.php) — 一個由中華青年企業家協會發起、給學生參加、非常重視實作的創業培訓 — 的同學們來 [appWorks](http://appworks.tw/) 參訪。
 
-他們事前做了很多功課，不知到去哪裡人肉搜索挖掘出了我這輩子所有人生軌跡，然後根據不同的階段擬出了幾十個問題，請我一一幫他們回答。大概聊了一個多小時吧，其實是蠻好的經驗，剛好也讓我回顧一下我這些年來闖蕩的歲月。最後我送他們一句話，也是我常常送給每一個創業人的：Hack, everything! 這句話我常常說，但是似乎一直沒有好好的解釋一下它的意思，我想我們今天就來聊聊這個話題。首先，我們得先定義一下「Hack」，Hack 這個字當名詞用時的意思，維基百科是 [這麼說的](http://en.wikipedia.org/wiki/Hack_(computer_science)#In_computer_science)：
+他們事前做了很多功課，不知道去哪裡人肉搜索挖掘出了我這輩子所有人生軌跡，然後根據不同的階段擬出了幾十個問題，請我一一幫他們回答。大概聊了一個多小時吧，其實是蠻好的經驗，剛好也讓我回顧一下我這些年來闖蕩的歲月。最後我送他們一句話，也是我常常送給每一個創業人的：Hack, everything! 這句話我常常說，但是似乎一直沒有好好的解釋一下它的意思，我想我們今天就來聊聊這個話題。首先，我們得先定義一下「Hack」，Hack 這個字當名詞用時的意思，維基百科是 [這麼說的](http://en.wikipedia.org/wiki/Hack_(computer_science)#In_computer_science)：
 
 > A hack is a solution to a problem, doing a task, or fixing a system (whether hardware or software) that is inefficient, inelegant, or even unfathomable, but which nevertheless (more or less) works. 翻成中文就是：
 

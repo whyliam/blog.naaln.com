@@ -3,13 +3,12 @@ layout: post
 title: '移动端用户体验:底部导航'
 date: 2016/12/15 22:30:37
 categories:
-  - 产品
+  - Product & Intelligence
 tags:
-  - MobileUX
-  - BottomNav
-  - AppUI
-  - UXDesign
-  - UserUX
+  - UserExperience
+  - ProductThinking
+  - InteractionDesign
+  - Mobile
 description: 设计决定用户融入产品的方式，底部导航因拇指易触及而重要。研究显示近半手机操作靠单指完成。底部导航应显示三至五个顶级目的地，避免滚动。需清晰表达当前位置：易辨图标、应用主色提亮焦点、短文字标签。点击区域大，小红点可示新信息。导航直达目的地，不用于控制。统一显示标签栏，信息流时隐藏。用渐隐过渡效果。可见、结构清晰、简单为关键。
 ---
 
@@ -143,7 +142,7 @@ iOS 的工具栏 _
 
 尽可能 _ 在每种情况下都显示标签栏 _。这样能给用户一种视觉上可靠的感觉。
 
-_不要因为功能不可用就移除某个标签_。如果你在某些情况下移除一个标签，其他情况确保留，就会让你的 app 界面感觉不可靠、难以预料。最佳解决方案是保证所有标签都是可用的，然后解释为什么某个标签没有内容。例如，如果用户没有离线文件，Dropbox 里的 Offline 标签会显示一个界面，教你如何添加。这个功能就是 [空状态](https://uxplanet.org/empty-state-mobile-app-nice-to-have-essential-f11c29f01f3#.x5iwgmo40)。
+_不要因为功能不可用就移除某个标签_。如果你在某些情况下移除一个标签，其他情况下确保保留，就会让你的 app 界面感觉不可靠、难以预料。最佳解决方案是保证所有标签都是可用的，然后解释为什么某个标签没有内容。例如，如果用户没有离线文件，Dropbox 里的 Offline 标签会显示一个界面，教你如何添加。这个功能就是 [空状态](https://uxplanet.org/empty-state-mobile-app-nice-to-have-essential-f11c29f01f3#.x5iwgmo40)。
 
 ![](http://pics.naaln.com/blog/2019-01-14-032215.jpg-basicBlog)
 

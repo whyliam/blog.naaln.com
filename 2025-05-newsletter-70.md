@@ -3,13 +3,13 @@ layout: post
 title: L70_企业管理者结构化
 date: 2025/05/23 20:00:00
 categories:
-  - 资讯
+  - Product & Intelligence
 tags:
-  - AI
-  - Workday
   - Agent
-  - TestTimeCompute
-  - AIGS
+  - ProductThinking
+  - Organization
+  - Strategy
+  - SystemsThinking
 description: 红杉资本对WorkdayCEO访谈展示AI转型从成本向增长，指AI赋能员工、构建agent人事体系、数据为新用户界面与技能革命。TestTimeCompute框架阐释模型推理如双系统思维、思维链工具强化，推理资源分配优于扩大参数。产品协作流程八步闭环实现需求的AI全链路参与，角色转为导演。AIGS以波普尔证伪主义为基础，构建自动化假设—实验闭环。AI已从工具演进为组织成员与认知伙伴，聚焦AI运用。
 ---
 

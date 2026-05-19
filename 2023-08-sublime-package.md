@@ -3,20 +3,19 @@ layout: post
 title: Sublime Text 无法调用 Install Package
 date: 2023/08/29 20:00:00
 categories:
-  - 技术
+  - AI & Systems
 tags:
-  - 编辑器
-  - 插件
-  - OpenSSL
-  - macOS
-  - 修复
+  - Workflow
+  - Infrastructure
+  - Tooling
+  - Engineering
 description: 在macOS系统下，Sublime Text无法调用Install Package，出现EVP_PKEY_size符号未找到错误。错误因OpenSSL版本不兼容，系统使用OpenSSL 3，Sublime依赖旧版。修复方法为安装openssl@1.1并创建符号链接到/usr/local/lib库文件，重启Sublime Text解决。
 ---
 
 最近 Sublime Text 无法调用 Install Package，我一度以为是我的电脑或者版本的问题。
 记一下排查过程。
 
-系统：Macos Ventura 13.5.1
+系统：macOS Ventura 13.5.1
 
 Sublime Text 4152
 
@@ -32,7 +31,7 @@ AttributeError: dlsym(0x7f876fc44440, EVP_PKEY_size): symbol not found
 
 主要的问题是
 
-> MacOS Monterrey 系统使用的 OpenSSL v3.0.1，而 Sublime 以来的是 OpenSSL v2.8 以下的版本
+> macOS Monterey 系统使用的 OpenSSL v3.0.1，而 Sublime 依赖的是 OpenSSL v2.8 以下的版本
 
 修复：
 

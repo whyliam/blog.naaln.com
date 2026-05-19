@@ -3,13 +3,12 @@ layout: post
 title: 行业分析报告怎么写
 date: 2019/08/07 20:00:00
 categories:
-  - 产品
+  - Product & Intelligence
 tags:
-  - 一级市场
-  - 管理咨询
-  - 行业研究
-  - 竞争格局
-  - 运营效率
+  - Strategy
+  - DecisionMaking
+  - BusinessAnalysis
+  - IndustryResearch
 description: 行业研究提供趋势、对比、细分信息。一级市场聚焦资金效率和退出策略、国外相似模式、竞争格局和技术壁垒；管理咨询侧重运营效率和深度财务建模、竞对调研、政策影响。管理咨询项目如车企经销商战略，涉及竞争对手分析、定价策略、消费需求、政策和销售策略优化。
 ---
 

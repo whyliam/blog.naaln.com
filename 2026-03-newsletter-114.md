@@ -3,13 +3,13 @@ layout: post
 title: L114_设计细节与AI工具
 date: 2026/03/29 12:30:00
 categories:
-  - 资讯
+  - Product & Intelligence
 tags:
-  - NewsLetter
-  - AI应用
-  - 设计细节
-  - 产品体验
-  - Skill编写
+  - Product
+  - Agent
+  - Workflow
+  - SystemsThinking
+  - UserExperience
 description: OPPO 折叠屏和戴森吸尘器把证明过程变成了产品体验本身。AI 编程的心流正在改变，写 Skill 成了结构化思维的训练。让人看见比告诉对方更有效。
 ---
 ![](https://pics.naaln.com/2026-03-31-611d10c4893d4aaba698a0641beea768.png-basicBlog)

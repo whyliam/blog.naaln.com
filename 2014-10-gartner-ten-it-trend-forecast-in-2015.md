@@ -3,13 +3,13 @@ layout: post
 title: Gartner预测2015年十大IT趋势
 date: 2014/10/19 22:08:00
 categories:
-  - 技术
+  - AI & Systems
 tags:
-  - IoT
-  - Cloud
+  - Infrastructure
+  - Data
+  - SystemDesign
   - AI
-  - Analytics
-  - Security
+  - Strategy
 description: Gartner发布2015年十大IT趋势：物联网扩张、3D打印成本下降；分析技术先进隐形无处不在；情境系统响应环境变化；智能机器学习行动；云客户端架构统一应用；软件定义架构灵活发展；网络规模IT采用科技巨头方式；基于风险的安全替代周边防御。未来三年将深刻影响各行业数字化商业。
 ---
 

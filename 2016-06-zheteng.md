@@ -3,13 +3,12 @@ layout: post
 title: 博客在于折腾
 date: 2016/06/19 15:15:59
 categories:
-  - 技术
+  - Notes & Essays
 tags:
-  - 博客迁移
-  - Hexo
-  - 静态博客
-  - Markdown
-  - 成本优化
+  - Writing
+  - KnowledgeManagement
+  - DigitalGarden
+  - PersonalInfrastructure
 description: SAE博客因访问量误报成本高，迁移至Hexo静态博客降低开销。博客使用Markdown编写，改用NexT.Me主题适配Typecho风格。评论系统多说数据部分丢失，图片存储转至新浪微博。迁移后服务器成本几乎为零，仅需域名费。问题包括编辑方式不便、编辑器不完善、图片存储风险、上传繁琐、600篇文章生成速度慢（需60秒）。
 ---
 
@@ -19,7 +18,7 @@ description: SAE博客因访问量误报成本高，迁移至Hexo静态博客降
 
 其中我的博客每月最少要花 50 元钱，它提示我的博客的访问量已经上了 50 万，我知道这事根本不可能的事情。
 
-Google analysts 给我的数据也就 2000 左右。
+Google Analytics 给我的数据也就 2000 左右。
 
 总之，他又促使我有了转了博客的决心。
 
@@ -33,13 +32,13 @@ Google analysts 给我的数据也就 2000 左右。
 
 得益于很早就把博客从 `Wordpress` 迁移到了 `Typecho` 上，后期的博客基本都是使用 `Markdown` 编写的，而且我尽量保持博客的简洁性，没有使用复杂性的插件，使得博客的内容比较的干净，尽可能的保持了最基本的 `Markdown` 的样式。
 
-自己写了一个 `Tyoecho` 到处到 `Markdown` 的脚本，虽然丢失了一些标签，但是总的来说实现了完美的过度。
+自己写了一个 `Typecho` 导出到 `Markdown` 的脚本，虽然丢失了一些标签，但是总的来说实现了完美的过渡。
 
 使用了 `NexT.Muse` 的主题，但是自己做了部分修改，是主题往原来的 `Typecho` 的样式靠拢，没有显得太突兀。
 
 评论基于 多说，但是期间 多说 的部分 uuid 改变了，其中有一些是在 `wordpress` 时期留下的坑。基本以前的评论全部都丢失了。
 
-还有一个大坑是 以前的图片全部都在 `SAE` 的 Stronge 上，我关闭 SAE 后会造成图片疑似。
+还有一个大坑是 以前的图片全部都在 `SAE` 的 Storage 上，我关闭 SAE 后会造成图片失效。
 
 今天花了一个早上解决了这个问题。
 

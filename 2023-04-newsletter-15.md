@@ -3,12 +3,13 @@ layout: post
 title: L15_最重要的资源
 date: 2023/04/08 20:00:00
 categories:
-  - 资讯
+  - Notes & Essays
 tags:
-  - 人工智能
-  - 教育变革
-  - 数据驱动
-  - 费曼学习法
+  - AI
+  - Data
+  - Education
+  - Learning
+  - SystemsThinking
 description: 人工智能发展替代工作智慧部分，数据成关键资源，教育受挑战需改革以培养独立思考和价值判断；费曼学习法强调通过讲解实践简化知识实现有效学习。
 ---
 

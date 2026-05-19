@@ -3,13 +3,13 @@ layout: post
 title: Color Avatar（FREE NFT）
 date: 2022/01/20 20:00:00
 categories:
-  - 随笔
+  - Product & Intelligence
 tags:
-  - NFT
-  - 数字艺术
-  - OpenSea
-  - Vue
-  - 社区运营
+  - Web3
+  - Community
+  - ProductThinking
+  - BusinessModel
+  - DigitalAssets
 description: 作者探讨非同质化代币的社会价值与盈利模式，发现免费铸造成本高且利润微薄，风险大；其价值源自概念、IP与社区运营。彩色头像项目为学习非同质化代币制作流程，基于Vue框架实现，已上传上千枚，计划约三千枚，可在数字艺术平台查看并索取免费空投，项目遵循MIT与共享创作许可。
 ---
 
@@ -29,7 +29,7 @@ NFT 本身没有价值，而是炒的人多了才有价值。好的 `NFT` 在项
 
 ![2](https://pics.naaln.com/blog/2022-01-20-f43843.png-basicBlog)
 
-本项目基于 [Vue Color Avatar](https://github.com/Codennnn/vue-color-avatar), builed by [Codennnn](https://github.com/Codennnn)，licensed under MIT to create this collection.
+本项目基于 [Vue Color Avatar](https://github.com/Codennnn/vue-color-avatar), built by [Codennnn](https://github.com/Codennnn)，licensed under MIT to create this collection.
 
 ![](https://github.com/Codennnn/vue-color-avatar/raw/main/images/social-preview-1.png)
 

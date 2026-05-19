@@ -3,13 +3,12 @@ layout: post
 title: 安装 Fedora 19 GNOME 后需做的事
 date: 2013/08/13 08:48:00
 categories:
-  - 技术
+  - AI & Systems
 tags:
-  - fedora
-  - rpmfusion
-  - gnometweaktool
-  - fcitx
-  - googlechrome
+  - Infrastructure
+  - SystemDesign
+  - OpenSource
+  - Engineering
 description: 在Fedora19首次安装后，推荐禁用firewalld与SELinux，配置SELinux为disabled，添加RPMFusion仓库，安装32位兼容库，安装WPS与字体，安装TweakTool、Sublime、Fcitx输入法，启用第三方仓库，更新系统，安装Chrome与Flash插件，下载MPlayer编解码器，完成桌面基本功能。
 ---
 
@@ -24,7 +23,7 @@ sudo systemctl stop firewalld.service
 sudo systemctl disable firewalld.service
 ```
 
-### 1.1. SELinux
+### 1.2. SELinux
 
 停止 SELinux，如果你不需要它。
 
@@ -225,7 +224,7 @@ sudo rpm -ivh adobe-release-x86_64-1.0-1.noarch.rpm
 sudo yum -y install flash-plugin
 ```
 
-### 3.12. 安装音视频解压器
+### 3.12. 安装音视频解码器
 
 ```bash
 wget http://mplayerhq.hu/MPlayer/releases/codecs/all-20110131.tar.bz2

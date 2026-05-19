@@ -3,13 +3,12 @@ layout: post
 title: 微信启动画面有什么隐秘
 date: 2013/12/15 07:59:00
 categories:
-  - 随笔
+  - Product & Intelligence
 tags:
-  - 微信启动页
-  - 蓝色弹珠
-  - 阿波罗计划
-  - 非洲视角
-  - 太空摄影
+  - Product
+  - UserExperience
+  - Observation
+  - ProductThinking
 description: 微信启动画面使用阿波罗17号拍摄的蓝色弹珠照片，拍摄于1972年12月7日，照片显示非洲视角而非中国视角，原因是这是一张真实拍摄的太空照片而非地图，展现人类在太空中远眺地球的孤独感，传达人类内心孤独与地球家园美好的主题。
 ---
 

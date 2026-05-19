@@ -3,13 +3,12 @@ layout: post
 title: iOS 微信的本地存储结构简析
 date: 2016/11/24 09:30:24
 categories:
-  - 技术
+  - AI & Systems
 tags:
-  - iOS
-  - 微信
-  - SQLite
-  - 数据导出
-  - 备份
+  - Data
+  - SystemDesign
+  - Infrastructure
+  - Workflow
 description: 利用iTunes备份定位微信App数据目录，读取MM.sqlite与WCDB_Contact.sqlite解析联系人、聊天记录并导出对应的图片、语音、视频等多媒体资源，形成完整的聊天记录导出工具。
 ---
 
@@ -29,7 +28,7 @@ description: 利用iTunes备份定位微信App数据目录，读取MM.sqlite与W
 
 ### 主要的数据库：MM.sqlite
 
-从很久以前，iOS 微信的大部分数据就保存在这个 SQLite 3 数据库里。没有安卓上可恶的加密，直接可以打开。这个文件在 Documets/xxxx/DB/MM.sqlite，中间是对应用户名的 MD5，稍后会讲它的具体含义。不过一般只需要遍历所有的。
+从很久以前，iOS 微信的大部分数据就保存在这个 SQLite 3 数据库里。没有安卓上可恶的加密，直接可以打开。这个文件在 Documents/xxxx/DB/MM.sqlite，中间是对应用户名的 MD5，稍后会讲它的具体含义。不过一般只需要遍历所有的。
 
 ![](http://pics.naaln.com/blog/2019-01-14-032451.jpg-basicBlog)
 
@@ -121,7 +120,7 @@ description: 利用iTunes备份定位微信App数据目录，读取MM.sqlite与W
 
 我们自然会想在「Documents/ 微信号的 MD5」文件夹下面找这些内容。这时很容易发现：
 
-(1) Img 文件夹中有一些以 MD5 命名的文件夹，它们对应数据库中的各 Chat_ 表，而具体文件是以数字编号的，这个编号等于对应消息的 MesLocalID（上面提到过）。文件有三种后缀：。pic、。pic_hd、。pic_thum，顾名思义是正常大小的图片、原图、缩略图。基本上是 JPEG 格式吧，这个影响不大。
+(1) Img 文件夹中有一些以 MD5 命名的文件夹，它们对应数据库中的各 Chat_ 表，而具体文件是以数字编号的，这个编号等于对应消息的 MesLocalID（上面提到过）。文件有三种后缀：.pic、.pic_hd、.pic_thum，顾名思义是正常大小的图片、原图、缩略图。基本上是 JPEG 格式吧，这个影响不大。
 
 (2) Video 文件夹类似，有.video_thum 扩展名的缩略图，以及.mp4 的视频本体。视频是 AVC+AAC 编码的，不过仍然不重要吧。
 

@@ -3,13 +3,12 @@ layout: post
 title: 试用 Celery
 date: 2016/06/28 12:25:53
 categories:
-  - 技术
+  - AI & Systems
 tags:
-  - Celery
-  - Redis
-  - RabbitMQ
-  - TaskQueue
-  - Python
+  - Automation
+  - Infrastructure
+  - Workflow
+  - SystemDesign
 description: Celery是一自带电池的任务队列，使用Redis、RabbitMQ等消息中间件，安装简单。代码使用Redis作为代理创建Celery实例，定义异步任务starcate处理耗时报告生成，启动celeryworker并发执行并监控任务状态，任务在数秒内完成返回结果。
 ---
 
@@ -35,7 +34,7 @@ $ pip install celery
 
 ### 应用
 
-我有一个网址，用户需要提交信息，我会给用户创建一个报告，并发送到用户的邮箱。但是，报告的创建时间需要话费 10 秒，有一些数据需要实时生成，有一些需要花费大量的计算时间。
+我有一个网址，用户需要提交信息，我会给用户创建一个报告，并发送到用户的邮箱。但是，报告的创建时间需要花费 10 秒，有一些数据需要实时生成，有一些需要花费大量的计算时间。
 
 所以我的解决方案是异步处理，用户先提交信息，我在报告创建完成后进行发送。
 
@@ -70,4 +69,4 @@ def starcase(info):
 
 ![](http://pics.naaln.com/blog/2019-01-14-060756.jpg-basicBlog)
 
-可以看到 接受到了一个 `4A9D2A83-E273-40CB-***` 的任务，并在 8.2 秒后执行完成，返回的结果是 10040。
+可以看到 接收到了一个 `4A9D2A83-E273-40CB-***` 的任务，并在 8.2 秒后执行完成，返回的结果是 10040。

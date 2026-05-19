@@ -3,13 +3,12 @@ layout: post
 title: 配置 iterm2
 date: 2018/12/27 16:14:59
 categories:
-  - 技术
+  - AI & Systems
 tags:
-  - zsh
-  - ohmyzsh
-  - iterm
-  - plugins
-  - shell
+  - Workflow
+  - Infrastructure
+  - DeveloperExperience
+  - Tooling
 description: iTerm2的舒适主题和常用插件配置，使用ZSH和Oh-My-Zsh，安装zsh-autosuggestions、zsh-syntax-highlighting、node、npm、sublime、ruby、sudo、python、osx、pyenv、gem、xcode、github、pip等插件的完整步骤与代码示例。
 ---
 

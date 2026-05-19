@@ -3,13 +3,13 @@ layout: post
 title: 我曾经七次鄙视自己的灵魂
 date: 2015/09/16 20:10:08
 categories:
-  - 随笔
+  - Notes & Essays
 tags:
-  - 自我欺骗
-  - 人性弱点
-  - 道德反思
-  - 纪伯伦
-  - 人生感悟
+  - SelfReflection
+  - HumanNature
+  - CognitiveGrowth
+  - Philosophy
+  - Observation
 description: 该文描述了七个情境：故作谦卑、欲望填充、选择容易、错误借口、软弱坚韧、鄙视面具和赞美美德，揭示人性的自我欺骗与道德缺失。
 ---
 

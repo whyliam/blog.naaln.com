@@ -3,12 +3,13 @@ layout: post
 title: L79_重塑生产力与安全的未来
 date: 2025/07/26 20:00:00
 categories:
-  - 资讯
+  - AI & Systems
 tags:
-  - AgentAI
-  - ChatGPTAgent
-  - SuperAgents
-  - VoiceAgent
+  - Agent
+  - AgenticAI
+  - Workflow
+  - ProductThinking
+  - Newsletter
 description: OpenAI发布ChatGPT Agent整合Operator与Deep Research支持虚拟浏览器自主完成多步任务。Walmart推出客户员工供应商开发者四大Super Agents包括Sparky实现个性化推荐与视觉识别。Google Big Sleep agent首次在真实攻击前识别并中断SQLite零日漏洞展示主动防御能力。SoundHound发布Amelia 7.0企业级语音Agen
 ---
 

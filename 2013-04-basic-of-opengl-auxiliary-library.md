@@ -3,17 +3,16 @@ layout: post
 title: OpenGL辅助库的基本使用
 date: 2013/04/13 03:57:00
 categories:
-  - 技术
+  - AI & Systems
 tags:
-  - OpenGL
-  - Auxiliary
-  - Rendering
-  - Window
-  - Events
+  - Infrastructure
+  - SystemDesign
+  - Learning
+  - Engineering
 description: OpenGL辅助库分为六类函数：窗口初始化与退出、窗口处理与事件输入、颜色表装入、三维物体绘制、背景过程管理和程序运行。提供窗口管理、事件处理和基本三维图形绘制功能，帮助初学者快速入门OpenGL图形编程。
 ---
 
-OpenGL 是一个开放的系统，它是独立于任何窗口系统或操作系统的。尽管它包含了许多图形函数，但它却没有窗口函数，也没有从键盘和鼠标读取事件的函数，所以要初学者写出一个完整的图形程序是相当困难的。另外，OpenGL 图形函数中只提供基本的几何原形：点、线、多边形，因此要创建基本的三维几何体如球、锥体等，也很不容易。而 OpenGL 辅助库就是为解决这些基本问题专门设计的，它提供了一些基本的窗口管理函数和三维图形绘制函数，能帮助初学者尽快进入 OpenGL 世界，掌握关键的三维图形技术，体会其中奇妙的乐趣。但是，对于复杂的应用，这些函数远远不够，只能作为参考。
+OpenGL 是一个开放的系统，它是独立于任何窗口系统或操作系统的。尽管它包含了许多图形函数，但它却没有窗口函数，也没有从键盘和鼠标读取事件的函数，所以要初学者写出一个完整的图形程序是相当困难的。另外，OpenGL 图形函数中只提供基本的几何原型：点、线、多边形，因此要创建基本的三维几何体如球、锥体等，也很不容易。而 OpenGL 辅助库就是为解决这些基本问题专门设计的，它提供了一些基本的窗口管理函数和三维图形绘制函数，能帮助初学者尽快进入 OpenGL 世界，掌握关键的三维图形技术，体会其中奇妙的乐趣。但是，对于复杂的应用，这些函数远远不够，只能作为参考。
 
 **辅助库函数分类**
 
@@ -61,7 +60,7 @@ void auxKeyFunction(GLint key,void(*function)(void))
 void auxMouseFunc(GLint button,Glint mode,void(*function)(AUX_EVENTREC *))
 ```
 
-定义鼠标响应函数。参数 function 就是当鼠标以 mode 方式作用于 button 时所调用的函数。参数 button 有 AUX_LEFTBUTTON、AUX_MIDDLEBUTTON 或 AUX_RIGHTBUTTON(以右手为标准)。参数 mode 代表鼠标触击状态，击中时为 AUX_MOUSEDOWN，释放时为 AUX_MOUSEUP。参数 function 必须带一个参数，它是指向结构 AUX_EVENNTREC 的指针。当函数 auxMouseFunc() 被调用时将为这个结构分配相应的内存。通常用法类似如下：
+定义鼠标响应函数。参数 function 就是当鼠标以 mode 方式作用于 button 时所调用的函数。参数 button 有 AUX_LEFTBUTTON、AUX_MIDDLEBUTTON 或 AUX_RIGHTBUTTON(以右手为标准)。参数 mode 代表鼠标触击状态，击中时为 AUX_MOUSEDOWN，释放时为 AUX_MOUSEUP。参数 function 必须带一个参数，它是指向结构 AUX_EVENTREC 的指针。当函数 auxMouseFunc() 被调用时将为这个结构分配相应的内存。通常用法类似如下：
 
 ```
 void function(AUX_EVENTREC *event)

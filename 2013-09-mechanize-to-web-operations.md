@@ -3,13 +3,12 @@ layout: post
 title: Mechanize对WEB的操作
 date: 2013/09/10 20:14:00
 categories:
-  - 技术
+  - AI & Systems
 tags:
-  - Mechanize
-  - Ruby
-  - WebAutomation
-  - Forms
-  - Links
+  - Automation
+  - Workflow
+  - SystemDesign
+  - Data
 description: Mechanize库在Ruby中实现网页自动化，包括设置代理、访问网页、处理表单控件、提交数据、上传文件、遍历超链接、下载文件，并演示登录和消息发送脚本。
 ---
 
@@ -41,7 +40,7 @@ agent = WWW::Mechanize.new
 agent.user_agent_alias = 'Windows IE 7'
 ```
 
-#### 历史纪录的大小设
+#### 历史纪录的大小设定
 
 ```ruby
 agent.max_history = 1
@@ -274,7 +273,7 @@ open('top.gif', 'wb') { |f| f.write(data) }
 <img src="http://www.test.com/top.gif">
 ```
 
-#### Table 部分的的文字
+#### Table 部分的文字
 
 ```
    page.root.search('table/tr/td'){|e| puts e}

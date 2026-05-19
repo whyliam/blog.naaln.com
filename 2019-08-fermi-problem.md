@@ -3,13 +3,12 @@ layout: post
 title: 费米问题
 date: 2019/08/05 20:00:00
 categories:
-  - 产品
+  - Product & Intelligence
 tags:
-  - 费米问题
-  - 数量估算
-  - 思维方法
-  - 物理学
-  - 实际应用
+  - SystemsThinking
+  - DecisionMaking
+  - ProductThinking
+  - Strategy
 description: 费米问题是在信息有限情况下通过合理假设和逻辑推理进行数量估算的思维方法。介绍费米通过撒纸片估算核爆炸当量的经典案例，以及芝加哥钢琴调琴师数量计算的具体步骤。展示如何通过拆解问题、设定假设条件，运用乘除法运算得出合理答案。这类问题培养分析思维和问题解决能力，在科学工程教育中具有重要价值。实际应用包括供应链管理和需求预测等领域。
 ---
 

@@ -3,12 +3,13 @@ layout: post
 title: L113_设计、节奏与护城河
 date: 2026/03/22 04:17:47
 categories:
-  - 资讯
+  - Notes & Essays
 tags:
-  - NewsLetter
-  - 知识管理
-  - 设计思维
-  - 职业发展
+  - Newsletter
+  - AI
+  - ProductThinking
+  - KnowledgeManagement
+  - LongTermism
 description: 本期聚焦知识管理、设计变革与职业思考。NotebookLM 通过让 AI 主动识别知识盲区，提升知识库完整性；Anthropic 设计负责人揭示传统设计流程在 AI 工程速度下的崩塌，设计师角色正在重构。"慢速成功"理念提供了一条反主流的增长路径。此外，从物理护城河角度重新审视 AI 替代问题，指出数字劳动力面临的冲击可能比体力劳动者更为直接。工具推荐 AutoClip 视频剪辑神器。
 ---
 ![](https://pics.naaln.com/2026-03-22-3fa71cc06ff84f8eab3d69f991143a4b.png-basicBlog)

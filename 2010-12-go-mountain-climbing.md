@@ -3,17 +3,17 @@ layout: post
 title: 去爬山了
 date: 2010/12/11 19:00:00
 categories:
-  - 随笔
+  - Travel & Visuals
 tags:
-  - 爬山运动
-  - 大学校园
-  - 校园生活
-  - 早晨活动
-  - 学生生活
+  - Travel
+  - Photography
+  - Observation
+  - Life
+  - Cities
 description: 早起爬山遇小腿抽筋，从UIC出发经北师大到中大，一路上遇到许多宿管同游，宿管们爬山能力惊人。作者瘸着腿坚持完成行程，最终在中大享用物美价廉的午餐，整日行程虽疲惫但充实有趣。
 ---
 
-今天大清早的起来就小退抽筋，真 TMD 的给力
+今天大清早的起来就小腿抽筋，真 TMD 的给力
 
 本来是 7:40 去爬山的，6:30 起床，结果又抽睡着了
 

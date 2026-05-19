@@ -3,13 +3,13 @@ layout: post
 title: 移动互联成主流不是趋势是现实
 date: 2013/04/24 11:39:00
 categories:
-  - 随笔
+  - Product & Intelligence
 tags:
-  - 移动互联网
-  - 智能手机
-  - 张宏江
-  - 科技趋势
-  - 移动设备
+  - Platform
+  - Strategy
+  - Observation
+  - Data
+  - Innovation
 description: 金山软件CEO张宏江博士在珠海UIC高桌晚宴演讲时指出移动互联已成为主流现实而非趋势。全球PC出货量下降而智能手机和平板电脑出货量增长，2013年第二季度智能手机和平板电脑保有量将超过PC。中国2012年智能手机出货量超1亿部占全球26.5%，移动互联网经济规模预计达976.2亿人民币增速148%。张宏江提出2013年五大科技趋势：移动设备大战、HTML5推动Webapp发展、个人云替代PC、企业
 ---
 

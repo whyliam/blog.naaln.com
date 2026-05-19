@@ -3,13 +3,12 @@ layout: post
 title: 技术人员怎样转型成为产品经理？
 date: 2016/10/20 17:17:07
 categories:
-  - 产品
+  - Product & Intelligence
 tags:
-  - 产品管理
-  - 技术转型
-  - 产品设计
-  - 用户中心
-  - 快速迭代
+  - ProductThinking
+  - UserExperience
+  - DecisionMaking
+  - Strategy
 description: 技术人员转型产品经理需跨越用户需求理解偏差、个人技术偏好展示欲望和完美主义三大误区。通过傻子心态识别用户需求无下限、以结果导向规划功能聚焦价值核心、采用MVP策略快速迭代优化产品路径，可有效避免个人兴趣驱动导致的曲高和寡和功能冗余，实现实用主义产品成功。
 ---
 

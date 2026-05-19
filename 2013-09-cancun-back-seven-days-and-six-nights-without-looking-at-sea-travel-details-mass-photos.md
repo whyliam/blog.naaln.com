@@ -3,13 +3,12 @@ layout: post
 title: 坎昆归来不看海——七天六夜详细行程＋海量照片
 date: 2013/09/05 02:14:00
 categories:
-  - 旅行
+  - Travel & Visuals
 tags:
-  - 美国签证
-  - AutomaticRevalidation
-  - 墨西哥签证
-  - 坎昆
-  - 旅行
+  - Travel
+  - Photography
+  - Mexico
+  - Observation
 description: 在签证过期情况下，持有F或J签证的非美国居民可通过AutomaticRevalidation从墨西哥、加拿大或加勒比海返回美国，无需重新签证，只需相应国家签证；官方链接说明返回美国流程；坎昆七天六夜的旅行行程与海量照片。
 ---
 

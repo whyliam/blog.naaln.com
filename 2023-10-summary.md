@@ -3,13 +3,13 @@ layout: post
 title: 10月小结｜悬浮在空中
 date: 2023/10/30 20:00:00
 categories:
-  - 随笔
+  - Notes & Essays
 tags:
-  - 尼采
-  - 悬浮
-  - 理想
-  - 现实
-  - 生活哲学
+  - Observation
+  - Life
+  - SelfReflection
+  - LongTermism
+  - Cognition
 description: 尼采说生命应大胆冒险，最难在自我理解。现代社会悬浮现象：专注未来否定当下，追求目标不确定。理想源于现实会变形。生活关键在于行路贴切真实天性保持通透。
 ---
 

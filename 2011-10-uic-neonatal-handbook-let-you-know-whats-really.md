@@ -3,13 +3,13 @@ layout: post
 title: UIC新生手册，让你知道什么才是真…
 date: 2011/10/30 20:00:00
 categories:
-  - 随笔
+  - Notes & Essays
 tags:
-  - mystery
-  - fantasy
-  - romance
-  - secret
-  - military
+  - Observation
+  - Memory
+  - CampusCulture
+  - Writing
+  - Archive
 description: UIC是一个神秘组织，对抗暮光龙集团，源于学长浪漫事件，领导者为郭少棠。宿舍后山洞是巨龙巢穴，学费昂贵以瓦解巨龙，SAO是敌对特务机构，活动如高桌晚宴和课程设置。
 ---
 

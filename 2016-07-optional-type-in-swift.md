@@ -3,13 +3,12 @@ layout: post
 title: 理解Swift中Optional类型
 date: 2016/07/23 10:32:08
 categories:
-  - 技术
+  - Notes & Essays
 tags:
-  - OC语言
-  - 空指针
-  - Swift
-  - 可选类型
-  - 可选解包
+  - SystemsThinking
+  - LanguageDesign
+  - SoftwarePhilosophy
+  - Learning
 description: Objective‑C 中 nil 为空指针，数值上等价于 0，直接运算易产生歧义。Swift 用 Optional 枚举表示「有值」或「无值」，声明时使用 ?，未赋值默认 nil。对 Optional 使用解包：! 强制、if‑let 安全、?? 默认值、guard 等。map/flatMap 支持链式转换，避把 nil 当 0，提升安全。
 ---
 
@@ -58,7 +57,7 @@ var someStr: String?
 var anotherStr: String = "Hello World"
 ```
 
-使用问号?表示某个变量是 Optional 类型，如果没有显示赋值 Swift 会自动给 Optional 类型变量赋值 nil。上述的代码中，声明了两个 Int 类型的变量，其中 someNumber 是 Optional 类型，而 anotherNumber 是普通的 Int 类型并且值为 100。我们可以把 Optional 类型想象成为一个容器，装东西用的盒子。someNumber 所代表的盒子里面是空的，等着用户往里面装东西「当然，能装的东西已经规定好了，必须是 Int 类型」，而 anotherNumber 所代表的盒子里面已经装好了东西。如下图：
+使用问号?表示某个变量是 Optional 类型，如果没有显式赋值 Swift 会自动给 Optional 类型变量赋值 nil。上述的代码中，声明了两个 Int 类型的变量，其中 someNumber 是 Optional 类型，而 anotherNumber 是普通的 Int 类型并且值为 100。我们可以把 Optional 类型想象成为一个容器，装东西用的盒子。someNumber 所代表的盒子里面是空的，等着用户往里面装东西「当然，能装的东西已经规定好了，必须是 Int 类型」，而 anotherNumber 所代表的盒子里面已经装好了东西。如下图：
 
 ![](http://pics.naaln.com/blog/2019-01-14-32526.jpg-basicBlog)
 
@@ -144,7 +143,7 @@ if let unwrapped:Int = someNumber {
 
 ### 最后的总结
 
-和 Objective-C 不同，在 Swift 代码中我们拿到某个表达式返回的 Optional 值时，如果非常确定该表达式的结果不会是 nil 则可以使用!将其强制转换为我们需要的结果。否则，在我们不确定的情况，一定要使用 if-else、if-let、swait-case、guard 之中的一种对 Optional 返回的结果进行判断后再处理。
+和 Objective-C 不同，在 Swift 代码中我们拿到某个表达式返回的 Optional 值时，如果非常确定该表达式的结果不会是 nil 则可以使用!将其强制转换为我们需要的结果。否则，在我们不确定的情况，一定要使用 if-else、if-let、switch-case、guard 之中的一种对 Optional 返回的结果进行判断后再处理。
 
 ### 参考
 

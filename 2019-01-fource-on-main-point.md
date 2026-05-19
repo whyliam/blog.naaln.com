@@ -3,13 +3,11 @@ layout: post
 title: 专注于你的关键问题
 date: 2019/01/04 19:27:55
 categories:
-  - 随笔
+  - Notes & Essays
 tags:
-  - 年度规划
-  - 问题分析
-  - 工作方法
-  - 时间管理
-  - 思维导图
+  - SystemsThinking
+  - DecisionMaking
+  - Learning
 description: 分享基于《原则》的年度规划六步法，从陈述问题、分解问题到消除非关键议题、制定工作计划，关键分析到形成结论，每个环节都包含具体操作指南，帮助建立系统性思考框架，专注关键问题避免盲目flag，提醒根据实际情况灵活调整方法以确保执行效果。
 ---
 

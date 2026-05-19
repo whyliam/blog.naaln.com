@@ -3,13 +3,12 @@ layout: post
 title: 在 MacBook 2013 安装 MacOS Ventura
 date: 2022/07/28 20:00:00
 categories:
-  - 技术
+  - AI & Systems
 tags:
-  - 备份
-  - 时间机器
-  - macOSVentura
-  - 启动U盘
-  - OpenCore
+  - Infrastructure
+  - Engineering
+  - LongTermism
+  - SystemsThinking
 description: 先在Mac上使用时间机器完成备份；随后通过macadminscripts或gibMacOS获取macOSVentura安装文件；将U盘格式化为macos扩展（日志式）并用createinstallmedia写入安装程序；下载OpenCoreLegacyPatcher设置SMBIOS并构建安装器；完成后选择硬盘安装OpenCore重新启动即可在不支持的Mac上安装macOSVentura。
 ---
 
@@ -23,7 +22,7 @@ description: 先在Mac上使用时间机器完成备份；随后通过macadminsc
 
 ### Create macOS Ventura Bootable USB
 
-准备一个 U 盘 (建议不小于 32g)，将 U 盘抹掉为「mac os 扩展 (日志式)”」
+准备一个 U 盘 (建议不小于 32g)，将 U 盘抹掉为「mac os 扩展 (日志式)」
 
 ```
 sudo /Applications/Install\ macOS\ 13\ Beta.app/Contents/Resources/createinstallmedia --volume /Volumes/U盘的名字
@@ -45,7 +44,7 @@ system_profiler SPHardwareDataType | grep 'Model Identifier'
 
 ![img](https://pics.naaln.com/blog/2022-07-31-6d481b.webp-basicBlog)
 
-点击 Return to Main Menu,选择 Build and Install OpenCore,构建完成后会寻问是否安装在硬盘上,点击 Install to disk
+点击 Return to Main Menu,选择 Build and Install OpenCore,构建完成后会询问是否安装在硬盘上,点击 Install to disk
 
 OpenCore 构建完成后,你会看到这个页面,选择你的 MacOS Ventura 安装盘
 

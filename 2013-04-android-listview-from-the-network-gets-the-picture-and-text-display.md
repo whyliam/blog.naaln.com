@@ -3,17 +3,16 @@ layout: post
 title: Android ListView从网络获取图片及文字显示
 date: 2013/04/10 09:04:00
 categories:
-  - 技术
+  - AI & Systems
 tags:
-  - Android
-  - ListView
-  - XMLParser
-  - ImageLoader
-  - AsyncTask
+  - SystemDesign
+  - DataFlow
+  - CachingStrategy
+  - Infrastructure
 description: 演示Android应用中如何从网络获取XML数据，解析后通过自定义BaseAdapter显示在ListView上，并集成ImageLoader实现图片异步加载和缓存。
 ---
 
-如何从网络获取图片以及文本来显示。事实上，一般是先获取 Josn 或 sml 数据，然后解释显示。我们先从网上获取 xml，然后对其进行解析，最后显示在 ListView 上。具体步骤：
+如何从网络获取图片以及文本来显示。事实上，一般是先获取 JSON 或 XML 数据，然后解析显示。我们先从网上获取 xml，然后对其进行解析，最后显示在 ListView 上。具体步骤：
 
 - 客户端发出请求，获取 xml
 - 客户端异步解析 xml
@@ -182,7 +181,7 @@ android:state_pressed="false"
 
 **(2) 主要代码**
 
-代码部分主要涉及到一下几个功能，重写 ListView 的适配器（BaseAdapter），从网络获取图片，图片缓存的处理，xml 的解析。
+代码部分主要涉及到以下几个功能，重写 ListView 的适配器（BaseAdapter），从网络获取图片，图片缓存的处理，xml 的解析。
 
 ①重写 ListView 的适配器，这部分可以参考上一篇文章，LazyAdapter.java
 

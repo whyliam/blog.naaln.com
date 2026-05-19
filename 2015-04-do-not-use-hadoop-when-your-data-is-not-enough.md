@@ -3,13 +3,12 @@ layout: post
 title: 不要使用Hadoop，当你数据不够大的时候
 date: 2015/04/10 10:12:00
 categories:
-  - 技术
+  - AI & Systems
 tags:
-  - Hadoop
-  - BigData
-  - Pandas
-  - SQL
-  - DataAnalysis
+  - Data
+  - Infrastructure
+  - SystemDesign
+  - EngineeringPragmatism
 description: 比较Hadoop与Pandas、SQL工具在处理大数据时的适用性。Hadoop适合TB级数据但表达力限制且性能低，Pandas适数百MB向量化处理，SQL适GB数据用索引支持。Hadoop迫使map-reduce模式增加编写复杂性，根据数据规模选择：数百MB用Pandas，几GB用SQL或升级硬件，TB级才考虑Hadoop。
 ---
 
@@ -29,13 +28,13 @@ Scala 风格的伪码：
 
 	SELECT G(...) FROM table GROUP BY F(...)
 
-或者想我多年解释一样：
+或者像我多年解释一样：
 
 Hadoop is limiting. Hadoop allows you to run one general computation, which I'll illustrate in pseudocode:
 
 Scala-ish pseudocode:
 
-或者想我多年 [解释](https://www.chrisstucchio.com/blog/2011/mapreduce_explained.html) 一样：
+或者像我多年 [解释](https://www.chrisstucchio.com/blog/2011/mapreduce_explained.html) 一样：
 
 > Goal：统计计算图书馆书籍的数量
 

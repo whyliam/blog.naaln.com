@@ -3,13 +3,12 @@ layout: post
 title: 我是如何利用Xcode调试开发微信消息预览插件的
 date: 2016/03/08 22:48:00
 categories:
-  - 技术
+  - AI & Systems
 tags:
-  - iOS逆向
-  - 微信插件
-  - 动态库注入
-  - hook
-  - 调试
+  - Automation
+  - Workflow
+  - SystemDesign
+  - Infrastructure
 description: 讲解在非越狱iOS设备上开发微信消息预览插件，通过动态库注入和hook技术实现消息预览功能，利用Xcode脚本自动化生成、签名、安装应用流程，提高开发效率并解决签名错误和库加载问题。
 ---
 

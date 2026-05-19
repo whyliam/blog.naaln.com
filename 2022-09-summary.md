@@ -3,13 +3,12 @@ layout: post
 title: 9月小结｜空缺
 date: 2022/09/31 20:00:00
 categories:
-  - 随笔
+  - Notes & Essays
 tags:
-  - 时光
-  - 九月
-  - 随想
-  - 感悟
-  - 流逝
+  - Life
+  - Reflection
+  - Writing
+  - Time
 description: 九月的时光忽然不见了，我不知道记录了什么，也不知道发生了什么，只能随它飘散，既然无话可说，就让九月交给风，留给以后。
 ---
 

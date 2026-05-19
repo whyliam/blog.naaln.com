@@ -3,19 +3,18 @@ layout: post
 title: smsc设置
 date: 2015/06/25 13:52:00
 categories:
-  - 技术
+  - AI & Systems
 tags:
-  - SMS
-  - PDU
-  - Android
-  - SMSC
-  - Encoding
+  - Infrastructure
+  - SystemDesign
+  - Data
+  - Observation
 description: 在安卓手机设置AT&T短信中心号码时出现update错误，解决方法为使用在线工具将号码编码为PDU格式并输入部分字符串完成配置。
 ---
 
 自从有了微信以后就没有用过短信了，今天租房的时候发了条短信想询问详细的信息，发现短信功能坏了。我第一个想到的就是 `短信中心号码`（smsc）。
 
-进入 `*#*#4636#*#*` 里面设置。发现直接输入短信中心号码是 00，直接输入短信中心号码，在点更新总是出错 (update error)。找了好几个网站，终于在 Google Mobile 的帮助下找到解答。
+进入 `*#*#4636#*#*` 里面设置。发现直接输入短信中心号码是 00，直接输入短信中心号码，点击更新总是出错 (update error)。找了好几个网站，终于在 Google Mobile 的帮助下找到解答。
 
 比如说我用的是 AT&T 的短信中心号码是 `+13123149810`，但是如果直接输入就会出现 `update error`。要想更新成功，就要把这个号码进行编码，提供一个编码网址：[www.twit88.com/home/utility/sms-pdu-encode-decode](http://www.twit88.com/home/utility/sms-pdu-encode-decode)，页面下方有个 smsc 输入框，把短信中心号码输入进去，点击下方 convert 按钮，右边就是编码之后的数啦。
 
@@ -33,7 +32,7 @@ description: 在安卓手机设置AT&T短信中心号码时出现update错误，
 
 **update 一下**
 
-短信中心号的输入框中输入的东西的可能是：(AT&T 为例子)
+短信中心号的输入框中输入的东西可能是：(AT&T 为例子)
 +13123149810
 "+13123149810"
 2407913121139418F011

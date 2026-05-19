@@ -3,13 +3,12 @@ layout: post
 title: 产品 or 产品经理
 date: 2019/07/21 20:00:00
 categories:
-  - 产品
+  - Product & Intelligence
 tags:
-  - 产品经理
-  - 岗位演化
-  - 业务策略
-  - 职业转型
-  - 焦虑
+  - ProductThinking
+  - Strategy
+  - Organization
+  - Product
 description: 在焦虑环境中，产品经理消亡论泛滥。苏杰指出岗位是阶段性方案，强调业务核心转移如外卖补贴或短视频策略，导致经理转型创业或管理。核心在于适应岗位演化，做产品而非职位。
 ---
 

@@ -3,13 +3,12 @@ layout: post
 title: 如何开始一个模块化可扩展的Web App
 date: 2014/08/11 11:33:00
 categories:
-  - 技术
+  - AI & Systems
 tags:
-  - 模块化
-  - HTML5Boilerplate
-  - RequireJS
-  - 编码规范
-  - 模板引擎
+  - SystemDesign
+  - Architecture
+  - Modularity
+  - Engineering
 description: 使用HTML5Boilerplate模板起步，统一编码规范，利用RequireJS模块化开发（按需加载和依赖管理），通过require-css实现CSS模块化，构建dataReady事件机制处理数据源加载，采用Underscore.js模板引擎渲染界面，面向对象组织JavaScript代码，示例订餐Web应用涵盖数据交互。
 ---
 

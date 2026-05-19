@@ -3,13 +3,13 @@ layout: post
 title: 费曼学习法与ChatGPT
 date: 2024/11/16 12:02:00
 categories:
-  - 随笔
+  - AI & Systems
 tags:
-  - 人工智能
-  - ChatGPT
-  - 费曼学习法
-  - 创新思维
-  - 认知升级
+  - KnowledgeManagement
+  - Learning
+  - Workflow
+  - AI
+  - SystemsThinking
 description: 人工智能特别是ChatGPT作为思考伙伴，帮助学习者运用费曼学习法快速获取资源、解答疑问、用自述巩固理解，并通过角色扮演测试盲点、反馈、总结，实现信息到洞见、洞见到创新的转化，提升认知能力与学习效率。
 ---
 

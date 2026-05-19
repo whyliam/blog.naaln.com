@@ -3,13 +3,13 @@ layout: post
 title: 我们为什么应当远离「比特币」
 date: 2013/11/17 09:34:00
 categories:
-  - 经济
+  - Product & Intelligence
 tags:
-  - 虚拟货币
-  - Q币
-  - 比特币
-  - 货币政策
-  - 监管
+  - DigitalEconomy
+  - MarketDynamics
+  - ValueSystem
+  - CognitiveBiases
+  - DecisionMaking
 description: Q币缺乏央行支持，汇率不透明，监管不足，导致交换风险高。比特币虽有限发行，但无央行监管，价格易被操纵，使用率低，仅为投机工具。两者都缺乏稳定性，不值得储蓄或信任作为货币。
 ---
 

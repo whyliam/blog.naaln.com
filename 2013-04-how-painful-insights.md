@@ -3,13 +3,12 @@ layout: post
 title: 多么痛的领悟
 date: 2013/04/28 10:06:00
 categories:
-  - 随笔
+  - Notes & Essays
 tags:
-  - 爱情
-  - 心碎
-  - 永恒
-  - 视频
-  - 爱恋
+  - Life
+  - Observation
+  - Writing
+  - Reflection
 description: 嵌入音悦台视频，呈现爱情漩涡中的痛彻心扉，视为刻骨铭心的永恒，诠释爱的死亡，从此不再使用「我们」。
 ---
 

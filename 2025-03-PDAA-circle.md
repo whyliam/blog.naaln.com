@@ -3,13 +3,12 @@ layout: post
 title: 「PDAA 循环」问题驱动行动系统
 date: 2025/03/11 20:00:00
 categories:
-  - 随笔
+  - Notes & Essays
 tags:
-  - PDAA
-  - 问题驱动
-  - 行动导向
-  - 笔记软件
-  - 迭代仪表盘
+  - KnowledgeManagement
+  - SystemsThinking
+  - Workflow
+  - ActionSystem
 description: 通过反思笔记软件的局限性，提出以问题为核心的PDAA循环。系统包括问题雷达、问题公式、最小行动单元和迭代仪表盘，旨在通过最小化流程实现思考-行动-迭代闭环。强调反馈驱动行动简化而非完美工具。
 ---
 

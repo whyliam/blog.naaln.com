@@ -3,13 +3,11 @@ layout: post
 title: 移动前端不得不了解的html5 head 头标签
 date: 2015/09/24 13:21:00
 categories:
-  - 技术
+  - AI & Systems
 tags:
-  - HTML
-  - meta
-  - 移动端
-  - SEO
-  - iOS
+  - WebInfrastructure
+  - Engineering
+  - WebStandards
 description: 该文系统阐述了HTML头部关键标签与meta信息，包括DOCTYPE、字符编码、lang属性、IE/Chrome兼容性、360极速核、百度禁止转码、SEO优化、viewport配置、iOS设备标识、图标和启动画面、Android主题色、Windows磁贴、RSS订阅、favicon以及关闭Google翻译插件等功能，并提供了完整的移动端头部示例，适用于前端开发者快速规范网页头部配置。
 ---
 
@@ -203,7 +201,7 @@ content 参数：
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
 ```
 
-只有在「apple-mobile-web-app-capable」content=」yes」时生效。
+只有在「apple-mobile-web-app-capable」content="yes"时生效。
 
 content 参数：
 
@@ -211,7 +209,7 @@ content 参数：
 - black 状态栏背景是黑色。
 - black-translucent 状态栏背景是黑色半透明。如果设置为 default 或 black,网页内容从状态栏底部开始。如果设置为 black-translucent,网页内容充满整个屏幕，顶部会被状态栏遮挡。
 
-禁止数字识自动别为电话号码：
+禁止数字自动识别为电话号码：
 
 ```html
 <meta name="format-detection" content="telephone=no" />

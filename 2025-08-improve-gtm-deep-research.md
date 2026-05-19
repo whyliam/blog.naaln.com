@@ -3,13 +3,13 @@ layout: post
 title: 如何提升 GTM 深度研究
 date: 2025/08/21 20:00:00
 categories:
-  - 随笔
+  - AI & Systems
 tags:
-  - 深度研究
   - AI
+  - Workflow
+  - Prompt
+  - Strategy
   - GTM
-  - 营销分析
-  - 提示工程
 description: 深度研究功能帮助营销团队在几分钟内完成原本需十小时的研究，包括指定高质量来源、获取定制见解、生成易读报告及优化提示词的具体方法。
 ---
 

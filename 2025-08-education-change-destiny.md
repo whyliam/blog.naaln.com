@@ -3,13 +3,12 @@ layout: post
 title: 教育能改变命运吗
 date: 2025/08/24 20:00:00
 categories:
-  - 随笔
+  - Notes & Essays
 tags:
-  - 教育
-  - 命运
-  - 阶层
-  - 进步
-  - 时代
+  - Learning
+  - Cognition
+  - Era
+  - Life
 description: 教育能改变命运但非阶层跃升捷径；通过继承智慧加速个人成长。命运受大时代和教育主导，向上发展艰辛，认清现实相信时代、掌握一技之长并加速进步。
 ---
 

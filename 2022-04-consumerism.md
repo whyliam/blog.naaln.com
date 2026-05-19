@@ -3,13 +3,13 @@ layout: post
 title: 消费品杂想
 date: 2022/03/31 20:00:00
 categories:
-  - 随笔
+  - Product & Intelligence
 tags:
-  - meaning
-  - identity
-  - community
-  - authentic
-  - insight
+  - ProductThinking
+  - Strategy
+  - ConsumerBehavior
+  - Community
+  - BrandIdentity
 description: 消费趋势聚焦意义消费和身份构建，消费者购买品牌以表达自我转型愿望。品牌须支持社群运营并拥抱真诚沟通，建立信任与忠诚度。
 ---
 

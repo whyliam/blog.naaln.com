@@ -3,13 +3,13 @@ layout: post
 title: 新设计师生存手册：如何在AI时代蓬勃发展
 date: 2025/08/24 20:00:00
 categories:
-  - 随笔
+  - Product & Intelligence
 tags:
-  - AI设计
-  - 设计师生存
-  - 用户体验
-  - 系统构建
-  - 技术栈
+  - AI
+  - ProductThinking
+  - UserExperience
+  - Workflow
+  - Strategy
 description: 在AI时代，设计师需具备建设者思维，运用判断力筛选创意而非无序创造，快速交付并持续学习。设计聚焦清晰文案提示和系统构建，停止逐页设计，基于组件和令牌思维。工具如AI助手提升效率。设计师应培养独特观点和风格化表达，保持人性化，融合AI效率与人类直觉，优化用户体验。
 ---
 

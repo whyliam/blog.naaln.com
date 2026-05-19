@@ -3,19 +3,18 @@ layout: post
 title: Apache Solr
 date: 2013/10/08 06:18:00
 categories:
-  - 技术
+  - AI & Systems
 tags:
-  - 企业级搜索
-  - 全文检索
-  - 增量更新
-  - 缓存机制
-  - 索引复制
+  - Search
+  - Infrastructure
+  - Data
+  - SystemDesign
 description: Solr是使用Lucene的企业级搜索服务器，提供XML与HTTP接口进行索引与查询，内置动态域与唯一键的数据模式，支持复制域与多种分析器扩展查询语言，响应XML、JSON等格式，支持高亮、分组、过滤与函数查询，提供可配置的查询与文档缓存及热启动，基于rsync的增量复制与拉策略发布，支持可插拔查询句柄与批量更新、并发搜索器与数值排序控制，包含综合管理界面与可监控日志。
 ---
 
 #### 导言
 
-说起 Apache Lucene,可以说无人不知，无人不晓，但是说道 Apache Solr,恐怕知道的不多。看看 Apache Solr 的说明：
+说起 Apache Lucene,可以说无人不知，无人不晓，但是说到 Apache Solr,恐怕知道的不多。看看 Apache Solr 的说明：
 
 Solr 是一个基于 Lucene java 库的 `企业级搜索服务器`，包含 XML/HTTP，JSON API, 高亮查询结果，faceted search(不知道该如何翻译，片段式搜索)，`缓存`，复制还有一个 WEB 管理界面。`Solr运行在Servlet容器中`。所以 Solr 和 Lucene 的本质区别有以下三点：搜索服务器，企业级和管理。Lucene 本质上是搜索库，不是独立的应用程序，而 Solr 是。Lucene 专注于搜索底层的建设，而 Solr 专注于企业应用。Lucene 不负责支撑搜索服务所必须的管理，而 Solr 负责。所以说，一句话概括 Solr: `Solr是Lucene面向企业搜索应用的扩展`。
 
@@ -23,7 +22,7 @@ Solr 是一个基于 Lucene java 库的 `企业级搜索服务器`，包含 XML/
 
 #### 无废话 Solr
 
-Solr 是一个拥有象 WebService 一样接口的独立运行的搜索服务器。你将能够通过 HTTP 协议以 XML 格式将文档放入搜索服务器 (这个过程叫做索引)，你能够通过 HTTP 协议的 GET 来查询搜索服务器并且得到 XML 格式的结果。Solr 的特性包括：
+Solr 是一个拥有像 WebService 一样接口的独立运行的搜索服务器。你将能够通过 HTTP 协议以 XML 格式将文档放入搜索服务器 (这个过程叫做索引)，你能够通过 HTTP 协议的 GET 来查询搜索服务器并且得到 XML 格式的结果。Solr 的特性包括：
 
 - 高级的全文搜索功能
 - 专为高通量的网络流量进行的优化

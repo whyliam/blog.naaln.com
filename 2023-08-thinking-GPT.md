@@ -3,13 +3,12 @@ layout: post
 title: 关于 GPT 的一点想法
 date: 2023/08/23 20:00:00
 categories:
-  - 技术
+  - Notes & Essays
 tags:
-  - 符号学
-  - GPT
-  - 工业革命
-  - 哲学
-  - 恩斯特卡西尔
+  - AI
+  - Philosophy
+  - Cognition
+  - TechnologySociety
 description: 恩斯特·卡西尔提出人是创造符号的动物，符号既是意义的载体又具有可感知的形式。GPT作为语言计算模型通过语言生成独立运转，其胡说八道现象类似人类梦境，符合语法但不遵循日常经验。GPT被称为第四次工业革命，但目前更多是信息时代的延伸而非基础产业升级。
 ---
 

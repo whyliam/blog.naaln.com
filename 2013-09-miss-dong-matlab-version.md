@@ -3,13 +3,13 @@ layout: post
 title: 董小姐，MATLAB版
 date: 2013/09/05 10:34:00
 categories:
-  - 技术
+  - Notes & Essays
 tags:
-  - MATLAB
-  - audio
-  - music
-  - synth
-  - code
+  - CreativeCoding
+  - Audio
+  - Learning
+  - Life
+  - Music
 description: 使用MATLAB自学音频处理，编写代码生成《董小姐》的音符与节奏，利用SAPI播报歌词，定义采样率、音符时长与调制函数，拼接不同音阶的方波合成旋律并播放，输出声音并朗读赞美。
 ---
 

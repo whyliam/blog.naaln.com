@@ -3,11 +3,13 @@ layout: post
 title: L106_硅谷焦虑与AI下半场
 date: 2026/01/31 20:13:35
 categories:
-  - 资讯
+  - AI & Systems
 tags:
-  - 硅谷
-  - 投资
-  - 智能体
+  - Agent
+  - ProductThinking
+  - Strategy
+  - AI
+  - SystemsThinking
 description: 探讨硅谷码农的购买力困境、AI发展三年的遗憾与机遇，以及AI下半场属于「定义者」的洞察
 ---
 ![](https://pics.naaln.com/2026-01-31-715303ac4d92414a89f45db5097742bb.png-basicBlog)

@@ -3,13 +3,13 @@ layout: post
 title: 纽约知名IT公司盘点
 date: 2014/07/18 12:28:00
 categories:
-  - 技术
+  - Product & Intelligence
 tags:
-  - 纽约
-  - 科技
-  - 创业
-  - 互联网
-  - 招聘
+  - Product
+  - Platform
+  - Cities
+  - Observation
+  - Ecosystem
 description: 纽约的知名IT公司包括Bitly、CodeCademy、FourSquare、Kickstarter、Meetup、MongoDB、Spotify、Tumblr和Vimeo。Bitly提供短链接服务，CodeCademy为在线编程学习平台，FourSquare提供位置签到与优惠券功能，Kickstarter是众筹平台，Meetup帮助组织线下活动，MongoDB为新型数据库，Spotify提供音乐
 ---
 
@@ -51,9 +51,9 @@ CodeCademy 是一家在线学编程的网站，现已有约 24 million 的注册
 
 网址：https://www.kickstarter.com
 
-众筹领域的 N.O 1。为了拿到创业的启动资金，你可以把你的 idea PO 到他们网站上，然后对你项目有兴趣的人会支持你，给你一些资金，每个人给的数额可能并不大，但一旦人多起来，给你的资金或许够你启动了。好处是这些人并不占你的公司股份，你只需给这些人一些小回报，例如新产品的试用等等。
+众筹领域的 No. 1。为了拿到创业的启动资金，你可以把你的 idea PO 到他们网站上，然后对你项目有兴趣的人会支持你，给你一些资金，每个人给的数额可能并不大，但一旦人多起来，给你的资金或许够你启动了。好处是这些人并不占你的公司股份，你只需给这些人一些小回报，例如新产品的试用等等。
 
-公司地点：Low East Side
+公司地点：Lower East Side
 
 招聘网址：<https://www.kickstarter.com/jobs>
 
@@ -105,7 +105,7 @@ Vimeo 大概是美国除了 Youtube 外的第二大视频分享网站。
 
 公司地点：555 w 18th Street
 
-招聘网址：<http://vimeo.com/jobs> From：[http://www.codetocareer.com/blog/544eaa97d764e537e7b8e6bd](http://www.codetocareer.com/blog/544eaa97d764e537e7b8e6bd)
+招聘网址：<http://vimeo.com/jobs> From: [http://www.codetocareer.com/blog/544eaa97d764e537e7b8e6bd](http://www.codetocareer.com/blog/544eaa97d764e537e7b8e6bd)
 
 from:[http://blog.codetocareer.com/nyc-it-company/](http://blog.codetocareer.com/nyc-it-company/)
 

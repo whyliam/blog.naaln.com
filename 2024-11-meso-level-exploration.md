@@ -3,13 +3,13 @@ layout: post
 title: 字节跳动的产品与决策：中观层面的探索
 date: 2024/11/04 21:53:00
 categories:
-  - 随笔
+  - Product & Intelligence
 tags:
-  - 中台
-  - 推荐系统
-  - OKR
-  - 抖音
-  - UGC
+  - ProductThinking
+  - DecisionMaking
+  - Platform
+  - SystemsThinking
+  - Strategy
 description: 以中观视角解析字节跳动在ToC市场的中台驱动与快速迭代：强调中台标准化能力沉淀与资源调度，以手感型团队打造推荐系统，平衡搬运与原创先聚流量后提质，完善微头条供给生态以规避明星依赖，构建教练文化与透明组织，产品会议跨层级直达，数据驱动决策与复盘。抖音短视频通过多目标模型与审核本地化推动全球扩张，OKR促使目标对齐。总体呈现以执行为核心的迭代文化与中观方法论形成壁垒。
 ---
 

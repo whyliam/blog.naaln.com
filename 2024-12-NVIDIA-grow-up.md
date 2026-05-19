@@ -3,13 +3,13 @@ layout: post
 title: 论 NVIDIA 的崛起
 date: 2024/12/22 22:49:00
 categories:
-  - 随笔
+  - Product & Intelligence
 tags:
-  - NVIDIA
-  - GPU
-  - CUDA
+  - Strategy
+  - Infrastructure
   - AI
-  - mining
+  - Platform
+  - Growth
 description: 英伟达以图形处理器起家，通过变换与光照、CUDA和AI技术实现三次增长曲线，经历游戏、加密货币挖矿和加速计算；市值突破三万二千亿美元，在全球算力竞争中占据主导，但2024年12月因收购Mellanox在华反垄断调查面临潜在十亿美元罚款。
 ---
 
@@ -98,7 +98,7 @@ GeForce 256 的推出标志着真正 GPU 时代的开始，也为图形处理技
 
 在 2012 年，AI 领域的关键转折之一发生了。AI 三巨头之一 Hinton 团队利用 CUDA 编写的程序，以革新性的 GPU 加速技术赢得了 ImageNet 竞赛，彻底改变了 AI 研究的速度和效率。
 
-自 2015 年起，英伟达全力投入 AI 领域。2015 年推出 JetsonTX1 超级计算机，支持深度学习和计算机视觉应用。随后，2016 年推出的 DGX-1AI 超级计算机凭借 8 个 Tesla P100 GPU，大幅加速 AI 研究和开发，并支持到 OpenAI。
+自 2015 年起，英伟达全力投入 AI 领域。2015 年推出 JetsonTX1 超级计算机，支持深度学习和计算机视觉应用。随后，2016 年推出的 DGX-1 AI 超级计算机凭借 8 个 Tesla P100 GPU，大幅加速 AI 研究和开发，并支持到 OpenAI。
 
 > 1. 当年，谷歌的人工智能软件阿尔法狗击败了围棋冠军李世石，引发了全球对 AI 的关注，这款软件中搭载了 170 个英伟达 GPU。
 
@@ -114,7 +114,7 @@ GeForce 256 的推出标志着真正 GPU 时代的开始，也为图形处理技
 
 ![](https://pics.naaln.com/Pasted%20image%2020241218202941.png-basicBlog)
 
-> 2023 年，之后英伟达在数据中心的映射迅猛增长。
+> 2023 年，之后英伟达在数据中心的营收迅猛增长。
 
 #### 显卡军备竞赛
 

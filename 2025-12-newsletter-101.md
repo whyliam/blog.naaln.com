@@ -3,13 +3,13 @@ layout: post
 title: L101_创业精神与选择阻力
 date: 2025/12/27 10:59:33
 categories:
-  - 资讯
+  - Notes & Essays
 tags:
-  - NewsLetter
-  - 创业思维
-  - AI产品
-  - 注意力经济
-  - 技术哲学
+  - Entrepreneurship
+  - ProductThinking
+  - AI
+  - Friction
+  - CognitiveGrowth
 description: 本期深入探讨创业精神的本质——不是吃苦，而是冒险、乐观与容忍不确定性。从做用户「捏着鼻子」还愿意用的产品，到读书的智慧与辩证思考，从天赋管理到增长与商业化的本质，我们分析为什么有些人总能抓住机遇而其他人只能原地踏步。同时反思便利时代的代价，探讨2018年法学学者吴修铭提出的「便利崇拜」如何忽视困难是人类体验的核心这一事实。在AI承诺消除阻力的时代，我们选择拥抱不适，因为真正重要的不是结果而是旅程本身。最后解析AI产品成功的关键不在技术而在人性，揭示AI的「可控区域」和变现路径，为AI创业者提供实用洞察。
 ---
 ![L101_创业精神与选择阻力](https://pics.naaln.com/2025-12-27-53ce71ac40364d8db14fc80b984d315d.png-basicBlog)

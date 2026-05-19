@@ -3,13 +3,11 @@ layout: post
 title: 让Openwrt在U盘运行
 date: 2013/09/22 10:39:00
 categories:
-  - 技术
+  - AI & Systems
 tags:
-  - OpenWrt
-  - USB启动
-  - Ext文件系统
-  - 块挂载
-  - fstab
+  - Infrastructure
+  - SystemDesign
+  - Linux
 description: 通过opkg安装blockmount、blockhotplug、blockextroot及kmodusb模块，格式化USB存储为EXT文件系统，绑定挂载根目录并复制数据至USB，修改fstab使USB设备成为根文件系统，完成OpenWrt路由器的USB启动。
 ---
 

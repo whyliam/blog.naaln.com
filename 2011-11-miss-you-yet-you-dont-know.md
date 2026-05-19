@@ -3,13 +3,13 @@ layout: post
 title: 想你了，你却不知道
 date: 2011/11/15 19:00:00
 categories:
-  - 随笔
+  - Notes & Essays
 tags:
-  - 暗恋
-  - 等待
-  - 思念
-  - 情感
-  - 青春
+  - Writing
+  - Observation
+  - Life
+  - Reflection
+  - Communication
 description: 我喜欢你，很久了。等你，也很久了。现在，我要离开，比很久很久还要久。心里不停默念你的名字，仍无音信。我调了静音，又后悔。看手机屏幕亮起，心也亮，美好而心碎。你说不忙，忙着投胎一样下线。我在写删改许多草稿，只有三个字：我想你。也许，你并不知道我在等你。我的天空有点灰。
 ---
 

@@ -3,19 +3,17 @@ layout: post
 title: Ruby更改gem source
 date: 2013/04/03 20:00:00
 categories:
-  - 技术
+  - AI & Systems
 tags:
-  - rubygems
-  - mirror
-  - taobao
-  - bundle
-  - install
+  - Infrastructure
+  - DeveloperExperience
+  - SystemReliability
 description: 介绍ruby.taobao.org镜像解决方案，替换因网络问题导致连接失败的rubygems.org。提供完整的gemsources命令配置步骤，包括移除官方源、添加淘宝镜像源、验证配置以及在Rails项目中的Bundle配置文件使用方法。15分钟同步频率确保与官方服务同步。
 ---
 
 **为什么有这个？**
 
-由于国内网络原因（你懂的），导致 rubygems.org 存放在 Amazon S3 上面的资源文件间歇性连接失败。所以你会与遇到 gem install rack 或 bundle install 的时候半天没有响应，具体可以用 gem install rails -V 来查看执行过程。
+由于国内网络原因（你懂的），导致 rubygems.org 存放在 Amazon S3 上面的资源文件间歇性连接失败。所以你会遇到 gem install rack 或 bundle install 的时候半天没有响应，具体可以用 gem install rails -V 来查看执行过程。
 
 这是一个完整 rubygems.org 镜像，你可以用此代替官方版本，同步频率目前为 15 分钟一次以保证尽量与官方服务同步。
 

@@ -3,13 +3,12 @@ layout: post
 title: Ruby开源项目介绍(1)：octopress——像黑客一样写博客
 date: 2013/10/19 04:20:00
 categories:
-  - 技术
+  - AI & Systems
 tags:
-  - Octopress
-  - GitHub
-  - Markdown
-  - SSH
-  - Jekyll
+  - Writing
+  - KnowledgeManagement
+  - Workflow
+  - DigitalGarden
 description: 使用Markdown与Git、GitHub配合Octopress快速搭建个人博客，配置SSH登录、克隆仓库、修改rvmrc、安装依赖、生成模板、设置远程并用rake部署至GitHub，同时推送源文件到source分支，实现即时写作与发布。
 ---
 
@@ -41,7 +40,7 @@ git clone git://github.com/imathis/octopress.git rubyonchina.github.com
 cd ~/dev/rubyonchina.github.com
 ```
 
-修改默认的。rvmrc 文件的内容为：
+修改默认的 .rvmrc 文件的内容为：
 
 ```
 rvm use 1.9.2@rails31

@@ -3,13 +3,13 @@ layout: post
 title: 9 个 Aha Moments
 date: 2025/08/22 20:00:00
 categories:
-  - 随笔
+  - Notes & Essays
 tags:
-  - 开源模型
-  - 执行速度
-  - 产品迭代
-  - 设计美学
-  - 情感智能
+  - AI
+  - Agent
+  - ProductThinking
+  - Strategy
+  - Observation
 description: AI开源模型普惠应用，执行速度成为ToC优势，积极行动迭代胜过理想化产品，提前体验前沿工具预见趋势，AI代理变革潜力巨大，创业应务实专注用户需求，美是一种生产力，AI创造情感价值，强调长期变革力量。
 ---
 

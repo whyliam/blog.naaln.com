@@ -3,13 +3,12 @@ layout: post
 title: Ruby社区应该去Rails化了
 date: 2013/04/06 10:28:00
 categories:
-  - 技术
+  - AI & Systems
 tags:
-  - Ruby
-  - NodeJS
-  - Go
-  - Rails
-  - WebService
+  - SystemDesign
+  - Infrastructure
+  - Engineering
+  - Architecture
 description: 随着移动端需求崛起，网站转向轻量API服务，LinkedIn与Ironio放弃Ruby转向NodeJS与Go的案例引发争议，测试显示Ruby在事件驱动模型下并发性能并不逊色。Rails因中间件冗余、内存大而低并发不适合WebService，作者建议使用Sinatra、Padrino、Goliath等轻框架，去除ActionPack保留ActiveRecord，以满足并发需求。
 ---
 
@@ -93,7 +92,7 @@ config.middleware.delete 'Rack::ETag' # HTTP 客户端缓存才会使用
 
 config.middleware.delete 'ActionDispatch::BestStandardsSupport' # 设置 X-UA-Compatible, 在 nginx 上设置
 
-其中最夸张的是 `ActionDispatch::RequestId`middleware，只有在大型应用部署在群集环境下进行线上调试才可能用到的功能，有什么必要做成默认的功能呢？ _Rails 的哲学是：提供最全的功能集给你，如果你用不到，你自己手工一个一个关闭掉_ ，但是这样带来的结果就是默认带了太多不必要的冗余功能，造成性能损耗极大。
+其中最夸张的是 `ActionDispatch::RequestId` middleware，只有在大型应用部署在群集环境下进行线上调试才可能用到的功能，有什么必要做成默认的功能呢？ _Rails 的哲学是：提供最全的功能集给你，如果你用不到，你自己手工一个一个关闭掉_ ，但是这样带来的结果就是默认带了太多不必要的冗余功能，造成性能损耗极大。
 
 我们看一个 [Ruby web框架请求处理性能评测](https://github.com/DAddYE/web-frameworks-benchmark/wiki/Achiu) ，这个评测不访问数据库，也不测试并发性能，主要是测试框架处理 URL 请求路由，渲染文本，返回结果的处理速度。
 

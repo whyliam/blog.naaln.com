@@ -3,13 +3,12 @@ layout: post
 title: 12月小结｜知识是用于生产的信息
 date: 2022/12/31 20:00:00
 categories:
-  - 随笔
+  - Notes & Essays
 tags:
-  - 疫情
-  - 反思
-  - 年终
-  - 财务
-  - 亲情
+  - KnowledgeManagement
+  - SystemsThinking
+  - Observation
+  - Life
 description: 疫情突然放开引发信息过载和囤药热潮，反思动态清零政策死亡率低但硬着陆导致医疗挤兑。年终财务评估股市跌40%、币市跌60%，因操作未记录无法复盘。宝贝出生成最大惊喜并占据全部独立思考时间，新年规划加强独立思考。
 ---
 

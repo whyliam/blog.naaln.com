@@ -3,13 +3,13 @@ layout: post
 title: L72_工具进化、提示工程与多模态突破
 date: 2025/06/06 20:00:00
 categories:
-  - 资讯
+  - AI & Systems
 tags:
-  - OpenAI
-  - Anthropic
-  - Cursor
-  - 提示工程
-  - ElevenLabs
+  - AI
+  - AI Coding
+  - Prompt
+  - Workflow
+  - Strategy
 description: OpenAI推出连接器和记录模式功能提升企业协作效率；Anthropic对Windsurf断供引发争议，用户转向Cursor；Cursor1.0发布Bugbot、Jupyter支持等功能展现AIIDE野心；YC分享高级提示工程精髓强调提示即编程理念；Karpathy指出UI复杂不支持脚本软件前景堪忧；Thompson分析AI垂直整合与模块化之争；ElevenLabs v3在多模态多语言支持上实现
 ---
 

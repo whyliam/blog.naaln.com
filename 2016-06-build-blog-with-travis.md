@@ -3,13 +3,12 @@ layout: post
 title: 使用 Travis CI 构建博客
 date: 2016/06/23 22:56:17
 categories:
-  - 技术
+  - AI & Systems
 tags:
-  - Hexo
-  - TravisCI
-  - 自动化部署
-  - GitHub
-  - 持续集成
+  - Automation
+  - Workflow
+  - Infrastructure
+  - KnowledgeManagement
 description: 介绍使用Travis CI自动化部署Hexo博客的完整流程。包括本地编写文章推送到GitHub仓库，Travis CI检测代码变化自动构建部署，创建SSH密钥配置访问权限，加密私钥保护安全，配置.travis.yml文件实现自动化，以及解决部署过程中遇到的认证问题。通过缓存node_modules优化部署速度，实现完整的持续集成解决方案。
 ---
 
@@ -20,7 +19,7 @@ description: 介绍使用Travis CI自动化部署Hexo博客的完整流程。包
 1. 本地编写文章
 2. push 到 Github
 3. Travis CI 检测到代码变化
-4. Travis CI 构建代码环境，编译代码，生产博客文件，并自动部署
+4. Travis CI 构建代码环境，编译代码，生成博客文件，并自动部署
 
 ![](http://pics.naaln.com/blog/2019-01-14-060813.jpg-basicBlog)
 
@@ -30,7 +29,7 @@ description: 介绍使用Travis CI自动化部署Hexo博客的完整流程。包
 
 #### 开启 Travis-ci
 
-首先去 travis-ci 官网，点击右上角 Sign in with GitHub 通过 github 授权登录。然后去到个人信息页面，开启需要使用 travis 的项目关：
+首先去 travis-ci 官网，点击右上角 Sign in with GitHub 通过 github 授权登录。然后去到个人信息页面，开启需要使用 travis 的项目开关：
 
 ![](http://pics.naaln.com/blog/2019-01-14-060814.jpg-basicBlog)
 
@@ -50,7 +49,7 @@ $ ssh-keygen -t rsa -C "youremail@example.com"
 
 #### 加密私钥
 
-刚才讲公钥文件配置好了，然后就要配置私钥文件，在 hexo 项目下面建立一个.travis 的文件夹来放置需要配置的文件。
+刚才将公钥文件配置好了，然后就要配置私钥文件，在 hexo 项目下面建立一个.travis 的文件夹来放置需要配置的文件。
 
 首先要安装 travis 命令行工具 (如果在国内的网络环境下建议安装之前先换源)。
 

@@ -3,19 +3,18 @@ layout: post
 title: 5分钟了解微信的 WeSketch
 date: 2017/07/09 09:50:04
 categories:
-  - 产品
+  - Product & Intelligence
 tags:
-  - Sketch插件
-  - WeSketch
-  - 前端还原
-  - UI工具
-  - 图标库
+  - DesignSystem
+  - Workflow
+  - UserExperience
+  - Productivity
 description: 微信设计团队打造的 Sketch 插件合集，支持高效团队协作（UI Kit 与色板同步）、快速交互设计（自动连线、标记注释、全局替换文字、字体、颜色）与精准前端还原（补齐宽高导出图片与 CSS代码、支持小程序）。工具面板提供连线、标注、字体替换、文本替换（含正则）、颜色替换、图标库、UI Kit 导入、色板同步、快捷取色、CSS 生成等功能，并支持标注样式设置、资源路径配置、导出图片格式设置与插
 ---
 
 ## 前言
 
-> 一个强大的 Sketch 插件合集，由微信设计团队量身打造，让设计师和开发者更佳高效的使用 Sketch。
+> 一个强大的 Sketch 插件合集，由微信设计团队量身打造，让设计师和开发者更加高效的使用 Sketch。
 
 - 更高效的团队协作，如：UI Kit 同步、色板同步等。
 - 更快捷的交互设计，如：图标库、自动连线、标记注释、全局替换文字、字体、颜色。
@@ -135,7 +134,7 @@ Github：[weixin/WeSketch](https://github.com/weixin/WeSketch/blob/master/README
 
 ![](http://pics.naaln.com/blog/2019-01-14-031753.jpg-basicBlog)
 
-这这里更改连线和标注的颜色和线宽。
+在这里更改连线和标注的颜色和线宽。
 
 ### 2、资源路径设置
 

@@ -3,12 +3,12 @@ layout: post
 title: 找工作，请务必去「离钱近」的地方
 date: 2025/11/19 17:55:00
 categories:
-  - 随笔
+  - Product & Intelligence
 tags:
-  - 职业规划
-  - 职场发展
-  - 个人成长
-  - 价值创造
+  - Strategy
+  - DecisionMaking
+  - BusinessModel
+  - Life
 description: 在职业生涯早期，选择离钱近的地方工作，不仅是为了高薪，更是为了获得更好的资源、视野和成长机会，为未来的财务自由和人生选择权奠定基础。
 ---
 每逢毕业季或跳槽窗口期，我的私信栏总会被焦虑填满：是考研还是考公？是留在大城市卷还是回老家躺？面对琳琅满目的 Offer，究竟该如何抉择？

@@ -3,13 +3,13 @@ layout: post
 title: 2025 年，LLMs 的「幽灵革命」如何悄然改变我们的世界？
 date: 2026/01/09 17:25:00
 categories:
-  - 随笔
+  - AI & Systems
 tags:
-  - 翻译
   - LLM
-  - 技术趋势
-  - 应用
-  - AI
+  - AI Coding
+  - Workflow
+  - Observation
+  - SystemsThinking
 description: 深度回顾 2025 年大语言模型的关键发展，从 RLVR 技术突破到「幽灵智慧」形态，从 Cursor 应用层兴起到 Claude Code 本地化，全面解析 LLMs 如何在技术、应用和人机交互层面带来革命性变化。
 ---
 ![](https://pics.naaln.com/2026-01-09-bb2ac3d88a4daf62dd3499d81b5356f5.webp-basicBlog)

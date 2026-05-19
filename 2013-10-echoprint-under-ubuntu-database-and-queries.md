@@ -3,13 +3,12 @@ layout: post
 title: ubuntu下实现echoprint建库和查询
 date: 2013/10/08 21:33:00
 categories:
-  - 技术
+  - AI & Systems
 tags:
-  - audiofingerprint
-  - server
-  - api
-  - vmware
-  - database
+  - Data
+  - Infrastructure
+  - SystemDesign
+  - Search
 description: 服务器搭建后测试readme例子，在python中运行fp模块进行数据写入和查询操作。通过api.py开启API服务器，使用curl命令写入数据和查询。介绍网络配置概念包括0.0.0.0、127.0.0.1和物理IP地址。详细说明虚拟机NAT模式和桥接模式的网络配置差异。在ubuntu下编译codegen需要安装ffmpeg、libtag1-dev、zlib1g-dev、libboost-dev、
 ---
 
@@ -55,9 +54,9 @@ http://(服务器物理ip地址):8080/query?fp_code=eJwty7kNADAMw8BVNILl-Mv-iwWC
 
 这样就可以看到查询结果了，如果不是在自己的电脑上查询，必须通过服务器的物理 ip 地址。
 
-顺便说一下虚拟机的网络配置问题，NAT 模式是直接就能够上网的，此时虚拟机对网络的访问时通过宿主机实现的，虚拟机的 ip 地址是虚拟出来的，不作为网络上的一台独立的计算机，我理解其实还是通过宿主机的 ip 来连入网络的。
+顺便说一下虚拟机的网络配置问题，NAT 模式是直接就能够上网的，此时虚拟机对网络的访问是通过宿主机实现的，虚拟机的 ip 地址是虚拟出来的，不作为网络上的一台独立的计算机，我理解其实还是通过宿主机的 ip 来连入网络的。
 
-而桥接模式是可以将虚拟机配置成一台独立接入互联网的电脑的，此时虚拟机必须也有自己的实际 ip 地址。我在桥接中使用静态 ip 地址，能够 ping 通宿主机和内网，但不能 ping 同外网，dns 也不能解析，最终又换回了 NAT 模式，直接在真机 ubuntu 上配置服务器就不用考虑这些了。后面会单独记录一下虚拟机网络配置的问题。
+而桥接模式是可以将虚拟机配置成一台独立接入互联网的电脑的，此时虚拟机必须也有自己的实际 ip 地址。我在桥接中使用静态 ip 地址，能够 ping 通宿主机和内网，但不能 ping 通外网，dns 也不能解析，最终又换回了 NAT 模式，直接在真机 ubuntu 上配置服务器就不用考虑这些了。后面会单独记录一下虚拟机网络配置的问题。
 
 最后是在 ubuntu 下编译 codegen，这个要安装一些依赖：
 
@@ -69,7 +68,7 @@ sudo apt-get install ffmpeg
    sudo apt-get install g++-multilib
 ```
 
-都装好了就可以直接在 codegen/src 的目录下 make 了，makefile 都已经写好了，编译完成后再 codegen/目录下看到 echoprint-codegen 文件，可以直接运行。
+都装好了就可以直接在 codegen/src 的目录下 make 了，makefile 都已经写好了，编译完成后在 codegen/目录下看到 echoprint-codegen 文件，可以直接运行。
 
 服务器的 readme 文件中写了一种构建库的方法，首先是将音乐放在 ubuntu 中，例如放在 Music 文件夹下，可以使用 find 命令生成需要产生指纹的音乐列表：
 

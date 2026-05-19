@@ -3,13 +3,13 @@ layout: post
 title: 如果《大话西游》一首歌，那是李宗盛的《山丘》
 date: 2014/07/04 11:08:00
 categories:
-  - 随笔
+  - Notes & Essays
 tags:
-  - 大话西游
-  - 山丘
-  - 电影
-  - 人生
-  - 记忆
+  - Observation
+  - Life
+  - Writing
+  - Culture
+  - Time
 description: 用泼墨画的随意留白比喻《大话西游》，把情节视作一位老人在讲述过去的回忆，串联《山丘》的歌词探讨命运、抉择、爱恨与时光的流逝，展现人生的孤独与回望。
 ---
 

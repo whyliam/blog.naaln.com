@@ -3,13 +3,13 @@ layout: post
 title: L81_AI三国杀的「逐鹿之战」模式
 date: 2025/08/09 20:00:00
 categories:
-  - 资讯
+  - Product & Intelligence
 tags:
   - AI
-  - models
-  - coding
-  - reasoning
-  - ecosystem
+  - Strategy
+  - ProductThinking
+  - Ecosystem
+  - Observation
 description: OpenAI的GPT-5博士级智能低幻觉率，发布开源模型；Anthropic的Claude Opus 4.1编程优势长上下文；Google的Gemini 2.5 DeepThink并行思考科学推理。AI生态多模型策略专业化提升效用。
 ---
 

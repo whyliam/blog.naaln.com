@@ -3,13 +3,12 @@ layout: post
 title: Latex 简历
 date: 2021/08/25 20:00:00
 categories:
-  - 随笔
+  - Notes & Essays
 tags:
-  - LaTeX
-  - AwesomeCV
-  - TexPad
-  - CTeX
-  - TikZ
+  - Workflow
+  - Writing
+  - Career
+  - Reflection
 description: 简历使用LaTeX和AwesomeCV模板，安装BasicTeX、TexPad编辑器，并使用tlmgr安装enumitem、xifthen、ifmtarg、sourcesanspro、tcolorbox、environ、ctex、tikzfill等依赖包。
 ---
 
@@ -21,7 +20,7 @@ description: 简历使用LaTeX和AwesomeCV模板，安装BasicTeX、TexPad编辑
 
 作为主要的 `Latex` 编辑器，我推荐使用的是 [TexPad](https://www.texpad.com/)。这个软件比较好的规整了文件的结构，以及具有自动编译和提示的能力。
 
-`Latex` 推荐再 [官网](https://www.tug.org/mactex/) 下载。同时，一般只需要下载基础的版本——smaller BasicTeX。
+`Latex` 推荐在 [官网](https://www.tug.org/mactex/) 下载。同时，一般只需要下载基础的版本——smaller BasicTeX。
 
 对于其他的依赖文件，可以在之后下载。
 

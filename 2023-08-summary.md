@@ -3,13 +3,13 @@ layout: post
 title: 8月小结｜AIGC 进行时
 date: 2023/08/31 20:00:00
 categories:
-  - 随笔
+  - Notes & Essays
 tags:
   - AIGC
-  - 创业
-  - 营销策略
-  - 产品创新
-  - 商业洞察
+  - ProductThinking
+  - Strategy
+  - Writing
+  - Observation
 description: 创业与营销需要通过观点吸引同道人，拥有观点比营销预算更有效，目标是卖给相信你所相信的人。如果没有观点，就通过作品说话，人通过创造的产品和服务认识自己。AIGC是本月重点领域，AIGC效果必须达到个人惊艳感否则等于零分，用户价值等于新体验减旧体验减替换成本，AIGC做的是供应链生意不是渠道生意。鼓励通过评论塑造自己，探索人工智能生成内容在商业创新中的价值。
 ---
 

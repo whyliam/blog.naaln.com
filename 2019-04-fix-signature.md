@@ -3,13 +3,11 @@ layout: post
 title: 修复 signed with custom identity or adhoc
 date: 2019/04/06 20:30:53
 categories:
-  - 技术
+  - AI & Systems
 tags:
-  - macOS
-  - codesign
-  - Sparkle
-  - application
-  - terminal
+  - Infrastructure
+  - SystemDesign
+  - Engineering
 description: 在macOS上安装软件后启动失败，terminal报错Sparkle框架库未加载，原因是代码签名不匹配。通过使用codesign深度签名重新签名应用程序，可恢复正常运行。
 ---
 

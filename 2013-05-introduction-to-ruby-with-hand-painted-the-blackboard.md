@@ -3,9 +3,11 @@ layout: post
 title: Ruby简介 （附手绘板书）
 date: 2013/05/17 12:16:00
 categories:
-  - 技术
+  - Notes & Essays
 tags:
-  - Ruby
+  - Learning
+  - SystemsThinking
+  - KnowledgeManagement
 ---
 
 ![](http://pics.naaln.com/blog/2019-05-14-123335.jpg-basicBlog)

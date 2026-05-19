@@ -3,23 +3,22 @@ layout: post
 title: 去除人人影视广告
 date: 2018/06/05 21:56:13
 categories:
-  - 技术
+  - Notes & Essays
 tags:
-  - 人人影视
-  - 广告拦截
-  - Hosts
-  - 客户端
-  - 程序修改
+  - SystemsThinking
+  - Infrastructure
+  - Observation
+  - DigitalGarden
 description: 人人影视客户端RRPlayer出现广告后，通过修改Hosts文件将广告请求指向本地地址阻止获取；直接修改RRPlayer程序中的下载广告函数，使其不再调用；最新版将广告与内容混合，需要在接口返回阶段过滤广告、弹窗和广告图片，甚至重写页面JS进行彻底拦截。
 ---
 
-我平时都是在 [人人影视](http://www.zimuzu.tv/) 看电影。最近人人影视除了一个客户端，可以看电影，还可以自动下载收藏的电影，感觉还是挺不错的。
+我平时都是在 [人人影视](http://www.zimuzu.tv/) 看电影。最近人人影视出了一个客户端，可以看电影，还可以自动下载收藏的电影，感觉还是挺不错的。
 
 但是最近这个客户端开始加入了广告。于是我就想着如何可以去除这些广告。
 
 ![](http://pics.naaln.com/blog/2019-01-14-031633.jpg-basicBlog)
 
-首先我用抓包广告抓取改软件发的请求，发现是通过 `http://ctrl.zmzapi.net/app/ads` 这个地址获取的广告信息。
+首先我用抓包工具抓取该软件发的请求，发现是通过 `http://ctrl.zmzapi.net/app/ads` 这个地址获取的广告信息。
 
 ![](http://pics.naaln.com/blog/2019-01-14-031635.jpg-basicBlog)
 
@@ -49,7 +48,7 @@ description: 人人影视客户端RRPlayer出现广告后，通过修改Hosts文
 
 ----
 
-最新版的人人影视已经将广告和内容混合在一起，不能简单的过滤，就提一下思路。
+最新版的人人影视已经将广告和内容混合在一起，不能简单的过滤，简单提一下思路。
 
 1. 将返回的接口里面的广告内容过滤
 2. 将返回的页面的弹窗过滤

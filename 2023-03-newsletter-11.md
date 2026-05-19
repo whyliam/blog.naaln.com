@@ -3,13 +3,13 @@ layout: post
 title: L11_开放态度看待世界
 date: 2023/03/12 20:00:00
 categories:
-  - 资讯
+  - Notes & Essays
 tags:
-  - ChatGPT
-  - AI技术
-  - 人生哲学
-  - 自我成长
-  - 生活方法
+  - SystemsThinking
+  - DecisionMaking
+  - Life
+  - SelfReflection
+  - LongTermism
 description: 探讨ChatGPT的技术创造过程，包括RLHF训练方法和对抗性训练更新机制，阐述三个核心生活理念：灰度思维看待世界的开放态度、建立立体人生系统的全面视角、以及相信个人改变能力的实践方法。介绍LifeAudit自我审计练习的具体操作，通过100个便利贴、时间维度分类、识别核心活动和人际关系来重新审视个人真正价值观和人生驱动力，帮助读者清理外部干扰，找回人生方向和方法。
 ---
 

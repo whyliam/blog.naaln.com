@@ -3,13 +3,12 @@ layout: post
 title: 一个神奇的网站 - Craigslist
 date: 2017/05/02 21:00:45
 categories:
-  - 产品
+  - Product & Intelligence
 tags:
-  - Craigslist
-  - Classifieds
-  - Simple
-  - LowCost
-  - Minimalism
+  - ProductThinking
+  - BusinessModel
+  - UserExperience
+  - Platform
 description: 讨论好产品定义偏向好用，通过分析Craigslist揭示其设计哲学：作为美国第九大流量的分类网站，保持多年无图片简洁页面，无广告运营，高营收，小团队高利润，服务微小公司，创始人纽马克的理想主义，支撑其地位的是低价广告和易用性，简单设计的价值。
 ---
 
@@ -17,7 +16,7 @@ description: 讨论好产品定义偏向好用，通过分析Craigslist揭示其
 
 今天在看书的时候看到一个问题，什么是一个好产品？是好用的，还是好看的？
 
-显而易见，应该是一个好用的产品。有什么产品是特别好看，到那是很难用的？我现在还想不出开。但是什么产品是特别难看，特别好用的？这个就不特不提 Craigslist。
+显而易见，应该是一个好用的产品。有什么产品是特别好看，到那是很难用的？我现在还想不出来。但是什么产品是特别难看，特别好用的？这个就不得不提 Craigslist。
 
 这真的是一个神奇的网站。我第一次打开的时候已经是 2015 年了，但是这个保持了 20 年的画风还是让我大吃一惊。这个是美国第九大流量的网站，美国最火的分类网站，没有图片，只有文字，一度让我以为我去钓鱼网站。
 

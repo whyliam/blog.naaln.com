@@ -3,13 +3,13 @@ layout: post
 title: L66_从技术实践到生态探索
 date: 2025/04/25 20:00:00
 categories:
-  - 资讯
+  - AI & Systems
 tags:
-  - AI技术
-  - 提示词工程
-  - 内容创作
-  - 算法原理
-  - 人机交互
+  - AgenticAI
+  - Prompt
+  - MCP
+  - SystemDesign
+  - Workflow
 description: 当前AI发展呈现技术民主化、系统透明化、交互人性化三大特征，OpenAI发布构建AIAgents最佳实践指南帮助企业部署智能体应用，AI技术在内容创作领域实现小红书选题自动化，抖音公开推荐算法原理强调用户行为预测，提示词工程成为优化AI回应的关键技术，乔哈里视窗模型被应用于优化Prompt交互，MCP技术生态实现AI与外部工具标准化连接，提升人机协作效果的关键在于向AI提出高质量问题。
 ---
 

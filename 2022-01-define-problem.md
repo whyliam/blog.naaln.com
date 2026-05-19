@@ -3,13 +3,11 @@ layout: post
 title: 定义问题
 date: 2022/01/23 20:00:00
 categories:
-  - 产品
+  - Product & Intelligence
 tags:
-  - 第一性原理
-  - 产品设计
-  - 问题定义
-  - 需求分析
-  - 用户体验
+  - FirstPrinciples
+  - ProductThinking
+  - DecisionMaking
 description: 项目设计过程中由于缺乏第一性原则导致思维发散偏离项目本身，强调定义清楚问题的重要性。提出用户购买打孔机的案例说明核心需求并非表面功能，而是背后真实需求。强调通过追问为什么来辨别用户核心需求，逻辑应聚焦于提供什么产品或服务解决根本问题。
 ---
 

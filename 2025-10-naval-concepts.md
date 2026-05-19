@@ -3,13 +3,13 @@ layout: post
 title: 他所有的人生智慧，都源于一场 7.5 亿美元的背叛
 date: 2025/10/29 10:55:00
 categories:
-  - 随笔
+  - Notes & Essays
 tags:
-  - 创业
-  - 财富
-  - 成功
-  - 投资
-  - 感悟
+  - Wealth
+  - Leverage
+  - LongTermGame
+  - Happiness
+  - SystemsThinking
 description: Naval Ravikant在Epinions上市后被投资人欺骗，五年心血化为乌有。从被封杀的创业者和放射性泥浆，领悟财富本质：追求财富而非金钱地位。他创办Venture Hacks博客揭示风投黑幕，用媒体和代码杠杆改变融资生态。AngelList重塑创投匹配，他投资Twitter、Uber等16家独角兽。长期游戏复利带来成功，但幸福感仅2分，开启幸福修行。他的财富和幸福智慧源于血淋淋代价，是真实
 ---
 
