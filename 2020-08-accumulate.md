@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 积累
-date: 2020/08/3 20:00:00
+date: 2020/08/03 20:00:00
 categories:
   - Notes & Essays
 tags:
