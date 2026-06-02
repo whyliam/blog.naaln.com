@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 10年投资清单
-date: 2022/06/18  20:00:00
+date: 2022/06/18 20:00:00
 categories:
   - Notes & Essays
 tags:

@@ -8,7 +8,6 @@ tags:
   - Startup
   - ProductThinking
   - AI
-  - AITools
   - IndieHacking
 description: 当 AI 把执行力的门槛降到几乎为零，真正稀缺的就不再是"能不能做出来"，而是"该不该做"。本文分享了我对 AI 时代寻找创业/Side Project 方向的一些思考，以及用 AI 自动化信号扫描的实践。
 ---

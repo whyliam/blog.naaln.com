@@ -1,6 +1,7 @@
 ---
+layout: post
 title: Agent 时代启示录：当 Agent 作为新物种加入经济系统
-date: 2026-05-14
+date: 2026/05/14 10:00:00
 categories:
   - AI & Systems
 tags:
@@ -8,7 +9,6 @@ tags:
   - BusinessModel
   - SystemDesign
   - ProductThinking
-  - AI Coding
 description: 基于海外独角兽文章的延伸思考，讨论 Agent 如何改变软件形态、商业指标、基础设施和开发者工作方式。
 ---
 
