@@ -1,5 +1,4 @@
 ---
-layout: post
 title: OpenGL辅助库的基本使用
 date: 2013/04/13 03:57:00
 categories:

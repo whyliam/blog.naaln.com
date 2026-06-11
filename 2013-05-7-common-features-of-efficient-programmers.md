@@ -1,9 +1,8 @@
 ---
-layout: post
 title: 高效程序员的 7 个共同特征
 date: 2013/05/06 21:09:00
 categories:
-  - Notes & Essays
+  - Notes & Reflections
 tags:
   - ContinuousLearning
   - Pragmatism

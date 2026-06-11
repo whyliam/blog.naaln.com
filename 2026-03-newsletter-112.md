@@ -1,9 +1,8 @@
 ---
-layout: post
 title: L112_教育变革与一人公司
 date: 2026/03/15 09:52:00
 categories:
-  - Notes & Essays
+  - Notes & Reflections
 tags:
   - Agent
   - FutureOfWork
@@ -11,6 +10,7 @@ tags:
   - Learning
   - Newsletter
 description: 本期探讨 AI 时代下的两个核心议题。在教育层面，传统知识储备和执行技能的价值正在快速贬值，培养孩子的审美、逻辑拆解和系统思维能力成为新的竞争关键。在创业层面，AI Agent 降低了"一人公司"的可行性门槛，让验证想法的成本从几天压缩到几分钟。同时介绍 MiroFish 多智能体预测引擎和 OpenClaw 安全实践指南两款工具。
+series: Newsletter 周刊
 ---
 ![](https://pics.naaln.com/2026-03-22-fcdbe60d9fe14c848c2380888bd99d99.png-basicBlog)
 

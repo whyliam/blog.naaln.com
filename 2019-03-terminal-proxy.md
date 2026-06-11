@@ -1,5 +1,4 @@
 ---
-layout: post
 title: terminal 设置 代理
 date: 2019/03/25 20:30:53
 categories:

@@ -1,5 +1,4 @@
 ---
-layout: post
 title: 从IBM到微软，从谷歌到脸书看IT产业趋势
 date: 2014/08/10 12:10:37
 categories:

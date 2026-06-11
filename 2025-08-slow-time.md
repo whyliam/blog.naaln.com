@@ -1,9 +1,8 @@
 ---
-layout: post
 title: 如何放慢时间
 date: 2025/08/29 15:39:00
 categories:
-  - Notes & Essays
+  - Notes & Reflections
 tags:
   - TimePerception
   - Cognition

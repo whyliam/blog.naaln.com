@@ -1,9 +1,8 @@
 ---
-layout: post
 title: 如果你想追随梦想，就要心无他念
 date: 2016/05/01 20:31:00
 categories:
-  - Notes & Essays
+  - Notes & Reflections
 tags:
   - Focus
   - DecisionMaking

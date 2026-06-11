@@ -1,15 +1,15 @@
 ---
-layout: post
 title: L25_欲望隐藏在模仿中
 date: 2023/06/18 20:00:00
 categories:
-  - Notes & Essays
+  - Notes & Reflections
 tags:
   - SystemsThinking
   - CognitiveBiases
   - Observation
   - Life
 description: 香农的五种解题法包括简化问题、寻找类似问题、重述问题、泛化思路、结构分析和逆向思考。欲望来源于模仿，模仿对象相近会产生冲突。摆脱错误二元对立，我什么都不是能获得自由。
+series: Newsletter 周刊
 ---
 
 - 香农提出了五种解决问题的方法：简化问题、寻找类似问题、多角度重述问题、泛化想法和对问题进行结构分析，以及逆向思考，其中尤以结构分析为工程师最常用的方法来解决复杂问题。

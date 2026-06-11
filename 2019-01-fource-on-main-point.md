@@ -1,9 +1,8 @@
 ---
-layout: post
 title: 专注于你的关键问题
 date: 2019/01/04 19:27:55
 categories:
-  - Notes & Essays
+  - Notes & Reflections
 tags:
   - SystemsThinking
   - DecisionMaking

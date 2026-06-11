@@ -1,9 +1,8 @@
 ---
-layout: post
 title: 你从大学之中得到什么，不取决于大学能够给你什么
 date: 2013/10/14 14:06:00
 categories:
-  - Notes & Essays
+  - Notes & Reflections
 tags:
   - Learning
   - Habits

@@ -1,9 +1,8 @@
 ---
-layout: post
 title: L18_社会性的拐点
 date: 2023/04/30 20:00:00
 categories:
-  - Notes & Essays
+  - Notes & Reflections
 tags:
   - AI
   - Knowledge
@@ -11,6 +10,7 @@ tags:
   - Observation
   - Career
 description: 结构改变将大型成本由边际转为固定，映射到大模型成为技术核心与产业基础；语言模型在字符库中漂浮，缺乏对物体的直接感知只能产生语言化知识；个人价值源自独到见解，选择喜欢的工作需摆脱名利与高薪束缚并坚持宏伟目标。
+series: Newsletter 周刊
 ---
 
 - 结构性改变才能真正改变社会和产业，而这种改变往往是一类大型成本从边际走向固定；模型的成本现在也正在发生同样的转变，大模型将成为技术核心和产业化基础，让个人见解变得至关重要。

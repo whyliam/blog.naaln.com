@@ -1,5 +1,4 @@
 ---
-layout: post
 title: 基于Sobel算子图像边缘检测的MATLAB实现
 date: 2013/09/24 05:49:13
 categories:

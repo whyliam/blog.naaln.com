@@ -1,5 +1,4 @@
 ---
-layout: post
 title: 配置 iterm2
 date: 2018/12/27 16:14:59
 categories:

@@ -1,5 +1,4 @@
 ---
-layout: post
 title: 详解Fedora 18 U盘安装技巧
 date: 2013/08/12 06:20:00
 categories:

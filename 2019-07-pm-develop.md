@@ -1,5 +1,4 @@
 ---
-layout: post
 title: 产品经理的发展思考
 date: 2019/07/16 20:00:00
 categories:

@@ -1,5 +1,4 @@
 ---
-layout: post
 title: 「侘寂」美学
 date: 2014/03/13 06:19:00
 categories:

@@ -1,9 +1,8 @@
 ---
-layout: post
 title: 一个导师能为你做什么？
 date: 2013/09/18 01:11:00
 categories:
-  - Notes & Essays
+  - Notes & Reflections
 tags:
   - Mentorship
   - KnowledgeInheritance

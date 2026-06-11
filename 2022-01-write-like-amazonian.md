@@ -1,5 +1,4 @@
 ---
-layout: post
 title: 像在亚马逊一样汇报
 date: 2022/01/03 20:00:00
 categories:

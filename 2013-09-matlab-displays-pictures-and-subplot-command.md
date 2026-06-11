@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Matlab 显示图片和SubPlot命令
 date: 2013/09/08 11:51:00
 categories:

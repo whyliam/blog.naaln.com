@@ -1,5 +1,4 @@
 ---
-layout: post
 title: L62_从模型突破到工具革命
 date: 2025/03/28 20:00:00
 categories:
@@ -11,6 +10,7 @@ tags:
   - Automation
   - SystemDesign
 description: 大模型在图像生成与自然语言交互上实现突破，GPT4o支持透明通道、UI编辑和多轮对话，语音输入实现用嘴改图；MCP通过零代码快速将API转化为功能模块，推动AI工具箱的普及，指向未来创意行业向需求驱动转变，开发者需在技术迭代中寻找人机协作新平衡。
+series: Newsletter 周刊
 ---
 
 ![从模型突破到工具革命](https://pics.naaln.com/2025-03-30-29ed93aeb65b42d782de629380f5d033.png-basicBlog)

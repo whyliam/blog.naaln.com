@@ -1,5 +1,4 @@
 ---
-layout: post
 title: 设计师的思维整理术：四个思维可视化模型
 date: 2016/04/06 10:48:00
 categories:

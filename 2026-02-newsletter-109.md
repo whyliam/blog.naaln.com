@@ -1,9 +1,8 @@
 ---
-layout: post
 title: L109_AI 时代的认知跃迁
 date: 2026/02/21 01:57:58
 categories:
-  - Notes & Essays
+  - Notes & Reflections
 tags:
   - AI
   - ProductThinking
@@ -11,6 +10,7 @@ tags:
   - SystemsThinking
   - Newsletter
 description: 从传统的 PMF 寻找模型、产品与市场的深度契合；flomo 少楠谈如何用「带刺的教练」对抗 AI 的平庸；未来 App 消失，提示词成为唯一界面的开发范式革命；以及 Taalas 将大模型「焊」进芯片，实现每秒 17,000 token 的极致速度。
+series: Newsletter 周刊
 ---
 
 ![](https://pics.naaln.com/2026-02-25-8dda6bb40b8d493fa233eaa1e7e58a48.png-basicBlog)

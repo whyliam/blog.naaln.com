@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Sublime Text 无法调用 Install Package
 date: 2023/08/29 20:00:00
 categories:

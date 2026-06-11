@@ -1,9 +1,8 @@
 ---
-layout: post
 title: 如何成为真正独立思考的人？
 date: 2018/10/08 15:38:31
 categories:
-  - Notes & Essays
+  - Notes & Reflections
 tags:
   - SystemsThinking
   - CognitiveBiases

@@ -1,5 +1,4 @@
 ---
-layout: post
 title: 主流推荐的各种策略
 date: 2019/07/28 20:00:00
 categories:

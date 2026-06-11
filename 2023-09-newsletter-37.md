@@ -1,15 +1,15 @@
 ---
-layout: post
 title: L37_重新塑造活方式和社会结构
 date: 2023/09/10 20:00:00
 categories:
-  - Notes & Essays
+  - Notes & Reflections
 tags:
   - Media
   - SocialCapital
   - Platform
   - InformationOverload
   - SystemsThinking
+series: Newsletter 周刊
 description: 本篇探讨印刷机引发的信息革命，阐述媒体是人体的延伸，揭示社交网络以地位与资本为驱动的工作量证明机制，分析信息过量导致的孤立与生产力悖论。
 ---
 

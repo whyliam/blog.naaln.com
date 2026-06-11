@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Agent 时代启示录：当 Agent 作为新物种加入经济系统
 date: 2026/05/14 10:00:00
 categories:
@@ -9,7 +8,7 @@ tags:
   - BusinessModel
   - SystemDesign
   - ProductThinking
-description: 基于海外独角兽文章的延伸思考，讨论 Agent 如何改变软件形态、商业指标、基础设施和开发者工作方式。
+description: Agent 不是新功能而是新物种：它同时成为经济系统的生产者与消费者。文章拆解 DAU 失效、per-outcome 定价、软件从 GUI 返祖 CLI 的趋势，提出 Agent = Model + Harness 框架，押注 Runtime 基础设施、Vertical Harness 和 Agent 身份支付三个方向。
 ---
 
 

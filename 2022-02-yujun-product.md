@@ -1,5 +1,4 @@
 ---
-layout: post
 title: 《俞军产品方法论》的笔记
 date: 2022/02/25 20:00:00
 categories:

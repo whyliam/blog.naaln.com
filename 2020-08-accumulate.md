@@ -1,9 +1,8 @@
 ---
-layout: post
 title: 积累
 date: 2020/08/03 20:00:00
 categories:
-  - Notes & Essays
+  - Notes & Reflections
 tags:
   - Wealth
   - DecisionMaking

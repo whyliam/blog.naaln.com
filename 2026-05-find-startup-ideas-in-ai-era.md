@@ -1,5 +1,4 @@
 ---
-layout: post
 title: 瓶颈前移：AI 时代怎么找到值得做的事
 date: 2026/05/31 14:00:00
 categories:

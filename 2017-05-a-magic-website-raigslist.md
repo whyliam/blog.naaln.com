@@ -1,5 +1,4 @@
 ---
-layout: post
 title: 一个神奇的网站 - Craigslist
 date: 2017/05/02 21:00:45
 categories:

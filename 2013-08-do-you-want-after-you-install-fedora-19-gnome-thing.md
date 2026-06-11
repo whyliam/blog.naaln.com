@@ -1,5 +1,4 @@
 ---
-layout: post
 title: 安装 Fedora 19 GNOME 后需做的事
 date: 2013/08/13 08:48:00
 categories:

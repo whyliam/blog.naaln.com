@@ -1,9 +1,8 @@
 ---
-layout: post
 title: 2022-02 股票分析
 date: 2022/02/04 20:00:00
 categories:
-  - Notes & Essays
+  - Notes & Reflections
 tags:
   - DecisionMaking
   - Investment

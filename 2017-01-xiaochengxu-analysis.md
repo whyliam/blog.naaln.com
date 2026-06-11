@@ -1,5 +1,4 @@
 ---
-layout: post
 title: 上线2天后的小程序分析
 date: 2017/01/11 13:58:03
 categories:

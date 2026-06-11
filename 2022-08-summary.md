@@ -1,9 +1,8 @@
 ---
-layout: post
 title: 8月小结｜没有理想的人不伤心
 date: 2022/08/31 20:00:00
 categories:
-  - Notes & Essays
+  - Notes & Reflections
 tags:
   - Observation
   - Life

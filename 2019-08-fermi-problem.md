@@ -1,5 +1,4 @@
 ---
-layout: post
 title: 费米问题
 date: 2019/08/05 20:00:00
 categories:

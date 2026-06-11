@@ -1,5 +1,4 @@
 ---
-layout: post
 title: L54_提升自身的竞争优势
 date: 2024/01/07 20:00:00
 categories:
@@ -10,6 +9,7 @@ tags:
   - KnowledgeManagement
   - DecisionMaking
   - SystemsThinking
+series: Newsletter 周刊
 description: 战略不等于提升运营效率，关键在于围绕竞争性定位选择独特的运营活动并形成配称；产品开发必须聚焦用户要完成的工作（任务），避免错把功能当作需求；阅读要建立系统，强调深度理解而非速度，并养成随身携带纸质书、记录笔记、重读经典、寻找下一本好书的习惯。
 ---
 

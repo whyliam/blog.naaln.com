@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Color Avatar（FREE NFT）
 date: 2022/01/20 20:00:00
 categories:

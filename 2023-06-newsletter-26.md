@@ -1,9 +1,8 @@
 ---
-layout: post
 title: L26_自我管理
 date: 2023/06/25 20:00:00
 categories:
-  - Notes & Essays
+  - Notes & Reflections
 tags:
   - SelfManagement
   - CareerStrategy
@@ -11,6 +10,7 @@ tags:
   - PersonalGrowth
   - SystemsThinking
 description: 应届毕业生就业难近年突出，失业人数每年以百万计，占比两位数百分比。供需失衡源于经济变化和毕业生增长。帕累托法则揭示财富分配不均，建议关注极端值和个人优势。文章提出成为自己CEO的方法：理解自身长处、工作方式、价值观；选择合适工作；主动接受机会；规划职业；发展第二条职业线；持续学习。实践这些可提升成功影响力。
+series: Newsletter 周刊
 ---
 
 - 应届毕业生就业难是我国就业问题的主要矛盾之一，由于经济形势和就业岗位减少，加上毕业生数量增加，造成了就业市场供需不平衡的局面。粗略估计，过去几年每年约有 200 万至 500 万的应届毕业生找不到工作，约占总数的 15% 到 30%。

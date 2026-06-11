@@ -1,9 +1,8 @@
 ---
-layout: post
 title: 劳动异化
 date: 2022/01/07 20:00:00
 categories:
-  - Notes & Essays
+  - Notes & Reflections
 tags:
   - Work
   - Society

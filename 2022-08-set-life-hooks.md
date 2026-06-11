@@ -1,9 +1,8 @@
 ---
-layout: post
 title: 设置生活的钩子
 date: 2022/08/28 20:00:00
 categories:
-  - Notes & Essays
+  - Notes & Reflections
 tags:
   - HabitFormation
   - BehavioralDesign

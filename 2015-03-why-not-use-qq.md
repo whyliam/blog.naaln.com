@@ -1,9 +1,8 @@
 ---
-layout: post
 title: 我为什么不再使用 QQ
 date: 2015/03/25 10:32:00
 categories:
-  - Notes & Essays
+  - Notes & Reflections
 tags:
   - ProductThinking
   - UserExperience

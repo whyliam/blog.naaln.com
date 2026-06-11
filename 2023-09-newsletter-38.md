@@ -1,15 +1,15 @@
 ---
-layout: post
 title: L38_建立一个真实的小世界
 date: 2023/09/17 20:00:00
 categories:
-  - Notes & Essays
+  - Notes & Reflections
 tags:
   - CognitiveHabits
   - SocialObservation
   - LongTermism
   - Practice
   - SystemsThinking
+series: Newsletter 周刊
 description: 遗传学对智力等特质的影响超过50%，环境多为随机事件；在马斯克、乔布斯、贝佐斯等领导者身上，尴尬的沉默体现深思熟虑与情商，是抵抗直觉错误的工具；中国社会存在为未来目标而悬浮的焦虑，源于中心情节与资源集中，解决之道是构建真实小世界，重视创造的物质性过程与实践经验的累积。技术进步或压缩努力空间。
 ---
 

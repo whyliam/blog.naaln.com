@@ -1,9 +1,8 @@
 ---
-layout: post
 title: 《巨人的工具》的笔记
 date: 2022/03/20 20:00:00
 categories:
-  - Notes & Essays
+  - Notes & Reflections
 tags:
   - DecisionMaking
   - Strategy

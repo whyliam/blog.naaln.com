@@ -1,9 +1,8 @@
 ---
-layout: post
 title: 晚安，我的爱
 date: 2011/02/25 19:00:00
 categories:
-  - Notes & Essays
+  - Notes & Reflections
 tags:
   - Life
   - Observation

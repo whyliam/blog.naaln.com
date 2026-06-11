@@ -1,9 +1,8 @@
 ---
-layout: post
 title: 在美国留学的你不能不知道的21个网站
 date: 2013/09/17 09:19:00
 categories:
-  - Notes & Essays
+  - Notes & Reflections
 tags:
   - Life
   - Observation

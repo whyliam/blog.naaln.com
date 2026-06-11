@@ -1,9 +1,8 @@
 ---
-layout: post
 title: 6月小结｜请别忘记我永远不变黄色的脸
 date: 2022/05/31 20:00:00
 categories:
-  - Notes & Essays
+  - Notes & Reflections
 tags:
   - Life
   - Observation

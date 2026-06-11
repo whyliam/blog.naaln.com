@@ -1,5 +1,4 @@
 ---
-layout: post
 title: 我们为什么应当远离「比特币」
 date: 2013/11/17 09:34:00
 categories:

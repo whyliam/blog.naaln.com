@@ -1,5 +1,4 @@
 ---
-layout: post
 title: L28_Stay hungry, Stay young
 date: 2023/07/09 20:00:00
 categories:
@@ -11,6 +10,7 @@ tags:
   - BusinessModel
   - Observation
 description: 张一鸣向应届毕业生提出保持好奇心、乐观面对不确定性、设定更高标准、延迟满足、具备判断力；一线城市高物价导致资金难以带走，官方建议青年迁往通高铁、第五代移动通信配套完善的城市实现躺平；黄峥强调拼多多追求高性价比、算法选品、供应链升级、聚焦留存复购、主张错位竞争让合适用户在合适场景买到合适商品。
+series: Newsletter 周刊
 ---
 
 - 张一鸣寄语应届毕业生：Stay hungry, Stay young，保持好奇心、乐观、追求更高标准、不傲娇、有判断力，不受短期选择左右。

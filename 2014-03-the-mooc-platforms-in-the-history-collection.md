@@ -1,5 +1,4 @@
 ---
-layout: post
 title: 史上最全MOOC平台收集
 date: 2014/03/05 06:12:00
 categories:

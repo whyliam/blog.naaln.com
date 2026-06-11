@@ -1,5 +1,4 @@
 ---
-layout: post
 title: 知识管理的三个核心特质
 date: 2026/01/14 18:00:00
 categories:

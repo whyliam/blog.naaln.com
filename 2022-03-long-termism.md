@@ -1,9 +1,8 @@
 ---
-layout: post
 title: 长期主义
 date: 2022/03/17 20:00:00
 categories:
-  - Notes & Essays
+  - Notes & Reflections
 tags:
   - LongTermism
   - DecisionMaking

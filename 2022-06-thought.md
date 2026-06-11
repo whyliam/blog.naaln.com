@@ -1,13 +1,13 @@
 ---
-layout: post
 title: 创见
 date: 2022/06/16 20:00:00
 categories:
-  - Notes & Essays
+  - Notes & Reflections
 tags:
   - Writing
   - KnowledgeManagement
   - Cognition
+type: note
 description: 季羡林写论文时导师因缺乏创见而否定其绪论，他随后感悟：无创见勿写作，有创见亦须言简意赅。
 ---
 

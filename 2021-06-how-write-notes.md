@@ -1,9 +1,8 @@
 ---
-layout: post
 title: 如何做笔记
 date: 2021/06/13 20:00:00
 categories:
-  - Notes & Essays
+  - Notes & Reflections
 tags:
   - KnowledgeManagement
   - Writing

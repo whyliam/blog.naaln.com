@@ -1,5 +1,4 @@
 ---
-layout: post
 title: 无限试用图床软件 iPic
 date: 2019/04/24 20:30:53
 categories:

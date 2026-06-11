@@ -1,5 +1,4 @@
 ---
-layout: post
 title: 产品经理该如何写好一篇复盘报告
 date: 2019/07/31 20:00:00
 categories:

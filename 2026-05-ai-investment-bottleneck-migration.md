@@ -1,5 +1,4 @@
 ---
-layout: post
 title: AI 投资的核心逻辑：追踪系统瓶颈的迁移
 date: 2026/05/31 09:00:00
 categories:
@@ -9,7 +8,7 @@ tags:
   - AI
   - SystemsThinking
   - FirstPrinciples
-description: AI 投资不是追热点，而是追系统瓶颈的迁移方向。从 GPU 到 HBM、封装、电力、推理成本——一条帮助判断下一个超额收益环节的产业逻辑主线。
+description: AI 投资的核心是追踪系统瓶颈的迁移而非追热点。从训练算力不足到 Memory Wall，从 HBM、封装外溢到电力与冷却，再到推理成本与端侧 AI，每个阶段的超额收益都出现在最卡脖子的环节。文章用 AI Factory 框架拆解五阶段迁移逻辑。
 toc: True
 ---
 

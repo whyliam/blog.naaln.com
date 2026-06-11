@@ -1,9 +1,8 @@
 ---
-layout: post
 title: Markdown 工具推荐
 date: 2019/04/30 20:30:53
 categories:
-  - Notes & Essays
+  - Notes & Reflections
 tags:
   - Writing
   - KnowledgeManagement

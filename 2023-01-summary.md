@@ -1,9 +1,8 @@
 ---
-layout: post
 title: 1月小结｜新年好呀 新年好呀
 date: 2023/01/30 20:00:00
 categories:
-  - Notes & Essays
+  - Notes & Reflections
 tags:
   - Observation
   - Life

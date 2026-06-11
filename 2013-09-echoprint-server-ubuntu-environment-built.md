@@ -1,5 +1,4 @@
 ---
-layout: post
 title: echoprint 服务端 ubuntu 环境搭建
 date: 2013/09/16 08:16:00
 categories:

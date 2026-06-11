@@ -1,5 +1,4 @@
 ---
-layout: post
 title: 论 NVIDIA 的崛起
 date: 2024/12/22 22:49:00
 categories:

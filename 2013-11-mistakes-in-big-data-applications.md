@@ -1,5 +1,4 @@
 ---
-layout: post
 title: 大数据应用的10大误区
 date: 2013/11/03 01:21:00
 categories:

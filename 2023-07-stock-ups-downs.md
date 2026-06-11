@@ -1,5 +1,4 @@
 ---
-layout: post
 title: 股票涨跌理论
 date: 2023/07/24 20:00:00
 categories:

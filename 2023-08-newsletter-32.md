@@ -1,14 +1,14 @@
 ---
-layout: post
 title: L32_在领域中痴迷
 date: 2023/08/06 20:00:00
 categories:
-  - Notes & Essays
+  - Notes & Reflections
 tags:
   - KnowledgeManagement
   - SystemsThinking
   - FirstPrinciples
   - Learning
+series: Newsletter 周刊
 description: 从四层阅读方法到技术倾向与痴迷创造：概述基础、检视、分析、主题阅读及其核心问题；指出技术的倾向性与算法治理的失衡风险，剖析消费与创造的差异；提出风险对冲与分散投资的策略，强调痴迷驱动能力与决心，寻找稀缺机会以实现突破。
 ---
 

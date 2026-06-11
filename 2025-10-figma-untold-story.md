@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Figma 的真正秘密：它不是关于协作，而是关于架构
 date: 2025/10/28 15:29:00
 categories:

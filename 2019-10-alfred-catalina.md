@@ -1,5 +1,4 @@
 ---
-layout: post
 title: 升级 Catalina 后 Alfred 出现问题
 date: 2019/10/08 20:00:00
 categories:

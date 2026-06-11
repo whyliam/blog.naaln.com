@@ -1,5 +1,4 @@
 ---
-layout: post
 title: 聊聊数据中台
 date: 2019/05/21 20:00:00
 categories:

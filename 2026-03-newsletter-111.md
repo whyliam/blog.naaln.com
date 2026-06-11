@@ -1,9 +1,8 @@
 ---
-layout: post
 title: L111_门槛、表达与创造
 date: 2026/03/07 05:45:19
 categories:
-  - Notes & Essays
+  - Notes & Reflections
 tags:
   - AI
   - Prompt
@@ -11,6 +10,7 @@ tags:
   - Observation
   - ProductThinking
 description: 全球 84% 的人从未使用过 AI，你已经是领先者。分享投资「大脑」的门槛、像对待实习生一样与 AI 沟通、以及创造作为唯一护城河的九条实用心得，帮助你真正让 AI 为自己所用。
+series: Newsletter 周刊
 ---
 ![](https://pics.naaln.com/2026-03-08-37a73c55a62840bc9e8c28a859bd2594.png-basicBlog)
 

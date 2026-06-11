@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Mac 环境镜像配置
 date: 2019/01/11 09:14:59
 categories:

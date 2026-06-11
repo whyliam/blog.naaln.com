@@ -1,9 +1,8 @@
 ---
-layout: post
 title: 使命
 date: 2022/02/22 20:00:00
 categories:
-  - Notes & Essays
+  - Notes & Reflections
 tags:
   - PersonalMission
   - SelfReflection

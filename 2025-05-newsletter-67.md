@@ -1,5 +1,4 @@
 ---
-layout: post
 title: L67_聚焦Agent系统构建
 date: 2025/05/02 20:00:00
 categories:
@@ -10,6 +9,7 @@ tags:
   - SystemDesign
   - ProductThinking
 description: 围绕智能体系统与工作流系统的构建，提出以增强型大语言模型为基础的可组合、易调试、透明化实践，指出系统复杂性只在效果显著提升时值得引入；通过Cursor与Arc的案例揭示AI产品在技术、成本与真实需求之间的匹配边界，强调聚焦核心场景、获取真实反馈的关键；介绍DeepSeek新模型在Lean4形式化证明中的递归分解与模型协同，展现提升数学推理精度与效率的新范式。
+series: Newsletter 周刊
 ---
 
 ![聚焦Agent系统构建](https://pics.naaln.com/2025-05-06-deae5c81140141ebb7ca0ccd68800631.png-basicBlog)

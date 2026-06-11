@@ -1,5 +1,4 @@
 ---
-layout: post
 title: 数据仓库关键词
 date: 2019/05/26 20:00:00
 categories:

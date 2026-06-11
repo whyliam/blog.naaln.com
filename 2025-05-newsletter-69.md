@@ -1,5 +1,4 @@
 ---
-layout: post
 title: L69_设计工具革新
 date: 2025/05/16 20:00:00
 categories:
@@ -10,6 +9,7 @@ tags:
   - ProductThinking
   - SystemsThinking
 description: 2025年AI智能体元年到来，大语言模型快速迭代推动智能体技术发展。DeepSeek R1、Claude 3.7、GPT4.5等模型奠定基础，多模态模型在专业工作流、对话生成、轻量工具等场景深入应用。智能体商业化规模庞大，从2024年51亿美元预计增至2030年471亿美元。华为、微软、亚马逊等企业案例验证实际应用价值。Figma Make践行设计即提示理念，Lovart.AI成为首个专业设计A
+series: Newsletter 周刊
 ---
 
 ![设计工具革新](https://pics.naaln.com/2025-05-18-fb7a427ae5804780b9039883168e4589.png-basicBlog)

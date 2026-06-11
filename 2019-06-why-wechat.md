@@ -1,5 +1,4 @@
 ---
-layout: post
 title: 为什么微信成了中国社交霸主
 date: 2019/06/02 20:00:00
 categories:

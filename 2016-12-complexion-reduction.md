@@ -1,5 +1,4 @@
 ---
-layout: post
 title: 颜色减少，移动端设计中的新趋势
 date: 2016/12/15 22:30:37
 categories:

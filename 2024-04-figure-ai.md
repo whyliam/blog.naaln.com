@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Figure AI
 date: 2024/04/18 20:00:00
 categories:

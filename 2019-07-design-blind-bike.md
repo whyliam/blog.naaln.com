@@ -1,5 +1,4 @@
 ---
-layout: post
 title: 设计视觉障碍的自行车
 date: 2019/07/30 20:00:00
 categories:

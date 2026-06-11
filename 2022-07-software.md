@@ -1,5 +1,4 @@
 ---
-layout: post
 title: 2022 年我的 Mac 软件折腾之旅
 date: 2022/07/29 20:00:00
 categories:

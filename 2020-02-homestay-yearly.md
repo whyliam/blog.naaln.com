@@ -1,5 +1,4 @@
 ---
-layout: post
 title: 民宿包年服务思考
 date: 2020/02/24 20:00:00
 categories:

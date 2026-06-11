@@ -1,5 +1,4 @@
 ---
-layout: post
 title: 社交软件的朋友圈固化
 date: 2019/11/28 20:00:00
 categories:

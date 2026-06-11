@@ -1,5 +1,4 @@
 ---
-layout: post
 title: 畅想 AR 的应用场景
 date: 2017/08/12 23:43:27
 categories:

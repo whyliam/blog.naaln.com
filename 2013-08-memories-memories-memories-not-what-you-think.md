@@ -1,9 +1,10 @@
 ---
-layout: post
 title: 往事不是你想回忆就能回忆
 date: 2013/08/11 11:08:41
 categories:
-  - Notes & Essays
+  - Notes & Reflections
+description: 关于记忆与遗忘的随想，人脑如何处理过去的经历。
+
 tags:
   - Life
   - Observation

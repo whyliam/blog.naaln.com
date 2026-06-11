@@ -1,5 +1,4 @@
 ---
-layout: post
 title: L98_AI 时代的困局与机遇
 date: 2025/12/06 09:14:46
 categories:
@@ -10,6 +9,7 @@ tags:
   - Strategy
   - Learning
   - Infrastructure
+series: Newsletter 周刊
 description: 深度探讨 AI 时代的学习效率悖论、产品形态变革与行业发展趋势。从人类登月与拉杆箱的对比，思考当前 AI 行业的技术与产品脱节问题，分析 Apple 的实用主义策略、AI Agent 的浏览器需求，以及产品经理在 Prompt 时代的新角色。
 ---
 ![](https://pics.naaln.com/2025-12-07-f147d0a6b8db4626a680a0c74ef234f7.png-basicBlog)

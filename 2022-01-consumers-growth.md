@@ -1,5 +1,4 @@
 ---
-layout: post
 title: 从消费者行为模式到用户增长模型
 date: 2022/01/06 20:00:00
 categories:

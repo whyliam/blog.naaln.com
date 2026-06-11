@@ -1,9 +1,8 @@
 ---
-layout: post
 title: 生活不是理想，而是体验
 date: 2011/03/14 20:00:00
 categories:
-  - Notes & Essays
+  - Notes & Reflections
 tags:
   - Life
   - Observation

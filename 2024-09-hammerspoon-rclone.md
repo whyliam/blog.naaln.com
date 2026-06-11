@@ -1,5 +1,4 @@
 ---
-layout: post
 title: hammerspoon 和 rclone 同步
 date: 2024/09/07 22:39:00
 categories:
@@ -9,7 +8,8 @@ tags:
   - Workflow
   - Knowledge
   - Infrastructure
-description: 介绍在macOS上用rclone通过WebDAV同步iCloud中的Obsidian文档并用Hammerspoon的Lua实现文件夹监控与自动双向同步。
+series: Obsidian Knowledge System
+description: 公司和家里电脑资料长期不同步，于是搭建了一套基于rclone和Hammerspoon的自动双向同步方案：rclone通过WebDAV协议连接iCloud中的Obsidian文档库，Hammerspoon用Lua脚本监控本地文件夹变化，检测到文件改动后自动触发rclone双向同步。文章详细记录了rclone的安装配置、WebDAV连接iCloud的步骤，以及完整的Hammerspoon Lua代码实现，包含防抖机制和隐藏文件过滤，适合需要在多台Mac间保持Obsidian资料库同步的场景。
 ---
 
 由于公司电脑的资料和家里电脑的资料不同步，而我有个人的资料库希望在公司电脑上也可以查看。

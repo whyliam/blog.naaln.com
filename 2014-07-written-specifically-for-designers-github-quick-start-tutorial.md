@@ -1,9 +1,8 @@
 ---
-layout: post
 title: 专为设计师而写的GitHub快速入门教程
 date: 2014/07/27 11:01:06
 categories:
-  - 技术
+  - AI & Systems
 tags:
   - GitHub
   - 设计师

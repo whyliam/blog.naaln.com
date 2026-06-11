@@ -1,9 +1,8 @@
 ---
-layout: post
 title: 关于研究生
 date: 2016/06/27 21:41:11
 categories:
-  - Notes & Essays
+  - Notes & Reflections
 tags:
   - Learning
   - SystemsThinking

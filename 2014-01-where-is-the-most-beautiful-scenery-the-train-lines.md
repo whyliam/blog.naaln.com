@@ -1,5 +1,4 @@
 ---
-layout: post
 title: 风景最漂亮的火车线路在哪？
 date: 2014/01/03 00:35:00
 categories:
@@ -10,6 +9,8 @@ tags:
   - Observation
   - Landscape
 description: 王嵬铁路摄影作品包括国内草原列车、巴山穿越、天山牵引等壮丽景象，国外呈现斯里兰卡海上火车、挪威峡湾铁路、瑞士阿尔卑斯山南非等沿线美景。
+type: visual
+cover: http://pics.naaln.com/blog/2019-01-14-061905.jpg-basicBlog
 ---
 
 下面国内部分的图都来自摄影师王嵬，文中有给链接，国外部分都是网上流传很广的图了，原作者已不可考。国内的

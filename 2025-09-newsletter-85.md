@@ -1,9 +1,8 @@
 ---
-layout: post
 title: L85_集体与个人的平衡
 date: 2025/09/06 11:38:00
 categories:
-  - Notes & Essays
+  - Notes & Reflections
 tags:
   - Newsletter
   - ProductThinking
@@ -11,6 +10,7 @@ tags:
   - AI
   - Learning
 description: AI辅助体检报告解读和健康管理，但不能替代医生。分析集体利益与个人权益的平衡。介绍AI学习工具如秘塔产品。新闻涵盖钉钉AI产品、AI产品经理职责、合成内容标识法规和收购事件。
+series: Newsletter 周刊
 ---
 
 ![](https://pics.naaln.com/2025-09-07-ad394ea766a047278c65eea2e2e7ce54.png-basicBlog)

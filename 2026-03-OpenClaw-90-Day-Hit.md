@@ -1,5 +1,4 @@
 ---
-layout: post
 title: OpenClaw：一只龙虾如何在 90 天里席卷 GitHub 与 AI Agent 时代
 date: 2026/03/15 15:10:00
 categories:
@@ -10,8 +9,7 @@ tags:
   - SystemDesign
   - ProductThinking
   - Knowledge
-description:
-  - OpenClaw 在短短 90 天内成为 GitHub 增长最快的开源项目。从一个周末原型，到 AI Agent 生态的爆发，这篇文章梳理了 OpenClaw 的完整时间线、创始人故事，以及它为何可能改变软件的未来。
+description: OpenClaw 90 天内从周末原型成长为 GitHub 全球第一大项目，创始人 Peter Steinberger 随后加入 OpenAI。文章梳理完整时间线与命名风波，对比 ChatGPT 与 Agent 的本质区别，指出记忆才是 AI 时代的真正护城河，预测 80% 的 App 将被 Agent 取代。
 ---
 ## Stars 爆发式增长
 

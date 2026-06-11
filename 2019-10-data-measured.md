@@ -1,5 +1,4 @@
 ---
-layout: post
 title: 数据衡量体系构建的结构方法
 date: 2019/10/04 20:00:00
 categories:

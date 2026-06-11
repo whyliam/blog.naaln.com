@@ -1,9 +1,8 @@
 ---
-layout: post
 title: git如何合併最後兩個commit到一個
 date: 2015/02/19 13:19:00
 categories:
-  - 技术
+  - AI & Systems
 tags:
   - git
   - rebase

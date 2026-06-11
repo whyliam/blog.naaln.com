@@ -1,5 +1,4 @@
 ---
-layout: post
 title: WEB标准
 date: 2016/02/28 14:30:00
 categories:

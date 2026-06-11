@@ -1,9 +1,8 @@
 ---
-layout: post
 title: 人生若只如初见
 date: 2013/04/06 12:55:00
 categories:
-  - Notes & Essays
+  - Notes & Reflections
 tags:
   - Life
   - Observation

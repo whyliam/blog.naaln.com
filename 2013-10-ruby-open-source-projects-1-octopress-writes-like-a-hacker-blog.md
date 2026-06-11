@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Ruby开源项目介绍(1)：octopress——像黑客一样写博客
 date: 2013/10/19 04:20:00
 categories:

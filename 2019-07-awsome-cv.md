@@ -1,9 +1,8 @@
 ---
-layout: post
 title: Awesome-CV
 date: 2019/07/14 20:00:00
 categories:
-  - Notes & Essays
+  - Notes & Reflections
 tags:
   - KnowledgeManagement
   - Workflow

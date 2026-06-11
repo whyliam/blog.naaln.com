@@ -1,9 +1,8 @@
 ---
-layout: post
 title: 今夜，心事无关风月
 date: 2011/10/16 20:00:00
 categories:
-  - Notes & Essays
+  - Notes & Reflections
 tags:
   - Life
   - InnerReflection

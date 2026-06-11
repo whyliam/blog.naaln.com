@@ -1,9 +1,8 @@
 ---
-layout: post
 title: 脑洞大开 因材施教
 date: 2019/07/15 20:00:00
 categories:
-  - Notes & Essays
+  - Notes & Reflections
 tags:
   - Education
   - Learning

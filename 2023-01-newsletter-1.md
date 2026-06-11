@@ -1,9 +1,8 @@
 ---
-layout: post
 title: L1_白月光
 date: 2023/01/01 20:00:00
 categories:
-  - Notes & Essays
+  - Notes & Reflections
 tags:
   - Newsletter
   - LongTermism
@@ -11,6 +10,7 @@ tags:
   - Focus
   - Research
 description: 这封newsletter倡导以深度生活态度为核心，通过精简信息减少熵增干扰，个人研究专注长期价值问题，以客户视角为导向进行创新实践。
+series: Newsletter 周刊
 ---
 
 朋友，新年好，见字如晤，正如你所见到的，newsletter 是一个新的尝试。

@@ -1,5 +1,4 @@
 ---
-layout: post
 title: 如何利用单反拍好夜景？
 date: 2013/11/19 05:18:00
 categories:
@@ -10,6 +9,8 @@ tags:
   - Observation
   - Life
 description: 夜景摄影强调黄金时间捕捉色彩层次，配合三脚架低ISO和RAW格式，通过天桥水边等人行道机位，融合光绘变焦等创意手法，并运用大光圈小光圈控制效果。
+type: visual
+cover: http://pics.naaln.com/blog/2019-01-14-062331.jpg-basicBlog
 ---
 
 前言：

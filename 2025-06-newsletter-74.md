@@ -1,5 +1,4 @@
 ---
-layout: post
 title: L74_人工智能的世界展现出巨大的分化
 date: 2025/06/20 20:00:00
 categories:
@@ -10,6 +9,7 @@ tags:
   - Observation
   - SystemsThinking
   - Ethics
+series: Newsletter 周刊
 description: 苹果因AI承诺遭股东诉讼，谷歌AI概览覆盖半数查询重塑SEO。机器人新皮肤赋予触觉，AI医疗扩展到运营，密西西比合作Nvidia普及教育，特斯拉在奥斯汀公开测试Robotaxi，Anthropic获版权训练部分胜诉，教皇与维基百科讨论AI伦理与人类知识。
 ---
 

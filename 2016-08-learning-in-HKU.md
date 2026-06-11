@@ -1,9 +1,8 @@
 ---
-layout: post
 title: 告诉你，我在港大到底学到了啥！
 date: 2016/08/05 20:35:25
 categories:
-  - Notes & Essays
+  - Notes & Reflections
 tags:
   - KnowledgeManagement
   - SystemsThinking

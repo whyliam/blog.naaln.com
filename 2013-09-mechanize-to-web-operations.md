@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Mechanize对WEB的操作
 date: 2013/09/10 20:14:00
 categories:

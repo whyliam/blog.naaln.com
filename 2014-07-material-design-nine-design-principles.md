@@ -1,5 +1,4 @@
 ---
-layout: post
 title: 「Material Design」的九大设计原则
 date: 2014/07/05 06:06:00
 categories:

@@ -1,9 +1,8 @@
 ---
-layout: post
 title: 我们是搬砖者
 date: 2020/01/07 20:00:00
 categories:
-  - Notes & Essays
+  - Notes & Reflections
 tags:
   - Career
   - SocialNetwork

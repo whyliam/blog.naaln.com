@@ -1,5 +1,4 @@
 ---
-layout: post
 title: L90_产品增长之道与创业新机遇
 date: 2025/10/11 11:07:00
 categories:
@@ -9,6 +8,7 @@ tags:
   - Growth
   - Strategy
   - AI
+series: Newsletter 周刊
 description: Linkloud 沙龙分享 AI 产品增长案例：Kuse.ai 通过 C2B 路径转型实现增长，PopAi 重 SEM 与长视频渠道策略，Fellou 创造 Agent Browser 新品类强调记忆能力。应用层创业公司应利用现有模型如 Gemini，认知与速度为核心壁垒而非自研。创始人需专注找细分用户与全球化视野。工具方面推荐 Huxe AI 播客与 Karakeep 网页收藏标签功能。
 ---
 

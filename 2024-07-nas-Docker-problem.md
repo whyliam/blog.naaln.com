@@ -1,5 +1,4 @@
 ---
-layout: post
 title: 群晖docker启动失败
 date: 2024/07/16 09:39:00
 categories:
@@ -8,7 +7,7 @@ tags:
   - Infrastructure
   - SystemDesign
   - Engineering
-description: 黑群晖升级后Docker启动失败，排查日志发现配置文件存在多余逗号，删除逗号并通过Web页面修复后启动成功。
+description: 黑群晖系统升级后Docker服务持续启动失败，修复按钮也无济于事。通过systemctl和journalctl逐步排查日志，定位到dockerd.json配置文件中JSON末尾多了一个逗号导致解析失败。参照另一台正常运行的群晖比对确认问题后，删除多余逗号并通过Web界面修复功能成功恢复Docker服务。整个排查过程展示了从系统日志定位配置错误的实用思路。
 ---
 
 今天瞎搞在黑群晖上点升级系统，没有提前关闭 docker，重启后 docker 一直启动失败，点击修复也会失败，排查了好久

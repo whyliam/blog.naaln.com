@@ -1,5 +1,4 @@
 ---
-layout: post
 title: 用户体验与产品设计的本质
 date: 2024/10/07 22:39:00
 categories:

@@ -1,5 +1,4 @@
 ---
-layout: post
 title: 搜索连接一切，微信成立搜索应用部
 date: 2017/05/02 22:14:56
 categories:

@@ -1,9 +1,8 @@
 ---
-layout: post
 title: 博客在于折腾
 date: 2016/06/19 15:15:59
 categories:
-  - Notes & Essays
+  - Notes & Reflections
 tags:
   - Writing
   - KnowledgeManagement

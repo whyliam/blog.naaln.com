@@ -1,5 +1,4 @@
 ---
-layout: post
 title: 实现侧滑效果 Swift
 date: 2017/04/03 23:04:06
 categories:

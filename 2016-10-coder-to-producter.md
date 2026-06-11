@@ -1,5 +1,4 @@
 ---
-layout: post
 title: 技术人员怎样转型成为产品经理？
 date: 2016/10/20 17:17:07
 categories:

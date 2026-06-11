@@ -1,9 +1,8 @@
 ---
-layout: post
 title: L2_新年计划
 date: 2023/01/08 20:00:00
 categories:
-  - Notes & Essays
+  - Notes & Reflections
 tags:
   - LifeDesign
   - EnergyManagement
@@ -11,6 +10,7 @@ tags:
   - CareerStrategy
   - LongTermism
 description: 每年制定净收益与净问题两列表管理习惯，进行能量审计识别工作活动能量赋予定位天才地带，迷茫时选择挑战路径学习问题。
+series: Newsletter 周刊
 ---
 
 很多朋友都在等着春节假期开始写新一年的规划，一起来看看别人是怎么规划的～

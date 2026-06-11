@@ -1,5 +1,4 @@
 ---
-layout: post
 title: '间隔年:骑行去西藏'
 date: 2013/10/15 21:12:00
 categories:
@@ -10,6 +9,8 @@ tags:
   - Observation
   - Youth
 description: 2012年5至6月，成都至拉萨骑行2200公里旅行记录，作者21岁间隔年骑行西藏经历。描述长途骑行过程中的感动和对青春梦想的思考，感慨当朋友们为生活奔波忙碌时，人最先老去的是不顾一切想走就走的心，强调趁年轻追求梦想的重要性。一次难忘的个人成长之旅和青春纪念。
+type: visual
+location: 西藏
 ---
 
 <embed src="http://player.youku.com/player.php/sid/XNDE1MTQ5NzY4/v.swf" allowFullScreen="true" quality="high" width="480" height="400" align="middle" allowScriptAccess="always" type="application/x-shockwave-flash" />

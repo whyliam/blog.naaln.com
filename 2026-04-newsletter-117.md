@@ -1,15 +1,15 @@
 ---
-layout: post
 title: L117_当能力开始外溢
 date: 2026/04/18 12:00:00
 categories:
-  - Notes & Essays
+  - Notes & Reflections
 tags:
   - AgenticAI
   - KnowledgeManagement
   - SystemsThinking
   - ProductThinking
   - Observation
+series: Newsletter 周刊
 description: Karpathy 提出了 LLM Wiki，让 AI 像维护代码库一样持续编写知识。从蒸馏隐性知识的两百年困境到 20 人团队估值 200 亿，AI 能力正在外溢，所有边界都在重新划定。
 ---
 ![](https://pics.naaln.com/2026-04-24-7971f4af2b5772cceb088f69a9c20c2c.webp-basicBlog)

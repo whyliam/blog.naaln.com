@@ -1,5 +1,4 @@
 ---
-layout: post
 title: 2024 Mac Software
 date: 2024/08/25 09:39:00
 categories:

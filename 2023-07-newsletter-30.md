@@ -1,15 +1,15 @@
 ---
-layout: post
 title: L30_目标让我们焦虑，而愿景让我们笃定
 date: 2023/07/23 20:00:00
 categories:
-  - Notes & Essays
+  - Notes & Reflections
 tags:
   - LongTermism
   - SystemsThinking
   - PersonalGrowth
   - Entropy
   - CollectiveIntelligence
+series: Newsletter 周刊
 description: 通过探索天赋与兴趣，利用好奇心和欲望驱动，设定最高标准思考人类未来需求；从熵理论解释行业混乱与机会，最成功企业用新技术处理混乱并借助聚合模型捕捉供应熵；如道格·恩格尔巴特以长期愿景利用集体智慧提升人类能力，推动更好世界。
 ---
 

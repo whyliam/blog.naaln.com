@@ -1,5 +1,4 @@
 ---
-layout: post
 title: 《精准表达》的笔记
 date: 2022/01/20 20:00:00
 categories:

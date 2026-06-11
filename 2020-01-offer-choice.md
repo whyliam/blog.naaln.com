@@ -1,5 +1,4 @@
 ---
-layout: post
 title: 选择 Offer
 date: 2020/01/12 20:00:00
 categories:

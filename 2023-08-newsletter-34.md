@@ -1,5 +1,4 @@
 ---
-layout: post
 title: L34_找到靠谱的合伙人
 date: 2023/08/20 20:00:00
 categories:
@@ -9,6 +8,7 @@ tags:
   - Organization
   - DecisionMaking
   - CriticalThinking
+series: Newsletter 周刊
 description: 讨论评估可靠合作伙伴的方法：包括行业经验、自我认知、执行能力等要素；推广Nerds社交策略以建立记忆、互助和交流；列出不受欢迎想法如完全透明社会等，鼓励批判性思维以挑战常规。
 ---
 

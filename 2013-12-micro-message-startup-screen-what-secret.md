@@ -1,5 +1,4 @@
 ---
-layout: post
 title: 微信启动画面有什么隐秘
 date: 2013/12/15 07:59:00
 categories:

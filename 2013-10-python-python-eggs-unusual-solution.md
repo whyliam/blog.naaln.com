@@ -1,5 +1,4 @@
 ---
-layout: post
 title: python python-eggs 异常解决方法
 date: 2013/10/04 09:23:00
 categories:

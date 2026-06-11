@@ -1,5 +1,4 @@
 ---
-layout: post
 title: 关于朋友圈语音
 date: 2015/03/05 02:51:00
 categories:

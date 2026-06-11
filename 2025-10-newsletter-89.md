@@ -1,9 +1,8 @@
 ---
-layout: post
 title: L89_就业冲击与创业自由
 date: 2025/10/04 11:07:00
 categories:
-  - Notes & Essays
+  - Notes & Reflections
 tags:
   - AI
   - Agent
@@ -11,6 +10,7 @@ tags:
   - Career
   - Newsletter
 description: 本文汇集创业、AI、职场与工具四类前沿内容：创业者应将宏大理想转化为可执行闭环问题；新型短信AI代理通过谈判式引导并突破定价；研究显示AI在招聘市场显著冲击初级岗位；阶跃AI推出桌面伙伴实现系统级任务自动化；宏观层面SamAltman计划每周建造千兆瓦级AI设施，IT行业薪酬结构正剧变。
+series: Newsletter 周刊
 ---
 
 ![L89_就业冲击与创业自由](https://pics.naaln.com/202510091536993.png-basicBlog)

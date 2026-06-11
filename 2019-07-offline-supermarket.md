@@ -1,5 +1,4 @@
 ---
-layout: post
 title: 线上电商线下化
 date: 2019/07/13 20:00:00
 categories:

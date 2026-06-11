@@ -1,5 +1,4 @@
 ---
-layout: post
 title: OpenGL中如何绘制Bezier曲线和NURBS曲线
 date: 2013/04/03 01:37:00
 categories:

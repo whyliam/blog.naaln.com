@@ -1,5 +1,4 @@
 ---
-layout: post
 title: '移动端用户体验:底部导航'
 date: 2016/12/15 22:30:37
 categories:

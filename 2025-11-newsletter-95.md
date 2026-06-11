@@ -1,5 +1,4 @@
 ---
-layout: post
 title: L95_独角兽的管理法则
 date: 2025/11/15 20:00:00
 categories:
@@ -10,6 +9,7 @@ tags:
   - ProductThinking
   - AI
   - DecisionMaking
+series: Newsletter 周刊
 description: AI 独角兽 ElevenLabs 的高效团队管理法则、速度在职场中的决定性作用，以及对 AI 泡沫背后价值的深度思考，推荐了创业者将 AI 融入传统产品的成功案例。
 ---
 

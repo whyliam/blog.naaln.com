@@ -1,14 +1,14 @@
 ---
-layout: post
 title: L52_主动提升自我
 date: 2023/12/24 20:00:00
 categories:
-  - Notes & Essays
+  - Notes & Reflections
 tags:
   - KnowledgeManagement
   - Learning
   - Life
   - SystemsThinking
+series: Newsletter 周刊
 description: 文章提出有目的地筛选信息与目标驱动的学习方式；揭示衰老导致的生理衰退包括脑萎缩、血管硬化与高血压；阐述四种笔记心态生产力、好奇、想象、反思，并介绍对应工具的适用场景。
 ---
 

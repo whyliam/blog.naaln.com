@@ -1,5 +1,4 @@
 ---
-layout: post
 title: L121_意图驱动时代，我们该相信什么
 date: 2026/05/18 10:30:00
 categories:
@@ -10,6 +9,7 @@ tags:
   - UserExperience
   - SystemDesign
   - ProductThinking
+series: Newsletter 周刊
 description: Jakob Nielsen 提出意图驱动 UX 新范式，JetBrains Air 开启多 Agent 编排时代，Notion Agent 跳票一年后成转化率最高功能，小红书四年 AI 转型的摇摆与坚持
 ---
 

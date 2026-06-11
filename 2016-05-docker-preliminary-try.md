@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Docker 初步试玩
 date: 2016/05/19 22:13:49
 categories:

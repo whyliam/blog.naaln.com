@@ -1,9 +1,8 @@
 ---
-layout: post
 title: 信息源
 date: 2023/01/04 20:00:00
 categories:
-  - Notes & Essays
+  - Notes & Reflections
 tags:
   - KnowledgeManagement
   - Newsletter

@@ -1,9 +1,8 @@
 ---
-layout: post
 title: 为什么我总觉得自己没有梦想
 date: 2026/04/13 21:00:00
 categories:
-  - Notes & Essays
+  - Notes & Reflections
 tags:
   - LongTermism
   - ProductThinking

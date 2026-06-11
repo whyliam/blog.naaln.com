@@ -1,9 +1,8 @@
 ---
-layout: post
 title: 多么痛的领悟
 date: 2013/04/28 10:06:00
 categories:
-  - Notes & Essays
+  - Notes & Reflections
 tags:
   - Life
   - Observation

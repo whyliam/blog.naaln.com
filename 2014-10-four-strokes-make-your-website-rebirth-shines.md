@@ -1,5 +1,4 @@
 ---
-layout: post
 title: 四招让你的网站「重获新生眼前一亮」
 date: 2014/10/20 02:14:10
 categories:

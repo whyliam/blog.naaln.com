@@ -1,9 +1,10 @@
 ---
-layout: post
 title: Ruby简介 （附手绘板书）
 date: 2013/05/17 12:16:00
 categories:
-  - Notes & Essays
+  - Notes & Reflections
+description: Ruby 编程语言入门介绍，附手绘板书讲解，涵盖语言特性与学习路径。
+
 tags:
   - Learning
   - SystemsThinking

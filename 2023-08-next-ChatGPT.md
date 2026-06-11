@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Next After ChatGPT
 date: 2023/08/26 20:00:00
 categories:

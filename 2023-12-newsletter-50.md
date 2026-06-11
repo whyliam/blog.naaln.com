@@ -1,14 +1,14 @@
 ---
-layout: post
 title: L50_自我增强独立思考的能力
 date: 2023/12/10 20:00:00
 categories:
-  - Notes & Essays
+  - Notes & Reflections
 tags:
   - KnowledgeManagement
   - DecisionMaking
   - SystemsThinking
   - Learning
+series: Newsletter 周刊
 description: 记笔记是信息预处理，通过用自己的话整理、标签建立网络和回顾内化来帮助未来解决问题；提高工作效率应做正确的事、选择热爱领域与积极同事并列出清单；提升决策质量需深思熟虑而非加快思考速度，培养认知模式和专注力。
 ---
 

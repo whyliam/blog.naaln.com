@@ -1,5 +1,4 @@
 ---
-layout: post
 title: 工具的极致是平台：从微信的设计哲学谈起
 date: 2024/10/07 22:39:00
 categories:

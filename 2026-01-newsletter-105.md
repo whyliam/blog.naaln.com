@@ -1,15 +1,15 @@
 ---
-layout: post
 title: L105_不如先过好混乱的这一天
 date: 2026/01/23 20:53:11
 categories:
-  - Notes & Essays
+  - Notes & Reflections
 tags:
   - Newsletter
   - KnowledgeManagement
   - SystemsThinking
   - Life
   - Observation
+series: Newsletter 周刊
 description: 2026年第4封Newsletter。本期探讨在人生转换期如何接受混乱，而非追求完美秩序；分享知识管理的行动导向原则，个人改变的身份重构，以及市场寒冬中的职业策略。收录CES 2026观察、AI视频创作等内容。
 ---
 ![](https://pics.naaln.com/2026-01-22-ca0028cfd59e38a6613264ac7584d50c.webp-basicBlog)

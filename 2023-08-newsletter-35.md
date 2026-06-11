@@ -1,15 +1,15 @@
 ---
-layout: post
 title: L35_无知是不可避免的
 date: 2023/08/27 20:00:00
 categories:
-  - Notes & Essays
+  - Notes & Reflections
 tags:
   - CognitiveBiases
   - DecisionMaking
   - Entrepreneurship
   - SelfAwareness
   - Life
+series: Newsletter 周刊
 description: 人类无知是不可避免的状态，邓宁克鲁格效应显示表现最差的人往往最高估自身能力，无知会塑造我们的人生方向并限制可能性发挥。企业家精神不是成为企业家后才具备，而是在成为企业家前就存在，企业家不是解既定方程而是改变约束条件发现创造新数据，市场是发现和创造过程。人类的主要职业是逃避此刻的事务，练习不逃避可通过减少手机使用远离电脑多思考困难任务推迟信息回复戒除上瘾品等方式，当我们切断逃避路径就能面对内心不想面
 ---
 

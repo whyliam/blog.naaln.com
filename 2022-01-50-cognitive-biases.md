@@ -1,9 +1,8 @@
 ---
-layout: post
 title: 50种认知偏差
 date: 2022/01/08 20:00:00
 categories:
-  - Notes & Essays
+  - Notes & Reflections
 tags:
   - CognitiveBiases
   - KnowledgeManagement

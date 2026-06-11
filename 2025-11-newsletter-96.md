@@ -1,5 +1,4 @@
 ---
-layout: post
 title: L96_Firefox 的衰落与英伟达的 AI 野心
 date: 2025/11/22 20:00:00
 categories:
@@ -10,6 +9,7 @@ tags:
   - AI
   - Ecosystem
   - ProductThinking
+series: Newsletter 周刊
 description: Firefox 从 32% 市场份额跌至 3% 的衰落历程，分析职业规划中「离钱近」的重要性，以及英伟达如何通过投资布局打造 AI 时代的操作系统生态。
 ---
 ![](https://pics.naaln.com/202511211446402.png-basicBlog)

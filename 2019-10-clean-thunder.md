@@ -1,5 +1,4 @@
 ---
-layout: post
 title: 清理迅雷的各种垃圾功能
 date: 2019/10/07 20:00:00
 categories:

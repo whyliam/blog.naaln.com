@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Apache Solr
 date: 2013/10/08 06:18:00
 categories:

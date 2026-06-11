@@ -1,9 +1,8 @@
 ---
-layout: post
 title: L110_繁荣背后的经济危机与职业未来
 date: 2026/02/28 01:57:58
 categories:
-  - Notes & Essays
+  - Notes & Reflections
 tags:
   - AI
   - FutureOfWork
@@ -11,6 +10,7 @@ tags:
   - Automation
   - KnowledgeManagement
 description: 探讨 AI 成功可能带来的经济悖论——当机器替代白领，消费货币消失，金融体系面临何种危机？同时分享吴恩达对 AI 与就业的乐观观点，以及懒人去水印等实用工具推荐。
+series: Newsletter 周刊
 ---
 ![](https://pics.naaln.com/2026-03-08-65b9c34494694355b13d8469788fa6ba.png-basicBlog)
 

@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Gartner预测2015年十大IT趋势
 date: 2014/10/19 22:08:00
 categories:

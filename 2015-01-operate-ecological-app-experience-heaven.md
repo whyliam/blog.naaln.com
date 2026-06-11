@@ -1,5 +1,4 @@
 ---
-layout: post
 title: 运营或生态链没做好，APP 体验就算好上天也白搭
 date: 2015/01/28 08:39:00
 categories:

@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Hexo集成Algolia搜索插件
 date: 2016/07/04 13:25:43
 categories:

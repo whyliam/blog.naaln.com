@@ -1,9 +1,8 @@
 ---
-layout: post
 title: 阅读困境：广泛阅读还是按需获取？
 date: 2024/11/10 22:31:00
 categories:
-  - Notes & Essays
+  - Notes & Reflections
 tags:
   - KnowledgeManagement
   - Learning

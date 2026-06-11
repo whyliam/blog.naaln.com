@@ -1,5 +1,4 @@
 ---
-layout: post
 title: 供应 管理 销售
 date: 2016/07/02 15:12:56
 categories:

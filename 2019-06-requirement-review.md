@@ -1,5 +1,4 @@
 ---
-layout: post
 title: 需求评审的流程
 date: 2019/06/12 20:00:00
 categories:

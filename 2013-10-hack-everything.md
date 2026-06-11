@@ -1,9 +1,8 @@
 ---
-layout: post
 title: Hack, Everything!
 date: 2013/10/13 12:41:00
 categories:
-  - Notes & Essays
+  - Notes & Reflections
 tags:
   - SystemsThinking
   - FirstPrinciples

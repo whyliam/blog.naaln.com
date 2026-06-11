@@ -1,14 +1,14 @@
 ---
-layout: post
 title: L107_主动阅读系统与互联网交互的未来
 date: 2026/02/07 01:57:41
 categories:
-  - Notes & Essays
+  - Notes & Reflections
 tags:
   - KnowledgeManagement
   - AgenticAI
   - SystemsThinking
   - Observation
+series: Newsletter 周刊
 description: 本期探讨如何从被动接收转向主动干预的阅读系统，通过空白页法和教给他人提升知识留存率。深入分析精神病学中时间断裂的哲学意义，以及互联网交互从图形界面向API和Agent的转变趋势，揭示当内容被剥离后互联网演变为角斗场的本质。
 ---
 ![](https://pics.naaln.com/2026-02-06-58a75825228a0cc88c1ee981d7486945.webp-basicBlog)

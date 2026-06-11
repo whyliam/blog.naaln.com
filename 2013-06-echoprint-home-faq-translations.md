@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Echoprint Home / FAQ （翻译）
 date: 2013/06/17 12:01:00
 categories:

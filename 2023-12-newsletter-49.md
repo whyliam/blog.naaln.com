@@ -1,9 +1,9 @@
 ---
-layout: post
 title: L49_权力从劳动力转移到资本
 date: 2023/12/03 20:00:00
 categories:
-  - Notes & Essays
+  - Notes & Reflections
+series: Newsletter 周刊
 tags:
   - KnowledgeManagement
   - AI

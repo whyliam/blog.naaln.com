@@ -1,9 +1,8 @@
 ---
-layout: post
 title: 送给程序员：关于性格内向者的10个误解
 date: 2013/11/24 05:18:00
 categories:
-  - Notes & Essays
+  - Notes & Reflections
 tags:
   - Cognition
   - SelfAwareness

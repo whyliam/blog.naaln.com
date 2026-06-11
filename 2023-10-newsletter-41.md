@@ -1,9 +1,9 @@
 ---
-layout: post
 title: L41_做出令人印象深刻的事情
 date: 2023/10/08 20:00:00
 categories:
-  - Notes & Essays
+  - Notes & Reflections
+series: Newsletter 周刊
 tags:
   - TimeLeverage
   - PersonalBrand

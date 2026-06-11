@@ -1,5 +1,4 @@
 ---
-layout: post
 title: 豆瓣小组 与 机器学习
 date: 2019/04/07 11:30:53
 categories:

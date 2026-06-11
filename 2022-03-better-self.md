@@ -1,9 +1,8 @@
 ---
-layout: post
 title: 借假修真 借事修人
 date: 2022/03/18 20:00:00
 categories:
-  - Notes & Essays
+  - Notes & Reflections
 tags:
   - LongTermism
   - SelfDiscovery

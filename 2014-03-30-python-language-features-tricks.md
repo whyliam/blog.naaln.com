@@ -1,5 +1,4 @@
 ---
-layout: post
 title: 30个关于Python的你有所不知语言特效和技巧
 date: 2014/03/20 23:30:00
 categories:

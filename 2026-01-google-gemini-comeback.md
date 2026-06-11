@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Google Gemini 的逆袭之路：从承认落后到重新定义 AI
 date: 2026/01/09 17:40:00
 categories:

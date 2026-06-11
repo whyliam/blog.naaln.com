@@ -1,5 +1,4 @@
 ---
-layout: post
 title: L104_站在进化的十字路口
 date: 2026/01/17 04:53:11
 categories:
@@ -10,6 +9,7 @@ tags:
   - Infrastructure
   - FutureOfWork
   - Strategy
+series: Newsletter 周刊
 description: 探讨2026年的商业思维重构、AI原生软件时代以及能源决定AI竞赛的未来
 ---
 

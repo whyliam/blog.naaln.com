@@ -1,9 +1,8 @@
 ---
-layout: post
 title: TED 当下的你和未来的你的战争
 date: 2013/05/04 03:41:00
 categories:
-  - Notes & Essays
+  - Notes & Reflections
 tags:
   - DecisionMaking
   - CognitiveBiases

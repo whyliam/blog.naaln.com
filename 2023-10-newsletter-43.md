@@ -1,9 +1,9 @@
 ---
-layout: post
 title: L43_生活中最难的阶段是不懂自己
 date: 2023/10/22 20:00:00
 categories:
-  - Notes & Essays
+  - Notes & Reflections
+series: Newsletter 周刊
 tags:
   - SelfAwareness
   - Philosophy

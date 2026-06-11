@@ -1,9 +1,8 @@
 ---
-layout: post
 title: 聊一些心理学中的信任
 date: 2019/08/04 20:00:00
 categories:
-  - Notes & Essays
+  - Notes & Reflections
 tags:
   - Trust
   - Psychology

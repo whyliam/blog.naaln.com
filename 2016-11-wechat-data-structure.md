@@ -1,5 +1,4 @@
 ---
-layout: post
 title: iOS 微信的本地存储结构简析
 date: 2016/11/24 09:30:24
 categories:

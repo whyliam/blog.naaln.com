@@ -1,9 +1,8 @@
 ---
-layout: post
 title: 入门篇图表练习
 date: 2017/03/03 20:55:03
 categories:
-  - Notes & Essays
+  - Notes & Reflections
 tags:
   - DataVisualization
   - Learning

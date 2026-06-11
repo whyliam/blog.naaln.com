@@ -1,5 +1,4 @@
 ---
-layout: post
 title: iOS微信重磅更新，迎来了「微信小游戏」
 date: 2017/12/28 19:53:05
 categories:

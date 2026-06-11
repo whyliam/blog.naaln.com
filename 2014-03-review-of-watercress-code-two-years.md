@@ -1,5 +1,4 @@
 ---
-layout: post
 title: 豆瓣 CODE 两年历程回顾
 date: 2014/03/19 08:43:00
 categories:

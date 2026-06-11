@@ -1,5 +1,4 @@
 ---
-layout: post
 title: 你真的会需求挖掘吗
 date: 2019/05/14 20:00:00
 categories:

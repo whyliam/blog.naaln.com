@@ -1,5 +1,4 @@
 ---
-layout: post
 title: 如何不给红包就看朋友圈照片
 date: 2016/01/26 10:19:00
 categories:

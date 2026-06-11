@@ -1,14 +1,14 @@
 ---
-layout: post
 title: L39_正确选择解决的问题
 date: 2023/09/24 20:00:00
 categories:
-  - Notes & Essays
+  - Notes & Reflections
 tags:
   - Learning
   - DecisionMaking
   - CognitiveBiases
   - ResearchMethodology
+series: Newsletter 周刊
 description: 成功核心在正确问题选择与持续进步，通过批判阅读与讨论磨炼问题品味，目标驱动研究防止创意冲突并激励团队，目标远大优先个人成长如教科书阅读；启发式策略涵盖代表性可得性锚定调整；预期理论解释风险偏好框架效应灵敏度递减；邓巴数150源于人类新皮层比例关联灵长类梳毛行为，语言替代梳毛提升交流效率并用于八卦社交管理建立信任
 ---
 

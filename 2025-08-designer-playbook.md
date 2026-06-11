@@ -1,5 +1,4 @@
 ---
-layout: post
 title: 新设计师生存手册：如何在AI时代蓬勃发展
 date: 2025/08/24 20:00:00
 categories:

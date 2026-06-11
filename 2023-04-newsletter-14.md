@@ -1,15 +1,15 @@
 ---
-layout: post
 title: L14_拥抱新技能和知识
 date: 2023/04/01 20:00:00
 categories:
-  - Notes & Essays
+  - Notes & Reflections
 tags:
   - Learning
   - AI
   - ProductThinking
   - SystemsThinking
 description: 人工智能领域持续学习的重要性，得到保罗和格雷格的例子说明，强调接受菜鸟身份的益处；指出传统集体头脑风暴浪费时间，提出通过问题头脑风暴提升协作与降低风险的具体步骤；最后解释双边市场的定义与核心要素，包括外部性、收费方式以及单归多归行为对平台竞争的影响。
+series: Newsletter 周刊
 ---
 
 - 在 AI 领域，不断学习是必须的。即使我们被视为菜鸟，也必须接受新技能和知识，以适应新的环境。虽然在这个过程中可能会遇到更多挫折和失败，但我们也可以从失败中汲取经验，变得更加谦虚和适应，并最终获得成功。

@@ -1,5 +1,4 @@
 ---
-layout: post
 title: 升级 xcode 7 到 xcode 8
 date: 2016/09/17 20:14:20
 categories:

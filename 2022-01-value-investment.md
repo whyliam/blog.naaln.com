@@ -1,5 +1,4 @@
 ---
-layout: post
 title: 价值投资
 date: 2022/01/29 20:00:00
 categories:

@@ -1,5 +1,4 @@
 ---
-layout: post
 title: L115_从电力革命到Agent时代：我们该重新设计工厂了
 date: 2026/04/04 20:52:31
 categories:
@@ -11,6 +10,7 @@ tags:
   - Strategy
   - DecisionMaking
 description: AI 编程正在从执行变成指挥，审美成为最后的护城河。从电力革命的 40 年时滞看 AI，换电机不等于重新设计工厂，个体生产力翻倍不等于组织价值翻倍。
+series: Newsletter 周刊
 ---
 ![](https://pics.naaln.com/2026-04-08-abba4d4a978c49829ae6e56a2aa7269c.png-basicBlog)
 

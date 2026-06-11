@@ -1,9 +1,9 @@
 ---
-layout: post
 title: L46_寻找适合自己的方式最重要
 date: 2023/11/12 20:00:00
 categories:
   - Product & Intelligence
+series: Newsletter 周刊
 tags:
   - DecisionMaking
   - ProductThinking

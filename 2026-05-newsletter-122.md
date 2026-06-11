@@ -1,14 +1,14 @@
 ---
-layout: post
 title: L122_当工具开始消亡
 date: 2026/05/31 10:00:00
 categories:
-  - Notes & Essays
+  - Notes & Reflections
 tags:
   - Newsletter
   - AI
   - Tooling
   - Product
+series: Newsletter 周刊
 description: Motiff关停、妙鸭解散，AI正在吞噬自己催生的工具。但真正有意思的不是谁死了，而是谁在这片废墟上长出了新东西。
 ---
 

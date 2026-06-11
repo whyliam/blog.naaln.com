@@ -1,5 +1,4 @@
 ---
-layout: post
 title: L119_缰绳与偷懒的模型
 date: 2026/05/06 10:00:00
 categories:
@@ -10,6 +9,7 @@ tags:
   - ProductThinking
   - Workflow
   - Newsletter
+series: Newsletter 周刊
 description: Notion 用软件工厂模式重构了 AI 智能体开发范式，而模型在长上下文中主动选择偷懒的发现，让 Harness Engineering 的缰绳理论面临尴尬。AI 硬件出海、Claude Design 冲击 Figma、以及速溶咖啡的百年发明史——这期的主题是：当工具越来越聪明，我们该学会什么时候收手。
 ---
 ![](https://pics.naaln.com/2026-05-10-1d322087efcc4539a49306ff8ec25462.png-basicBlog)

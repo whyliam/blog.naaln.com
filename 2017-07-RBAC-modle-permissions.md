@@ -1,5 +1,4 @@
 ---
-layout: post
 title: RBAC权限管理模型
 date: 2017/07/11 23:10:12
 categories:

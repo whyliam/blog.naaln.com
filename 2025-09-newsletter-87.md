@@ -1,5 +1,4 @@
 ---
-layout: post
 title: L87_从卖时间到建系统
 date: 2025/09/17 17:12:00
 categories:
@@ -11,6 +10,7 @@ tags:
   - Automation
   - KnowledgeManagement
 description: 摆脱线性时间型收入，构建在睡觉时也能产生价值的系统与资产，通过代码与媒体等可扩展杠杆建立一对多事业与核心专长，跨领域融合形成壁垒并转化为持久财富。文中阐述AI时代人机共创下的角色分工，人类负责宏观方向与隐性上下文监督，AI负责高效执行与透明过程与补充建议，同时强调「上下文工程」已成为Agent的关键胜负手，围绕转移、压缩、检索、隔离、缓存等策略管理上下文窗口与成本，以应对工具调用与长程推理带来的冗
+series: Newsletter 周刊
 ---
 
 ![L87_从卖时间到建系统](https://pics.naaln.com/2025-09-22-1a4c2283176e466094ea63abbd44b75b.png-basicBlog)

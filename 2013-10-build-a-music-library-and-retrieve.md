@@ -1,5 +1,4 @@
 ---
-layout: post
 title: 构建音乐库并进行检索
 date: 2013/10/04 21:00:00
 categories:

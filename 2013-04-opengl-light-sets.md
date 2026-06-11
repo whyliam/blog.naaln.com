@@ -1,9 +1,8 @@
 ---
-layout: post
 title: OpenGL中光照的设置
 date: 2013/04/03 01:57:00
 categories:
-  - Notes & Essays
+  - Notes & Reflections
 tags:
   - Learning
   - Engineering

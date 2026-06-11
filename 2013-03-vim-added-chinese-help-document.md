@@ -1,5 +1,4 @@
 ---
-layout: post
 title: VIM添加中文帮助文档
 date: 2013/03/31 20:00:00
 categories:

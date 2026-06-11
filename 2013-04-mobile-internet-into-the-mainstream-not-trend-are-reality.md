@@ -1,5 +1,4 @@
 ---
-layout: post
 title: 移动互联成主流不是趋势是现实
 date: 2013/04/24 11:39:00
 categories:

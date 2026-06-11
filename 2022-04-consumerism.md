@@ -1,5 +1,4 @@
 ---
-layout: post
 title: 消费品杂想
 date: 2022/03/31 20:00:00
 categories:

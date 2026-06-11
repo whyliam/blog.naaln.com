@@ -1,5 +1,4 @@
 ---
-layout: post
 title: MATLAB读取音频文件并进行音频特征提取
 date: 2013/08/02 00:08:00
 categories:

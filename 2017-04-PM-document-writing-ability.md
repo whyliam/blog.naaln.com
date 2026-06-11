@@ -1,5 +1,4 @@
 ---
-layout: post
 title: 产品经理的文档撰写能力
 date: 2017/04/20 17:59:07
 categories:

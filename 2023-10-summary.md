@@ -1,9 +1,8 @@
 ---
-layout: post
 title: 10月小结｜悬浮在空中
 date: 2023/10/30 20:00:00
 categories:
-  - Notes & Essays
+  - Notes & Reflections
 tags:
   - Observation
   - Life

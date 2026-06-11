@@ -1,5 +1,4 @@
 ---
-layout: post
 title: 有赞产品基本原则
 date: 2019/08/17 20:00:00
 categories:

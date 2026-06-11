@@ -1,5 +1,4 @@
 ---
-layout: post
 title: 音乐指纹 - 算法的框架
 date: 2013/08/15 20:44:00
 categories:

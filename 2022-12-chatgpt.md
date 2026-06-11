@@ -1,5 +1,4 @@
 ---
-layout: post
 title: ChatGPT 的发展
 date: 2022/12/12 20:00:00
 categories:

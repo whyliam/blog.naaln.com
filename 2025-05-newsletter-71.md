@@ -1,5 +1,4 @@
 ---
-layout: post
 title: L71_人工智能创新加速
 date: 2025/05/30 20:00:00
 categories:
@@ -10,6 +9,7 @@ tags:
   - Infrastructure
   - OpenSource
   - Strategy
+series: Newsletter 周刊
 description: 人工智能从概念演变为基础技术，2025年关键趋势包括自主智能体崛起、多模态AI和开源动态，前沿模型如GPT-5、Claude 4和DeepSeek R1-0528，经济影响显著。
 ---
 

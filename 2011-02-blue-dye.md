@@ -1,9 +1,8 @@
 ---
-layout: post
 title: 蓝染
 date: 2011/02/28 19:00:00
 categories:
-  - Notes & Essays
+  - Notes & Reflections
 tags:
   - Writing
   - Observation

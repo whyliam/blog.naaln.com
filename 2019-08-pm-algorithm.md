@@ -1,5 +1,4 @@
 ---
-layout: post
 title: 产品经理需要了解哪些个性化推荐和热度算法
 date: 2019/08/03 20:00:00
 categories:

@@ -1,5 +1,4 @@
 ---
-layout: post
 title: L73_技术迭代加速
 date: 2025/06/13 20:00:00
 categories:
@@ -10,6 +9,7 @@ tags:
   - OpenSource
   - AgenticAI
   - Observation
+series: Newsletter 周刊
 description: AI技术快速迭代，o3Pro、AlphaZero、MuZero、AlphaDev、Claude4、Sora、Veo3等突破；苹果WWDC25与OpenAI合作，字节Seedance10、微软Bing视频生成推进；开源Qwen3、AutoThink、MiMoVL、DeepResearch；特斯拉质检、讯飞机器人、水利标准AI、房地产Agent落地；SamAltman倡议马上行动，潘云鹤寄语创业。
 ---
 

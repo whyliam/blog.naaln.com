@@ -1,9 +1,8 @@
 ---
-layout: post
 title: 岂是蓬蒿人
 date: 2020/01/08 20:00:00
 categories:
-  - Notes & Essays
+  - Notes & Reflections
 tags:
   - Career
   - Organization

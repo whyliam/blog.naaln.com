@@ -1,9 +1,8 @@
 ---
-layout: post
 title: 不好意思，你想要的太多了
 date: 2013/12/21 23:46:00
 categories:
-  - Notes & Essays
+  - Notes & Reflections
 tags:
   - LifeChoices
   - TradeOffs

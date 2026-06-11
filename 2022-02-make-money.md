@@ -1,5 +1,4 @@
 ---
-layout: post
 title: 如何正确的搞钱
 date: 2022/02/20 20:00:00
 categories:

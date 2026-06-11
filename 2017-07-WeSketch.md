@@ -1,5 +1,4 @@
 ---
-layout: post
 title: 5分钟了解微信的 WeSketch
 date: 2017/07/09 09:50:04
 categories:

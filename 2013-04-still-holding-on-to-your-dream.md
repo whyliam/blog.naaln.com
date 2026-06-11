@@ -1,9 +1,8 @@
 ---
-layout: post
 title: 还在坚持你的梦想吗？
 date: 2013/04/26 05:40:00
 categories:
-  - Notes & Essays
+  - Notes & Reflections
 tags:
   - Life
   - Observation

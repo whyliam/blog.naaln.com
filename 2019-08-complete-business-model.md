@@ -1,5 +1,4 @@
 ---
-layout: post
 title: 产品的完整商业模式
 date: 2019/08/08 20:00:00
 categories:

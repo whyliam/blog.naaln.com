@@ -1,9 +1,8 @@
 ---
-layout: post
 title: 把兴趣当职业，快感无可比拟，不过通常挫败多
 date: 2014/07/06 08:45:00
 categories:
-  - Notes & Essays
+  - Notes & Reflections
 tags:
   - Career
   - LongTermism

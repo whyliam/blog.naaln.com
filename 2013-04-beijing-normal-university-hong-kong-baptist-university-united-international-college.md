@@ -1,9 +1,8 @@
 ---
-layout: post
 title: 北京师范大学-香港浸会大学联合国际学院
 date: 2013/04/13 09:30:00
 categories:
-  - Notes & Essays
+  - Notes & Reflections
 tags:
   - Education
   - CampusLife

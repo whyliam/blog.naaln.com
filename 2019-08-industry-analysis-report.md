@@ -1,5 +1,4 @@
 ---
-layout: post
 title: 行业分析报告怎么写
 date: 2019/08/07 20:00:00
 categories:

@@ -1,5 +1,4 @@
 ---
-layout: post
 title: 你的下一个商业创意，正藏在每日的抱怨中
 date: 2025/10/24 17:58:00
 categories:

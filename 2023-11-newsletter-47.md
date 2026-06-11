@@ -1,9 +1,9 @@
 ---
-layout: post
 title: L47_整体性的人类社会仍在进步
 date: 2023/11/19 20:00:00
 categories:
-  - Notes & Essays
+  - Notes & Reflections
+series: Newsletter 周刊
 tags:
   - SystemsThinking
   - KnowledgeManagement

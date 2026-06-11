@@ -1,9 +1,8 @@
 ---
-layout: post
 title: 博客的开篇
 date: 2013/03/31 06:29:00
 categories:
-  - Notes & Essays
+  - Notes & Reflections
 tags:
   - Writing
   - Life

@@ -1,5 +1,4 @@
 ---
-layout: post
 title: 产品经理职责与要求
 date: 2019/04/01 20:30:53
 categories:

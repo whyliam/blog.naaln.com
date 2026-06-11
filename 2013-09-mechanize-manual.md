@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Mechanize使用手册
 date: 2013/09/10 20:09:00
 categories:

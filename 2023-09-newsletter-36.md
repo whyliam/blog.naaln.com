@@ -1,14 +1,14 @@
 ---
-layout: post
 title: L36_反时间管理
 date: 2023/09/03 20:00:00
 categories:
-  - Notes & Essays
+  - Notes & Reflections
 tags:
   - Writing
   - CognitiveBiases
   - Life
   - Observation
+series: Newsletter 周刊
 description: 现代学术界忽视道德成长，使情绪主义蔓延；写作需区分思考结构与表达结构，避免专业术语和复杂句式的知识诅咒；传统时间管理将个人时间交给他人控制，反时间管理旨在重新掌控时间并创造空间。
 ---
 

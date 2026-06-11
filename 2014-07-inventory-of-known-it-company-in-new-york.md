@@ -1,5 +1,4 @@
 ---
-layout: post
 title: 纽约知名IT公司盘点
 date: 2014/07/18 12:28:00
 categories:

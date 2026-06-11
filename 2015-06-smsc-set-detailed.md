@@ -1,5 +1,4 @@
 ---
-layout: post
 title: smsc设置
 date: 2015/06/25 13:52:00
 categories:

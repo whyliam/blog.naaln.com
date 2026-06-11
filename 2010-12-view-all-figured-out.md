@@ -1,9 +1,8 @@
 ---
-layout: post
 title: 等到风景都看透
 date: 2010/12/26 19:00:00
 categories:
-  - Notes & Essays
+  - Notes & Reflections
 tags:
   - Life
   - Observation

@@ -1,9 +1,8 @@
 ---
-layout: post
 title: 不乱于心 不困于情 不畏将来 不念过往
 date: 2013/04/04 20:00:00
 categories:
-  - Notes & Essays
+  - Notes & Reflections
 tags:
   - Life
   - Writing

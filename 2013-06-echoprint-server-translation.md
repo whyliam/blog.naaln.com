@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Echoprint Server （翻译）
 date: 2013/06/17 12:07:00
 categories:

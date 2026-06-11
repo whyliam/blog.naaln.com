@@ -1,5 +1,4 @@
 ---
-layout: post
 title: 「世界模型」的深刻革命
 date: 2025/11/07 09:37:00
 categories:

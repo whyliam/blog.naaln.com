@@ -1,9 +1,9 @@
 ---
-layout: post
 title: L40_量化知识来证明自己
 date: 2023/10/01 20:00:00
 categories:
-  - Notes & Essays
+  - Notes & Reflections
+series: Newsletter 周刊
 tags:
   - Signaling
   - ProductThinking

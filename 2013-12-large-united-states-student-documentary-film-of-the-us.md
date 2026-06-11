@@ -1,5 +1,4 @@
 ---
-layout: post
 title: 大型美国留学生纪录片《Us》
 date: 2013/12/08 08:47:01
 categories:
@@ -10,6 +9,8 @@ tags:
   - Observation
   - Life
 description: 真实的美国留学生纪录片，横跨东西海岸，历时一年半，呈现数十位在美小有成就的华人，述说留学苦与乐，帮助观者判断是否改变出国留学的想法。
+type: visual
+location: 美国
 ---
 
 <embed src="http://player.56.com/v_MTAxMjY5MDMx.swf" type="application/x-shockwave-flash" width="480" height="405" allowfullscreen="true" allownetworking="all" allowscriptaccess="always" />
