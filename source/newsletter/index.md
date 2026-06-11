@@ -32,7 +32,7 @@ facts:
 
 contact:
   - { label: 'RSS · 最轻量的订阅方式',           url: '/atom.xml' }
-  - { label: '历史 Newsletter 归档',             url: '/categories/Newsletter/' }
+  - { label: '历史 Newsletter 归档',             url: '/series/newsletter-周刊/' }
   - { label: '在 X 上关注短想法',                url: 'https://twitter.com/' }
   - { label: '即刻 · 中文社区',                  url: 'https://web.okjike.com/' }
 ---

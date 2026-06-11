@@ -1,190 +1,172 @@
-# Aether scheme — production alt-config for blog.naaln.com
-# Run: hexo --config _config.yml,_config.aether.yml s
-# (deploy): hexo --config _config.yml,_config.aether.yml g -d
-#
-# This file merges into the site _config.yml at build time.
-# `theme_config:` keys override the theme's own _config.yml — keep only
-# the overrides here so the theme file stays canonical.
+# Aether theme overrides for blog.naaln.com.
+# Hexo loads this file automatically because `_config.yml` selects `theme: aether`.
 
-theme: aether
+# Navigation
+menu:
+  首页: / || fa fa-home
+  写作: /archives/ || fa fa-pencil-alt
+  系列: /series/ || fa fa-layer-group
+  影像: /visuals/ || fa fa-camera-retro
+  关于: /about/ || fa fa-user
 
-# Archives: show more per page (default 10 → 50)
-per_page: 50
+# Social links
+social:
+  GitHub: https://github.com/whyliam || fab fa-github
+  微博: https://weibo.com/whyliam || fab fa-weibo
+  X: https://twitter.com/whyliam || fab fa-x-twitter
+  RSS: /atom.xml || fa fa-rss
 
-# Disable minifier so Stylus / Nunjucks errors surface in dev and CI.
-all_minifier:
-  enable: false
-  js_minifier:
-    enable: false
-  css_minifier:
-    enable: false
-  html_minifier:
-    enable: false
+social_icons:
+  enable: true
+  icons_only: true
+  transition: false
 
-theme_config:
-  # ---- Navigation ----
-  menu:
-    首页: / || fa fa-home
-    写作: /archives/ || fa fa-pencil-alt
-    系列: /series/ || fa fa-layer-group
-    影像: /visuals/ || fa fa-camera-retro
-    关于: /about/ || fa fa-user
+# Footer
+footer:
+  since: 2010
+  icon:
+    name: fa fa-feather
+    animated: false
+    color: "#2a3a6b"
+  copyright: 行权 · Liam
+  powered: false
 
-  # ---- Social links (rendered in sidebar / about / CTA strip) ----
-  social:
-    GitHub: https://github.com/whyliam || fab fa-github
-    微博: https://weibo.com/whyliam || fab fa-weibo
-    X: https://twitter.com/whyliam || fab fa-x-twitter
-    RSS: /atom.xml || fa fa-rss
+# Aether-specific modules
+aether:
+  # Aether renders its own reading progress bar.
+  reading_progress: true
 
-  social_icons:
-    enable: true
-    icons_only: true
-    transition: false
-
-  # ---- Footer ----
-  footer:
-    since: 2010
-    icon:
-      name: fa fa-feather
-      animated: false
-      color: "#2a3a6b"
-    copyright: 行权 · Liam
-    powered: false
-
-  # ---- Reading progress (Aether has its own top bar, disable NexT's) ----
-  reading_progress:
-    enable: false
-
-  # ---- Aether-specific module overrides ----
-  aether:
-    # 01 Hero
-    hero:
-      eyebrow: '个人知识档案 · 始于 2010'
-      identity: '我是 Liam，产品经理与独立开发者，十四年持续记录 AI 系统、产品判断与知识管理。'
-      title: "记录 AI 系统、产品判断
+  # 01 Hero
+  hero:
+    eyebrow: '个人知识档案 · 始于 2010'
+    identity: '我是 Liam，产品经理与独立开发者，长期记录 AI 系统、产品判断与知识管理。'
+    title: "记录 AI 系统、产品判断
 与长期思考，<em>以及缓慢形成的
 生活档案。</em>"
-      description: '我不写评测，不追热点。我写那些五年后还值得被回看的判断。'
-      actions:
-        - text: 开始阅读
-          url: '#aether-latest'
-          variant: primary
-        - text: 阅读路径
-          url: '#aether-start-here'
-          variant: default
-        - text: 关于我
-          url: '/about/'
-          variant: ghost
-      side_panel:
-        title: '当前关注'
-        updated: '2026-06'
-        items:
-          - title: 'AI Coding Harness'
-            subtitle: '工具链与编码范式'
-            url: '/series/ai-coding-harness/'
-          - title: 'Agent Runtime'
-            subtitle: 'Agent 生态与实践'
-            url: '/series/agent-runtime/'
-          - title: 'Obsidian Knowledge System'
-            subtitle: '知识管理与信息架构'
-            url: '/series/obsidian-knowledge-system/'
-          - title: 'Aether Blog Theme'
-            subtitle: '个人站点工程'
-            url: '/series/aether-blog-theme/'
-
-    # 02 Start Here (merged featured + paths)
-    start_here:
-      section_label: '02 / 从这里开始'
-      title: '第一次来？<em>从这里开始</em>'
+    description: '我不写评测，不追热点。我写那些五年后还值得被回看的判断。'
+    actions:
+      - text: 开始阅读
+        url: '#aether-latest'
+        variant: primary
+      - text: 阅读路径
+        url: '#aether-start-here'
+        variant: default
+      - text: 关于我
+        url: '/about/'
+        variant: ghost
+    side_panel:
+      title: '当前关注'
+      updated: '2026-06'
       items:
-        - intent: '理解 AI 系统与 Agent'
-          description: 'AI 如何改变编码方式，Agent 生态的演进'
-          posts:
-            - slug: 2026/05/agent-new-species-economic-system
-            - slug: 2026/03/OpenClaw-90-Day-Hit
-        - intent: '理解产品、数据与判断'
-          description: '数据产品思维，从 PM 视角看技术演进'
-          posts:
-            - slug: 2024/01/notion
-        - intent: '理解长期写作与知识系统'
-          description: '个人知识管理，Obsidian 实践，写作作为思考'
-          category: 'Notes & Reflections'
-          limit: 3
-
-    # 03 Building (projects)
-    building:
-      section_label: '03 / Building'
-      title: '正在构建'
-      subtitle: '我正在长期构建的系统'
-      more_url: '/series/'
-      more_text: '全部项目'
-      items:
-        - name: 'AI Coding Harness'
-          description: '围绕 AI 辅助编码构建的工具链与工作流'
-          status: '持续更新'
-          status_variant: 'is-live'
-          url: '/series/ai-coding-harness/'
-        - name: 'Agent Runtime'
-          description: 'Agent 生态的技术实践与产业观察'
-          status: '持续更新'
-          status_variant: 'is-live'
+        - title: 'AI Coding Harness'
+          subtitle: '工具链与编码范式'
+          url: '/categories/AI-Systems/'
+        - title: 'Agent Runtime'
+          subtitle: 'Agent 生态与实践'
           url: '/series/agent-runtime/'
-        - name: 'Obsidian Knowledge System'
-          description: '个人知识管理系统的构建与迭代'
-          status: '实验中'
-          status_variant: 'is-rd'
+        - title: 'Obsidian Knowledge System'
+          subtitle: '知识管理与信息架构'
           url: '/series/obsidian-knowledge-system/'
-        - name: 'Aether Blog Theme'
-          description: '基于 NexT 的个人知识档案馆主题'
-          status: '开发中'
-          status_variant: 'is-rd'
+        - title: 'Aether Blog Theme'
+          subtitle: '个人站点工程'
           url: 'https://github.com/whyliam/hexo-theme-aether'
-          external: true
 
-    # 04 Latest
-    latest:
-      limit: 5
-      section_label: '04 / 最近更新'
-      title: '最近更新'
+  # 02 Start Here
+  start_here:
+    section_label: '02 / 从这里开始'
+    title: '第一次来？<em>从这里开始</em>'
+    items:
+      - intent: '理解 AI 系统与 Agent'
+        description: 'AI 如何改变编码方式，Agent 生态的演进'
+        posts:
+          - slug: 2026/05/agent-new-species-economic-system
+          - slug: 2026/03/OpenClaw-90-Day-Hit
+      - intent: '理解产品、数据与判断'
+        description: '数据产品思维，从 PM 视角看技术演进'
+        posts:
+          - slug: 2024/01/notion
+      - intent: '理解长期写作与知识系统'
+        description: '个人知识管理，Obsidian 实践，写作作为思考'
+        category: 'Notes & Reflections'
+        limit: 3
 
-    # 05 Notes & Visuals
-    notes_visuals:
-      section_label: '05 / 思考与影像'
-      title: '思考碎片与<em>影像记录</em>'
-      notes_limit: 3
-      visuals_limit: 4
+  # 03 Building
+  building:
+    section_label: '03 / Building'
+    title: '正在构建'
+    subtitle: '我正在长期构建的系统'
+    more_url: '/series/'
+    more_text: '全部项目'
+    items:
+      - name: 'AI Coding Harness'
+        description: '围绕 AI 辅助编码构建的工具链与工作流'
+        status: '持续更新'
+        status_variant: 'is-live'
+        url: '/categories/AI-Systems/'
+      - name: 'Agent Runtime'
+        description: 'Agent 生态的技术实践与产业观察'
+        status: '持续更新'
+        status_variant: 'is-live'
+        url: '/series/agent-runtime/'
+      - name: 'Obsidian Knowledge System'
+        description: '个人知识管理系统的构建与迭代'
+        status: '实验中'
+        status_variant: 'is-rd'
+        url: '/series/obsidian-knowledge-system/'
+      - name: 'Aether Blog Theme'
+        description: '基于 NexT 的个人知识档案馆主题'
+        status: '开发中'
+        status_variant: 'is-rd'
+        url: 'https://github.com/whyliam/hexo-theme-aether'
+        external: true
 
-    # Disable old standalone modules (now merged)
-    featured:
-      enable: false
-    paths:
-      enable: false
-    series:
-      enable: false
-    notes:
-      enable: false
-    visuals:
-      enable: false
+  # 04 Latest
+  latest:
+    limit: 5
+    section_label: '04 / 最近更新'
+    title: '最近更新'
 
-    # 06 Subscribe
-    newsletter:
-      text: '关注更新'
-      channels:
-        - { label: 'RSS',        url: '/atom.xml' }
-        - { label: 'Newsletter', url: '/newsletter/' }
-        - { label: 'GitHub',     url: 'https://github.com/whyliam' }
-        - { label: 'X',          url: 'https://twitter.com/whyliam' }
+  # 05 Notes & Visuals
+  notes_visuals:
+    section_label: '05 / 思考与影像'
+    title: '思考碎片与<em>影像记录</em>'
+    notes_limit: 3
+    visuals_limit: 4
 
-    # Post-bottom CTA strip
-    cta:
-      channels:
-        - { label: 'RSS · 订阅档案更新',   url: '/atom.xml',                  hint: 'Reader' }
-        - { label: 'Newsletter · 月度邮件', url: '/newsletter/',               hint: 'Email' }
-        - { label: 'GitHub · 开源项目',     url: 'https://github.com/whyliam', hint: '项目' }
-        - { label: '微博 · WhyLiam',        url: 'https://weibo.com/whyliam',  hint: '动态' }
+  # These settings provide links and data to the merged module above.
+  notes:
+    enable: false
+    more_url: '/categories/Notes-Reflections/'
+  visuals:
+    enable: false
+    more_url: '/visuals/'
 
-# Code block
+  # Disable superseded standalone modules.
+  featured:
+    enable: false
+  paths:
+    enable: false
+  series:
+    enable: false
+
+  # 06 Subscribe
+  newsletter:
+    text: '关注更新'
+    channels:
+      - { label: 'RSS',        url: '/atom.xml' }
+      - { label: 'Newsletter', url: '/newsletter/' }
+      - { label: 'GitHub',     url: 'https://github.com/whyliam', external: true }
+      - { label: 'X',          url: 'https://twitter.com/whyliam', external: true }
+
+  # Post-bottom CTA strip
+  cta:
+    channels:
+      - { label: 'RSS · 订阅档案更新',   url: '/atom.xml',                 hint: 'Reader' }
+      - { label: 'Newsletter · 月度邮件', url: '/newsletter/',              hint: 'Email' }
+      - { label: 'GitHub · 开源项目',     url: 'https://github.com/whyliam', hint: '项目' }
+      - { label: '微博 · WhyLiam',        url: 'https://weibo.com/whyliam',  hint: '动态' }
+
+# Code blocks
 codeblock:
   theme:
     light: atom-one-light

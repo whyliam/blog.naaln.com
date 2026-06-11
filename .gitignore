@@ -4,6 +4,7 @@ db.json
 .deploy_git/
 node_modules/
 public/
+_multiconfig.yml
 source/_data/recommended_posts.json
 source/_posts/media/
 source/_posts/.MWebMetaData/
