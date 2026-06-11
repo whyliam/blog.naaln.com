@@ -1,0 +1,316 @@
+title: Liam's Notes
+subtitle: AI、产品、数据、旅行与生活观察
+description: AI、产品、数据、商业系统、旅行、摄影，以及一个长期主义者对工作与生活的持续整理。
+keywords: AI,产品,数据,技术,商业,旅行,摄影,随笔,个人知识管理
+author: Liam
+language: zh-CN
+timezone: Asia/Shanghai
+url: https://blog.naaln.com
+permalink: ':year/:month/:title/'
+permalink_defaults: null
+pretty_urls:
+  trailing_index: true
+  trailing_html: true
+source_dir: source
+public_dir: public
+tag_dir: tags
+archive_dir: archives
+category_dir: categories
+code_dir: downloads/code
+i18n_dir: ':lang'
+skip_render: null
+new_post_name: ':year-:month-:title.md'
+default_layout: post
+titlecase: false
+external_link:
+  enable: true
+  field: site
+  exclude: ''
+filename_case: 0
+render_drafts: false
+post_asset_folder: false
+relative_link: false
+future: true
+highlight:
+  enable: true
+  line_number: false
+  auto_detect: false
+  tab_replace: ''
+  wrap: true
+  hljs: false
+prismjs:
+  enable: false
+  preprocess: true
+  line_number: false
+  tab_replace: ''
+index_generator:
+  path: ''
+  per_page: 10
+  order_by: '-date'
+default_category: Notes & Reflections
+category_map:
+  AI & Systems: AI-Systems
+  Notes & Reflections: Notes-Reflections
+  Product & Intelligence: Product-Intelligence
+  Travel & Visuals: Travel-Visuals
+tag_map: null
+meta_generator: true
+date_format: YYYY-MM-DD
+time_format: HH:mm:ss
+updated_option: mtime
+per_page: 50
+pagination_dir: page
+include: null
+exclude: null
+ignore: null
+plugins:
+  - hexo-smart-seo
+  - hexo-reference
+  - hexo-algoliasearch
+  - hexo-auto-canonical
+theme: aether
+deploy:
+  - type: upyun
+    bucket: naaln-blog
+    operator: null
+    password: null
+    try_times: 5
+    ignore_path_re:
+      dir: null
+      file: .DS_Store$
+  - type: cjh_google_url_submitter
+  - type: cjh_bing_url_submitter
+  - type: cjh_baidu_url_submitter
+feed:
+  enable: true
+  type: atom
+  path: atom.xml
+  limit: 20
+  hub: null
+  content: null
+  content_limit: 140
+  content_limit_delim: ' '
+  order_by: '-date'
+  icon: icon.png
+  autodiscovery: true
+  template: null
+algolia:
+  appId: WVAWDPSYBR
+  apiKey: 004cb5884c6903947d25c8cb8ba4ab3b
+  chunkSize: 5000
+  indexName: blog
+  fields:
+    - title
+    - tags
+    - date
+    - categories
+    - content:strip:truncate,0,500
+    - permalink
+    - photos
+excerpt:
+  depth: 6
+  excerpt_excludes:
+    - h1
+    - h2
+    - h3
+    - h4
+    - h5
+    - h6
+    - table
+    - iframe
+    - hr
+  more_excludes: []
+  hideWholePostExcerpts: false
+sitemap:
+  path: sitemap.xml
+  template: null
+  rel: false
+  tags: false
+  categories: false
+baidusitemap:
+  url: null
+  path: baidusitemap.xml
+  isAutoAdapt: true
+hexo_submit_urls_to_search_engine:
+  submit_condition: count
+  count: 10
+  period: 900
+  google: 0
+  bing: 1
+  baidu: 1
+  txt_path: submit_urls.txt
+  baidu_host: http://blog.naaln.com/
+  baidu_token: 0
+  bing_host: http://blog.naaln.com/
+  bing_token: 0
+  google_host: http://blog.naaln.com/
+  google_key_file: Project.json
+  google_proxy: 0
+  replace: 0
+  find_what: null
+  replace_with: null
+all_minifier:
+  enable: false
+  js_minifier:
+    enable: false
+  css_minifier:
+    enable: false
+  html_minifier:
+    enable: false
+    exclude: null
+nofollow:
+  enable: true
+  exclude:
+    - naaln.com
+smart_seo:
+  enable: true
+  default_image: /images/favicon/apple-touch-icon-next.png
+  logo: /images/favicon/apple-touch-icon-next.png
+  meta_keywords: false
+  max_keywords: 20
+  description_length: 150
+  robots: index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1
+theme_config:
+  menu:
+    首页: / || fa fa-home
+    写作: /archives/ || fa fa-pencil-alt
+    系列: /series/ || fa fa-layer-group
+    影像: /visuals/ || fa fa-camera-retro
+    关于: /about/ || fa fa-user
+  social:
+    GitHub: https://github.com/whyliam || fab fa-github
+    微博: https://weibo.com/whyliam || fab fa-weibo
+    X: https://twitter.com/whyliam || fab fa-x-twitter
+    RSS: /atom.xml || fa fa-rss
+  social_icons:
+    enable: true
+    icons_only: true
+    transition: false
+  footer:
+    since: 2010
+    icon:
+      name: fa fa-feather
+      animated: false
+      color: '#2a3a6b'
+    copyright: 行权 · Liam
+    powered: false
+  reading_progress:
+    enable: false
+  aether:
+    hero:
+      side_panel:
+        title: 当前关注
+        updated: 2026-06
+        items:
+          - title: AI Coding Harness
+            subtitle: 工具链与编码范式
+            url: /series/ai-coding-harness/
+          - title: Agent Runtime
+            subtitle: Agent 生态与实践
+            url: /series/agent-runtime/
+          - title: Obsidian Knowledge System
+            subtitle: 知识管理与信息架构
+            url: /series/obsidian-knowledge-system/
+          - title: Aether Blog Theme
+            subtitle: 个人站点工程
+            url: /series/aether-blog-theme/
+    start_here:
+      section_label: 02 / 从这里开始
+      title: 第一次来？<em>从这里开始</em>
+      items:
+        - intent: 理解 AI 系统与 Agent
+          description: AI 如何改变编码方式，Agent 生态的演进
+          posts:
+            - slug: 2026/05/agent-new-species-economic-system
+            - slug: 2026/03/OpenClaw-90-Day-Hit
+        - intent: 理解产品、数据与判断
+          description: 数据产品思维，从 PM 视角看技术演进
+          posts:
+            - slug: 2024/01/notion
+        - intent: 理解长期写作与知识系统
+          description: 个人知识管理，Obsidian 实践，写作作为思考
+          category: Notes & Reflections
+          limit: 3
+    building:
+      section_label: 03 / Building
+      title: 正在构建
+      subtitle: 我正在长期构建的系统
+      more_url: /series/
+      more_text: 全部项目
+      items:
+        - name: AI Coding Harness
+          description: 围绕 AI 辅助编码构建的工具链与工作流
+          status: 持续更新
+          status_variant: is-live
+          url: /series/ai-coding-harness/
+        - name: Agent Runtime
+          description: Agent 生态的技术实践与产业观察
+          status: 持续更新
+          status_variant: is-live
+          url: /series/agent-runtime/
+        - name: Obsidian Knowledge System
+          description: 个人知识管理系统的构建与迭代
+          status: 实验中
+          status_variant: is-rd
+          url: /series/obsidian-knowledge-system/
+        - name: Aether Blog Theme
+          description: 基于 NexT 的个人编辑式博客主题
+          status: 开发中
+          status_variant: is-rd
+          url: https://github.com/whyliam/hexo-theme-aether
+          external: true
+    latest:
+      limit: 5
+      section_label: 04 / 最近更新
+      title: 最近更新
+    notes_visuals:
+      section_label: 05 / 思考与影像
+      title: 思考碎片与<em>影像记录</em>
+      notes_limit: 3
+      visuals_limit: 4
+    featured:
+      enable: false
+    paths:
+      enable: false
+    series:
+      enable: false
+    notes:
+      enable: false
+    visuals:
+      enable: false
+    newsletter:
+      text: 关注更新
+      channels:
+        - label: RSS
+          url: /atom.xml
+        - label: Newsletter
+          url: /newsletter/
+        - label: GitHub
+          url: https://github.com/whyliam
+        - label: X
+          url: https://twitter.com/whyliam
+    cta:
+      channels:
+        - label: RSS · 订阅档案更新
+          url: /atom.xml
+          hint: Reader
+        - label: Newsletter · 月度邮件
+          url: /newsletter/
+          hint: Email
+        - label: GitHub · 开源项目
+          url: https://github.com/whyliam
+          hint: 项目
+        - label: 微博 · WhyLiam
+          url: https://weibo.com/whyliam
+          hint: 动态
+codeblock:
+  theme:
+    light: atom-one-light
+    dark: github-dark
+  copy_button:
+    enable: true
+    style: flat
+  fold:
+    enable: true
+    height: 500
+fancybox: true

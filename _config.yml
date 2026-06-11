@@ -66,10 +66,10 @@ index_generator:
   order_by: -date
 
 # Category & Tag
-default_category: "Notes & Essays"
+default_category: "Notes & Reflections"
 category_map:
   "AI & Systems": AI-Systems
-  "Notes & Essays": Notes-Essays
+  "Notes & Reflections": Notes-Reflections
   "Product & Intelligence": Product-Intelligence
   "Travel & Visuals": Travel-Visuals
 tag_map:
@@ -107,7 +107,7 @@ plugins:
   - hexo-auto-canonical
 
 ## Themes: https://hexo.io/themes/
-theme: next
+theme: aether
 
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
