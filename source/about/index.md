@@ -1,6 +1,7 @@
 ---
 title: 关于
 layout: about
+comments: false
 date: 2026-06-04
 updated: 2026-06-04
 

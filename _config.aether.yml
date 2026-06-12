@@ -181,6 +181,11 @@ codeblock:
 # Image lightbox
 fancybox: true
 
+# Waline
+waline:
+  enable: true
+  serverURL: https://waline.naaln.com
+
 # Performance
 lazyload: true
 preconnect: true
