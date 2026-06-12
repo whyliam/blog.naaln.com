@@ -43,6 +43,14 @@ jobs:
       # 先运行 hexo generate 生成 db.json
       - run: hexo generate
 
+      - name: Verify build output
+        run: |
+          if [ ! -s public/index.html ]; then
+            echo "ERROR: index.html is empty or missing"
+            exit 1
+          fi
+          echo "Build verification passed: $(wc -c < public/index.html) bytes"
+
       # 然后运行 hexo algolia
       - run: hexo algolia
         env:
