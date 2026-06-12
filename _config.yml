@@ -62,7 +62,7 @@ prismjs:
 # order_by: Posts order. (Order by date descending by default)
 index_generator:
   path: ''
-  per_page: 0
+  per_page: 20
   order_by: -date
 
 # Category & Tag
@@ -162,9 +162,9 @@ excerpt:
 sitemap:
   path: sitemap.xml
   template:
-  rel: false
-  tags: false
-  categories: false
+  rel: true
+  tags: true
+  categories: true
 
 baidusitemap:
     url:    #[可选]自定义url，不指定则为站点url

@@ -180,3 +180,7 @@ codeblock:
 
 # Image lightbox
 fancybox: true
+
+# Performance
+lazyload: true
+preconnect: true
