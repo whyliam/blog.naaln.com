@@ -9,7 +9,6 @@ tags:
   - Life
   - Observation
 description: 2分钟超美好剪辑带满满正能量，行走在路上风景美好。
-type: visual
 ---
 
 <embed src="http://player.ku6.com/refer/upPDKvBiyIQf-MvB8DRWTw../v.swf" width="480" height="400" allowscriptaccess="always" allowfullscreen="true" type="application/x-shockwave-flash" flashvars="from=ku6" />

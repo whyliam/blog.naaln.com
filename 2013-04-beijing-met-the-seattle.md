@@ -10,7 +10,6 @@ tags:
   - Cities
   - Photography
   - Observation
-type: visual
 cover: http://pics.naaln.com/blog/2019-01-14-091657.jpg-basicBlog
 location: 北京, 西雅图
 ---

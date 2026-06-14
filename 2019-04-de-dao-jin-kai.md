@@ -8,7 +8,6 @@ tags:
   - VisualDesign
   - Observation
   - Aesthetics
-type: visual
 cover: http://pics.naaln.com/blog/2019-04-24-020836.jpg-basicBlog
 description: 得到今楷体是仓耳字库历时三年完成的中文楷体字体，设计者严永亮曾参与谷歌思源黑体中文版设计，采用楷体结构与笔形特点，提供舒适的视觉体验；与思源宋体、旗黑等字体对比，显示其耐看且不易疲劳的效果；适用于正式场合的字体选择。
 ---

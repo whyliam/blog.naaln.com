@@ -9,7 +9,6 @@ tags:
   - Observation
   - Life
 description: 真实的美国留学生纪录片，横跨东西海岸，历时一年半，呈现数十位在美小有成就的华人，述说留学苦与乐，帮助观者判断是否改变出国留学的想法。
-type: visual
 location: 美国
 ---
 

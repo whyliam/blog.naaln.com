@@ -9,7 +9,6 @@ tags:
   - Observation
   - Landscape
 description: 王嵬铁路摄影作品包括国内草原列车、巴山穿越、天山牵引等壮丽景象，国外呈现斯里兰卡海上火车、挪威峡湾铁路、瑞士阿尔卑斯山南非等沿线美景。
-type: visual
 cover: http://pics.naaln.com/blog/2019-01-14-061905.jpg-basicBlog
 ---
 

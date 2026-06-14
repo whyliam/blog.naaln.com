@@ -10,7 +10,6 @@ tags:
   - Life
   - Cities
 description: 早起爬山遇小腿抽筋，从UIC出发经北师大到中大，一路上遇到许多宿管同游，宿管们爬山能力惊人。作者瘸着腿坚持完成行程，最终在中大享用物美价廉的午餐，整日行程虽疲惫但充实有趣。
-type: visual
 cover: http://pics.naaln.com/blog/2019-01-14-92041.jpg-basicBlog
 location: 珠海
 ---
