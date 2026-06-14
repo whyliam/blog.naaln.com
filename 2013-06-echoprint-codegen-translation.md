@@ -1,4 +1,5 @@
 ---
+layout: post
 title: Echoprint Codegen （翻译）
 date: 2013/06/17 12:08:00
 categories:

@@ -1,4 +1,5 @@
 ---
+layout: post
 title: 让PWA支持HEXO
 date: 2017/09/11 20:34:56
 categories:

@@ -1,14 +1,15 @@
 ---
+layout: post
 title: AI 时代的护城河是记忆
 date: 2026/03/15 20:00:00
 categories:
-  - Notes & Reflections
+  - Notes & Essays
 tags:
   - AI
   - ProductThinking
   - Strategy
-type: note
 description: AI 算力终将过剩，模型趋于同质化，真正的护城河是属于用户自己的记忆。
+type: note
 ---
 
 AI 算力迟早会过剩，到时谁家模型都差不多。

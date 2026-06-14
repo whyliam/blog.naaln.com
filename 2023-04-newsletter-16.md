@@ -1,8 +1,9 @@
 ---
+layout: post
 title: L16_科技带来社会的前进和新的不公正
 date: 2023/04/16 20:00:00
 categories:
-  - Notes & Reflections
+  - Notes & Essays
 tags:
   - AI
   - ProductThinking

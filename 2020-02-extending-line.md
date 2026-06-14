@@ -1,4 +1,5 @@
 ---
+layout: post
 title: 不要站在大公司的延长线上
 date: 2020/02/04 20:00:00
 categories:

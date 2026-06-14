@@ -1,8 +1,9 @@
 ---
+layout: post
 title: 意义不是想清楚才有，而是做着做着长出来的
 date: 2026/04/14 21:00:00
 categories:
-  - Notes & Reflections
+  - Notes & Essays
 tags:
   - SystemsThinking
   - ProductThinking

@@ -1,8 +1,9 @@
 ---
+layout: post
 title: 初遇未知的自己初遇未知的自己
 date: 2013/05/03 09:06:00
 categories:
-  - Notes & Reflections
+  - Notes & Essays
 tags:
   - Mindfulness
   - SelfExploration

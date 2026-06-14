@@ -1,8 +1,9 @@
 ---
+layout: post
 title: 30天可以养成良好的习惯 习惯决定性格
 date: 2013/11/12 19:39:00
 categories:
-  - Notes & Reflections
+  - Notes & Essays
 tags:
   - Life
   - Habit

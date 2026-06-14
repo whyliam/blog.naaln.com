@@ -1,4 +1,5 @@
 ---
+layout: post
 title: 我在用的mac软件--终端环境之iTerm2
 date: 2014/07/27 04:55:24
 categories:

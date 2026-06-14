@@ -1,4 +1,5 @@
 ---
+layout: post
 title: Word 论文排版
 date: 2013/12/09 20:08:00
 categories:

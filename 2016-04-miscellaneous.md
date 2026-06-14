@@ -1,8 +1,9 @@
 ---
+layout: post
 title: 杂想
 date: 2016/04/24 22:47:08
 categories:
-  - Notes & Reflections
+  - Notes & Essays
 tags:
   - Writing
   - Life

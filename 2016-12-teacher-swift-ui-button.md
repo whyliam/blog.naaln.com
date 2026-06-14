@@ -1,4 +1,5 @@
 ---
+layout: post
 title: Swift之贪婪的UIButton
 date: 2016/12/14 10:33:23
 categories:

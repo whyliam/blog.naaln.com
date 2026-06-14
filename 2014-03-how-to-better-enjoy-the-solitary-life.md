@@ -1,8 +1,9 @@
 ---
+layout: post
 title: 如何更好地享受独居生活
 date: 2014/03/08 09:00:00
 categories:
-  - Notes & Reflections
+  - Notes & Essays
 tags:
   - Life
   - Observation

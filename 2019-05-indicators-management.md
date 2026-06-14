@@ -1,4 +1,5 @@
 ---
+layout: post
 title: 数据指标构建方案
 date: 2019/05/19 20:00:00
 categories:

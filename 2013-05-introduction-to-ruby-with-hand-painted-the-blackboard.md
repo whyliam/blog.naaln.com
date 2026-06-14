@@ -1,14 +1,14 @@
 ---
+layout: post
 title: Ruby简介 （附手绘板书）
 date: 2013/05/17 12:16:00
 categories:
-  - Notes & Reflections
-description: Ruby 编程语言入门介绍，附手绘板书讲解，涵盖语言特性与学习路径。
-
+  - Notes & Essays
 tags:
   - Learning
   - SystemsThinking
   - KnowledgeManagement
+description: Ruby 编程语言入门介绍，附手绘板书讲解，涵盖语言特性与学习路径。
 ---
 
 ![](http://pics.naaln.com/blog/2019-05-14-123335.jpg-basicBlog)

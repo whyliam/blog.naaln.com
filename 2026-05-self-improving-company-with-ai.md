@@ -1,4 +1,5 @@
 ---
+layout: post
 title: 别再把 AI 当工具了：YC 说的「自我进化公司」到底是什么
 date: 2026/05/31 13:00:00
 categories:

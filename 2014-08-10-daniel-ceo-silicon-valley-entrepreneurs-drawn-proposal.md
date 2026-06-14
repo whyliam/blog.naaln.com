@@ -1,4 +1,5 @@
 ---
+layout: post
 title: 10位硅谷大牛CEO们画出来的创业建议
 date: 2014/08/07 01:01:20
 categories:

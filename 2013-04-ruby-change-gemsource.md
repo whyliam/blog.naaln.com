@@ -1,4 +1,5 @@
 ---
+layout: post
 title: Ruby更改gem source
 date: 2013/04/03 20:00:00
 categories:

@@ -1,8 +1,9 @@
 ---
+layout: post
 title: RTFSC (Read the fucking source code )
 date: 2013/09/08 21:50:00
 categories:
-  - Notes & Reflections
+  - Notes & Essays
 tags:
   - SystemsThinking
   - Learning

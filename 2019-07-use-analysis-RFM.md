@@ -1,4 +1,5 @@
 ---
+layout: post
 title: 用户分析RFM模型
 date: 2019/07/24 20:00:00
 categories:

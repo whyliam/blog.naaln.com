@@ -1,8 +1,9 @@
 ---
+layout: post
 title: 躺平
 date: 2022/11/05 20:00:00
 categories:
-  - Notes & Reflections
+  - Notes & Essays
 tags:
   - SocialObservation
   - DelayedGratification

@@ -1,4 +1,5 @@
 ---
+layout: post
 title: L69_设计工具革新
 date: 2025/05/16 20:00:00
 categories:

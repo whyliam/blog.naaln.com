@@ -1,8 +1,9 @@
 ---
+layout: post
 title: 沉淀自己
 date: 2021/11/24 20:00:00
 categories:
-  - Notes & Reflections
+  - Notes & Essays
 tags:
   - ProductThinking
   - CareerGrowth

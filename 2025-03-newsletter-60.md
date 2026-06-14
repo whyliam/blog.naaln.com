@@ -1,4 +1,5 @@
 ---
+layout: post
 title: L60_未来发展的双引擎
 date: 2025/03/14 20:00:00
 categories:

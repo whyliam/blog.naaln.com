@@ -1,8 +1,9 @@
 ---
+layout: post
 title: 10月小结｜责任与信任
 date: 2022/10/31 20:00:00
 categories:
-  - Notes & Reflections
+  - Notes & Essays
 tags:
   - DecisionMaking
   - Career

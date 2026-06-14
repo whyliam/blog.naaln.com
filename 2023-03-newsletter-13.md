@@ -1,8 +1,9 @@
 ---
+layout: post
 title: L13_信息过载与未来
 date: 2023/03/26 20:00:00
 categories:
-  - Notes & Reflections
+  - Notes & Essays
 tags:
   - AGI
   - InformationOverload

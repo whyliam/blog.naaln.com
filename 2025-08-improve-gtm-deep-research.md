@@ -1,4 +1,5 @@
 ---
+layout: post
 title: 如何提升 GTM 深度研究
 date: 2025/08/21 20:00:00
 categories:

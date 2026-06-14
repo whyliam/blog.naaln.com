@@ -1,4 +1,5 @@
 ---
+layout: post
 title: ubuntu下实现echoprint建库和查询
 date: 2013/10/08 21:33:00
 categories:

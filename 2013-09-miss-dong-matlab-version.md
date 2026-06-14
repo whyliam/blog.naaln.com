@@ -1,8 +1,9 @@
 ---
+layout: post
 title: 董小姐，MATLAB版
 date: 2013/09/05 10:34:00
 categories:
-  - Notes & Reflections
+  - Notes & Essays
 tags:
   - CreativeCoding
   - Audio

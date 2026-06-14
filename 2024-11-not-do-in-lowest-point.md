@@ -1,8 +1,9 @@
 ---
+layout: post
 title: 人在低谷期的时候，有三件事情不能做
 date: 2024/11/05 22:49:00
 categories:
-  - Notes & Reflections
+  - Notes & Essays
 tags:
   - Mindset
   - Attention

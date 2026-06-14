@@ -1,8 +1,9 @@
 ---
+layout: post
 title: 有哪些旅行地你去过之后感觉自己的世界观更加完整了
 date: 2014/02/12 06:02:00
 categories:
-  - Notes & Reflections
+  - Notes & Essays
 tags:
   - Travel
   - Observation

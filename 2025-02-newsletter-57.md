@@ -1,4 +1,5 @@
 ---
+layout: post
 title: L57_开启AI竞赛新纪元
 date: 2025/02/21 20:00:00
 categories:
@@ -9,8 +10,8 @@ tags:
   - Strategy
   - Ecosystem
   - Observation
-series: Newsletter 周刊
 description: Grok-3在数学准确率达87.2%提升23%，代码生成92.4分，ChatbotArena多轮对话4.81分。吴永辉博士携神经符号系统加盟字节跳动，团队获20万张H100显卡。VLM-R1在TextVQA达89.7%准确率，开源超分辨率模块支持64x64到1024x1024重建。DeepSeek日活突破8700万，豆包跌至2100万，中小开发者构建2.3万个垂直应用。Grok-3训练消耗3.2
+series: Newsletter 周刊
 ---
 
 ![开启AI竞赛新纪元](https://pics.naaln.com/image-20250220214349910.png-basicBlog)

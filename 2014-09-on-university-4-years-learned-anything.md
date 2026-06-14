@@ -1,8 +1,9 @@
 ---
+layout: post
 title: 被大学上了4年，我学会了什么
 date: 2014/09/12 07:58:32
 categories:
-  - Notes & Reflections
+  - Notes & Essays
 tags:
   - Life
   - Observation

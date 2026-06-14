@@ -1,4 +1,5 @@
 ---
+layout: post
 title: 戴雨森的 The Year of R：2026 年 AI 投资的回报与研究
 date: 2025/12/31 17:36:00
 categories:

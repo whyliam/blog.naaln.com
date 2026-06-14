@@ -1,4 +1,5 @@
 ---
+layout: post
 title: 最坏的时代 最好的时代 --互联网女皇
 date: 2013/05/30 21:13:00
 categories:

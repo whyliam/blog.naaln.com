@@ -1,4 +1,5 @@
 ---
+layout: post
 title: 视觉优先
 date: 2014/12/03 22:11:34
 categories:

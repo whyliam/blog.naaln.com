@@ -1,4 +1,5 @@
 ---
+layout: post
 title: 《麦肯锡公众表达课》的笔记
 date: 2022/05/01 20:00:00
 categories:

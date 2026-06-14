@@ -1,8 +1,9 @@
 ---
+layout: post
 title: 马上要毕业了，总结一下自己4年的大学生活
 date: 2011/05/18 20:00:00
 categories:
-  - Notes & Reflections
+  - Notes & Essays
 tags:
   - Life
   - Learning

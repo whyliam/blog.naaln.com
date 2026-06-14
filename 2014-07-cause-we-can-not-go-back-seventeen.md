@@ -1,8 +1,9 @@
 ---
+layout: post
 title: 致我们回不去的十七岁
 date: 2014/07/03 21:00:00
 categories:
-  - Notes & Reflections
+  - Notes & Essays
 tags:
   - Life
   - Observation

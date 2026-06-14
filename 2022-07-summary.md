@@ -1,8 +1,9 @@
 ---
+layout: post
 title: 7月小结｜一如年少模样
 date: 2022/07/31 20:00:00
 categories:
-  - Notes & Reflections
+  - Notes & Essays
 tags:
   - Life
   - Observation

@@ -1,15 +1,16 @@
 ---
+layout: post
 title: 「PDAA 循环」问题驱动行动系统
 date: 2025/03/11 20:00:00
 categories:
-  - Notes & Reflections
+  - Notes & Essays
 tags:
   - KnowledgeManagement
   - SystemsThinking
   - Workflow
   - ActionSystem
-series: Obsidian Knowledge System
 description: 通过反思笔记软件的局限性，提出以问题为核心的PDAA循环。系统包括问题雷达、问题公式、最小行动单元和迭代仪表盘，旨在通过最小化流程实现思考-行动-迭代闭环。强调反馈驱动行动简化而非完美工具。
+series: Obsidian Knowledge System
 ---
 
 最近，完成了述职，感觉稍微空一点，又开始折腾笔记软件了。

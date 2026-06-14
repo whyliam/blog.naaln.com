@@ -1,4 +1,5 @@
 ---
+layout: post
 title: AI 投资的核心逻辑：追踪系统瓶颈的迁移
 date: 2026/05/31 09:00:00
 categories:

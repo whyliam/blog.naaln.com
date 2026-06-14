@@ -1,16 +1,17 @@
 ---
+layout: post
 title: L116_当智能变成基础设施
 date: 2026/04/11 11:48:15
 categories:
-  - Notes & Reflections
+  - Notes & Essays
 tags:
   - AgenticAI
   - SystemDesign
   - ProductThinking
   - KnowledgeManagement
   - Observation
-series: Newsletter 周刊
 description: Block 想把公司本身做成一种 intelligence，而不是给每个人配一个 Copilot。当 AI 把执行变成水电煤，护城河回流到审美、判断和现实世界的交付能力。换电机不等于重新设计工厂。
+series: Newsletter 周刊
 ---
 
 ![](https://pics.naaln.com/2026-04-15-119bcdf6a6d048f6bdc4778fffdcf724.png-basicBlog)

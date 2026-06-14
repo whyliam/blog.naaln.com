@@ -1,16 +1,17 @@
 ---
+layout: post
 title: L53_如何掌控并理解自己
 date: 2023/12/31 20:00:00
 categories:
-  - Notes & Reflections
+  - Notes & Essays
 tags:
   - Strategy
   - ProductThinking
   - DecisionMaking
   - SystemsThinking
   - Life
-series: Newsletter 周刊
 description: 经济独立核心是降低生活成本实现精神独立，构建价值而非争论，定性研究指导方向，验证单位经济模型工程发布。创新源于德鲁克七来源如意外事件新知识，企业家战略包括创造效用定价适应客户现状提供真正价值。生活哲学九条实用方法检验印象接受无常预设意外思考美德理性应对侮辱利用他者思考谨言慎行用事实说话每日反思。
+series: Newsletter 周刊
 ---
 
 - 个人经济独立性的重要性，提出了构建事业的实践方法，强调了定性研究的价值，并强调了验证在事业发展中的重要性。

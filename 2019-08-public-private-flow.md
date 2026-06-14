@@ -1,4 +1,5 @@
 ---
+layout: post
 title: 私域流量 和 公域流量
 date: 2019/08/05 20:00:00
 categories:

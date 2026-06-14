@@ -1,4 +1,5 @@
 ---
+layout: post
 title: 小岛经济学
 date: 2022/07/13 20:00:00
 categories:

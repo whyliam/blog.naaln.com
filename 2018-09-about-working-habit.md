@@ -1,8 +1,9 @@
 ---
+layout: post
 title: 关于工作习惯
 date: 2018/09/09 17:38:02
 categories:
-  - Notes & Reflections
+  - Notes & Essays
 tags:
   - ProductThinking
   - Writing

@@ -1,8 +1,9 @@
 ---
+layout: post
 title: UIC新生手册，让你知道什么才是真…
 date: 2011/10/30 20:00:00
 categories:
-  - Notes & Reflections
+  - Notes & Essays
 tags:
   - Observation
   - Memory

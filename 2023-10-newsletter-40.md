@@ -1,9 +1,9 @@
 ---
+layout: post
 title: L40_量化知识来证明自己
 date: 2023/10/01 20:00:00
 categories:
-  - Notes & Reflections
-series: Newsletter 周刊
+  - Notes & Essays
 tags:
   - Signaling
   - ProductThinking
@@ -11,6 +11,7 @@ tags:
   - KnowledgeManagement
   - CognitiveBiases
 description: 内容分为等待、信号传递、马斯克管理三部分，介绍等待的必然性和相处方法，阐释行为中的信号机制与社交网络设计，并阐述马斯克的五步工作法及其管理理念。
+series: Newsletter 周刊
 ---
 
 - 等待作为一种必然状态的存在以及如何与等待相处，给出了一些建设性的建议，包括超越感受、找到等待的好处、拥抱等待、将缺乏生产力与被迫等待脱钩以及将等待时间视为对社会结构的投资。

@@ -1,8 +1,9 @@
 ---
+layout: post
 title: UILable属性详解
 date: 2016/12/02 15:49:48
 categories:
-  - Notes & Reflections
+  - Notes & Essays
 tags:
   - SystemDesign
   - Learning

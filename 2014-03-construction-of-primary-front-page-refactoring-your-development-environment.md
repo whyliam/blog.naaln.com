@@ -1,4 +1,5 @@
 ---
+layout: post
 title: 构建初级前端页面重构开发环境
 date: 2014/03/10 02:10:00
 categories:

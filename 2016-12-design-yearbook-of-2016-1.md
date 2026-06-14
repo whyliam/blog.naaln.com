@@ -1,4 +1,5 @@
 ---
+layout: post
 title: 2016设计年鉴（一）
 date: 2016/12/27 22:51:09
 categories:

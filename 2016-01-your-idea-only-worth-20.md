@@ -1,4 +1,5 @@
 ---
+layout: post
 title: 你的创意只值20块
 date: 2016/01/23 15:26:00
 categories:

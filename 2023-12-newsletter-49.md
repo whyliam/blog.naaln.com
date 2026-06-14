@@ -1,9 +1,9 @@
 ---
+layout: post
 title: L49_权力从劳动力转移到资本
 date: 2023/12/03 20:00:00
 categories:
-  - Notes & Reflections
-series: Newsletter 周刊
+  - Notes & Essays
 tags:
   - KnowledgeManagement
   - AI
@@ -11,6 +11,7 @@ tags:
   - Observation
   - Life
 description: 信息管理需专注核心避免过载，AI变革引发社会财富不均需政策调整促进公平分配，冲突处理以解决问题为目标可深化关系。
+series: Newsletter 周刊
 ---
 
 - 面对信息过载，不应将待读清单视为必须清空的水桶，而是如河流般自由流动的资源池。问题不在于过滤器失效，而是有效过滤后依然巨大的信息量压垮我们。生产力技巧在于认识到我们无法处理无限的信息和任务，选择接受并专注于最重要的事项，将其余的信息放任自流，而非强迫自己消化每一份内容。

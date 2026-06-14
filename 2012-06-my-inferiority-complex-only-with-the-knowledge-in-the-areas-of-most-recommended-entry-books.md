@@ -1,8 +1,9 @@
 ---
+layout: post
 title: 我的自卑，仅与知识有关——各领域最值得推荐的入门书籍
 date: 2012/06/10 10:13:00
 categories:
-  - Notes & Reflections
+  - Notes & Essays
 tags:
   - KnowledgeManagement
   - Learning

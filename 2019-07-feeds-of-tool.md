@@ -1,4 +1,5 @@
 ---
+layout: post
 title: 信息流市场工具化发展
 date: 2019/07/14 20:00:00
 categories:

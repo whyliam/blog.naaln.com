@@ -1,4 +1,5 @@
 ---
+layout: post
 title: 小程序，火热后的冷静
 date: 2017/01/18 13:53:20
 categories:

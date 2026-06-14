@@ -1,8 +1,9 @@
 ---
+layout: post
 title: 说说个人陈述（PS）那点事儿
 date: 2013/09/03 02:13:45
 categories:
-  - Notes & Reflections
+  - Notes & Essays
 tags:
   - Writing
   - SelfReflection

@@ -1,4 +1,5 @@
 ---
+layout: post
 title: Agent 时代启示录：当 Agent 作为新物种加入经济系统
 date: 2026/05/14 10:00:00
 categories:

@@ -1,8 +1,9 @@
 ---
+layout: post
 title: 自己在用的mac软件及配置
 date: 2017/06/28 19:50:47
 categories:
-  - Notes & Reflections
+  - Notes & Essays
 tags:
   - Workflow
   - KnowledgeManagement

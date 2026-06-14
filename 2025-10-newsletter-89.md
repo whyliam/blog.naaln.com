@@ -1,8 +1,9 @@
 ---
+layout: post
 title: L89_就业冲击与创业自由
 date: 2025/10/04 11:07:00
 categories:
-  - Notes & Reflections
+  - Notes & Essays
 tags:
   - AI
   - Agent

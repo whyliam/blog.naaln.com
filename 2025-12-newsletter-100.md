@@ -1,15 +1,16 @@
 ---
+layout: post
 title: L100_AI 先知理论与电商产品逻辑深度解析
 date: 2025/12/20 10:59:33
 categories:
-  - Notes & Reflections
+  - Notes & Essays
 tags:
   - AI
   - ProductThinking
   - FirstPrinciples
   - Observation
-series: Newsletter 周刊
 description: 本期揭秘大语言模型背后的数学先知——雷·所罗门诺夫，这位在1960年代就预见AI未来的数学家如何通过归纳推理理论奠定了GPT等模型的核心逻辑。从猴子敲键盘到预测下一个字符，从柯尔莫哥洛夫复杂性到科学方法与证伪主义，我们深入探讨学习本质上是一种压缩行为这一深刻洞察。同时对比淘宝与拼多多的电商产品逻辑，分析两家巨头在产品设计、团队分工及商家管理上的差异，揭示从「人治」到「算法」的营销产品演变。最后在AI喧嚣之外，探讨如何找回创造的纯粹乐趣，反思当下AGI领域的浮躁氛围，重拾技术探索的初心。
+series: Newsletter 周刊
 ---
 
 ## 📚 阅读

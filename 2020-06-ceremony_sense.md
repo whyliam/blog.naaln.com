@@ -1,8 +1,9 @@
 ---
+layout: post
 title: 仪式感
 date: 2020/06/01 20:00:00
 categories:
-  - Notes & Reflections
+  - Notes & Essays
 tags:
   - Life
   - Observation

@@ -1,4 +1,5 @@
 ---
+layout: post
 title: 大型美国留学生纪录片《Us》
 date: 2013/12/08 08:47:01
 categories:

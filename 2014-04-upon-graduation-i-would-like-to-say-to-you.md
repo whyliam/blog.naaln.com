@@ -1,8 +1,9 @@
 ---
+layout: post
 title: 毕业时，我想对你说
 date: 2014/04/27 13:45:00
 categories:
-  - Notes & Reflections
+  - Notes & Essays
 tags:
   - Writing
   - Life

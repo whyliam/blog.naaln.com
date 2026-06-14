@@ -1,4 +1,5 @@
 ---
+layout: post
 title: Beyond Compare 永久试用
 date: 2019/04/21 11:30:53
 categories:

@@ -1,4 +1,5 @@
 ---
+layout: post
 title: L76_科技巨头的AI新战场
 date: 2025/07/05 20:00:00
 categories:
@@ -9,8 +10,8 @@ tags:
   - ProductThinking
   - BusinessModel
   - Newsletter
-series: Newsletter 周刊
 description: Meta重金挖角OpenAI人才，标志AI人才争夺战白热化；微软万人裁员转向AI解决方案销售，体现企业软件行业深度变革；阿里巴巴530亿美元投入AI基础设施，彰显全球技术竞争防御策略。OpenAI面临内外部压力，合作关系出现紧张。谷歌、Meta、微软等公司发布AI功能更新，AI正深度融入用户日常习惯。三星、OpenAI等厂商推动AI成为新用户界面，预示意图经济时代到来。AI加速科学发现，应用于疫苗
+series: Newsletter 周刊
 ---
 
 ![L76_科技巨头的AI新战场](https://pics.naaln.com/b44f1469-1fe0-40ad-83df-2f592e71c080.png-basicBlog)

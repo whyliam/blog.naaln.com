@@ -1,4 +1,5 @@
 ---
+layout: post
 title: Android中ListView的各种显示效果
 date: 2013/04/09 07:57:00
 categories:

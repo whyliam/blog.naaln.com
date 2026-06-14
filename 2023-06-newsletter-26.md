@@ -1,8 +1,9 @@
 ---
+layout: post
 title: L26_自我管理
 date: 2023/06/25 20:00:00
 categories:
-  - Notes & Reflections
+  - Notes & Essays
 tags:
   - SelfManagement
   - CareerStrategy

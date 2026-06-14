@@ -1,8 +1,9 @@
 ---
+layout: post
 title: fedora17 eclipse安装
 date: 2013/02/23 19:00:00
 categories:
-  - Notes & Reflections
+  - Notes & Essays
 tags:
   - Infrastructure
   - TechHistory

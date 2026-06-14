@@ -1,4 +1,5 @@
 ---
+layout: post
 title: 37signals 决策指南：如何把控商业运营的核心艺术
 date: 2026/02/06 15:10:00
 categories:

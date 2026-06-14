@@ -1,8 +1,9 @@
 ---
+layout: post
 title: 论程序员的自我修养
 date: 2017/03/07 14:43:32
 categories:
-  - Notes & Reflections
+  - Notes & Essays
 tags:
   - SystemsThinking
   - EngineeringMindset

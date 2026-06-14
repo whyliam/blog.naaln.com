@@ -1,4 +1,5 @@
 ---
+layout: post
 title: 产品经理的发展选择
 date: 2019/07/17 20:00:00
 categories:

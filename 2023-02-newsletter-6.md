@@ -1,4 +1,5 @@
 ---
+layout: post
 title: L6_科技界在崩溃
 date: 2023/02/05 20:00:00
 categories:

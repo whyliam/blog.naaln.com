@@ -1,4 +1,5 @@
 ---
+layout: post
 title: 让我们来聊聊 Apple News
 date: 2019/03/27 23:30:53
 categories:

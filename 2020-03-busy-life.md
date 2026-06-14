@@ -1,8 +1,9 @@
 ---
+layout: post
 title: 匆忙的生活
 date: 2020/03/12 20:00:00
 categories:
-  - Notes & Reflections
+  - Notes & Essays
 tags:
   - EnergyManagement
   - Productivity

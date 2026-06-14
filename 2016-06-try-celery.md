@@ -1,4 +1,5 @@
 ---
+layout: post
 title: 试用 Celery
 date: 2016/06/28 12:25:53
 categories:

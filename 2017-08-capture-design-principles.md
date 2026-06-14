@@ -1,4 +1,5 @@
 ---
+layout: post
 title: 浅析APP设计：掌握市场截图设计原则
 date: 2017/08/16 19:55:50
 categories:

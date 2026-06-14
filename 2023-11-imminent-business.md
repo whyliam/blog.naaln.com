@@ -1,4 +1,5 @@
 ---
+layout: post
 title: 临期业态 & 折扣MAMA
 date: 2023/11/02 20:00:00
 categories:

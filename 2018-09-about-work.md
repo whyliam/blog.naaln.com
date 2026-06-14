@@ -1,8 +1,9 @@
 ---
+layout: post
 title: 关于工作
 date: 2018/09/09 17:07:28
 categories:
-  - Notes & Reflections
+  - Notes & Essays
 tags:
   - ProductThinking
   - CareerGrowth

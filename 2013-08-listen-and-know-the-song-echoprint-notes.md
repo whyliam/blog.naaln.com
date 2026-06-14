@@ -1,4 +1,5 @@
 ---
+layout: post
 title: 听音识曲，ECHOPRINT使用笔记
 date: 2013/08/26 02:00:00
 categories:

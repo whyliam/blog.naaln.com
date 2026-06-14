@@ -1,4 +1,5 @@
 ---
+layout: post
 title: 修复 signed with custom identity or adhoc
 date: 2019/04/06 20:30:53
 categories:

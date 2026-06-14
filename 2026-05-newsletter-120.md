@@ -1,16 +1,17 @@
 ---
+layout: post
 title: L120_编程已死，判断力当立
 date: 2026/05/08 20:58:37
 categories:
-  - Notes & Reflections
+  - Notes & Essays
 tags:
   - AI
   - AgenticAI
   - DecisionMaking
   - Learning
   - Newsletter
-series: Newsletter 周刊
 description: Claude Code之父宣布编程已被AI彻底解决，Hermes多Agent组建跨境电商团队，AI时代教育该鸡什么方向
+series: Newsletter 周刊
 ---
 ![](https://pics.naaln.com/2026-05-10-af1780900a144633bbd8a19a4c449f49.png-basicBlog)
 

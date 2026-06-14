@@ -1,8 +1,9 @@
 ---
+layout: post
 title: L24_找到生活的热情
 date: 2023/06/11 20:00:00
 categories:
-  - Notes & Reflections
+  - Notes & Essays
 tags:
   - MentalModels
   - SystemsThinking

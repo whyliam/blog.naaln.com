@@ -1,8 +1,9 @@
 ---
+layout: post
 title: zen of python
 date: 2015/07/25 12:05:00
 categories:
-  - Notes & Reflections
+  - Notes & Essays
 tags:
   - SystemsThinking
   - Engineering

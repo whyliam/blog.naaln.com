@@ -1,16 +1,17 @@
 ---
+layout: post
 title: L103_AI 逆袭与天赋发现
 date: 2026/01/10 04:53:11
 categories:
-  - Notes & Reflections
+  - Notes & Essays
 tags:
   - AI
   - ProductThinking
   - Strategy
   - Newsletter
   - Observation
-series: Newsletter 周刊
 description: 本期深入探讨下一代 AI 交互的协作与个性化趋势，回顾 Google Gemini 从承认落后到逆风翻盘的成长启示，分析 2026 年 AI 创投的"The Year of R"转折点，推荐本地 AI 知识管理工具 Nessie，分享挖掘隐藏天赋的实用方法。
+series: Newsletter 周刊
 ---
 ![](https://pics.naaln.com/2026-01-09-aeefc7f97e75b352b63afcb4cf390a12.webp-basicBlog)
 

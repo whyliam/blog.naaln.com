@@ -1,8 +1,9 @@
 ---
+layout: post
 title: pcduino入手ssh连接开放vncserver远程服务
 date: 2014/03/07 06:58:00
 categories:
-  - Notes & Reflections
+  - Notes & Essays
 tags:
   - Infrastructure
   - Learning

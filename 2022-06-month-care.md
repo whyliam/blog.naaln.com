@@ -1,8 +1,9 @@
 ---
+layout: post
 title: 坐月子
 date: 2022/06/14 20:00:00
 categories:
-  - Notes & Reflections
+  - Notes & Essays
 tags:
   - Life
   - Observation

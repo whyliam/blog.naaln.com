@@ -1,4 +1,5 @@
 ---
+layout: post
 title: GPT 的基本原理
 date: 2023/03/21 20:00:00
 categories:

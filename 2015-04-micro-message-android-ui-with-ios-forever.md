@@ -1,4 +1,5 @@
 ---
+layout: post
 title: Android 微信的 UI 永远和 iOS 一样
 date: 2015/04/21 21:57:00
 categories:

@@ -1,8 +1,9 @@
 ---
+layout: post
 title: 一个人
 date: 2013/04/09 10:05:00
 categories:
-  - Notes & Reflections
+  - Notes & Essays
 tags:
   - Life
   - Observation

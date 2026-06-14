@@ -1,4 +1,5 @@
 ---
+layout: post
 title: 长途骑行的一些小经验
 date: 2014/02/18 01:22:00
 categories:

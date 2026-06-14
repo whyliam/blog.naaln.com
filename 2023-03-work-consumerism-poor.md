@@ -1,8 +1,9 @@
 ---
+layout: post
 title: 工作、消费主义和新穷人
 date: 2022/03/14 20:00:00
 categories:
-  - Notes & Reflections
+  - Notes & Essays
 tags:
   - SystemsThinking
   - SocialObservation

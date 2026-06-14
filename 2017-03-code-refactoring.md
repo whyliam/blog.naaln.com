@@ -1,4 +1,5 @@
 ---
+layout: post
 title: 代码重构
 date: 2017/03/05 21:14:52
 categories:

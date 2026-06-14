@@ -1,4 +1,5 @@
 ---
+layout: post
 title: 三大主流开源硬件对比：Arduino vs BeagleBone vs Raspberry Pi
 date: 2013/05/11 01:50:00
 categories:

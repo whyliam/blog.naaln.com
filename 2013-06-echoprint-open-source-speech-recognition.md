@@ -1,4 +1,5 @@
 ---
+layout: post
 title: Echoprint - 开源的声纹识别
 date: 2013/06/18 01:39:00
 categories:

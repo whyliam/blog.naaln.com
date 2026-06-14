@@ -1,4 +1,5 @@
 ---
+layout: post
 title: Ruby中爬虫的实现
 date: 2013/09/10 20:02:00
 categories:

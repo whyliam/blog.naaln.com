@@ -1,4 +1,5 @@
 ---
+layout: post
 title: 2025 Mac Software
 date: 2025/03/25 09:39:00
 categories:

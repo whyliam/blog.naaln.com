@@ -1,8 +1,9 @@
 ---
+layout: post
 title: 《断舍离》的笔记
 date: 2021/01/20 20:00:00
 categories:
-  - Notes & Reflections
+  - Notes & Essays
 tags:
   - DecisionMaking
   - KnowledgeManagement

@@ -1,8 +1,9 @@
 ---
+layout: post
 title: 在硅谷华人为什么没有印度人成功
 date: 2019/07/09 20:00:00
 categories:
-  - Notes & Reflections
+  - Notes & Essays
 tags:
   - Workplace
   - Communication

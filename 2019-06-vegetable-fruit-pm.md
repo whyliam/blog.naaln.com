@@ -1,4 +1,5 @@
 ---
+layout: post
 title: 为什么菜市场有卖水果，水果店不卖蔬菜？
 date: 2019/06/27 20:00:00
 categories:

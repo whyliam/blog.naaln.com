@@ -1,8 +1,9 @@
 ---
+layout: post
 title: 如何在一天内彻底改变你的人生
 date: 2026/01/17 12:22:00
 categories:
-  - Notes & Reflections
+  - Notes & Essays
 tags:
   - SystemsThinking
   - CognitiveEvolution

@@ -1,4 +1,5 @@
 ---
+layout: post
 title: L114_设计细节与AI工具
 date: 2026/03/29 12:30:00
 categories:

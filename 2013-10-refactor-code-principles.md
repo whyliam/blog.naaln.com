@@ -1,4 +1,5 @@
 ---
+layout: post
 title: 代码重构方向原则指导
 date: 2013/10/21 21:26:00
 categories:

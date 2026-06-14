@@ -1,4 +1,5 @@
 ---
+layout: post
 title: 如何开始一个模块化可扩展的Web App
 date: 2014/08/11 11:33:00
 categories:

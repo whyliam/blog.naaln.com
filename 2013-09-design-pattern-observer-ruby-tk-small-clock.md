@@ -1,4 +1,5 @@
 ---
+layout: post
 title: 设计模式 观察者模式 -- Ruby/tk小时钟
 date: 2013/09/14 06:25:00
 categories:

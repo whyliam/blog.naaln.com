@@ -1,4 +1,5 @@
 ---
+layout: post
 title: 善用时间轴，改变写歌和编曲协同方式的Splice想做音乐界的Github
 date: 2013/10/12 05:16:00
 categories:

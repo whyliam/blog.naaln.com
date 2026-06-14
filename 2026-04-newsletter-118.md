@@ -1,16 +1,17 @@
 ---
+layout: post
 title: L118_出去走一走
 date: 2026/04/25 10:00:00
 categories:
-  - Notes & Reflections
+  - Notes & Essays
 tags:
   - AI
   - ProductThinking
   - SystemsThinking
   - Observation
   - Newsletter
-series: Newsletter 周刊
 description: 库克将在 9 月卸任苹果 CEO，接棒的是在实验室待了 25 年的硬件工程师特努斯。GEO 正在替代 SEO，当 AI 能写五万字小说却被七猫两天拒稿时，真正不可替代的东西开始浮出水面。
+series: Newsletter 周刊
 ---
 ![](https://pics.naaln.com/2026-04-24-0a372f745da6da1363a8ac3984227af9.webp-basicBlog)
 

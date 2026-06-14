@@ -1,8 +1,9 @@
 ---
+layout: post
 title: 初学OpenGL的程序（画球）
 date: 2013/05/30 20:16:00
 categories:
-  - Notes & Reflections
+  - Notes & Essays
 tags:
   - Learning
   - Engineering

@@ -1,4 +1,5 @@
 ---
+layout: post
 title: 打造爆款文案
 date: 2019/07/25 20:00:00
 categories:

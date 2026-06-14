@@ -1,15 +1,16 @@
 ---
+layout: post
 title: L108_职业倦怠与产品定律
 date: 2026/02/14 01:57:48
 categories:
-  - Notes & Reflections
+  - Notes & Essays
 tags:
   - Newsletter
   - ProductThinking
   - Agent
   - SystemsThinking
-series: Newsletter 周刊
 description: 本期深入探讨大厂复利式熵增对高知员工的制度性消耗机制，分析职业倦怠的三个维度（身体枯竭、情感冷漠、效能感丧失）及通过自主权和季节性策略的预防方法。分享张一鸣产品定律的核心观点，强调用户收益必须远大于操作成本，以及ClawdBot项目展现的AI编程新范式。
+series: Newsletter 周刊
 ---
 ![](https://pics.naaln.com/2026-02-06-e791dd8619168573f8618e26d6210cc4.webp-basicBlog)
 

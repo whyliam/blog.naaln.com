@@ -1,8 +1,9 @@
 ---
+layout: post
 title: 岛读上线 1000 天
 date: 2019/09/27 20:00:00
 categories:
-  - Notes & Reflections
+  - Notes & Essays
 tags:
   - ProductThinking
   - LongTermism

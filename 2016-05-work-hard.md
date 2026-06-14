@@ -1,8 +1,9 @@
 ---
+layout: post
 title: 人既然知道努力就可以进步，为什么还是会不努力？
 date: 2016/05/10 12:21:53
 categories:
-  - Notes & Reflections
+  - Notes & Essays
 tags:
   - CognitiveBiases
   - DelayedGratification

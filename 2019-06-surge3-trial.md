@@ -1,4 +1,5 @@
 ---
+layout: post
 title: Surge 3 试用
 date: 2019/06/07 20:00:00
 categories:

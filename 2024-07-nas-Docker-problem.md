@@ -1,4 +1,5 @@
 ---
+layout: post
 title: 群晖docker启动失败
 date: 2024/07/16 09:39:00
 categories:

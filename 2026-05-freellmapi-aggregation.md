@@ -1,14 +1,15 @@
 ---
+layout: post
 title: 免费额度也能聚沙成塔
 date: 2026/05/20 10:00:00
 categories:
-  - Notes & Reflections
+  - Notes & Essays
 tags:
   - AI
   - OpenSource
   - Tools
-type: note
 description: 一个把 11 家平台免费额度聚合到 OpenAI 兼容接口的开源项目，适合早期验证和个人工具。
+type: note
 ---
 
 最近看到一个挺有意思的开源项目：FreeLLMAPI。

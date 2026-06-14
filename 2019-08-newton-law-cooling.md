@@ -1,4 +1,5 @@
 ---
+layout: post
 title: 牛顿冷却定律处理时间衰减和权重
 date: 2019/08/01 20:00:00
 categories:

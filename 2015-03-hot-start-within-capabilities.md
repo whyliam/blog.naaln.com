@@ -1,4 +1,5 @@
 ---
+layout: post
 title: 创业虽火，量力而行
 date: 2015/03/09 00:12:00
 categories:

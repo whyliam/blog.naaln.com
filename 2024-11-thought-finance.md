@@ -1,8 +1,9 @@
 ---
+layout: post
 title: 我对财务自由的思考和探索
 date: 2024/11/04 22:49:00
 categories:
-  - Notes & Reflections
+  - Notes & Essays
 tags:
   - LifeStrategy
   - FinancialFreedom

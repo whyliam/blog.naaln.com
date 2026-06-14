@@ -1,4 +1,5 @@
 ---
+layout: post
 title: OmniFocus 自动化流程
 date: 2020/02/23 20:00:00
 categories:

@@ -1,8 +1,9 @@
 ---
+layout: post
 title: 此去经年，良辰好景未虚设
 date: 2013/10/18 12:15:00
 categories:
-  - Notes & Reflections
+  - Notes & Essays
 tags:
   - Life
   - Observation

@@ -1,8 +1,9 @@
 ---
+layout: post
 title: 认知成长路径象限图
 date: 2019/07/08 20:00:00
 categories:
-  - Notes & Reflections
+  - Notes & Essays
 tags:
   - KnowledgeManagement
   - CognitiveGrowth

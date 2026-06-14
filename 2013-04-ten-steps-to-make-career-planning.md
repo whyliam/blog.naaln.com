@@ -1,8 +1,9 @@
 ---
+layout: post
 title: 十个步骤做好职业生涯规划
 date: 2013/04/01 06:00:00
 categories:
-  - Notes & Reflections
+  - Notes & Essays
 tags:
   - CareerPlanning
   - PersonalGrowth

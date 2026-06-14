@@ -1,8 +1,9 @@
 ---
+layout: post
 title: 12月小结｜请回答2023
 date: 2023/12/31 20:00:00
 categories:
-  - Notes & Reflections
+  - Notes & Essays
 tags:
   - Life
   - Reflection

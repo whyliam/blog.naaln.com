@@ -1,4 +1,5 @@
 ---
+layout: post
 title: 我是如何利用Xcode调试开发微信消息预览插件的
 date: 2016/03/08 22:48:00
 categories:

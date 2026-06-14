@@ -1,8 +1,9 @@
 ---
+layout: post
 title: 写给半年后的自己
 date: 2010/12/30 19:00:00
 categories:
-  - Notes & Reflections
+  - Notes & Essays
 tags:
   - Life
   - Writing

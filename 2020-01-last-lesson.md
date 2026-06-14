@@ -1,4 +1,5 @@
 ---
+layout: post
 title: 最后一课
 date: 2020/01/20 20:00:00
 categories:

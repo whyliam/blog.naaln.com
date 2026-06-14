@@ -1,4 +1,5 @@
 ---
+layout: post
 title: 瓦片地图
 date: 2016/06/21 16:30:14
 categories:

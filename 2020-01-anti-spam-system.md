@@ -1,4 +1,5 @@
 ---
+layout: post
 title: 反垃圾系统设计
 date: 2020/01/19 20:00:00
 categories:

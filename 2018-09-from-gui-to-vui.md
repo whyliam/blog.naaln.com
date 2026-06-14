@@ -1,4 +1,5 @@
 ---
+layout: post
 title: 下一代的交互模式
 date: 2018/09/20 23:05:38
 categories:

@@ -1,8 +1,9 @@
 ---
+layout: post
 title: 再见金华站
 date: 2013/04/08 11:06:00
 categories:
-  - Notes & Reflections
+  - Notes & Essays
 tags:
   - Life
   - Observation

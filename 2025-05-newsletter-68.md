@@ -1,4 +1,5 @@
 ---
+layout: post
 title: L68_从教育挑战到投资机遇
 date: 2025/05/09 20:00:00
 categories:

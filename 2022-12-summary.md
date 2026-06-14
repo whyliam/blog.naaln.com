@@ -1,8 +1,9 @@
 ---
+layout: post
 title: 12月小结｜知识是用于生产的信息
 date: 2022/12/31 20:00:00
 categories:
-  - Notes & Reflections
+  - Notes & Essays
 tags:
   - KnowledgeManagement
   - SystemsThinking

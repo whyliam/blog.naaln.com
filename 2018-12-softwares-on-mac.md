@@ -1,8 +1,9 @@
 ---
+layout: post
 title: 自己在用的Mac软件及配置
 date: 2018/12/25 00:03:33
 categories:
-  - Notes & Reflections
+  - Notes & Essays
 tags:
   - Workflow
   - Productivity

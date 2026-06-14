@@ -1,4 +1,5 @@
 ---
+layout: post
 title: 批量获取QQ靓号的代码
 date: 2014/10/18 11:01:47
 categories:

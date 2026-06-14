@@ -1,8 +1,9 @@
 ---
+layout: post
 title: 4月小结｜假如我年少有为
 date: 2022/04/30 20:00:00
 categories:
-  - Notes & Reflections
+  - Notes & Essays
 tags:
   - Life
   - Observation

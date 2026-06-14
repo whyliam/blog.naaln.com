@@ -1,4 +1,5 @@
 ---
+layout: post
 title: 愚蠢的推荐算法
 date: 2019/07/18 20:00:00
 categories:

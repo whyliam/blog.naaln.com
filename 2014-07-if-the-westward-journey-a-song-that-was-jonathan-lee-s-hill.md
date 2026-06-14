@@ -1,8 +1,9 @@
 ---
+layout: post
 title: 如果《大话西游》一首歌，那是李宗盛的《山丘》
 date: 2014/07/04 11:08:00
 categories:
-  - Notes & Reflections
+  - Notes & Essays
 tags:
   - Observation
   - Life

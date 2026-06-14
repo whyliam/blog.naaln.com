@@ -1,8 +1,9 @@
 ---
+layout: post
 title: 我应该换工作吗？
 date: 2023/11/02 20:00:00
 categories:
-  - Notes & Reflections
+  - Notes & Essays
 tags:
   - DecisionMaking
   - CareerStrategy

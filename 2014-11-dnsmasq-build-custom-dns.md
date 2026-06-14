@@ -1,4 +1,5 @@
 ---
+layout: post
 title: DNSMasq 建立自定义 DNS
 date: 2014/11/06 21:29:00
 categories:

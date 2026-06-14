@@ -1,4 +1,5 @@
 ---
+layout: post
 title: 费曼学习法与ChatGPT
 date: 2024/11/16 12:02:00
 categories:

@@ -1,8 +1,9 @@
 ---
+layout: post
 title: libfaketime 改变软件的运行时间
 date: 2019/04/21 21:30:53
 categories:
-  - Notes & Reflections
+  - Notes & Essays
 tags:
   - Infrastructure
   - SystemDesign

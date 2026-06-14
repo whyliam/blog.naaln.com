@@ -1,4 +1,5 @@
 ---
+layout: post
 title: RESTful Web 服务：教程
 date: 2016/12/13 19:00:00
 categories:

@@ -1,8 +1,9 @@
 ---
+layout: post
 title: 定位
 date: 2020/07/25 20:00:00
 categories:
-  - Notes & Reflections
+  - Notes & Essays
 tags:
   - Strategy
   - DecisionMaking

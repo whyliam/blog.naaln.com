@@ -1,4 +1,5 @@
 ---
+layout: post
 title: L65_从多模态推理到自主决策智能体
 date: 2025/04/18 20:00:00
 categories:

@@ -1,4 +1,5 @@
 ---
+layout: post
 title: 找工作，请务必去「离钱近」的地方
 date: 2025/11/19 17:55:00
 categories:

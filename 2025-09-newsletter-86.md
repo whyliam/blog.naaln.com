@@ -1,4 +1,5 @@
 ---
+layout: post
 title: L86_AI+行动与设计应用
 date: 2025/09/13 23:42:00
 categories:

@@ -1,8 +1,9 @@
 ---
+layout: post
 title: 3月小结｜新的混搭
 date: 2023/03/31 20:00:00
 categories:
-  - Notes & Reflections
+  - Notes & Essays
 tags:
   - AI
   - Observation

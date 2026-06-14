@@ -1,4 +1,5 @@
 ---
+layout: post
 title: 欢迎关注「数据官」
 date: 2020/05/01 20:00:00
 categories:

@@ -1,8 +1,9 @@
 ---
+layout: post
 title: 3月小结｜乘风在人海中远航迎着暖暖的晨光
 date: 2022/03/31 20:00:00
 categories:
-  - Notes & Reflections
+  - Notes & Essays
 tags:
   - Observation
   - Life

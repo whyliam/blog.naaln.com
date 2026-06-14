@@ -1,4 +1,5 @@
 ---
+layout: post
 title: 重复造轮子之Alfred有道插件  进阶篇
 date: 2015/05/06 00:20:00
 categories:

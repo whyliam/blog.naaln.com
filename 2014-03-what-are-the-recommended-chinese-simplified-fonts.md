@@ -1,4 +1,5 @@
 ---
+layout: post
 title: 有哪些值得推荐的简体中文字体
 date: 2014/03/12 01:58:00
 categories:
@@ -9,7 +10,7 @@ tags:
   - DesignReference
   - Archive
 description: 文章展示四个风格类别的中文字体：典雅型包含方正宋刻本秀楷简体、康熙字典体、欧体楷书、方正苏新诗柳楷简体；柔美型包括迷你简启体、长城中行书体；灵动型涵盖书体坊米芾体、祥南行书体、迷你简黄草；精致型由冬青黑体、昆仑细圆、方正幼线简体、方正兰亭刊宋组成，提供各类字体风格参考与选择指南，来源知乎字体专业讨论。
-cover: http://pics.naaln.com/blog/2019-01-14-061937.jpg-basicBlog
+cover: 'http://pics.naaln.com/blog/2019-01-14-061937.jpg-basicBlog'
 ---
 
 ## 典雅型

@@ -1,8 +1,9 @@
 ---
+layout: post
 title: L19_职业倦怠和最佳选择
 date: 2023/05/07 20:00:00
 categories:
-  - Notes & Reflections
+  - Notes & Essays
 tags:
   - DecisionMaking
   - OrganizationalCulture

@@ -1,8 +1,9 @@
 ---
+layout: post
 title: 你是在玩人生游戏，还是在当 NPC
 date: 2025/10/26 09:37:00
 categories:
-  - Notes & Reflections
+  - Notes & Essays
 tags:
   - SystemsThinking
   - LifeDesign

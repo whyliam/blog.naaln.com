@@ -1,4 +1,5 @@
 ---
+layout: post
 title: 移动前端不得不了解的html5 head 头标签
 date: 2015/09/24 13:21:00
 categories:

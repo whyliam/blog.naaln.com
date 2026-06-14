@@ -1,8 +1,9 @@
 ---
+layout: post
 title: L15_最重要的资源
 date: 2023/04/08 20:00:00
 categories:
-  - Notes & Reflections
+  - Notes & Essays
 tags:
   - AI
   - Data

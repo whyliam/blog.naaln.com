@@ -1,8 +1,9 @@
 ---
+layout: post
 title: 第八届全国高校社团会长年会·速录
 date: 2012/08/27 07:36:00
 categories:
-  - Notes & Reflections
+  - Notes & Essays
 tags:
   - GenerationalShift
   - YouthLeadership

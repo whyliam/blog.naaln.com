@@ -1,4 +1,5 @@
 ---
+layout: post
 title: 阿里巴巴的日志采集分享（下）
 date: 2017/09/01 17:25:07
 categories:

@@ -1,8 +1,9 @@
 ---
+layout: post
 title: 对2019的思考
 date: 2019/11/15 20:00:00
 categories:
-  - Notes & Reflections
+  - Notes & Essays
 tags:
   - ProductThinking
   - Growth

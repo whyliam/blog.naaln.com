@@ -1,4 +1,5 @@
 ---
+layout: post
 title: 《智能商业》的笔记
 date: 2020/01/20 20:00:00
 categories:

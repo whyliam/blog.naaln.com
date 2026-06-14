@@ -1,14 +1,15 @@
 ---
+layout: post
 title: 无用阶层
 date: 2026/05/11 20:00:00
 categories:
-  - Notes & Reflections
+  - Notes & Essays
 tags:
   - AI
   - Future
   - Observation
-type: note
 description: 哈拉瑞在《未来简史》里的预言，放到今天看越来越不像预言了。
+type: note
 ---
 
 > "未来最大的经济问题，可能是大量'无用阶层'的出现。"——《未来简史》

@@ -1,4 +1,5 @@
 ---
+layout: post
 title: Google 翻译重回中国
 date: 2017/03/29 16:58:14
 categories:

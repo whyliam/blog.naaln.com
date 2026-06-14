@@ -1,8 +1,9 @@
 ---
+layout: post
 title: 11月小结｜成为更好的自己
 date: 2022/11/30 20:00:00
 categories:
-  - Notes & Reflections
+  - Notes & Essays
 tags:
   - ProductThinking
   - BusinessModel

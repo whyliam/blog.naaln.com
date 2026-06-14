@@ -1,4 +1,5 @@
 ---
+layout: post
 title: 豆瓣Code系统的开源计划
 date: 2014/02/11 21:57:00
 categories:

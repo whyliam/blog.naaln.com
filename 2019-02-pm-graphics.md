@@ -1,4 +1,5 @@
 ---
+layout: post
 title: 需要了解的产品结构图
 date: 2019/02/20 20:30:53
 categories:

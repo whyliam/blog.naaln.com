@@ -1,4 +1,5 @@
 ---
+layout: post
 title: 被误读的大数据技术
 date: 2014/08/24 03:04:00
 categories:

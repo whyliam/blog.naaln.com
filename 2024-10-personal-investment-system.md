@@ -1,4 +1,5 @@
 ---
+layout: post
 title: 个人投资系统的构建
 date: 2024/10/12 20:00:00
 categories:

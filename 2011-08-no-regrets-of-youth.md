@@ -1,8 +1,9 @@
 ---
+layout: post
 title: 无悔的青春
 date: 2011/08/30 20:00:00
 categories:
-  - Notes & Reflections
+  - Notes & Essays
 tags:
   - Life
   - Observation

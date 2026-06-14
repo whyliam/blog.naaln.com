@@ -1,4 +1,5 @@
 ---
+layout: post
 title: Echoprint Status （翻译）
 date: 2013/06/17 12:02:00
 categories:

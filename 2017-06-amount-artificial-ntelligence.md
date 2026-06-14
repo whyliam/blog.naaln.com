@@ -1,4 +1,5 @@
 ---
+layout: post
 title: 恰到好处的人工智能
 date: 2017/06/07 23:16:00
 categories:

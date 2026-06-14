@@ -1,8 +1,9 @@
 ---
+layout: post
 title: 如何找到人生热爱的事
 date: 2025/09/04 15:43:00
 categories:
-  - Notes & Reflections
+  - Notes & Essays
 tags:
   - Life
   - Learning

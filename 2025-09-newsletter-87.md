@@ -1,4 +1,5 @@
 ---
+layout: post
 title: L87_从卖时间到建系统
 date: 2025/09/17 17:12:00
 categories:

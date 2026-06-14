@@ -1,8 +1,9 @@
 ---
+layout: post
 title: Latex 简历
 date: 2021/08/25 20:00:00
 categories:
-  - Notes & Reflections
+  - Notes & Essays
 tags:
   - Workflow
   - Writing

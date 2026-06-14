@@ -1,8 +1,9 @@
 ---
+layout: post
 title: 给明年依然年轻的我们：欲望、外界、标签、天才、时间、人生目标、现实、后悔、和经历（三）
 date: 2013/09/30 12:17:00
 categories:
-  - Notes & Reflections
+  - Notes & Essays
 tags:
   - Life
   - Growth

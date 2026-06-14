@@ -1,4 +1,5 @@
 ---
+layout: post
 title: 8种热图用法揭示用户的网站浏览行为
 date: 2017/06/28 11:20:22
 categories:

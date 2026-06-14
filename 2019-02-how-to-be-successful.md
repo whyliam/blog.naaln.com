@@ -1,4 +1,5 @@
 ---
+layout: post
 title: How To Be Successful | 如何成功
 date: 2019/02/11 10:01:53
 categories:

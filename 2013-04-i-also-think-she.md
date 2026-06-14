@@ -1,8 +1,9 @@
 ---
+layout: post
 title: 我还想她
 date: 2013/04/27 21:42:00
 categories:
-  - Notes & Reflections
+  - Notes & Essays
 tags:
   - Life
   - Observation

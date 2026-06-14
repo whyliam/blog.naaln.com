@@ -1,4 +1,5 @@
 ---
+layout: post
 title: 职尺路杂想
 date: 2016/06/14 00:02:39
 categories:

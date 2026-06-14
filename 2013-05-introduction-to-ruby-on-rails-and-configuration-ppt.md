@@ -1,4 +1,5 @@
 ---
+layout: post
 title: Ruby on Rails  简介及配置（ppt）
 date: 2013/05/19 08:20:00
 categories:

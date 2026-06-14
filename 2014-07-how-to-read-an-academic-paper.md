@@ -1,8 +1,9 @@
 ---
+layout: post
 title: 如何读懂一篇学术论文？
 date: 2014/07/09 23:20:00
 categories:
-  - Notes & Reflections
+  - Notes & Essays
 tags:
   - KnowledgeManagement
   - Learning

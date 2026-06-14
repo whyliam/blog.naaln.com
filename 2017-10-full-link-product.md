@@ -1,4 +1,5 @@
 ---
+layout: post
 title: 阿里巴巴全链路设计
 date: 2017/10/15 21:26:53
 categories:

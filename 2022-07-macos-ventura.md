@@ -1,4 +1,5 @@
 ---
+layout: post
 title: 在 MacBook 2013 安装 MacOS Ventura
 date: 2022/07/28 20:00:00
 categories:

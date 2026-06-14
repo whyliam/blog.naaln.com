@@ -1,4 +1,5 @@
 ---
+layout: post
 title: 在美国推广支付宝和微信支付方式
 date: 2016/11/02 16:46:29
 categories:

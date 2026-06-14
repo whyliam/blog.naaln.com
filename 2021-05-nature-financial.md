@@ -1,4 +1,5 @@
 ---
+layout: post
 title: 商业的本质是交易
 date: 2021/05/17 20:00:00
 categories:

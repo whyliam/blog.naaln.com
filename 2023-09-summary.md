@@ -1,8 +1,9 @@
 ---
+layout: post
 title: 9月小结｜脚底扣地
 date: 2023/09/30 20:00:00
 categories:
-  - Notes & Reflections
+  - Notes & Essays
 tags:
   - Life
   - Observation

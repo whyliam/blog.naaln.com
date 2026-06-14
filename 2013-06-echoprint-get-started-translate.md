@@ -1,4 +1,5 @@
 ---
+layout: post
 title: Echoprint Get started（翻译）
 date: 2013/06/17 12:04:00
 categories:

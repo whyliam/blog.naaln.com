@@ -1,4 +1,5 @@
 ---
+layout: post
 title: Arduino为什么这么红？
 date: 2013/04/17 12:09:00
 categories:

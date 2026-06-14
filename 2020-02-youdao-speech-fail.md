@@ -1,4 +1,5 @@
 ---
+layout: post
 title: 有道翻译发音失败
 date: 2020/02/23 20:00:00
 categories:

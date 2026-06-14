@@ -1,8 +1,9 @@
 ---
+layout: post
 title: 这会是 2016 年前端的年末撕逼吗？
 date: 2016/12/14 10:26:10
 categories:
-  - Notes & Reflections
+  - Notes & Essays
 tags:
   - SystemsThinking
   - FirstPrinciples

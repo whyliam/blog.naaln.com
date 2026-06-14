@@ -1,8 +1,9 @@
 ---
+layout: post
 title: 瞧那个少年
 date: 2011/11/19 19:00:00
 categories:
-  - Notes & Reflections
+  - Notes & Essays
 tags:
   - SelfReflection
   - LifeObservation

@@ -1,8 +1,9 @@
 ---
+layout: post
 title: 欲望八爪鱼
 date: 2022/04/01 20:00:00
 categories:
-  - Notes & Reflections
+  - Notes & Essays
 tags:
   - DecisionMaking
   - SelfAwareness

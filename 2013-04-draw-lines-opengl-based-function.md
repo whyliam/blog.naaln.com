@@ -1,8 +1,9 @@
 ---
+layout: post
 title: OpenGL基础画线函数
 date: 2013/04/02 20:32:00
 categories:
-  - Notes & Reflections
+  - Notes & Essays
 tags:
   - Learning
   - SystemsThinking

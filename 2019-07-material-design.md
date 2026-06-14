@@ -1,4 +1,5 @@
 ---
+layout: post
 title: Material Design数据可视化设计规范
 date: 2019/07/26 20:00:00
 categories:

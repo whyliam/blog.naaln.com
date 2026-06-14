@@ -1,4 +1,5 @@
 ---
+layout: post
 title: 产品经理职责
 date: 2017/04/16 14:41:45
 categories:

@@ -1,4 +1,5 @@
 ---
+layout: post
 title: 理解Swift中Extension类型
 date: 2016/07/26 10:32:08
 categories:

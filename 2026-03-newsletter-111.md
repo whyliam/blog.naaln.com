@@ -1,8 +1,9 @@
 ---
+layout: post
 title: L111_门槛、表达与创造
 date: 2026/03/07 05:45:19
 categories:
-  - Notes & Reflections
+  - Notes & Essays
 tags:
   - AI
   - Prompt

@@ -1,4 +1,5 @@
 ---
+layout: post
 title: 扎克伯格的私人 AI 管家 Jarvis
 date: 2016/12/22 10:27:55
 categories:

@@ -1,16 +1,17 @@
 ---
+layout: post
 title: L33_让好事发生
 date: 2023/08/13 20:00:00
 categories:
-  - Notes & Reflections
+  - Notes & Essays
 tags:
   - Observation
   - Life
   - Strategy
   - SystemsThinking
   - AI
-series: Newsletter 周刊
 description: 成年人呈现幼稚迹象，生命历程不可预测，自我认同延迟。AI巨头承诺AI安全测试、分享信息、投资措施以应对挑战。文章提出人生规划三层：战术执行明确行动，战略取舍设计目标，概率系统增加好机会可能性。
+series: Newsletter 周刊
 ---
 
 - 人类年龄观点需要重新审视，许多人的成年期价值已下降，人格发展各不相同，成年人呈现幼稚迹象，生命历程变得不可预测，自我认同延迟，幼稚主义因素以及某些活动也影响了成年过程。

@@ -1,4 +1,5 @@
 ---
+layout: post
 title: 浏览器内核
 date: 2016/02/28 15:01:00
 categories:

@@ -1,8 +1,9 @@
 ---
+layout: post
 title: L25_欲望隐藏在模仿中
 date: 2023/06/18 20:00:00
 categories:
-  - Notes & Reflections
+  - Notes & Essays
 tags:
   - SystemsThinking
   - CognitiveBiases

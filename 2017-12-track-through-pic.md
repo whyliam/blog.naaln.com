@@ -1,4 +1,5 @@
 ---
+layout: post
 title: 通过图片地址找出你
 date: 2017/12/15 22:35:11
 categories:

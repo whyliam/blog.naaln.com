@@ -1,8 +1,9 @@
 ---
+layout: post
 title: 9 个 Aha Moments
 date: 2025/08/22 20:00:00
 categories:
-  - Notes & Reflections
+  - Notes & Essays
 tags:
   - AI
   - Agent

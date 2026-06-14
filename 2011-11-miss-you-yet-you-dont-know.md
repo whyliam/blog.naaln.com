@@ -1,8 +1,9 @@
 ---
+layout: post
 title: 想你了，你却不知道
 date: 2011/11/15 19:00:00
 categories:
-  - Notes & Reflections
+  - Notes & Essays
 tags:
   - Writing
   - Observation

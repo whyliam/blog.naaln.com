@@ -1,4 +1,5 @@
 ---
+layout: post
 title: 2025 年，LLMs 的「幽灵革命」如何悄然改变我们的世界？
 date: 2026/01/09 17:25:00
 categories:

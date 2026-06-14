@@ -1,8 +1,9 @@
 ---
+layout: post
 title: 教我做事？
 date: 2022/04/01 20:00:00
 categories:
-  - Notes & Reflections
+  - Notes & Essays
 tags:
   - FirstPrinciples
   - CognitiveBiases

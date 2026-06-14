@@ -1,4 +1,5 @@
 ---
+layout: post
 title: 坎昆归来不看海——七天六夜详细行程＋海量照片
 date: 2013/09/05 02:14:00
 categories:

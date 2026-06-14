@@ -1,4 +1,5 @@
 ---
+layout: post
 title: 字节跳动的产品与决策：中观层面的探索
 date: 2024/11/04 21:53:00
 categories:

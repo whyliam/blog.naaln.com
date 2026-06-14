@@ -1,4 +1,5 @@
 ---
+layout: post
 title: 数据交易调研报告
 date: 2019/12/04 20:00:00
 categories:

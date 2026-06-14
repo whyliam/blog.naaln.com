@@ -1,8 +1,9 @@
 ---
+layout: post
 title: 成年人的世界不信二选一
 date: 2026/01/30 17:46:00
 categories:
-  - Notes & Reflections
+  - Notes & Essays
 tags:
   - SystemsThinking
   - Life

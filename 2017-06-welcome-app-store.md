@@ -1,4 +1,5 @@
 ---
+layout: post
 title: 欢迎来到全新的 App Store！
 date: 2017/06/07 00:18:39
 categories:

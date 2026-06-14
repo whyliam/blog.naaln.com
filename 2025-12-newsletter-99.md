@@ -1,16 +1,17 @@
 ---
+layout: post
 title: L99_改变世界的商业逻辑与职场方法论
 date: 2025/12/13 10:59:33
 categories:
-  - Notes & Reflections
+  - Notes & Essays
 tags:
   - ProductThinking
   - DecisionMaking
   - Life
   - Observation
   - KnowledgeManagement
-series: Newsletter 周刊
 description: 本期深度解析乔布斯1995年「遗失的访谈」中关于商业本质的洞察，揭示为什么有些公司能改变世界而大多数只能沦为平庸。从流程依赖症到A级人才的自我监督机制，从科技与人文的交汇到品味决定高度，这些跨越三十年的思考依然像针一样扎在每个创业者的痛点上。同时分享职场五年总结的方法论体系，从WHORERE口诀到目标体系先行，帮助不同阶段的产品经理找到适合自己的成长路径。最后探讨数字时代的注意力危机，分析手机如何悄悄偷走我们的生活，以及通过清晨读普鲁斯特等实验重新夺回注意力和活在当下的能力。
+series: Newsletter 周刊
 ---
 
 ## 📚 阅读

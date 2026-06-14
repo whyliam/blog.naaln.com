@@ -1,4 +1,5 @@
 ---
+layout: post
 title: 常见的5种主流变现方式
 date: 2019/07/27 20:00:00
 categories:

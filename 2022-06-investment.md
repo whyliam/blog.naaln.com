@@ -1,4 +1,5 @@
 ---
+layout: post
 title: 经济下行
 date: 2022/06/19 20:00:00
 categories:

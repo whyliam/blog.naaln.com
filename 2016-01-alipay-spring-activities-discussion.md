@@ -1,4 +1,5 @@
 ---
+layout: post
 title: 支付宝新春活动讨论
 date: 2016/01/30 00:43:00
 categories:

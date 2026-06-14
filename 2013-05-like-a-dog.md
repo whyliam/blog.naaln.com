@@ -1,8 +1,9 @@
 ---
+layout: post
 title: 好像一条狗
 date: 2013/05/01 15:19:00
 categories:
-  - Notes & Reflections
+  - Notes & Essays
 tags:
   - Life
   - Writing

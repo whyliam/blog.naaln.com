@@ -1,4 +1,5 @@
 ---
+layout: post
 title: iPhone虚拟键盘的设计哲学
 date: 2025/04/09 12:36:00
 categories:

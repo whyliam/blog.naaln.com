@@ -1,4 +1,5 @@
 ---
+layout: post
 title: L97_AI 时代的商业逻辑
 date: 2025/11/29 20:00:00
 categories:
@@ -8,8 +9,8 @@ tags:
   - ProductThinking
   - Strategy
   - AgenticAI
-series: Newsletter 周刊
 description: Gamma如何从「最蠢想法」做到年入1亿美金的逆袭之路，揭示AI时代的反直觉商业铁律。探讨Satya Nadella眼中AI终局的三个底层逻辑变迁，从软件业到重工业的转型，以及未来「AI员工」带来的商业模式革命。同时分享UX策略制定的核心要素，帮助你在产品设计中做出正确取舍。
+series: Newsletter 周刊
 ---
 
 ![L97_AI 时代的商业逻辑](https://pics.naaln.com/202512012015185.png-basicBlog)

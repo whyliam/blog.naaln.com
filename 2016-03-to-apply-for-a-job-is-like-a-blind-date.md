@@ -1,8 +1,9 @@
 ---
+layout: post
 title: 求职好比相亲
 date: 2016/03/07 23:43:12
 categories:
-  - Notes & Reflections
+  - Notes & Essays
 tags:
   - Career
   - PersonalGrowth

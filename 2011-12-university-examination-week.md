@@ -1,8 +1,9 @@
 ---
+layout: post
 title: 大学考试周
 date: 2011/12/19 07:59:00
 categories:
-  - Notes & Reflections
+  - Notes & Essays
 tags:
   - Life
   - Observation

@@ -1,4 +1,5 @@
 ---
+layout: post
 title: 搞定了自己的手机谷歌地图
 date: 2011/05/11 20:00:00
 categories:

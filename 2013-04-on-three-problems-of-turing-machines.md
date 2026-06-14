@@ -1,4 +1,5 @@
 ---
+layout: post
 title: 关于图灵机的三个问题
 date: 2013/04/29 02:52:52
 categories:

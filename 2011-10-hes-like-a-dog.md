@@ -1,8 +1,9 @@
 ---
+layout: post
 title: 他好像一条狗啊
 date: 2011/10/23 20:00:00
 categories:
-  - Notes & Reflections
+  - Notes & Essays
 tags:
   - Observation
   - Life

@@ -1,8 +1,9 @@
 ---
+layout: post
 title: 前端资源管理
 date: 2016/04/25 12:12:00
 categories:
-  - Notes & Reflections
+  - Notes & Essays
 tags:
   - KnowledgeManagement
   - Engineering

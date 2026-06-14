@@ -1,4 +1,5 @@
 ---
+layout: post
 title: 不要使用Hadoop，当你数据不够大的时候
 date: 2015/04/10 10:12:00
 categories:

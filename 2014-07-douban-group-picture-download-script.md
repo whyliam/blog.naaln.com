@@ -1,4 +1,5 @@
 ---
+layout: post
 title: 豆瓣小组图片下载脚本
 date: 2014/07/13 11:59:00
 categories:

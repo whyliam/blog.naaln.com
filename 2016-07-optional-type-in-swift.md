@@ -1,8 +1,9 @@
 ---
+layout: post
 title: 理解Swift中Optional类型
 date: 2016/07/23 10:32:08
 categories:
-  - Notes & Reflections
+  - Notes & Essays
 tags:
   - SystemsThinking
   - LanguageDesign

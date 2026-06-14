@@ -1,4 +1,5 @@
 ---
+layout: post
 title: Mac上MySQL报错：ERROR 2002 (HY000)
 date: 2015/03/26 16:51:00
 categories:

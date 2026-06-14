@@ -1,4 +1,5 @@
 ---
+layout: post
 title: 选择一只股票
 date: 2022/01/27 20:00:00
 categories:

@@ -1,4 +1,5 @@
 ---
+layout: post
 title: codeship 自动部署 - 持续部署
 date: 2016/05/19 00:01:19
 categories:

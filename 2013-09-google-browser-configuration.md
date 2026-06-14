@@ -1,4 +1,5 @@
 ---
+layout: post
 title: 谷歌浏览器配置
 date: 2013/09/12 21:49:00
 categories:

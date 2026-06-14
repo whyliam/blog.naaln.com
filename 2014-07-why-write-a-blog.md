@@ -1,8 +1,9 @@
 ---
+layout: post
 title: 为什么要写博客
 date: 2014/07/28 21:40:35
 categories:
-  - Notes & Reflections
+  - Notes & Essays
 tags:
   - Writing
   - SelfReflection

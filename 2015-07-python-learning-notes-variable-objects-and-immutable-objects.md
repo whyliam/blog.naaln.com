@@ -1,4 +1,5 @@
 ---
+layout: post
 title: Python学习笔记——可变对象和不可变对象
 date: 2015/07/11 10:55:27
 categories:

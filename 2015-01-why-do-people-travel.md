@@ -1,4 +1,5 @@
 ---
+layout: post
 title: 人为什么要旅游？
 date: 2015/01/22 23:58:00
 categories:
@@ -9,7 +10,7 @@ tags:
   - Observation
   - Writing
 description: 旅行带来内心净化和过程享受，离别琐事体验人生之美。激励人们趁年轻立即行动，追求梦想享受充实生活。
-cover: http://pics.naaln.com/blog/2019-01-14-061106.jpg-basicBlog
+cover: 'http://pics.naaln.com/blog/2019-01-14-061106.jpg-basicBlog'
 ---
 
 ![](http://pics.naaln.com/blog/2019-01-14-061106.jpg-basicBlog)

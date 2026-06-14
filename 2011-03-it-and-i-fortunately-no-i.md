@@ -1,8 +1,9 @@
 ---
+layout: post
 title: 得之，我幸；不得，我命。
 date: 2011/03/22 20:00:00
 categories:
-  - Notes & Reflections
+  - Notes & Essays
 tags:
   - Life
   - Observation

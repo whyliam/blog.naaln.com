@@ -1,4 +1,5 @@
 ---
+layout: post
 title: 双钻石模型
 date: 2022/06/22 20:00:00
 categories:

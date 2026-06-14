@@ -1,8 +1,9 @@
 ---
+layout: post
 title: 别堕落！你没资格！
 date: 2013/09/28 12:00:00
 categories:
-  - Notes & Reflections
+  - Notes & Essays
 tags:
   - Mindset
   - SelfImprovement

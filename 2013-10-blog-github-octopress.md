@@ -1,4 +1,5 @@
 ---
+layout: post
 title: Blog = GitHub + Octopress
 date: 2013/10/19 12:17:00
 categories:

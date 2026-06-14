@@ -1,4 +1,5 @@
 ---
+layout: post
 title: Android ListView从网络获取图片及文字显示
 date: 2013/04/10 09:04:00
 categories:

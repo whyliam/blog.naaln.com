@@ -1,4 +1,5 @@
 ---
+layout: post
 title: 阿里的一些观察和思考
 date: 2022/01/26 20:00:00
 categories:

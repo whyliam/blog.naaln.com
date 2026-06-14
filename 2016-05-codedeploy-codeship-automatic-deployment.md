@@ -1,4 +1,5 @@
 ---
+layout: post
 title: codeship 自动部署 - Codedeploy
 date: 2016/05/18 23:08:00
 categories:

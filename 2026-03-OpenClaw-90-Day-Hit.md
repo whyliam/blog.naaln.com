@@ -1,4 +1,5 @@
 ---
+layout: post
 title: OpenClaw：一只龙虾如何在 90 天里席卷 GitHub 与 AI Agent 时代
 date: 2026/03/15 15:10:00
 categories:

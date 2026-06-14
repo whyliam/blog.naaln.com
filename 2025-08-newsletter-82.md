@@ -1,8 +1,9 @@
 ---
+layout: post
 title: L82_脱离浪浪山
 date: 2025/08/16 20:00:00
 categories:
-  - Notes & Reflections
+  - Notes & Essays
 tags:
   - AI
   - Writing

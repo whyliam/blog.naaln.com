@@ -1,8 +1,9 @@
 ---
+layout: post
 title: L85_集体与个人的平衡
 date: 2025/09/06 11:38:00
 categories:
-  - Notes & Reflections
+  - Notes & Essays
 tags:
   - Newsletter
   - ProductThinking

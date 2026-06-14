@@ -1,4 +1,5 @@
 ---
+layout: post
 title: 《商业的本质》的笔记
 date: 2021/01/01 20:00:00
 categories:

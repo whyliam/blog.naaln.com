@@ -1,4 +1,5 @@
 ---
+layout: post
 title: 人生中应该拥有的10种旅行
 date: 2013/07/30 00:48:00
 categories:

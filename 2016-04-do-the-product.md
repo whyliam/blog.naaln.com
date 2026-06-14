@@ -1,4 +1,5 @@
 ---
+layout: post
 title: 做产品的态度
 date: 2016/04/06 10:09:00
 categories:

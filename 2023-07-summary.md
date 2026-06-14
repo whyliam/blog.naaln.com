@@ -1,8 +1,9 @@
 ---
+layout: post
 title: 7月小结｜不会休息的一代
 date: 2023/07/31 20:00:00
 categories:
-  - Notes & Reflections
+  - Notes & Essays
 tags:
   - Education
   - SocialObservation

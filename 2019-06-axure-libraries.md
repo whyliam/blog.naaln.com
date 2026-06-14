@@ -1,4 +1,5 @@
 ---
+layout: post
 title: 我正在使用的 Axure 元件库
 date: 2019/06/13 20:00:00
 categories:

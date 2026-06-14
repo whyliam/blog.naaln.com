@@ -1,9 +1,9 @@
 ---
+layout: post
 title: L41_做出令人印象深刻的事情
 date: 2023/10/08 20:00:00
 categories:
-  - Notes & Reflections
-series: Newsletter 周刊
+  - Notes & Essays
 tags:
   - TimeLeverage
   - PersonalBrand
@@ -11,6 +11,7 @@ tags:
   - SystemsThinking
   - Strategy
 description: 保护时间减少重复性工作和会议，回购时间雇人转移低价值任务填充高价值日程，个人品牌通过做印象深刻的事形成一致性和议价权。
+series: Newsletter 周刊
 ---
 
 - 保护时间的关键是减少浪费，通过消除重复性工作和控制会议数量来提高效率。

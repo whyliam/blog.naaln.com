@@ -1,13 +1,14 @@
 ---
+layout: post
 title: 全民养蛊时代
 date: 2026/03/11 20:00:00
 categories:
-  - Notes & Reflections
+  - Notes & Essays
 tags:
   - AI
   - Observation
-type: note
 description: 每家都在养自己的模型，最终活下来的那个才是赢家——跟养蛊一个逻辑。
+type: note
 ---
 
 感觉进入了全民养蛊时代。

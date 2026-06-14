@@ -1,8 +1,9 @@
 ---
+layout: post
 title: 哗众取宠，终究圆不了梦
 date: 2013/11/16 08:23:00
 categories:
-  - Notes & Reflections
+  - Notes & Essays
 tags:
   - Writing
   - Life

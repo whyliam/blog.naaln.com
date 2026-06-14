@@ -1,4 +1,5 @@
 ---
+layout: post
 title: TTPPRS 模型
 date: 2019/08/06 20:00:00
 categories:

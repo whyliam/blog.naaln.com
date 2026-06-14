@@ -1,4 +1,5 @@
 ---
+layout: post
 title: OPENGL中GLU和GLUT工具箱收藏
 date: 2013/05/18 00:31:00
 categories:

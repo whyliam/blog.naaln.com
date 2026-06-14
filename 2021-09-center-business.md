@@ -1,4 +1,5 @@
 ---
+layout: post
 title: 中台与业务
 date: 2021/09/06 20:00:00
 categories:

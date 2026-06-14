@@ -1,8 +1,9 @@
 ---
+layout: post
 title: 你可知道落寞的孤单
 date: 2011/12/22 04:07:00
 categories:
-  - Notes & Reflections
+  - Notes & Essays
 tags:
   - Life
   - Observation

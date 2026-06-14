@@ -1,8 +1,9 @@
 ---
+layout: post
 title: 「高信噪比」知识：如何在信息爆炸中筛选真正有价值的洞察
 date: 2025/12/04 19:56:00
 categories:
-  - Notes & Reflections
+  - Notes & Essays
 tags:
   - KnowledgeManagement
   - FirstPrinciples

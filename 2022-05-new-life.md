@@ -1,8 +1,9 @@
 ---
+layout: post
 title: Welcome New Life
 date: 2022/05/30 20:00:00
 categories:
-  - Notes & Reflections
+  - Notes & Essays
 tags:
   - Life
   - Observation

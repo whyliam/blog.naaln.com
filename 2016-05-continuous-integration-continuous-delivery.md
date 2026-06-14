@@ -1,4 +1,5 @@
 ---
+layout: post
 title: 持续整合＆持续交付
 date: 2016/05/18 00:24:00
 categories:

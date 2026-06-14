@@ -1,4 +1,5 @@
 ---
+layout: post
 title: OpenGL 参数方程绘制球
 date: 2013/04/02 02:41:00
 categories:

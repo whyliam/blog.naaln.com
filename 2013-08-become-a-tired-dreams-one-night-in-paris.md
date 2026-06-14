@@ -1,4 +1,5 @@
 ---
+layout: post
 title: 异国倦梦：一夜巴黎
 date: 2013/08/26 09:40:00
 categories:
@@ -10,7 +11,7 @@ tags:
   - Photography
 description: 巴黎黄昏的街道洒满余晖，露天酒吧透出独有矜持与马德里不同；城市艺术氛围浓郁如卢浮宫宝藏；咖啡馆中静坐品尝咖啡回望行人；夜晚灯火辉煌埃菲尔铁塔沉入夜色街头咖啡酒吧延续欢愉整座城市安详而充满活力。
 type: visual
-cover: http://pics.naaln.com/blog/2019-01-14-062433.jpg-basicBlog
+cover: 'http://pics.naaln.com/blog/2019-01-14-062433.jpg-basicBlog'
 location: Paris, France
 ---
 

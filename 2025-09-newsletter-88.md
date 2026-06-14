@@ -1,4 +1,5 @@
 ---
+layout: post
 title: L88_信息革命的下一站
 date: 2025/09/26 15:10:00
 categories:

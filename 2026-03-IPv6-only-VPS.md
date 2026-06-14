@@ -1,4 +1,5 @@
 ---
+layout: post
 title: 一次 IPv6-only 服务器的踩坑与自救记录
 date: 2026/03/24 11:29:00
 categories:

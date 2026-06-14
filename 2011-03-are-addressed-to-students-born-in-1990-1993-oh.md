@@ -1,8 +1,9 @@
 ---
+layout: post
 title: 是写给1990—1993年出生的同学呵呵…
 date: 2011/03/17 20:00:00
 categories:
-  - Notes & Reflections
+  - Notes & Essays
 tags:
   - GenerationalMemory
   - EducationSystem

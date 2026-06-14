@@ -1,4 +1,5 @@
 ---
+layout: post
 title: 还有什么新闻是机器人不会写的？
 date: 2017/07/10 22:58:05
 categories:

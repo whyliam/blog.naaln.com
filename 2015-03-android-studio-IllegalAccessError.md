@@ -1,4 +1,5 @@
 ---
+layout: post
 title: android studio的IllegalAccessError错误
 date: 2015/03/04 14:31:00
 categories:

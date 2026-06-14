@@ -1,4 +1,5 @@
 ---
+layout: post
 title: 为项目负责
 date: 2019/07/20 20:00:00
 categories:

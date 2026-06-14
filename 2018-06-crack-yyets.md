@@ -1,8 +1,9 @@
 ---
+layout: post
 title: 去除人人影视广告
 date: 2018/06/05 21:56:13
 categories:
-  - Notes & Reflections
+  - Notes & Essays
 tags:
   - SystemsThinking
   - Infrastructure

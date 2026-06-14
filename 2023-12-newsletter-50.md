@@ -1,15 +1,16 @@
 ---
+layout: post
 title: L50_自我增强独立思考的能力
 date: 2023/12/10 20:00:00
 categories:
-  - Notes & Reflections
+  - Notes & Essays
 tags:
   - KnowledgeManagement
   - DecisionMaking
   - SystemsThinking
   - Learning
-series: Newsletter 周刊
 description: 记笔记是信息预处理，通过用自己的话整理、标签建立网络和回顾内化来帮助未来解决问题；提高工作效率应做正确的事、选择热爱领域与积极同事并列出清单；提升决策质量需深思熟虑而非加快思考速度，培养认知模式和专注力。
+series: Newsletter 周刊
 ---
 
 - 记笔记的真正价值不在于收集信息，而是为了未来解决问题时能够提供思路、线索和依据，即对信息进行有效的预处理。有效记笔记的三个关键方法包括：用自己的话整理思维，用标签建立知识网络，以及通过回顾加深记忆和内化知识，这样可以在需要时快速且准确地提取相关的笔记内容。

@@ -1,4 +1,5 @@
 ---
+layout: post
 title: 产品经理认知
 date: 2020/02/15 20:00:00
 categories:

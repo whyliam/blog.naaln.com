@@ -1,4 +1,5 @@
 ---
+layout: post
 title: '间隔年:骑行去西藏'
 date: 2013/10/15 21:12:00
 categories:

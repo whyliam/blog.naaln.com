@@ -1,4 +1,5 @@
 ---
+layout: post
 title: L64_开源浪潮与技术迭代重塑AI格局
 date: 2025/04/11 20:00:00
 categories:

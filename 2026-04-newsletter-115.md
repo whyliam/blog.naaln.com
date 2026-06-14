@@ -1,4 +1,5 @@
 ---
+layout: post
 title: L115_从电力革命到Agent时代：我们该重新设计工厂了
 date: 2026/04/04 20:52:31
 categories:

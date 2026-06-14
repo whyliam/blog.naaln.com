@@ -1,8 +1,9 @@
 ---
+layout: post
 title: L84_放慢时间的感知
 date: 2025/08/30 20:00:00
 categories:
-  - Notes & Reflections
+  - Notes & Essays
 tags:
   - AI
   - Observation

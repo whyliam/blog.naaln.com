@@ -1,8 +1,9 @@
 ---
+layout: post
 title: 从收藏到记录
 date: 2022/03/03 20:00:00
 categories:
-  - Notes & Reflections
+  - Notes & Essays
 tags:
   - KnowledgeManagement
   - Learning

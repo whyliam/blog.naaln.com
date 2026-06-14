@@ -1,8 +1,9 @@
 ---
+layout: post
 title: 提问的学问
 date: 2015/04/07 23:16:00
 categories:
-  - Notes & Reflections
+  - Notes & Essays
 tags:
   - Learning
   - Communication

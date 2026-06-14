@@ -1,4 +1,5 @@
 ---
+layout: post
 title: 聊聊美国移动点餐
 date: 2019/07/10 20:00:00
 categories:

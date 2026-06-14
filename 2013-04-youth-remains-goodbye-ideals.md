@@ -1,8 +1,9 @@
 ---
+layout: post
 title: 青春依然，再见理想——献给学弟学妹
 date: 2013/04/02 11:27:00
 categories:
-  - Notes & Reflections
+  - Notes & Essays
 tags:
   - Life
   - Growth

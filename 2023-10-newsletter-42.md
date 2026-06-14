@@ -1,15 +1,16 @@
 ---
+layout: post
 title: L42_人类总是在模仿他人
 date: 2023/10/15 20:00:00
 categories:
-  - Notes & Reflections
-series: Newsletter 周刊
+  - Notes & Essays
 tags:
   - DecisionMaking
   - SystemsThinking
   - Observation
   - CognitiveBiases
 description: 中国房地产市场与农业人口存在拮抗关系，户籍双轨制等制度影响城乡结构；决策的关键在于正确问题导向，通过界定、分析、制定方案等步骤；模仿欲望理论揭示社会冲突源于欲望趋同，呼吁独立思考。
+series: Newsletter 周刊
 ---
 
 - 中国的房地产市场与农业人口存在着拮抗关系，城市人口增加导致农村人口减少，同时农业劳动者的数量也在逐渐减少，而农产品的消费规模却在不断增加。

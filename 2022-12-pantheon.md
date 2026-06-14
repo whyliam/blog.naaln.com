@@ -1,8 +1,9 @@
 ---
+layout: post
 title: 万神殿
 date: 2022/12/25 20:00:00
 categories:
-  - Notes & Reflections
+  - Notes & Essays
 tags:
   - DigitalImmortality
   - SystemsThinking

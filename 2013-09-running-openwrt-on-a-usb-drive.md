@@ -1,4 +1,5 @@
 ---
+layout: post
 title: 让Openwrt在U盘运行
 date: 2013/09/22 10:39:00
 categories:

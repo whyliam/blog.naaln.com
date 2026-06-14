@@ -1,4 +1,5 @@
 ---
+layout: post
 title: Ruby社区应该去Rails化了
 date: 2013/04/06 10:28:00
 categories:

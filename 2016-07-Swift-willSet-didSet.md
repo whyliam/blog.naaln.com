@@ -1,4 +1,5 @@
 ---
+layout: post
 title: Swift - 属性观察者（willSet与didSet）
 date: 2016/07/17 13:09:45
 categories:

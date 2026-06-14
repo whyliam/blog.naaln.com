@@ -1,4 +1,5 @@
 ---
+layout: post
 title: 十个方法，让你的线框原型更具沟通能力
 date: 2015/01/10 09:19:00
 categories:

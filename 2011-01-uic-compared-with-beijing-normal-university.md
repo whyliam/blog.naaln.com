@@ -1,8 +1,9 @@
 ---
+layout: post
 title: uic与北师大比较
 date: 2011/01/12 19:00:00
 categories:
-  - Notes & Reflections
+  - Notes & Essays
 tags:
   - Education
   - Observation

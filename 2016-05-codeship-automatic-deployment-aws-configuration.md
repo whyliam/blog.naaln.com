@@ -1,4 +1,5 @@
 ---
+layout: post
 title: codeship 自动部署 - AWS 配置
 date: 2016/05/18 22:50:00
 categories:

@@ -1,4 +1,5 @@
 ---
+layout: post
 title: Echoprint How it works（翻译）
 date: 2013/06/17 12:03:00
 categories:

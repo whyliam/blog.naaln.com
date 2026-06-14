@@ -1,4 +1,5 @@
 ---
+layout: post
 title: 数据分析的实用方法论
 date: 2019/07/23 20:00:00
 categories:

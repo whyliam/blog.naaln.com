@@ -1,8 +1,9 @@
 ---
+layout: post
 title: 结构化拖延
 date: 2025/04/19 20:00:00
 categories:
-  - Notes & Reflections
+  - Notes & Essays
 tags:
   - SystemsThinking
   - Productivity

@@ -1,8 +1,9 @@
 ---
+layout: post
 title: 2月小结｜一杯敬朝阳，一杯敬月光
 date: 2022/02/28 20:00:00
 categories:
-  - Notes & Reflections
+  - Notes & Essays
 tags:
   - FirstPrinciples
   - DecisionMaking
