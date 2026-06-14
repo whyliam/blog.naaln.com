@@ -3,7 +3,7 @@ layout: post
 title: L117_当能力开始外溢
 date: 2026/04/18 12:00:00
 categories:
-  - Notes & Essays
+  - Notes & Reflections
 tags:
   - AgenticAI
   - KnowledgeManagement

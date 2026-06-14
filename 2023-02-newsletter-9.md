@@ -3,7 +3,7 @@ layout: post
 title: L9_没有调查就没有发言权
 date: 2023/02/26 20:00:00
 categories:
-  - Notes & Essays
+  - Notes & Reflections
 tags:
   - Knowledge
   - LLM

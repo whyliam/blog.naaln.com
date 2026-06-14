@@ -3,7 +3,7 @@ layout: post
 title: Token Plan 不让它歇着
 date: 2026/03/20 20:00:00
 categories:
-  - Notes & Essays
+  - Notes & Reflections
 tags:
   - AI
   - Life

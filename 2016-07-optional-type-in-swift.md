@@ -3,7 +3,7 @@ layout: post
 title: 理解Swift中Optional类型
 date: 2016/07/23 10:32:08
 categories:
-  - Notes & Essays
+  - Notes & Reflections
 tags:
   - SystemsThinking
   - LanguageDesign

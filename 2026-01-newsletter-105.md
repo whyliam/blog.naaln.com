@@ -3,7 +3,7 @@ layout: post
 title: L105_不如先过好混乱的这一天
 date: 2026/01/23 20:53:11
 categories:
-  - Notes & Essays
+  - Notes & Reflections
 tags:
   - Newsletter
   - KnowledgeManagement

@@ -3,7 +3,7 @@ layout: post
 title: L109_AI 时代的认知跃迁
 date: 2026/02/21 01:57:58
 categories:
-  - Notes & Essays
+  - Notes & Reflections
 tags:
   - AI
   - ProductThinking

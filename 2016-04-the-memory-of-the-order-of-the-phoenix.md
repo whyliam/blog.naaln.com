@@ -3,7 +3,7 @@ layout: post
 title: 凤凰社的记忆
 date: 2016/04/11 22:16:00
 categories:
-  - Notes & Essays
+  - Notes & Reflections
 tags:
   - Writing
   - Life

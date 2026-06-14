@@ -3,7 +3,7 @@ layout: post
 title: L53_如何掌控并理解自己
 date: 2023/12/31 20:00:00
 categories:
-  - Notes & Essays
+  - Notes & Reflections
 tags:
   - Strategy
   - ProductThinking

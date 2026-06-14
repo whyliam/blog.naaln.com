@@ -3,7 +3,7 @@ layout: post
 title: 抢微信红包怎么手气最佳
 date: 2017/01/02 22:07:38
 categories:
-  - Notes & Essays
+  - Notes & Reflections
 tags:
   - SystemsThinking
   - Data

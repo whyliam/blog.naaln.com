@@ -3,7 +3,7 @@ layout: post
 title: 你为什么不爽，因为你是个傻逼
 date: 2013/05/13 12:37:00
 categories:
-  - Notes & Essays
+  - Notes & Reflections
 tags:
   - CognitiveBiases
   - Observation

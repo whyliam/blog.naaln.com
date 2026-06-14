@@ -3,7 +3,7 @@ layout: post
 title: L42_人类总是在模仿他人
 date: 2023/10/15 20:00:00
 categories:
-  - Notes & Essays
+  - Notes & Reflections
 tags:
   - DecisionMaking
   - SystemsThinking

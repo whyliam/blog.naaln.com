@@ -3,7 +3,7 @@ layout: post
 title: L113_设计、节奏与护城河
 date: 2026/03/22 04:17:47
 categories:
-  - Notes & Essays
+  - Notes & Reflections
 tags:
   - Newsletter
   - AI

@@ -3,7 +3,7 @@ layout: post
 title: L103_AI 逆袭与天赋发现
 date: 2026/01/10 04:53:11
 categories:
-  - Notes & Essays
+  - Notes & Reflections
 tags:
   - AI
   - ProductThinking

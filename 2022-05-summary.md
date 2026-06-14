@@ -3,7 +3,7 @@ layout: post
 title: 5月小结｜战啊！以最卑微的梦
 date: 2022/05/31 20:00:00
 categories:
-  - Notes & Essays
+  - Notes & Reflections
 tags:
   - Life
   - Observation

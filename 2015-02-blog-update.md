@@ -3,7 +3,7 @@ layout: post
 title: 博客更新
 date: 2015/02/08 23:16:00
 categories:
-  - Notes & Essays
+  - Notes & Reflections
 tags:
   - KnowledgeManagement
   - Writing

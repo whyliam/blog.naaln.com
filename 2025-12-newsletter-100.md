@@ -3,7 +3,7 @@ layout: post
 title: L100_AI 先知理论与电商产品逻辑深度解析
 date: 2025/12/20 10:59:33
 categories:
-  - Notes & Essays
+  - Notes & Reflections
 tags:
   - AI
   - ProductThinking

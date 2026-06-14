@@ -3,7 +3,7 @@ layout: post
 title: L56_让 AI 学会「深度思考」
 date: 2025/02/14 20:00:00
 categories:
-  - Notes & Essays
+  - Notes & Reflections
 tags:
   - AI
   - Data

@@ -3,7 +3,7 @@ layout: post
 title: 微信定制你自己的表情包
 date: 2017/01/25 15:05:44
 categories:
-  - Notes & Essays
+  - Notes & Reflections
 tags:
   - ProductThinking
   - UserExperience

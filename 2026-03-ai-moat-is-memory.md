@@ -3,7 +3,7 @@ layout: post
 title: AI 时代的护城河是记忆
 date: 2026/03/15 20:00:00
 categories:
-  - Notes & Essays
+  - Notes & Reflections
 tags:
   - AI
   - ProductThinking

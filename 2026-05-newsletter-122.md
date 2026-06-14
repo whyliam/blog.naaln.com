@@ -3,7 +3,7 @@ layout: post
 title: L122_当工具开始消亡
 date: 2026/05/31 10:00:00
 categories:
-  - Notes & Essays
+  - Notes & Reflections
 tags:
   - Newsletter
   - AI

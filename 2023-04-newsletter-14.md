@@ -3,7 +3,7 @@ layout: post
 title: L14_拥抱新技能和知识
 date: 2023/04/01 20:00:00
 categories:
-  - Notes & Essays
+  - Notes & Reflections
 tags:
   - Learning
   - AI

@@ -3,7 +3,7 @@ layout: post
 title: 过去的文字
 date: 2010/09/21 20:00:00
 categories:
-  - Notes & Essays
+  - Notes & Reflections
 tags:
   - Writing
   - Life

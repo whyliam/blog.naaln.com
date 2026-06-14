@@ -3,7 +3,7 @@ layout: post
 title: 如何建立强有力的人脉关系？
 date: 2013/11/24 05:14:00
 categories:
-  - Notes & Essays
+  - Notes & Reflections
 tags:
   - SocialCapital
   - ValueExchange

@@ -3,7 +3,7 @@ layout: post
 title: L107_主动阅读系统与互联网交互的未来
 date: 2026/02/07 01:57:41
 categories:
-  - Notes & Essays
+  - Notes & Reflections
 tags:
   - KnowledgeManagement
   - AgenticAI

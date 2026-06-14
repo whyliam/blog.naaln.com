@@ -3,7 +3,7 @@ layout: post
 title: 9月小结｜空缺
 date: 2022/09/31 20:00:00
 categories:
-  - Notes & Essays
+  - Notes & Reflections
 tags:
   - Life
   - Reflection

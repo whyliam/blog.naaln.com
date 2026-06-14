@@ -3,7 +3,7 @@ layout: post
 title: 无用阶层
 date: 2026/05/11 20:00:00
 categories:
-  - Notes & Essays
+  - Notes & Reflections
 tags:
   - AI
   - Future

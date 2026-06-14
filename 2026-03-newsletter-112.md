@@ -3,7 +3,7 @@ layout: post
 title: L112_教育变革与一人公司
 date: 2026/03/15 09:52:00
 categories:
-  - Notes & Essays
+  - Notes & Reflections
 tags:
   - Agent
   - FutureOfWork

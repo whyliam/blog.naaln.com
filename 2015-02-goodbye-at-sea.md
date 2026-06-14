@@ -3,7 +3,7 @@ layout: post
 title: 再見迷茫
 date: 2015/02/26 19:44:00
 categories:
-  - Notes & Essays
+  - Notes & Reflections
 tags:
   - LongTermism
   - CareerGrowth

@@ -3,7 +3,7 @@ layout: post
 title: L83_关于你自己的「上下文」
 date: 2025/08/23 20:00:00
 categories:
-  - Notes & Essays
+  - Notes & Reflections
 tags:
   - AI
   - ProductThinking

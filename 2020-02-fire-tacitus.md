@@ -3,7 +3,7 @@ layout: post
 title: 抱薪者与塔西佗
 date: 2020/02/07 20:00:00
 categories:
-  - Notes & Essays
+  - Notes & Reflections
 tags:
   - SocialObservation
   - PublicTrust

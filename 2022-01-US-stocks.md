@@ -3,7 +3,7 @@ layout: post
 title: 2021美股小结
 date: 2022/01/22 20:00:00
 categories:
-  - Notes & Essays
+  - Notes & Reflections
 tags:
   - Investment
   - DecisionMaking

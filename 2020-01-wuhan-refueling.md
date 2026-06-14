@@ -3,7 +3,7 @@ layout: post
 title: 武汉加油
 date: 2020/01/31 20:00:00
 categories:
-  - Notes & Essays
+  - Notes & Reflections
 tags:
   - Observation
   - SystemsThinking

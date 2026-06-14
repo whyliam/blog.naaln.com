@@ -3,7 +3,7 @@ layout: post
 title: L38_建立一个真实的小世界
 date: 2023/09/17 20:00:00
 categories:
-  - Notes & Essays
+  - Notes & Reflections
 tags:
   - CognitiveHabits
   - SocialObservation

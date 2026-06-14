@@ -3,7 +3,7 @@ layout: post
 title: 我们缺的不是资源，而是自己的方法论
 date: 2019/08/02 20:00:00
 categories:
-  - Notes & Essays
+  - Notes & Reflections
 tags:
   - KnowledgeManagement
   - ProductThinking

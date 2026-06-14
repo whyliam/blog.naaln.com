@@ -3,7 +3,7 @@ layout: post
 title: L23_信息量和流动性
 date: 2023/06/04 20:00:00
 categories:
-  - Notes & Essays
+  - Notes & Reflections
 tags:
   - ProductThinking
   - SystemsThinking

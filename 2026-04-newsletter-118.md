@@ -3,7 +3,7 @@ layout: post
 title: L118_出去走一走
 date: 2026/04/25 10:00:00
 categories:
-  - Notes & Essays
+  - Notes & Reflections
 tags:
   - AI
   - ProductThinking

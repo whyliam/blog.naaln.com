@@ -3,7 +3,7 @@ layout: post
 title: L61_重构组织形态与技术边疆的破界时刻
 date: 2025/03/21 20:00:00
 categories:
-  - Notes & Essays
+  - Notes & Reflections
 tags:
   - AI
   - Organization

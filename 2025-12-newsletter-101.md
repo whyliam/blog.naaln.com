@@ -3,7 +3,7 @@ layout: post
 title: L101_创业精神与选择阻力
 date: 2025/12/27 10:59:33
 categories:
-  - Notes & Essays
+  - Notes & Reflections
 tags:
   - Entrepreneurship
   - ProductThinking

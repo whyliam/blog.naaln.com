@@ -3,7 +3,7 @@ layout: post
 title: L102_AI 用户需求洞察
 date: 2026/01/03 04:53:11
 categories:
-  - Notes & Essays
+  - Notes & Reflections
 tags:
   - Newsletter
   - ProductThinking

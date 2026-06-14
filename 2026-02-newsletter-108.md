@@ -3,7 +3,7 @@ layout: post
 title: L108_职业倦怠与产品定律
 date: 2026/02/14 01:57:48
 categories:
-  - Notes & Essays
+  - Notes & Reflections
 tags:
   - Newsletter
   - ProductThinking

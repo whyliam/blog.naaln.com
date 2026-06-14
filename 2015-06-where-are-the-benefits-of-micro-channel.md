@@ -3,7 +3,7 @@ layout: post
 title: 微信的好处究竟在哪里
 date: 2015/06/24 17:16:18
 categories:
-  - Notes & Essays
+  - Notes & Reflections
 tags:
   - SocialSoftware
   - DigitalIdentity

@@ -3,7 +3,7 @@ layout: post
 title: 创见
 date: 2022/06/16 20:00:00
 categories:
-  - Notes & Essays
+  - Notes & Reflections
 tags:
   - Writing
   - KnowledgeManagement

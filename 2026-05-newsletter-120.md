@@ -3,7 +3,7 @@ layout: post
 title: L120_编程已死，判断力当立
 date: 2026/05/08 20:58:37
 categories:
-  - Notes & Essays
+  - Notes & Reflections
 tags:
   - AI
   - AgenticAI

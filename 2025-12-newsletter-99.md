@@ -3,7 +3,7 @@ layout: post
 title: L99_改变世界的商业逻辑与职场方法论
 date: 2025/12/13 10:59:33
 categories:
-  - Notes & Essays
+  - Notes & Reflections
 tags:
   - ProductThinking
   - DecisionMaking

@@ -3,7 +3,7 @@ layout: post
 title: 免费额度也能聚沙成塔
 date: 2026/05/20 10:00:00
 categories:
-  - Notes & Essays
+  - Notes & Reflections
 tags:
   - AI
   - OpenSource

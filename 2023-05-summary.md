@@ -3,7 +3,7 @@ layout: post
 title: 5月小结｜诗和远方的田野
 date: 2023/05/31 20:00:00
 categories:
-  - Notes & Essays
+  - Notes & Reflections
 tags:
   - KnowledgeManagement
   - Writing

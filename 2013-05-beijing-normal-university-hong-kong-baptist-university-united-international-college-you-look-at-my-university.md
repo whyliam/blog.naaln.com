@@ -3,7 +3,7 @@ layout: post
 title: 北京师范大学-香港浸会大学联合国际学院--给你们看看我的大学
 date: 2013/05/14 10:29:00
 categories:
-  - Notes & Essays
+  - Notes & Reflections
 tags:
   - Education
   - Observation

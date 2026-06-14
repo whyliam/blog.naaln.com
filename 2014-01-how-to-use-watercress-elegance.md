@@ -3,7 +3,7 @@ layout: post
 title: 如何优雅地使用豆瓣？
 date: 2014/01/21 05:34:00
 categories:
-  - Notes & Essays
+  - Notes & Reflections
 tags:
   - Community
   - InternetCulture

@@ -3,7 +3,7 @@ layout: post
 title: 往事不是你想回忆就能回忆
 date: 2013/08/11 11:08:41
 categories:
-  - Notes & Essays
+  - Notes & Reflections
 tags:
   - Life
   - Observation

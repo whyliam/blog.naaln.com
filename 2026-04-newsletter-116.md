@@ -3,7 +3,7 @@ layout: post
 title: L116_当智能变成基础设施
 date: 2026/04/11 11:48:15
 categories:
-  - Notes & Essays
+  - Notes & Reflections
 tags:
   - AgenticAI
   - SystemDesign

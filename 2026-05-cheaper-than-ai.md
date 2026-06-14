@@ -3,7 +3,7 @@ layout: post
 title: 我比 AI 便宜
 date: 2026/05/16 20:00:00
 categories:
-  - Notes & Essays
+  - Notes & Reflections
 tags:
   - AI
   - Life

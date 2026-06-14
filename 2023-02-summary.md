@@ -3,7 +3,7 @@ layout: post
 title: 2月小结｜工作与消费主义
 date: 2023/02/28 20:00:00
 categories:
-  - Notes & Essays
+  - Notes & Reflections
 tags:
   - Reading
   - Work

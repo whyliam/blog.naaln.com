@@ -3,7 +3,7 @@ layout: post
 title: L33_让好事发生
 date: 2023/08/13 20:00:00
 categories:
-  - Notes & Essays
+  - Notes & Reflections
 tags:
   - Observation
   - Life

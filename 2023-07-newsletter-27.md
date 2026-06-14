@@ -3,7 +3,7 @@ layout: post
 title: L27_失序和撕裂
 date: 2023/07/02 20:00:00
 categories:
-  - Notes & Essays
+  - Notes & Reflections
 tags:
   - SystemsThinking
   - DecisionMaking

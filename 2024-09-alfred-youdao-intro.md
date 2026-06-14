@@ -3,7 +3,7 @@ layout: post
 title: 最后一次更新 workflows.youdao
 date: 2024/09/20 22:39:00
 categories:
-  - Notes & Essays
+  - Notes & Reflections
 tags:
   - OpenSource
   - Automation

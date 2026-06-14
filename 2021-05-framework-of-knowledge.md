@@ -3,7 +3,7 @@ layout: post
 title: 知识四个阶段
 date: 2021/05/15 20:00:00
 categories:
-  - Notes & Essays
+  - Notes & Reflections
 tags:
   - KnowledgeManagement
   - Learning

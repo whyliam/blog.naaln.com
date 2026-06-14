@@ -3,7 +3,7 @@ layout: post
 title: 何谓渐进式总结
 date: 2022/03/03 20:00:00
 categories:
-  - Notes & Essays
+  - Notes & Reflections
 tags:
   - KnowledgeManagement
   - Learning

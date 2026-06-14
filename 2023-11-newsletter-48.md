@@ -3,7 +3,7 @@ layout: post
 title: L48_深刻理解自己
 date: 2023/11/26 20:00:00
 categories:
-  - Notes & Essays
+  - Notes & Reflections
 tags:
   - FirstPrinciples
   - Strategy

@@ -3,7 +3,7 @@ layout: post
 title: 「PDAA 循环」问题驱动行动系统
 date: 2025/03/11 20:00:00
 categories:
-  - Notes & Essays
+  - Notes & Reflections
 tags:
   - KnowledgeManagement
   - SystemsThinking

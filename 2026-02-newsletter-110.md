@@ -3,7 +3,7 @@ layout: post
 title: L110_繁荣背后的经济危机与职业未来
 date: 2026/02/28 01:57:58
 categories:
-  - Notes & Essays
+  - Notes & Reflections
 tags:
   - AI
   - FutureOfWork

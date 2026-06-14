@@ -3,7 +3,7 @@ layout: post
 title: 其他软件配置
 date: 2019/01/03 09:14:59
 categories:
-  - Notes & Essays
+  - Notes & Reflections
 tags:
   - Workflow
   - Productivity

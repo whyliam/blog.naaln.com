@@ -3,7 +3,7 @@ layout: post
 title: 8月小结｜AIGC 进行时
 date: 2023/08/31 20:00:00
 categories:
-  - Notes & Essays
+  - Notes & Reflections
 tags:
   - AIGC
   - ProductThinking

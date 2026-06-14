@@ -3,7 +3,7 @@ layout: post
 title: 给年轻人的 99 条建议
 date: 2022/11/20 20:00:00
 categories:
-  - Notes & Essays
+  - Notes & Reflections
 tags:
   - Life
   - PersonalGrowth

@@ -3,7 +3,7 @@ layout: post
 title: L45_让自己无所事事
 date: 2023/11/05 20:00:00
 categories:
-  - Notes & Essays
+  - Notes & Reflections
 tags:
   - SystemsThinking
   - ProductThinking

@@ -3,7 +3,7 @@ layout: post
 title: 你不够优秀，因为你不够孤独
 date: 2011/03/31 20:00:00
 categories:
-  - Notes & Essays
+  - Notes & Reflections
 tags:
   - Solitude
   - Creativity

@@ -3,7 +3,7 @@ layout: post
 title: L29_第一原理的思考方式
 date: 2023/07/16 20:00:00
 categories:
-  - Notes & Essays
+  - Notes & Reflections
 tags:
   - FirstPrinciples
   - Learning

@@ -3,7 +3,7 @@ layout: post
 title: 全民养蛊时代
 date: 2026/03/11 20:00:00
 categories:
-  - Notes & Essays
+  - Notes & Reflections
 tags:
   - AI
   - Observation
