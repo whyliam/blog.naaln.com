@@ -138,7 +138,7 @@ aether:
     enable: false
     more_url: '/categories/Notes-Reflections/'
   visuals:
-    enable: false
+    enable: true
     more_url: '/visuals/'
 
   # Disable superseded standalone modules.
@@ -185,6 +185,7 @@ fancybox: true
 waline:
   enable: true
   serverURL: https://waline.naaln.com
+  dark: 'html[data-color-scheme="dark"]'
 
 # Performance
 lazyload: true
