@@ -184,8 +184,18 @@ fancybox: true
 # Waline
 waline:
   enable: true
-  serverURL: https://waline.naaln.com
+  serverURL: https://comment.naaln.com
   dark: 'html[data-color-scheme="dark"]'
+  placeholder: Just go go # Comment box placeholder
+  avatar: mm # Gravatar style
+  meta: [nick, mail, link] # Custom comment header
+  pageSize: 10 # Pagination size
+  lang: # Language, available values: en, zh-cn
+  # Warning: Do not enable both `waline.visitor` and `leancloud_visitors`.
+  visitor: false # Article reading statistic
+  comment_count: true # If false, comment count will only be displayed in post page, not in home page
+  requiredFields: [] # Set required fields: [nick] | [nick, mail]
+  libUrl: # Set custom library cdn url
 
 # Performance
 lazyload: true

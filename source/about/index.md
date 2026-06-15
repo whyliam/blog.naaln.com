@@ -27,7 +27,7 @@ facts:
   - { k: 'Name',      v: '行权 · Liam' }
   - { k: 'Role',      v: '产品经理 / 独立开发者 / 长期写作者' }
   - { k: 'Focus',     v: 'AI Agent · AI Coding · 产品判断 · 知识管理 · 影像' }
-  - { k: 'Writing',   v: '702+ essays · since 2010' }
+  - { k: 'Writing',   v: 'essays · since —' }
   - { k: 'Projects',  v: 'OpenClaw · Moltbot · Rich Harness · Aether' }
   - { k: 'Toolkit',   v: 'Obsidian · Claude · 个人行动系统 (PER)' }
   - { k: 'Location',  v: 'China' }
