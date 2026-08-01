@@ -9,7 +9,7 @@ tags:
   - Infrastructure
   - DigitalPrivacy
   - Observation
-  - SystemThinking
+  - SystemsThinking
 description: 微博图片链接后缀 6 位 62 进制转换得到微博账号，QQ 图片地址中的用户编号直接是 QQ 号，微信图片消息 ID 可定位发图人，提醒网络行为可被追踪
 ---
 

@@ -8,7 +8,7 @@ tags:
   - Automation
   - Growth
   - Platform
-  - SystemThinking
+  - SystemsThinking
 description: QQ靓号注册需登录手机版激活靓号，一周内未激活自动回收。注册过程通过手机验证防恶意注册，限额参与每天不超过一百万人。使用Chrome控制台代码可批量获取QQ靓号。
 ---
 

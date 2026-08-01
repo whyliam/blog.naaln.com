@@ -3,7 +3,7 @@ layout: post
 title: 6月小结｜人类的群星闪耀时
 date: 2023/06/30 20:00:00
 categories:
-  - Notes & Essays
+  - Notes & Reflections
 tags:
   - Newsletter
   - DecisionMaking

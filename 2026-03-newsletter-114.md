@@ -11,6 +11,7 @@ tags:
   - SystemsThinking
   - UserExperience
 description: OPPO 折叠屏和戴森吸尘器把证明过程变成了产品体验本身。AI 编程的心流正在改变，写 Skill 成了结构化思维的训练。让人看见比告诉对方更有效。
+series: Newsletter 周刊
 ---
 ![](https://pics.naaln.com/2026-03-31-611d10c4893d4aaba698a0641beea768.png-basicBlog)
 
@@ -56,7 +57,7 @@ Devv.AI 创始人加元在文章里提到，Andrej Karpathy 在 3 个月内，�
 
 机器处理「执行」，人类腾出手做更有创造力的事。
 
-🔗：[增长黑客 AI 周报 EP#48](https://www.zengzhang.ai/p/aiep48-ai)
+
 
 ---
 

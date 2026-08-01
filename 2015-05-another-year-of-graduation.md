@@ -3,7 +3,7 @@ layout: post
 title: 又是一年毕业时
 date: 2015/05/12 00:47:00
 categories:
-  - Notes & Essays
+  - Notes & Reflections
 tags:
   - Life
   - Observation

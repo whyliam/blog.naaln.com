@@ -3,7 +3,7 @@ layout: post
 title: L93_认知危机与设计思维
 date: 2025/10/31 20:00:00
 categories:
-  - Notes & Essays
+  - Notes & Reflections
 tags:
   - AI
   - SystemsThinking
@@ -11,6 +11,7 @@ tags:
   - Newsletter
   - LLM
 description: 探讨了 Adobe 与 Figma 的架构差异、人生四个象限的整合、AI 模型因「垃圾数据」导致的认知退化，以及最新的 AI 浏览器和智能体技术进展。
+series: Newsletter 周刊
 ---
 ![](https://pics.naaln.com/202510311810316.png-basicBlog)
 

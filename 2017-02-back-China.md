@@ -3,7 +3,7 @@ layout: post
 title: 2017年，我回来了
 date: 2017/02/16 13:23:31
 categories:
-  - Notes & Essays
+  - Notes & Reflections
 tags:
   - Life
   - Writing

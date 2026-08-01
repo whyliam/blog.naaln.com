@@ -3,7 +3,7 @@ layout: post
 title: Ruby和Ruby on Rails的安装
 date: 2013/05/19 01:28:00
 categories:
-  - Notes & Essays
+  - Notes & Reflections
 tags:
   - Infrastructure
   - Engineering

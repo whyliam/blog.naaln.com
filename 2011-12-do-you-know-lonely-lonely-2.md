@@ -3,7 +3,7 @@ layout: post
 title: 你可知道落寞的孤单
 date: 2011/12/22 04:07:00
 categories:
-  - Notes & Essays
+  - Notes & Reflections
 tags:
   - Life
   - Observation

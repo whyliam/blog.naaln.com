@@ -3,7 +3,7 @@ layout: post
 title: L56_让 AI 学会「深度思考」
 date: 2025/02/14 20:00:00
 categories:
-  - Notes & Essays
+  - Notes & Reflections
 tags:
   - AI
   - Data
@@ -11,6 +11,7 @@ tags:
   - Newsletter
   - Observation
 description: DeepSeek在数据标注策略上极其严格，创始人亲自参与以确保精度，特斯拉在自动驾驶标注投入是中国的20倍。阿里巴巴与苹果合作，苹果选择阿里作为中国市场的本地化伙伴。AI计算成本因智能水平与算力呈对数关系而每年下降90%，AGI发展前景广阔。DeepSeekR1通过思考标签机制，让AI自主学会深度推理。
+series: Newsletter 周刊
 ---
 
 ![DeepSeek 的朋友圈](https://pics.naaln.com/1739707966059-7ccd7cb1-b6df-41ea-9893-0b70bd32f5f5.png-basicBlog)

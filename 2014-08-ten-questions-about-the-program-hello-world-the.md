@@ -3,7 +3,7 @@ layout: post
 title: 关于程序「Hello World！」的十个问题
 date: 2014/08/25 10:08:00
 categories:
-  - Notes & Essays
+  - Notes & Reflections
 tags:
   - Learning
   - KnowledgeManagement

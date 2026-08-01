@@ -9,6 +9,7 @@ tags:
   - Infrastructure
   - Workflow
   - DigitalGarden
+description: Octopress 博客的实用技巧，包括部分显示、图片插入、代码高亮等配置。
 ---
 
 ## 0.首页仅显示部分

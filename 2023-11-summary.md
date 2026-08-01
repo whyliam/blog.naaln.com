@@ -3,7 +3,7 @@ layout: post
 title: 11月小结｜在路上
 date: 2023/11/30 20:00:00
 categories:
-  - Notes & Essays
+  - Notes & Reflections
 tags:
   - Life
   - Work

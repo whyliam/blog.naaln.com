@@ -3,7 +3,7 @@ layout: post
 title: 《从来》没疯狂过拿什么证明你的青春
 date: 2013/09/07 08:45:00
 categories:
-  - Notes & Essays
+  - Notes & Reflections
 tags:
   - Life
   - Observation

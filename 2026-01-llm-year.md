@@ -6,7 +6,7 @@ categories:
   - AI & Systems
 tags:
   - LLM
-  - AI Coding
+  - AICoding
   - Workflow
   - Observation
   - SystemsThinking

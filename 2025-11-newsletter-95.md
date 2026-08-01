@@ -11,6 +11,7 @@ tags:
   - AI
   - DecisionMaking
 description: AI 独角兽 ElevenLabs 的高效团队管理法则、速度在职场中的决定性作用，以及对 AI 泡沫背后价值的深度思考，推荐了创业者将 AI 融入传统产品的成功案例。
+series: Newsletter 周刊
 ---
 
 ![I 独角兽的管理法则](https://pics.naaln.com/202511171412884.png-basicBlog)

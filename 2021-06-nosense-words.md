@@ -3,7 +3,7 @@ layout: post
 title: 有道理的废话
 date: 2021/06/10 20:00:00
 categories:
-  - Notes & Essays
+  - Notes & Reflections
 tags:
   - KnowledgeManagement
   - Learning

@@ -3,7 +3,7 @@ layout: post
 title: 谁似浮云知进退？写在2010的尾巴上
 date: 2010/12/29 19:00:00
 categories:
-  - Notes & Essays
+  - Notes & Reflections
 tags:
   - Observation
   - Life

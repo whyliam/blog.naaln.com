@@ -10,6 +10,9 @@ tags:
   - Aesthetics
   - VisualArt
 description: 俄罗斯艺术家Dmitry Maximov融合插画与摄影创作奇幻二维世界，作品以球体脑袋小人为主角描绘与真实世界互动场景，画面优美呈现孤独美感，同时展现可爱小怪物在人类田间地头生活的诗意画面。
+type: visual
+cover: 'http://pics.naaln.com/blog/2019-01-14-085013.jpg-basicBlog'
+location: 俄罗斯
 ---
 
 ![](http://pics.naaln.com/blog/2019-01-14-085013.jpg-basicBlog)

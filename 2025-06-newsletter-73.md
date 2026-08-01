@@ -11,6 +11,7 @@ tags:
   - AgenticAI
   - Observation
 description: AI技术快速迭代，o3Pro、AlphaZero、MuZero、AlphaDev、Claude4、Sora、Veo3等突破；苹果WWDC25与OpenAI合作，字节Seedance10、微软Bing视频生成推进；开源Qwen3、AutoThink、MiMoVL、DeepResearch；特斯拉质检、讯飞机器人、水利标准AI、房地产Agent落地；SamAltman倡议马上行动，潘云鹤寄语创业。
+series: Newsletter 周刊
 ---
 
 ![技术迭代加速](https://pics.naaln.com/2025-06-15-c75ba008143c499db013435c27ec8efc.png-basicBlog)

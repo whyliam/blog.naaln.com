@@ -3,7 +3,7 @@ layout: post
 title: Swift中元组，结构体，枚举之间的区别
 date: 2016/07/26 11:17:22
 categories:
-  - Notes & Essays
+  - Notes & Reflections
 tags:
   - Learning
   - SystemsThinking

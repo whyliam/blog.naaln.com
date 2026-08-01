@@ -3,7 +3,7 @@ layout: post
 title: 看不清
 date: 2022/02/07 20:00:00
 categories:
-  - Notes & Essays
+  - Notes & Reflections
 tags:
   - ProductThinking
   - Web3

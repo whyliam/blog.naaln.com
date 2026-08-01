@@ -3,7 +3,7 @@ layout: post
 title: Make 2022 Better
 date: 2022/02/12 20:00:00
 categories:
-  - Notes & Essays
+  - Notes & Reflections
 tags:
   - SystemsThinking
   - Life

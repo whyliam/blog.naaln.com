@@ -3,7 +3,7 @@ layout: post
 title: L118_出去走一走
 date: 2026/04/25 10:00:00
 categories:
-  - Notes & Essays
+  - Notes & Reflections
 tags:
   - AI
   - ProductThinking
@@ -11,6 +11,7 @@ tags:
   - Observation
   - Newsletter
 description: 库克将在 9 月卸任苹果 CEO，接棒的是在实验室待了 25 年的硬件工程师特努斯。GEO 正在替代 SEO，当 AI 能写五万字小说却被七猫两天拒稿时，真正不可替代的东西开始浮出水面。
+series: Newsletter 周刊
 ---
 ![](https://pics.naaln.com/2026-04-24-0a372f745da6da1363a8ac3984227af9.webp-basicBlog)
 
@@ -106,7 +107,7 @@ AI 不会引用一个「算出来排名高」的页面，它会引用一个它�
 
 ### Harness Engineering：人类对 AI 的控制权演变
 
-增长黑客AI周报第52期有一篇文章把 AI 工程学的演进梳理得很清楚：Prompt Engineering → Context Engineering → Harness Engineering。
+有一篇文章把 AI 工程学的演进梳理得很清楚：Prompt Engineering → Context Engineering → Harness Engineering。
 
 用游戏类比的话，三个阶段分别是《只狼》的手动操作、《金铲铲之战》的前期配置、《全面战争》的系统驾驭。控制粒度从精细到宏观，AI 自主性从低到高。
 
@@ -120,7 +121,7 @@ Harness Engineering 的核心是构建一套系统性的规则与约束来驾驭
 
 我觉得两个都对。Harness 是当下的解法，但长远看，也许我们需要重新理解「控制」这件事——不是用缰绳去限制，而是用激励去引导。
 
-🔗：[Harness Engineering 解读](https://www.zengzhang.ai/p/aiep52-ai-llm-wiki-30geoharness)
+🔗：[Mitchell Hashimoto - My AI Adoption Journey](https://mitchellh.com/writing/my-ai-adoption-journey)
 
 ---
 
@@ -144,7 +145,7 @@ Harness Engineering 的核心是构建一套系统性的规则与约束来驾驭
 
 反过来说，如果你能把这些也量化并教会 AI，那你可能就不需要投稿了——直接开平台吧。
 
-🔗：[我用 Claude Code 写了一部 5 万字小说](https://www.zengzhang.ai/p/aiep52-ai-llm-wiki-30geoharness)
+🔗：[我用 Claude Code 写了一部 5 万字小说](https://mp.weixin.qq.com/s?__biz=MzU3MTcxOTg4OQ==&mid=2247484438&idx=1&sn=f2f6dde9baf3d2b024f0a44063b97abe)
 
 ---
 

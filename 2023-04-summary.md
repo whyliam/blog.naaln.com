@@ -3,7 +3,7 @@ layout: post
 title: 4月小结｜人是万物的尺度
 date: 2023/04/30 20:00:00
 categories:
-  - Notes & Essays
+  - Notes & Reflections
 tags:
   - ProductThinking
   - SelfExploration

@@ -3,7 +3,7 @@ layout: post
 title: 关注自己的头脑思维和情绪
 date: 2017/02/05 19:41:52
 categories:
-  - Notes & Essays
+  - Notes & Reflections
 tags:
   - SelfAwareness
   - CognitiveBiases

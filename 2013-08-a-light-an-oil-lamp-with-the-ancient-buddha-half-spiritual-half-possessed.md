@@ -3,7 +3,7 @@ layout: post
 title: 一盏青灯伴古佛，半为修行半入魔
 date: 2013/08/27 11:33:00
 categories:
-  - Notes & Essays
+  - Notes & Reflections
 tags:
   - Life
   - Observation

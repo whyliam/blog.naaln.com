@@ -3,7 +3,7 @@ layout: post
 title: 小聊第一份工作
 date: 2016/02/11 00:10:23
 categories:
-  - Notes & Essays
+  - Notes & Reflections
 tags:
   - Career
   - Platform

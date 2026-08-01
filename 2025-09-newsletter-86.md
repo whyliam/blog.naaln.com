@@ -10,6 +10,7 @@ tags:
   - Strategy
   - ProductThinking
 description: 西呗预制菜风波体现消费者口味优先观念，国务院发布人工智能+行动战略设定2027融合2030增长2035全面阶段目标，谷歌AI优化设计工作流实现自动化评审和专业文案生成，Nano Banana图像生成工具合集展示模型能力，苹果韩国官网调整表情包避免文化敏感话题。
+series: Newsletter 周刊
 ---
 
 ![](https://pics.naaln.com/202509151735239.png-basicBlog)

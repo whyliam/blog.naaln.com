@@ -3,7 +3,7 @@ layout: post
 title: 个人知识管理
 date: 2017/04/18 12:01:29
 categories:
-  - Notes & Essays
+  - Notes & Reflections
 tags:
   - KnowledgeManagement
   - Learning

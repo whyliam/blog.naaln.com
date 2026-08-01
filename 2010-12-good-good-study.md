@@ -3,7 +3,7 @@ layout: post
 title: 人的生活方式有两种
 date: 2010/12/16 19:00:00
 categories:
-  - Notes & Essays
+  - Notes & Reflections
 tags:
   - Life
   - Mindset

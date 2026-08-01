@@ -3,7 +3,7 @@ layout: post
 title: Popcorn Time – 开源电影播放器
 date: 2015/12/22 21:27:00
 categories:
-  - Notes & Essays
+  - Notes & Reflections
 tags:
   - OpenSource
   - DigitalCulture

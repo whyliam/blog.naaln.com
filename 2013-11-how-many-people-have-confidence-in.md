@@ -3,7 +3,7 @@ layout: post
 title: 如何在人多场合表现得自信
 date: 2013/11/24 05:32:00
 categories:
-  - Notes & Essays
+  - Notes & Reflections
 tags:
   - Networking
   - Communication

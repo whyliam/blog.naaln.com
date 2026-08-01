@@ -3,7 +3,7 @@ layout: post
 title: 所谓诚其意者 毋自欺也
 date: 2016/02/01 15:01:13
 categories:
-  - Notes & Essays
+  - Notes & Reflections
 tags:
   - SelfAwareness
   - HumanNature

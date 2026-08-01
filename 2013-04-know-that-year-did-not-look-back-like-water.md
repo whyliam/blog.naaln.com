@@ -3,7 +3,7 @@ layout: post
 title: 当年相知未回首，空叹年华似水流
 date: 2013/04/21 10:38:00
 categories:
-  - Notes & Essays
+  - Notes & Reflections
 tags:
   - Writing
   - Life

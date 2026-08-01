@@ -3,7 +3,7 @@ layout: post
 title: 这注定是悲剧的一个学期
 date: 2011/11/06 19:00:00
 categories:
-  - Notes & Essays
+  - Notes & Reflections
 tags:
   - Life
   - Learning

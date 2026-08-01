@@ -3,7 +3,7 @@ layout: post
 title: 我曾经七次鄙视自己的灵魂
 date: 2015/09/16 20:10:08
 categories:
-  - Notes & Essays
+  - Notes & Reflections
 tags:
   - SelfReflection
   - HumanNature

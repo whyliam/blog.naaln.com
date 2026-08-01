@@ -10,6 +10,7 @@ tags:
   - Observation
   - Life
 description: 自行车选购、必备装备、出行准备、路上经验、进藏骑行、骑行安全、问路技巧和摄影原则的全面指南。
+location: 滇藏线
 ---
 
 ### 一。关于装备

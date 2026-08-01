@@ -3,7 +3,7 @@ layout: post
 title: 使用 FLASK 高仿 简书 的应用
 date: 2014/09/01 03:09:06
 categories:
-  - Notes & Essays
+  - Notes & Reflections
 tags:
   - SystemsThinking
   - ProductThinking

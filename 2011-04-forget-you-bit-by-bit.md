@@ -3,7 +3,7 @@ layout: post
 title: 忘不了你的点点滴滴
 date: 2011/04/02 20:00:00
 categories:
-  - Notes & Essays
+  - Notes & Reflections
 tags:
   - Life
   - Observation

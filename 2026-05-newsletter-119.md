@@ -1,7 +1,7 @@
 ---
 layout: post
 title: L119_缰绳与偷懒的模型
-date: 2026/05/06 10:00:00
+date: 2026/05/02 10:00:00
 categories:
   - AI & Systems
 tags:
@@ -11,6 +11,9 @@ tags:
   - Workflow
   - Newsletter
 description: Notion 用软件工厂模式重构了 AI 智能体开发范式，而模型在长上下文中主动选择偷懒的发现，让 Harness Engineering 的缰绳理论面临尴尬。AI 硬件出海、Claude Design 冲击 Figma、以及速溶咖啡的百年发明史——这期的主题是：当工具越来越聪明，我们该学会什么时候收手。
+created: 2026-06-14 23:27:29
+updated: 2026-06-15 19:04:31
+series: Newsletter 周刊
 ---
 ![](https://pics.naaln.com/2026-05-10-1d322087efcc4539a49306ff8ec25462.png-basicBlog)
 
@@ -64,7 +67,7 @@ Notion 的 AI 团队在《Notion's Token Town》的分享中，披露了构建�
 
 这五条经验加起来，描绘了一个清晰的图景：构建 AI 智能体不是写更聪明的 prompt，而是设计更好的工具生态。
 
-🔗：[Notion's Token Town](https://www.zengzhang.ai/p/aiep53-notion-geo)
+🔗：[Latent Space - Notion's Token Town](https://www.latent.space/p/notion)
 
 ---
 
@@ -86,7 +89,7 @@ AI 确实擅长快速搭建框架和界面修补。但一旦涉及到真实业�
 
 答案可能是：在发现根因和控制回归的能力上。AI 能生成代码，但不能判断这段代码在真实业务中会不会出问题。能判断的人，才是真正不可替代的。
 
-🔗：[Slax Note AI Coding 重构复盘](https://www.zengzhang.ai/p/aiep53-notion-geo)
+🔗：[Slax Note - 用 AI 重写 Slax Note 的完整复盘](https://slax.com/zh-Hans/blog/vibe-coding-rewrote-our-app-the-method/)
 
 ---
 
@@ -172,7 +175,7 @@ Sipeed 矽速科技直面供应链现实，指出「内存比金子还贵」的�
 
 这不是什么秘密。但由一线创业者在融资 BP 之外说出来，还是很有参考价值。
 
-🔗：[AI 硬件出海实话](https://www.zengzhang.ai/p/aiep53-notion-geo)
+
 
 ---
 
@@ -190,7 +193,7 @@ Sipeed 矽速科技直面供应链现实，指出「内存比金子还贵」的�
 
 反过来说，这也提醒了 GEO 从业者：真正可持续的 GEO 优化，靠的不是数据魔术，而是内容本身的质量。AI 会引用什么，最终取决于它认为什么可信。
 
-🔗：[GEO 行业数据造假手册](https://www.zengzhang.ai/p/aiep53-notion-geo)
+🔗：[GEO 行业数据造假手册 - 36氪](https://m.36kr.com/p/3799161817854468)
 
 ---
 
@@ -224,4 +227,4 @@ Figma 的应对策略可能不是对抗这个趋势，而是找到自己的新�
 - **Ian Handdrawn PPT**：给 AI Agent 用的画图说明书，把文字内容变成中文手绘技术解释图，21:9 封面，16:9 正文，每页一整张 PNG。[详情](https://github.com/helloianneo/ian-handdrawn-ppt)
 - **WhatsTheWeb 浏览器扩展**：在当前页面直接打开侧边栏，显示网站访问量、流量来源、SEO 体检、技术栈探测，一站式站点情报。[详情](https://chromewebstore.google.com/detail/whatstheweb-website-traff/dmdbpmhalempefopiaiphpnohhmahgmi)
 - **Google 图标设计风格转变**：从强制四色扁平化回到渐变与玻璃拟态，呼应 Gemini AI 的视觉语言。Material Design 的设计语言可能也要换说法了。[详情](https://www.uisdc.com)
-- **单篇 100 万阅读的内容公式**：选题占 50%，标题占 20%，开头占 10%，正文占 20%。六条标准：逻辑层层递进、开头反常识制造冲突、持续设置阅读钩子、高信息密度、可操作的解决方案、独特节奏与风格。[详情](https://www.zengzhang.ai/p/aiep53-notion-geo)
+- **单篇 100 万阅读的内容公式**：选题占 50%，标题占 20%，开头占 10%，正文占 20%。六条标准：逻辑层层递进、开头反常识制造冲突、持续设置阅读钩子、高信息密度、可操作的解决方案、独特节奏与风格。

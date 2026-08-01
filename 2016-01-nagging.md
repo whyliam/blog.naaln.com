@@ -3,7 +3,7 @@ layout: post
 title: 碎碎念
 date: 2016/01/28 19:52:29
 categories:
-  - Notes & Essays
+  - Notes & Reflections
 tags:
   - ProductThinking
   - DecisionMaking

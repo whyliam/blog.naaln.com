@@ -3,7 +3,7 @@ layout: post
 title: 为什么要写博客
 date: 2014/07/28 21:40:35
 categories:
-  - Notes & Essays
+  - Notes & Reflections
 tags:
   - Writing
   - SelfReflection

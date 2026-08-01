@@ -3,7 +3,7 @@ layout: page
 title: Wish List
 date: 2013/03/27 07:01:00
 categories:
-  - Notes & Essays
+  - Notes & Reflections
 tags:
   - Life
   - Travel

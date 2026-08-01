@@ -3,7 +3,7 @@ layout: post
 title: 为什么调用glPushMatrix()和glPopMatrix()
 date: 2013/05/17 09:43:00
 categories:
-  - Notes & Essays
+  - Notes & Reflections
 tags:
   - SystemsThinking
   - Learning

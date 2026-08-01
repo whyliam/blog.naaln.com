@@ -3,7 +3,7 @@ layout: post
 title: 在Mac OS X上架设属于你的Octopress
 date: 2013/10/19 04:24:00
 categories:
-  - Notes & Essays
+  - Notes & Reflections
 tags:
   - DigitalGarden
   - Writing

@@ -9,7 +9,7 @@ tags:
   - Workflow
   - Automation
   - Knowledge
-  - AI Coding
+  - AICoding
 description: 提供Macmini软件安装完整流程，指导安装Homebrew、Ohmyzsh等基础工具，配置Mackup备份软件，设置Brew安装列表包括浏览器、办公、开发、视频、设计等多类软件，手动安装如图像、虚拟管理等工具，并覆盖Git、Node、Python开发环境配置，LaTeX排版环境和字体库安装。
 ---
 

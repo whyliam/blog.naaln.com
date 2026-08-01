@@ -3,7 +3,7 @@ layout: post
 title: 写篇日志给我的大学转
 date: 2012/05/12 20:00:00
 categories:
-  - Notes & Essays
+  - Notes & Reflections
 tags:
   - Observation
   - Education

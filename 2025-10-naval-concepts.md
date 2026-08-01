@@ -3,7 +3,7 @@ layout: post
 title: 他所有的人生智慧，都源于一场 7.5 亿美元的背叛
 date: 2025/10/29 10:55:00
 categories:
-  - Notes & Essays
+  - Notes & Reflections
 tags:
   - Wealth
   - Leverage

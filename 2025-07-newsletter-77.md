@@ -11,6 +11,7 @@ tags:
   - Platform
   - Trust
 description: OpenAI再次推迟开源模型发布，理由是需要进行额外安全测试；xAI推出Grok4自称最强AI助手，但出现偏见和倾向性问题；Perplexity发布200美元AI浏览器Comet，通过本地存储保护隐私，却面临技术幻觉和版权争议。
+series: Newsletter 周刊
 ---
 
 ![从谨慎推迟到激进竞逐](https://pics.naaln.com/2025-07-15-d6cf990539ae46b1b4332e9fd0e510bf.png-basicBlog)

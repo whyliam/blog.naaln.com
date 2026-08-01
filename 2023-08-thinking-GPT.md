@@ -3,7 +3,7 @@ layout: post
 title: 关于 GPT 的一点想法
 date: 2023/08/23 20:00:00
 categories:
-  - Notes & Essays
+  - Notes & Reflections
 tags:
   - AI
   - Philosophy

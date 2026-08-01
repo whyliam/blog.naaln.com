@@ -3,7 +3,7 @@ layout: post
 title: 教育能改变命运吗
 date: 2025/08/24 20:00:00
 categories:
-  - Notes & Essays
+  - Notes & Reflections
 tags:
   - Learning
   - Cognition

@@ -3,7 +3,7 @@ layout: post
 title: Surge Crack 与时间
 date: 2020/03/01 20:00:00
 categories:
-  - Notes & Essays
+  - Notes & Reflections
 tags:
   - TimeValue
   - IndieDeveloper
