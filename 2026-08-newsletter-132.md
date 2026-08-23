@@ -55,7 +55,7 @@ series: Newsletter 周刊
 
 另一条是 Dan Shipper 一周实测 Claude Opus 5 后的吐槽：它「对抗指令、过早停止」，他形容是 **「穷人版 Fable，有天才模型的脾气却没有天才的上限」**；有意思的是，他的解法是**删掉旧 skills 重建**——工具再强，摆错了配置也是负资产。这又绕回 caoz 那句「摆错了位置」。至于 Latent Space 那篇《5 Trends That Defined AI Engineering at World's Fair 2026》，把 Harness、Loop、Skills、企业部署、Coding Agents 串成了一条路线图，想搭 Agent 工程的人值得对照着看。
 
-🔗：https://www.latent.space/p/aiewf26trends
+🔗：https://x.com/karpathy/status/2079610838143623371 ｜ https://www.latent.space/p/aiewf26trends
 
 ---
 
@@ -69,7 +69,7 @@ series: Newsletter 周刊
 
 🔗：https://openai.com/index/how-two-settings-tripled-our-arc-agi-3-scores ｜ https://openai.com/index/advancing-the-price-performance-frontier-with-gpt-5-6
 
-另一条战线是「把大模型塞进小机器」。腾讯混元开源了 **AngelSpec 投机解码框架**（用小模型猜、大模型验，压推理成本）；社区里则有人在 M1 Max 上硬跑 **2.8T 参数的 Kimi K3**（Deltafin 项目，慢到 0.0687 token/s，但它跑起来了），还有引擎能在任意 M 系列 Mac 上用 2GB 内存跑 **Gemma 4 26B**。这些看着像极客的自娱自乐，但方向和 caoz 一致：**当算力变贵，「榨干每一分算力」本身就是竞争力。**
+另一条战线是「把大模型塞进小机器」。腾讯混元开源了 **AngelSpec 投机解码框架**（用小模型猜、大模型验，压推理成本）；社区里则有人在 M1 Max 上硬跑 **2.8T 参数的 Kimi K3**（Deltafin 项目，最慢时只有 0.014 token/s，但它跑起来了），还有引擎能在任意 M 系列 Mac 上用 2GB 内存跑 **Gemma 4 26B**。这些看着像极客的自娱自乐，但方向和 caoz 一致：**当算力变贵，「榨干每一分算力」本身就是竞争力。**
 
 🔗：https://x.com/TencentHunyuan/status/2082447023626944936 ｜ https://github.com/gavamedia/deltafin ｜ https://github.com/drumih/turbo-fieldfare
 
@@ -106,4 +106,4 @@ series: Newsletter 周刊
 - **Seedance 2.0 技能操作系统**：把创意想法翻译成 Seedance 提示词的 skill 合集，内含 27 个子技能，做 AI 视频的可以省下不少调参的功夫。https://github.com/Emily2040/seedance-2.0
 - **Google Earth 集成 Nano Banana 2**：现在可以在地图上直接生成图像了，虚实边界又模糊了一分。https://x.com/GoogleAI/status/2082902334984609936
 - **Martha Stewart 联合创办 AI 公司 Hint**：给房主的家居管理 AI 助手——连生活方式偶像都下场做垂类 Agent 了。https://techcrunch.com/2026/07/29/hint-a-new-ai-startup-co-founded-by-martha-stewart-offers-an-ai-assistant-for-homeowners
-- **SpaceXAI 起诉明尼苏达州**：反对该州的「AI 脱衣」应用禁令——AI 治理的边界正在法庭上一寸寸地划。https://www.ithome.com/0/983/298.htm
+- **xAI（已归入 SpaceX）起诉明尼苏达州**：反对该州 8 月 1 日生效的「AI 脱衣」（nudify）应用禁令，主张该法违宪——AI 治理的边界正在法庭上一寸寸地划。https://www.theguardian.com/technology/2026/jul/29/xai-sues-minnesota-nudification-technology
