@@ -10,7 +10,7 @@ tags:
   - FutureOfWork
 description: AI 让实现变便宜了但没有让判断变便宜——从 FDE 角色兴起、重构经济学到设计系统必选项，本期聚焦 AI 时代判断力的价值，以及如何在噪音中练习在场。
 created: 2026-08-20 12:43:25
-updated: 2026-08-23 11:27:01
+updated: 2026-10-08 11:24:47
 series: Newsletter 周刊
 ---
 ![](https://pics.naaln.com/2026-08-23-259c3095e9e1568a2859afb50844e624.webp-basicBlog)
@@ -135,7 +135,7 @@ Linear 公开了他们构建 Linear Agent 的完整思路，其中最值得学�
 
 ### 本周模型速报
 
-![模型发布](https://images.unsplash.com/photo-1677442136019-21780ecad995?w=800)
+![](https://pics.naaln.com/2026-10-08-6aa88e249f8dbea90ac2fcf168ecfa31.webp-basicBlog)
 
 一周之内发生的重要模型事件：
 
