@@ -38,6 +38,8 @@ aether:
 
   # 01 Hero
   hero:
+    name: Liam · 行权
+    intro: 记录 AI 系统、产品判断与知识管理，在写作中留下可回看的思考。
     eyebrow: '个人知识档案 · 始于 2010'
     identity: '我是 Liam，产品经理与独立开发者，长期记录 AI 系统、产品判断与知识管理。'
     title: "记录 AI 系统、产品判断
@@ -74,7 +76,7 @@ aether:
   # 02 Start Here
   start_here:
     section_label: '02 / 从这里开始'
-    title: '第一次来？<em>从这里开始</em>'
+    title: '从这里开始'
     items:
       - intent: '理解 AI 系统与 Agent'
         description: 'AI 如何改变编码方式，Agent 生态的演进'
@@ -87,8 +89,9 @@ aether:
           - slug: 2024/01/notion
       - intent: '理解长期写作与知识系统'
         description: '个人知识管理，Obsidian 实践，写作作为思考'
-        category: 'Notes & Reflections'
-        limit: 3
+        posts:
+          - slug: 2026/01/knowledge-key
+          - slug: 2025/03/PDAA-circle
 
   # 03 Building
   building:
@@ -122,14 +125,14 @@ aether:
 
   # 04 Latest
   latest:
-    limit: 5
+    limit: 3
     section_label: '04 / 最近更新'
     title: '最近更新'
 
   # 05 Notes & Visuals
   notes_visuals:
     section_label: '05 / 思考与影像'
-    title: '思考碎片与<em>影像记录</em>'
+    title: '短札与影像'
     notes_limit: 3
     visuals_limit: 4
 
@@ -140,6 +143,12 @@ aether:
   visuals:
     enable: true
     more_url: '/visuals/'
+    # Verified photographic covers; keep illustrations and missing covers out of the home selection.
+    posts:
+      - /2014/09/second-speed-time-lapse-photography-short-barcelona-barcelona-go/
+      - /2013/08/become-a-tired-dreams-one-night-in-paris/
+      - /2014/01/where-is-the-most-beautiful-scenery-the-train-lines/
+      - /2013/11/how-to-use-the-slr-film-night/
 
   # Disable superseded standalone modules.
   featured:
@@ -147,7 +156,10 @@ aether:
   paths:
     enable: false
   series:
-    enable: false
+    enable: true
+    title: 长期系列
+    featured: Newsletter 周刊
+    featured_description: 持续观察 AI、产品与技术世界的变化。
 
   # 06 Subscribe
   newsletter:
@@ -200,3 +212,7 @@ waline:
 # Performance
 lazyload: true
 preconnect: true
+
+# Reading content and navigation should be available immediately.
+motion:
+  enable: false
