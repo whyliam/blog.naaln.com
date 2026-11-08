@@ -1,5 +1,5 @@
 ---
-title: L43_账本：省下来的时间，最后都记在了谁头上
+title: L143_账本：省下来的时间，最后都记在了谁头上
 date: 2026-10-24 10:00:00
 categories:
   - Notes & Reflections

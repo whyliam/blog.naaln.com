@@ -1,5 +1,5 @@
 ---
-title: L44_门禁：智能正在变便宜，而开门这件事正在变贵
+title: L144_门禁：智能正在变便宜，而开门这件事正在变贵
 date: 2026-10-31 10:00:00
 categories:
   - Notes & Reflections
