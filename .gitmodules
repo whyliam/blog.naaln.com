@@ -5,4 +5,4 @@
 [submodule "themes/aether"]
     path = themes/aether
     url = https://github.com/whyliam/hexo-theme-aether.git
-    branch = feat/init-theme
+    branch = master
