@@ -14,7 +14,7 @@ const sharp = require('sharp');
 async function load(name, config, extra = {}) {
   const hooks = { filter: new Map(), generator: new Map(), deployer: new Map() };
   const hexo = {
-    config, log: { info() {} },
+    config, log: { info() {}, warn() {} },
     extend: Object.fromEntries(Object.entries(hooks).map(([key, map]) => [key, { register: (id, fn) => map.set(id, fn) }]))
   };
   const file = path.resolve(__dirname, '../scripts', name);
@@ -92,14 +92,36 @@ test('submission refuses missing credentials and redacts transport errors', asyn
   await assert.rejects(send, error => error.message === 'Search submission transport failed');
 });
 
+test('only confirmed Baidu daily quota exhaustion is deferred; invalid credentials still fail', async t => {
+  const dir = await fs.mkdtemp(path.join(os.tmpdir(), 'aether-submit-quota-'));
+  t.after(() => fs.rm(dir, { recursive: true, force: true }));
+  await fs.writeFile(path.join(dir, 'submit_urls.txt'), 'https://blog.example/new/');
+  let body = { error: 400, message: 'over quota' };
+  const { hooks, hexo } = await load('search-submit.js', {
+    url: 'https://blog.example', hexo_submit_urls_to_search_engine: { baidu: 1, baidu_token: 'test-token' }
+  }, { fetch: async () => ({ ok: false, status: 400, text: async () => JSON.stringify(body) }) });
+  let warnings = 0;
+  hexo.public_dir = dir;
+  hexo.log.warn = () => { warnings++; };
+  const send = hooks.deployer.get('cjh_baidu_url_submitter').bind(hexo);
+  await send();
+  assert.equal(warnings, 1);
+  body = { error: 401, message: 'token invalid' };
+  await assert.rejects(send, /Search submission failed/);
+  assert.equal(warnings, 1);
+});
+
 test('patched UPYUN SDK preserves signed upload/download/directory/delete behavior', async t => {
   const UpYun = require('upyun');
+  const isUploadResult = require('hexo-deployer-upyun/lib/upload-result');
   const requests = [];
   const server = http.createServer(async (req, res) => {
     const parts = [];
     for await (const part of req) parts.push(part);
     requests.push({ method: req.method, path: req.url, headers: req.headers, body: Buffer.concat(parts).toString() });
-    res.writeHead(200, { 'Content-Type': 'application/json' });
+    res.writeHead(200, req.url.endsWith('.png')
+      ? { 'x-upyun-file-type': 'PNG', 'x-upyun-width': '16', 'x-upyun-height': '16' }
+      : { 'Content-Type': 'application/json' });
     res.end(req.method === 'GET' ? '[{"file":"index.html"}]' : '');
   });
   await new Promise(resolve => server.listen(0, '127.0.0.1', resolve));
@@ -110,7 +132,11 @@ test('patched UPYUN SDK preserves signed upload/download/directory/delete behavi
   assert.equal((await client.getFile('.file_list.json'))[0].file, 'index.html');
   assert.ok(await client.makeDir('new-directory'));
   assert.ok(await client.deleteFile('old.html'));
-  assert.equal(requests.length, 4);
+  const image = await client.putFile('image.png', Buffer.from('image fixture'));
+  assert.equal(typeof image, 'object');
+  assert.equal(isUploadResult(image), true);
+  assert.equal(isUploadResult({ error: 'failed' }), false);
+  assert.equal(requests.length, 5);
   for (const req of requests) {
     const digest = crypto.createHash('md5').update('test-password').digest('hex');
     const expected = crypto.createHmac('sha1', digest).update(`${req.method}&${req.path}&${req.headers['x-date']}`).digest('base64');

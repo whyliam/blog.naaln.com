@@ -35,12 +35,15 @@ if (cfg) {
       throw new Error('Search submission transport failed');
     }
     // Do not log endpoint URLs or raw responses: API credentials can appear there.
-    if (!response.ok) throw new Error(`Search submission failed (HTTP ${response.status})`);
     const text = await response.text();
     let data;
     try { data = text ? JSON.parse(text) : {}; } catch {
       throw new Error('Search service returned an invalid response');
     }
+    if (endpoint.hostname === 'data.zz.baidu.com' && data.error === 400 && data.message === 'over quota') {
+      return { deferred: true };
+    }
+    if (!response.ok) throw new Error(`Search submission failed (HTTP ${response.status})`);
     if (data.error || data.ErrorCode) throw new Error('Search service rejected the submission');
     return data;
   }
@@ -54,7 +57,11 @@ if (cfg) {
     const endpoint = new URL('http://data.zz.baidu.com/urls');
     endpoint.searchParams.set('site', cfg.baidu_host || hexo.config.url);
     endpoint.searchParams.set('token', token);
-    await post(endpoint, list.join('\n'), 'text/plain');
+    const result = await post(endpoint, list.join('\n'), 'text/plain');
+    if (result.deferred) {
+      this.log.warn('Baidu daily submission quota exhausted; deferred until the next scheduled deployment');
+      return;
+    }
     this.log.info(`Baidu accepted a batch of ${list.length} URLs`);
   });
 
