@@ -31,7 +31,12 @@ jobs:
       - run: npm install hexo-cli -g
       - name: Install dependencies
         run: npm ci
-      - run: git submodule update --init --recursive --remote
+      # Keep theme code and site configuration on the tested, committed revision.
+      - run: git submodule update --init --recursive
+      # Scheduled builds may still pick up newly published articles.
+      - run: git submodule update --remote source/_posts
+      - name: Install theme runtime dependencies
+        run: npm install --prefix themes/aether --omit=dev
       - run: hexo clean
 
       # 先运行 hexo generate 生成 db.json

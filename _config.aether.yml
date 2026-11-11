@@ -1,184 +1,194 @@
-# Aether theme overrides for blog.naaln.com.
-# Hexo loads this file automatically because `_config.yml` selects `theme: aether`.
-
-# Navigation
+# Site-specific Aether configuration. Theme defaults are generic.
+# Theme revision and this file are deployed together.
 menu:
   首页: / || fa fa-home
   写作: /archives/ || fa fa-pencil-alt
   系列: /series/ || fa fa-layer-group
   影像: /visuals/ || fa fa-camera-retro
   关于: /about/ || fa fa-user
-
-# Social links
 social:
   GitHub: https://github.com/whyliam || fab fa-github
   微博: https://weibo.com/whyliam || fab fa-weibo
   X: https://twitter.com/whyliam || fab fa-x-twitter
   RSS: /atom.xml || fa fa-rss
-
 social_icons:
   enable: true
   icons_only: true
   transition: false
-
-# Footer
 footer:
   since: 2010
   icon:
     name: fa fa-feather
     animated: false
-    color: "#2a3a6b"
+    color: '#2a3a6b'
   copyright: 行权 · Liam
   powered: false
-
-# Aether-specific modules
 aether:
-  # Aether renders its own reading progress bar.
   reading_progress: true
-
-  # 01 Hero
   hero:
     name: Liam · 行权
     intro: 记录 AI 系统、产品判断与知识管理，在写作中留下可回看的思考。
-    eyebrow: '个人知识档案 · 始于 2010'
-    identity: '我是 Liam，产品经理与独立开发者，长期记录 AI 系统、产品判断与知识管理。'
-    title: "记录 AI 系统、产品判断
-与长期思考，<em>以及缓慢形成的
-生活档案。</em>"
-    description: '我不写评测，不追热点。我写那些五年后还值得被回看的判断。'
-    actions:
-      - text: 开始阅读
-        url: '#aether-latest'
-        variant: primary
-      - text: 阅读路径
-        url: '#aether-start-here'
-        variant: default
-      - text: 关于我
-        url: '/about/'
-        variant: ghost
-    side_panel:
-      title: '当前关注'
-      updated: '2026-06'
-      items:
-        - title: 'AI Coding Harness'
-          subtitle: '工具链与编码范式'
-          url: '/categories/AI-Systems/'
-        - title: 'Agent Runtime'
-          subtitle: 'Agent 生态与实践'
-          url: '/series/agent-runtime/'
-        - title: 'Obsidian Knowledge System'
-          subtitle: '知识管理与信息架构'
-          url: '/series/obsidian-knowledge-system/'
-        - title: 'Aether Blog Theme'
-          subtitle: '个人站点工程'
-          url: 'https://github.com/whyliam/hexo-theme-aether'
-
-  # 02 Start Here
-  start_here:
-    section_label: '02 / 从这里开始'
-    title: '精选阅读'
-    items:
-      - intent: '理解 AI 系统与 Agent'
-        description: 'AI 如何改变编码方式，Agent 生态的演进'
-        posts:
-          - slug: 2026/05/agent-new-species-economic-system
-          - slug: 2026/03/OpenClaw-90-Day-Hit
-      - intent: '理解产品、数据与判断'
-        description: '数据产品思维，从 PM 视角看技术演进'
-        posts:
-          - slug: 2024/01/notion
-      - intent: '理解长期写作与知识系统'
-        description: '个人知识管理，Obsidian 实践，写作作为思考'
-        posts:
-          - slug: 2026/01/knowledge-key
-          - slug: 2025/03/PDAA-circle
-
-  # 03 Building
-  building:
-    section_label: '03 / Building'
-    title: '正在构建'
-    subtitle: '我正在长期构建的系统'
-    more_url: '/series/'
-    more_text: '全部项目'
-    items:
-      - name: 'AI Coding Harness'
-        description: '围绕 AI 辅助编码构建的工具链与工作流'
-        status: '持续更新'
-        status_variant: 'is-live'
-        url: '/categories/AI-Systems/'
-      - name: 'Agent Runtime'
-        description: 'Agent 生态的技术实践与产业观察'
-        status: '持续更新'
-        status_variant: 'is-live'
-        url: '/series/agent-runtime/'
-      - name: 'Obsidian Knowledge System'
-        description: '个人知识管理系统的构建与迭代'
-        status: '实验中'
-        status_variant: 'is-rd'
-        url: '/series/obsidian-knowledge-system/'
-      - name: 'Aether Blog Theme'
-        description: '基于 NexT 的个人知识档案馆主题'
-        status: '开发中'
-        status_variant: 'is-rd'
-        url: 'https://github.com/whyliam/hexo-theme-aether'
-        external: true
-
-  # 04 Latest
+    eyebrow: 个人知识档案 · 始于 2010
+    links:
+      - label: 探索我的思考
+        url: /archives/
+      - label: 关于我
+        url: /about/
   latest:
     limit: 3
-    section_label: '04 / 最近更新'
-    title: '最近更新'
-
-  # 05 Notes & Visuals
+    title: 最近更新
   notes_visuals:
-    section_label: '05 / 思考与影像'
-    title: '短札与影像'
-    notes_limit: 3
-    visuals_limit: 4
-
-  # These settings provide links and data to the merged module above.
+    title: 短札与影像
+    enable: true
   notes:
-    enable: false
-    more_url: '/categories/Notes-Reflections/'
+    enable: true
+    more_url: /categories/Notes-Reflections/
+    limit: 3
   visuals:
     enable: true
-    more_url: '/visuals/'
-    # Verified photographic covers; keep illustrations and missing covers out of the home selection.
+    more_url: /visuals/
     posts:
       - /2014/09/second-speed-time-lapse-photography-short-barcelona-barcelona-go/
       - /2013/08/become-a-tired-dreams-one-night-in-paris/
       - /2014/01/where-is-the-most-beautiful-scenery-the-train-lines/
       - /2013/11/how-to-use-the-slr-film-night/
-
-  # Disable superseded standalone modules.
-  featured:
-    enable: false
+    limit: 4
   paths:
-    enable: false
+    title: 精选阅读
+    items:
+      - intent: 理解 AI 系统与 Agent
+        description: AI 如何改变编码方式，Agent 生态的演进
+        posts:
+          - slug: 2026/05/agent-new-species-economic-system
+          - slug: 2026/03/OpenClaw-90-Day-Hit
+      - intent: 理解产品、数据与判断
+        description: 数据产品思维，从 PM 视角看技术演进
+        posts:
+          - slug: 2024/01/notion
+      - intent: 理解长期写作与知识系统
+        description: 个人知识管理，Obsidian 实践，写作作为思考
+        posts:
+          - slug: 2026/01/knowledge-key
+          - slug: 2025/03/PDAA-circle
+    enable: true
   series:
     enable: true
     title: 长期系列
     featured: Newsletter 周刊
     featured_description: 持续观察 AI、产品与技术世界的变化。
-
-  # 06 Subscribe
+    rules:
+      - name: Newsletter 周刊
+        title_pattern: ^L\d+[_:：]
+        path_pattern: newsletter[-_]?\d+
+        issue_pattern: ^L(\d+)[_:：]\s*
+      - name: AI Coding Harness
+        tags:
+          - AI Coding
+        title_pattern: AI Coding|Vibe Coding|Claude Code|Cursor|Copilot|Codex|Aider|Cline
+      - name: Agent Runtime
+        tags:
+          - Agent
+          - AgenticAI
+        title_pattern: \bAgent\b|智能体|OpenClaw|MCP|Manus
+      - name: Obsidian Knowledge System
+        tags:
+          - Obsidian
+        title_pattern: Obsidian|知识管理|笔记系统|\bPKM\b|Second Brain
+      - name: 2016 设计年鉴
+        title_pattern: 2016.*设计年鉴
+        path_pattern: design-yearbook-of-2016
   newsletter:
-    text: '关注更新'
+    text: 关注更新
     channels:
-      - { label: 'RSS',        url: '/atom.xml' }
-      - { label: 'Newsletter', url: '/newsletter/' }
-      - { label: 'GitHub',     url: 'https://github.com/whyliam', external: true }
-      - { label: 'X',          url: 'https://twitter.com/whyliam', external: true }
-
-  # Post-bottom CTA strip
+      - label: RSS
+        url: /atom.xml
+      - label: Newsletter
+        url: /newsletter/
+      - label: GitHub
+        url: https://github.com/whyliam
+        external: true
+      - label: X
+        url: https://twitter.com/whyliam
+        external: true
+    enable: true
+    series: Newsletter 周刊
+    title: 让思考，慢慢抵达。
+    description: 关于 AI、产品与技术世界的观察。用你习惯的方式，接着读下去。
+    rss_url: /atom.xml
+    rss_label: 通过 RSS 关注更新
+    status: 邮件订阅尚未开放。现在可以在阅读器里订阅本站。
+    recent_title: 最近三期
   cta:
     channels:
-      - { label: 'RSS · 订阅档案更新',   url: '/atom.xml',                 hint: 'Reader' }
-      - { label: 'Newsletter · 月度邮件', url: '/newsletter/',              hint: 'Email' }
-      - { label: 'GitHub · 开源项目',     url: 'https://github.com/whyliam', hint: '项目' }
-      - { label: '微博 · WhyLiam',        url: 'https://weibo.com/whyliam',  hint: '动态' }
-
-# Code blocks
+      - label: RSS · 订阅档案更新
+        url: /atom.xml
+        hint: Reader
+      - label: Newsletter · 周刊归档
+        url: /newsletter/
+        hint: Archive
+      - label: GitHub · 开源项目
+        url: https://github.com/whyliam
+        hint: 项目
+      - label: 微博 · WhyLiam
+        url: https://weibo.com/whyliam
+        hint: 动态
+    enable: true
+  home:
+    sections:
+      - hero
+      - latest
+      - paths
+      - series
+      - personal
+      - subscribe
+  appearance:
+    palette:
+      light:
+        accent: '#345b4b'
+      dark:
+        accent: '#a8d2bb'
+    layout:
+      width: 1180
+      article_width: 720
+      gutter: 50
+      mobile_gutter: 20
+    glass:
+      enable: true
+      pointer: true
+      blur: 16
+      saturation: 160
+      follow_duration: 100
+      opacity:
+        light: 0.56
+        dark: 0.66
+      reflection:
+        light: 0.82
+        dark: 0.24
+      rim:
+        light: 0.95
+        dark: 0.36
+  labels:
+    issue: 周刊 · 第 {value} 期
+  taxonomy:
+    labels:
+      AI & Systems: AI 与系统
+      AI-Systems: AI 与系统
+      Notes & Reflections: 笔记与随笔
+      Notes & Essays: 笔记与随笔
+      Notes-Essays: 笔记与随笔
+      Notes-Reflections: 笔记与随笔
+      Product & Intelligence: 产品与判断
+      Product-Intelligence: 产品与判断
+      Travel & Visuals: 旅行与影像
+      Travel-Visuals: 旅行与影像
+  images:
+    https_hosts:
+      - pics.naaln.com
+  brand:
+    text: ''
+    dot: true
+  footer:
+    tagline: 这里是长期档案，不是内容流。
 codeblock:
   theme:
     light: atom-one-light
@@ -189,30 +199,24 @@ codeblock:
   fold:
     enable: true
     height: 500
-
-# Image lightbox
 fancybox: true
-
-# Waline
 waline:
   enable: true
   serverURL: https://comment.naaln.com
-  dark: 'html[data-color-scheme="dark"]'
-  placeholder: Just go go # Comment box placeholder
-  avatar: mm # Gravatar style
-  meta: [nick, mail, link] # Custom comment header
-  pageSize: 10 # Pagination size
-  lang: # Language, available values: en, zh-cn
-  # Warning: Do not enable both `waline.visitor` and `leancloud_visitors`.
-  visitor: false # Article reading statistic
-  comment_count: true # If false, comment count will only be displayed in post page, not in home page
-  requiredFields: [] # Set required fields: [nick] | [nick, mail]
-  libUrl: # Set custom library cdn url
-
-# Performance
+  dark: html[data-color-scheme="dark"]
+  placeholder: Just go go
+  avatar: mm
+  meta:
+    - nick
+    - mail
+    - link
+  pageSize: 10
+  lang: null
+  visitor: false
+  comment_count: true
+  requiredFields: []
+  libUrl: null
 lazyload: true
 preconnect: true
-
-# Reading content and navigation should be available immediately.
 motion:
   enable: false
