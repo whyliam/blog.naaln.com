@@ -40,10 +40,15 @@ if (cfg) {
     try { data = text ? JSON.parse(text) : {}; } catch {
       throw new Error('Search service returned an invalid response');
     }
-    if (endpoint.hostname === 'data.zz.baidu.com' && data.error === 400 && data.message === 'over quota') {
+    const code = Number(data.error || data.ErrorCode);
+    const message = String(data.message || '').trim().toLowerCase();
+    if (endpoint.hostname === 'data.zz.baidu.com' && code === 400 && message === 'over quota') {
       return { deferred: true };
     }
-    if (!response.ok) throw new Error(`Search submission failed (HTTP ${response.status})`);
+    if (!response.ok) {
+      const reason = ['over quota', 'site error', 'site init fail', 'token error'].includes(message) ? message : 'unrecognized response';
+      throw new Error(`Search submission failed (HTTP ${response.status}, service ${Number.isFinite(code) ? code : 'unknown'}, ${reason})`);
+    }
     if (data.error || data.ErrorCode) throw new Error('Search service rejected the submission');
     return data;
   }
@@ -55,8 +60,13 @@ if (cfg) {
     const list = await urls(this);
     if (!list.length) return;
     const endpoint = new URL('http://data.zz.baidu.com/urls');
-    endpoint.searchParams.set('site', cfg.baidu_host || hexo.config.url);
-    endpoint.searchParams.set('token', token);
+    const site = cfg.baidu_host || hexo.config.url;
+    const parsed = new URL(site);
+    if (!['http:', 'https:'].includes(parsed.protocol) || parsed.search || parsed.hash) {
+      throw new Error('Baidu site must be an HTTP(S) URL without query or fragment');
+    }
+    // Preserve the documented Baidu query format and the previous working client.
+    endpoint.search = `site=${site}&token=${encodeURIComponent(token)}`;
     const result = await post(endpoint, list.join('\n'), 'text/plain');
     if (result.deferred) {
       this.log.warn('Baidu daily submission quota exhausted; deferred until the next scheduled deployment');

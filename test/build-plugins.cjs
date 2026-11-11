@@ -71,6 +71,7 @@ test('search submission sorts updated posts, limits URLs and sends native Baidu/
   await hooks.deployer.get('cjh_bing_url_submitter').call(hexo);
   assert.equal(calls.length, 2);
   assert.equal(calls[0].url.hostname, 'data.zz.baidu.com');
+  assert.ok(calls[0].url.search.includes('site=https://blog.example'));
   assert.equal(calls[0].options.body, generated.data);
   assert.equal(calls[1].url.pathname, '/webmaster/api.svc/json/SubmitUrlBatch');
   assert.equal(JSON.parse(calls[1].options.body).urlList.length, 2);
@@ -106,9 +107,12 @@ test('only confirmed Baidu daily quota exhaustion is deferred; invalid credentia
   const send = hooks.deployer.get('cjh_baidu_url_submitter').bind(hexo);
   await send();
   assert.equal(warnings, 1);
+  body = { error: '400', message: ' over quota\n' };
+  await send();
+  assert.equal(warnings, 2);
   body = { error: 401, message: 'token invalid' };
   await assert.rejects(send, /Search submission failed/);
-  assert.equal(warnings, 1);
+  assert.equal(warnings, 2);
 });
 
 test('patched UPYUN SDK preserves signed upload/download/directory/delete behavior', async t => {
