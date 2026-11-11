@@ -1,4 +1,5 @@
 hexo.extend.filter.register("after_post_render", function (data) {
+  if (['newsletter', 'guestbook', 'about'].includes(data.layout)) return data;
   if (!data.content || data.content.length <= 50) return data;
 
   const tail = `<div class="post-tail" style="height:0;overflow:hidden;opacity:0;position:absolute;pointer-events:none;" aria-hidden="true">`

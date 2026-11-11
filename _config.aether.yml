@@ -76,7 +76,7 @@ aether:
   # 02 Start Here
   start_here:
     section_label: '02 / 从这里开始'
-    title: '从这里开始'
+    title: '精选阅读'
     items:
       - intent: '理解 AI 系统与 Agent'
         description: 'AI 如何改变编码方式，Agent 生态的演进'
