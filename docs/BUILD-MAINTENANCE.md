@@ -24,4 +24,4 @@ On 2026-11-11 the runtime audit reported 0 critical, 0 high, 0 moderate and 10 l
 
 For the UPYUN `naaln-blog` service, browser cache rules must cover directory URLs as well as literal `.html` files. The saved and verified rules are `*/`, `*.html` and `*.json`, each five minutes. Production HTML and search JSON return `public, must-revalidate, max-age=300`. A rule for `*.html` alone misses `/`, `/archives/` and `/visuals/`. Verify the actual production Cache-Control response after changing rules and after deployment. Already cached responses in a visitor's browser may still require a forced reload during migration.
 
-Versioned asset URLs use the `v` parameter. The service now follows query parameters, preserving the version parameter so a new release can request fresh CSS/JS.
+Versioned asset URLs use the `v` parameter. Keep the service in its original parameter-not-follow mode: enabling full parameter forwarding on this storage service makes versioned CSS/JS URLs return a 404 redirect. Browser cache keys still include the version query. Verify both versioned and bare asset URLs when changing any CDN policy.
