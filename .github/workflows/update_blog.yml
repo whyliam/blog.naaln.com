@@ -37,6 +37,7 @@ jobs:
       - run: git submodule update --remote source/_posts
       - name: Install theme runtime dependencies
         run: npm install --prefix themes/aether --omit=dev
+      - run: npm run test:build-plugins
       - run: hexo clean
 
       # 先运行 hexo generate 生成 db.json
