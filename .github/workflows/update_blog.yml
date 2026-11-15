@@ -5,9 +5,16 @@ name: Update Blog
 
 on:
   push:
-    branches: '*'
+    branches: [master]
   schedule:
     - cron: '0 16 * * *'
+
+permissions:
+  contents: read
+
+concurrency:
+  group: blog-production
+  cancel-in-progress: false
 
 jobs:
   build:
@@ -28,20 +35,19 @@ jobs:
         with:
           ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
 
-      - run: npm install hexo-cli -g
       - name: Install dependencies
         run: npm ci
-      # Keep theme code and site configuration on the tested, committed revision.
+      # Theme and plugins are locked npm releases; only articles remain a submodule.
       - run: git submodule update --init --recursive
       # Scheduled builds may still pick up newly published articles.
       - run: git submodule update --remote source/_posts
-      - name: Install theme runtime dependencies
-        run: npm install --prefix themes/aether --omit=dev
       - run: npm run test:build-plugins
-      - run: hexo clean
+      - run: npx hexo clean
 
       # 先运行 hexo generate 生成 db.json
-      - run: hexo generate
+      - run: npx hexo generate
+
+      - run: npm run test:site-output
 
       - name: Verify build output
         run: |
@@ -52,12 +58,12 @@ jobs:
           echo "Build verification passed: $(wc -c < public/index.html) bytes"
 
       # 然后运行 hexo algolia
-      - run: hexo algolia
+      - run: npx hexo algolia
         env:
           ALGOLIA_ADMIN_API_KEY: ${{ secrets.ALGOLIA_ADMIN_API_KEY }}
 
       # 最后部署
-      - run: hexo deploy
+      - run: npx hexo deploy
         env:
           BAIDU_TOKEN: ${{ secrets.BAIDU_TOKEN }}
           BING_TOKEN: ${{ secrets.BING_TOKEN }}

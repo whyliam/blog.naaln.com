@@ -191,8 +191,8 @@ nofollow:
 
 smart_seo:
   enable: true
-  default_image: /images/favicon/apple-touch-icon-next.png
-  logo: /images/favicon/apple-touch-icon-next.png
+  default_image: /images/favicon/icon-512.png
+  logo: /images/favicon/icon-512.png
   meta_keywords: false
   max_keywords: 20
   description_length: 150

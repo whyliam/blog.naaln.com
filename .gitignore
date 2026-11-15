@@ -11,3 +11,6 @@ source/_posts/.MWebMetaData/
 source/_posts/.Ulysses-favorites.plist
 source/_posts/.Ulysses-Group.plist
 yulib.resource/
+
+# Recoverable source checkout retained after migration to the npm theme.
+themes/aether.source-backup/

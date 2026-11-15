@@ -1,5 +1,5 @@
 # Site-specific Aether configuration. Theme defaults are generic.
-# Theme revision and this file are deployed together.
+# npm theme version and this file are deployed together.
 menu:
   首页: / || fa fa-home
   写作: /archives/ || fa fa-pencil-alt
@@ -231,3 +231,16 @@ visual_archive_link:
   url: https://photo.naaln.com/
   label: 去相册看更多照片
   description: 这里收录影像相关的文章，更多旅行与日常照片留在相册里。
+
+# Personal identity overrides the neutral theme icon set.
+favicon:
+  svg: /images/favicon/favicon.svg
+  ico: /favicon.ico
+  small: /images/favicon/favicon-16x16.png
+  medium: /images/favicon/favicon-32x32.png
+  apple_touch_icon: /images/favicon/apple-touch-icon.png
+  safari_pinned_tab: /images/favicon/mask.svg
+  android_manifest: /site.webmanifest
+  icon_192: /images/favicon/icon-192.png
+  icon_512: /images/favicon/icon-512.png
+  maskable: /images/favicon/icon-maskable-512.png

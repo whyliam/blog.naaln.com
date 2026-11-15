@@ -5,7 +5,6 @@ const fs = require('node:fs/promises');
 const path = require('node:path');
 const os = require('node:os');
 const vm = require('node:vm');
-const http = require('node:http');
 const crypto = require('node:crypto');
 const { Readable } = require('node:stream');
 const { createRequire } = require('node:module');
@@ -115,37 +114,31 @@ test('only confirmed Baidu daily quota exhaustion is deferred; invalid credentia
   assert.equal(warnings, 2);
 });
 
-test('patched UPYUN SDK preserves signed upload/download/directory/delete behavior', async t => {
-  const UpYun = require('upyun');
-  const isUploadResult = require('hexo-deployer-upyun/lib/upload-result');
+test('npm UPYUN client signs requests and treats image metadata responses as success', async t => {
+  const {Service, Client} = require('@whyliam/hexo-deployer-upyun/lib/client');
+  const original = global.fetch;
   const requests = [];
-  const server = http.createServer(async (req, res) => {
-    const parts = [];
-    for await (const part of req) parts.push(part);
-    requests.push({ method: req.method, path: req.url, headers: req.headers, body: Buffer.concat(parts).toString() });
-    res.writeHead(200, req.url.endsWith('.png')
-      ? { 'x-upyun-file-type': 'PNG', 'x-upyun-width': '16', 'x-upyun-height': '16' }
-      : { 'Content-Type': 'application/json' });
-    res.end(req.method === 'GET' ? '[{"file":"index.html"}]' : '');
-  });
-  await new Promise(resolve => server.listen(0, '127.0.0.1', resolve));
-  t.after(() => new Promise(resolve => server.close(resolve)));
-  const service = new UpYun.Service('test-bucket', 'test-operator', 'test-password');
-  const client = new UpYun.Client(service, { protocol: 'http', domain: `127.0.0.1:${server.address().port}`, proxy: false });
-  assert.ok(await client.putFile('目录/index.html', Buffer.from('fixture')));
-  assert.equal((await client.getFile('.file_list.json'))[0].file, 'index.html');
-  assert.ok(await client.makeDir('new-directory'));
-  assert.ok(await client.deleteFile('old.html'));
-  const image = await client.putFile('image.png', Buffer.from('image fixture'));
-  assert.equal(typeof image, 'object');
-  assert.equal(isUploadResult(image), true);
-  assert.equal(isUploadResult({ error: 'failed' }), false);
-  assert.equal(requests.length, 5);
-  for (const req of requests) {
+  t.after(() => {global.fetch = original;});
+  global.fetch = async (url, options) => {
+    requests.push({url: new URL(url), options});
+    return new Response(options.method === 'GET' ? '[]' : null, {
+      status: 200,
+      headers: url.endsWith('.png') ? {'x-upyun-file-type': 'PNG', 'x-upyun-width': '16', 'x-upyun-height': '16'} : {}
+    });
+  };
+  const client = new Client(new Service('test-bucket', 'test-operator', 'test-password'));
+  assert.equal(await client.putFile('目录/index.html', Buffer.from('fixture')), true);
+  assert.equal(await client.getFile('.file_list.json'), '[]');
+  assert.equal(await client.makeDir('new-directory'), true);
+  assert.equal(await client.deleteFile('old.html'), true);
+  assert.equal(await client.putFile('image.png', Buffer.from('fixture')), true);
+  for (const {url, options} of requests) {
     const digest = crypto.createHash('md5').update('test-password').digest('hex');
-    const expected = crypto.createHmac('sha1', digest).update(`${req.method}&${req.path}&${req.headers['x-date']}`).digest('base64');
-    assert.equal(req.headers.authorization, `UPYUN test-operator:${expected}`);
+    const expected = crypto.createHmac('sha1', digest).update(`${options.method}&${url.pathname}&${options.headers['X-Date']}`).digest('base64');
+    assert.equal(options.headers.Authorization, `UPYUN test-operator:${expected}`);
+    assert.equal(url.protocol, 'https:');
+    assert.equal(options.redirect, 'error');
   }
-  assert.equal(requests[0].body, 'fixture');
-  assert.equal(requests[2].headers.folder, 'true');
+  assert.equal(requests[0].options.headers['Content-Type'], 'text/html');
+  assert.equal(requests[2].options.method, 'POST');
 });
