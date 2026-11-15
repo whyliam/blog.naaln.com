@@ -220,3 +220,14 @@ lazyload: true
 preconnect: true
 motion:
   enable: false
+
+site_links:
+  - { label: 个人主页, url: 'https://naaln.com/' }
+  - { label: 博客, url: 'https://blog.naaln.com/', current: true }
+  - { label: 相册, url: 'https://photo.naaln.com/' }
+
+# Contextual link after the visual archive.
+visual_archive_link:
+  url: https://photo.naaln.com/
+  label: 去相册看更多照片
+  description: 这里收录影像相关的文章，更多旅行与日常照片留在相册里。

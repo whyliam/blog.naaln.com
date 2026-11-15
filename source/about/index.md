@@ -23,6 +23,10 @@ now:
     - '城市行走 / 旅行片段 / 视觉记录'
     - '试新工具前先问"它要解决什么问题"'
 
+websites:
+  - { label: '个人主页 · 我的工作、项目与近况', url: 'https://naaln.com/' }
+  - { label: '相册 · 旅行、日常与影像记录', url: 'https://photo.naaln.com/' }
+
 contact:
   - { label: 'RSS · 订阅档案更新',           url: '/atom.xml' }
   - { label: 'GitHub · 开源项目',            url: 'https://github.com/whyliam' }
